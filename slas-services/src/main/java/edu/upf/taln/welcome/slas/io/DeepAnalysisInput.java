@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.io;
 
-public class WelcomeContainer {
+public class DeepAnalysisInput {
     private WelcomeMetadata metadata;
     private WelcomeData data;
 

@@ -30,7 +30,7 @@ import edu.upf.taln.welcome.slas.io.LanguageConfiguration;
 import edu.upf.taln.welcome.slas.io.Participant;
 import edu.upf.taln.welcome.slas.io.Relation;
 import edu.upf.taln.welcome.slas.io.SpeechAct;
-import edu.upf.taln.welcome.slas.io.WelcomeContainer;
+import edu.upf.taln.welcome.slas.io.DeepAnalysisInput;
 
 
 /**
@@ -196,7 +196,7 @@ public class DeepAnalysisService {
 		        ))
 	})
 	public DeepAnalysisOutput analyze(
-			@Parameter(description = "Container for analysis input data.", required = true) WelcomeContainer container) throws WelcomeException {
+			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput container) throws WelcomeException {
 
         DeepAnalysisOutput output = createFakeOutput();
 		return output;
