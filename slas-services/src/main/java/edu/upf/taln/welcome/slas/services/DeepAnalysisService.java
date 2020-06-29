@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 import edu.upf.taln.welcome.slas.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.io.ServiceDescription;
-import edu.upf.taln.welcome.slas.io.DeepAnalysisData;
+import edu.upf.taln.welcome.slas.io.OutputData;
 import edu.upf.taln.welcome.slas.io.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.io.Entity;
 import edu.upf.taln.welcome.slas.io.LanguageConfiguration;
@@ -173,7 +173,7 @@ public class DeepAnalysisService {
         speechActs.add(speechAct2);
         
         
-        DeepAnalysisData data = new DeepAnalysisData();
+        OutputData data = new OutputData();
         data.setUserId(1);
         data.setDialogueSession(1);
         data.setDialogueTurn(1);

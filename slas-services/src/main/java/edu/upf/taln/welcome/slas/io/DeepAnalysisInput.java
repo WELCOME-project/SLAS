@@ -1,22 +1,22 @@
 package edu.upf.taln.welcome.slas.io;
 
 public class DeepAnalysisInput {
-    private WelcomeMetadata metadata;
-    private WelcomeData data;
+    private InputMetadata metadata;
+    private InputData data;
 
-    public WelcomeMetadata getMetadata() {
+    public InputMetadata getMetadata() {
         return metadata;
     }
 
-    public void setMetadata(WelcomeMetadata metadata) {
+    public void setMetadata(InputMetadata metadata) {
         this.metadata = metadata;
     }
 
-    public WelcomeData getData() {
+    public InputData getData() {
         return data;
     }
 
-    public void setData(WelcomeData data) {
+    public void setData(InputData data) {
         this.data = data;
     }
 }

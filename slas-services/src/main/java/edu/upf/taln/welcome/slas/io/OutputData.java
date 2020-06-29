@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
  *
  * @author rcarlini
  */
-public class DeepAnalysisData {
+public class OutputData {
     @NotNull
     private int userId;
     

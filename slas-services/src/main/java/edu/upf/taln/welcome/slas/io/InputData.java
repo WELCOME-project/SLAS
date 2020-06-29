@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
  *
  * @author rcarlini
  */
-public class WelcomeData {
+public class InputData {
     
     @NotNull
     private String conll;
