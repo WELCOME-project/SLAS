@@ -39,7 +39,7 @@ import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
  * @author jens.grivolla
  * 
  */
-@Path("/analyze")
+@Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 public class DeepAnalysisService {
 
@@ -187,6 +187,7 @@ public class DeepAnalysisService {
     }
 	
 	@POST
+	@Path("/analyze")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Operation(summary = "Performs a deep syntactic analysis of the input data.",
 		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",

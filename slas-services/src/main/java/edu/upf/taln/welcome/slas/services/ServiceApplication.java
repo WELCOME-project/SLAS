@@ -15,7 +15,7 @@ import javax.servlet.ServletConfig;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Context;
 
-@ApplicationPath("api")
+@ApplicationPath("api/slas")
 public class ServiceApplication extends ResourceConfig {
 	
     public ServiceApplication(@Context ServletConfig servletConfig) {
