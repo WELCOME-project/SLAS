@@ -6,7 +6,7 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import edu.upf.taln.welcome.slas.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 
 @Provider
 public class WelcomeExceptionMapper implements ExceptionMapper<WelcomeException>{

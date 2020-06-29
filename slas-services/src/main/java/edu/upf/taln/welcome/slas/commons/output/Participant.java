@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.io;
+package edu.upf.taln.welcome.slas.commons.output;
 
 import java.util.List;
 

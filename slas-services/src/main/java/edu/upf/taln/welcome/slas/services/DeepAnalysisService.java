@@ -21,16 +21,16 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
-import edu.upf.taln.welcome.slas.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.io.ServiceDescription;
-import edu.upf.taln.welcome.slas.io.OutputData;
-import edu.upf.taln.welcome.slas.io.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.io.Entity;
-import edu.upf.taln.welcome.slas.io.LanguageConfiguration;
-import edu.upf.taln.welcome.slas.io.Participant;
-import edu.upf.taln.welcome.slas.io.Relation;
-import edu.upf.taln.welcome.slas.io.SpeechAct;
-import edu.upf.taln.welcome.slas.io.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
+import edu.upf.taln.welcome.slas.commons.output.OutputData;
+import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.Entity;
+import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
+import edu.upf.taln.welcome.slas.commons.output.Participant;
+import edu.upf.taln.welcome.slas.commons.output.Relation;
+import edu.upf.taln.welcome.slas.commons.output.SpeechAct;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 
 
 /**

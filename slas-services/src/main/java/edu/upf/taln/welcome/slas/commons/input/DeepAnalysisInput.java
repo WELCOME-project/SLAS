@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.io;
+package edu.upf.taln.welcome.slas.commons.input;
 
 public class DeepAnalysisInput {
     private InputMetadata metadata;

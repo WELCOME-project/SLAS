@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.exceptions;
+package edu.upf.taln.welcome.slas.commons.exceptions;
 
 /**
  * This class represents an application domain exception.
