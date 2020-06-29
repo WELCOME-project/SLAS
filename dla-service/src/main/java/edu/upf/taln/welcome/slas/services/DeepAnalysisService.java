@@ -36,10 +36,9 @@ import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 /**
  * Analyze text and return results in JSON format
  * 
- * @author jens.grivolla
  * 
  */
-@Path("/")
+@Path("/dla")
 @Produces(MediaType.APPLICATION_JSON)
 public class DeepAnalysisService {
 

@@ -1,5 +1,12 @@
 package edu.upf.taln.welcome.slas.services;
 
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import javax.servlet.ServletConfig;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Context;
+
 import org.glassfish.jersey.server.ResourceConfig;
 
 import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
@@ -8,14 +15,7 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.servers.Server;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import javax.servlet.ServletConfig;
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Context;
-
-@ApplicationPath("api/slas")
+@ApplicationPath("api")
 public class ServiceApplication extends ResourceConfig {
 	
     public ServiceApplication(@Context ServletConfig servletConfig) {
@@ -45,7 +45,7 @@ public class ServiceApplication extends ResourceConfig {
         openApiResource.setOpenApiConfiguration(oasConfig);
         register(openApiResource);
         
-        String packageName = this.getClass().getPackage().getName();        
+        String packageName = this.getClass().getPackage().getName();
         packages(packageName);
     }	
 	
