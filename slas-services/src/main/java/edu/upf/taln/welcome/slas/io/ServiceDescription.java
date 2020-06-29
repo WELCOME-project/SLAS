@@ -2,7 +2,7 @@ package edu.upf.taln.welcome.slas.io;
 
 import java.util.List;
 
-public class AnalysisConfigurations {
+public class ServiceDescription {
 
 	private List<LanguageConfiguration> configurations;
 

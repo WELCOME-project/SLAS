@@ -23,8 +23,8 @@ public class ServiceApplication extends ResourceConfig {
 
         OpenAPI oas = new OpenAPI();
         Info info = new Info()
-                .title("TALN Analysis Service")
-                .description("Detailed description of the different methods available in the Analysis service.");
+                .title("TALN Deep Analysis Service")
+                .description("Detailed description of the different methods available in the Deep Analysis service.");
 
         oas.info(info);
 
@@ -44,7 +44,9 @@ public class ServiceApplication extends ResourceConfig {
 
         openApiResource.setOpenApiConfiguration(oasConfig);
         register(openApiResource);
-        packages("edu.upf.taln.welcome.slas.services");
+        
+        String packageName = this.getClass().getPackage().getName();        
+        packages(packageName);
     }	
 	
 }

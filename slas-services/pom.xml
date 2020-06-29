@@ -10,10 +10,10 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>slas-services</artifactId>
+	<artifactId>dla-service</artifactId>
 	<packaging>war</packaging>
 
-	<name>Welcome SLAS Services</name>
+	<name>Welcome DLA Service</name>
 
 	<properties>
 		<swagger.download.skipcache>false</swagger.download.skipcache>
