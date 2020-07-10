@@ -13,7 +13,7 @@ public class Relation {
     private String id;
     
     @NotNull
-    private String relation;
+    private String predicate;
     private List<Participant> participants;
 
     public String getId() {
@@ -24,12 +24,12 @@ public class Relation {
         this.id = id;
     }
 
-    public String getRelation() {
-        return relation;
+    public String getPredicate() {
+        return predicate;
     }
 
-    public void setRelation(String relation) {
-        this.relation = relation;
+    public void setPredicate(String predicate) {
+        this.predicate = predicate;
     }
 
     public List<Participant> getParticipants() {

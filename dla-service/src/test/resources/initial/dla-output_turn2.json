@@ -1,0 +1,139 @@
+{
+  "data" : {
+    "speechActs" : [ {
+      "id" : "act_1",
+      "type" : "Non opinion statement",
+      "anchor" : "My name is Karim Y",
+      "entities" : [ "entity_1.1", "entity_1.2", "entity_1.3", "relation_1" ]
+    }, {
+      "id" : "act_2",
+      "type" : "Non opinion statement",
+      "anchor" : "I come from Syria",
+      "entities" : [ "entity_2.1", "entity_2.2", "relation_2" ]
+    }, {
+      "id" : "act_3",
+      "type" : "Non opinion statement",
+      "anchor" : "I am for 2 months now in Terrassa",
+      "entities" : [ "entity_3.1", "entity_3.2", "entity_3.3", "relation_3" ]
+    }, {
+      "id" : "act_4",
+      "type" : "Non opinion statement",
+      "anchor" : "For the time being I stay with friends",
+      "entities" : [ "entity_4.1", "entity_4.2", "entity_4.3", "relation_4" ]
+    } ],
+    "entities" : [ {
+      "id" : "entity_1.1",
+      "type" : "TCN",
+      "anchor" : null,
+      "link" : null,
+      "confidence" : 1.0
+    }, {
+      "id" : "entity_1.2",
+      "type" : "Predicate",
+      "anchor" : "name",
+      "link" : "bn:00056758n",
+      "confidence" : 1.0
+    }, {
+      "id" : "entity_1.3",
+      "type" : "Person",
+      "anchor" : "Karim Y",
+      "link" : null,
+      "confidence" : 0.2
+    }, {
+      "id" : "entity_2.1",
+      "type" : "Predicate",
+      "anchor" : "come",
+      "link" : "bn:00082788v",
+      "confidence" : 0.8
+    }, {
+      "id" : "entity_2.2",
+      "type" : "Location",
+      "anchor" : "Syria",
+      "link" : "bn:00075752n",
+      "confidence" : 0.9
+    }, {
+      "id" : "entity_3.1",
+      "type" : "Predicate",
+      "anchor" : "am",
+      "link" : "bn:00083183v",
+      "confidence" : 0.7
+    }, {
+      "id" : "entity_3.2",
+      "type" : "Time",
+      "anchor" : "for two months now",
+      "link" : null,
+      "confidence" : 0.6
+    }, {
+      "id" : "entity_3.3",
+      "type" : "Location",
+      "anchor" : "Terrassa",
+      "link" : "bn:03554826n",
+      "confidence" : 1.0
+    }, {
+      "id" : "entity_4.1",
+      "type" : "Predicate",
+      "anchor" : "stay",
+      "link" : "bn:00082137v",
+      "confidence" : 0.7
+    }, {
+      "id" : "entity_4.2",
+      "type" : "Time",
+      "anchor" : "for the time being",
+      "link" : null,
+      "confidence" : 0.6
+    }, {
+      "id" : "entity_4.3",
+      "type" : "Location",
+      "anchor" : "friends",
+      "link" : "bn:00036538n",
+      "confidence" : 0.3
+    } ],
+    "relations" : [ {
+      "id" : "relation_1",
+      "predicate" : "entity_1.2",
+      "participants" : [ {
+        "role" : "Agent",
+        "entities" : [ "entity_1.1" ]
+      }, {
+        "role" : "Object",
+        "entities" : [ "entity_1.3" ]
+      } ]
+    }, {
+      "id" : "relation_2",
+      "predicate" : "entity_2.1",
+      "participants" : [ {
+        "role" : "Agent",
+        "entities" : [ "entity_1.1" ]
+      }, {
+        "role" : "Location",
+        "entities" : [ "entity_2.2" ]
+      } ]
+    }, {
+      "id" : "relation_3",
+      "predicate" : "entity_3.1",
+      "participants" : [ {
+        "role" : "Agent",
+        "entities" : [ "entity_1.1" ]
+      }, {
+        "role" : "Time",
+        "entities" : [ "entity_3.2" ]
+      }, {
+        "role" : "Place",
+        "entities" : [ "entity_3.3" ]
+      } ]
+    }, {
+      "id" : "relation_4",
+      "predicate" : "entity_4.2",
+      "participants" : [ {
+        "role" : "Agent",
+        "entities" : [ "entity_1.1" ]
+      }, {
+        "role" : "Time",
+        "entities" : [ "entity_4.1" ]
+      }, {
+        "role" : "Place",
+        "entities" : [ "entity_4.3" ]
+      } ]
+    } ]
+  }
+}

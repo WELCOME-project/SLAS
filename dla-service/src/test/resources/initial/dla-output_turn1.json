@@ -1,0 +1,57 @@
+{
+  "data" : {
+    "speechActs" : [ {
+      "id" : "act_1",
+      "type" : "Conventional-opening",
+      "anchor" : "Hello",
+      "entities" : [ "entity_1.1" ]
+    }, {
+      "id" : "act_2",
+      "type" : "Commit",
+      "anchor" : "I would like to apply for the First Reception Service",
+      "entities" : [ "entity_2.1", "entity_2.2", "entity_2.3", "entity_2.4", "relation_1" ]
+    } ],
+    "entities" : [ {
+      "id" : "entity_1.1",
+      "type" : "Concept",
+      "anchor" : "Hello",
+      "link" : "bn:00043620n",
+      "confidence" : 0.9
+    }, {
+      "id" : "entity_2.1",
+      "type" : "Predicate",
+      "anchor" : "apply",
+      "link" : "bn:00082707v",
+      "confidence" : 0.8
+    }, {
+      "id" : "entity_2.2",
+      "type" : "TCN",
+      "anchor" : "I",
+      "link" : null,
+      "confidence" : 1.0
+    }, {
+      "id" : "entity_2.3",
+      "type" : "Concept",
+      "anchor" : "Service",
+      "link" : "bn:00070651n",
+      "confidence" : 0.8
+    }, {
+      "id" : "entity_2.4",
+      "type" : "Concept",
+      "anchor" : "First Reception Service",
+      "link" : null,
+      "confidence" : 0.7
+    } ],
+    "relations" : [ {
+      "id" : "relation_1",
+      "predicate" : "entity_2.1",
+      "participants" : [ {
+        "role" : "Agent",
+        "entities" : [ "entity_2.2" ]
+      }, {
+        "role" : "Object",
+        "entities" : [ "entity_2.3", "entity_2.4" ]
+      } ]
+    } ]
+  }
+}
