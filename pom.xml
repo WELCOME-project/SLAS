@@ -32,6 +32,7 @@
 
     <modules>
         <module>dla-service</module>
+        <module>slas-commons</module>
     </modules>
 
     <distributionManagement>
