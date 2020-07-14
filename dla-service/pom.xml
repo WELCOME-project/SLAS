@@ -36,6 +36,12 @@
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
 		</dependency>
+		
+	   <dependency>
+	       <groupId>org.slf4j</groupId>
+	       <artifactId>slf4j-simple</artifactId>
+	       <version>1.7.25</version>
+	   </dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.jaxrs</groupId>
