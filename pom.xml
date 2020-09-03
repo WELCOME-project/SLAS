@@ -16,7 +16,7 @@
         <mvn.compiler.version>3.7.0</mvn.compiler.version>
         <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
         
-     	<junit.version>4.12</junit.version>
+        <junit.version>4.12</junit.version>
         
         <lucene.version>7.2.0</lucene.version>
 		
@@ -26,13 +26,20 @@
         
         <jackson.version>2.9.8</jackson.version>
         
-	    <swagger.version>2.0.8</swagger.version>
-	    <swagger.ui.version>2.1.4</swagger.ui.version>
+        <swagger.version>2.0.8</swagger.version>
+        <swagger.ui.version>2.1.4</swagger.ui.version>
+        
+        <dkpro.version>1.9.1</dkpro.version>
+        <dkpro.taln.version>1.9.1-taln</dkpro.taln.version>
+		<deep-parser.version>1.2.0-SNAPSHOT</deep-parser.version>
+        <extender.version>1.4.0-SNAPSHOT</extender.version>
+
     </properties>
 
     <modules>
         <module>dla-service</module>
         <module>slas-commons</module>
+        <module>slas-core</module>
     </modules>
 
     <distributionManagement>
@@ -76,70 +83,70 @@
     <dependencyManagement>
         <dependencies>
         
-        <!-- VERSION FIXES -->
-			<dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-core</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-queries</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-queryparser</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-analyzers-common</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-highlighter</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
+            <!-- VERSION FIXES -->
+            <dependency> 
+                <groupId>org.apache.lucene</groupId> 
+                <artifactId>lucene-core</artifactId> 
+                <version>${lucene.version}</version> 
+            </dependency> 
+            <dependency> 
+                <groupId>org.apache.lucene</groupId> 
+                <artifactId>lucene-queries</artifactId> 
+                <version>${lucene.version}</version> 
+            </dependency> 
+            <dependency> 
+                <groupId>org.apache.lucene</groupId> 
+                <artifactId>lucene-queryparser</artifactId> 
+                <version>${lucene.version}</version> 
+            </dependency> 
+            <dependency> 
+                <groupId>org.apache.lucene</groupId> 
+                <artifactId>lucene-analyzers-common</artifactId> 
+                <version>${lucene.version}</version> 
+            </dependency> 
+            <dependency> 
+                <groupId>org.apache.lucene</groupId> 
+                <artifactId>lucene-highlighter</artifactId> 
+                <version>${lucene.version}</version> 
+            </dependency> 
+            <dependency> 
                 <groupId>org.apache.lucene</groupId> 
                 <artifactId>lucene-backward-codecs</artifactId> 
                 <version>${lucene.version}</version> 
             </dependency>
 		    
-		    <dependency>
-	            <groupId>net.sf.trove4j</groupId>
-	            <artifactId>trove4j</artifactId>
-	            <version>3.0.3</version>
-	        </dependency>
+            <dependency>
+                <groupId>net.sf.trove4j</groupId>
+                <artifactId>trove4j</artifactId>
+                <version>3.0.3</version>
+            </dependency>
 	        
-	        <dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-core</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-annotations</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-			<dependency>
-	            <groupId>com.fasterxml.jackson.jaxrs</groupId>
-	            <artifactId>jackson-jaxrs-base</artifactId>
-	            <version>${jackson.version}</version>
-	        </dependency>
-	        <dependency>
-	            <groupId>com.fasterxml.jackson.jaxrs</groupId>
-	            <artifactId>jackson-jaxrs-json-provider</artifactId>
-	            <version>${jackson.version}</version>
-	        </dependency>
-		    <!-- END VERSION FIXES -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.jaxrs</groupId>
+                <artifactId>jackson-jaxrs-base</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.jaxrs</groupId>
+                <artifactId>jackson-jaxrs-json-provider</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <!-- END VERSION FIXES -->
             
             <dependency>
                 <groupId>junit</groupId>
@@ -177,43 +184,167 @@
             
             <!-- SWAGGER -->
             <dependency>
-		    	<groupId>io.swagger.core.v3</groupId>
-		    	<artifactId>swagger-jaxrs2</artifactId>
-		    	<version>${swagger.version}</version>
-		    </dependency>
-		    <dependency>
-		    	<groupId>io.swagger.core.v3</groupId>
-	      		<artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
-		    	<version>${swagger.version}</version>
-		    </dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-jaxrs2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
 		    
-      <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>javax.activation-api</artifactId>
-        <version>1.2.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-core</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-jxc</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-xjc</artifactId>
-        <version>2.3.0</version>
-      </dependency>
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>javax.activation-api</artifactId>
+                <version>1.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-core</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-jxc</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-xjc</artifactId>
+                <version>2.3.0</version>
+            </dependency>
 		    
-		    <!-- END SWAGGER -->
+            <!-- END SWAGGER -->
+            
+            <!--ANALYSIS DEPENDENCIES-->
+            <dependency>
+                <groupId>edu.upf.taln.uima.nlp4j</groupId>
+                <artifactId>nlp4j</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima.matetools</groupId>
+                <artifactId>matetools</artifactId>
+                <version>0.1.0</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>trove4j</artifactId>
+                        <groupId>net.sf.trove4j</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>whatswrong</artifactId>
+                        <groupId>org.riedelcastro</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima.flow-controller</groupId>
+                <artifactId>flow-core</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.parser</groupId>
+                <artifactId>deep-parser-core</artifactId>
+                <version>${deep-parser.version}</version>
+            </dependency>
+		  	
+            <dependency>
+                <groupId>edu.upf.taln.uima</groupId>
+                <artifactId>TextPlanningAnnotator</artifactId>
+                <version>1.3.0-SNAPSHOT</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.wsd</groupId>
+                <artifactId>disambiguation-core</artifactId>
+                <version>1.5.0-SNAPSHOT</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima</groupId>
+                <artifactId>uima-tagsets</artifactId>
+                <version>1.2.0</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima.wsd</groupId>
+                <artifactId>edu.upf.taln.uima.wsd.item_annotator</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+		  	
+            <dependency>
+                <groupId>edu.upf.taln.uima.wsd</groupId>
+                <artifactId>extender-core</artifactId>
+                <version>${extender.version}</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.glicom.uima</groupId>
+                <artifactId>dbpedia-spotlight</artifactId>
+                <version>0.12.0</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima</groupId>
+                <artifactId>flask_wrapper</artifactId>
+                <version>0.9.0-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>annotation-extender</artifactId>
+                        <groupId>edu.upf.taln.uima.wsd</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+                        <artifactId>de.tudarmstadt.ukp.dkpro.core.matetools-gpl</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+			
+            <dependency>
+                <groupId>edu.upf.taln.uima.retokenize</groupId>
+                <artifactId>MultiwordRetokenizer</artifactId>
+                <version>0.2.0</version>
+            </dependency>
+            
+			<dependency>
+		    	<groupId>edu.upf.taln.utils.pojos</groupId>
+			    <artifactId>common-pojos-uima</artifactId>
+			    <version>0.2.0-SNAPSHOT</version>
+			    <exclusions>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-en-default
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-es-default
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-morphtagger-es-taln
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>net.sf.meka</groupId>
+			    		<artifactId>meka</artifactId>
+			    	</exclusion>
+			    </exclusions>
+		    </dependency>            
+            <!--END ANALYSIS DEPENDENCIES-->
 		       
         </dependencies>
     </dependencyManagement>

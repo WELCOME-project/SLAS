@@ -1,5 +1,7 @@
 package edu.upf.taln.welcome.slas.services;
 
+import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,7 @@ import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.core.Analyzer;
 import edu.upf.taln.welcome.slas.utils.SampleResponses;
 
 
@@ -91,9 +94,11 @@ public class DeepAnalysisService {
 
 	@Context
 	ServletConfig config;
+    private final Analyzer analyzer;
 
 	public DeepAnalysisService() throws WelcomeException {
-	}
+		analyzer = Analyzer.getInstance();
+	}    
 	
 	@GET
 	@Path("/description")
@@ -112,7 +117,7 @@ public class DeepAnalysisService {
 		modules.add("dbpedia");
 
 		LanguageConfiguration es_config = new LanguageConfiguration();
-		es_config.setLanguage("es");
+		es_config.setLanguage("en");
 		es_config.setModules(modules);
 
 		List<LanguageConfiguration> configList = new ArrayList<>();
@@ -163,7 +168,9 @@ public class DeepAnalysisService {
             turn = 0;
         }
         DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
+        
+        output = analyzer.analyze(input);
+        
 		return output;
 	}
-
 }
