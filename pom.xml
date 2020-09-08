@@ -40,6 +40,7 @@
         <module>dla-service</module>
         <module>slas-commons</module>
         <module>slas-core</module>
+		<module>welcome-demos</module>
     </modules>
 
     <distributionManagement>

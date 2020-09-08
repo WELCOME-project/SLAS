@@ -1,0 +1,9 @@
+#collapseHidden, #collapseHidden:link, #collapseHidden:visited, #collapseHidden:hover, #collapseHidden:focus, #collapseHidden:active {
+    color: inherit;
+    text-decoration: none;
+    cursor:inherit; 
+}
+
+.hidden{
+	visibility: hidden;
+}

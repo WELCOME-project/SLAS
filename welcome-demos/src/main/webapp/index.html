@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" type="image/png" href="./static/resources/favicon_taln.ico"/>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./static/external/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="./static/external/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./static/external/js/popper.min.js"></script>
+	<script type="text/javascript" src="./static/external/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="./static/external/css/jqcloud.css">
+	<link rel="stylesheet" href="./static/external/css/font-awesome.css">
+	<script type="text/javascript" src="./static/external/js/jqcloud-1.0.4.js"></script>
+
+	<!--BRAT-->
+	<link rel="stylesheet" type="text/css" href="./static/external/css/style-vis.css"/>
+	<link rel="stylesheet" href="./static/css/fix.css">
+	<script type="text/javascript" src="./static/external/js/head.load.min.js"></script>
+
+	<!--TALN WIDGETS-->
+	<script type="text/javascript" src="./static/js/taln.widgets.brat.js"></script>
+	<script type="text/javascript" src="./static/js/taln.widgets.intensity.js"></script>
+	<script type="text/javascript" src="./static/js/taln.widgets.tagcloud.js"></script>
+	
+	<!--TALN DEMO-->
+	<link rel="stylesheet" href="./static/css/tensorDemo.css">
+	<link rel="stylesheet" href="./static/css/demo.css">
+	
+	<!--TAG CLOUD-->
+	<script src="./static/external/js/jQWCloudv3.1.js"></script>
+    <link rel="stylesheet" href="./static/css/default.css">
+	
+	<script src="./static/js/base64.js"></script>
+
+	<title>UPF V4Design components</title>
+</head>
+
+<body>
+	
+	<div class="container base pb-5">
+	
+		<div class="d-inline-block py-4 px-4 mb-4">
+			<img src="./static/resources/TALN.png" class="float-right pb-2 logo"/>
+  			<span class="header-text">V4Design: </span><span class="header-text no-wrap">UPF text analysis</span>
+		</div>
+		
+		<div class="card mb-4" id="accordion">
+			<div class="card-header" id="inputTextHeader">Input f<a id="collapseHidden" data-toggle="collapse" data-target="#jsonInputCollapse" aria-expanded="false" aria-controls="#jsonInputCollapse" href="#">o</a>rm
+				<a class="float-right" id="collapseArrow" data-toggle="collapse" data-target="#inputCollapse" aria-expanded="true" aria-controls="inputCollapse" href="#">Hide ▲</a>
+			</div>
+			<div id="inputCollapse" class="collapse show" aria-labelledby="inputTextHeader" data-parent="#accordion">
+				<div class="card-body " >
+					<form id="form" class="needs-validation" novalidate>
+						
+						<div class="form-group">
+							<label for="languageSelector">Language of text:</label>
+							
+					    	<div class="form-check d-inline-block ml-5">
+								<input class="form-check-input" type="checkbox" id="translateCheck">
+								<label class="form-check-label" for="translateCheck">Translate</label>
+							</div>
+							
+							<select class="form-control mr-sm-2" id="languageSelector">
+					      		<option value="en">English</option>
+					      		<option value="es">Spanish</option>
+					      		<option value="el">Greek</option>
+					      		<option value="de">German</option>
+					    	</select>
+				    	</div>
+					    	
+						<div class="form-group">
+							<label for="inputText">Text to analyse:</label>
+				  			<textarea id="inputText" rows = "5" class="form-control" required></textarea>
+				  			<div class="invalid-feedback">Please fill in the textbox.</div>
+						</div>
+						<div class="form-group">
+							<label for="topic">Topic (Optional):</label>
+				  			<input type="text" id="topic" class="form-control" placeholder="DBPedia URI"></input>
+						</div>
+						<div class="float-right mb-4">
+							<button type="submit" class="btn btn-primary btn-lg d-inline-block" id="submitButton" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing">Analyze</button>
+						</div>
+						<div id="downloadDiv" class="hidden">
+							<a id="download" download="result.json" class="btn btn-primary btn-lg d-inline-block" role="button" href="">Download result</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="jsonInputCollapse" class="collapse" aria-labelledby="inputTextHeader" data-parent="#accordion">
+				<div class="card-body " >
+					<form id="jsonForm" class="needs-validation" novalidate>
+						<div class="form-group">
+							<label for="jsonFile">Json file with data to display:</label>
+				  			<input type="file" class="form-control-file" id="jsonFile" required />
+				  			<div class="invalid-feedback">Please select a file.</div>
+						</div>
+						<div class="float-right mb-4">
+							<button type="submit" class="btn btn-primary btn-lg d-inline-block" id="submitJsonButton" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing">Show</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<h3 class="pl-3">Results:</h3>
+	
+		<div id="result" class="card h-100"></div>
+
+	</div>
+	
+<script type="text/javascript" src="./static/js/welcome-demo.js"></script>
+
+</body>
+</html>
+	
