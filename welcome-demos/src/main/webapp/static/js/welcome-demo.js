@@ -29,7 +29,7 @@ head.js(
 var esURL = "../v4design-services-es/analyze";
 var elURL = "../v4design-services-el/analyze";
 var deURL = "../v4design-services-de/analyze";*/
-var analyzeURL = "../dla-service/api/dla/analyze";
+var analyzeURL = "../dla-service/api/dla/analyzePlain";
 var descriptionURL = "../dla-service/api/dla/description";
 
 function spinButton() {
@@ -125,63 +125,11 @@ function submitForm(type, url, input, topicVal, language, loadingCallback, endLo
             url: url,
             data: JSON.stringify({
 	            	meta: {
-	            		/*preprocessOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		candidatesOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		babelnetOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		dependencyParserOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		nerOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		dbpediaOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		deepParserOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		retokenizerOptions : {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		summarizationOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-		        		correferenceOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		nerRetokenizerOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		dbpediaRetokenizerOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-	            		emotionOptions: {
-	            			processRequested: true,
-	            			outputRequested: true
-	            		},
-		                source_language: language,
-		                topic: topicVal*/
+		                language: language,
+		                output_level:edu.upf.taln.welcome.slas.commons.input.InputMetadata.OutputLevel.demo
 		        	},
 		        	data: {
-		        		conll: input
+		        		text: input
 		        	}
 	            })
         })

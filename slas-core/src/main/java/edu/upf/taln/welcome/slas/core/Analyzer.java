@@ -108,11 +108,11 @@ public class Analyzer {
             
             JCas jCas = WelcomeUIMAUtils.createJCasFromConll(conll, language, analysisType);
             
-			//pipeline.process(jCas);
+            pipeline.process(jCas);
             
             AnalysisEngine writer = AnalysisEngineFactory.createEngine(
     				XmiWriter.class,
-    				XmiWriter.PARAM_TARGET_LOCATION, "src/test/resources/output/xmi/fromConll/",
+    				XmiWriter.PARAM_TARGET_LOCATION, "/home/ivan/git/welcome-slas/dla-service/src/test/resources/output/xmi/fromConll/",
     				XmiWriter.PARAM_OVERWRITE, true);
 			writer.process(jCas);
             
@@ -142,12 +142,12 @@ public class Analyzer {
             AnalysisType analysisType = AnalysisType.FULL;
             
             JCas jCas = WelcomeUIMAUtils.createJCas(text, language, analysisType);
-            
-			//pipeline.process(jCas);
 			
+            pipeline.process(jCas);
+            
 			AnalysisEngine writer = AnalysisEngineFactory.createEngine(
     				XmiWriter.class,
-    				XmiWriter.PARAM_TARGET_LOCATION, "src/test/resources/output/xmi/fromText/",
+    				XmiWriter.PARAM_TARGET_LOCATION, "/home/ivan/git/welcome-slas/dla-service/src/test/resources/output/xmi/fromText/",
     				XmiWriter.PARAM_OVERWRITE, true);
 			writer.process(jCas);
 			
