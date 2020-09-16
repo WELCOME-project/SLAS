@@ -16,6 +16,7 @@ import org.dbpedia.spotlight.uima.SpotlightAnnotator;
 
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 import de.tudarmstadt.ukp.dkpro.core.matetools.MateLemmatizer;
+import de.tudarmstadt.ukp.dkpro.core.matetools.MateMorphTagger;
 import de.tudarmstadt.ukp.dkpro.core.nlp4j.Nlp4JDependencyParser;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordCoreferenceResolver;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordParser;
@@ -47,7 +48,7 @@ import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
 
 import it.uniroma1.lcl.jlt.util.Language;
 
-public class EnglishPipelinePT {
+public class EnglishPipelineUD {
 	
 	private static final String LANGUAGE = "en";
     
@@ -58,20 +59,25 @@ public class EnglishPipelinePT {
 		AnalysisEngineDescription segmenter = createEngineDescription(
 				StanfordSegmenter.class, 
 				StanfordSegmenter.PARAM_NEWLINE_IS_SENTENCE_BREAK, NewlineIsSentenceBreak.ALWAYS,
-				StanfordSegmenter.PARAM_LANGUAGE, LANGUAGE);
+	    		StanfordSegmenter.PARAM_LANGUAGE, LANGUAGE);
         
 		AnalysisEngineDescription pos = createEngineDescription(
 				StanfordPosTagger.class,
 				StanfordPosTagger.PARAM_LANGUAGE, LANGUAGE,
-				StanfordPosTagger.PARAM_VARIANT, "taln");
+				StanfordPosTagger.PARAM_VARIANT, "taln-ud");
         
 		AnalysisEngineDescription lemma = createEngineDescription(
 				MateLemmatizer.class,
 				MateLemmatizer.PARAM_LANGUAGE, LANGUAGE,
 				MateLemmatizer.PARAM_VARIANT, "ewt");
 		
+		AnalysisEngineDescription morph = createEngineDescription(
+				MateMorphTagger.class,
+				MateMorphTagger.PARAM_LANGUAGE, LANGUAGE,
+				MateMorphTagger.PARAM_VARIANT, "taln-ud");
+		
 		names.add(FlowStepName.PARSING.name());
-		return createEngineDescription(segmenter, pos, lemma);	
+		return createEngineDescription(segmenter, pos, lemma, morph);	
 	}
 	
 	private static AnalysisEngineDescription getParsingDescription() throws ResourceInitializationException {
@@ -79,7 +85,7 @@ public class EnglishPipelinePT {
 		AnalysisEngineDescription parserDescription = createEngineDescription(
 				Nlp4JDependencyParser.class, 
 				Nlp4JDependencyParser.PARAM_LANGUAGE, LANGUAGE,
-				Nlp4JDependencyParser.PARAM_VARIANT, "taln");
+				Nlp4JDependencyParser.PARAM_VARIANT, "ewt-ud");
         
 		names.add(FlowStepName.SSYNTS.name());
         return parserDescription;

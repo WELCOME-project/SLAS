@@ -32,6 +32,7 @@ import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
 import edu.upf.taln.welcome.slas.core.Analyzer;
 import edu.upf.taln.welcome.slas.utils.SampleResponses;
 
@@ -87,6 +88,21 @@ public class DeepAnalysisService {
 			"13\\t.\\t.\\tPUNCT\\t.\\t_\\t5\\tpunct\\t_\\tSpacesAfter=\\\\n\\n\"" + 
 			"  } \n" + 
 			"}";
+	
+	private static final String SAMPLE_INPUT_PLAIN_TURN0 = "{\n" + 
+			"  \"metadata\": {},\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Hello, can you hear me?\"" + 
+			"  } \n" + 
+			"}";
+
+
+	private static final String SAMPLE_INPUT_PLAIN_TURN1 = "{\n" + 
+			"  \"metadata\": {},\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Yes, I would like to apply for the First Reception Service.\"" + 
+			"  } \n" + 
+			"}";
 	/**
 	 * Logger for this class and subclasses.
 	 */
@@ -129,6 +145,27 @@ public class DeepAnalysisService {
 		return configurations;
 	}
 	
+	public DeepAnalysisOutput generateDummyResponse(DeepAnalysisInput input) {
+		
+		String conll = input.getData().getConll();
+        System.out.println(conll);
+        
+		int turn = 1;
+        if (conll.contains("Sebastià")) {
+            turn = 7;
+        } else if (conll.contains("Karim")) {
+            turn = 5;
+        } else if (conll.contains("apply")) {
+            turn = 3;
+        } else if (conll.contains("Hello")) {
+            turn = 1;
+        } else {
+            turn = 0;
+        }
+        DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
+        return output;
+	}
+	
 	@POST
 	@Path("/analyze")
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -151,25 +188,39 @@ public class DeepAnalysisService {
 	public DeepAnalysisOutput analyze(
 			@Parameter(description = "Container for analysis input data.", required = true) CuniInput input) throws WelcomeException {
 
-        DeepAnalysisInput ourInput = CuniInput2DeepAnalysisInput.convert(input);
-        String conll = ourInput.getData().getConll();
-        System.out.println(conll);
+		//DeepAnalysisOutput output = generateDummyResponse(input);
+		
+		DeepAnalysisOutput output = analyzer.analyze(input);
         
-        int turn = 1;
-        if (conll.contains("Sebastià")) {
-            turn = 7;
-        } else if (conll.contains("Karim")) {
-            turn = 5;
-        } else if (conll.contains("apply")) {
-            turn = 3;
-        } else if (conll.contains("Hello")) {
-            turn = 1;
-        } else {
-            turn = 0;
-        }
-        DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
+		return output;
+	}
+	
+	
+	@POST
+	@Path("/analyzePlain")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Operation(summary = "Performs a deep syntactic analysis of the input data.",
+		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",
+		requestBody = @RequestBody(
+						content = @Content(mediaType = "application/json",
+										schema = @Schema(implementation = DeepAnalysisInputPlain.class),
+										examples = {
+											@ExampleObject(name = "Turn 0",
+													value = SAMPLE_INPUT_PLAIN_TURN0),
+											@ExampleObject(name = "Turn 1",
+													value = SAMPLE_INPUT_PLAIN_TURN1)
+										}
+						)
+					),
+		responses = {
+		        @ApiResponse(description = "The deep analysis result.",
+		        			content = @Content(schema = @Schema(implementation = DeepAnalysisOutput.class)
+		        ))
+	})
+	public DeepAnalysisOutput analyze(
+			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInputPlain input) throws WelcomeException {
         
-        output = analyzer.analyze(input);
+		DeepAnalysisOutput output = analyzer.analyze(input);
         
 		return output;
 	}

@@ -27,39 +27,93 @@ import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
  */
 public class WelcomeUIMAUtils {
     
-    public enum AnalysisType { BASIC, FULL }
+    public enum AnalysisType { BASIC, FULL, DEFAULT }
     
     public static IFlowOptions getOptions(AnalysisType type) {
         
         // TODO: Define what components should be enable for BASIC analysis
-        
-        IFlowOptions options = () -> {
-            Map<String, Boolean> flowMap = new HashMap<>();
-
-            flowMap.put(FlowStepName.PARSING.name(), true);
-
-            flowMap.put(FlowStepName.NER.name(), true);
-            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
-
-            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
-            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
-            flowMap.put(FlowStepName.RETOKENIZER.name(), true);
-
-            flowMap.put(FlowStepName.DBPEDIA.name(), true);
-            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
-
-            flowMap.put(FlowStepName.SSYNTS.name(), true);
-            flowMap.put(FlowStepName.DSYNTS.name(), true);
-
-            flowMap.put(FlowStepName.EMOTION.name(), true);
-
-            return flowMap;
-        };
+    	IFlowOptions options;
+    	switch(type) {
+	    	
+	    	case DEFAULT:
+		        options = () -> {
+		            Map<String, Boolean> flowMap = new HashMap<>();
+		
+		            flowMap.put(FlowStepName.PARSING.name(), false);
+		
+		            flowMap.put(FlowStepName.NER.name(), true);
+		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
+		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
+		            flowMap.put(FlowStepName.RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.DBPEDIA.name(), true);
+		            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.SSYNTS.name(), true);
+		            flowMap.put(FlowStepName.DSYNTS.name(), true);
+		
+		            flowMap.put(FlowStepName.EMOTION.name(), true);
+		
+		            return flowMap;
+		        };
+		        break;
+	    	default:
+	    	case FULL:
+		        options = () -> {
+		            Map<String, Boolean> flowMap = new HashMap<>();
+		
+		            flowMap.put(FlowStepName.PARSING.name(), true);
+		
+		            flowMap.put(FlowStepName.NER.name(), true);
+		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
+		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
+		            flowMap.put(FlowStepName.RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.DBPEDIA.name(), true);
+		            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.SSYNTS.name(), true);
+		            flowMap.put(FlowStepName.DSYNTS.name(), true);
+		
+		            flowMap.put(FlowStepName.EMOTION.name(), true);
+		
+		            return flowMap;
+		        };
+		        break;
+    	}
         
         return options;
     }
     
-    public static JCas createJCas(String conll, String language, AnalysisType analysisType) throws WelcomeException {
+    public static JCas createJCas(String text, String language, AnalysisType analysisType) throws WelcomeException {
+
+        try {
+            JCas jCas = JCasFactory.createJCas();
+
+            jCas.setDocumentText(text);
+
+            DocumentMetaData docMetadata = DocumentMetaData.create(jCas);
+            docMetadata.setDocumentId("welcome-document");
+            if(language != null) {
+                docMetadata.setLanguage(language);
+            }
+            
+            IFlowOptions options = WelcomeUIMAUtils.getOptions(analysisType);
+        
+			FlowUtils.annotateFlowOptions(jCas, options);
+            
+            return jCas;
+            
+        } catch (UIMAException|IOException e) {
+            throw new WelcomeException("Error found while creating jCas!", e);
+        }
+    }
+    
+    public static JCas createJCasFromConll(String conll, String language, AnalysisType analysisType) throws WelcomeException {
 
         try {
             JCas jCas = JCasFactory.createJCas();

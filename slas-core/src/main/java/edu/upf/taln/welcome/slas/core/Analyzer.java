@@ -8,11 +8,14 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
+import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiWriter;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
@@ -79,7 +82,7 @@ public class Analyzer {
 	protected final void setupPipeline(AnalysisConfiguration configuration) throws UIMAException {
 
 		try {
-			AnalysisEngineDescription aeDescription = EnglishPipelinePT.getPipelineDescription(configuration);
+			AnalysisEngineDescription aeDescription = EnglishPipelineUD.getPipelineDescription(configuration);
 			pipeline = createEngine(aeDescription);
             
 		} catch (UIMAException e) {
@@ -101,11 +104,52 @@ public class Analyzer {
 		try {
             String language = "en";
             String conll = input.getData().getConll();
+            AnalysisType analysisType = AnalysisType.DEFAULT;
+            
+            JCas jCas = WelcomeUIMAUtils.createJCasFromConll(conll, language, analysisType);
+            
+			//pipeline.process(jCas);
+            
+            AnalysisEngine writer = AnalysisEngineFactory.createEngine(
+    				XmiWriter.class,
+    				XmiWriter.PARAM_TARGET_LOCATION, "src/test/resources/output/xmi/fromConll/",
+    				XmiWriter.PARAM_OVERWRITE, true);
+			writer.process(jCas);
+            
+            DeepAnalysisOutput analysisResult = WelcomeUIMAUtils.extractOutput(jCas);
+			
+			return analysisResult;
+		
+		} catch (Exception e) { // never crash the service, no matter what happens
+			log.error("Error processing document", e);
+			throw new WelcomeException("Error processing document", e);
+		}
+	}
+	
+	/**
+	 * Analyzes a given input
+     * 
+     * @param input
+     * 
+     * @return the analysis output
+     * @throws edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException
+	 */
+	public DeepAnalysisOutput analyze(DeepAnalysisInputPlain input) throws WelcomeException {
+
+		try {
+            String language = "en";
+            String text = input.getData().getText();
             AnalysisType analysisType = AnalysisType.FULL;
             
-            JCas jCas = WelcomeUIMAUtils.createJCas(conll, language, analysisType);
+            JCas jCas = WelcomeUIMAUtils.createJCas(text, language, analysisType);
             
-			pipeline.process(jCas);
+			//pipeline.process(jCas);
+			
+			AnalysisEngine writer = AnalysisEngineFactory.createEngine(
+    				XmiWriter.class,
+    				XmiWriter.PARAM_TARGET_LOCATION, "src/test/resources/output/xmi/fromText/",
+    				XmiWriter.PARAM_OVERWRITE, true);
+			writer.process(jCas);
 			
             DeepAnalysisOutput analysisResult = WelcomeUIMAUtils.extractOutput(jCas);
 			
