@@ -31,5 +31,10 @@
             <artifactId>flow-core</artifactId>
         </dependency>
         
+        <dependency>
+	    	<groupId>edu.upf.taln.utils.pojos</groupId>
+		    <artifactId>common-pojos-uima</artifactId>
+		</dependency>
+        
     </dependencies>    
 </project>

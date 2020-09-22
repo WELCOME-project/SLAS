@@ -2,7 +2,7 @@ package edu.upf.taln.welcome.slas.utils;
 
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.Entity;
-import edu.upf.taln.welcome.slas.commons.output.OutputData;
+import edu.upf.taln.welcome.slas.commons.output.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.Participant;
 import edu.upf.taln.welcome.slas.commons.output.Relation;
 import edu.upf.taln.welcome.slas.commons.output.SpeechAct;
@@ -108,7 +108,7 @@ public class SampleResponses {
         speechActs.add(speechAct1);
         speechActs.add(speechAct2);
         
-        OutputData data = new OutputData();
+        DlaResult data = new DlaResult();
         data.setEntities(entities);
         data.setRelations(relations);
         data.setSpeechActs(speechActs);
@@ -225,7 +225,7 @@ public class SampleResponses {
         speechActs.add(speechAct2);
         
         
-        OutputData data = new OutputData();
+        DlaResult data = new DlaResult();
         data.setEntities(entities);
         data.setRelations(relations);
         data.setSpeechActs(speechActs);
@@ -525,7 +525,7 @@ public class SampleResponses {
         speechActs.add(speechAct3);
         speechActs.add(speechAct4);
         
-        OutputData data = new OutputData();
+        DlaResult data = new DlaResult();
         data.setEntities(entities);
         data.setRelations(relations);
         data.setSpeechActs(speechActs);
@@ -611,7 +611,7 @@ public class SampleResponses {
         List<SpeechAct> speechActs = new ArrayList<>();
         speechActs.add(speechAct1);
         
-        OutputData data = new OutputData();
+        DlaResult data = new DlaResult();
         data.setEntities(entities);
         data.setRelations(relations);
         data.setSpeechActs(speechActs);

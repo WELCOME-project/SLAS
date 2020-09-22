@@ -25,10 +25,6 @@ head.js(
 );
 
 //Services URL's
-/*var enURL = "../v4design-services-en/analyze";
-var esURL = "../v4design-services-es/analyze";
-var elURL = "../v4design-services-el/analyze";
-var deURL = "../v4design-services-de/analyze";*/
 var analyzeURL = "../dla-service/api/dla/analyzePlain";
 var descriptionURL = "../dla-service/api/dla/description";
 
@@ -58,7 +54,7 @@ var coreferenceData = null;
 var tagcloudData = null;
 var emotionData = null;
 
-function translateCall(type, url, input, sourceLanguage, targetLanguage, topic, loadingCallback, endLoadingCallback) {
+function translateCall(type, url, input, sourceLanguage, targetLanguage, loadingCallback, endLoadingCallback) {
 	typeof loadingCallback === 'function' && loadingCallback();
     var jqxhr = $.ajax({
     	headers: { 
@@ -81,7 +77,7 @@ function translateCall(type, url, input, sourceLanguage, targetLanguage, topic, 
 	        })
 		}).done(function (result) {
 	    	if(result["result"]["translation"] != null){
-	    		submitForm(type, analyzeURL, result["result"]["translation"], topic, "en", loadingCallback, endLoadingCallback);
+	    		submitForm(type, analyzeURL, result["result"]["translation"], "en", loadingCallback, endLoadingCallback);
 	    	} else {
 	    		typeof endLoadingCallback === 'function' && endLoadingCallback();
 	    	}
@@ -112,7 +108,7 @@ function translateCall(type, url, input, sourceLanguage, targetLanguage, topic, 
 	    });*/
 }
 
-function submitForm(type, url, input, topicVal, language, loadingCallback, endLoadingCallback) {
+function submitForm(type, url, input, language, loadingCallback, endLoadingCallback) {
     typeof loadingCallback === 'function' && loadingCallback();
     var jqxhr = $.ajax({
 	    	headers: { 
@@ -126,7 +122,7 @@ function submitForm(type, url, input, topicVal, language, loadingCallback, endLo
             data: JSON.stringify({
 	            	meta: {
 		                language: language,
-		                output_level:edu.upf.taln.welcome.slas.commons.input.InputMetadata.OutputLevel.demo
+		                output_level: "demo_welcome"
 		        	},
 		        	data: {
 		        		text: input
@@ -170,13 +166,11 @@ function ajaxCallback(result){
 		"dbpedia_linking",
 		"ner",
 		"babelnet_linking",
-		"coreference_resolver",
         "surface_parsing",
         "deep_parsing",
         "predicate_arguments_parsing",
-        "emotion_detection",
         "triples",
-        "sentence_ranking",
+        //"sentence_ranking",
         "tag_cloud"
     ];
 	result["views"] = views;
@@ -204,23 +198,8 @@ head.ready(function() {
             var language = "en";
             language = $("#languageSelector option:selected").val();
             
-            var topic = null; 
-            if($("#topic").val().trim() !== "") {
-            	topic = $("#topic").val();
-            } 
-            
-            var translate = false;
-            if($("#translateCheck").is(':checked')) {
-            	translate = true;
-            }
-            
-            if (translate) {
-            	translateCall("POST", translateURL, inputText, language, "en", topic, spinButton, unspinButton);
-            } else {
-                submitForm("POST", analyzeURL, inputText, topic, language, spinButton, unspinButton);
-            }
-            
-            
+            submitForm("POST", analyzeURL, inputText, language, spinButton, unspinButton);
+      
         } else {
             event.stopPropagation();
             form.classList.add('was-validated');

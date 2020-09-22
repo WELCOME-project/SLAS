@@ -48,7 +48,7 @@
 	
 		<div class="d-inline-block py-4 px-4 mb-4">
 			<img src="./static/resources/TALN.png" class="float-right pb-2 logo"/>
-  			<span class="header-text">V4Design: </span><span class="header-text no-wrap">UPF text analysis</span>
+  			<span class="header-text">Welcome: </span><span class="header-text no-wrap">UPF text analysis</span>
 		</div>
 		
 		<div class="card mb-4" id="accordion">
@@ -62,16 +62,8 @@
 						<div class="form-group">
 							<label for="languageSelector">Language of text:</label>
 							
-					    	<div class="form-check d-inline-block ml-5">
-								<input class="form-check-input" type="checkbox" id="translateCheck">
-								<label class="form-check-label" for="translateCheck">Translate</label>
-							</div>
-							
 							<select class="form-control mr-sm-2" id="languageSelector">
 					      		<option value="en">English</option>
-					      		<option value="es">Spanish</option>
-					      		<option value="el">Greek</option>
-					      		<option value="de">German</option>
 					    	</select>
 				    	</div>
 					    	
@@ -79,10 +71,6 @@
 							<label for="inputText">Text to analyse:</label>
 				  			<textarea id="inputText" rows = "5" class="form-control" required></textarea>
 				  			<div class="invalid-feedback">Please fill in the textbox.</div>
-						</div>
-						<div class="form-group">
-							<label for="topic">Topic (Optional):</label>
-				  			<input type="text" id="topic" class="form-control" placeholder="DBPedia URI"></input>
 						</div>
 						<div class="float-right mb-4">
 							<button type="submit" class="btn btn-primary btn-lg d-inline-block" id="submitButton" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing">Analyze</button>

@@ -66,9 +66,9 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>edu.upf.glicom.uima</groupId>
-			<artifactId>dbpedia-spotlight</artifactId>
-		</dependency>
+            <groupId>edu.upf.glicom.uima</groupId>
+            <artifactId>spotlight-core</artifactId>
+        </dependency>
 	  	
 	  	<dependency>
 			<groupId>edu.upf.taln.uima</groupId>

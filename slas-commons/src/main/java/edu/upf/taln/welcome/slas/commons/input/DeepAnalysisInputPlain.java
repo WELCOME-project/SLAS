@@ -1,6 +1,9 @@
 package edu.upf.taln.welcome.slas.commons.input;
 
-public class DeepAnalysisInputPlain {
+import com.fasterxml.jackson.annotation.JsonAlias;
+
+public class DeepAnalysisInputPlain implements IAnalysisInput {
+	@JsonAlias("meta")
     private InputMetadata metadata;
     private InputDataPlain data;
 
@@ -12,8 +15,10 @@ public class DeepAnalysisInputPlain {
         this.metadata = metadata;
     }
 
-    public InputDataPlain getData() {
-        return data;
+    public InputData getData() {
+    	InputData input = new InputData();
+    	input.setConll(data.getText());
+        return input;
     }
 
     public void setData(InputDataPlain data) {

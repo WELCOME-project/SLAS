@@ -8,13 +8,13 @@ import javax.validation.constraints.NotNull;
  */
 public class DeepAnalysisOutput {
     @NotNull
-    private OutputData data;
+    private DlaResult data;
 
-    public OutputData getData() {
+    public DlaResult getData() {
         return data;
     }
 
-    public void setData(OutputData data) {
+    public void setData(DlaResult data) {
         this.data = data;
     }
 }

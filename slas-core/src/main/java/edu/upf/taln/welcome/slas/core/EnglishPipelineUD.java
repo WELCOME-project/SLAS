@@ -257,7 +257,7 @@ public class EnglishPipelineUD {
 		
 		AnalysisEngineDescription deepParser = createEngineDescription(
                 DeepParser.class,
-				DeepParser.PARAM_TYPE, "taln",
+				DeepParser.PARAM_TYPE, "ud",
 				DeepParser.PARAM_RUN_DEEP, true,
 				DeepParser.PARAM_RUN_PREDARGS, true,
 				DeepParser.PARAM_RUN_TRIPLES, true);

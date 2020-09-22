@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
  *
  * @author rcarlini
  */
-public class OutputData {
+public class DlaResult {
     
     private List<SpeechAct> speechActs;
     private List<Entity> entities;

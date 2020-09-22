@@ -290,14 +290,14 @@
 			
             <dependency>
                 <groupId>edu.upf.glicom.uima</groupId>
-                <artifactId>dbpedia-spotlight</artifactId>
-                <version>0.12.0</version>
+                <artifactId>spotlight-core</artifactId>
+                <version>0.14.0-SNAPSHOT</version>
             </dependency>
 			
             <dependency>
                 <groupId>edu.upf.taln.uima</groupId>
                 <artifactId>flask_wrapper</artifactId>
-                <version>0.9.0-SNAPSHOT</version>
+                <version>0.10.0-SNAPSHOT</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>annotation-extender</artifactId>
@@ -313,8 +313,38 @@
             <dependency>
                 <groupId>edu.upf.taln.uima.retokenize</groupId>
                 <artifactId>MultiwordRetokenizer</artifactId>
-                <version>0.2.0</version>
+                <version>0.3.0-SNAPSHOT</version>
             </dependency>
+            
+            <dependency>
+		    	<groupId>edu.upf.taln.utils.pojos</groupId>
+			    <artifactId>common-pojos-uima</artifactId>
+			    <version>0.2.0-SNAPSHOT</version>
+			    <exclusions>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-en-default
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-es-default
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			    		<artifactId>
+			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-morphtagger-es-taln
+			    		</artifactId>
+			    	</exclusion>
+			    	<exclusion>
+			    		<groupId>net.sf.meka</groupId>
+			    		<artifactId>meka</artifactId>
+			    	</exclusion>
+			    </exclusions>
+			</dependency>
             
 			<dependency>
 		    	<groupId>edu.upf.taln.utils.pojos</groupId>
