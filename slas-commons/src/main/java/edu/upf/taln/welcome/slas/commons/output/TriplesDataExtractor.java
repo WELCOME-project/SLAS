@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.commons.output.demo;
+package edu.upf.taln.welcome.slas.commons.output;
 
 import java.io.IOException;
 import java.util.ArrayList;

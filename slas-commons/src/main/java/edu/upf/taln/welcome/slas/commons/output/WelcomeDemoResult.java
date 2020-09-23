@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.commons.output.demo;
+package edu.upf.taln.welcome.slas.commons.output;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.sentence.SentenceGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
-import edu.upf.taln.welcome.slas.commons.output.DlaResult;
+import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class WelcomeDemoResult {

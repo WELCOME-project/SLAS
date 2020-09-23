@@ -2,13 +2,14 @@ package edu.upf.taln.welcome.slas.commons.input;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+
 /**
  *
  * @author rcarlini
  */
 public class InputMetadata {
-	public static enum OutputLevel {welcome, demo, demo_welcome, xmi};
-	
+
 	String language;
 	
 	@JsonProperty("output_level")

@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.commons.output.demo;
+package edu.upf.taln.welcome.slas.commons.output;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
@@ -29,10 +29,8 @@ import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
-import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
-import edu.upf.taln.welcome.slas.commons.output.DlaResult;
-import edu.upf.taln.welcome.slas.commons.output.Entity;
-import edu.upf.taln.welcome.slas.commons.output.XmiResult;
+import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
 
 public class OutputGenerator {
 	
@@ -124,26 +122,23 @@ public class OutputGenerator {
 		return result;
 	}
 	
-	public static AnalysisOutput<DlaResult, AnalysisOutputMetadata> generateDlaOutput(InputMetadata metadata, JCas jCas) {
-		AnalysisOutput<DlaResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutput<DlaResult, AnalysisOutputMetadata>();
-		
-		AnalysisOutputMetadata outputMetadata = generateMetadata();
-		analysisResult.setMetadata(outputMetadata);
+	public static DeepAnalysisOutput generateDlaOutput(JCas jCas) {
+		DeepAnalysisOutput analysisResult = new DeepAnalysisOutput();
 		
 		DlaResult result = generateDlaResult(jCas);
-        analysisResult.setResult(result);
+        analysisResult.setData(result);
 		
 		return analysisResult;
 	}
 	
-	public static AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata> generateDemoOutput(String text, InputMetadata metadata, JCas jCas) {
-		AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata>();
+	public static AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> generateDemoOutput(JCas jCas) {
+		AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata>();
 		
 		UUID uuid = UUID.randomUUID();
 		analysisResult.setId(uuid.toString());
-		analysisResult.setText(text);
-		if(metadata.getLanguage() != null) {
-			analysisResult.setLanguage(metadata.getLanguage());
+		analysisResult.setText(jCas.getDocumentText());
+		if(jCas.getDocumentLanguage() != null) {
+			analysisResult.setLanguage(jCas.getDocumentLanguage());
 		}
 		
 		AnalysisOutputMetadata outputMetadata = generateMetadata();
@@ -157,14 +152,14 @@ public class OutputGenerator {
 		return analysisResult;
 	}
 	
-	public static AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata> generateDemoOutputWithDla(String text, InputMetadata metadata, JCas jCas) {
-		AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutput<WelcomeDemoResult, AnalysisOutputMetadata>();
+	public static AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> generateDemoOutputWithDla(JCas jCas) {
+		AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata>();
 		
 		UUID uuid = UUID.randomUUID();
 		analysisResult.setId(uuid.toString());
-		analysisResult.setText(text);
-		if(metadata.getLanguage() != null) {
-			analysisResult.setLanguage(metadata.getLanguage());
+		analysisResult.setText(jCas.getDocumentText());
+		if(jCas.getDocumentLanguage() != null) {
+			analysisResult.setLanguage(jCas.getDocumentLanguage());
 		}
 		
 		AnalysisOutputMetadata outputMetadata = generateMetadata();
@@ -179,13 +174,14 @@ public class OutputGenerator {
 		return analysisResult;
 	}
 	
-	public static AnalysisOutput<XmiResult, AnalysisOutputMetadata> generateXmiOutput(InputMetadata metadata, JCas jCas) {
-		AnalysisOutput<XmiResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutput<XmiResult, AnalysisOutputMetadata>();
+	public static AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata> generateXmiOutput(JCas jCas) {
+		AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata>();
 		
 		UUID uuid = UUID.randomUUID();
 		analysisResult.setId(uuid.toString());
-		if(metadata.getLanguage() != null) {
-			analysisResult.setLanguage(metadata.getLanguage());
+		analysisResult.setText(jCas.getDocumentText());
+		if(jCas.getDocumentLanguage() != null) {
+			analysisResult.setLanguage(jCas.getDocumentLanguage());
 		}
 		
 		AnalysisOutputMetadata outputMetadata = generateMetadata();
@@ -195,5 +191,27 @@ public class OutputGenerator {
 		analysisResult.setResult(result);
 		
 		return analysisResult;
+	}
+	
+	public static DeepAnalysisOutput generateDummyResponse(JCas jcas) {
+		
+		String text = jcas.getDocumentText();
+		
+        System.out.println(text);
+        
+		int turn = 1;
+        if (text.contains("Sebastià")) {
+            turn = 7;
+        } else if (text.contains("Karim")) {
+            turn = 5;
+        } else if (text.contains("apply")) {
+            turn = 3;
+        } else if (text.contains("Hello")) {
+            turn = 1;
+        } else {
+            turn = 0;
+        }
+        DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
+        return output;
 	}
 }

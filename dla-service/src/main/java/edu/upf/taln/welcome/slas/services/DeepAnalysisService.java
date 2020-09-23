@@ -1,7 +1,5 @@
 package edu.upf.taln.welcome.slas.services;
 
-import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +15,20 @@ import javax.ws.rs.core.MediaType;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.CuniInput;
+import edu.upf.taln.welcome.slas.commons.input.CuniInput2DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
+import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
+import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
+import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
+import edu.upf.taln.welcome.slas.core.Analyzer;
+import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
+import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -24,21 +36,6 @@ import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-
-import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput2DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
-import edu.upf.taln.welcome.slas.commons.output.demo.AnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput2DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
-import edu.upf.taln.welcome.slas.commons.input.InputData;
-import edu.upf.taln.welcome.slas.core.Analyzer;
-import edu.upf.taln.welcome.slas.utils.SampleResponses;
 
 
 /**
@@ -195,27 +192,6 @@ public class DeepAnalysisService {
 		return configurations;
 	}
 	
-	public DeepAnalysisOutput generateDummyResponse(DeepAnalysisInput input) {
-		
-		String conll = input.getData().getConll();
-        System.out.println(conll);
-        
-		int turn = 1;
-        if (conll.contains("Sebastià")) {
-            turn = 7;
-        } else if (conll.contains("Karim")) {
-            turn = 5;
-        } else if (conll.contains("apply")) {
-            turn = 3;
-        } else if (conll.contains("Hello")) {
-            turn = 1;
-        } else {
-            turn = 0;
-        }
-        DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
-        return output;
-	}
-	
 	@POST
 	@Path("/analyze")
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -232,16 +208,19 @@ public class DeepAnalysisService {
 					),
 		responses = {
 		        @ApiResponse(description = "The deep analysis result.",
-		        			content = @Content(schema = @Schema(implementation = AnalysisOutput.class)
+		        			content = @Content(schema = @Schema(implementation = DeepAnalysisOutput.class)
 		        ))
 	})
-	public AnalysisOutput analyze(
+	public IAnalysisOutput analyze(
 			@Parameter(description = "Container for analysis input data.", required = true) CuniInput input) throws WelcomeException {
-
-		//DeepAnalysisOutput output = generateDummyResponse(input);
 		
 		DeepAnalysisInput ourInput = CuniInput2DeepAnalysisInput.convert(input);
-		AnalysisOutput output = analyzer.analyze(ourInput);
+		
+		InputType inputType = InputType.conll;
+		String text = ourInput.getData().getConll();
+		AnalysisType analysisType = AnalysisType.DEFAULT;
+		OutputLevel outputlevel = ourInput.getMetadata().getOutputLevel();
+		IAnalysisOutput output = analyzer.analyze(inputType, analysisType, text, outputlevel);
         
 		return output;
 	}
@@ -266,15 +245,17 @@ public class DeepAnalysisService {
 					),
 		responses = {
 		        @ApiResponse(description = "The deep analysis result.",
-		        			content = @Content(schema = @Schema(implementation = AnalysisOutput.class)
+		        			content = @Content(schema = @Schema(implementation = AnalysisOutputImpl.class)
 		        ))
 	})
-	public AnalysisOutput analyze(
+	public IAnalysisOutput analyze(
 			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
-
-		//DeepAnalysisOutput output = generateDummyResponse(input);
 		
-		AnalysisOutput output = analyzer.analyze(input);
+		InputType inputType = InputType.conll;
+		String text = input.getData().getConll();
+		AnalysisType analysisType = AnalysisType.DEFAULT;
+		OutputLevel outputlevel = input.getMetadata().getOutputLevel();
+		IAnalysisOutput output = analyzer.analyze(inputType, analysisType, text, outputlevel);
         
 		return output;
 	}
@@ -300,13 +281,17 @@ public class DeepAnalysisService {
 					),
 		responses = {
 		        @ApiResponse(description = "The deep analysis result.",
-		        			content = @Content(schema = @Schema(implementation = AnalysisOutput.class)
+		        			content = @Content(schema = @Schema(implementation = AnalysisOutputImpl.class)
 		        ))
 	})
-	public AnalysisOutput analyze(
+	public IAnalysisOutput analyze(
 			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInputPlain input) throws WelcomeException {
         
-		AnalysisOutput output = analyzer.analyze(input);
+		InputType inputType = InputType.text;
+		String text = input.getData().getText();
+		AnalysisType analysisType = AnalysisType.FULL;
+		OutputLevel outputlevel = input.getMetadata().getOutputLevel();
+		IAnalysisOutput output = analyzer.analyze(inputType, analysisType, text, outputlevel);
         
 		return output;
 	}

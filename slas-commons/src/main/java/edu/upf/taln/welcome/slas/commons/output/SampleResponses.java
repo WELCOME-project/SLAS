@@ -1,13 +1,13 @@
-package edu.upf.taln.welcome.slas.utils;
+package edu.upf.taln.welcome.slas.commons.output;
 
-import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.Entity;
-import edu.upf.taln.welcome.slas.commons.output.DlaResult;
-import edu.upf.taln.welcome.slas.commons.output.Participant;
-import edu.upf.taln.welcome.slas.commons.output.Relation;
-import edu.upf.taln.welcome.slas.commons.output.SpeechAct;
 import java.util.ArrayList;
 import java.util.List;
+
+import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
+import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
 
 /**
  *

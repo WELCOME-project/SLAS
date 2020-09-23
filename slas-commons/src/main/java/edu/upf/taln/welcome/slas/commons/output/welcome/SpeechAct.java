@@ -1,23 +1,19 @@
-package edu.upf.taln.welcome.slas.commons.output;
+package edu.upf.taln.welcome.slas.commons.output.welcome;
 
+import java.util.List;
 import javax.validation.constraints.NotNull;
 
 /**
  *
  * @author rcarlini
  */
-public class Entity {
-    
+public class SpeechAct {
     @NotNull
     private String id;
-
     @NotNull
     private String type;
-
-    @NotNull
     private String anchor;
-    private String link;
-    private double confidence;
+    private List<String> entities;
 
     public String getId() {
         return id;
@@ -43,19 +39,11 @@ public class Entity {
         this.anchor = anchor;
     }
 
-    public String getLink() {
-        return link;
+    public List<String> getEntities() {
+        return entities;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setEntities(List<String> entities) {
+        this.entities = entities;
     }
-
-    public double getConfidence() {
-        return confidence;
-    }
-
-    public void setConfidence(double confidence) {
-        this.confidence = confidence;
-    }    
 }

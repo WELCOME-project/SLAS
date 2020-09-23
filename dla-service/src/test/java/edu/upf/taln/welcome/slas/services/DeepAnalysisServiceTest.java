@@ -11,8 +11,8 @@ import edu.upf.taln.welcome.slas.commons.input.CuniInput;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
+import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.demo.AnalysisOutput;
 
 /**
  *
@@ -32,7 +32,7 @@ public class DeepAnalysisServiceTest {
         DeepAnalysisService instance = new DeepAnalysisService();
         
         String expResult = FileUtils.readFileToString(expected, "utf-8");
-        AnalysisOutput output = instance.analyze(input);
+        AnalysisOutputImpl output = (AnalysisOutputImpl) instance.analyze(input);
         String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(output);
         assertEquals(expResult, result);
     }

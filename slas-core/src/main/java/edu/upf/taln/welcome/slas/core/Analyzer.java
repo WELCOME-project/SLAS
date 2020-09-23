@@ -11,12 +11,12 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
-import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.demo.AnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
+import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
+import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
-import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
 
 
@@ -97,59 +97,16 @@ public class Analyzer {
      * @return the analysis output
      * @throws edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException
 	 */
-	public AnalysisOutput analyze(DeepAnalysisInput input) throws WelcomeException {
+	public IAnalysisOutput analyze(InputType inputType, AnalysisType analysisType, String text, OutputLevel outputLevel) throws WelcomeException {
 
 		try {
             String language = "en";
-            String conll = input.getData().getConll();
-            AnalysisType analysisType = AnalysisType.DEFAULT;
             
-            JCas jCas = WelcomeUIMAUtils.createJCasFromConll(conll, language, analysisType);
+            JCas jCas = JCasWelcomeFactory.createJCas(inputType, text, language, analysisType);
             
             pipeline.process(jCas);
             
-            /*AnalysisEngine writer = AnalysisEngineFactory.createEngine(
-    				XmiWriter.class,
-    				XmiWriter.PARAM_TARGET_LOCATION, "/home/ivan/git/welcome-slas/dla-service/src/test/resources/output/xmi/fromConll/",
-    				XmiWriter.PARAM_OVERWRITE, true);
-			writer.process(jCas);*/
-            
-            AnalysisOutput analysisResult = WelcomeUIMAUtils.extractOutput(jCas, input);
-			
-			return analysisResult;
-		
-		} catch (Exception e) { // never crash the service, no matter what happens
-			log.error("Error processing document", e);
-			throw new WelcomeException("Error processing document", e);
-		}
-	}
-	
-	/**
-	 * Analyzes a given input
-     * 
-     * @param input
-     * 
-     * @return the analysis output
-     * @throws edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException
-	 */
-	public AnalysisOutput analyze(DeepAnalysisInputPlain input) throws WelcomeException {
-
-		try {
-            String language = "en";
-            String text = input.getData().getConll();
-            AnalysisType analysisType = AnalysisType.FULL;
-            
-            JCas jCas = WelcomeUIMAUtils.createJCas(text, language, analysisType);
-			
-            pipeline.process(jCas);
-            
-			/*AnalysisEngine writer = AnalysisEngineFactory.createEngine(
-    				XmiWriter.class,
-    				XmiWriter.PARAM_TARGET_LOCATION, "/home/ivan/git/welcome-slas/dla-service/src/test/resources/output/xmi/fromText/",
-    				XmiWriter.PARAM_OVERWRITE, true);
-			writer.process(jCas);*/
-
-            AnalysisOutput analysisResult = WelcomeUIMAUtils.extractOutput(jCas, input);
+            IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, outputLevel);
 			
 			return analysisResult;
 		

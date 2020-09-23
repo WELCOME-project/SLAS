@@ -1,4 +1,4 @@
-package edu.upf.taln.welcome.slas.commons.output;
+package edu.upf.taln.welcome.slas.commons.output.welcome;
 
 import java.util.List;
 import javax.validation.constraints.NotNull;

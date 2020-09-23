@@ -1,6 +1,6 @@
-package edu.upf.taln.welcome.slas.commons.output.demo;
+package edu.upf.taln.welcome.slas.commons.output;
 
-public class AnalysisOutput<T, S> {
+public class AnalysisOutputImpl<T, S> implements IAnalysisOutput{
 	
 	protected String id;
 	protected String text;
@@ -10,7 +10,7 @@ public class AnalysisOutput<T, S> {
 	
 	protected S metadata;
 	
-	public AnalysisOutput(){
+	public AnalysisOutputImpl(){
 	}
 
 	public String getId() {

@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.input;
 
-import edu.upf.taln.welcome.slas.commons.input.InputMetadata.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 
 public class CuniInput2DeepAnalysisInput {
 
@@ -13,6 +13,7 @@ public class CuniInput2DeepAnalysisInput {
 		InputMetadata meta = new InputMetadata();
 		meta.setOutputLevel(OutputLevel.welcome);
 		meta.setLanguage(originalInput.getModel());
+		ourInput.setMetadata(meta);
 		
 		return ourInput;
 	}
