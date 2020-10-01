@@ -24,14 +24,11 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.input.CuniInput;
+import edu.upf.taln.welcome.slas.commons.input.CuniInput2DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
-import edu.upf.taln.welcome.slas.commons.output.OutputData;
 import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.Entity;
 import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
-import edu.upf.taln.welcome.slas.commons.output.Participant;
-import edu.upf.taln.welcome.slas.commons.output.Relation;
-import edu.upf.taln.welcome.slas.commons.output.SpeechAct;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.utils.SampleResponses;
 
@@ -45,6 +42,12 @@ import edu.upf.taln.welcome.slas.utils.SampleResponses;
 @Produces(MediaType.APPLICATION_JSON)
 public class DeepAnalysisService {
 
+	private static final String SAMPLE_CUNI_INPUT_TURN0 = "{\n" + 
+			"  \"model\": \"en\",\n" + 
+			"  \"acknowledgements\": [\"http://ufal.mff.cuni.cz/udpipe#udpipe_acknowledgements\", \"welcome-ud-2.5-191206\" ],\n" + 
+			"    \"result\": \"# newdoc\\n# newpar\\n# sent_id = 1\\n# text = Hello World\\n1\\tHello\\thello\\tINTJ\\tUH\\t_\\t2\\tdiscourse\\t_\\t_\\n2\\tWorld\\tWorld\\tPROPN\\tNNP\\tNumber=Sing\\t0\\troot\\t_\\tSpaceAfter=No\\n\\n\" \n" + 
+			"}";    
+    
 	private static final String SAMPLE_INPUT_TURN0 = "{\n" + 
 			"  \"metadata\": {},\n" + 
 			"  \"data\": {\n" + 
@@ -128,12 +131,10 @@ public class DeepAnalysisService {
 		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",
 		requestBody = @RequestBody(
 						content = @Content(mediaType = "application/json",
-										schema = @Schema(implementation = DeepAnalysisInput.class),
+										schema = @Schema(implementation = CuniInput.class),
 										examples = {
 											@ExampleObject(name = "Turn 0",
-													value = SAMPLE_INPUT_TURN0),
-											@ExampleObject(name = "Turn 1",
-													value = SAMPLE_INPUT_TURN1)
+													value = SAMPLE_CUNI_INPUT_TURN0)
 										}
 						)
 					),
@@ -143,9 +144,10 @@ public class DeepAnalysisService {
 		        ))
 	})
 	public DeepAnalysisOutput analyze(
-			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
+			@Parameter(description = "Container for analysis input data.", required = true) CuniInput input) throws WelcomeException {
 
-        String conll = input.getData().getConll();
+        DeepAnalysisInput ourInput = CuniInput2DeepAnalysisInput.convert(input);
+        String conll = ourInput.getData().getConll();
         System.out.println(conll);
         
         int turn = 1;

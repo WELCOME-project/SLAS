@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.upf.taln.welcome.slas.commons.input.CuniInput;
 
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
@@ -24,7 +25,7 @@ public class DeepAnalysisServiceTest {
      * @param expected
      * @throws java.lang.Exception
      */
-    public void testSample(DeepAnalysisInput input, File expected) throws Exception {
+    public void testSample(CuniInput input, File expected) throws Exception {
         
         ObjectMapper mapper = new ObjectMapper();
         DeepAnalysisService instance = new DeepAnalysisService();
@@ -38,12 +39,8 @@ public class DeepAnalysisServiceTest {
     @Test
     public void testSampleInitialExtrapolateTurn() throws Exception {
 
-        InputData data = new InputData();
-        InputMetadata metadata = new InputMetadata();
-        //metadata.setDialogueTurn(1);
-        DeepAnalysisInput input = new DeepAnalysisInput();
-        input.setMetadata(metadata);
-        input.setData(data);
+        CuniInput input = new CuniInput();
+        input.setModel("en");
 
         String conll1 = "# sent_id = 1\n" +
             "# text = Hello, can you hear me?\n" +
@@ -54,7 +51,7 @@ public class DeepAnalysisServiceTest {
             "5	hear	hear	VERB	VB	VerbForm=Inf	0	root	_	_\n" +
             "6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No\n" +
             "7	?	?	PUNCT	.	_	5	punct	_	SpacesAfter=\\n\n";
-        data.setConll(conll1);
+        input.setResult(conll1);
         File turn1File = new File("src/test/resources/initial/dla-output_turn0.json");
         testSample(input, turn1File);
 
@@ -73,7 +70,7 @@ public class DeepAnalysisServiceTest {
             "11	Reception	reception	NOUN	NN	Number=Sing	12	compound	_	_\n" +
             "12	Service	service	NOUN	NN	Number=Sing	7	obl	_	SpaceAfter=No\n" +
             "13	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\\n\n";
-        data.setConll(conll2);
+        input.setResult(conll2);
         File turn3File = new File("src/test/resources/initial/dla-output_turn1.json");
         testSample(input, turn3File);
 
@@ -111,7 +108,7 @@ public class DeepAnalysisServiceTest {
             "7	with	with	ADP	IN	_	8	case	_	_\n" +
             "8	friends	friend	NOUN	NNS	Number=Plur	6	obl	_	SpaceAfter=No\n" +
             "9	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\\n\n";
-        data.setConll(conll3);
+        input.setResult(conll3);
         File turn5File = new File("src/test/resources/initial/dla-output_turn2.json");
         testSample(input, turn5File);
 
@@ -125,7 +122,7 @@ public class DeepAnalysisServiceTest {
             "6	Sebastià	Sebastià	NOUN	NN	Number=Sing	7	compound	_	_\n" +
             "7	66	66	NUM	CD	NumType=Card	0	root	_	SpaceAfter=No\n" +
             "8	.	.	PUNCT	.	_	7	punct	_	SpacesAfter=\\n\n";
-        data.setConll(conll4);
+        input.setResult(conll4);
         File turn7File = new File("src/test/resources/initial/dla-output_turn3.json");
         testSample(input, turn7File);
     }    
