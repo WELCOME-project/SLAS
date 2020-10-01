@@ -52,12 +52,6 @@ public class DeepAnalysisService {
 			"  \"acknowledgements\": [\"http://ufal.mff.cuni.cz/udpipe#udpipe_acknowledgements\", \"welcome-ud-2.5-191206\" ],\n" + 
 			"    \"result\": \"# newdoc\\n# newpar\\n# sent_id = 1\\n# text = Hello World\\n1\\tHello\\thello\\tINTJ\\tUH\\t_\\t2\\tdiscourse\\t_\\t_\\n2\\tWorld\\tWorld\\tPROPN\\tNNP\\tNumber=Sing\\t0\\troot\\t_\\tSpaceAfter=No\\n\\n\" \n" + 
 			"}";
-
-	private static final String SAMPLE_CUNI_INPUT_TURN0 = "{\n" + 
-			"  \"model\": \"en\",\n" + 
-			"  \"acknowledgements\": [\"http://ufal.mff.cuni.cz/udpipe#udpipe_acknowledgements\", \"welcome-ud-2.5-191206\" ],\n" + 
-			"    \"result\": \"# newdoc\\n# newpar\\n# sent_id = 1\\n# text = Hello World\\n1\\tHello\\thello\\tINTJ\\tUH\\t_\\t2\\tdiscourse\\t_\\t_\\n2\\tWorld\\tWorld\\tPROPN\\tNNP\\tNumber=Sing\\t0\\troot\\t_\\tSpaceAfter=No\\n\\n\" \n" + 
-			"}";    
     
 	private static final String SAMPLE_INPUT_TURN0 = "{\n" + 
 			"  \"metadata\": {" +
