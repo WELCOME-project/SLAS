@@ -11,7 +11,7 @@
     <artifactId>slas-commons</artifactId>
     <packaging>jar</packaging>
     
-	<name>Welcome SLAS Sommons</name>
+	<name>Welcome SLAS Commons</name>
     
     <dependencies>
         
