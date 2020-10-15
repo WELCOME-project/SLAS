@@ -167,7 +167,7 @@ function ajaxCallback(result){
 		"ner",
 		"babelnet_linking",
         "surface_parsing",
-        "deep_parsing",
+        //"deep_parsing",
         "predicate_arguments_parsing",
         "triples",
         //"sentence_ranking",
