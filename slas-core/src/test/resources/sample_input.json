@@ -1,0 +1,8 @@
+{
+    "metadata": {
+        "output_level": "welcome"
+    },
+    "data": {
+        "conll": "# newdoc\n# newpar\n# sent_id = 1\n# text = Hello World\n1\tHello\thello\tINTJ\tUH\t_\t2\tdiscourse\t_\t_\n2\tWorld\tWorld\tPROPN\tNNP\tNumber=Sing\t0\troot\t_\tSpaceAfter=No\n\n"
+    }
+}
