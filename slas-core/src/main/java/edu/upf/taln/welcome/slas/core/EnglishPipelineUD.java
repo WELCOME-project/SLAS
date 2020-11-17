@@ -4,6 +4,8 @@ import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDesc
 import static org.apache.uima.fit.factory.ExternalResourceFactory.createExternalResourceDescription;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
@@ -13,24 +15,16 @@ import org.apache.uima.flow.FlowControllerDescription;
 import org.apache.uima.resource.ExternalResourceDescription;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.dbpedia.spotlight.uima.SpotlightAnnotator;
+import org.dkpro.core.udpipe.UDPipeParser;
+import org.dkpro.core.udpipe.UDPipePosTagger;
+import org.dkpro.core.udpipe.UDPipeSegmenter;
 
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
-import de.tudarmstadt.ukp.dkpro.core.matetools.MateLemmatizer;
-import de.tudarmstadt.ukp.dkpro.core.matetools.MateMorphTagger;
-import de.tudarmstadt.ukp.dkpro.core.nlp4j.Nlp4JDependencyParser;
-import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordCoreferenceResolver;
-import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordParser;
-import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordPosTagger;
-import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordSegmenter;
 import de.tudarmstadt.ukp.dkpro.wsd.algorithm.MostFrequentSenseBaseline;
 import de.tudarmstadt.ukp.dkpro.wsd.annotator.WSDAnnotatorIndividualBasic;
 import de.tudarmstadt.ukp.dkpro.wsd.resource.WSDResourceIndividualBasic;
-
-import edu.stanford.nlp.process.WordToSentenceProcessor.NewlineIsSentenceBreak;
-
 import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.core.DeepParser;
-import edu.upf.taln.textplanning.uima.TextPlanningAnnotator;
 import edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline;
 import edu.upf.taln.uima.disambiguation.core.WSDAnnotatorCollectiveContext;
 import edu.upf.taln.uima.disambiguation.core.WSDResourceCollectiveCandidate;
@@ -43,55 +37,47 @@ import edu.upf.taln.uima.flow.AnnotationFlowController;
 import edu.upf.taln.uima.retokenize.MultiwordRetokenizer;
 import edu.upf.taln.uima.wsd.annotation_extender.core.WSDResultExtender;
 import edu.upf.taln.uima.wsd.item_annotator.WSDItemAnnotator;
+import edu.upf.taln.welcome.slas.commons.analysis.FlowItem;
 import edu.upf.taln.welcome.slas.commons.analysis.FlowStepName;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
-
 import it.uniroma1.lcl.jlt.util.Language;
 
 public class EnglishPipelineUD {
 	
 	private static final String LANGUAGE = "en";
-    
-    static ArrayList<String> names = new ArrayList<>();
-    
-	private static AnalysisEngineDescription getPreprocessDescription() throws ResourceInitializationException {
+        
+	private static FlowItem getPreprocessDescription() throws ResourceInitializationException {
         
 		AnalysisEngineDescription segmenter = createEngineDescription(
-				StanfordSegmenter.class, 
-				StanfordSegmenter.PARAM_NEWLINE_IS_SENTENCE_BREAK, NewlineIsSentenceBreak.ALWAYS,
-	    		StanfordSegmenter.PARAM_LANGUAGE, LANGUAGE);
+				UDPipeSegmenter.class, 
+				//UDPipeSegmenter.PARAM_NEWLINE_IS_SENTENCE_BREAK, NewlineIsSentenceBreak.ALWAYS,
+				UDPipeSegmenter.PARAM_LANGUAGE, LANGUAGE);
         
-		AnalysisEngineDescription pos = createEngineDescription(
-				StanfordPosTagger.class,
-				StanfordPosTagger.PARAM_LANGUAGE, LANGUAGE,
-				StanfordPosTagger.PARAM_VARIANT, "taln-ud");
-        
-		AnalysisEngineDescription lemma = createEngineDescription(
-				MateLemmatizer.class,
-				MateLemmatizer.PARAM_LANGUAGE, LANGUAGE,
-				MateLemmatizer.PARAM_VARIANT, "ewt");
-		
-		AnalysisEngineDescription morph = createEngineDescription(
-				MateMorphTagger.class,
-				MateMorphTagger.PARAM_LANGUAGE, LANGUAGE,
-				MateMorphTagger.PARAM_VARIANT, "taln-ud");
-		
-		names.add(FlowStepName.PARSING.name());
-		return createEngineDescription(segmenter, pos, lemma, morph);	
+		/***
+		 * does PoS, morph, lemma
+		 */
+		AnalysisEngineDescription posMorphLemma = createEngineDescription(
+				UDPipePosTagger.class,
+				UDPipePosTagger.PARAM_LANGUAGE, LANGUAGE
+				//UDPipePosTagger.PARAM_VARIANT, "taln-ud"
+				);
+        		
+		//return createEngineDescription(segmenter, pos, lemma, morph);
+		return new FlowItem(createEngineDescription(segmenter, posMorphLemma),FlowStepName.PARSING.name());
 	}
 	
-	private static AnalysisEngineDescription getParsingDescription() throws ResourceInitializationException {
+	private static FlowItem getParsingDescription() throws ResourceInitializationException {
         
 		AnalysisEngineDescription parserDescription = createEngineDescription(
-				Nlp4JDependencyParser.class, 
-				Nlp4JDependencyParser.PARAM_LANGUAGE, LANGUAGE,
-				Nlp4JDependencyParser.PARAM_VARIANT, "ewt-ud");
+				UDPipeParser.class, 
+				UDPipeParser.PARAM_LANGUAGE, LANGUAGE
+				//UDPipeParser.PARAM_VARIANT, "ewt-ud"
+				);
         
-		names.add(FlowStepName.SSYNTS.name());
-        return parserDescription;
+        return new FlowItem(parserDescription,FlowStepName.SSYNTS.name());
 	}
 	
-	private static AnalysisEngineDescription getConceptExtractionDescription(AnalysisConfiguration configuration) throws ResourceInitializationException{
+	private static FlowItem getConceptExtractionDescription(AnalysisConfiguration configuration) throws ResourceInitializationException{
         
 		AnalysisEngineDescription spans = createEngineDescription(
 				ConceptExtractorAnnotator.class,
@@ -105,11 +91,10 @@ public class EnglishPipelineUD {
 				WSDItemAnnotator.class, 
 				WSDItemAnnotator.PARAM_CLASS_NAMES, annotationClasses);
 		
-		names.add(FlowStepName.CONCEPT_CANDIDATES.name());
-        return createEngineDescription(spans, candidates);
+        return new FlowItem (createEngineDescription(spans, candidates),FlowStepName.CONCEPT_CANDIDATES.name());
 	}
 	
-	private static AnalysisEngineDescription getFirstSenseDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+	private static FlowItem getFirstSenseDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
 		
 		ExternalResourceDescription BabelNet = createExternalResourceDescription(BabelnetSenseInventoryResource.class, 
 				BabelnetSenseInventoryResource.PARAM_BABELNET_CONFIGPATH, configuration.getBabelnetConfigPath(), 
@@ -130,11 +115,10 @@ public class EnglishPipelineUD {
 		
 		AnalysisEngineDescription babelnet = createEngineDescription(senseDisambiguation, extender);
         
-		names.add(FlowStepName.CONCEPT_DESAMBIGUATION.name());
-		return babelnet;
+		return new FlowItem(babelnet,FlowStepName.CONCEPT_DESAMBIGUATION.name());
 	}
 	
-	private static AnalysisEngineDescription getTalnDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+	private static FlowItem getTalnDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
 		
 		ExternalResourceDescription babelnetResource = createExternalResourceDescription(BabelnetSenseInventoryResource.class,
 				BabelnetSenseInventoryResource.PARAM_BABELNET_CONFIGPATH, configuration.getBabelnetConfigPath(),
@@ -162,51 +146,46 @@ public class EnglishPipelineUD {
 
 		AnalysisEngineDescription agregate = createEngineDescription(senseDisambiguation, extender);
 		
-		names.add(FlowStepName.CONCEPT_DESAMBIGUATION.name());
-		return agregate;
+		return new FlowItem(agregate,FlowStepName.CONCEPT_DESAMBIGUATION.name());
 	}
 	
-	private static AnalysisEngineDescription getDisambiguatedSensesRetokenizerDescription() throws ResourceInitializationException {
+	private static FlowItem getDisambiguatedSensesRetokenizerDescription() throws ResourceInitializationException {
         
 		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
 				MultiwordRetokenizer.class,
 				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult");
 		
-		names.add(FlowStepName.RETOKENIZER.name());
-		return retokenizer;
+		return new FlowItem(retokenizer,FlowStepName.RETOKENIZER.name());
 	}
 	
-	private static AnalysisEngineDescription getNameEntityRetokenizerDescription() throws ResourceInitializationException {
+	private static FlowItem getNameEntityRetokenizerDescription() throws ResourceInitializationException {
         
 		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
 				MultiwordRetokenizer.class,
 				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
 		
-		names.add(FlowStepName.NER_RETOKENIZER.name());
-		return retokenizer;
+		return new FlowItem(retokenizer,FlowStepName.NER_RETOKENIZER.name());
 	}
 	
-	private static AnalysisEngineDescription getDBPediaRetokenizerDescription() throws ResourceInitializationException {
+	private static FlowItem getDBPediaRetokenizerDescription() throws ResourceInitializationException {
         
 		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
 				MultiwordRetokenizer.class,
 				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "org.dbpedia.spotlight.uima.types.TopDBpediaResource");
 		
-		names.add(FlowStepName.DBPEDIA_RETOKENIZER.name());
-		return retokenizer;
+		return new FlowItem(retokenizer,FlowStepName.DBPEDIA_RETOKENIZER.name());
 	}
 	
-	private static AnalysisEngineDescription getNERDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+	private static FlowItem getNERDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
         
 		AnalysisEngineDescription flaskNER = AnalysisEngineFactory.createEngineDescription(
 				NERAnnotator.class,
 				NERAnnotator.PARAM_FLASK_URL, configuration.getNerUrl());
 		
-		names.add(FlowStepName.NER.name());
-		return flaskNER;
+		return new FlowItem(flaskNER,FlowStepName.NER.name());
 	}
 	
-	private static AnalysisEngineDescription getEmotionDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+	private static FlowItem getEmotionDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
         
 		AnalysisEngineDescription flaskNER = AnalysisEngineFactory.createEngineDescription(
 				EmotionAnnotator.class,
@@ -214,8 +193,7 @@ public class EnglishPipelineUD {
 				EmotionAnnotator.PARAM_SKIP_ON_SERVER_ERROR, false, 
 				EmotionAnnotator.PARAM_SCOPE, "sentence");
 		
-		names.add(FlowStepName.EMOTION.name());
-		return flaskNER;
+		return new FlowItem(flaskNER,FlowStepName.EMOTION.name());
 	}
 
     public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
@@ -225,19 +203,19 @@ public class EnglishPipelineUD {
 			configuration = new AnalysisConfiguration();
         }
 		
-		ArrayList<AnalysisEngineDescription> components = new ArrayList<>();
+		List<FlowItem> flowItems = new ArrayList<FlowItem>();
         
-		components.add(getPreprocessDescription());
+		flowItems.add(getPreprocessDescription());
 				
-		components.add(getNERDescription(configuration));
+		flowItems.add(getNERDescription(configuration));
 		 
-		components.add(getConceptExtractionDescription(configuration));
+		flowItems.add(getConceptExtractionDescription(configuration));
 		
 		if (configuration.getBabelnetConfigPath() != null) {
 			if(configuration.getRankingPropertiesFile() == null || configuration.getCompactDictionaryPath() == null) {
-				components.add(getFirstSenseDisambiguationDescription(configuration));
+				flowItems.add(getFirstSenseDisambiguationDescription(configuration));
 			} else {
-				components.add(getTalnDisambiguationDescription(configuration));
+				flowItems.add(getTalnDisambiguationDescription(configuration));
 			}
 		}
 		
@@ -246,14 +224,13 @@ public class EnglishPipelineUD {
 				SpotlightAnnotator.PARAM_FUNCTION, "annotate",
 				SpotlightAnnotator.PARAM_CONFIDENCE, 0.35f,
 				SpotlightAnnotator.PARAM_ALL_CANDIDATES, true);
-		components.add(dbpedia);
-		names.add(FlowStepName.DBPEDIA.name());
+		flowItems.add(new FlowItem(dbpedia,FlowStepName.DBPEDIA.name()));
 		
-		components.add(getDBPediaRetokenizerDescription());
-		components.add(getNameEntityRetokenizerDescription());
-        components.add(getDisambiguatedSensesRetokenizerDescription());
+		flowItems.add(getDBPediaRetokenizerDescription());
+		flowItems.add(getNameEntityRetokenizerDescription());
+		flowItems.add(getDisambiguatedSensesRetokenizerDescription());
         
-        components.add(getParsingDescription());
+		flowItems.add(getParsingDescription());
 		
 		AnalysisEngineDescription deepParser = createEngineDescription(
                 DeepParser.class,
@@ -261,11 +238,13 @@ public class EnglishPipelineUD {
 				DeepParser.PARAM_RUN_DEEP, true,
 				DeepParser.PARAM_RUN_PREDARGS, true,
 				DeepParser.PARAM_RUN_TRIPLES, true);
-		components.add(deepParser);
-		names.add(FlowStepName.DSYNTS.name());
+		flowItems.add(new FlowItem(deepParser,FlowStepName.DSYNTS.name()));
 				
 		FlowControllerDescription fcd = FlowControllerFactory.createFlowControllerDescription(AnnotationFlowController.class); 
-	    AnalysisEngineDescription description = createEngineDescription(components, names, null, null, fcd);
+	    AnalysisEngineDescription description = createEngineDescription(
+	    		flowItems.stream().map(FlowItem::getComponent).collect(Collectors.toList()),
+	    		flowItems.stream().map(FlowItem::getName).collect(Collectors.toList()),
+	    		null, null, fcd);
 		
 		return description;
 	}

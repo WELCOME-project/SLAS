@@ -1,0 +1,54 @@
+version: '3.2'
+services:
+  welcome-en:
+    image: maven-taln.upf.edu/welcome/dla:2020-11-16
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 20GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-dla.${DOMAIN}"
+        - "traefik.port=8080"
+    volumes:
+      - type: bind
+        source: "/resources/babelconfig-4.0.1"
+        target: "/resources/babelconfig-4.0.1"
+        read_only: true
+      - type: bind
+        source: "/resources/BabelNet-4.0.1"
+        target: "/resources/BabelNet-4.0.1"
+        read_only: true
+      - type: bind
+        source: "/resources/BabelNet-4.0.1_en.cache"
+        target: "/resources/BabelNet-4.0.1_en.cache"
+        read_only: true
+      - type: bind
+        source: "/resources/embeddings/cc.en.300.ra"
+        target: "/resources/cc.en.300.ra"
+        read_only: true
+#      - type: bind
+#        source: "/resources/embeddings/glove.840B.300d.ra"
+#        target: "/resources/glove.840B.300d.ra"
+#        read_only: true
+      - type: bind
+        source: "/resources/disambiguation_properties-resources.en.txt"
+        target: "/resources/disambiguation_properties-resources.en.txt"
+        read_only: true
+    environment:
+      - DBPEDIA_ENDPOINT=http://spotlight-en.p.taln.ml/rest
+      #- CONCEPT_URL=http://concepts-en.p.taln.ml
+      - CONCEPT_URL=http://concepts-en.v.taln.ml
+      - NER_URL=http://ner_spacy_en.v.taln.ml
+      - BABELNET_CONFIG=/resources/babelconfig-4.0.1
+      - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
+      - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt
+      - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
+networks:
+  welcomenet:
+  traefik:
+    external: true
