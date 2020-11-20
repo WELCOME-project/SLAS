@@ -35,7 +35,9 @@ while true; do
     esac
 done
 
-mvn -U clean package -DskipTests
+mvn -U clean install package -DskipTests
 export TAG=$tag
 
-docker build -t registry.gitlab.com/talnupf/welcome/slas/dla:${TAG} . && docker push registry.gitlab.com/talnupf/welcome/slas/dla:${TAG}
+#docker build -t registry.gitlab.com/talnupf/welcome/slas/dla:${TAG} . && docker push registry.gitlab.com/talnupf/welcome/slas/dla:${TAG}
+#docker build -t steps.everis.com:10110/upf/dla:${TAG} . && docker push steps.everis.com:10110/upf/dla:${TAG}
+docker build -t maven-taln.upf.edu/welcome/dla:${TAG} . && docker push maven-taln.upf.edu/welcome/dla:${TAG}

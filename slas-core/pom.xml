@@ -1,115 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>edu.upf.taln.welcome</groupId>
-        <artifactId>slas-parent</artifactId>
-        <version>0.3.0-SNAPSHOT</version>
-    </parent>
-    
-    <artifactId>slas-core</artifactId>
-    <packaging>jar</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.upf.taln.welcome</groupId>
+		<artifactId>slas-parent</artifactId>
+		<version>0.3.0-SNAPSHOT</version>
+	</parent>
 
-    <name>Welcome DLA Core</name>
-            
-    <dependencies>
-        <dependency>
-            <groupId>edu.upf.taln.welcome</groupId>
-            <artifactId>slas-commons</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        
-        <dependency>
+	<artifactId>slas-core</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Welcome DLA Core</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>edu.upf.taln.welcome</groupId>
+			<artifactId>slas-commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>edu.upf.taln.uima.flow-controller</groupId>
 			<artifactId>flow-core</artifactId>
 		</dependency>
-        
-        <dependency>
-	    	<groupId>edu.upf.taln.uima.nlp4j</groupId>
-	    	<artifactId>nlp4j</artifactId>
-		</dependency>
-		
+
 		<dependency>
-	    	<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-	    	<artifactId>de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl</artifactId>
-	    	<version>${dkpro.taln.version}</version>
-	    </dependency>
-	    
-	    <dependency>
-			<groupId>edu.upf.taln.uima.matetools</groupId>
-            <artifactId>matetools</artifactId>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-asl</artifactId>
+			<version>${dkpro.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>edu.upf.taln.wsd</groupId>
 			<artifactId>disambiguation-core</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>edu.upf.taln.uima.wsd</groupId>
 			<artifactId>edu.upf.taln.uima.wsd.item_annotator</artifactId>
 		</dependency>
-	  	
-	  	<dependency>
-            <groupId>edu.upf.taln.uima.wsd</groupId>
-            <artifactId>extender-core</artifactId>
-        </dependency>
-		
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.wsd</groupId>
+			<artifactId>extender-core</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>edu.upf.taln.parser</groupId>
-	  		<artifactId>deep-parser-core</artifactId>
-	  	</dependency>
-	  	
-	  	<dependency>
+			<artifactId>deep-parser-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>edu.upf.glicom.uima</groupId>
+					<artifactId>dbpedia-spotlight</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
 			<groupId>edu.upf.taln.uima</groupId>
 			<artifactId>uima-tagsets</artifactId>
 		</dependency>
-		
+
 		<dependency>
-            <groupId>edu.upf.glicom.uima</groupId>
-            <artifactId>spotlight-core</artifactId>
-        </dependency>
-	  	
-	  	<dependency>
+			<groupId>edu.upf.glicom.uima</groupId>
+			<artifactId>spotlight-core</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>edu.upf.taln.uima</groupId>
 			<artifactId>flask_wrapper</artifactId>
 		</dependency>
-		
+
 		<dependency>
-            <groupId>edu.upf.taln.uima.retokenize</groupId>
-            <artifactId>MultiwordRetokenizer</artifactId>
-	    </dependency>
-	    
-	    <dependency>
-	    	<groupId>edu.upf.taln.utils.pojos</groupId>
-		    <artifactId>common-pojos-uima</artifactId>
-		</dependency>
-                        
-        <!-- MODELS -->    
-        <dependency>
-			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-			<artifactId>de.tudarmstadt.ukp.dkpro.core.nlp4j-model-parser-en-ewt-ud</artifactId>
-			<version>20200429.0</version>
+			<groupId>edu.upf.taln.uima.retokenize</groupId>
+			<artifactId>MultiwordRetokenizer</artifactId>
 		</dependency>
 
 		<dependency>
+			<groupId>edu.upf.taln.utils.pojos</groupId>
+			<artifactId>common-pojos-uima</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>edu.upf.taln.tensor</groupId>
+					<artifactId>profiling</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>edu.upf.glicom.uima</groupId>
+					<artifactId>dbpedia-spotlight</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-			<artifactId>de.tudarmstadt.ukp.dkpro.core.stanfordnlp-model-tagger-en-taln-ud</artifactId>
-			<version>20180620.0</version>
+			<artifactId>
+				de.tudarmstadt.ukp.dkpro.core.io.conll-asl
+			</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-			<artifactId>de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-en-ewt</artifactId>
-			<version>20190528.0</version>
-		</dependency>  
-		
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-segmenter-en-ud</artifactId>
+			<version>20160523.1</version>
+		</dependency>
 		<dependency>
-			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-			<artifactId>de.tudarmstadt.ukp.dkpro.core.matetools-model-morphtagger-en-taln-ud</artifactId>
-			<version>20180322.0</version>
-		</dependency>  
-                
-    </dependencies>
-  
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-tagger-en-ud</artifactId>
+			<version>20160523.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-parser-en-ud</artifactId>
+			<version>20160523.1</version>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>edu.upf.glicom.uima</groupId>
+				<artifactId>spotlight-types</artifactId>
+				<version>0.15.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
