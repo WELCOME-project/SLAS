@@ -79,20 +79,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>edu.upf.taln.utils.pojos</groupId>
-			<artifactId>common-pojos-uima</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>edu.upf.taln.tensor</groupId>
-					<artifactId>profiling</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>edu.upf.glicom.uima</groupId>
-					<artifactId>dbpedia-spotlight</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
 			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
 			<artifactId>
 				de.tudarmstadt.ukp.dkpro.core.io.conll-asl
@@ -116,13 +102,5 @@
 		</dependency>
 	</dependencies>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>edu.upf.glicom.uima</groupId>
-				<artifactId>spotlight-types</artifactId>
-				<version>0.15.0-SNAPSHOT</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+
 </project>

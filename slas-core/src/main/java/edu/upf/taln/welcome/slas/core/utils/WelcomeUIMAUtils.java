@@ -87,7 +87,7 @@ public class WelcomeUIMAUtils {
 		            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
 		
 		            flowMap.put(FlowStepName.SSYNTS.name(), true);
-		            flowMap.put(FlowStepName.DSYNTS.name(), false);
+		            flowMap.put(FlowStepName.DSYNTS.name(), true);
 		
 		            flowMap.put(FlowStepName.EMOTION.name(), true);
 		
