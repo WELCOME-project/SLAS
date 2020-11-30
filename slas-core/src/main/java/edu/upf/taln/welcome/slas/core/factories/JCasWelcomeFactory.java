@@ -11,7 +11,7 @@ import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
-import de.tudarmstadt.ukp.dkpro.core.io.conll.ConllUReader;
+import org.dkpro.core.io.conll.ConllUReader;
 import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.uima.flow.utils.FlowUtils;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;

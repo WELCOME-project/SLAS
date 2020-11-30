@@ -31,10 +31,11 @@
 		<swagger.version>2.0.8</swagger.version>
 		<swagger.ui.version>2.1.4</swagger.ui.version>
 
-		<dkpro.version>1.9.3</dkpro.version>
+		<dkpro.version>1.12.0</dkpro.version>
 		<!-- dkpro.taln.version>1.9.1-taln</dkpro.taln.version -->
 		<deep-parser.version>1.2.0-SNAPSHOT</deep-parser.version>
 		<extender.version>1.4.0-SNAPSHOT</extender.version>
+		<flask.version>1.1.0</flask.version>
 
 	</properties>
 
@@ -89,18 +90,16 @@
 
 	<dependencyManagement>
 		<dependencies>
-
-
 			<dependency>
-				<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-				<artifactId>de.tudarmstadt.ukp.dkpro.core-asl</artifactId>
+				<groupId>org.dkpro.core</groupId>
+				<artifactId>dkpro-core-asl</artifactId>
 				<version>${dkpro.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-				<artifactId>de.tudarmstadt.ukp.dkpro.core-gpl</artifactId>
+				<groupId>org.dkpro.core</groupId>
+				<artifactId>dkpro-core-gpl</artifactId>
 				<version>${dkpro.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
@@ -320,21 +319,16 @@
 				<artifactId>spotlight-types</artifactId>
 				<version>0.15.0-SNAPSHOT</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>edu.upf.taln.uima</groupId>
-				<artifactId>flask_wrapper</artifactId>
-				<version>0.10.0-SNAPSHOT</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>annotation-extender</artifactId>
-						<groupId>edu.upf.taln.uima.wsd</groupId>
-					</exclusion>
-					<exclusion>
-						<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-						<artifactId>de.tudarmstadt.ukp.dkpro.core.matetools-gpl</artifactId>
-					</exclusion>
-				</exclusions>
+				<artifactId>flask-wrapper-core</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>flask-wrapper-types</artifactId>
+				<version>${flask.version}</version>
 			</dependency>
 
 			<dependency>

@@ -11,7 +11,7 @@ import org.apache.uima.jcas.JCas;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import edu.upf.taln.parser.deep_parser.types.TriplesDependency;
 import edu.upf.taln.parser.deep_parser.types.TriplesToken;
-import edu.upf.taln.uima.buddy.core.BuddyPayloadUtils;
+import edu.upf.taln.uima.buddy.types.utils.BuddyPayloadUtils;
 import edu.upf.taln.uima.buddy.types.BuddyRelation;
 import edu.upf.taln.uima.buddy.types.BuddyToken;
 

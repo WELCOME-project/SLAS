@@ -70,7 +70,18 @@
 
 		<dependency>
 			<groupId>edu.upf.taln.uima</groupId>
-			<artifactId>flask_wrapper</artifactId>
+			<artifactId>ner-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>sentiment-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>concept-wrapper</artifactId>
+			<version>${flask.version}</version>
 		</dependency>
 
 		<dependency>
@@ -79,10 +90,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-			<artifactId>
-				de.tudarmstadt.ukp.dkpro.core.io.conll-asl
-			</artifactId>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-io-conll-asl</artifactId>
 		</dependency>
 
 		<dependency>
