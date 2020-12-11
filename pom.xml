@@ -31,11 +31,13 @@
 		<swagger.version>2.0.8</swagger.version>
 		<swagger.ui.version>2.1.4</swagger.ui.version>
 
-		<dkpro.version>1.12.0</dkpro.version>
+		<dkpro.version>1.12.1-SNAPSHOT</dkpro.version>
 		<!-- dkpro.taln.version>1.9.1-taln</dkpro.taln.version -->
-		<deep-parser.version>1.2.0-SNAPSHOT</deep-parser.version>
-		<extender.version>1.4.0-SNAPSHOT</extender.version>
-		<flask.version>1.1.0</flask.version>
+		<deep-parser.version>1.2.0</deep-parser.version>
+		<extender.version>1.4.0</extender.version>
+		<flask.version>1.1.1</flask.version>
+		<disambiguation.version>1.5.0</disambiguation.version>
+		<spotlight.version>0.15.0-SNAPSHOT</spotlight.version>
 
 	</properties>
 
@@ -50,12 +52,12 @@
 		<repository>
 			<id>maven-releases</id>
 			<name>Internal Release Repository</name>
-			<url>http://maven-taln.upf.edu/repository/maven-releases/</url>
+			<url>https://maven-taln.upf.edu/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>maven-snapshots</id>
 			<name>Internal Snapshot Repository</name>
-			<url>http://maven-taln.upf.edu/repository/maven-snapshots/</url>
+			<url>https://maven-taln.upf.edu/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -63,7 +65,7 @@
 		<repository>
 			<id>taln-repo-internal</id>
 			<name>TALN internal repo</name>
-			<url>http://maven-taln.upf.edu/repository/maven-releases/</url>
+			<url>https://maven-taln.upf.edu/repository/maven-releases/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -74,7 +76,7 @@
 		<repository>
 			<id>taln-repo-snapshots</id>
 			<name>TALN internal repo</name>
-			<url>http://maven-taln.upf.edu/repository/maven-snapshots/</url>
+			<url>https://maven-taln.upf.edu/repository/maven-snapshots/</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -282,13 +284,13 @@
 			<dependency>
 				<groupId>edu.upf.taln.uima</groupId>
 				<artifactId>TextPlanningAnnotator</artifactId>
-				<version>1.3.0-SNAPSHOT</version>
+				<version>1.3.0</version>
 			</dependency>
 
 			<dependency>
 				<groupId>edu.upf.taln.wsd</groupId>
 				<artifactId>disambiguation-core</artifactId>
-				<version>1.5.0-SNAPSHOT</version>
+				<version>${disambiguation.version}</version>
 			</dependency>
 
 			<dependency>
@@ -312,12 +314,12 @@
 			<dependency>
 				<groupId>edu.upf.glicom.uima</groupId>
 				<artifactId>spotlight-core</artifactId>
-				<version>0.15.0-SNAPSHOT</version>
+				<version>${spotlight.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.upf.glicom.uima</groupId>
 				<artifactId>spotlight-types</artifactId>
-				<version>0.15.0-SNAPSHOT</version>
+				<version>${spotlight.version}</version>
 			</dependency>
 
 			<dependency>
