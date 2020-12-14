@@ -97,17 +97,17 @@
 		<dependency>
 			<groupId>org.dkpro.core</groupId>
 			<artifactId>dkpro-core-udpipe-model-segmenter-en-ud</artifactId>
-			<version>20160523.1</version>
+			<version>20191206.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.dkpro.core</groupId>
 			<artifactId>dkpro-core-udpipe-model-tagger-en-ud</artifactId>
-			<version>20160523.1</version>
+			<version>20191206.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.dkpro.core</groupId>
 			<artifactId>dkpro-core-udpipe-model-parser-en-ud</artifactId>
-			<version>20160523.1</version>
+			<version>20191206.1</version>
 		</dependency>
 	</dependencies>
 
