@@ -2,7 +2,7 @@ package edu.upf.taln.welcome.slas.commons.input;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 
-public class DeepAnalysisInput{
+public class DeepAnalysisInput {
 	@JsonAlias("meta")
     private InputMetadata metadata;
     private InputData data;

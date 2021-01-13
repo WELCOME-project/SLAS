@@ -38,7 +38,7 @@ public class AnalyzerTest {
         ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter();
         
 
-        IAnalysisOutput output = analyzer.analyze(InputType.text, AnalysisType.BASIC, input.getData().getConll(), OutputLevel.welcome);
+        IAnalysisOutput output = analyzer.analyze(InputType.text, AnalysisType.BASIC, input.getData().getText(), OutputLevel.welcome);
 
         String result = writer.writeValueAsString(output);
         System.out.println(result);

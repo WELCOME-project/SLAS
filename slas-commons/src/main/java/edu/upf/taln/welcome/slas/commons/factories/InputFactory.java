@@ -3,9 +3,7 @@ package edu.upf.taln.welcome.slas.commons.factories;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
-import edu.upf.taln.welcome.slas.commons.input.InputDataPlain;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 
 /**
@@ -28,25 +26,11 @@ public class InputFactory {
     public static DeepAnalysisInput create(AnalysisType analysisType, OutputLevel outputLevel, String conll, String language) {
 		
 		InputData data = new InputData();
-		data.setConll(conll);
-		
-        InputMetadata meta = createMetadata(analysisType, outputLevel, language);
-
-        DeepAnalysisInput input = new DeepAnalysisInput();
-		input.setData(data);
-		input.setMetadata(meta);
-		
-		return input;
-	}
-    
-    public static DeepAnalysisInputPlain createPlain(AnalysisType analysisType, OutputLevel outputLevel, String conll, String language) {
-		
-		InputDataPlain data = new InputDataPlain();
 		data.setText(conll);
 		
         InputMetadata meta = createMetadata(analysisType, outputLevel, language);
 
-        DeepAnalysisInputPlain input = new DeepAnalysisInputPlain();
+        DeepAnalysisInput input = new DeepAnalysisInput();
 		input.setData(data);
 		input.setMetadata(meta);
 		

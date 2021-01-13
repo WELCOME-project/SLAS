@@ -18,8 +18,8 @@ import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
-import edu.upf.taln.welcome.slas.commons.input.InputDataPlain;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
 import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputMetadata;
@@ -112,10 +112,10 @@ class Processor {
                 
                 String text = FileUtils.readFileToString(textFile, StandardCharsets.UTF_8);
                 
-                InputDataPlain data = new InputDataPlain();
+                InputData data = new InputData();
                 data.setText(text);
                 
-                DeepAnalysisInputPlain container = new DeepAnalysisInputPlain();
+                DeepAnalysisInput container = new DeepAnalysisInput();
                 container.setMetadata(meta);
                 container.setData(data);
                 

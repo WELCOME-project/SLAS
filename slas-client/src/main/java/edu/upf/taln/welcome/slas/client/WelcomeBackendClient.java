@@ -18,7 +18,7 @@ import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 
 
@@ -47,11 +47,11 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
     
     public T analyze(AnalysisType analysisType, OutputLevel outputLevel, String text) throws WelcomeException {
 
-    	DeepAnalysisInputPlain request = InputFactory.createPlain(analysisType, outputLevel, text, language);
+    	DeepAnalysisInput request = InputFactory.create(analysisType, outputLevel, text, language);
         return analyze(request);
     }
 
-    public T analyze(DeepAnalysisInputPlain request) throws WelcomeException {
+    public T analyze(DeepAnalysisInput request) throws WelcomeException {
 
         Response response = sendRequest(request);
         T result = response.readEntity(new GenericType<T>(outputType) {});
@@ -59,7 +59,7 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
         return result;
     }
 
-    protected Response sendRequest(DeepAnalysisInputPlain request) throws WelcomeException {
+    protected Response sendRequest(DeepAnalysisInput request) throws WelcomeException {
 
         Response response = target.path("api/dla/analyzePlain")
                 .request(MediaType.APPLICATION_JSON_TYPE)

@@ -45,30 +45,6 @@ public class WelcomeUIMAUtils {
 		            return flowMap;
 		        };
 		        break;
-	    	case DEFAULT:
-		        options = () -> {
-		            Map<String, Boolean> flowMap = new HashMap<>();
-		
-		            flowMap.put(FlowStepName.PARSING.name(), false);
-		
-		            flowMap.put(FlowStepName.NER.name(), true);
-		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
-		
-		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
-		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
-		            flowMap.put(FlowStepName.RETOKENIZER.name(), true);
-		
-		            flowMap.put(FlowStepName.DBPEDIA.name(), true);
-		            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
-		
-		            flowMap.put(FlowStepName.SSYNTS.name(), false);
-		            flowMap.put(FlowStepName.DSYNTS.name(), false);
-		
-		            flowMap.put(FlowStepName.EMOTION.name(), true);
-		
-		            return flowMap;
-		        };
-		        break;
 	    	default:
 	    	case FULL:
 		        options = () -> {
