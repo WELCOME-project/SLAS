@@ -14,6 +14,9 @@ public class InputMetadata {
 	
 	@JsonProperty("output_level")
 	OutputLevel outputLevel;
+    
+	@JsonProperty("analysis_type")
+	private AnalysisType analysisType;
 
 	public String getLanguage() {
 		return language;
@@ -30,5 +33,12 @@ public class InputMetadata {
 	public void setOutputLevel(OutputLevel outputLevel) {
 		this.outputLevel = outputLevel;
 	}
-	
+
+	public AnalysisType getAnalysisType() {
+		return analysisType;
+	}
+
+	public void setAnalysisType(AnalysisType analysisType) {
+		this.analysisType = analysisType;
+	}	
 }

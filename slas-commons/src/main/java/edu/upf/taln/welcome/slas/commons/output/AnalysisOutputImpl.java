@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.output;
 
-public class AnalysisOutputImpl<T, S> implements IAnalysisOutput{
+public class AnalysisOutputImpl<T, S> implements IAnalysisOutput {
 	
 	protected String id;
 	protected String text;

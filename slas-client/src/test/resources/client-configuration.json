@@ -1,0 +1,51 @@
+{
+  "serviceURL": "http://localhost:8080/mindspaces-services-en/",
+  "inputPath": "src/test/resources/input",
+  "outputPath": "src/test/resources/output",
+  "skipErrors": true,
+  
+  "analysisType": "PUC1",
+  
+  "metadata": {
+    "output_type": "xmi",
+    "source_language": "en",
+    "analysis_type": "PUC1",
+
+    "preprocessOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "candidatesOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "babelnetOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "nerOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "dbpediaOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "retokenizerOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "nerRetokenizerOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "dbpediaRetokenizerOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    },
+    "dependencyParserOptions": {
+      "processRequested": true,
+      "outputRequested": true
+    }
+  }
+}

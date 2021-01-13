@@ -15,6 +15,14 @@ import javax.ws.rs.core.MediaType;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.CuniInput;
@@ -28,14 +36,7 @@ import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
 import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
 import edu.upf.taln.welcome.slas.core.Analyzer;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
-import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 
 
 /**

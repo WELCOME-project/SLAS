@@ -12,13 +12,15 @@ import org.apache.uima.jcas.JCas;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 import org.dkpro.core.io.conll.ConllUReader;
+
 import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.uima.flow.utils.FlowUtils;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
-import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
 
 public class JCasWelcomeFactory {
+    
 	public static enum InputType {conll, text}; 
 	
 	public static JCas createJCas(InputType type, String text, String language, AnalysisType analysisType) throws WelcomeException {

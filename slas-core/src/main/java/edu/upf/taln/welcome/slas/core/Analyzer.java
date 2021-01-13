@@ -13,11 +13,11 @@ import org.apache.uima.resource.ResourceInitializationException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
-import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
 
 
 /**

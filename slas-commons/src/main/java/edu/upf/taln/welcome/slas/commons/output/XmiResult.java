@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.output;
 
-public class XmiResult {
+public class XmiResult implements IAnalysisOutput {
 	String xmi;
 	String typesystem;
 	
@@ -16,6 +16,4 @@ public class XmiResult {
 	public void setTypesystem(String typesystem) {
 		this.typesystem = typesystem;
 	}
-	
-	
 }

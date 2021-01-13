@@ -46,6 +46,7 @@
 		<module>slas-core</module>
 		<module>dla-service</module>
 		<module>welcome-demos</module>
+	 <module>slas-client</module>
 	</modules>
 
 	<distributionManagement>

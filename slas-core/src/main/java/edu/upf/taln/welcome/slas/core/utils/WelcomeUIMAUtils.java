@@ -1,5 +1,6 @@
 package edu.upf.taln.welcome.slas.core.utils;
 
+import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,6 @@ import edu.upf.taln.welcome.slas.commons.analysis.FlowStepName;
  */
 public class WelcomeUIMAUtils {
     
-    public enum AnalysisType { BASIC, FULL, DEFAULT, TEST }
     
     public static IFlowOptions getOptions(AnalysisType type) {
         
