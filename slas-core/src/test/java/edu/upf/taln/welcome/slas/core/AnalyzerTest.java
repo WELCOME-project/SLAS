@@ -5,17 +5,15 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-import org.apache.commons.io.FileUtils;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
-import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils.AnalysisType;
 
 /**
  *

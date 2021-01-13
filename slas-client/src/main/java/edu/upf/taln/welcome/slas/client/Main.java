@@ -2,13 +2,12 @@ package edu.upf.taln.welcome.slas.client;
 
 import java.io.File;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
 import com.beust.jcommander.Parameters;
-import edu.upf.taln.utils.pojos.uima.OutputFactory.OutputType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;

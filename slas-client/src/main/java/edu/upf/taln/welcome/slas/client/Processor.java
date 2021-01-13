@@ -1,8 +1,10 @@
 package edu.upf.taln.welcome.slas.client;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.FilenameFilter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.LinkedHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,10 +18,11 @@ import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.input.InputData;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInputPlain;
+import edu.upf.taln.welcome.slas.commons.input.InputDataPlain;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
+import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.XmiResult;
 
@@ -92,17 +95,7 @@ class Processor {
         String serviceUrl = config.getServiceURL();
         String language = meta.getLanguage();
         
-        WelcomeBackendClient client;
-        switch (meta.getOutputLevel()) {
-            case xmi:
-                client = new WelcomeBackendClient<>(serviceUrl, language, XmiResult.class);
-                break;
-                
-            default:
-            case demo:
-                client = new WelcomeBackendClient<>(serviceUrl, language, AnalysisOutputImpl.class);
-                break;
-        }
+        WelcomeBackendClient client = new WelcomeBackendClient<>(serviceUrl, language, AnalysisOutputImpl.class);
         
         FilenameFilter filter = (File dir, String name) -> name.endsWith(".txt");	
         File[] files = inputDir.listFiles(filter);
@@ -117,18 +110,18 @@ class Processor {
                 
                 System.out.println("\tAnalyzing file " + count + " of " + files.length + "... [" + fileName + "]");
                 
-                String text = FileUtils.readFileToString(textFile);
+                String text = FileUtils.readFileToString(textFile, StandardCharsets.UTF_8);
                 
-                InputData data = new InputData();
-                data.setConll(text);
+                InputDataPlain data = new InputDataPlain();
+                data.setText(text);
                 
-                DeepAnalysisInput container = new DeepAnalysisInput();
+                DeepAnalysisInputPlain container = new DeepAnalysisInputPlain();
                 container.setMetadata(meta);
                 container.setData(data);
                 
                 IAnalysisOutput result = client.analyze(container);
                 
-                writeOutput(result, outputDir, fileName);
+                writeOutput(result, outputDir, fileName, meta);
                 
                 count++;
                 
@@ -145,16 +138,17 @@ class Processor {
         System.out.println("ANALYSIS COMPLETED");
     }
     
-    public static void writeOutput(IAnalysisOutput analysisOutput, File outputDir, String baseName) throws IOException {
-        
-		if (analysisOutput instanceof XmiResult) {
-            XmiResult xmiResult = (XmiResult) analysisOutput;
-            
+    public static void writeOutput(IAnalysisOutput analysisOutput, File outputDir, String baseName, InputMetadata meta) throws IOException {
+    	
+    	AnalysisOutputImpl out = (AnalysisOutputImpl) analysisOutput;
+		LinkedHashMap<String, String> xmiResult = (LinkedHashMap<String, String>) out.getResult();
+
+		if (xmiResult.containsKey("xmi") && xmiResult.containsKey("typesystem")) {
             File xmiFile = new File(outputDir, baseName + ".xmi");
             File typeSystemFile = new File(outputDir, "TypeSystem.xml");
             
-            FileUtils.writeStringToFile(xmiFile, xmiResult.getXmi());
-            FileUtils.writeStringToFile(typeSystemFile, xmiResult.getTypesystem());
+            FileUtils.writeStringToFile(xmiFile, (String) xmiResult.get("xmi"), StandardCharsets.UTF_8);
+            FileUtils.writeStringToFile(typeSystemFile, (String) xmiResult.get("typesystem"), StandardCharsets.UTF_8);
             
 		} else {
             File jsonFile = new File(outputDir, baseName + ".json");
