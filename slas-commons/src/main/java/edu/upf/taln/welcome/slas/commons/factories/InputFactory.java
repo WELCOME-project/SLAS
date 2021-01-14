@@ -23,10 +23,10 @@ public class InputFactory {
         return meta;
     }
     
-    public static DeepAnalysisInput create(AnalysisType analysisType, OutputLevel outputLevel, String conll, String language) {
+    public static DeepAnalysisInput create(AnalysisType analysisType, OutputLevel outputLevel, String text, String language) {
 		
 		InputData data = new InputData();
-		data.setText(conll);
+		data.setText(text);
 		
         InputMetadata meta = createMetadata(analysisType, outputLevel, language);
 

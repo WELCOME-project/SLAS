@@ -22,9 +22,7 @@ import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
-import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.XmiResult;
 
 
 /**

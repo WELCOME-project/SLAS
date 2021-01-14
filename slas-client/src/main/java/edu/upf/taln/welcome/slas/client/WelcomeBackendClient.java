@@ -61,7 +61,7 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
 
     protected Response sendRequest(DeepAnalysisInput request) throws WelcomeException {
 
-        Response response = target.path("api/dla/analyzePlain")
+        Response response = target.path("api/dla/analyze")
                 .request(MediaType.APPLICATION_JSON_TYPE)
                 .post(Entity.entity(request, MediaType.APPLICATION_JSON_TYPE));
 

@@ -25,7 +25,7 @@ head.js(
 );
 
 //Services URL's
-var analyzeURL = "../dla-service/api/dla/analyzePlain";
+var analyzeURL = "../dla-service/api/dla/analyze";
 var descriptionURL = "../dla-service/api/dla/description";
 
 function spinButton() {
