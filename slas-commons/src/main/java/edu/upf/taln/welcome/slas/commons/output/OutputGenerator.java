@@ -174,23 +174,10 @@ public class OutputGenerator {
 		return analysisResult;
 	}
 	
-	public static AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata> generateXmiOutput(JCas jCas) {
-		AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata> analysisResult = new AnalysisOutputImpl<XmiResult, AnalysisOutputMetadata>();
-		
-		UUID uuid = UUID.randomUUID();
-		analysisResult.setId(uuid.toString());
-		analysisResult.setText(jCas.getDocumentText());
-		if(jCas.getDocumentLanguage() != null) {
-			analysisResult.setLanguage(jCas.getDocumentLanguage());
-		}
-		
-		AnalysisOutputMetadata outputMetadata = generateMetadata();
-		analysisResult.setMetadata(outputMetadata);
-		
+	public static XmiResult generateXmiOutput(JCas jCas) {
 		XmiResult result = generateXmiResult(jCas);
-		analysisResult.setResult(result);
 		
-		return analysisResult;
+		return result;
 	}
 	
 	public static DeepAnalysisOutput generateDummyResponse(JCas jcas) {

@@ -133,7 +133,7 @@ public class DeepAnalysisService {
 					),
 		responses = {
 		        @ApiResponse(description = "The deep analysis result.",
-		        			content = @Content(schema = @Schema(implementation = AnalysisOutputImpl.class)
+		        			content = @Content(schema = @Schema(implementation = IAnalysisOutput.class)
 		        ))
 	})
 	public IAnalysisOutput analyze(
