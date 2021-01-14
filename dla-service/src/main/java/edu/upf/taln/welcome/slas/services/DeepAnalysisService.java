@@ -112,6 +112,34 @@ public class DeepAnalysisService {
 		return configurations;
 	}
 	
+	@POST
+	@Path("/analyzePlain")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Operation(summary = "Performs a deep syntactic analysis of the input data.",
+		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",
+		requestBody = @RequestBody(
+						content = @Content(mediaType = "application/json",
+										schema = @Schema(implementation = DeepAnalysisInput.class),
+										examples = {
+											@ExampleObject(name = "Turn 0",
+													value = SAMPLE_INPUT_TURN0),
+											@ExampleObject(name = "Turn 1",
+													value = SAMPLE_INPUT_TURN1),
+											@ExampleObject(name = "Xmi",
+													value = SAMPLE_INPUT_XMI)
+										}
+						)
+					),
+		responses = {
+		        @ApiResponse(description = "The deep analysis result.",
+		        			content = @Content(schema = @Schema(implementation = IAnalysisOutput.class)
+		        ))
+	})
+	public IAnalysisOutput analyzePlain(
+			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
+		return analyze(input);
+	}
+	
 	
 	@POST
 	@Path("/analyze")
