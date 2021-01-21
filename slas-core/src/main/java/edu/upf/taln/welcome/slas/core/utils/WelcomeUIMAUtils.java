@@ -45,6 +45,30 @@ public class WelcomeUIMAUtils {
 		            return flowMap;
 		        };
 		        break;
+    		case PRE_DEEP:
+		        options = () -> {
+		            Map<String, Boolean> flowMap = new HashMap<>();
+		
+		            flowMap.put(FlowStepName.PARSING.name(), true);
+		
+		            flowMap.put(FlowStepName.NER.name(), true);
+		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
+		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
+		            flowMap.put(FlowStepName.RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.DBPEDIA.name(), true);
+		            flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(), true);
+		
+		            flowMap.put(FlowStepName.SSYNTS.name(), true);
+		            flowMap.put(FlowStepName.DSYNTS.name(), false);
+		
+		            flowMap.put(FlowStepName.EMOTION.name(), false);
+		
+		            return flowMap;
+		        };
+		        break;
 	    	default:
 	    	case FULL:
 		        options = () -> {
