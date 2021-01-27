@@ -42,7 +42,7 @@ public class Main {
         @Parameter(names = { "-f", "--output-format" }, description = "Output file format.", order = 5)
         private OutputLevel outputType = OutputLevel.xmi;
 
-        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", order = 6)
+        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", arity = 1, order = 6)
         private boolean skipErrors = true;
 
         @Override
@@ -144,7 +144,6 @@ public class Main {
             }
 			
 		} catch (ParameterException ex) {
-			System.out.println(ex.getMessage());
 			logger.severe(ex.getMessage());
 			jCommander.usage();
 		} catch (WelcomeClientException | WelcomeException ex) {
