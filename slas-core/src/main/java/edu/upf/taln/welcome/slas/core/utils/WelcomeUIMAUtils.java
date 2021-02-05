@@ -29,6 +29,8 @@ public class WelcomeUIMAUtils {
 		
 		            flowMap.put(FlowStepName.NER.name(), false);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), false);
+		            
+		            flowMap.put(FlowStepName.SPEECHACT.name(), false);
 		
 		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), false);
 		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), false);
@@ -53,6 +55,8 @@ public class WelcomeUIMAUtils {
 		
 		            flowMap.put(FlowStepName.NER.name(), true);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
+		            
+		            flowMap.put(FlowStepName.SPEECHACT.name(), true);
 		
 		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
 		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);
@@ -78,6 +82,8 @@ public class WelcomeUIMAUtils {
 		
 		            flowMap.put(FlowStepName.NER.name(), true);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
+		            
+		            flowMap.put(FlowStepName.SPEECHACT.name(), true);
 		
 		            flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(), true);
 		            flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), true);

@@ -33,6 +33,7 @@ import edu.upf.taln.uima.disambiguation.core.inventory.CompactDictionarySenseInv
 import edu.upf.taln.uima.flask_wrapper.ConceptExtractorAnnotator;
 import edu.upf.taln.uima.flask_wrapper.EmotionAnnotator;
 import edu.upf.taln.uima.flask_wrapper.NERAnnotator;
+import edu.upf.taln.uima.flask_wrapper.SpeechActAnnotator;
 import edu.upf.taln.uima.flow.AnnotationFlowController;
 import edu.upf.taln.uima.retokenize.MultiwordRetokenizer;
 import edu.upf.taln.uima.wsd.annotation_extender.core.WSDResultExtender;
@@ -195,6 +196,16 @@ public class EnglishPipelineUD {
 		
 		return new FlowItem(flaskNER,FlowStepName.EMOTION.name());
 	}
+	
+	private static FlowItem getSpeechActDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+        
+		AnalysisEngineDescription flaskSpeechAct = AnalysisEngineFactory.createEngineDescription(
+				SpeechActAnnotator.class,
+				SpeechActAnnotator.PARAM_FLASK_URL, configuration.getSpeechActUrl(),
+				SpeechActAnnotator.PARAM_SCOPE, "sentence");
+		
+		return new FlowItem(flaskSpeechAct, FlowStepName.SPEECHACT.name());
+	}
 
     public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
         
@@ -208,6 +219,8 @@ public class EnglishPipelineUD {
 		flowItems.add(getPreprocessDescription());
 				
 		flowItems.add(getNERDescription(configuration));
+		
+		flowItems.add(getSpeechActDescription(configuration));
 		 
 		flowItems.add(getConceptExtractionDescription(configuration));
 		

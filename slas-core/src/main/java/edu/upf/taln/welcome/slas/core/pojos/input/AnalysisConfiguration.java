@@ -17,6 +17,7 @@ public class AnalysisConfiguration {
     private String rankingPropertiesFile;
     private String compactDictionaryPath;
     private String emotionUrl;
+    private String speechActUrl;
 
     public String getBabelnetConfigPath() {
         return babelnetConfigPath;
@@ -105,6 +106,13 @@ public class AnalysisConfiguration {
 	public void setEmotionUrl(String emotionUrl) {
 		this.emotionUrl = emotionUrl;
 	}
-    
+
+	public String getSpeechActUrl() {
+		return speechActUrl;
+	}
+
+	public void setSpeechActUrl(String speechActUrl) {
+		this.speechActUrl = speechActUrl;
+	}
     
 }

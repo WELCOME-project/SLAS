@@ -11,5 +11,6 @@ public enum FlowStepName {
 	DSYNTS, 
 	DBPEDIA,
 	DBPEDIA_RETOKENIZER,
-    EMOTION
+    EMOTION,
+    SPEECHACT
 }

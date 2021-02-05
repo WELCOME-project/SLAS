@@ -73,6 +73,7 @@ public class Analyzer {
 		configuration.setCompactDictionaryPath(System.getenv("COMPACT_DICTIONARY"));
 		configuration.setEmotionUrl(System.getenv("EMOTION_URL"));
 		//configuration.setAspectUrl(System.getenv("ASPECT_URL"));
+		configuration.setSpeechActUrl(System.getenv("SPEECHACT_URL"));
         
         return configuration;
 	}

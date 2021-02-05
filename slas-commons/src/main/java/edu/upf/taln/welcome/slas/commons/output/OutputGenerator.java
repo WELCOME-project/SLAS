@@ -19,6 +19,7 @@ import org.apache.uima.util.TypeSystemUtil;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
+
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
@@ -31,6 +32,7 @@ import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
+import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
 
 public class OutputGenerator {
 	
@@ -91,6 +93,19 @@ public class OutputGenerator {
         
         DlaResult result = new DlaResult();
         result.setEntities(entities);
+        
+        int j = 1;
+        List<SpeechAct> speechActs = new ArrayList<SpeechAct>();
+        for (edu.upf.taln.flask_wrapper.type.SpeechAct speechAct : JCasUtil.select(jCas, edu.upf.taln.flask_wrapper.type.SpeechAct.class)) {
+        	SpeechAct sa = new SpeechAct();
+        	sa.setId("speech_act_" + j);
+        	sa.setType(speechAct.getLabel());
+        	sa.setAnchor(speechAct.getCoveredText());
+        	
+        	speechActs.add(sa);
+        	j++;
+        }
+        result.setSpeechActs(speechActs);
         return result;
 	}
 	
