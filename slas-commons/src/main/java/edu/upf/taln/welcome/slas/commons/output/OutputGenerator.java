@@ -101,6 +101,7 @@ public class OutputGenerator {
         	sa.setId("speech_act_" + j);
         	sa.setType(speechAct.getLabel());
         	sa.setAnchor(speechAct.getCoveredText());
+        	sa.setEntities(new ArrayList<>());
         	
         	speechActs.add(sa);
         	j++;
