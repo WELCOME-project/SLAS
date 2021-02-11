@@ -1,7 +1,7 @@
 version: '3.2'
 services:
-  welcome-en:
-    image: maven-taln.upf.edu/welcome/dla:2020-12-11
+  las-en:
+    image: maven-taln.upf.edu/welcome/dla:2021-02-09
     networks:
       - welcomenet
       - traefik
@@ -47,7 +47,50 @@ services:
       - BABELNET_CONFIG=/resources/babelconfig-4.0.1
       - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
       - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt
+      - SPEECHACT_URL=https://welcome-project.upf.edu/dialogtag/
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
+  dialogtag:
+    image: maven-taln.upf.edu/uima_taln_dialogtag_en:2021-02-05
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
+        - "traefik.port=8000"
+  dms:
+    image: registry.gitlab.com/talnupf/welcome/dms:2021-02-11
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
+        - "traefik.port=8080"
+  nlg:
+    image: registry.gitlab.com/talnupf/welcome/nlg:2021-02-11
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-nlg.${DOMAIN}"
+        - "traefik.port=8080"
 networks:
   welcomenet:
   traefik:
