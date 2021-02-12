@@ -16,12 +16,14 @@ import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.util.TypeSystemUtil;
 
+import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
 
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
+import edu.upf.taln.uima.wsd.types.BabelNetSense;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
@@ -82,7 +84,13 @@ public class OutputGenerator {
 
 			Entity entity = new Entity();
 	        entity.setId("entity_" + i);
-	        //entity.setType("Predicate");
+	        NamedEntity nameEntity = JCasUtil.selectSingleAt(jCas, NamedEntity.class, wsdResult.getBegin(), wsdResult.getEnd());
+	        if (nameEntity != null) {
+	        	//System.out.println("NE: \"" + nameEntity.getCoveredText() + "\": " + nameEntity.getValue());
+	        	entity.setType(nameEntity.getValue());
+	        } else {
+	        	entity.setType("concept");
+	        }
 	        entity.setAnchor(wsdResult.getCoveredText());
 	        entity.setLink(bestSense.getId());
 	        entity.setConfidence(bestSense.getConfidence());
@@ -93,6 +101,8 @@ public class OutputGenerator {
         
         DlaResult result = new DlaResult();
         result.setEntities(entities);
+        
+        result.setRelations(new ArrayList<>());
         
         int j = 1;
         List<SpeechAct> speechActs = new ArrayList<SpeechAct>();
