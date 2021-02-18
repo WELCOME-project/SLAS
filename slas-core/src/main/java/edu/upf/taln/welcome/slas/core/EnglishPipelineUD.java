@@ -19,6 +19,8 @@ import org.dkpro.core.udpipe.UDPipeParser;
 import org.dkpro.core.udpipe.UDPipePosTagger;
 import org.dkpro.core.udpipe.UDPipeSegmenter;
 
+import de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS_NOUN;
+import de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS_VERB;
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 import de.tudarmstadt.ukp.dkpro.wsd.algorithm.MostFrequentSenseBaseline;
 import de.tudarmstadt.ukp.dkpro.wsd.annotator.WSDAnnotatorIndividualBasic;
@@ -83,11 +85,13 @@ public class EnglishPipelineUD {
 		AnalysisEngineDescription spans = createEngineDescription(
 				ConceptExtractorAnnotator.class,
 				ConceptExtractorAnnotator.PARAM_FLASK_URL, configuration.getCandidateConceptsUrl());
+		
 		String[] annotationClasses = new String[] {
 				WSDSpan.class.getName(),
-				NamedEntity.class.getName()
+				NamedEntity.class.getName(),
+				POS_VERB.class.getName(),
+				POS_NOUN.class.getName()
 		};
-        
 		AnalysisEngineDescription candidates = createEngineDescription(
 				WSDItemAnnotator.class, 
 				WSDItemAnnotator.PARAM_CLASS_NAMES, annotationClasses);
