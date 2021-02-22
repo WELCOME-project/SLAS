@@ -38,15 +38,21 @@
 			<artifactId>graph-uima</artifactId>
 			<version>0.3.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>edu.upf.taln.utils.pojos</groupId>
 			<artifactId>common-uima-types</artifactId>
-			<version>1.0.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>edu.upf.taln.buddy.uima</groupId>
 			<artifactId>buddy-uima-types</artifactId>
 			<version>1.1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>flask-wrapper-commons</artifactId>
 		</dependency>
 	</dependencies>
 </project>

@@ -35,7 +35,7 @@
 		<!-- dkpro.taln.version>1.9.1-taln</dkpro.taln.version -->
 		<deep-parser.version>1.2.0</deep-parser.version>
 		<extender.version>1.5.0-SNAPSHOT</extender.version>
-		<flask.version>1.2.0</flask.version>
+		<flask.version>1.3.0-SNAPSHOT</flask.version>
 		<disambiguation.version>1.5.0</disambiguation.version>
 		<spotlight.version>0.15.0-SNAPSHOT</spotlight.version>
 
@@ -325,12 +325,22 @@
 
 			<dependency>
 				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>flask-wrapper-commons</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
 				<artifactId>flask-wrapper-core</artifactId>
 				<version>${flask.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.upf.taln.uima</groupId>
 				<artifactId>flask-wrapper-types</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>geolocation-wrapper</artifactId>
 				<version>${flask.version}</version>
 			</dependency>
 
@@ -342,32 +352,14 @@
 
 			<dependency>
 				<groupId>edu.upf.taln.utils.pojos</groupId>
-				<artifactId>common-pojos-uima</artifactId>
-				<version>0.2.0-SNAPSHOT</version>
-				<exclusions>
-					<exclusion>
-						<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-						<artifactId>
-			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-en-default
-			    		</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-						<artifactId>
-			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-lemmatizer-es-default
-			    		</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-						<artifactId>
-			    			de.tudarmstadt.ukp.dkpro.core.matetools-model-morphtagger-es-taln
-			    		</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>net.sf.meka</groupId>
-						<artifactId>meka</artifactId>
-					</exclusion>
-				</exclusions>
+				<artifactId>common-uima-types</artifactId>
+				<version>1.1.0-SNAPSHOT</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>edu.upf.taln.uima.utils</groupId>
+				<artifactId>output-graph</artifactId>
+				<version>0.3.0</version>
 			</dependency>
 
 		</dependencies>
