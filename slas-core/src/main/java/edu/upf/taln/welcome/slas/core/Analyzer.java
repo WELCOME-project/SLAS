@@ -74,6 +74,7 @@ public class Analyzer {
 		configuration.setEmotionUrl(System.getenv("EMOTION_URL"));
 		//configuration.setAspectUrl(System.getenv("ASPECT_URL"));
 		configuration.setSpeechActUrl(System.getenv("SPEECHACT_URL"));
+		configuration.setGeolocationUrl(System.getenv("GEOLOCATION_URL"));
         
         return configuration;
 	}

@@ -18,6 +18,7 @@ public class AnalysisConfiguration {
     private String compactDictionaryPath;
     private String emotionUrl;
     private String speechActUrl;
+    private String geolocationUrl;
 
     public String getBabelnetConfigPath() {
         return babelnetConfigPath;
@@ -113,6 +114,14 @@ public class AnalysisConfiguration {
 
 	public void setSpeechActUrl(String speechActUrl) {
 		this.speechActUrl = speechActUrl;
+	}
+
+	public String getGeolocationUrl() {
+		return geolocationUrl;
+	}
+
+	public void setGeolocationUrl(String geolocationUrl) {
+		this.geolocationUrl = geolocationUrl;
 	}
     
 }

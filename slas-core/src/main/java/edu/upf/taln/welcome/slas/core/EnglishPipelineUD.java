@@ -34,6 +34,7 @@ import edu.upf.taln.uima.disambiguation.core.inventory.BabelnetSenseInventoryRes
 import edu.upf.taln.uima.disambiguation.core.inventory.CompactDictionarySenseInventoryResource;
 import edu.upf.taln.uima.flask_wrapper.ConceptExtractorAnnotator;
 import edu.upf.taln.uima.flask_wrapper.EmotionAnnotator;
+import edu.upf.taln.uima.flask_wrapper.GeolocationAnnotator;
 import edu.upf.taln.uima.flask_wrapper.NERAnnotator;
 import edu.upf.taln.uima.flask_wrapper.SpeechActAnnotator;
 import edu.upf.taln.uima.flow.AnnotationFlowController;
@@ -210,6 +211,15 @@ public class EnglishPipelineUD {
 		
 		return new FlowItem(flaskSpeechAct, FlowStepName.SPEECHACT.name());
 	}
+	
+	private static FlowItem getGeolocationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+        
+		AnalysisEngineDescription flaskGeolocation = AnalysisEngineFactory.createEngineDescription(
+				GeolocationAnnotator.class,
+				GeolocationAnnotator.PARAM_FLASK_URL, configuration.getGeolocationUrl());
+		
+		return new FlowItem(flaskGeolocation, FlowStepName.GEOLOCATION.name());
+	}
 
     public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
         
@@ -223,6 +233,8 @@ public class EnglishPipelineUD {
 		flowItems.add(getPreprocessDescription());
 				
 		flowItems.add(getNERDescription(configuration));
+		
+		flowItems.add(getGeolocationDescription(configuration));
 		
 		flowItems.add(getSpeechActDescription(configuration));
 		 

@@ -9,11 +9,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.upf.taln.common.uima.ExtraMetaData;
+import edu.upf.taln.uima.flask_wrapper.extra_metadata.IExtraMetaDataUseCaseJson;
 
-public class WelcomeExtraMetadataUtils {
+public class WelcomeExtraMetaDataUtils {
 	public static void addUseCase(JCas jCas, String useCase) throws JsonProcessingException {
         
-        WelcomeExtraMetadataJson extra = new WelcomeExtraMetadataJson();
+        WelcomeExtraMetaDataJson extra = new WelcomeExtraMetaDataJson();
         extra.setUseCase(useCase);
         
         ObjectMapper mapper = new ObjectMapper();
@@ -42,14 +43,14 @@ public class WelcomeExtraMetadataUtils {
         }
         
     }
-    
-    public static String getUseCase(JCas jCas) throws JsonProcessingException, IOException {
+	
+	public static String getUseCase(JCas jCas) throws JsonProcessingException, IOException {
         
         try {
             ExtraMetaData metadataAnn = JCasUtil.selectSingle(jCas, ExtraMetaData.class);
 
             ObjectMapper mapper = new ObjectMapper();
-            WelcomeExtraMetadataJson extra = mapper.readValue(metadataAnn.getJson(), WelcomeExtraMetadataJson.class);
+            IExtraMetaDataUseCaseJson extra = mapper.readValue(metadataAnn.getJson(), IExtraMetaDataUseCaseJson.class);
 
             return extra.getUseCase();
             

@@ -17,7 +17,7 @@ import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.uima.flow.utils.FlowUtils;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
-import edu.upf.taln.welcome.slas.commons.utils.WelcomeExtraMetadataUtils;
+import edu.upf.taln.welcome.slas.commons.utils.WelcomeExtraMetaDataUtils;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
 
 public class JCasWelcomeFactory {
@@ -51,14 +51,7 @@ public class JCasWelcomeFactory {
 	        		break;
         	}
         	
-        	switch (language) {
-        		case "ca":
-        			WelcomeExtraMetadataUtils.addUseCase(jCas, "catalan");
-        			break;
-        		default:
-        			WelcomeExtraMetadataUtils.addUseCase(jCas, "english");
-        			break;
-        	}
+        	WelcomeExtraMetaDataUtils.addUseCase(jCas, "catalonia");
         	
             DocumentMetaData docMetadata = DocumentMetaData.create(jCas);
             docMetadata.setDocumentId("welcome-document");

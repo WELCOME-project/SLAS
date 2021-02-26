@@ -88,6 +88,11 @@
 			<artifactId>speechact-detection-wrapper</artifactId>
 			<version>${flask.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>geolocation-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>edu.upf.taln.uima.retokenize</groupId>

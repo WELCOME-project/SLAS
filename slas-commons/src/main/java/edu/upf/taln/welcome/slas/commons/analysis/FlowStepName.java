@@ -12,5 +12,6 @@ public enum FlowStepName {
 	DBPEDIA,
 	DBPEDIA_RETOKENIZER,
     EMOTION,
-    SPEECHACT
+    SPEECHACT,
+    GEOLOCATION
 }
