@@ -4,11 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 
+import edu.upf.taln.uima.flask_wrapper.commons.IUseCase;
+
 /**
  *
  * @author rcarlini
  */
-public class InputMetadata {
+public class InputMetadata implements IUseCase {
 
 	String language;
 	
@@ -17,6 +19,9 @@ public class InputMetadata {
     
 	@JsonProperty("analysis_type")
 	private AnalysisType analysisType;
+    
+	@JsonProperty("use_case")
+	private String useCase;
 
 	public String getLanguage() {
 		return language;
@@ -41,4 +46,13 @@ public class InputMetadata {
 	public void setAnalysisType(AnalysisType analysisType) {
 		this.analysisType = analysisType;
 	}	
+
+    @Override
+    public String getUseCase() {
+        return useCase;
+    }
+
+    public void setUseCase(String useCase) {
+        this.useCase = useCase;
+    }
 }
