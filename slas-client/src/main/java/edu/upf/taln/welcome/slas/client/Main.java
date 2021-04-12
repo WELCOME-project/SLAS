@@ -1,6 +1,7 @@
 package edu.upf.taln.welcome.slas.client;
 
 import java.io.File;
+import java.util.logging.Logger;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -8,6 +9,7 @@ import com.beust.jcommander.ParameterException;
 import com.beust.jcommander.Parameters;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
@@ -15,6 +17,8 @@ import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 
 public class Main {
 
+	private static Logger logger = Logger.getLogger(Processor.class.getName());
+	
     private static final String PARAMS_COMMAND = "params";
     
     @Parameters(commandDescription = "Calls the Mindspaces analysis service with the given parameters.")
@@ -38,7 +42,7 @@ public class Main {
         @Parameter(names = { "-f", "--output-format" }, description = "Output file format.", order = 5)
         private OutputLevel outputType = OutputLevel.xmi;
 
-        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", order = 6)
+        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", arity = 1, order = 6)
         private boolean skipErrors = true;
 
         @Override
@@ -139,9 +143,13 @@ public class Main {
                 processor.execute();
             }
 			
-		} catch(ParameterException ex){
-			System.out.println(ex.getMessage());
+		} catch (ParameterException ex) {
+			logger.severe(ex.getMessage());
 			jCommander.usage();
+		} catch (WelcomeClientException | WelcomeException ex) {
+            logger.severe(ex.getMessage());
+		} catch (Exception ex) {
+            logger.severe("Unexpected error! (" + ex.getClass().getName() + ": " + ex.getMessage() + ")");
 		}
     }
 }

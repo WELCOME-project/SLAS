@@ -13,6 +13,7 @@ import org.apache.commons.io.FilenameUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
@@ -30,6 +31,8 @@ import edu.upf.taln.welcome.slas.commons.output.XmiResult;
  * @author rcarlini
  */
 class Processor {
+	
+	private static Logger logger = Logger.getLogger(Processor.class.getName());
 
     static Processor createProcessor(String configurationFilePath) throws WelcomeException {
 
@@ -73,22 +76,29 @@ class Processor {
         }
     }
 
-	public void execute() throws WelcomeException {
+	public void execute() throws WelcomeException, WelcomeClientException {
+		FilenameFilter filter = (File dir, String name) -> name.endsWith(".txt");
         
         File inputDir = new File(config.getInputPath());
         if (!inputDir.exists()) {
             throw new WelcomeException("Input directory not found!");
-        }
+		} else if (!inputDir.isDirectory()) {
+	    	throw new WelcomeException("Input directory is not a directory!");
+	    } else if (inputDir.listFiles(filter).length == 0) {
+	    	Logger.getLogger(Processor.class.getName()).log(Level.WARNING, "Input folder does not contain any files.");
+	    }
         
         File outputDir = new File(config.getOutputPath());
         if (!outputDir.exists()) {
             throw new WelcomeException("Output directory not found!");
+        } else if (!outputDir.isDirectory()) {
+        	throw new WelcomeException("Output directory is not a directory!");
         }
         
 		execute(meta, inputDir, outputDir);
 	}    
 
-    public void execute(InputMetadata meta, File inputDir, File outputDir) throws WelcomeException {
+    public void execute(InputMetadata meta, File inputDir, File outputDir) throws WelcomeException, WelcomeClientException {
         
         String serviceUrl = config.getServiceURL();
         String language = meta.getLanguage();
@@ -133,12 +143,19 @@ class Processor {
                 
                 count++;
                 
-            } catch (IOException ex) {
-                if (config.isSkipErrors()) {
-                    Logger.getLogger(Processor.class.getName()).log(Level.WARNING, null, ex);
-                    
+            } catch (Exception ex) {
+                logger.log(Level.SEVERE, "Error found while processing document '" + textFile.getName() + "'!");
+                WelcomeClientException wex;
+                if (ex instanceof WelcomeClientException) {
+                	wex = (WelcomeClientException) ex;
                 } else {
-                    throw new WelcomeException("Something happened while processing document '" + textFile.getName() + "'!", ex);
+                	wex = new WelcomeClientException("Unexpected error! (" + ex.getClass().getName() + ": " + ex.getMessage() + ")", ex);
+                }
+
+                if (config.isSkipErrors()) {
+                    logger.log(Level.SEVERE, ex.getMessage());
+                } else {
+                    throw wex;
                 }
             }
         }

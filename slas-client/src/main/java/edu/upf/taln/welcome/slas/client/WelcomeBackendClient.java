@@ -14,6 +14,7 @@ import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
@@ -40,18 +41,18 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
         this.outputType = outputType;
     }
 
-    public T analyze(AnalysisType analysisType, String text) throws WelcomeException {
+    public T analyze(AnalysisType analysisType, String text) throws WelcomeClientException {
     	
         return analyze(analysisType, OutputLevel.demo, text);
     }
     
-    public T analyze(AnalysisType analysisType, OutputLevel outputLevel, String text) throws WelcomeException {
+    public T analyze(AnalysisType analysisType, OutputLevel outputLevel, String text) throws WelcomeClientException {
 
     	DeepAnalysisInput request = InputFactory.create(analysisType, outputLevel, text, language);
         return analyze(request);
     }
 
-    public T analyze(DeepAnalysisInput request) throws WelcomeException {
+    public T analyze(DeepAnalysisInput request) throws WelcomeClientException {
 
         Response response = sendRequest(request);
         T result = response.readEntity(new GenericType<T>(outputType) {});
@@ -59,7 +60,7 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
         return result;
     }
 
-    protected Response sendRequest(DeepAnalysisInput request) throws WelcomeException {
+    protected Response sendRequest(DeepAnalysisInput request) throws WelcomeClientException {
 
         Response response = target.path("api/dla/analyze")
                 .request(MediaType.APPLICATION_JSON_TYPE)
@@ -73,37 +74,30 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
         }
     }
     
-    private void error_management(Response response) throws WelcomeException {
+    private void error_management(Response response) throws WelcomeClientException {
         String responseStr = response.readEntity(String.class);
         ObjectMapper om = new ObjectMapper()
         		.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
 
         if (response.getStatus() == Response.Status.INTERNAL_SERVER_ERROR.getStatusCode()) {
-            logger.severe("Status: " + response.getStatus());
 
-            WelcomeException we;
+            WelcomeClientException wce;
             try {
-                we = om.readValue(responseStr, WelcomeException.class);
-                logger.severe("Server error! Message: " + we.getMessage());
-                
+            	WelcomeException we = om.readValue(responseStr, WelcomeException.class);
+                wce = new WelcomeClientException(we.getMessage(), we, response.getStatus());
             } catch (Exception e) {
-                logger.severe("Unable to load MindspacesException. Trying Exception...");
                 try {
                     Exception newEx = om.readValue(responseStr, Exception.class);
-                    we = new WelcomeException(newEx);
+                    wce = new WelcomeClientException(newEx.getMessage(), newEx, response.getStatus());
 
                 } catch (IOException e1) {
-                    logger.severe("Unable to load Exception.");
-                    logger.severe("Response content:\n" + responseStr);
-                    throw new WelcomeException("Server error! Status: " + response.getStatus() + " Unable to load Exception.", e1);
+                    throw new WelcomeClientException(response.getStatus());
                 }
             }
-            throw we;
+            throw wce;
         } else {
-            logger.severe("Status: " + response.getStatus());
-            logger.severe("Response content:\n" + responseStr);
-            throw new WelcomeException("Server error! Status: " + response.getStatus());
+            throw new WelcomeClientException(response.getStatus());
         }
     }
 
