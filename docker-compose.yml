@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-02-18
+    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-04-13
     networks:
       - welcomenet
       - traefik
@@ -48,6 +48,7 @@ services:
       - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
       - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt
       - SPEECHACT_URL=https://welcome-project.upf.edu/dialogtag/
+      - GEOLOCATION_URL=http://geolocation.v.taln.ml/
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
   dialogtag:
     image: maven-taln.upf.edu/uima_taln_dialogtag_en:2021-02-05
@@ -64,7 +65,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2021-02-11
+    image: registry.gitlab.com/talnupf/welcome/dms:2021-03-05
     networks:
       - welcomenet
       - traefik
@@ -78,7 +79,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2021-02-11
+    image: registry.gitlab.com/talnupf/welcome/nlg:2021-03-05
     networks:
       - welcomenet
       - traefik

@@ -40,4 +40,4 @@ export TAG=$tag
 
 docker build -t registry.gitlab.com/talnupf/welcome/slas/dla:${TAG} . && docker push registry.gitlab.com/talnupf/welcome/slas/dla:${TAG}
 #docker build -t maven-taln.upf.edu/welcome/dla:${TAG} . && docker push maven-taln.upf.edu/welcome/dla:${TAG}
-#docker tag registry.gitlab.com/talnupf/welcome/slas/dla:${TAG} nexus-dockers.everis.com:10110/upf/dla:${TAG} && docker push nexus-dockers.everis.com:10110/upf/dla:${TAG}
+docker tag registry.gitlab.com/talnupf/welcome/slas/dla:${TAG} nexus-dockers.everis.com:10110/upf/dla:${TAG} && docker push nexus-dockers.everis.com:10110/upf/dla:${TAG}
