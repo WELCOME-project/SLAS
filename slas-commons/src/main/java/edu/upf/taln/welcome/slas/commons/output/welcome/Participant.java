@@ -7,22 +7,22 @@ import java.util.List;
  * @author rcarlini
  */
 public class Participant {
-    private String role;
-    private List<String> entities;
+    private List<String> roles;
+    private String entity;
 
-    public String getRole() {
-        return role;
+    public List<String> getRoles() {
+        return roles;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
     }
 
-    public List<String> getEntities() {
-        return entities;
+    public String getEntity() {
+        return entity;
     }
 
-    public void setEntities(List<String> entities) {
-        this.entities = entities;
+    public void setEntity(String entity) {
+        this.entity = entity;
     }
 }

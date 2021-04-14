@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:types2="http:///org/dbpedia/spotlight/uima/types.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:uima="http:///edu/upf/taln/common/uima.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:types="http:///edu/upf/taln/parser/deep_parser/types.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type2:DocumentMetaData xmi:id="1" sofa="12" begin="0" end="62" language="en" documentTitle="ejemplo.conll" documentId="ejemplo.conll" documentUri="file:/home/rcarlini/code/taln/misc/uima/deep_parser_uima/deep-parser-core/src/test/resources/welcome/initial/ejemplo.conll" collectionId="file:/home/rcarlini/code/taln/misc/uima/deep_parser_uima/deep-parser-core/src/test/resources/welcome/initial/" documentBaseUri="file:/home/rcarlini/code/taln/misc/uima/deep_parser_uima/deep-parser-core/src/test/resources/welcome/initial/" isLastSegment="false"/>
+    <type4:Token xmi:id="19" sofa="12" begin="0" end="3" lemma="31" pos="36"/>
+    <type4:Token xmi:id="65" sofa="12" begin="4" end="5" lemma="77" pos="82"/>
+    <type4:Token xmi:id="111" sofa="12" begin="6" end="7" lemma="123" pos="128"/>
+    <type4:Token xmi:id="157" sofa="12" begin="8" end="13" lemma="169" pos="174"/>
+    <type4:Token xmi:id="203" sofa="12" begin="14" end="18" lemma="215" pos="220"/>
+    <type4:Token xmi:id="249" sofa="12" begin="19" end="21" lemma="261" pos="266"/>
+    <type4:Token xmi:id="295" sofa="12" begin="22" end="27" lemma="307" pos="312"/>
+    <type4:Token xmi:id="341" sofa="12" begin="28" end="31" lemma="353" pos="358"/>
+    <type4:Token xmi:id="387" sofa="12" begin="32" end="35" lemma="399" pos="404"/>
+    <type4:Token xmi:id="433" sofa="12" begin="36" end="41" lemma="445" pos="450"/>
+    <type4:Token xmi:id="479" sofa="12" begin="42" end="51" lemma="491" pos="496"/>
+    <type4:Token xmi:id="525" sofa="12" begin="52" end="59" lemma="537" pos="542"/>
+    <type4:Token xmi:id="571" sofa="12" begin="60" end="61" lemma="583" pos="588"/>
+    <type4:Lemma xmi:id="31" sofa="12" begin="0" end="3" value="yes"/>
+    <type4:Lemma xmi:id="77" sofa="12" begin="4" end="5" value=","/>
+    <type4:Lemma xmi:id="123" sofa="12" begin="6" end="7" value="I"/>
+    <type4:Lemma xmi:id="169" sofa="12" begin="8" end="13" value="would"/>
+    <type4:Lemma xmi:id="215" sofa="12" begin="14" end="18" value="like"/>
+    <type4:Lemma xmi:id="261" sofa="12" begin="19" end="21" value="to"/>
+    <type4:Lemma xmi:id="307" sofa="12" begin="22" end="27" value="apply"/>
+    <type4:Lemma xmi:id="353" sofa="12" begin="28" end="31" value="for"/>
+    <type4:Lemma xmi:id="399" sofa="12" begin="32" end="35" value="the"/>
+    <type4:Lemma xmi:id="445" sofa="12" begin="36" end="41" value="first"/>
+    <type4:Lemma xmi:id="491" sofa="12" begin="42" end="51" value="reception"/>
+    <type4:Lemma xmi:id="537" sofa="12" begin="52" end="59" value="service"/>
+    <type4:Lemma xmi:id="583" sofa="12" begin="60" end="61" value="."/>
+    <pos:POS_INTJ xmi:id="36" sofa="12" begin="0" end="3" PosValue="UH" coarseValue="INTJ"/>
+    <pos:POS_INTJ xmi:id="733" sofa="12" begin="0" end="3" PosValue="UH"/>
+    <pos:POS_INTJ xmi:id="873" sofa="12" begin="0" end="3" PosValue="UH"/>
+    <morph:MorphologicalFeatures xmi:id="42" sofa="12" begin="0" end="3" value="start_string=24|lineId=1|end_string=27|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="88" sofa="12" begin="4" end="5" value="start_string=27|lineId=2|end_string=28|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="134" sofa="12" begin="6" end="7" value="start_string=29|lineId=3|end_string=30|fillPred=_|Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="180" sofa="12" begin="8" end="13" value="start_string=31|lineId=4|end_string=36|VerbForm=Fin|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="226" sofa="12" begin="14" end="18" value="en_cano=like|start_string=37|EL=θέλω|end_string=41|bnId=bn:00090365v|EN=like|lineId=5|VerbForm=Inf|wnId=01825962v|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="272" sofa="12" begin="19" end="21" value="start_string=42|end_string=44|lineId=6|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="318" sofa="12" begin="22" end="27" value="en_cano=use|EL=χρησιμοποιώ|start_string=45|bnId=bn:00082705v|EN=use|lineId=7|end_string=50|VerbForm=Inf|wnId=01158872v|IT=utilizzare|fillPred=_|ES=utilizar"/>
+    <morph:MorphologicalFeatures xmi:id="364" sofa="12" begin="28" end="31" value="start_string=51|lineId=8|end_string=54|fillPred=_"/>
+    <morph:MorphologicalFeatures xmi:id="410" sofa="12" begin="32" end="35" value="start_string=55|lineId=9|end_string=58|fillPred=_|Definite=Def|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="456" sofa="12" begin="36" end="41" value="Degree=Pos|en_cano=beginning|start_string=59|EL=πρώτος|lineId=10|end_string=64|bnId=bn:00098197a|EN=beginning|wnId=01009206a|IT=primo|fillPred=_|ES=inicial|NumType=Ord"/>
+    <morph:MorphologicalFeatures xmi:id="502" sofa="12" begin="42" end="51" value="en_cano=reception|start_string=65|lineId=11|end_string=74|bnId=bn:00066506n|EN=reception|wnId=06630852n|IT=accoglienza|fillPred=_|ES=recepción|Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="548" sofa="12" begin="52" end="59" value="en_cano=service|start_string=75|EL=Παροχή_υπηρεσιών|EN=service|lineId=12|end_string=82|bnId=bn:00070651n|wnId=00577525n|IT=servizio|fillPred=_|ES=servicio|Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="594" sofa="12" begin="60" end="61" value="start_string=82|end_string=83|lineId=13|fillPred=_"/>
+    <pos:POS_PUNCT xmi:id="82" sofa="12" begin="4" end="5" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="588" sofa="12" begin="60" end="61" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PRON xmi:id="128" sofa="12" begin="6" end="7" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="746" sofa="12" begin="6" end="7" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="886" sofa="12" begin="6" end="7" PosValue="PRP"/>
+    <pos:POS_VERB xmi:id="174" sofa="12" begin="8" end="13" PosValue="MD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="220" sofa="12" begin="14" end="18" PosValue="VB" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="811" sofa="12" begin="14" end="18" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="951" sofa="12" begin="14" end="18" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="312" sofa="12" begin="22" end="27" PosValue="VB" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="772" sofa="12" begin="22" end="27" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="912" sofa="12" begin="22" end="27" PosValue="VB"/>
+    <pos:POS_ADP xmi:id="266" sofa="12" begin="19" end="21" PosValue="TO" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="358" sofa="12" begin="28" end="31" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_DET xmi:id="404" sofa="12" begin="32" end="35" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_ADJ xmi:id="450" sofa="12" begin="36" end="41" PosValue="JJ" coarseValue="ADJ"/>
+    <pos:POS_ADJ xmi:id="759" sofa="12" begin="36" end="41" PosValue="JJ"/>
+    <pos:POS_ADJ xmi:id="899" sofa="12" begin="36" end="41" PosValue="JJ"/>
+    <pos:POS_NOUN xmi:id="496" sofa="12" begin="42" end="51" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="785" sofa="12" begin="42" end="51" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="925" sofa="12" begin="42" end="51" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="542" sofa="12" begin="52" end="59" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="798" sofa="12" begin="52" end="59" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="938" sofa="12" begin="52" end="59" PosValue="NN"/>
+    <dependency:Dependency xmi:id="617" sofa="12" begin="0" end="3" Governor="203" Dependent="19" DependencyType="discourse" flavor="basic"/>
+    <dependency:Dependency xmi:id="625" sofa="12" begin="4" end="5" Governor="203" Dependent="65" DependencyType="punct" flavor="basic"/>
+    <dependency:Dependency xmi:id="633" sofa="12" begin="6" end="7" Governor="203" Dependent="111" DependencyType="nsubj" flavor="basic"/>
+    <dependency:Dependency xmi:id="641" sofa="12" begin="8" end="13" Governor="203" Dependent="157" DependencyType="aux" flavor="basic"/>
+    <dependency:Dependency xmi:id="657" sofa="12" begin="19" end="21" Governor="295" Dependent="249" DependencyType="mark" flavor="basic"/>
+    <dependency:Dependency xmi:id="665" sofa="12" begin="22" end="27" Governor="203" Dependent="295" DependencyType="xcomp" flavor="basic"/>
+    <dependency:Dependency xmi:id="673" sofa="12" begin="28" end="31" Governor="525" Dependent="341" DependencyType="case" flavor="basic"/>
+    <dependency:Dependency xmi:id="681" sofa="12" begin="32" end="35" Governor="525" Dependent="387" DependencyType="det" flavor="basic"/>
+    <dependency:Dependency xmi:id="689" sofa="12" begin="36" end="41" Governor="525" Dependent="433" DependencyType="amod" flavor="basic"/>
+    <dependency:Dependency xmi:id="697" sofa="12" begin="42" end="51" Governor="525" Dependent="479" DependencyType="compound" flavor="basic"/>
+    <dependency:Dependency xmi:id="705" sofa="12" begin="52" end="59" Governor="295" Dependent="525" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="713" sofa="12" begin="60" end="61" Governor="203" Dependent="571" DependencyType="punct" flavor="basic"/>
+    <dependency:ROOT xmi:id="649" sofa="12" begin="14" end="18" Governor="203" Dependent="203" DependencyType="ROOT" flavor="basic"/>
+    <type4:Sentence xmi:id="721" sofa="12" begin="0" end="61"/>
+    <types:DeepToken xmi:id="726" sofa="12" begin="0" end="3" value="Yes" features="pbr=&quot;yes.01&quot;|deepUD_rel=&quot;AM&quot;|predName=&quot;yes&quot;|start_string=0|lemma=&quot;yes&quot;|end_string=3|predValue=&quot;01&quot;|dlex=&quot;Yes&quot;|Disc=&quot;yes&quot;|pred=&quot;_&quot;|pos=&quot;UH&quot;|id1=&quot;1&quot;|lex=&quot;yes_UH_01&quot;|dpos=&quot;UH&quot;" pos="733"/>
+    <types:DeepToken xmi:id="739" sofa="12" begin="6" end="7" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=6|end_string=7|lemma=&quot;I&quot;|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;3&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="746"/>
+    <types:DeepToken xmi:id="804" sofa="12" begin="14" end="18" value="like" features="Tense=&quot;Pres&quot;|pbr=&quot;like.01&quot;|wnId=&quot;01825962v&quot;|predName=&quot;like&quot;|start_string=14|end_string=18|bnId=&quot;bn:00090365v&quot;|lemma=&quot;like&quot;|predValue=&quot;01&quot;|Mood=&quot;Cnd&quot;|dlex=&quot;like&quot;|pred=&quot;_&quot;|pos=&quot;VB&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;like_VB_01&quot;|finiteness=&quot;FIN&quot;|dpos=&quot;VB&quot;" pos="811"/>
+    <types:DeepToken xmi:id="765" sofa="12" begin="22" end="27" value="apply" features="pbr=&quot;apply.01&quot;|deepUD_rel=A2|predName=&quot;apply&quot;|wnId=&quot;01158872v&quot;|start_string=22|end_string=27|lemma=&quot;apply&quot;|bnId=&quot;bn:00082705v&quot;|predValue=&quot;01&quot;|dlex=&quot;apply&quot;|pred=&quot;_&quot;|pos=&quot;VB&quot;|id2=&quot;6&quot;|id1=&quot;7&quot;|lex=&quot;apply_VB_01&quot;|finiteness=&quot;INF&quot;|dpos=&quot;VB&quot;" pos="772"/>
+    <types:DeepToken xmi:id="752" sofa="12" begin="36" end="41" value="First" features="pbr=&quot;first.01&quot;|deepUD_rel=&quot;A1INV&quot;|Degree=&quot;Pos&quot;|wnId=&quot;01009206a&quot;|predName=&quot;first&quot;|start_string=36|lemma=&quot;first&quot;|end_string=41|bnId=&quot;bn:00098197a&quot;|predValue=&quot;01&quot;|dlex=&quot;First&quot;|NumType=&quot;Ord&quot;|pred=&quot;_&quot;|pos=&quot;JJ&quot;|id1=&quot;10&quot;|lex=&quot;first_JJ_01&quot;|dpos=&quot;JJ&quot;" pos="759"/>
+    <types:DeepToken xmi:id="778" sofa="12" begin="42" end="51" value="Reception" features="pbr=&quot;reception.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;reception&quot;|wnId=&quot;06630852n&quot;|start_string=42|bnId=&quot;bn:00066506n&quot;|lemma=&quot;reception&quot;|end_string=51|predValue=&quot;01&quot;|dlex=&quot;Reception&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id1=&quot;11&quot;|lex=&quot;reception_NN_01&quot;|dpos=&quot;NN&quot;" pos="785"/>
+    <types:DeepToken xmi:id="791" sofa="12" begin="52" end="59" value="Service" features="pbr=&quot;service.01&quot;|deepUD_rel=A2|predName=&quot;service&quot;|wnId=&quot;00577525n&quot;|start_string=52|bnId=&quot;bn:00070651n&quot;|end_string=59|lemma=&quot;service&quot;|predValue=&quot;01&quot;|dlex=&quot;Service&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;8&quot;|id1=&quot;12&quot;|id3=&quot;9&quot;|lex=&quot;service_NN_01&quot;|Definite=&quot;Def&quot;|dpos=&quot;NN&quot;" pos="798"/>
+    <types:DeepDependency xmi:id="817" sofa="12" begin="0" end="3" governor="804" dependent="726" dependencyType="ATTR"/>
+    <types:DeepDependency xmi:id="824" sofa="12" begin="6" end="7" governor="804" dependent="739" dependencyType="I"/>
+    <types:DeepDependency xmi:id="859" sofa="12" begin="14" end="18" governor="804" dependent="804" dependencyType="ROOT"/>
+    <types:DeepDependency xmi:id="838" sofa="12" begin="22" end="27" governor="804" dependent="765" dependencyType="II"/>
+    <types:DeepDependency xmi:id="831" sofa="12" begin="36" end="41" governor="791" dependent="752" dependencyType="ATTR"/>
+    <types:DeepDependency xmi:id="845" sofa="12" begin="42" end="51" governor="791" dependent="778" dependencyType="NAME"/>
+    <types:DeepDependency xmi:id="852" sofa="12" begin="52" end="59" governor="765" dependent="791" dependencyType="II"/>
+    <types:PredArgsToken xmi:id="866" sofa="12" begin="0" end="3" value="Yes" features="pos=&quot;UH&quot;|predName=&quot;yes&quot;|id1=&quot;1&quot;|start_string=0|end_string=3|sem=&quot;Yes&quot;|lex=&quot;yes_UH_01&quot;|dpos=&quot;UH&quot;" pos="873"/>
+    <types:PredArgsToken xmi:id="879" sofa="12" begin="6" end="7" value="I" features="fnrole_ctrl=Judge|vnrole_ctrl=Experiencer|predName=&quot;I&quot;|start_string=6|end_string=7|pbrole=&quot;A0&quot;|vnrole=Agent|pos=&quot;PRP&quot;|id1=&quot;3&quot;|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;" pos="886"/>
+    <types:PredArgsToken xmi:id="944" sofa="12" begin="14" end="18" value="like" features="Tense=&quot;Pres&quot;|vncls=&quot;31.2&quot;|predName=&quot;like&quot;|wnId=&quot;01825962v&quot;|start_string=14|end_string=18|bnId=&quot;bn:00090365v&quot;|pos=&quot;VB&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|vn=&quot;vn:31.2_like&quot;|pbID=&quot;01&quot;|sem=&quot;like&quot;|pbsenseID=&quot;like.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;like_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;|frame=&quot;Partiality&quot;" pos="951"/>
+    <types:PredArgsToken xmi:id="905" sofa="12" begin="22" end="27" value="apply" features="vncls=&quot;105&quot;|wnId=&quot;01158872v&quot;|predName=&quot;apply&quot;|start_string=22|end_string=27|bnId=&quot;bn:00082705v&quot;|fnrole=Sides|vnrole=Stimulus|pbrole=&quot;A1&quot;|pos=&quot;VB&quot;|id2=&quot;6&quot;|id1=&quot;7&quot;|vn=&quot;vn:105_apply&quot;|pbID=&quot;01&quot;|sem=&quot;apply&quot;|pbsenseID=&quot;apply.01&quot;|lex=&quot;apply_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;INF&quot;" pos="912"/>
+    <types:PredArgsToken xmi:id="892" sofa="12" begin="36" end="41" value="First" features="predName=&quot;first&quot;|wnId=&quot;01009206a&quot;|pos=&quot;JJ&quot;|start_string=36|id1=&quot;10&quot;|bnId=&quot;bn:00098197a&quot;|end_string=41|sem=&quot;First&quot;|lex=&quot;first_JJ_01&quot;|dpos=&quot;JJ&quot;" pos="899"/>
+    <types:PredArgsToken xmi:id="918" sofa="12" begin="42" end="51" value="Reception" features="vncls=&quot;33&quot;|wnId=&quot;06630852n&quot;|predName=&quot;reception&quot;|start_string=42|bnId=&quot;bn:00066506n&quot;|end_string=51|pos=&quot;NN&quot;|id1=&quot;11&quot;|vn=&quot;vn:33_reception&quot;|pbID=&quot;01&quot;|sem=&quot;Reception&quot;|pbsenseID=&quot;reception.01&quot;|lex=&quot;reception_NN_01&quot;|dpos=&quot;NN&quot;" pos="925"/>
+    <types:PredArgsToken xmi:id="931" sofa="12" begin="52" end="59" value="Service" features="vncls=&quot;29.6&quot;|wnId=&quot;00577525n&quot;|predName=&quot;service&quot;|start_string=52|end_string=59|bnId=&quot;bn:00070651n&quot;|vnrole=Theme|pbrole=&quot;A1&quot;|pos=&quot;NN&quot;|id2=&quot;8&quot;|id1=&quot;12&quot;|vn=&quot;vn:29.6_service&quot;|id3=&quot;9&quot;|pbID=&quot;01&quot;|sem=&quot;Service&quot;|pbsenseID=&quot;service.01&quot;|Definite=&quot;Def&quot;|lex=&quot;service_NN_01&quot;|frame=&quot;Performers_and_roles&quot;|dpos=&quot;NN&quot;" pos="938"/>
+    <types:PredArgsDependency xmi:id="957" sofa="12" begin="0" end="3" governor="866" dependent="866" dependencyType="ROOT"/>
+    <types:PredArgsDependency xmi:id="964" sofa="12" begin="6" end="7" governor="944" dependent="879" dependencyType="Argument1"/>
+    <types:PredArgsDependency xmi:id="971" sofa="12" begin="6" end="7" governor="905" dependent="879" dependencyType="Argument1"/>
+    <types:PredArgsDependency xmi:id="1006" sofa="12" begin="14" end="18" governor="944" dependent="944" dependencyType="ROOT"/>
+    <types:PredArgsDependency xmi:id="985" sofa="12" begin="22" end="27" governor="944" dependent="905" dependencyType="Argument2"/>
+    <types:PredArgsDependency xmi:id="978" sofa="12" begin="36" end="41" governor="892" dependent="892" dependencyType="ROOT"/>
+    <types:PredArgsDependency xmi:id="992" sofa="12" begin="42" end="51" governor="931" dependent="918" dependencyType="NAME"/>
+    <types:PredArgsDependency xmi:id="999" sofa="12" begin="52" end="59" governor="905" dependent="931" dependencyType="Argument2"/>
+    <cas:Sofa xmi:id="12" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Yes , I would like to apply for the First Reception Service .&#10;"/>
+    <cas:View sofa="12" members="1 19 65 111 157 203 249 295 341 387 433 479 525 571 31 77 123 169 215 261 307 353 399 445 491 537 583 36 733 873 42 88 134 180 226 272 318 364 410 456 502 548 594 82 588 128 746 886 174 220 811 951 312 772 912 266 358 404 450 759 899 496 785 925 542 798 938 617 625 633 641 657 665 673 681 689 697 705 713 649 721 726 739 804 765 752 778 791 817 824 859 838 831 845 852 866 879 944 905 892 918 931 957 964 971 1006 985 978 992 999"/>
+</xmi:XMI>

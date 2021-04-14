@@ -1,5 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.output.welcome;
 
+import java.util.List;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -16,7 +17,7 @@ public class Entity {
 
     @NotNull
     private String anchor;
-    private String link;
+    private List<String> links;
     private double confidence;
 
     public String getId() {
@@ -43,12 +44,12 @@ public class Entity {
         this.anchor = anchor;
     }
 
-    public String getLink() {
-        return link;
+    public List<String> getLinks() {
+        return links;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setLinks(List<String> links) {
+        this.links = links;
     }
 
     public double getConfidence() {

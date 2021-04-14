@@ -1,6 +1,7 @@
 package edu.upf.taln.welcome.slas.commons.output.welcome;
 
 import java.util.List;
+import java.util.ArrayList;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -14,7 +15,7 @@ public class Relation {
     
     @NotNull
     private String predicate;
-    private List<Participant> participants;
+    private ArrayList<Participant> participants;
 
     public String getId() {
         return id;
@@ -32,11 +33,11 @@ public class Relation {
         this.predicate = predicate;
     }
 
-    public List<Participant> getParticipants() {
+    public ArrayList<Participant> getParticipants() {
         return participants;
     }
 
-    public void setParticipants(List<Participant> participants) {
+    public void setParticipants(ArrayList<Participant> participants) {
         this.participants = participants;
     }
 }

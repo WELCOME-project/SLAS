@@ -8,6 +8,7 @@ import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
+import java.util.Arrays;
 
 /**
  *
@@ -21,14 +22,14 @@ public class SampleResponses {
         entity1.setId("entity_1.1");
         entity1.setType("Concept");
         entity1.setAnchor("Hi");
-        entity1.setLink("bn:00043620n");
+        entity1.setLinks(Arrays.asList(new String[]{"bn:00043620n"}));
         entity1.setConfidence(0.9);
 
         Entity entity2_1 = new Entity();
         entity2_1.setId("entity_2.1");
         entity2_1.setType("Predicate");
         entity2_1.setAnchor("hear");
-        entity2_1.setLink("bn:00089277v");
+        entity2_1.setLinks(Arrays.asList(new String[]{"bn:00089277v"}));
         entity2_1.setConfidence(0.5);
 
         Entity entity2_2 = new Entity();
@@ -45,23 +46,17 @@ public class SampleResponses {
 
         Participant participant1 = new Participant();
         {        
-            List<String> entities = new ArrayList<>();
-            entities.add(entity2_2.getId());
-
-            participant1.setRole("Agent");
-            participant1.setEntities(entities);
+            participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+            participant1.setEntity(entity2_2.getId());
         }
         
         Participant participant2 = new Participant();
         {        
-            List<String> entities = new ArrayList<>();
-            entities.add(entity2_3.getId());
-
-            participant2.setRole("Object");
-            participant2.setEntities(entities);
+            participant2.setRoles(Arrays.asList(new String[]{"Object"}));
+            participant2.setEntity(entity2_3.getId());
         }
         
-        List<Participant> participants = new ArrayList<>();
+        ArrayList<Participant> participants = new ArrayList<>();
         participants.add(participant1);
         participants.add(participant2);
         
@@ -125,14 +120,14 @@ public class SampleResponses {
         entity1.setId("entity_1.1");
         entity1.setType("Concept");
         entity1.setAnchor("Hello");
-        entity1.setLink("bn:00043620n");
+        entity1.setLinks(Arrays.asList(new String[]{"bn:00043620n"}));
         entity1.setConfidence(0.9);
 
         Entity entity2_1 = new Entity();
         entity2_1.setId("entity_2.1");
         entity2_1.setType("Predicate");
         entity2_1.setAnchor("apply");
-        entity2_1.setLink("bn:00082707v");
+        entity2_1.setLinks(Arrays.asList(new String[]{"bn:00082707v"}));
         entity2_1.setConfidence(0.8);
 
         Entity entity2_2 = new Entity();
@@ -145,7 +140,7 @@ public class SampleResponses {
         entity2_3.setId("entity_2.3");
         entity2_3.setType("Concept");
         entity2_3.setAnchor("Service");
-        entity2_3.setLink("bn:00070651n");
+        entity2_3.setLinks(Arrays.asList(new String[]{"bn:00070651n"}));
         entity2_3.setConfidence(0.8);
 
         Entity entity2_4 = new Entity();
@@ -157,24 +152,17 @@ public class SampleResponses {
 
         Participant participant1 = new Participant();
         {        
-            List<String> entities = new ArrayList<>();
-            entities.add(entity2_2.getId());
-
-            participant1.setRole("Agent");
-            participant1.setEntities(entities);
+            participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+            participant1.setEntity(entity2_2.getId());
         }
         
         Participant participant2 = new Participant();
         {        
-            List<String> entities = new ArrayList<>();
-            entities.add(entity2_3.getId());
-            entities.add(entity2_4.getId());
-
-            participant2.setRole("Object");
-            participant2.setEntities(entities);
+            participant2.setRoles(Arrays.asList(new String[]{"Object"}));
+            participant2.setEntity(entity2_3.getId());
         }
         
-        List<Participant> participants = new ArrayList<>();
+        ArrayList<Participant> participants = new ArrayList<>();
         participants.add(participant1);
         participants.add(participant2);
         
@@ -246,7 +234,7 @@ public class SampleResponses {
         entity1_2.setId("entity_1.2");
         entity1_2.setType("Predicate");
         entity1_2.setAnchor("name");
-        entity1_2.setLink("bn:00056758n");
+        entity1_2.setLinks(Arrays.asList(new String[]{"bn:00056758n"}));
         entity1_2.setConfidence(1.0);
         
         Entity entity1_3 = new Entity();
@@ -259,21 +247,21 @@ public class SampleResponses {
         entity2_1.setId("entity_2.1");
         entity2_1.setType("Predicate");
         entity2_1.setAnchor("come");
-        entity2_1.setLink("bn:00082788v");
+        entity2_1.setLinks(Arrays.asList(new String[]{"bn:00082788v"}));
         entity2_1.setConfidence(0.8);
 
         Entity entity2_2 = new Entity();
         entity2_2.setId("entity_2.2");
         entity2_2.setType("Location");
         entity2_2.setAnchor("Syria");
-        entity2_2.setLink("bn:00075752n");
+        entity2_2.setLinks(Arrays.asList(new String[]{"bn:00075752n"}));
         entity2_2.setConfidence(0.9);
 
         Entity entity3_1 = new Entity();
         entity3_1.setId("entity_3.1");
         entity3_1.setType("Predicate");
         entity3_1.setAnchor("am");
-        entity3_1.setLink("bn:00083183v");
+        entity3_1.setLinks(Arrays.asList(new String[]{"bn:00083183v"}));
         entity3_1.setConfidence(0.7);
 
         Entity entity3_2 = new Entity();
@@ -286,14 +274,14 @@ public class SampleResponses {
         entity3_3.setId("entity_3.3");
         entity3_3.setType("Location");
         entity3_3.setAnchor("Terrassa");
-        entity3_3.setLink("bn:03554826n");
+        entity3_3.setLinks(Arrays.asList(new String[]{"bn:03554826n"}));
         entity3_3.setConfidence(1.0);
 
         Entity entity4_1 = new Entity();
         entity4_1.setId("entity_4.1");
         entity4_1.setType("Predicate");
         entity4_1.setAnchor("stay");
-        entity4_1.setLink("bn:00082137v");
+        entity4_1.setLinks(Arrays.asList(new String[]{"bn:00082137v"}));
         entity4_1.setConfidence(0.7);
 
         Entity entity4_2 = new Entity();
@@ -306,30 +294,24 @@ public class SampleResponses {
         entity4_3.setId("entity_4.3");
         entity4_3.setType("Location");
         entity4_3.setAnchor("friends");
-        entity4_3.setLink("bn:00036538n");
+        entity4_3.setLinks(Arrays.asList(new String[]{"bn:00036538n"}));
         entity4_3.setConfidence(0.3);
 
         Relation relation1 = new Relation();
         {
             Participant participant1 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_1.getId());
-
-                participant1.setRole("Agent");
-                participant1.setEntities(entities);
+                participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+                participant1.setEntity(entity1_1.getId());
             }
 
             Participant participant2 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_3.getId());
-
-                participant2.setRole("Object");
-                participant2.setEntities(entities);
+                participant2.setRoles(Arrays.asList(new String[]{"Object"}));
+                participant2.setEntity(entity1_3.getId());
             }
 
-            List<Participant> participants = new ArrayList<>();
+            ArrayList<Participant> participants = new ArrayList<>();
             participants.add(participant1);
             participants.add(participant2);
 
@@ -342,23 +324,17 @@ public class SampleResponses {
         {
             Participant participant1 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_1.getId());
-
-                participant1.setRole("Agent");
-                participant1.setEntities(entities);
+                participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+                participant1.setEntity(entity1_1.getId());
             }
 
             Participant participant2 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity2_2.getId());
-
-                participant2.setRole("Location");
-                participant2.setEntities(entities);
+                participant2.setRoles(Arrays.asList(new String[]{"Location"}));
+                participant2.setEntity(entity2_2.getId());
             }
 
-            List<Participant> participants = new ArrayList<>();
+            ArrayList<Participant> participants = new ArrayList<>();
             participants.add(participant1);
             participants.add(participant2);
 
@@ -371,32 +347,23 @@ public class SampleResponses {
         {
             Participant participant1 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_1.getId());
-
-                participant1.setRole("Agent");
-                participant1.setEntities(entities);
+                 participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+                participant1.setEntity(entity1_1.getId());
             }
 
             Participant participant2 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity3_2.getId());
-
-                participant2.setRole("Time");
-                participant2.setEntities(entities);
+                participant2.setRoles(Arrays.asList(new String[]{"Time"}));
+                participant2.setEntity(entity3_2.getId());
             }
 
             Participant participant3 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity3_3.getId());
-
-                participant3.setRole("Place");
-                participant3.setEntities(entities);
+                participant3.setRoles(Arrays.asList(new String[]{"Place"}));
+                participant3.setEntity(entity3_3.getId());
             }
 
-            List<Participant> participants = new ArrayList<>();
+            ArrayList<Participant> participants = new ArrayList<>();
             participants.add(participant1);
             participants.add(participant2);
             participants.add(participant3);
@@ -410,32 +377,23 @@ public class SampleResponses {
         {
             Participant participant1 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_1.getId());
-
-                participant1.setRole("Agent");
-                participant1.setEntities(entities);
+                participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+                participant1.setEntity(entity1_1.getId());
             }
 
             Participant participant2 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity4_1.getId());
-
-                participant2.setRole("Time");
-                participant2.setEntities(entities);
+                participant2.setRoles(Arrays.asList(new String[]{"Time"}));
+                participant2.setEntity(entity4_1.getId());
             }
 
             Participant participant3 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity4_3.getId());
-
-                participant3.setRole("Place");
-                participant3.setEntities(entities);
+                participant3.setRoles(Arrays.asList(new String[]{"Place"}));
+                participant3.setEntity(entity4_3.getId());
             }
 
-            List<Participant> participants = new ArrayList<>();
+            ArrayList<Participant> participants = new ArrayList<>();
             participants.add(participant1);
             participants.add(participant2);
             participants.add(participant3);
@@ -547,37 +505,31 @@ public class SampleResponses {
         entity1_2.setId("entity_1.2");
         entity1_2.setType("Predicate");
         entity1_2.setAnchor("is");
-        entity1_2.setLink("bn:00056758n");
+        entity1_2.setLinks(Arrays.asList(new String[]{"bn:00056758n"}));
         entity1_2.setConfidence(1.0);
         
         Entity entity1_3 = new Entity();
         entity1_3.setId("entity_1.3");
         entity1_3.setType("Location");
         entity1_3.setAnchor("Carrer de Sant Sebastià, 66");
-        entity1_3.setLink("osm:39524296");
+        entity1_3.setLinks(Arrays.asList(new String[]{"osm:39524296"}));
         entity1_3.setConfidence(0.2);
 
         Relation relation1 = new Relation();
         {
             Participant participant1 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_1.getId());
-
-                participant1.setRole("Agent");
-                participant1.setEntities(entities);
+                participant1.setRoles(Arrays.asList(new String[]{"Agent"}));
+                participant1.setEntity(entity1_1.getId());
             }
 
             Participant participant2 = new Participant();
             {        
-                List<String> entities = new ArrayList<>();
-                entities.add(entity1_3.getId());
-
-                participant2.setRole("Object");
-                participant2.setEntities(entities);
+                participant2.setRoles(Arrays.asList(new String[]{"Object"}));
+                participant2.setEntity(entity1_3.getId());
             }
 
-            List<Participant> participants = new ArrayList<>();
+            ArrayList<Participant> participants = new ArrayList<>();
             participants.add(participant1);
             participants.add(participant2);
 
