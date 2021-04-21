@@ -17,6 +17,7 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.util.TypeSystemUtil;
 
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
+import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
@@ -40,6 +41,7 @@ import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
+import java.util.Collection;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -115,12 +117,12 @@ public class OutputGenerator {
         return roles;
     }
     
-    private static List<Relation> extractRelations(JCas jCas, TreeMap<Integer, Entity> tokenMap) {
-
+    private static List<Relation> extractRelations(Collection<PredArgsDependency> relationCollection, TreeMap<Integer, Entity> tokenMap) {
+        
         // cada governador, con argumentos, instancia una relacion
 		int i = 1;
         HashMap<PredArgsToken, Relation> relationMap = new HashMap<>();
-		for (PredArgsDependency depAnn : JCasUtil.select(jCas, PredArgsDependency.class)) {
+		for (PredArgsDependency depAnn : relationCollection) {
             PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
             PredArgsToken childAnn = (PredArgsToken) depAnn.getDependent();
             
@@ -188,41 +190,49 @@ public class OutputGenerator {
         
         return entities;
     }
+
+    private static Entity extractEntity(PredArgsToken token, String entityId) {
+
+        List<String> links = new ArrayList<>();
+
+        Entity entity = new Entity();
+        entity.setId(entityId);
+        entity.setAnchor(token.getCoveredText());
+        entity.setLinks(links);
+
+        List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
+        if (wsdList.size() > 0) {
+            WSDResult wsdAnn = wsdList.get(0);
+            Sense bestSense = wsdAnn.getBestSense();
+            
+            links.add(bestSense.getId());
+            entity.setConfidence(bestSense.getConfidence());
+        }
+        
+        // TODO: Mirar issue de gerardquía de types
+        List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
+        if (neList.size() > 0) {
+            NamedEntity nameEntity = neList.get(0);
+            entity.setType(nameEntity.getValue());
+            
+        } else {
+            entity.setType("concept");
+        }
+        
+        // TODO: Add also geolocation info as link
+        
+        return entity;
+    }
     
-    protected static TreeMap<Integer, Entity> extractEntitiesFromPredArg(JCas jCas) {
+    protected static TreeMap<Integer, Entity> extractEntities(Collection<PredArgsToken> tokenCollection) {
         
-        TreeMap<Integer, Entity> entities = new TreeMap<>();
-        
-		int i = 1;
-		for (PredArgsToken token : JCasUtil.select(jCas, PredArgsToken.class)) {
-
-            List<String> links = new ArrayList<>();
-			
-            Entity entity = new Entity();
-			entity.setId("entity_" + i);
-			entity.setAnchor(token.getCoveredText());
-            entity.setLinks(links);
-            
-            List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
-            if (wsdList.size() > 0) {
-                WSDResult wsdAnn = wsdList.get(0);
-                Sense bestSense = wsdAnn.getBestSense();
-
-                links.add(bestSense.getId());
-                entity.setConfidence(bestSense.getConfidence());
-            }
-
-            // TODO: Mirar issue de gerardquía de types
-            List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
-            if (neList.size() > 0) {
-				NamedEntity nameEntity = neList.get(0);
-				entity.setType(nameEntity.getValue());
                 
-			} else {
-                entity.setType("concept");
-            }
-            
-            // TODO: Add also geolocation info as link
+		int i = 1;
+        TreeMap<Integer, Entity> entities = new TreeMap<>();
+		for (PredArgsToken token : tokenCollection) {
+
+            String entityId = "entity_" + i;
+            Entity entity = extractEntity(token, entityId);
             
 			entities.put(token.hashCode(), entity);            
 			i++;
@@ -230,34 +240,59 @@ public class OutputGenerator {
         
         return entities;
     }
+
+    private static DlaResult extractDLAResult(Collection<PredArgsToken> tokenCollection, Collection<PredArgsDependency> relationCollection, Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection) {
+
+        DlaResult result = new DlaResult();
+        
+        TreeMap<Integer, Entity> tokenMap = extractEntities(tokenCollection);
+        List<Entity> entities = new ArrayList(tokenMap.values());
+        result.setEntities(entities);
+        
+        List<Relation> relations = extractRelations(relationCollection, tokenMap);
+        result.setRelations(relations);
+        
+        int j = 1;
+        List<SpeechAct> speechActs = new ArrayList<>();
+        for (edu.upf.taln.flask_wrapper.type.SpeechAct speechAct : speechActCollection) {
+            SpeechAct sa = new SpeechAct();
+            sa.setId("speech_act_" + j);
+            sa.setType(speechAct.getLabel());
+            sa.setAnchor(speechAct.getCoveredText());
+            sa.setEntities(new ArrayList<>());
+            
+            speechActs.add(sa);
+            j++;
+        }
+        result.setSpeechActs(speechActs);
+        return result;
+    }
     
 	protected static DlaResult generateDlaResult(JCas jCas) {
 
-        DlaResult result = new DlaResult();
-
-        TreeMap<Integer, Entity> tokenMap = extractEntitiesFromPredArg(jCas);
-        List<Entity> entities = new ArrayList(tokenMap.values());
-		result.setEntities(entities);
+        Collection<PredArgsToken> tokenCollection = JCasUtil.select(jCas, PredArgsToken.class);
+        Collection<PredArgsDependency> relationCollection = JCasUtil.select(jCas, PredArgsDependency.class);
+        Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection = JCasUtil.select(jCas, edu.upf.taln.flask_wrapper.type.SpeechAct.class);
         
-        List<Relation> relations = extractRelations(jCas, tokenMap);        
-		result.setRelations(relations);
-
-		int j = 1;
-		List<SpeechAct> speechActs = new ArrayList<>();
-		for (edu.upf.taln.flask_wrapper.type.SpeechAct speechAct : JCasUtil.select(jCas, edu.upf.taln.flask_wrapper.type.SpeechAct.class)) {
-			SpeechAct sa = new SpeechAct();
-			sa.setId("speech_act_" + j);
-			sa.setType(speechAct.getLabel());
-			sa.setAnchor(speechAct.getCoveredText());
-			sa.setEntities(new ArrayList<>());
-
-			speechActs.add(sa);
-			j++;
-		}
-		result.setSpeechActs(speechActs);
+        DlaResult result = extractDLAResult(tokenCollection, relationCollection, speechActCollection);
 		return result;
 	}
+    
+	protected static List<DlaResult> generateDlaResultBySentence(JCas jCas) {
 
+        List<DlaResult> results = new ArrayList<>();
+        for (Sentence sentence : JCasUtil.select(jCas, Sentence.class)) {
+            Collection<PredArgsToken> tokenCollection = JCasUtil.selectCovered(PredArgsToken.class, sentence);
+            Collection<PredArgsDependency> relationCollection = JCasUtil.selectCovered(PredArgsDependency.class, sentence);
+            Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection = JCasUtil.selectCovered(edu.upf.taln.flask_wrapper.type.SpeechAct.class, sentence);
+
+            DlaResult result = extractDLAResult(tokenCollection, relationCollection, speechActCollection);
+            
+            results.add(result);
+        }
+		return results;
+	}
+    
 	protected static WelcomeDemoResult generateDemoResult(JCas jCas) {
 
 		Map<Token, TokenNode> token2entity = new HashMap<>();

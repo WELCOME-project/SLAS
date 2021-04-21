@@ -6,6 +6,7 @@ import static org.apache.uima.fit.factory.CollectionReaderFactory.createReader;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -82,10 +83,11 @@ public class OutputGeneratorTest {
     @Test
     public void testGenerateDlaResult() throws UIMAException, IOException {
         System.out.println("generateDlaResult");
-        JCas jCas = getJCasFromXMI("en", new File("src/test/resources/welcome/reception_service.xmi"), new File("src/test/resources/welcome/TypeSystem.xml"));
+        JCas jCas = getJCasFromXMI("en", new File("src/test/resources/welcome/reception_service2.xmi"), new File("src/test/resources/welcome/TypeSystem.xml"));
         
         //DlaResult expResult = null;
         DlaResult result = OutputGenerator.generateDlaResult(jCas);
+        //List<DlaResult> result = OutputGenerator.generateDlaResultBySentence(jCas);
         //assertEquals(expResult, result);
         
         ObjectWriter writter = new ObjectMapper().writerWithDefaultPrettyPrinter();
