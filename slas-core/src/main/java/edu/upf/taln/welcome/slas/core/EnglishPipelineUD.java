@@ -263,10 +263,9 @@ public class EnglishPipelineUD {
 		
 		AnalysisEngineDescription deepParser = createEngineDescription(
                 DeepParser.class,
-				DeepParser.PARAM_TYPE, "ud",
+				DeepParser.PARAM_TYPE, "ud-welcome",
 				DeepParser.PARAM_RUN_DEEP, true,
-				DeepParser.PARAM_RUN_PREDARGS, true,
-				DeepParser.PARAM_RUN_TRIPLES, true);
+				DeepParser.PARAM_RUN_PREDARGS, true);
 		flowItems.add(new FlowItem(deepParser,FlowStepName.DSYNTS.name()));
 				
 		FlowControllerDescription fcd = FlowControllerFactory.createFlowControllerDescription(AnnotationFlowController.class); 
