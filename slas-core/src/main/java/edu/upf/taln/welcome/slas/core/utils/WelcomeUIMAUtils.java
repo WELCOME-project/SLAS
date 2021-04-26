@@ -26,6 +26,8 @@ public class WelcomeUIMAUtils {
 		            Map<String, Boolean> flowMap = new HashMap<>();
 		
 		            flowMap.put(FlowStepName.PARSING.name(), false);
+		            
+		            flowMap.put(FlowStepName.HEIDELTIME.name(), false);
 		
 		            flowMap.put(FlowStepName.NER.name(), false);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), false);
@@ -83,6 +85,8 @@ public class WelcomeUIMAUtils {
 		            Map<String, Boolean> flowMap = new HashMap<>();
 		
 		            flowMap.put(FlowStepName.PARSING.name(), true);
+		            
+		            flowMap.put(FlowStepName.HEIDELTIME.name(), true);
 		
 		            flowMap.put(FlowStepName.NER.name(), true);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);
@@ -112,6 +116,8 @@ public class WelcomeUIMAUtils {
 		            Map<String, Boolean> flowMap = new HashMap<>();
 		
 		            flowMap.put(FlowStepName.PARSING.name(), true);
+		            
+		            flowMap.put(FlowStepName.HEIDELTIME.name(), true);
 		
 		            flowMap.put(FlowStepName.NER.name(), true);
 		            flowMap.put(FlowStepName.NER_RETOKENIZER.name(), true);

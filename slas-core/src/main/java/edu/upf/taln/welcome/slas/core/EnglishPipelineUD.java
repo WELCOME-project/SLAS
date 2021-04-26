@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.uima.UIMAException;
+import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.FlowControllerFactory;
@@ -25,6 +26,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 import de.tudarmstadt.ukp.dkpro.wsd.algorithm.MostFrequentSenseBaseline;
 import de.tudarmstadt.ukp.dkpro.wsd.annotator.WSDAnnotatorIndividualBasic;
 import de.tudarmstadt.ukp.dkpro.wsd.resource.WSDResourceIndividualBasic;
+import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
+import de.unihd.dbs.uima.annotator.intervaltagger.IntervalTagger;
 import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.core.DeepParser;
 import edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline;
@@ -220,6 +223,30 @@ public class EnglishPipelineUD {
 		
 		return new FlowItem(flaskGeolocation, FlowStepName.GEOLOCATION.name());
 	}
+	
+	private static FlowItem getHeideltimeDescription() throws ResourceInitializationException {
+        
+		AnalysisEngineDescription heideltime = AnalysisEngineFactory.createEngineDescription(
+				HeidelTime.class,
+				HeidelTime.PARAM_LANGUAGE, "english",
+				HeidelTime.PARAM_TYPE_TO_PROCESS, "news",
+				HeidelTime.PARAM_DATE, true,
+				HeidelTime.PARAM_TIME, true,
+				HeidelTime.PARAM_DURATION, true,
+				HeidelTime.PARAM_SET, true,
+				HeidelTime.PARAM_TEMPONYMS, false,
+				HeidelTime.PARAM_GROUP, true,
+				HeidelTime.PARAM_USE_COARSE_VALUE, true,
+				HeidelTime.PARAM_DEBUG, false);
+		
+		AnalysisEngineDescription intervalTagger = AnalysisEngineFactory.createEngineDescription(
+				IntervalTagger.class,
+				IntervalTagger.PARAM_LANGUAGE, "english",
+				IntervalTagger.PARAM_INTERVALS, true,
+				IntervalTagger.PARAM_INTERVAL_CANDIDATES, true);
+		
+		return new FlowItem(createEngineDescription(heideltime, intervalTagger), FlowStepName.HEIDELTIME.name());
+	}
 
     public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
         
@@ -231,6 +258,8 @@ public class EnglishPipelineUD {
 		List<FlowItem> flowItems = new ArrayList<FlowItem>();
         
 		flowItems.add(getPreprocessDescription());
+		
+		flowItems.add(getHeideltimeDescription());
 				
 		flowItems.add(getNERDescription(configuration));
 		
