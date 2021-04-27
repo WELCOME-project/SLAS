@@ -168,6 +168,7 @@ function ajaxCallback(result){
 		"dbpedia_linking",
 		"ner",
 		"babelnet_linking",
+		"geolocation",
         "surface_parsing",
         //"deep_parsing",
         "predicate_arguments_parsing",
@@ -183,6 +184,10 @@ function ajaxCallback(result){
 }
 
 head.ready(function() {
+	
+	const projectConfig = document.createElement('script');
+	projectConfig.src = './static/js/widgetsProjectConfig.js';
+	document.head.append(projectConfig);
 
 	$('#inputCollapse').on('hidden.bs.collapse', function () {
 		$('#collapseArrow').html("Show ▼");

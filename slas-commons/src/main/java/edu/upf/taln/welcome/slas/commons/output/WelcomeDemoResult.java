@@ -9,6 +9,7 @@ import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
 import edu.upf.taln.utils.pojos.uima.deep.DeepGraph;
+import edu.upf.taln.utils.pojos.uima.geolocation.GeolocationCandidatesGraph;
 import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.sentence.SentenceGraph;
@@ -45,6 +46,9 @@ public class WelcomeDemoResult {
 	
 	@JsonProperty("dla_result")
 	DlaResult dlaResult;
+	
+	@JsonProperty("geolocation")
+	GeolocationCandidatesGraph geolocation;
 	
 	public List<String[]> getTriples() {
 		return triples;
@@ -105,6 +109,12 @@ public class WelcomeDemoResult {
 	}
 	public void setDlaResult(DlaResult dlaResult) {
 		this.dlaResult = dlaResult;
+	}
+	public GeolocationCandidatesGraph getGeolocation() {
+		return geolocation;
+	}
+	public void setGeolocation(GeolocationCandidatesGraph geolocation) {
+		this.geolocation = geolocation;
 	}
 
 }
