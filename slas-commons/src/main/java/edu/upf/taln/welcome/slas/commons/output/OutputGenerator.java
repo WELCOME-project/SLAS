@@ -5,11 +5,16 @@ import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import org.apache.uima.cas.impl.XmiCasSerializer;
 import org.apache.uima.fit.util.JCasUtil;
@@ -21,31 +26,23 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
-import edu.uci.ics.jung.graph.Tree;
-
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsDependency;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
-import edu.upf.taln.uima.wsd.types.BabelNetSense;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
 import edu.upf.taln.utils.pojos.uima.deep.DeepGraph;
+import edu.upf.taln.utils.pojos.uima.geolocation.GeolocationCandidatesGraph;
 import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
-
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
-import java.util.Collection;
-import java.util.TreeMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class OutputGenerator {
 
@@ -317,6 +314,8 @@ public class OutputGenerator {
 		result.setBabelnetLinking(BabelnetGraph.extract(jCas));
 
 		//result.setSentenceRanking(SentenceGraph.extract(jCas, token2entity, deepToken2entity, predargsToken2entity, null, null));
+		
+		result.setGeolocation(GeolocationCandidatesGraph.extract(jCas));
 
 		return result;
 	}
