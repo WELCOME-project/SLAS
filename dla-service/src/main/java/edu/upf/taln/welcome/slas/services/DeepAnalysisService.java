@@ -3,6 +3,7 @@ package edu.upf.taln.welcome.slas.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Singleton;
 import javax.servlet.ServletConfig;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -40,6 +41,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
  * 
  */
 @Path("/dla")
+@Singleton
 @Produces(MediaType.APPLICATION_JSON)
 public class DeepAnalysisService {
 	
@@ -80,6 +82,7 @@ public class DeepAnalysisService {
     private final Analyzer analyzer;
 
 	public DeepAnalysisService() throws WelcomeException {
+		log.info("getting Analyzer instance");
 		analyzer = Analyzer.getInstance();
 	}    
 	
