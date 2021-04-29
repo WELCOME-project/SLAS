@@ -175,6 +175,8 @@ function ajaxCallback(result){
         "tag_cloud"
     ];
 	result["views"] = views;
+	
+	extractMainGeolocationInfo(result);
     
     $("#result").empty();
     addVisualizations($("#result"), result, result["views"]);
@@ -186,6 +188,10 @@ head.ready(function() {
 	const projectConfig = document.createElement('script');
 	projectConfig.src = './static/js/widgetsProjectConfig.js';
 	document.head.append(projectConfig);
+	
+	const geolocationUtils = document.createElement('script');
+	geolocationUtils.src = './static/js/geolocationUtils.js';
+	document.head.append(geolocationUtils);
 
 	$('#inputCollapse').on('hidden.bs.collapse', function () {
 		$('#collapseArrow').html("Show ▼");
