@@ -14,8 +14,8 @@ public class InputMetadata implements IUseCase {
 
 	String language;
 	
-    @JsonAlias("output_level")
-    @JsonProperty("output_type")
+    @JsonAlias("output_type")
+    @JsonProperty("output_level")
 	OutputType outputType;
     
 	@JsonProperty("analysis_type")
