@@ -122,6 +122,8 @@ function submitForm(type, url, input, language, loadingCallback, endLoadingCallb
             data: JSON.stringify({
 	            	meta: {
 		                language: language,
+                        use_case: "catalonia",
+    	                analysis_type: "FULL",
 		                output_level: "demo_welcome"
 		        	},
 		        	data: {

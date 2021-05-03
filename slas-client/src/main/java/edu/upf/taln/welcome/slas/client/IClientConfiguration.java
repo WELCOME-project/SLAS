@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.client;
 
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 
 
@@ -22,5 +22,7 @@ interface IClientConfiguration {
 
     public String getLanguage();
 
-    public OutputLevel getOutputType();
+    public OutputType getOutputType();
+
+    public String getUseCase();
 }

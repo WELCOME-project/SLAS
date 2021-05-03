@@ -12,8 +12,10 @@ import org.apache.uima.resource.ResourceInitializationException;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
@@ -99,16 +101,15 @@ public class Analyzer {
      * @return the analysis output
      * @throws edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException
 	 */
-	public IAnalysisOutput analyze(InputType inputType, AnalysisType analysisType, String text, OutputLevel outputLevel) throws WelcomeException {
+	public IAnalysisOutput analyze(DeepAnalysisInput input) throws WelcomeException {
 
-		try {
-            String language = "en";
-            
-            JCas jCas = JCasWelcomeFactory.createJCas(inputType, text, language, analysisType);
+		try {            
+            JCas jCas = JCasWelcomeFactory.createJCas(input);
             
             pipeline.process(jCas);
             
-            IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, outputLevel);
+            InputMetadata metadata = input.getMetadata();
+            IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
 			
 			return analysisResult;
 		

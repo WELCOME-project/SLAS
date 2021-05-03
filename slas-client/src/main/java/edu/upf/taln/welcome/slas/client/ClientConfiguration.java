@@ -1,6 +1,6 @@
 package edu.upf.taln.welcome.slas.client;
 
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 
@@ -8,7 +8,7 @@ import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
  *
  * @author rcarlini
  */
-class ClientConfiguration implements IClientConfiguration {
+public class ClientConfiguration implements IClientConfiguration {
     
     private String serviceURL;
     private String inputPath;
@@ -17,7 +17,8 @@ class ClientConfiguration implements IClientConfiguration {
     
     private AnalysisType analysisType;
     private String language;
-    private OutputLevel outputType;
+    private OutputType outputType;
+    private String useCase;
     
     private InputMetadata metadata;
 
@@ -76,12 +77,20 @@ class ClientConfiguration implements IClientConfiguration {
     }
 
     @Override
-    public OutputLevel getOutputType() {
+    public OutputType getOutputType() {
         return outputType;
     }
 
-    public void setOutputType(OutputLevel outputType) {
+    public void setOutputType(OutputType outputType) {
         this.outputType = outputType;
+    }
+
+    public String getUseCase() {
+        return useCase;
+    }
+
+    public void setUseCase(String useCase) {
+        this.useCase = useCase;
     }
 
     public InputMetadata getMetadata() {

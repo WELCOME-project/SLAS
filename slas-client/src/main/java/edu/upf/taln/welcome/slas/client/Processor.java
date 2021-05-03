@@ -16,12 +16,11 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
-import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.XmiResult;
 
@@ -30,7 +29,7 @@ import edu.upf.taln.welcome.slas.commons.output.XmiResult;
  *
  * @author rcarlini
  */
-class Processor {
+public class Processor {
 	
 	private static Logger logger = Logger.getLogger(Processor.class.getName());
 
@@ -65,15 +64,17 @@ class Processor {
         
         if (meta == null) {
             AnalysisType analysisType = config.getAnalysisType();
-            OutputLevel outputType = config.getOutputType();
+            OutputType outputType = config.getOutputType();
             String language = config.getLanguage();
-            if (analysisType == null || outputType == null || language == null) {
+            String useCase = config.getUseCase();
+            if (analysisType == null || outputType == null || language == null || useCase == null) {
                 throw new WelcomeException("No metadata or analysisType/outputType/language group found!");
                 
             } else {
-                meta = InputFactory.createMetadata(analysisType, outputType, language);
+                meta = InputFactory.createMetadata(analysisType, outputType, language, useCase);
+                meta.setUseCase("catalonia");
             }
-        }
+        }        
     }
 
 	public void execute() throws WelcomeException, WelcomeClientException {
@@ -95,32 +96,38 @@ class Processor {
         	throw new WelcomeException("Output directory is not a directory!");
         }
         
-		execute(meta, inputDir, outputDir);
+		execute(inputDir, outputDir);
 	}    
 
-    public void execute(InputMetadata meta, File inputDir, File outputDir) throws WelcomeException, WelcomeClientException {
+    private IAnalysisOutput execute(WelcomeBackendClient client, String text) throws WelcomeClientException {
         
-        String serviceUrl = config.getServiceURL();
-        String language = meta.getLanguage();
+        InputData data = new InputData();
+        data.setText(text);
         
-        WelcomeBackendClient client; 
-        switch (meta.getOutputLevel()) {
-        case xmi:
-            client = new WelcomeBackendClient<>(serviceUrl, language, XmiResult.class);
-            break;
-            
-        default:
-        case demo:
-            client = new WelcomeBackendClient<>(serviceUrl, language, AnalysisOutputImpl.class);
-            break;
-        }
+        DeepAnalysisInput container = new DeepAnalysisInput();
+        container.setMetadata(meta);
+        container.setData(data);
         
+        IAnalysisOutput result = client.analyze(container);
+        return result;
+    }
+    
+    public IAnalysisOutput execute(String text) throws WelcomeClientException {
+        
+        WelcomeBackendClient client = new WelcomeBackendClient(config.getServiceURL());
+        return this.execute(client, text);
+    }
+
+    public void execute(File inputDir, File outputDir) throws WelcomeException, WelcomeClientException {
+
         FilenameFilter filter = (File dir, String name) -> name.endsWith(".txt");	
         File[] files = inputDir.listFiles(filter);
         
         System.out.println("STARTING ANALYSIS... Total file to process: " + files.length);
         
-        int count = 1;
+        int count = 1;        
+        String serviceUrl = config.getServiceURL();
+        WelcomeBackendClient client = new WelcomeBackendClient(serviceUrl);
         for (File textFile : files) {
             
             try {
@@ -130,16 +137,9 @@ class Processor {
                 
                 String text = FileUtils.readFileToString(textFile, StandardCharsets.UTF_8);
                 
-                InputData data = new InputData();
-                data.setText(text);
+                IAnalysisOutput result = execute(client, text);
                 
-                DeepAnalysisInput container = new DeepAnalysisInput();
-                container.setMetadata(meta);
-                container.setData(data);
-                
-                IAnalysisOutput result = client.analyze(container);
-                
-                writeOutput(result, outputDir, fileName, meta);
+                writeOutput(result, outputDir, fileName);
                 
                 count++;
                 
@@ -163,7 +163,7 @@ class Processor {
         System.out.println("ANALYSIS COMPLETED");
     }
     
-    public static void writeOutput(IAnalysisOutput analysisOutput, File outputDir, String baseName, InputMetadata meta) throws IOException {
+    public static void writeOutput(IAnalysisOutput analysisOutput, File outputDir, String baseName) throws IOException {
     	
     	if (analysisOutput instanceof XmiResult) {
             XmiResult xmiResult = (XmiResult) analysisOutput;

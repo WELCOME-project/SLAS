@@ -17,45 +17,56 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.InputFactory;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
+import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.XmiResult;
 
 
 public class WelcomeBackendClient<T extends IAnalysisOutput> {
-
-	private final Class<T> outputType;
 	
     private static final Logger logger = Logger.getLogger(WelcomeBackendClient.class.getSimpleName());
 
     private final WebTarget target;
 
-    private final String language;
+    public WelcomeBackendClient(String url) {
 
-    public WelcomeBackendClient(String url, String language, Class<T> outputType) {
-
-        this.language = language;
         Client client = ClientBuilder.newClient();
         target = client.target(url);
-        this.outputType = outputType;
     }
 
-    public T analyze(AnalysisType analysisType, String text) throws WelcomeClientException {
+    public T analyze(AnalysisType analysisType, String text, String language, String useCase) throws WelcomeClientException {
     	
-        return analyze(analysisType, OutputLevel.demo, text);
+        return analyze(analysisType, text, language, useCase, OutputType.demo);
     }
     
-    public T analyze(AnalysisType analysisType, OutputLevel outputLevel, String text) throws WelcomeClientException {
+    public T analyze(AnalysisType analysisType, String text, String language, String useCase, OutputType outputLevel) throws WelcomeClientException {
 
-    	DeepAnalysisInput request = InputFactory.create(analysisType, outputLevel, text, language);
+    	DeepAnalysisInput request = InputFactory.create(analysisType, outputLevel, text, language, useCase);
         return analyze(request);
     }
 
     public T analyze(DeepAnalysisInput request) throws WelcomeClientException {
 
+        InputMetadata meta = request.getMetadata();
+
+        Class<? extends IAnalysisOutput> outputClass;
+        switch (meta.getOutputType()) {
+            case xmi:
+                outputClass = XmiResult.class;
+                break;
+
+            case demo:
+            default:
+                outputClass = AnalysisOutputImpl.class;
+                break;
+        }
+
         Response response = sendRequest(request);
-        T result = response.readEntity(new GenericType<T>(outputType) {});
+        T result = response.readEntity(new GenericType<T>(outputClass) {});
 
         return result;
     }

@@ -1,5 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.factories;
 
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import org.apache.uima.jcas.JCas;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
@@ -8,9 +9,8 @@ import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.OutputGenerator;
 
 public class OutputFactory {
-	public static enum OutputLevel {welcome, demo, demo_welcome, xmi, dummy};
 	
-	public static IAnalysisOutput extractOutput(JCas jCas, OutputLevel type) throws WelcomeException {
+	public static IAnalysisOutput extractOutput(JCas jCas, OutputType type) throws WelcomeException {
     	try {
     		
     		IAnalysisOutput output;
