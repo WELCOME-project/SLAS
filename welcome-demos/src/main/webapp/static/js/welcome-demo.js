@@ -124,7 +124,7 @@ function submitForm(type, url, input, language, loadingCallback, endLoadingCallb
 		                language: language,
                         use_case: "catalonia",
     	                analysis_type: "FULL",
-		                output_level: "demo_welcome"
+		                output_type: "demo_welcome"
 		        	},
 		        	data: {
 		        		text: input
