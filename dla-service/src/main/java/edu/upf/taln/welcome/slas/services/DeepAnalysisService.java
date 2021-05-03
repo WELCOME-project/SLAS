@@ -16,16 +16,6 @@ import javax.ws.rs.core.MediaType;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
-import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
-import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
-import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
-import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
-import edu.upf.taln.welcome.slas.core.Analyzer;
-import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -33,6 +23,13 @@ import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
+import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
+import edu.upf.taln.welcome.slas.core.Analyzer;
 
 
 /**
@@ -170,11 +167,7 @@ public class DeepAnalysisService {
 	public IAnalysisOutput analyze(
 			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
         
-		InputType inputType = InputType.text;
-		String text = input.getData().getText();
-		AnalysisType analysisType = AnalysisType.FULL;
-		OutputLevel outputlevel = input.getMetadata().getOutputLevel();
-		IAnalysisOutput output = analyzer.analyze(inputType, analysisType, text, outputlevel);
+		IAnalysisOutput output = analyzer.analyze(input);
         
 		return output;
 	}

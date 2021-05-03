@@ -1,8 +1,8 @@
 package edu.upf.taln.welcome.slas.commons.input;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
 
 import edu.upf.taln.uima.flask_wrapper.commons.IUseCase;
 
@@ -14,8 +14,9 @@ public class InputMetadata implements IUseCase {
 
 	String language;
 	
-	@JsonProperty("output_level")
-	OutputLevel outputLevel;
+    @JsonAlias("output_type")
+    @JsonProperty("output_level")
+	OutputType outputType;
     
 	@JsonProperty("analysis_type")
 	private AnalysisType analysisType;
@@ -31,12 +32,12 @@ public class InputMetadata implements IUseCase {
 		this.language = language;
 	}
 
-	public OutputLevel getOutputLevel() {
-		return outputLevel;
+	public OutputType getOutputType() {
+		return outputType;
 	}
 
-	public void setOutputLevel(OutputLevel outputLevel) {
-		this.outputLevel = outputLevel;
+	public void setOutputType(OutputType outputType) {
+		this.outputType = outputType;
 	}
 
 	public AnalysisType getAnalysisType() {

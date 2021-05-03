@@ -9,11 +9,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
-import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
-import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 
 /**
  *
@@ -37,8 +34,7 @@ public class AnalyzerTest {
 
         ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter();
         
-
-        IAnalysisOutput output = analyzer.analyze(InputType.text, AnalysisType.BASIC, input.getData().getText(), OutputLevel.welcome);
+        IAnalysisOutput output = analyzer.analyze(input);
 
         String result = writer.writeValueAsString(output);
         System.out.println(result);

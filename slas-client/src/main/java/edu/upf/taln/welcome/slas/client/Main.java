@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeClientException;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.factories.OutputFactory.OutputLevel;
+import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 
 
@@ -39,10 +39,13 @@ public class Main {
         @Parameter(names = { "-a", "--analysis-type" }, description = "Analysis type, which corresponds to a certain configuration of the pipeline.", order = 4)
         private AnalysisType analysisType = AnalysisType.FULL;
 
-        @Parameter(names = { "-f", "--output-format" }, description = "Output file format.", order = 5)
-        private OutputLevel outputType = OutputLevel.xmi;
+        @Parameter(names = { "-c", "--use-case" }, description = "Use case.", order = 5)
+        private String useCase = "catalonia";
 
-        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", arity = 1, order = 6)
+        @Parameter(names = { "-f", "--output-format" }, description = "Output file format.", order = 6)
+        private OutputType outputType = OutputType.xmi;
+
+        @Parameter(names = { "-e", "--skip-errors" }, description = "Skip errors while processing documents.", arity = 1, order = 7)
         private boolean skipErrors = true;
 
         @Override
@@ -71,7 +74,12 @@ public class Main {
         }
 
         @Override
-        public OutputLevel getOutputType() {
+        public String getUseCase() {
+            return useCase;
+        }
+
+        @Override
+        public OutputType getOutputType() {
             return outputType;
         }
 

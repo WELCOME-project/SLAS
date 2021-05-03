@@ -15,8 +15,11 @@ import org.dkpro.core.io.conll.ConllUReader;
 
 import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.uima.flow.utils.FlowUtils;
+
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
+import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.utils.InputMetaDataUtils;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
@@ -25,36 +28,22 @@ public class JCasWelcomeFactory {
     
 	public static enum InputType {conll, text}; 
 	
-	public static JCas createJCas(InputType type, String text, String language, AnalysisType analysisType) throws WelcomeException {
+	public static JCas createJCas(DeepAnalysisInput input) throws WelcomeException {
 
         try {
-        	JCas jCas = JCasFactory.createJCas();
         	
-        	switch (type) {
-	        	case conll:
-	        		CollectionReader readerDesc = CollectionReaderFactory.createReader(
-	            			ConllUReader.class,
-	            			ConllUReader.PARAM_SOURCE_LOCATION, "folder/",
-	            			ConllUReader.PARAM_PATTERNS, "*.txt",
-	            			ConllUReader.PARAM_LANGUAGE, language);
-	            	
-	                
-	
-	                try (BufferedReader buffer = new BufferedReader(new StringReader(text))) {
-	                    ((ConllUReader)readerDesc).convert(jCas, buffer);
-	                }
-	                
-	        		break;
-	        	default:
-	        	case text:
-	        		jCas.setDocumentText(text);
-	        		
-	        		break;
-        	}
-        	            
-            InputMetadata metadata = new InputMetadata();
-            metadata.setUseCase("catalonia");
+            InputMetadata metadata = input.getMetadata();
+            InputData data = input.getData();
+            String text = data.getText();
+            String language = metadata.getLanguage();
+            AnalysisType analysisType = metadata.getAnalysisType();
             
+        	JCas jCas = JCasFactory.createJCas();
+            jCas.setDocumentText(text);
+        	            
+            // metadata.setUseCase("catalonia");
+            
+            // Adds ExtraMetaData
             InputMetaDataUtils utils = new InputMetaDataUtils();
             utils.addMetaData(jCas, metadata);
                     	
@@ -65,7 +54,6 @@ public class JCasWelcomeFactory {
             }
             
             IFlowOptions options = WelcomeUIMAUtils.getOptions(analysisType);
-        
 			FlowUtils.annotateFlowOptions(jCas, options);
             
             return jCas;
