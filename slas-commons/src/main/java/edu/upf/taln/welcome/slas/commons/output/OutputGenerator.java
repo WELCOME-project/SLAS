@@ -26,6 +26,7 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
+import edu.upf.taln.flask_wrapper.type.GeolocationCandidate;
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsDependency;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
@@ -33,13 +34,14 @@ import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
 import edu.upf.taln.utils.pojos.uima.deep.DeepGraph;
-import edu.upf.taln.utils.pojos.uima.geolocation.GeolocationCandidatesGraph;
+import edu.upf.taln.utils.pojos.uima.geolocation.GeolocationGraph;
 import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Location;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
@@ -191,11 +193,13 @@ public class OutputGenerator {
     private static Entity extractEntity(PredArgsToken token, String entityId) {
 
         List<String> links = new ArrayList<>();
+        List<Location> locations = new ArrayList<>();
 
         Entity entity = new Entity();
         entity.setId(entityId);
         entity.setAnchor(token.getCoveredText());
         entity.setLinks(links);
+        entity.setLocations(locations);
 
         List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
         if (wsdList.size() > 0) {
@@ -216,7 +220,18 @@ public class OutputGenerator {
             entity.setType("concept");
         }
         
-        // TODO: Add also geolocation info as link
+        List<GeolocationCandidate> geolocationCandidates = JCasUtil.selectCovered(GeolocationCandidate.class, token);
+        for (GeolocationCandidate candidate : geolocationCandidates) {
+        	Location location = new Location();
+        	if (candidate.getOsmNodeId() != null) {
+        		location.setLink("osm:" + candidate.getOsmNodeId());
+			} else if(candidate.getGeonamesId() != null) {
+				location.setLink("geonames:" + candidate.getGeonamesId());
+			}
+        	location.setLatitude(candidate.getLatitude());
+        	location.setLongitude(candidate.getLongitude());
+        	locations.add(location);
+        }
         
         return entity;
     }
@@ -315,7 +330,7 @@ public class OutputGenerator {
 
 		//result.setSentenceRanking(SentenceGraph.extract(jCas, token2entity, deepToken2entity, predargsToken2entity, null, null));
 		
-		result.setGeolocation(GeolocationCandidatesGraph.extract(jCas));
+		result.setGeolocation(GeolocationGraph.extract(jCas));
 
 		return result;
 	}

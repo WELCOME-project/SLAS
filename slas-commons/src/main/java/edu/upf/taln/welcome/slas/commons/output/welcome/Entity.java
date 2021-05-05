@@ -18,6 +18,7 @@ public class Entity {
     @NotNull
     private String anchor;
     private List<String> links;
+    private List<Location> locations;
     private double confidence;
 
     public String getId() {
@@ -58,5 +59,14 @@ public class Entity {
 
     public void setConfidence(double confidence) {
         this.confidence = confidence;
-    }    
+    }
+
+	public List<Location> getLocations() {
+		return locations;
+	}
+
+	public void setLocations(List<Location> locations) {
+		this.locations = locations;
+	}  
+    
 }

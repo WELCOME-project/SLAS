@@ -44,7 +44,10 @@ public class DeepAnalysisService {
 	
 	private static final String SAMPLE_INPUT_XMI = "{\n" + 
 			"  \"metadata\": {" +
-			"    \"output_level\": \"xmi\"" +
+			"    \"output_level\": \"xmi\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
 			"    \"text\": \"Yes, I would like to apply for the First Reception Service.\"" + 
@@ -53,7 +56,10 @@ public class DeepAnalysisService {
 	
 	private static final String SAMPLE_INPUT_TURN0 = "{\n" + 
 			"  \"metadata\": {" +
-			"    \"output_level\": \"demo_welcome\"" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
 			"    \"text\": \"Hello, can you hear me?\"" + 
@@ -63,10 +69,25 @@ public class DeepAnalysisService {
 
 	private static final String SAMPLE_INPUT_TURN1 = "{\n" + 
 			"  \"metadata\": {" +
-			"    \"output_level\": \"demo_welcome\"" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
 			"    \"text\": \"Yes, I would like to apply for the First Reception Service.\"" + 
+			"  } \n" + 
+			"}";
+	
+	private static final String SAMPLE_INPUT_TURN2 = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Terrassa, is a city in the east central region of Catalonia, in the province of Barcelona, comarca of Vallès Occidental, of which it is the cocapital along with Sabadell.\"" + 
 			"  } \n" + 
 			"}";
 	/**
@@ -125,6 +146,8 @@ public class DeepAnalysisService {
 													value = SAMPLE_INPUT_TURN0),
 											@ExampleObject(name = "Turn 1",
 													value = SAMPLE_INPUT_TURN1),
+											@ExampleObject(name = "Turn 2",
+													value = SAMPLE_INPUT_TURN2),
 											@ExampleObject(name = "Xmi",
 													value = SAMPLE_INPUT_XMI)
 										}
@@ -154,6 +177,8 @@ public class DeepAnalysisService {
 													value = SAMPLE_INPUT_TURN0),
 											@ExampleObject(name = "Turn 1",
 													value = SAMPLE_INPUT_TURN1),
+											@ExampleObject(name = "Turn 2",
+													value = SAMPLE_INPUT_TURN2),
 											@ExampleObject(name = "Xmi",
 													value = SAMPLE_INPUT_XMI)
 										}
