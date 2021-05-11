@@ -118,6 +118,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.apache.uima</groupId>
+			<artifactId>ConceptMapper</artifactId>
+			<version>2.10.2</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.dkpro.core</groupId>
 			<artifactId>dkpro-core-udpipe-model-segmenter-en-ud</artifactId>
 			<version>20191206.1</version>

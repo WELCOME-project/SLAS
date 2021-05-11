@@ -14,5 +14,6 @@ public enum FlowStepName {
     EMOTION,
     SPEECHACT,
     GEOLOCATION,
+    TAXONOMY
     HEIDELTIME
 }
