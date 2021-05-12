@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-04-29
+    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-05-11
     networks:
       - welcomenet
       - traefik
@@ -43,7 +43,7 @@ services:
       - DBPEDIA_ENDPOINT=http://spotlight-en.p.taln.ml/rest
       #- CONCEPT_URL=http://concepts-en.p.taln.ml
       - CONCEPT_URL=http://concepts-en.v.taln.ml
-      - NER_URL=http://ner_spacy_en.v.taln.ml
+      - NER_URL=http://ner-spacy-en.v.taln.ml
       - BABELNET_CONFIG=/resources/babelconfig-4.0.1
       - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
       - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt

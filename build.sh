@@ -35,6 +35,7 @@ while true; do
     esac
 done
 
+git submodule update
 mvn -U clean install package -DskipTests
 export TAG=$tag
 
