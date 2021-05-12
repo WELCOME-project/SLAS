@@ -174,11 +174,13 @@ function ajaxCallback(result){
         "predicate_arguments_parsing",
         "triples",
         //"sentence_ranking",
-        "tag_cloud"
+        "tag_cloud",
+        "heideltime"
     ];
 	result["views"] = views;
 	
 	extractMainGeolocationInfo(result);
+	extractHeideltimeLabelInfo(result);
     
     $("#result").empty();
     addVisualizations($("#result"), result, result["views"]);
@@ -194,6 +196,10 @@ head.ready(function() {
 	const geolocationUtils = document.createElement('script');
 	geolocationUtils.src = './static/js/geolocationUtils.js';
 	document.head.append(geolocationUtils);
+	
+	const heideltimeUtils = document.createElement('script');
+	heideltimeUtils.src = './static/js/heideltimeUtils.js';
+	document.head.append(heideltimeUtils);
 
 	$('#inputCollapse').on('hidden.bs.collapse', function () {
 		$('#collapseArrow').html("Show ▼");

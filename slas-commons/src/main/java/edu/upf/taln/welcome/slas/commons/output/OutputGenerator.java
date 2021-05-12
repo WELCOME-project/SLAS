@@ -35,6 +35,7 @@ import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
 import edu.upf.taln.utils.pojos.uima.deep.DeepGraph;
 import edu.upf.taln.utils.pojos.uima.geolocation.GeolocationGraph;
+import edu.upf.taln.utils.pojos.uima.heideltime.HeideltimeGraph;
 import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
@@ -357,6 +358,8 @@ public class OutputGenerator {
 		//result.setSentenceRanking(SentenceGraph.extract(jCas, token2entity, deepToken2entity, predargsToken2entity, null, null));
 		
 		result.setGeolocation(GeolocationGraph.extract(jCas));
+		
+		result.setHeideltime(HeideltimeGraph.extract(jCas));
 
 		return result;
 	}

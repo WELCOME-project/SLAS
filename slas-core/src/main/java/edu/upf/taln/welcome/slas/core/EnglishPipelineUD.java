@@ -239,13 +239,13 @@ public class EnglishPipelineUD {
 				HeidelTime.PARAM_USE_COARSE_VALUE, true,
 				HeidelTime.PARAM_DEBUG, false);
 		
-		AnalysisEngineDescription intervalTagger = AnalysisEngineFactory.createEngineDescription(
+		/*AnalysisEngineDescription intervalTagger = AnalysisEngineFactory.createEngineDescription(
 				IntervalTagger.class,
 				IntervalTagger.PARAM_LANGUAGE, "english",
 				IntervalTagger.PARAM_INTERVALS, true,
-				IntervalTagger.PARAM_INTERVAL_CANDIDATES, true);
+				IntervalTagger.PARAM_INTERVAL_CANDIDATES, false);*/
 		
-		return new FlowItem(createEngineDescription(heideltime, intervalTagger), FlowStepName.HEIDELTIME.name());
+		return new FlowItem(createEngineDescription(heideltime/*, intervalTagger*/), FlowStepName.HEIDELTIME.name());
 	}
 
     public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
