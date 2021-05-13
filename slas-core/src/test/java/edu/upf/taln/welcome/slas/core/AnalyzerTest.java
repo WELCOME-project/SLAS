@@ -38,5 +38,27 @@ public class AnalyzerTest {
 
         String result = writer.writeValueAsString(output);
         System.out.println(result);
+    }
+    
+    /**
+     * Test of analyze method, of class Analyzer.
+     * @throws edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException
+     * @throws java.io.IOException
+     */
+    @Test
+    public void testAnalyzePreprocess() throws WelcomeException, IOException {
+
+        Analyzer analyzer = Analyzer.getInstance();
+        ObjectMapper mapper = new ObjectMapper();
+
+        String inputPath = "src/test/resources/only_preprocess.json";
+        DeepAnalysisInput input = mapper.readValue(new File(inputPath), DeepAnalysisInput.class);
+
+        ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter();
+        
+        IAnalysisOutput output = analyzer.analyze(input);
+
+        String result = writer.writeValueAsString(output);
+        System.out.println(result);
     }    
 }
