@@ -1,0 +1,1863 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <skos:Concept rdf:about="http://tensor-project.eu/#ecc04ee4-66a3-31d9-8eda-c1672cdeb6a1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Encourage or stir up violent or unlawful behaviour</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Incite</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7a25b0dd-4958-340b-b782-23e897b2515c">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Having or showing a dislike of or prejudice against people from other countries.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Xenophobic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#55234552-5533-3229-ac1c-62a7ebbeb7a7"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#70b1ac91-d8a3-3f72-98d5-57a8cdc36dc9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Social Change</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a8fd8359-4a10-3729-b909-66e72f37c4c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3dc6e2f6-dbfb-302b-b777-72c3b06b4866">
+    <skos:altLabel xml:lang="eng">Organization Base of Jihad/Country of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar Beit al-Maqdis</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaeda Separatists in Iraq and Syria (QSIS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State in Iraq (ISI)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Unity and Holy War</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Battar Brigade</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Tawhid</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of al-Jihad’s Base of Operations in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization Base of Jihad/Mesopotamia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Zarqawi Network</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Unity and Holy Struggle</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Kirkuk</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Dawla al-Islamiya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Ninawa</skos:altLabel>
+    <skos:altLabel xml:lang="eng">ISIL</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Caliphate State</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat al-Tarabulus</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Islamic State of Iraq and the Levant</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Islamic State (IS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Qaida of the Jihad in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tanzeem Qa'idat al Jihad Bilad al Raafidaini</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida in Iraq – Zarqawi</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Barqa</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State of Iraq (ISI)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of Jihad’s Base in the Country of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida of Jihad Organization in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Halab (Aleppo)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of al-Jihad’s Base in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tanzim Qa'idat al-Jihad fi Bilad al-Rafidayn</skos:altLabel>
+    <rdfs:comment xml:lang="eng">SIS is a violent jihadist group based in Iraq and Syria. The group has declared wilayas (provinces) in Egypt, Libya, Algeria, Yemen, Saudi Arabia, Nigeria, Afghanistan, Pakistan, and the North Caucasus. ISIS has also waged attacks in Turkey, Lebanon, France, Belgium, Iraq, Bangladesh, Indonesia...</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Kateab al-Tawhid</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of al-Jihad’s Base in Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State of Iraq and Syria (ISIS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Dawla al-Islamiya fi al-Iraq wa as-Sham</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Brigades of Tawhid</skos:altLabel>
+    <skos:altLabel xml:lang="eng">ISIS</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida of the Jihad in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida Group of Jihad in Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Coast (Al Sahel)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Youth Shura Council</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Monotheism and Jihad Group</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State of Iraq and the Levant (ISIL)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida Group of Jihad in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Fezza</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Anbar</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida in the Land of the Two Rivers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Unity and Jihad Group</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Tawhid and al-Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Mujahidin Shura Council</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Badiya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaeda in Iraq (AQI)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jam’at al-Tawhid Wa’al-Jihad (JTJ)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State of Iraq and Syria</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Hama</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Barakah (Hasaka)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Khorasan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Diyala</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Daesh</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Southern Province</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State of Iraq and Greater Syria (ISIS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Idlib</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State in Iraq and al-Sham (ISIS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Caliphate</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Organization of al-Jihad’s Base of Operations in Iraq</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Al-Qaeda in Mesopotamia (AQM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Kheir (Deir al Zour)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Damascus (Dimashq)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Gharb Ifriqiyya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Raqqa</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Salahuddin</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bdbb0a69-07d3-3abe-aae0-151d0c5e94ea">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Groupe Islamique Combattant Marocain</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">GICM</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#33e79971-a211-3786-99e9-fc3c372cc9d3">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology with allegiance towards the Spain</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Spanish</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#2b6dcacc-74ea-3019-9e12-96698ed6e0c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d584c434-9935-3c57-97d2-48e088812674">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Der dritte Weg</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bde73629-35b1-3f42-9e70-36a7b9cb1a2e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Strongly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hard Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#7b9cf007-806e-3854-8d12-ab800c8a982b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bdbfb9c6-d6e1-36c9-889b-a2fc3d95f452">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Use of a vehicle as weapon.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Vehicle</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#cd7c79cc-919b-3f29-a966-575034de6d06">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Jihad is an Islamic religious term that most often means a kind of inner struggle for a spiritual goal.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">jihad</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">جهاد‎</skos:altLabel>
+    <skos:altLabel xml:lang="eng">yihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">jihād</skos:altLabel>
+    <skos:altLabel xml:lang="eng">jehad</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#055a4304-1202-32c0-a418-dbf900eedb49"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#dee246bc-9719-3426-99bb-8fdc97c1184e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Subway</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#0624f43f-b55c-3ee9-85db-e0877d06c0b2"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2b42daa9-5fb7-347a-9cf6-a6a7416e898b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Temp description</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Temp</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#055a4304-1202-32c0-a418-dbf900eedb49"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0deb1b1d-cc2d-38b1-8bd3-f64d2e95bf4a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The philosophical, social, political, and economic ideology and movement whose ultimate goal is the establishment of the communist society, which is a socioeconomic order structured upon the common ownership of the means of production and the absence of social classes, money and the state.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Communist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c0677954-92f8-3fc4-a654-f82348f02cdb">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Incorrect information, that is spread unintentionally or intentionally; Misinformation is intentionally false or misleading information that is spread in a calculated way to deceive target audiences.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Misinformation / Disinformation</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5ee3ee6c-7da6-38dd-99c7-0173ef2785a9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Airport</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#48bae6c2-aa51-3ac4-88de-3eb3eb1ba69b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e6bf1208-4fd6-3652-bdcb-fd8b2e73370c">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Russian supported activity</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Pro Russian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ac06c096-a749-3588-a0ae-ad30556de6a6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The NSCN-K is a Christian Naga insurgent group operating in northeastern India and northwestern Burma seeking to establish a seperate Christian state ruled and inhabited by the Naga people.  The NSNC are notorious for laying ambushes on passing military vehicles and attacking official facilities, often indescriminately killing civillians, additionally the group relies on economic terrorism and extortion. The group have been active since 1988 (TRAC).</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">National Socialist Council of Nagaland (NSCN-K)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#39bd87cf-d844-3b52-b6e9-8945732af195">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Directed towards a category of people who identify with each other based on similarities, such as common ancestral, language, social, cultural or national experiences.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ethnic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ca0637a7-bfd3-39cd-9a0e-5e426e0d54ab">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Industrial Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#e7f88ae0-3dba-348b-8660-029cbdfddee3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#40c2e816-5e2c-3ec5-ac62-a2e7153108b9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A Political ideology that certain social orders and hierarchies are inevitable, natural, normal, or desirable, typically defending this position on the basis of natural law, economics or tradition.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Right Wing</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#bcb24a78-282c-3d53-a11a-83c5f3752117"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a6abea2d-eb47-37fd-88c0-e12bea90fc5c">
+    <skos:altLabel xml:lang="eng">Ash-Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Shabaab al-Jihaad al Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Mujahideen Youth Movement (MYM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Youth</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Unity of Islamic Youth</skos:altLabel>
+    <rdfs:comment xml:lang="eng">Al-Qaeda’s Somali-based branch, al-Shabab, seeks to establish a fundamentalist Islamic state. The group has carried out a score of violent terror attacks, including the September 2013 Westgate Mall attacks in Nairobi, Kenya.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Shabaab</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Al-Shabab</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Movement of Warrior Youth</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Youth Wing</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Mujahidin Al-Shabaab Movement</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Harakat al-Shabaab al-Mujahideen (HSM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hezb al-Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Popular Resistance Movement in the Land of the Two Migrations (PRM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Shabaab al-Islaam</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizbul Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Muhajiroon brigade (division made up of foreign fighters)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">As-Saḥāb</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Shabab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hisb'ul Shabaab</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Al-Shabaab al-Islamiya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Harakat Shabaab Al Mujahidin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Party of Youth</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9f6acef4-edb6-3c26-a91f-3bff29bc1b4f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Weakly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Soft Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#7b9cf007-806e-3854-8d12-ab800c8a982b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b5ec2818-0d2a-389b-bb56-58a5addf1029">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">RAF</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Red Army Fraction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Red Army Faction</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#170b1e36-e45f-3fb9-b182-830798941ef0">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The notional environment in which communication over computer networks occurs.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Cyberspace</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#c41a3189-0959-344c-a523-af684561abe5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#14f20192-45a0-36b6-8d09-3ea79b038902">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Environment</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#c41a3189-0959-344c-a523-af684561abe5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#95045540-8ac7-346a-8389-b1ecb23996f3">
+    <skos:altLabel xml:lang="eng">Supporters of God</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ash-Shabab al-Mu’min</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Houthis</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Believing Youth Forum</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Houthi Movement</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansarallah</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:prefLabel xml:lang="eng">Houthis</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Ansar Allah</skos:altLabel>
+    <rdfs:comment xml:lang="eng">The Houthis are an Iranian-backed, Shiite Muslim armed religious and political movement in Yemen. The Houthis waged a series of bloody insurgencies against the Yemeni government for over a decade, leading to that regime’s overthrow in 2015.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Believing Youth</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Shabaab al-Mumanin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Shabaab al-Mu’minin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Partisans of God</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansarullah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Huthis</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ee2b31de-a18c-3613-ad21-fd8ff4c94c46">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Hamas is a U.S.-designated terrorist organization which has killed hundreds of Israeli citizens, as well as Americans, in suicide bombings and other terrorist attacks. Hamas has governed the Gaza Strip since it violently expelled the Palestinian Authority in 2007. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hamas</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Harakat al-Muqawana al-Islamiya (Islamic Resistance Movement)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Athja Al-Islami (The Islamic Trend)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Tiar Al-Islami (The Islamic Stream)</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#753078b8-66de-360b-9697-5deb4ac79e6b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The process of attracting, selecting and appointing suitable candidates</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Recruitment</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3adc77e0-7f92-34a7-b0cf-fe4f60de40c2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Combat 18 (C18) is a neo-Nazi cartel associated with the Blood and Honour organisation, based on the principles of "leaderless resistance". It originated in the United Kingdom but has since spread to other countries. Members of Combat 18 have been suspected in numerous deaths of immigrants, non-whites, and other C18 members.[1] The 18 in its name is derived from the initials of Adolf Hitler: A and H are the first and eighth letters of the Latin alphabet. Combat 18 members are barred from joining the British Prison Service[2] and police.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Combat 18 (C18)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b886e823-67ae-391d-ba86-b899b53b29e1">
+    <skos:altLabel xml:lang="eng">Supporters of Islamic Law in Tunisia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Shari’ah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Supporters of Sharia in Tunisia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Shabab al-Tawhid (ST)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qayrawan Media Foundation</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Partisans of Sharia in Tunisia</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <rdfs:comment xml:lang="eng">AST is a violent jihadist group that seeks to implement sharia (Islamic law) in Tunisia. The group has initiated several violent protests, including the September 2012 attack on the U.S. embassy in Tunis. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ansar al-Sharia in Tunisia (AST)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Supporters of Islamic Law</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Shari’ah in Tunisia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Sharia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Partisans of Islamic Law in Tunisia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Shari’a in Tunisia (AAS-T)</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ee79b9a9-2466-36c9-8e6f-43f3899083ec">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A form of radical authoritarian nationalism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Fascist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#080fe644-089d-344e-a8df-449514324eff">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Information of a biased or misleading nature, used to promote a political cause or point of view</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Propaganda</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7eceedb0-d344-3677-a2b6-b6c06299600b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Political ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Political</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#49ef957f-8804-31d3-8d5b-db4f634e1c95">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Imirat Kavkaz (IK), founded in late 2007 by now-deceased Chechen extremist Doku Umarov, is an Islamist militant organization based in Russia’s North Caucasus. Its stated goal is the liberation of what it considers to be Muslim lands from Moscow. The group, now led by Abu Usman Gimrinskiy, also known as Magomed Suleymanov, regularly conducts attacks against Russian security forces in the North Caucasus. In the period 2010-2013, it carried out high-profile suicide bombings against civilian targets in Moscow and elsewhere in Russia that killed dozens. The group has been badly weakened by recent defections of senior leaders and fighters to the Islamic State of Iraq and the Levant (ISIL), and it remains unclear how many extremists remain loyal to IK in the North Caucasus. Nonetheless, at least one militant group fighting Bashar al-Asad in Syria composed partly of North Caucasians remains loyal to IK leadership and Gimrinskiy. The US State Department in May 2011 designated Imirat Kavkaz as a Specially Designated Terrorist Group under Executive Order 13224.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Imrat Kavkaz (IK)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d8ff2cff-edc6-351e-b759-6e9e53ac8ce6">
+    <skos:altLabel xml:lang="eng">Hizballah Brigades</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kataib Hizbullah</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <rdfs:comment xml:lang="eng">KH is a U.S.-designated anti-American Shiite militia operating in Iraq with ancillary operations in Syria. During the U.S.-led war in Iraq that began in 2003, KH earned a reputation for planting deadly roadside bombs to attack U.S. and coalition forces.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Hizballah Brigades in Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Katibat Abu Fathel Al A’abas</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizballah Brigades–Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kata’ib Hizballah fi al-Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hezbollah Brigades</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khata’ib Hezbollah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Katibat Zayd Ebin Ali</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kataib Hizbollah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khattab Hezballah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kata’ib Hezbollah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khata’ib Hizballah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Brigades of the Party of God</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Islamic Resistance in Iraq</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Kata’ib Hezbollah</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Battalions of Hezbollah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kata’ib Hizballah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kataib Hizb Allah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Battalions of the Party of God</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizballah Brigades–Iraq of the Islamic Resistance in Iraq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Katibut Karbalah</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0673307e-65a1-3463-9a98-ca3c37f6502f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2e4f89e9-83e5-33e1-8caa-8dec5df33757">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A principle, aim, or movement to which individuals are committed and are prepared to defend or advocate.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Causes</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b9b1f1bf-c1e0-3dbd-ab66-1dc567ff1cb2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Military</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#025b32e7-318a-30eb-9162-fa558b4bec98"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d539126d-d27c-3e20-abc8-4045df8dd63c">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Jobbik is a neo-Nazi, neo-fascist political party in Hungary that combines militant ethno-nationalism with anti-Semitism and anti-Roma racism. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Jobbik</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e6178849-4e1b-3c18-8498-559d7298ef06">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Monument</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#0624f43f-b55c-3ee9-85db-e0877d06c0b2"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#dd1fdc46-c885-3dc6-aa74-5770b2317956">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Continuity Irish Republican Army (CIRA) split from the Provisional Irish Republican Army (PIRA) when the PIRA dropped its longstanding opposition to the participation of its political wing, Sinn Fein, in the Parliament of Northern Ireland. In response, Republican Sinn Fein split from Sinn Fein and set up CIRA as its own militant wing. Republican Sinn Fein and the CIRA continued to view the Northern Ireland Parliament as illegitimate since it did not represent the whole of Ireland. The CIRA claimed to be the true republican group and sought to create a unified Ireland independent of Britain. The CIRA did not stage its first attacks until after the PIRA declared a ceasefire in 1994. Thereafter it targeted Protestant civilians and Northern Ireland police. The group remained weak, however, and never attracted more than a few dozen members.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Irish Republican Army</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">IRA</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2884b8e3-8744-3dcd-989c-83eca9198329">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Strongly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hard Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#9a93f035-fbc2-3dbc-ac75-3a5def253815"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c41497c0-be1c-319a-b569-39ff02650ee1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Islamist ideology developed by Sayyid Qutb (figurehead of the Muslim Brotherhood).  It has been described as advancing the extremist jihadist ideology</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Qutbist</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Qutbiyyah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Kotebism</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Qutbiyya</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b95b702f-a03e-3421-b7b1-61df985cf5f6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Motto primarily used by white separatist, white nationalist, neo-Nazi and white supremacist organizations in order to signal racist or racialist viewpoints.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">White Pride</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e7981e89-e093-35a4-aa8c-6c1e14e4efe7">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">State sponsored ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">State Sponsored</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f90812ed-39af-369d-a42c-15801fd02d6e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Hamas militia</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Izz ad-Din al-Qassam Brigades (EQB)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4f74c538-f0b1-3c5e-8175-3e70ea8fbf61">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Religious political ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Political</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f7c07d8a-b966-3d5c-afba-6868de0cd476">
+    <skos:altLabel xml:lang="eng">Jamaat Qaidat al-jihad fi’shibhi al-qarrat al-Hindiy</skos:altLabel>
+    <rdfs:comment xml:lang="eng">AQIS is al-Qaeda’s newest branch, founded in September 2014. Reportedly operating in Afghanistan, Pakistan, India, Burma, Bangladesh, and Kashmir, the group seeks to wage jihad in order to establish an Islamic state. </rdfs:comment>
+    <skos:altLabel xml:lang="eng">Ansar al Islam</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Al-Qaeda in the Indian Subcontinent (AQIS)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Jamaat Qaidat al-Jihad fi'shibhi al-Qarrat al-Hindiya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Qaedat al-Jihad in the Indian Subcontinent</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Qaedat al-Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organisation of The Base of Jihad in the Indian Subcontinent</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#490ae1b0-3475-3bb3-86c0-a31bdab0f2ec">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A place, thing, or person at which an attack is aimed.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1730a8d0-1da3-3028-9f6b-47b320fa2475">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Image</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e61bae2c-698e-351b-86b7-3ea550d1f275">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A crime that involves a computer and a network.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Cybercrime</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5cd305e0-0acd-3d92-9398-f6caddf2a884">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Government support of violent non-state actors engaged in terrorism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">State Sponsored</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#eae003f8-c62b-31c6-b125-fcff7733f94b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Golden Dawn is a neo-Nazi party that came third in Greece’s January 2015 elections. Many of Golden Dawn’s government leaders are currently on trial in Athens on charges of establishing a criminal organization.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Golden Dawn</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Popular Association – Golden Dawn</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Χρυσή Αυγή</skos:altLabel>
+    <skos:altLabel xml:lang="eng">National Dawn</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Λαϊκός Σύνδεσμος – Χρυσή Αυγή</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b82eb830-b1f3-333c-bd3d-d239ccedaaee">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A left-wing organization waged an armed struggle against the Turkish state for equal rights and self-determination for the Kurds in Turkey.  Based in Turkey and Iraq.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Kurdistan Workers' Party</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">PKK</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#52c41b0b-cc54-3a6c-807f-d2f72f8f2791">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Balochistan Liberation Front (BLF), also known as the Baloch Liberation Front, is an ethnic-separatist political front and militant organization that is currently fighting against the Pakistani government for an independent Balochi state.  Since 2012, the BLF has continued its attacks on foreign workers, journalists, and Pakistani government affiliates, including a recent attack against 20 foreign workers on April 11, 2015. SImilarly affiliated groups are the Lashkar-e-Balochistan (LeB) and Balochistan Liberation Army. (BLA)</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Balochistan Liberation Front (BLF)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f8675636-46fa-3280-9c22-05bf2f1d192d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">One of the two main branches of Islam, commonly described as orthodox, and differing from Shia in its understanding of the Sunna and in its acceptance of the first three caliphs.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sunni</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0aaf0f38-21b7-3926-a5d1-f33e81651a75">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A bomb constructed and deployed in ways other than in conventional military action.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Improvised explosive device</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">IED</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#e7f88ae0-3dba-348b-8660-029cbdfddee3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f7221b2b-f75d-3c79-bf8c-1a9850c18587">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Uk advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti UK</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#1f9dd441-b0d5-330d-8957-d31b4049d069"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#496cae81-5a0e-38fa-9aa9-a2073e9c86b2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology with allegiance towards the Russian</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Russian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#2b6dcacc-74ea-3019-9e12-96698ed6e0c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c1b7947f-416e-396a-a305-d1ade042d9b1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A cult-like Christian-based group, infamous for the abduction of children as slaves, for FGM and for establishing child soldiers and widespread killings and kidnappings. In 2015, Lord’s Resistance Army (LRA) forces were active in the Central African Republic (CAR), the Democratic, Republic of Congo (Congo), South Sudan, and in Sudanese-controlled areas of South Darfur and the disputed Kafia Kingi enclave. The LRA abducted 612 people in 203 attacks in 2015, a slight reduction compared to 2014, though the number of abductions was higher than in both 2012 and 2013. Group rose to inernational recognition from 'Kony 2012' campaign.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">The Lord's Resistance Army (LRA)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8f249418-e5d3-3e27-90a2-a07bbb9f45f9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A cultural system of behaviors and practices, world views, sacred texts, holy places, ethics, and societal organisation that is referred to as belief</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Religious</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#fc364e4a-e819-3a96-acf8-61c89fcb9e0b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Brigade of Abu al-Fadl is a pro-government Shi'a militant group that originated in Syria in late 2012. As ISIS made significant gains in Iraq in 2014, its Iraqi members were forced to return to defend the faltering Shi'a led government in Bagdhad, thus forming the group. The force is affiliated with Sheikh Aws al-Khafaji, who was previously aligned with Muqtada al-Sadr. The group claims an affinity with the similarly named Liwa Abu al-Fadhal al-Abbas group fighting in Syrian Civil War on behalf of the Syrian government. AFA also appears to have deep links to Kataib al-Imam Ali.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Abu al-Fadl al-Abbass</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4a71b848-7ad5-33f9-a707-527cc785cb1d">
+    <skos:altLabel xml:lang="eng">Ikhwan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Ikhwan al-Muslimeen</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Muslim Brothers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Society of Muslim Brothers</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Ikhwan al-Muslimin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Gamaat al-Ikhwan al-Muslimin</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Muslim Brotherhood</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <rdfs:comment xml:lang="eng">The Muslim Brotherhood is a transnational Sunni Islamist movement that seeks to implement sharia (Islamic law) under a global caliphate. Founded in Egypt in 1928, the Brotherhood is the country’s oldest Islamist organization and has branches throughout the world.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Muslim Brethren</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6587402f-d681-32d0-939b-86e6810c99bc">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Janjaweed consists of a varying group of arabic Islamic individuals from the Darfur, Sudan and eastern Chad region, most notibly made up of the Abbala and Baggara camel/cattle herder people. Since 2003 they have been one of the main instigators and involved actors in the Dafur conflict, leading an Islamic yet Arabic superiority/nationalist ideology against the African ethnic muslims. Sudan's president, Omar al-Bashir has proposedly been supporting the Janjaweed militias, this has lead to military grade armaments and a lack of accountability for war crimes including alleged genocide. Sudan admits to having mobilised militias to counter the JEM (Justice and Equality Movement) and the SLA (Sudan Liberation Army) which initially attacked government targets in 2003 for the oppression of black ethnic groups and communities.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Janjaweed</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e4b26927-8f9f-39cd-aa73-4fee83be2068">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Groups that intentionally use indiscriminate violence as a means to create terror or fear, in order to achieve a political, religious, or ideological aim.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Group</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#e47e1e78-24c3-3c37-aa1e-ede411d833da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2fff7760-6c91-3eb8-8c45-e93da56ce458">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A member of the native Arab population of the region of Palestine (including the modern state of Israel).</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Pro-Palestinian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0c1d356c-b1f8-320b-82a3-13721fdd0216">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">ETA, an acronym for Euskadi Ta Askatasuna "Basque Country and Freedom" Is an armed Basque nationalist and separatist organization in northern Spain and southwestern France. The group was founded in 1959 and later evolved from a group promoting traditional Basque culture to a paramilitary group engaged in a violent campaign of bombing, assassinations and kidnappings in the Spanish Basque country and throughout Spanish territory. Its goal was gaining independence for the Greater Basque Country. ETA is the main group within the Basque National Liberation Movement and is the most important participant in the Basque conflict. Since 1968, ETA has been held responsible for killing 829 people, injuring thousands and undertaking dozens of kidnappings. The group is proscribed as a terrorist group by Spain, the United Kingdom, France, the United States, and the European Union.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Euskadi Ta Askatasuna (ETA)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#94846ba9-aa54-3936-8db4-4ddc4be45f8f">
+    <skos:altLabel xml:lang="eng">Al-Mulathamun Masked Ones Brigade</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Al-Mourabitoun is a violent terrorist group that seeks to establish an Islamic state in West Africa. The group has claimed responsibility for numerous terror attacks, including the deadly November 2015 gun and hostage attack in Mali’s capital, Bamako.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Signed-in-Blood Battalion</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Masked Men Brigade</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Mulathamun Brigade</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Witnesses in Blood</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Those who Sign in Blood</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Murabitoun</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khaled Abu al-Abbas Brigade</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Those Signed in Blood Battalion</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Muwaqqi'un bil-Dima</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Signatories in Blood</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Al-Mourabitoun</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">The Sentinels</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Murabitoon – Al Qaeda in West Africa</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9e46dd33-0222-3df8-9b20-581ac53c25e7">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A range of economic and social systems characterised by social ownership and democratic control of the means of production; as well as the political ideologies, theories, and movements that aim to establish them.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Socialist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f7aa18e8-4ab1-38aa-ab06-86bcadf3eae7">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Murder of an individual</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Execution</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7babcf2a-6acd-3026-a6e0-a26342e92b81">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The LeJ group is active is a Sunni Supramacist terrorist group based in Pakistan responsible for violent attacks and killings on Shia targets. The LeJ has been named responsible for mass civillian killings and multiple bombings that killed over 200 Hazara Shia in Quetta 2013. They have also been linked to high-profile incidents such as attacks on the Sri Lankan cricket team in Lahore 2009. Most recently the group has claimed responsibility for the attack on a police training centre in Quetta Pakistan in October 2016 killing atleasrt 61 people including cadets and army officers. LeJ holds ties to the Taliban, al-Qaeda and several other reigonal Sunni-Islamic groups. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Lakshar-e-Jhangvi</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5af7af58-bbe0-3886-abe0-3a63767b013e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Video</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e134e107-0243-34fc-8187-733cb7a7e862">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A bomb constructed and deployed in ways other than in conventional military action.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Improvised explosive device</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">IED</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f1536929-b55b-3ea5-8dbb-efe3e3a4175d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#54cce2c0-fc8c-3ec3-9b3c-1500313256ac">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Isreali supported activity</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Isreali</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4f786d6d-e165-3b68-a8da-c548602b5ad5">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology that can be described from political, sociological and psychological perspectives</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Loyalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b2ea9f1c-8d56-320d-ac50-f1efe0cfd933">
+    <skos:prefLabel xml:lang="eng">Ansar al-Sharia in Libya (ASL)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Katibat Ansar al-Charia</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Katibat Ansar al-Sharia</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Partisans of Sharia in Libya</skos:altLabel>
+    <rdfs:comment xml:lang="eng">ASL is a violent terrorist group that seeks to implement sharia in Libya. In 2012, ASL’s predecessor groups attacked the U.S. consulate in Benghazi, killing four Americans, including U.S. Ambassador to Libya Christopher Stevens.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Partisans of Islamic Law in Libya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Supporters of Sharia in Libya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Supporters of Islamic Law in Libya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Charia in Libya</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c31017f0-5808-3b20-9d02-6a8de09fd8c3">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Religious Ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Religious</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#86eabb9a-de16-3649-8249-884004c288ea">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Military Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f1536929-b55b-3ea5-8dbb-efe3e3a4175d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1eecea1a-8fd9-3a85-80e7-7965cd420126">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Individuals that intentionally use indiscriminate violence as a means to create terror or fear, in order to achieve a political, religious, or ideological aim.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Individual</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#e47e1e78-24c3-3c37-aa1e-ede411d833da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6c2e817f-ee16-39cb-999b-2d6064e0b6e9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Al-Aqsa (Martyrs Brigades)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#406cc61e-d1e2-34e6-8a86-b41df1ce77b2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The death or suffering of a martyr.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Martyrdom</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#287afcf1-c19b-3073-8a85-b73473341baa"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9b5cecba-a0dd-3c0b-b927-19f91b4d1b4a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Turkestan Islamic Party (TIP) formerly known as the East Turkestan Islamic Movement (ETIM) formerly known as the East Turkestan Islamic Movement (ETIM), and other names,[a] is an Islamic terrorist and separatist organization founded by Uyghur militants in western China. Its stated goals are the independence of East Turkestan from China. According to the Chinese government, it is a violent separatist movement and is often responsible for terrorist attacks in Xinjiang. The group is notorious for training children as martyrs and soldiers.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Turkestan Islamic Party</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#79ca7748-92f3-3021-8cb0-c650d6f7cb7d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Red Hand Defenders (RHD) is a Loyalist paramilitary group. There is speculation that RHD has also been used as a cover name for members of other terrorist organizations in Northern Ireland, namely the Loyalist Volunteer Force (LVF) and the Ulster Defense Association (UDA). It is not clear to what extent the name RHD represented a distinct organization at different points in time. The RHD has conducted attacks using pipe bombs, grenades and hand guns against Catholic families located Northern Ireland and continues to fight for a continued British Rule.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Red Hand Defenders</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#930a0544-b598-3920-aa41-defc3259ebf2">
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">PIJ–Shaqaqi Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">al-Awdah Brigades</skos:altLabel>
+    <skos:altLabel xml:lang="eng">PIJ–Shallah Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Palestine Islamic Jihad–Shaqaqi Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad of Palestine</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad–Palestine Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Palestine Islamic Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Holy War</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Palestinian Islamic Jihad</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">al-Quds Squads</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Palestine Islamic Jihad–Shallah Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad Palestine</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Saraya al-Quds</skos:altLabel>
+    <rdfs:comment xml:lang="eng">PIJ is a Palestinian Islamist terrorist group sponsored by Iran and Syria. Founded in 1979 as an offshoot of the Egyptian Muslim Brotherhood, PIJ is the second-largest terrorist group in Gaza today (after Hamas).</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Harakat al-Jihad al-Islami fi Filistin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Harakat al-Jihad al-Islami al-Filastini</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad in Palestine</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Abu Ghunaym Squad of the Hizballah Bayt Al-Maqdis</skos:altLabel>
+    <skos:altLabel xml:lang="eng">al-Quds Brigades</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#864bdaa0-e21d-326e-9863-b8b03ae4ce95">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Use of a vehicle as weapon.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Vehicle</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2f97cd86-dbe4-3fc6-a0b3-34e192439c18">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Military Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#e7f88ae0-3dba-348b-8660-029cbdfddee3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6939aee2-3406-34d9-9f32-5b2249632898">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Hostile to or prejudiced against Jews.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti-Semitic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#55234552-5533-3229-ac1c-62a7ebbeb7a7"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bdd8a591-12e5-331f-8f3a-d60e4182eb18">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">EA, a radical leftist group, conducted a number of high-profile terrorist operations against Greek and Western interests after its emergence in 2003, including a rocket-propelled grenade attack against the US Embassy in Athens in January 2007. Greek authorities largely disrupted the group’s operations in 2010. In mid-2012 the group’s ringleader, Nikos Maziotis, and his girlfriend violated the terms of their release pending trial and disappeared. Maziotis—who was recaptured by Greek police in July 2014—has since been linked to a number of bank robberies. In April 2014, EA claimed responsibility for a car-bombing outside the Bank of Greece in Athens to protest Greece’s return to international markets, its first attack since 2009. The group is deemed a terrorist group by the Greek government, the EU, and the US.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Revolutionary Struggle (EA)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ffba694e-23d4-35b4-a4f0-a770574501ad">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Ransom</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c75ce15c-9b49-3d6a-a1c1-0e2c8e66f69a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political and ethical movement that seeks to improve and protect the quality of the natural environment through changes to environmentally harmful human activities.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Environmentalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a8fd8359-4a10-3729-b909-66e72f37c4c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c65c6001-97db-35e7-9652-1408fa08d352">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Ulster Volunteer Force (UVF) was a loyalist, paramilitary organization that was created after the 50th anniversary of the Easter Rising (1916). The anniversary reflected a revival in sentiments for an independent Northern Ireland. The UVF declared war on the IRA and its splinter groups. It is most well-known for its involvement in “the Troubles,” which included thirty years of bombings and killings of Irish republicans and Catholics. In May of 2007, the group vowed to become a "non-military, civilianized" organization.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ulster Volunteer Force</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#883ecbc3-3188-30dd-9c43-0ef46f755749">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Imarat Kavkaz</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#37793fa0-9bc2-3997-bb59-bfbbe4d47a23">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Political ethnic ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ethnic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e5ba5e81-e77b-376a-9155-9ce3dd08f5fb">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Outlawed as terrorist org in Germany. Followersof the Al Qaida ideology as described by Al-Maqdisi</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Millatu Ibrahim</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8bed9c54-f120-36e6-9d6a-6ca387e75240">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Following the murder of UK MP Joe Cox, the extreme right group National Action has been branded a terrorist organisation for the support of some of its members towards the killing, as well as antisemetic and white supremecist demonstrations, violence, and intimidation. The group has been actively involved in training in hand-to-hand combat and brandishing slogans such as; "Hitler was Right", and "Death to Traitors" following the murder of MP Cox. The group is known for targetted the younger, white british generations, attempting to recruit at universities, although the majority of active followers are not from higher education. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">National Action</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#90990f0e-3b9e-3ff5-b37f-981440991ae2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Considered a terrorist group foremost by Turkey, the US and the EU: The DHKP/C is active both in Turkey and abroad as its two main domains. As an effect of successful and conclusive operations against the terrorist organization across the country, DHKP/C has decided to move its centre to European countries where Turkish people densely live. The terrorist organization continues its activities through some associations in these countries. They have carried out suicide bombings and assassinations.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">DHKP/C</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Revolutionary People's Liberation Party/Front</skos:altLabel>
+    <skos:altLabel xml:lang="eng">DHKP</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6de70c3b-f0cd-3a3a-9223-5c4d862e8d00">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Computers or information technology</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Cyber</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e62b724d-86fc-30fa-bd86-5db9de04c32f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Al-Qaeda’s 9/11 attacks was the deadliest ever on American soil, killing nearly 3,000 people. Since the fall of the Taliban, al-Qaeda has established operations worldwide, including in Syria, the Gulf, North Africa, West Africa, East Africa, and the Indian subcontinent.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Al-Qaeda</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#eada1466-8f3e-3015-b1ad-f93165630935">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Germany’s NPD is a far-right political party founded in the 1960s that has propagated racist, anti-Semitic, anti-Muslim, and anti-immigrant messages. The German government has sought to ban the NPD as recently as March 2016.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">National Democratic Party of Germany (NPD)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3bdca3a5-48b4-334f-ab8e-c9e98f998770">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A revolutionary movement seeking seperatism from the Turkey. The PKK has waged an armed struggle against Turkey believing the Kuridish minority has been repressed and ostracised. In a joint declaration with nine other organizations in March 2016, the PKK announced that they aim to attain "democracy and [a] free future" for "peoples against imperialism, capitalism, chauvinism, fascism and racism", by working towards the overthrow of the ruling AKP, who they deem fascist. Internationally, a controversial party not recognised by several EU states to be 'terrorist' and an essential part of overthrowing the Assad regime as well as countering Daesh presence. For example, Denmark allows for PKK associated TV channels to broadcast, other EU countries have condemned Turkeys violent conflict against the Kurds.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">PKK/KCK</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#dee70ec3-e310-3db4-bad1-86b31125600a">
+    <skos:altLabel xml:lang="eng">Al-Qa’ida in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tanzim al-Qa’idat al-Jihad fi-Jazirat al-Arab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa'ida in the South Arabian Peninsula</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Al-Qaeda in the Arabian Peninsula (AQAP)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Qaeda al-Jihad Organization in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Shari’a (AAS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Qa’idah al-Jihad in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaedah in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaida of Jihad Organization in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tanzim Qa’idat al-Jihad fi-Jazirat al-Arab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida in Yemen (AQY)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Sharia (AAS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaida in Yemen (AQY)</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Al-Quaida of Jihad Organization in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaida in the South Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaida Organization in the Arabian Peninsula (AQAP)</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Qaida al-Jihad in the Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Quaida in the South Arabian Peninsula</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Quaida Organization in the Arabian Peninsula (AQAP)</skos:altLabel>
+    <rdfs:comment xml:lang="eng">AQAP is the union of al-Qaeda’s affiliated branches in Saudi Arabia and Yemen. AQAP has claimed responsibility for terror attacks and plots worldwide, including the January 2015 Charlie Hebdo attacks in Paris.</rdfs:comment>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7649d79c-5199-3622-a27a-b9aca9b35cb6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Islamic Front</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4c82bad3-0b14-3995-9a07-d7a05b4f244e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Slang terms</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Vocabulary</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#031bb200-0086-31cd-aa39-2fcc21fdcbaf"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c92b2ae8-3127-3b75-b7d4-8f44c0c2e884">
+    <skos:altLabel xml:lang="eng">Bands of Right</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Ahl al-Kahf</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Sadiqun</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Bands of the Righteous</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khazali Faction</skos:altLabel>
+    <skos:altLabel xml:lang="eng">League of Righteousness</skos:altLabel>
+    <rdfs:comment xml:lang="eng">AAH is an Iranian-backed Shiite militia and political party operating primarily in Iraq, as well as in Syria and Lebanon. Until the U.S. military withdrawal from Iraq in December 2011, AAH had launched more than 6,000 attacks on American and Iraqi forces.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Asaib Ahl al-Haq</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Special Groups</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">League of the Righteous</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Honest Ones</skos:altLabel>
+    <skos:altLabel xml:lang="eng">People of the Cave</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Khazali Network</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Band of the Righteous</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Asa’ib Ahl al-Haq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Shiite Resistance in Iraq</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e8e4470b-3648-3100-af0f-9c63a67ba460">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Hezb-e-Islami, or, "Party of Islam" is a political and paramilitary organisation in Afghanistan founded in 1976 by the former prime minister Gulbuddin Hekmatyar. The group has conducted some widely publicized attacks during the past few years. Most recently, HIG spokesman Haroon Zarghoon claimed responsibility for a suicide VBIED attack in Kabul on 7 July 2015 against a NATO convoy. HIG also claimed responsibility for a deadly insider attack in April 2015 in Nangarhar Province in which a US soldier was killed. On 10 February 2014, the group executed an attack which killed at least two US civilians and wounded two other Americans and seven Afghan nationals. HIG was also responsible for a 16 May 2013 suicide VBIED attack in Kabul, which destroyed a US armored SUV and killed two US soldiers, four US civilian contractors, eight Afghans—including two children—and wounded at least 37 others. The attack marked the deadliest incident against US personnel in Kabul in 2013.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hizb-E-Islami Gulbuddin (HIG)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e75c3da5-45af-38e0-ae49-24870a387601">
+    <skos:altLabel xml:lang="eng">Church of the National Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ku Klos Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Brotherhood of Klans</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Ku Klux Klan</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Knights of the Ku Klux Klan (the Knights Party)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Loyal White Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Original Knight Riders Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Traditionalist American Knights of the Ku Klux Klan</skos:altLabel>
+    <rdfs:comment xml:lang="eng">The KKK is the oldest and most notorious hate group in the United States. Today, the KKK is no longer a single, cohesive organization, but has instead splintered into at least four main offshoots and dozens of smaller factions, each of which identify as members of “the Klan” and...</rdfs:comment>
+    <skos:altLabel xml:lang="eng">United Klans of America</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Imperial Klans of America</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Klan</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">National Aryan Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">United Northern and Southern Knights of the Ku Klux Klan</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5b473e05-2119-3601-b8c7-76eef517b4c9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ansar Dine (Defenders of the Faith) is a terrorist group based in Mali with reported links to Al-Qaeda. The group is preprtedly made form Sunni Muslims from the Mali, Algeria and Niger area, seeking to establish a state of Sharia rule. The group allegedly has access to military vehicles, anti aircraft weaponry and military arms obtained following Gadaffi's deposition from Libya. The group is notorious for recruiting child soldiers and utilising suicide bombings against soft-targets. Additionally the group has been condemned for the destruction of UNESCO world heritage sites in Timbuktu and for causing the displacement of over 400,000 people.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ansar Dine</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c42a5e7b-3750-3901-b09d-a7534afa264f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">An improvised explosive device, a belt or a vest packed with explosives and armed with a detonator, worn by suicide bombers.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Suicide Bomber</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#775a88a1-c58a-3400-be1e-8ab2cb821f88">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Use of a vehicle as weapon.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Stabbing</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c4270489-c927-3986-b86d-19d3681149e5">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Actor</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c438fd72-46d5-3477-a390-d5c19ae52659">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The act of providing or raising financial resources, usually in the form of money</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Funding</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8241e6fc-59a1-34ed-b10e-9c2d9326432a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Real Irish Republican Army (rIRA) was the most violent of the groups to split from the Provisional Irish Republican Army (PIRA) in protest over the PIRA's ceasefires and participation in the peace process. The rIRA split from PIRA in 1997, and aims to force a British withdrawal from Northern Ireland and unify Northern and Southern Ireland. Among its targets were British soldiers, Northern Ireland police forces, and civilians. Within a year of forming, rIRA staged the bloodiest attack of the modern Northern Ireland conflict with a car bombing in the town of Omagh in August 1998 that killed 29. In the face of public outrage over the attack, the rIRA declared a ceasefire a month later. The group resumed attacks in England and Northern Ireland in 2000. Yet the group has declined due to widespread arrests, and appears not to have carried out a fatal attack since killing two British soldiers at a barracks in 2009.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Real Irish Republican Army</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Real IRA</skos:altLabel>
+    <skos:altLabel xml:lang="eng">rIRA</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#557ddd6a-6594-3ef1-98d5-0ffffeda03e8">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Rooted in Italian nationalism and the desire to restore and expand Italian territories, which Italian Fascists deemed necessary for a nation to assert its superiority and strength and to avoid succumbing to decay.  Italian Fascism promoted a corporatist economic system whereby employer and employee syndicates are linked together in associations to collectively represent the nation's economic producers and work alongside the state to set national economic policy</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Italian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#b25d40e2-2384-33d4-8853-a328166b101f"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#604c6876-9c26-3180-a071-03bc1585e233">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ukraine supported activity</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Pro Ukraine</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c8bcf9b3-dc35-32f4-8090-630aa2850c18">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Purpose / objective</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Intent</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f15c1cae-7882-348b-bfb0-404682e17e61"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#14e76f0f-1ff1-3f85-9a42-fc157914b6f8">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Operating across national boundaries</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Transnational</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a02ca4ff-6c45-39b1-b712-83673fc5e09c">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology that supports social equality and egalitarianism, often in opposition to social hierarchy and social inequality.  It typically involves a concern for those in society whom its adherents perceive as disadvantaged relative to others (prioritarianism), as well as a belief that there are unjustified inequalities that need to be reduced or abolished.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Left Wing</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#bcb24a78-282c-3d53-a11a-83c5f3752117"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c02c5c6d-825a-3caf-9cfb-b4348793a070">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ethnic ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ethnic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d88356a9-6ec2-3e26-affc-6b9335f5155f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Islamic Jihad Union (IJU) is an extremist organization that splintered from the Islamic Movement of Uzbekistan in the early 2000s and is currently based in Pakistan’s Federally Administered Tribal Areas. The IJU, which is committed to toppling the government in Uzbekistan, conducted two attacks there in 2004 and one in 2009. The IJU is also active in Afghanistan, where the group operates alongside the Taliban-affiliated Haqqani Network. The group has had particular success in recruiting German nationals and achieved international notoriety following the 2007 disruption of an IJU plot by the so-called Sauerland Cell to attack various targets in Germany. The US State Department in June 2005 designated the IJU a Foreign Terrorist Organization.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Islamic Jihad Union (IJU)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bd2c9de4-4c71-3677-b51e-5fdabe13e069">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng"> In the December 2005 elections, members of Ṣadr’s movement stood with other Shi’a parties as part of the United Iraqi Alliance, which won a plurality of seats (128 of 275) in the parliament; 32 of which went to the Ṣadrists. Major fighting rocked Iraq in 2006–2008. At the height of the war in late 2006, Sadr’s militia organization, which was known as Jaish al-Mahdi or the Mahdi Army, waged a cruel war against Sunnis, often resorting to horrific methods to terrorize and demoralize its opposition. With the rising influence of the Islamic State of Iraq and Syria in Sunni Arab areas of Iraq, Sadr has reinstituted an active militia force, six years after disbanding the Mahdi Army.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sadrist Movement and Mahdi Army</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1aaf78e4-0077-39b8-8c2d-a0164e7f9b20">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">As reported by the U.N. agency MONUSCO 'The Democratic Forces for the Liberation of Rwanda (FDLR) is the largest illegal foreign armed group operating in the DR Congo. While there is currently a growing number of Congolese among their ranks, the group is primarily formed from members of the Rwandan government and army ousted in 1994 as well as Rwandan refugees. Its public purpose is to use military pressure to open 'inter-Rwandan dialogue' with the current Rwandan government, but its covert purpose appears to be to overthrow the Rwandan government. The FDLR currently operates in eastern DR Congo and Katanga province. Its current strength is estimated to be 2000 combatants.  In 2015, the FDLR was accused of training the youth wing of Burundi's National Council for the Defense of Democracy, raising fears of another genocide, and leading over 100,000 Burundians to flee to neighboring countries.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Democratic Front for the Liberation of Rwanda (FDLR)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4a895d3a-aa5a-383d-9a8c-4c0c91400754">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Islamic Resistance Movement</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5bddad80-d5ea-3331-b21a-b050d38a3d96">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">aka Kalifatstaat aka Kaplancilar. German in 2001 forbidden etremist org. founded in 1994. Leader Metin Kaplan was serving a lifetie sentence inTurkey, but was released 2016. Still has some supporters in Germany</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hilafet Devleti</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#dafd943b-1fbc-3b2c-8c0f-1fc0193e8a8f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Terrorism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#031bb200-0086-31cd-aa39-2fcc21fdcbaf"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6b60afab-1540-3869-9436-9374a27dab34">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Fatah became recognised on the international theatre as a terrorist organization in the 1950's (before the 'occupation' mind you) with the goal of destroying Israel. It declared a Palestinian state in 1988 and was recognized as the sole legitimate representative of the Palestinian people by Israel during the Oslo Accords. Since then it's been governing the West Bank and making threats to the state of Isreil, it currently seen by a terrorist group by some world nations, but not others following losing its political position to Hamas in Palestine.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Fatah</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a87743eb-9688-3a48-9ec7-932529fe8866">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Government Infrastructure</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#025b32e7-318a-30eb-9162-fa558b4bec98"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#eec31d74-e7e6-3638-82cd-69b3d98ef897">
+    <skos:altLabel xml:lang="eng">Tanzim al-Qa’ida fi Bilad al-Maghrib al-Islamiya</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Salafist Group for Preaching and Combat</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Gruppo Islamico Armato (GIA)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of Al-Qaida in the Islamic Maghreb (AQIM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qa’ida in the Islamic Maghreb (AQIM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Armed Islamic Group (GIA)</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Al-Qaeda in the Islamic Maghreb (AQIM)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Salafist Group for Call and Combat</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Qaida in the Lands of the Islamic Maghreb (AQIM)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Le Groupe Salafiste Pour La Predication Et Le Combat (GSPC)</skos:altLabel>
+    <rdfs:comment xml:lang="eng">Al-Qaeda’s North African branch, AQIM, operates in Algeria, Mali, Niger, Libya, Mauritania, and Tunisia. The group has executed numerous violent attacks in North and West Africa. The group is also known for its extensive history of kidnapping and extortion. </rdfs:comment>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1940f7a0-9c7a-38d9-a398-f84acfee583a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Industrial Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f1536929-b55b-3ea5-8dbb-efe3e3a4175d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c5501a2e-5f7f-343e-ac28-c7202c9f1e25">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Traveller</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d0d6ede8-f220-3872-bcac-6d8033bca398"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#48efb94c-c8ce-3fe7-8c58-4f777b9ab756">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Separatist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ecbf0233-9657-37ba-a4b3-e7c2b368dfbb">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology consists of efforts to promote, impede, or direct social, political, economic, and/or environmental reform or stasis with the desire to make improvements in society.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Activist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#51f23800-2b1c-3815-bf3b-81a2634b00bf">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Belief that white people are a race and seeks to develop and maintain a white national identity.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">White Nationalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#abd60df0-f1d4-389e-85c2-826e0205fd84">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">This entry is closely linked to that of the Tuekestan Islamic Movement (ETIM/TIM). The entry is currently controversial due to a lack of evidence and clarity from sources citing that multiple terrorist attacks in the Chinese autonomous Xianyiang province are the fault of the ethnic/muslim large minority; Uyghur militants. On August 30, the Chinese embassy on the outskirts of the Kyrgyz capital, Bishkek, was attacked by a suicide bomber who drove a Mitsubishi Delica van packed with explosives into its security gates, injuring two Kyrgyz security guards and three embassy staff. While no group has claimed responsibility for the attack, Kyrgyzstan’s Deputy Prime Minister Jenish Razakov told journalists immediately after the attack that it was the work of “terrorists.” External media sources have remained skeptical towards official Chinese sources from Beijing that have been accused of doctoring attack evidence and stiring anti-Islamic sentiment.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Xianyiang Uyghurs</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1ebd0c5b-238e-3c06-85a2-0cc79d300fdd">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Fascist ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Fascist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6ec24ab9-dfa2-367a-a4a8-bead2a5197a6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology with allegiance towards the United Kingdom </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">British</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#2b6dcacc-74ea-3019-9e12-96698ed6e0c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#71dcc5c5-a3e1-3768-bbd8-8bf4fc255d3d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Abu Sayyaf Group (ASG) is an Islamist terrorist organization that seeks to establish an Islamic state in the southern Philippines. The historically al-Qaeda affiliated ASG is led by Radulan Sahiron, a breakaway faction in Basilan has pledged allegiance to ISIS.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Abu Sayyaf Group</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e1bd0e5b-0d28-30ee-91e8-62428f75f5a6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Specific Political Objective</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a8fd8359-4a10-3729-b909-66e72f37c4c3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#10ed2412-c6d4-3233-93ca-f8e4beb752a6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Set of acts by groups or individuals who profess Christian motivations or goals.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Christian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ecb46704-8247-3621-90a8-825a8f1f2999"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#65386e8e-9bc1-3185-b97d-6edda30627db">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Political religious ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Religious</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#559a11ad-853c-391d-bb59-e1605be52a08">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Communist ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Communist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#97854a70-e902-38c2-89ab-fd20995b040f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Racial segregation at the level of marriage and intimate relationships between members of different races</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti-miscegenation</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#321a06bb-8731-3406-a2b3-64053a7bb940">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Red Hand Commando (RHC) was a small loyalist paramilitary group. Its chief aim was to maintain Northern Ireland as part of the UK, and to oppose by force the republican movement that aimed to make Northern Ireland part of a unified Ireland free of British control. RHC was closely allied to the Ulster Volunteer Force (UVF), one of the largest loyalist paramilitary groups in Northern Ireland. The two groups had separate command structures but shared weapons and moved together on major political issues, jointly engaging in the peace process and ultimately decommissioning their weapons in 2009. The UVF and RHC together are believed to be responsible for over 500 deaths in the course of the modern Northern Ireland conflict, mainly of Catholic civilians.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Red Hand Commando</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9e39bf88-0b95-330e-aaf9-0a1a311ca4ee">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">(The most controversial entry in this database, may need to be removed): In the past several years, Putin's Russia has increasingly moved to establish a nation-civillisation over the nation-state of Russia, this has led in part to increases in state-sponsored terrorism internationally, the increase of nationalist and anti-western propaganda and the arming and encouragement of seperatist movements. Russia has arguably funded, encouraged, trained and particpated in what may be classified as terrorism through the Donetsk People's Republic and other related seperatist militias amongst the Ukranian violence. The Donetsk and Luhansk People's Republics aren't considered legitimate by any cou ntry other than Russia and South Ossetia -which itself has limited international recognition as part of Georgia. Critics argue that the West is hesitant to label such groups as terrorist due to escalating tensions and confrontation against Russia. Rwcent investigations (Bellingcat) have proposed reasonable evidence to suggest that the downing of flight MH17 was linked to the DNR and used Russian Buk AA weaponry.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Donetsk People's Republic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bde45bfd-8fc9-37b8-ad34-91b29cfe868e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">An attachment to a homeland. This attachment can be viewed in terms of different features relating to the homeland, including ethnic, cultural, political or historical aspects.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Patriotism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#bcb24a78-282c-3d53-a11a-83c5f3752117"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9c458b13-d11e-3c6c-a919-510f9f45eb3a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Shining Path guerillas have waged a bloody insurgency in Peru since the 1980's. The extreme left group is known for kidnappings and utilising slave labour of children on rebel farms. The group is integrally connected to the decades of violence and instability in Peru that has claimed the lived of 70,000 people. The group is currently fractured between different sectors and lost some of its central leaders authority since the arrest of Florindo Eleuterio Flores in February 2012, despite this the group remains active, yet splintered in the dense areas of Peru's jungle. Recent informaiton suggests that the group is seeking a resurgance in the mountainous regions of Peru and has inflicted minor damage against military property and personnel. As of April 2016 the group is supposedly being investigated following an attack killing three, wounding 6 ahead of Peru's presidential election (June 2016).</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Shining Path (Communist Party of Peru)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5561487e-a4e1-3e2e-9e4c-2b65e218cabd">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Revivalist movement within Sunni (primarily Hanafi) Islam</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Deobandi,</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Persian</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Pashto</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#97c4d550-63e8-3697-abb2-58ae34b0afbe">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Ulster Defense Association (UDA) was formed in 1971 from a number of neighborhood watch groups and vigilante organizations in Belfast. After emerging in response to the outbreak of "the Troubles," the UDA quickly became the largest loyalist paramilitary organization and remained so throughout the Troubles. The UDA used the Ulster Freedom Fighters (UFF) name as a cover for sectarian killings. Despite the well-established relationship, the UDA itself was not listed as a proscribed organization until 1992. The UDA was a large and decentralized organization, led by an inner council of six regionally-based leaders, each with veto power. After failing to follow through on its 1994 ceasefire, the UDA finally decommissioned its arsenal in 2010.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ulster Defence Association</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ccc3c7c7-3e1f-3c00-9f8f-648694bc99d8">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Strictly orthodox Sunni Muslim sect advocating a return to the early Islam of the Koran and Sunna</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Salafi</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#52f8c7b3-70be-39c5-9362-315f52e48444">
+    <skos:altLabel xml:lang="eng">Army of the Pure</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Paasban-e-Kashmir</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Paasban-i-Ahle-Hadith</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Falah-i-Insaniat Foundation (FIF)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Movement for the Safeguarding of the First Center of Prayer</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Deccan Mujahideen</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">LeT is one of Pakistan’s largest militant Islamist organizations. The group has instigated terrorist attacks in Kashmir and collaborated with other militant groups, such as the Taliban and al-Qaeda. It is believed to be the only Islamist militant group in Pakistan to...</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Army of the Pure and Righteous</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Lashkar e-Tayyiba</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Army of Madinah</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Al Mansooreen</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Lashkar-e-Toiba</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Mansoorian</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tehreek-e-Tahafuz Qibla Awal</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Lashkar-i-Taiba</skos:altLabel>
+    <skos:altLabel xml:lang="eng">LT</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Paasban-e-Ahle-Hadis</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Lashkar-e-Taiba</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Pasban-e-Ahle-Hadith</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Pasban-e-Kashmir</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Army of the Righteous</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Idara Khidmat-e-Khalq</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jammat ud Dawa</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jamaat ud-Dawa</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bd8b7a0a-18f0-30b2-9fd9-284d231d1def">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Abū Bakr al-Baghdadi al-Qurashi was the Iraqi-born leader of the Islamic State of Iraq and the Levant.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Al-Baghdadi</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Abu Bakr Al Baghdadi</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Abu Bakr Al-Baghdadi</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Baghdadi</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Bagdadi</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#145a7041-c20e-3813-9822-35d937c118e1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Political movement advocating the unity of Muslims under one Islamic state – often a Caliphate – or an international organization with Islamic principles</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Pan-Islamist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#869f95d0-7e12-33dc-8e37-661012272e17"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a39cce74-1b70-3a1a-a2a3-84c15683f262">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The abduction or unlawful transportation of a person.  Usually to hold the person against their will.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Kidnapping</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#da1ce208-4c59-3003-a199-7e39bfb02f8e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">System of ideas and ideals, especially one which forms the basis of political or religious theory and policy</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ideology</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9b5bc9e6-f650-3562-ac8d-7e3c8279fbb5">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Adherent to the Shia branch of Islam.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Shiite</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#21d545f2-33c7-364b-a9d6-2690a684afcc">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ethnic group also known as Pathan are believed to have settled in the vast Pashtunistan tribal region</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Pashtun</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Pathan</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#0748389d-71dc-39fc-9406-d26e9a4e0691"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5fb60f07-c178-369a-a225-8b913d2eb584">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Poison</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#aaf88861-a01d-3132-822a-8a78efd1b6e6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Type</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f15c1cae-7882-348b-bfb0-404682e17e61"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3f39e7ec-285e-39f9-8bcb-fd99f582d1bd">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Iran sponsored - funding, providing equipment, weapons, training and giving sanctuary to</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Iranian-sponsored</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#bb5954b0-5b5f-3682-9acd-ffcfad446ca6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Non-Martyrdom</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#287afcf1-c19b-3073-8a85-b73473341baa"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1c04356c-791b-39db-9931-f734b3072d74">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Strongly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hard Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#78386ec8-f284-3742-8324-a3d7d3e800ff"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c16f650b-8f69-31a6-8bb9-387526ee60eb">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Content</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a9d413c6-b8aa-3c0d-ac68-d54903645a38">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A political ideology that can be described from political, sociological and psychological perspectives</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Nationalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#82887a94-87cc-3e3f-8c31-510c5e6368da"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#2218240f-acbc-36dc-a459-8c049e19df08">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">JEM leaders call for the creation of a new country named the United Regions of Sudan. This proposed new nation would entail a rotating presidency, granting all six Sudanese regions a term in power. The group seeks to overcome the oppression of islamic black ethnicities by the Sudanese government and arabic militias such as Janaweed. Following Khalil Ibrahim’s death, the group was led by his brother Jibril Ibrahim and a new 18-member JEM executive office. In 2008, JEM gained national recognition after launching an attack on Khartoum. Prior to a mid-2010 government offensive that led to significant casualties, JEM was estimated to have more than 5,000 men. JEM soldiers were armed with mounted anti-aircraft guns, rocket-propelled grenades, several hundred vehicles and at least two tanks.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Justice and Equality Movement (JEM)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#74cd22ba-8177-3c48-9fa6-9c15f0692669">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Acting on behalf of a governmental body</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">State Actor</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#df8a5fcf-371f-3881-a936-ba3e5989c608">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Method or mode of operation.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Modus Operandi</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8483613c-1fd3-3e1d-a7b2-5d774503a500"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9cff2449-36d5-3458-90a3-5343bb6ec8c9">
+    <skos:altLabel xml:lang="eng">Sepah-e Pasdaran-e Enghelab-e Eslami (“Islamic Revolutionary Guard Corps”)</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <rdfs:comment xml:lang="eng">The IRGC is an Iranian government agency tasked with defending the regime against internal and external threats. The IRGC uses secret police methods against its opponents within Iran, and terrorist tactics against its enemies abroad.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Sepah (“Corps”)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Pasdaran (“Guards”)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Revolutionary Guards</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Islamic Revolutionary Guard Corps (IRGC)</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Revolutionary Guards</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#47c22906-2c23-3246-9d09-5e035b1f5393">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">HT is an international Islamist movement seeking to unite Muslims under one Islamic caliphate. HT members have been linked to violent acts in multiple countries. The group itself has been banned in at least 13 countries, including many Muslim-majority countries.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hizb ut-Tahrir</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Hezb ut-Tahrir</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizbut Tahrir</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizb ut Tahrir</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#cdb417c8-1f0e-3092-b900-20a42ef45121">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Gaming</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#527c9c9e-6fb6-3122-a6fe-13f1ea3af9d6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Although the FARC have recently (2016) sought to be make peace with the Colombian government and be removed form the US and European terrorist group list, they are still an active and armed guerilla organisation, responsible for mass production and exportation of cocain used to fund its right-wing paramilitary. This paramilitary is responsible for armed conflict, killings, intimidation and disruption tactics against individuals associated with communist ideals. As of October 2016 the Colombian government have signed a new peace deal with Farc hopiing to secure demobalisation and de-militarisation, however despite praise for the deal, the future is uncertain. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Revolutionary Armed Forces of Colombia (FARC)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#41d50705-bba1-350d-8d43-28c2dfa4c09e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Strictly orthodox Sunni Muslim sect by Muhammad ibn Abd al-Wahhab advocating a return to the early Islam of the Koran and Sunna, rejecting later innovations</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Wahhabi</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#97cee172-790e-3bbc-8fb0-1c1bf3d394e8">
+    <skos:altLabel xml:lang="eng">Martyr Muhammed Baqir al-Sadr Forces</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Munathamat Badr</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Badr Organisation in Iraq</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Badr Organization</skos:prefLabel>
+    <rdfs:comment xml:lang="eng">The Badr Organization is a Shiite political party and paramilitary force that acts as Iran’s oldest proxy in Iraq. Given the group’s deep ties to Iran and its political and military preeminence, analysts have compared the Badr Organization in Iraq to Hezbollah in Lebanon.</rdfs:comment>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Badr Organization of Reconstruction and Development</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Badr Corps</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Badr Brigades</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Martyr Mohamed Baqir al-Sadr Forces</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Quwet Shahid Baqir Sadr (BOQSBS)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Badr Brigade</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b35accc0-a1a5-3868-90c0-25f336906a7c">
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">Hizbollah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad Organization</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad for the Liberation of Palestine</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Followers of the Prophet Muhammed</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Party of God</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Organization of the Oppressed on Earth</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Hezbollah</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Hizballah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Revolutionary Justice Organization</skos:altLabel>
+    <rdfs:comment xml:lang="eng">Hezbollah is an Iranian-sponsored, internationally sanctioned terrorist group with an anti-Israel and anti-U.S. agenda. Hezbollah is primarily based in Lebanon, but has carried out terrorist and criminal operations around the world.</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Organization of Right Against Wrong</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Hizbu’llah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar Allah</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6189c980-fb4c-30d3-8005-dc21f36f3e1b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Long Arm</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#aa834b2b-ca7b-326c-bba6-025d57584706">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Text</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7088585e-0732-3f67-94d6-8bca611197e2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Extreme devotion to or advocacy of the interests of a nation, especially regardless of the effect on any other nations</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Ultra-nationalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8e6166ea-e901-3334-83b0-c1f8ca554449"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#710515f3-19e0-36c0-9dbe-8754b3a274e2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Doctrine, including ultra-nationalism, racism, ableism, xenophobia, homophobia, antiziganism, antisemitism, and initiating the Fourth Reich. Holocaust denial is a common feature, as is incorporation of Nazi symbols and admiration of Adolf Hitler.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Neo-Nazi</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#bd15b3f8-d781-330f-ae4c-726dbe1b5c35"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b3e0b51f-56d2-3aae-9d6f-91e486831294">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ideology and practice associated with the 20th-century German Nazi Party and Nazi Germany, as well as other far-right groups</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Nazism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#b25d40e2-2384-33d4-8853-a328166b101f"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f661df6d-29b0-3fe8-b435-7f3e51e0ee20">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Explosive</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7a723448-69c5-3af0-a45e-24a8b5ba3b88">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Opposed to immigration.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti-immigrant</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#55234552-5533-3229-ac1c-62a7ebbeb7a7"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d6e8c9a8-6650-342c-a88a-f7cf5c672c3a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Fulani militants are believed to carry out attacks mainly in Nigeria and CAR. In Nigeria, they mainly operate in the middle belt and attack primarily private citizens to gain control of grazing lands. At least 1,229 people were killed in suspected attacks by the Fulani militants in Nigeria in 2014. 'Fulani herders and farmers are in constant violent conflict over herdsmen's increased need for access to grazing lands against the expansion of farmland by farmers into corridors traditionally used by the Fulani,' according to the Terrorism Research &amp; Analysis Consortium (Trac). 'Farmers accuse the Fulani herders of allowing their animals to feed on still-growing crops, and contamination of community watering-places. The Fulani herders in turn accuse the farmers of denying them access to grazing areas when alternatives cannot be found,'</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Fulani Militants</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#96982d92-05cd-3305-878b-721d5447d19e">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Sharia4Belgium, Sharia4holland</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sharia4Belgium</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ee98edb2-47df-3e98-a595-23f590684617">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">SPF, an anarchist group, claimed responsibility for a 2010 parcel bomb campaign that targeted international leaders and institutions outside Greece, a first for Greek domestic terrorists. A series of arrests from late 2010 through 2011 against the group’s leadership temporarily crippled SPF’s operations. In June 2013, however, SPF claimed responsibility for a bomb attack against the car of the director of Korydallos prison—where many domestic terrorists are currently held—promising more attacks and declaring a common front with other like-minded groups and the international Informal Anarchist Federation/International Revolutionary Front. In April 2014, SPF claimed responsibility for a parcel bomb targeting a police station.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Conspiracy of Fire Nuclei (SPF)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6bccdc79-4642-39ab-a7f9-27edb14b725b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Use of a vehicle as weapon.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Stabbing</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0b4cc93a-5054-3b67-9a24-9bfc42b57c50">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Councilism was characterized by its opposition to state capitalism/state socialism and its advocacy of workers' councils as the basis for dismantling the class state</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Council Communism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a52956d1-10ea-33c0-8bd9-34e0adfd1c92"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#7cc98cdc-7fd6-3f83-980c-3a7ea2ddf2dc">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Bangsamoro Freedome Fighters/Movement, is an Islamic seperatist organisation based in the southern Philipines, it seeks a seperate state ruled under Islamic law for the Filipino Muslim minority, known as the Moro people,  who live in the Philippines' Mindanao region. The group was founded in 2010 as a splinter from the Moro National Liberation Front. The group has mainly attacked military buildings and individuals.  As of 2014 the group is reportedly allied with the MILF (Moro Islamic Liberation Front) whom in 2015 were involved in the; 'Mamasapano Clash' leading to the deaths of 44 members of the (Special Action Force) SAF, although suffering casulties more than 100 collective casulties.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Bangsamoro Islamic Freedom Movement/Fighters (BIFM/BIFF)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6ba6fc50-214d-345b-9727-1a9bbeef0621">
+    <skos:broader rdf:resource="http://tensor-project.eu/#055a4304-1202-32c0-a418-dbf900eedb49"/>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">mujahadeen</skos:altLabel>
+    <skos:altLabel xml:lang="eng">mujahedeen</skos:altLabel>
+    <skos:altLabel xml:lang="eng">mujahadin</skos:altLabel>
+    <rdfs:comment xml:lang="eng">a military force of Muslim guerilla warriors engaged in a jihad</rdfs:comment>
+    <skos:altLabel xml:lang="eng">mujahadein</skos:altLabel>
+    <skos:altLabel xml:lang="eng">mujahedin</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">mujahid</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">mujahidin</skos:altLabel>
+    <skos:altLabel xml:lang="eng">mujahideen</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#23e1447e-7c9f-3bc2-ac1d-91de7f837c17">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Means of governing and related policies implemented by Joseph Stalin</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Stalinist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#32589cab-9c26-3d3b-bb50-2a73c91bbc82"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0ecc79e4-a7ee-3d6d-bbf2-dd187c8a0c48">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Weakly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Soft Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#78386ec8-f284-3742-8324-a3d7d3e800ff"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3dccda8c-63a2-37a3-8e95-0cb47a91ff09">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Sect of Revolutionaries or Rebel Sect (Greek: Σέχτα των Επαναστατών, Sechta ton Epanastaton) is a far-left (although they have been called a part of the revolutionary nihilist movement) terrorist group currently active in Greece. They first became known in February 2009 with a threat to kill Greek police officers at the Police-station in Korydallos. There was also a shooting on 17 February 2009 at the headquarters of Alter TV linked to the Sect of Revolutionaries, which caused no injuries. In June 2009, they assassinated an anti-terrorist police officer, following the 2008 riots. After the attack, the group released a statement in which they warned, "Journalists, this time we came to your door, but next time you will find us in your homes." In July 2010, the group claimed responsibility for the assassination of Sokratis Giolias, with the police saying they believed the statement was authentic. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sect of Revolutionarys (SE)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d039fe9a-48ae-3510-962e-bb7150e46f16">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Imam Bukhari Jamaat</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9492c163-29af-393f-aebd-44c6b8a4dc34">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A physical location.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Place</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#c41a3189-0959-344c-a523-af684561abe5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ac28cfcf-fc5f-3947-8330-abfb529e2744">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Orange Volunteers (OV) is an Ulster loyalist group that was created in the 1970s. After a decade of being the second largest loyalist group in Northern Ireland, (only behind Ulster Defense Association (UDA)) it disbanded. This Protestant paramilitary group re-surfaced after the Drumcree Conflict in 1998. Since then they have been engaged in multiple acts of violence and sectarian harassment, especially through the early 2000s. Members of the Ulster Volunteer Force, Loyalist Volunteer Force &amp; UDA have used the OV name as a cover organization.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Orange Volunteers</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c7cefd64-3880-3b51-b214-a398652f4810">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Nationalist ideology.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Nationalist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#6b25372e-862d-347d-99a6-aee7f5cfe17a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Russian advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti Russia</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#1f9dd441-b0d5-330d-8957-d31b4049d069"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#99e9529d-3c48-3033-aabc-cc951ce4b509">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Advocacy of extreme measures or views.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Extremist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c81ffd0f-e03a-3e32-96be-ba95ef93e501">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Crime</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Crime</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">crimes</skos:altLabel>
+    <skos:altLabel xml:lang="eng">crime</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#055a4304-1202-32c0-a418-dbf900eedb49"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ed72c56c-5570-386c-b07b-44045156aec1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Police Officer</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#cdd3f14b-edd8-33eb-9746-feee0d9ee9f4"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#c73fb894-5e7f-3ab0-bc0e-cec4edff8740">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Opposed to or hostile toward Marxism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti-Marxist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0259511a-82a5-3f27-aaff-1c12682f26ac">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Citizen</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#acb3ff1b-d45e-3b36-ba0e-b166229f8e01"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#13ab0f9a-f249-3d15-a99e-7c5287fb2c67">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Iranian supported activity</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Iranian</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#6bfe5bdf-aa39-3399-8549-d8b13ea29d2d"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#96e7fe28-74ea-3553-a0d7-665898741ca6">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Members involved in a struggle or fight against the enemies of Islam</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Jihadist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9cd595c5-0e73-3cf4-971f-1b856d404107">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Tensor-Taxonomy</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://tensor-project.eu/#"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8f7df024-8b4d-3037-80b9-015320205850">
+    <skos:altLabel xml:lang="eng">Taliban Islamic Movement</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Taliban</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">De Afghanistan Islami Emarat</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">De Talebano Islami Ghurdzang</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tehrik</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Emirate of Afghanistan</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Talibano Islami Tahrik</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Movement of Taliban</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Taleban</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Students of Islamic Knowledge Movement</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Tahrike Islami’a Taliban</skos:altLabel>
+    <rdfs:comment xml:lang="eng">The Taliban once was the ruling government in Afghanistan. Today, the Taliban conducts a violent insurgency in Afghanistan (Afghan Taliban) and Pakistan (Tehrik-e Taliban Pakistan or TTP). The group is closely affiliated with al-Qaeda.</rdfs:comment>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#ff87f00d-d36b-3553-b1ec-aa5c72cc5374">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Favoring native inhabitants as opposed to immigrants. The revival or perpetuation of an indigenous culture especially in opposition to acculturation.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Nativist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#8e6166ea-e901-3334-83b0-c1f8ca554449"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a1d70cbb-48c9-35e9-9578-ec546019c948">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Teaching a person or group a particular skill, point of view or type of behaviour.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Train</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#cfe1aa91-2711-38b4-b8c2-05a3dee187aa">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Actions carefully planned to gain a specific tactical end</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Tactical</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b6bd335c-7477-3b0f-b920-7c40427719da">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">in Uk : reformed Al-Muhajiroun. worldwide: Taqfirists like to see theselves as (Al) Ghuraba </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Al Ghuraba</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Grupong Abu Sayyaf</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Movement</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Harakat al Islamiyya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Abu Sayyaf</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#436c532a-87f8-3357-aaf1-a16e6b953df1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A revisionist trend in the 1970s and 1980s within various Western European communist parties. They claimed to be developing a theory and practice of social transformation more relevant for Western Europe.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Eurocommunism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a52956d1-10ea-33c0-8bd9-34e0adfd1c92"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1074ee06-9fc8-302c-9737-4d69c83d7a97">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Supporting, believes in or tries to bring about anarchy</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anarchist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d25cebe2-feae-36d6-a354-cf55caba9d15"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#321b69c7-cefa-3cd0-8505-051fd2c504d1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Having or showing a dislike of or prejudice against homosexual people.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Homophobic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#35d08a6e-caaf-326b-b4f0-0c547b4f0e62">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Broad array of political organizations have practiced terrorism to further their objectives.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">International/Alternative</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#32589cab-9c26-3d3b-bb50-2a73c91bbc82"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#51691040-f6b3-3a59-90d0-9fa11374bfb1">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Follower of the communist doctrines of Mao Zedong</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Maoist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#b87a7fba-15a7-3a2c-9dbd-34f7f46b7b11"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#43d053ae-acab-3169-ac64-83a8e26b9376">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A religion or a way of life found most notably in India and Nepal</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Hindu</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ecb46704-8247-3621-90a8-825a8f1f2999"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d2a20ce6-2d77-3572-944f-920818935254">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Haqqani Network is a militant Islamist group operating in Afghanistan and Pakistan. The group is affiliated with the Afghan Taliban, though the group retains its own command structure.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Haqqani Network</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#30001e52-4419-36bd-ba58-21a05f68fd10">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Weakly defended.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Soft Target</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#9a93f035-fbc2-3dbc-ac75-3a5def253815"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b3b0942c-d097-3c60-b97b-c6fd7bac4617">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Racist ideology centered upon the belief, and the promotion of the belief, that white people are superior in certain characteristics, traits, and attributes to people of other racial backgrounds</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">White Supremacist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4c34e9c4-7ca5-370c-9827-952f3bda3b72">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Night Club</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#0624f43f-b55c-3ee9-85db-e0877d06c0b2"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#d64f5dc0-6108-3bfe-a71f-0022b794268d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Spainist advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Anti Spain</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#1f9dd441-b0d5-330d-8957-d31b4049d069"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f755e211-b8fa-39e2-a1fc-4fb728b23442">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Islam4UK was a radical Islamist group that operated in the United Kingdom. The group was proscribed as a terrorist organisation under the UK's counter terrorism laws on 14 January 2010. Before its proscription it was led by Anjem Choudary.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Al-Muhajiroun/ Islam 4UK</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#4a7d70b7-4826-3ecf-a425-48ad094ecbaa">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Loyalist Volunteer Force (LVF) split from the mid-Ulster Brigade of the UVF. Billy Wright created the LVF in 1996 together with Alex Kerr, a former UDA brigadier from South Belfast. Like other established paramilitary organizations, the LVF was given its own prison wing and used this as a vehicle for recruitment. The LVF went on to become one of the most violent and volatile paramilitary organization of the post-ceasefire period, killing XX people (mostly other loyalists). In further defiance of the Belfast UVF leadership, the LVF collaborated with Johnny Adair’s C Company Battalion of the UDA during the loyalist feuds. Together, members of the LVF and Adair’s C Company used a variety of cover names for violence they carried out in the early 2000’s: Red Hand Defenders, Loyalist Freedom Fighters, and Orange Volunteers. Wright was killed in prison by the INLA in 1997, and the UVF leadership stood down the LVF in 2005. </rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Loyalist Volunteer Force</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#da5c5af3-4528-3e1d-b711-ecba356936db">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Rivers</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#0ba29c6a-1afa-3f58-ab03-a26162c72274"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9c96b0b7-dc30-354e-9e15-73cd33da284c">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Police Station</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#48bae6c2-aa51-3ac4-88de-3eb3eb1ba69b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1672c6cc-d345-3c12-9678-785f0f6916a4">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Non Traveller</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#d0d6ede8-f220-3872-bcac-6d8033bca398"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#dc12b842-fbcb-3c6d-a14f-6b0344d01f3f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">new name of Kataib Al-Muhajirin. Allied to Al-Qaida/Jabhat Al-Nusra. Mainly people from Magreb &amp; Chechen decent</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Jaysh al-muhajirin wa al-ansar (JMA)</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9c03b1db-dc34-3db2-8928-11cce7e49e8d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Believe in Islam strictly according to their own interpretation of Muhammad's and his companions' actions and statements, and do not accept any deviation from their path; they reject any reform or change to their interpretation of religion as it was revealed in the time of the prophet</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Takfiri</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#3b2a4488-f143-3b64-a9cf-f8ad10bcaa82">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Politicians</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#cdd3f14b-edd8-33eb-9746-feee0d9ee9f4"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b0f3b381-535c-3edf-856b-377fe236a3fe">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">An advocate or supporter of Islamic militancy or fundamentalism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Islamist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#80dc9d83-d31e-3ba2-8996-e5158ee67134">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Audio</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#9ed17f15-5e6e-3c90-9c11-93972551126b">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A Variant of Marxist tendency within Libertarian Marxism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Luxemburgism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a52956d1-10ea-33c0-8bd9-34e0adfd1c92"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#e0726ef2-fb73-3802-9d99-70fb73355ff2">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A physical location.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">People</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#c41a3189-0959-344c-a523-af684561abe5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5b439208-e603-3303-a17b-325152694b67">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Military</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#cdd3f14b-edd8-33eb-9746-feee0d9ee9f4"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#299bb3b8-b626-3d95-8c2c-15d2ff11e16f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">A method of socioeconomic analysis that analyzes class relations and societal conflict using a materialist interpretation of historical development and a dialectical view of social transformation</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Marxist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#32589cab-9c26-3d3b-bb50-2a73c91bbc82"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8fe36e45-11bf-35c8-8891-956fb3b5e8c9">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Set of acts or campaign committed by groups or individuals who profess Islamic or Islamist motivations or goals.  Islamic terrorists justify their violent tactics through interpreting the Quran and Hadith according to their own goals and intentions.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Islamic</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ecb46704-8247-3621-90a8-825a8f1f2999"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#91a8cad0-8201-312f-96ff-e1533de36c03">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Boko Haram is an ISIS-aligned jihadist group based in Nigeria. For years, Boko Haram has been conducting a lethal jihadist insurgency in the country’s north to drive out government forces and establish an Islamic state.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Boko Haram</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Wilayat Gharb Ifriqiyya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic State's West Africa Province (Iswap)</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Nigerian Taliban</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jama’atu Ahlis Sunnar Lidda’awati Wal-Jihad</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#67eb2e04-b712-30a0-bc10-569b09f5236f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Rebel or revolutionary fighting against a government</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sabotage</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5b7de789-07ed-3104-93ef-60831b336179">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Conveying intended meanings from one entity or group to another through the use of mutually understood signs and semiotic rules.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Communication</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b9b50f8f-c012-37d8-9464-19c226a72b0a">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">JeremyClarkson Movement</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">JeremyClarkson</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#79d7158a-9bfa-39e4-8fd5-571ac5eb938f">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Ideology that includes significant elements of fascism. Neo-fascism usually includes ultranationalism, populism, anti-immigration policies or, where relevant, nativism, anti-communism, anti-socialism, anti-Marxism, anti-anarchism and opposition to the parliamentary system and liberal democracy</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Neo-Fascism</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#b25d40e2-2384-33d4-8853-a328166b101f"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1c2e92df-4f51-3a54-9231-708c8b499f18">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Banking</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#025b32e7-318a-30eb-9162-fa558b4bec98"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#591be8f6-dfbe-35d7-ac27-dc67d2974de6">
+    <skos:altLabel xml:lang="eng">The Front for the Defense of the Syrian People</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jabhat al-Nusra li-Ahl al-Sham Min Mujahedin al-Sham fi Sahat al-Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Nusra Front to Protect the Levant</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Support Front for the People of Syria from the Mujahideen of Syria in the Places of Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jabhet al-Nusrah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Nusrah Front for the People of the Levant</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Support Front for the People of the Levant</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al Nusrah Front for the People of Levant</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jabhat al-Nusrah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Levantine Conquest Front</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Nusrah Front</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jabhat al-Nusra li-Ahl al-Sham Min Mujahideen al-Sham fi Sahat al-Jihad</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Front for the Defence of the Syrian People</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Al-Nusrah Front in Lebanon</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Ansar al-Mujahideen Network</skos:altLabel>
+    <rdfs:comment xml:lang="eng">The Nusra Front is al-Qaeda’s formal affiliate in Syria and one of the most powerful rebel groups fighting Assad. The group conducts formal military campaigns, assassinations, hostage missions, and ‘lone wolf’ operations, including al-Qaeda’s trademark suicide...</rdfs:comment>
+    <skos:altLabel xml:lang="eng">The Defense Front</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Nusra Front (Jabhat Fateh al-Sham)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Jabhat Fath al-Sham</skos:altLabel>
+    <skos:altLabel xml:lang="eng">The Victory Front</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Jabhet al-Nusra</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">The Al Nusrah Front for the People of the Levant</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jabhat al-Nusra li-Ahl al-Sham</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Levantine Mujahideen on the Battlefields of Jihad</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#cb4e6d8e-f353-3fb3-a6f0-4aaf45268c24">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Short Arm</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ac44b576-5618-39f9-a9cf-b16ea7fa27c0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#5fd0c8e2-6e06-3ba5-a557-d50c4ef1d54d">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Political theory for the organisation of a revolutionary vanguard party and the achievement of a dictatorship of the proletariat, as political prelude to the establishment of socialism</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Lenonist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#32589cab-9c26-3d3b-bb50-2a73c91bbc82"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#482782be-7c9d-36c9-8d56-0eb16af1c9bf">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Believes that people of different races should be kept apart.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Segregationist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#749a9990-163e-34a7-ae94-d4708607049a"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#b1e7e107-018b-35a0-87c2-015552f4b177">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">The Irish National Liberation Army (INLA) was a socialist paramilitary group that served as the armed wing of the Irish Republican Socialist Party (IRSP). INLA sought to unify Ireland as a socialist republic independent from the United Kingdom. Many of the group's founders were former members of the Official Irish Republican Army (OIRA), one of the two main Catholic paramilitary groups in Northern Ireland seeking Irish independence, who did not support a ceasefire OIRA declared in 1972. INLA targeted mostly British and local security forces, though one of its most famous actions was the December 1997 killing of a Protestant paramilitary leader in prison, and the group also killed a large number of civilians. The group declared a ceasefire in 1998 and formally renounced violence in 2009, saying it could now achieve its goals through peaceful means.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">National Liberation Army</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#8d013f45-0938-3e08-b0f4-07b7e0ccf821">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Iranian Shiite leader of Iran strict observance of the Islamic code.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Khomeinist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f0e27ae9-4e49-3d61-aa56-72eeef2473c4"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#af5b1e0f-3d43-3463-bedd-633b524198bd">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Set of acts by groups or individuals who profess motivations or goals of the re-establishment of a Jewish homeland in the territory defined as the historic Land of Israel.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Zionist</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#ecb46704-8247-3621-90a8-825a8f1f2999"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#99e0d875-f04f-3c72-9953-4326ab6a38bb">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Short Arm</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#1047b232-3a9a-31a9-adb8-9cafd190ca84">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">Use of a vehicle as weapon.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Sabotage</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#f8ba6f77-cfa6-3187-86ec-249f2db42811">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <rdfs:comment xml:lang="eng">One of the two main branches of Islam, followed by about a tenth of Muslims, especially in Iran, that rejects the first three Sunni caliphs and regards Ali, the fourth caliph, as Muhammad's first true successor.</rdfs:comment>
+    <skos:prefLabel xml:lang="eng">Shia</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f3677990-e177-3e6e-9578-6c2874493128"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#0ab2a038-b58b-31c2-89da-141f3d2bea84">
+    <skos:altLabel xml:lang="eng">Jema’a Islamiyya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jema’a Islamiyah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jemaa Islamiyya</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jema’ah Islamiyah</skos:altLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">Jemaah Islamiyyah</skos:altLabel>
+    <rdfs:comment xml:lang="eng">JI is a jihadist group in Southeast Asia that seeks to establish a caliphate in the region through violent means. The group is led by its co-founder, Abu Bakar Bashir, who pledged loyalty to ISIS in July 2014. </rdfs:comment>
+    <skos:altLabel xml:lang="eng">Jemaa Islamiyyah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Islamic Organization</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jemaah Islamiya</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Jemaah Islamiyah (JI)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Jemaah Islamiah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jema’ah Islamiyyah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jemaa Islamiyah</skos:altLabel>
+    <skos:altLabel xml:lang="eng">Jema’a Islamiyyah</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#a24f4240-aa17-3546-9bc7-54da5301c594">
+    <skos:broader rdf:resource="http://tensor-project.eu/#dff9fb98-c915-34b1-9d5a-5ad244665be0"/>
+    <skos:altLabel xml:lang="eng">AQAP</skos:altLabel>
+    <skos:altLabel xml:lang="eng">AQIM</skos:altLabel>
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:altLabel xml:lang="eng">AQIS</skos:altLabel>
+    <skos:altLabel xml:lang="eng">al Shabaab</skos:altLabel>
+    <skos:altLabel xml:lang="eng">al-Shabaab</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Al Qaeda</skos:prefLabel>
+    <rdfs:comment xml:lang="eng">Al Qaeda is a terrorist organization</rdfs:comment>
+    <skos:altLabel xml:lang="eng">Al-Qaidah</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#468f1946-61ae-312d-84f1-9ed39101f6d0">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Currency</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#a1fa2777-9242-3490-af7a-e3bdd5c6d508"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://tensor-project.eu/#77049762-e333-392d-beb9-f84e0ef62625">
+    <skos:inScheme rdf:resource="http://tensor-project.eu/#"/>
+    <skos:prefLabel xml:lang="eng">Long Arm</skos:prefLabel>
+    <skos:broader rdf:resource="http://tensor-project.eu/#f6c01326-dbfa-324c-acd4-bc4e8824bf77"/>
+  </skos:Concept>
+</rdf:RDF>

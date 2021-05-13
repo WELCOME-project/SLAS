@@ -1,0 +1,1084 @@
+<concepts>
+  <token label="Extremist" entryId="http://www.tensor-project.eu/taxomony##c5d969eb-8da0-32bf-b16d-5f7170b3b03c" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Advocacy of extreme measures or views.">
+    <variant base="Extremist"/>
+  </token>
+  <token label="Military Explosive" entryId="http://www.tensor-project.eu/taxomony##e2c9533f-c0e1-3277-8d4f-d021361e9576" parentId="http://www.tensor-project.eu/taxomony##f1536929-b55b-3ea5-8dbb-efe3e3a4175d" parentLabel="Explosive">
+    <variant base="Military Explosive"/>
+  </token>
+  <token label="Donetsk People's Republic" entryId="http://www.tensor-project.eu/taxomony##5086e3e8-47f1-340c-a546-68a373b6817c" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="(The most controversial entry in this database, may need to be removed): In the past several years, Putin's Russia has increasingly moved to establish a nation-civillisation over the nation-state of Russia, this has led in part to increases in state-sponsored terrorism internationally, the increase of nationalist and anti-western propaganda and the arming and encouragement of seperatist movements. Russia has arguably funded, encouraged, trained and particpated in what may be classified as terrorism through the Donetsk People's Republic and other related seperatist militias amongst the Ukranian violence. The Donetsk and Luhansk People's Republics aren't considered legitimate by any cou ntry other than Russia and South Ossetia -which itself has limited international recognition as part of Georgia. Critics argue that the West is hesitant to label such groups as terrorist due to escalating tensions and confrontation against Russia. Rwcent investigations (Bellingcat) have proposed reasonable evidence to suggest that the downing of flight MH17 was linked to the DNR and used Russian Buk AA weaponry.">
+    <variant base="Donetsk People's Republic"/>
+  </token>
+  <token label="Real Irish Republican Army" entryId="http://www.tensor-project.eu/taxomony##a7f6a893-48c3-39f8-8b96-39bc3e8a0a3f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Real Irish Republican Army (rIRA) was the most violent of the groups to split from the Provisional Irish Republican Army (PIRA) in protest over the PIRA's ceasefires and participation in the peace process. The rIRA split from PIRA in 1997, and aims to force a British withdrawal from Northern Ireland and unify Northern and Southern Ireland. Among its targets were British soldiers, Northern Ireland police forces, and civilians. Within a year of forming, rIRA staged the bloodiest attack of the modern Northern Ireland conflict with a car bombing in the town of Omagh in August 1998 that killed 29. In the face of public outrage over the attack, the rIRA declared a ceasefire a month later. The group resumed attacks in England and Northern Ireland in 2000. Yet the group has declined due to widespread arrests, and appears not to have carried out a fatal attack since killing two British soldiers at a barracks in 2009.">
+    <variant base="Real Irish Republican Army"/>
+    <variant base="rIRA"/>
+    <variant base="Real IRA"/>
+  </token>
+  <token label="Military Explosive" entryId="http://www.tensor-project.eu/taxomony##c0be2c0d-bf40-3270-a285-d82e7e7a7ca4" parentId="http://www.tensor-project.eu/taxomony##e7f88ae0-3dba-348b-8660-029cbdfddee3" parentLabel="Explosive">
+    <variant base="Military Explosive"/>
+  </token>
+  <token label="Anti-miscegenation" entryId="http://www.tensor-project.eu/taxomony##ef32788f-2fad-36e7-9e95-92bb5a51f83d" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Racial segregation at the level of marriage and intimate relationships between members of different races">
+    <variant base="Anti-miscegenation"/>
+  </token>
+  <token label="Jaysh al-muhajirin wa al-ansar (JMA)" entryId="http://www.tensor-project.eu/taxomony##cd86ab85-cc48-31f3-8c3b-193ec3cca586" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="new name of Kataib Al-Muhajirin. Allied to Al-Qaida/Jabhat Al-Nusra. Mainly people from Magreb &amp; Chechen decent">
+    <variant base="Jaysh al-muhajirin wa al-ansar (JMA)"/>
+  </token>
+  <token label="Xianyiang Uyghurs" entryId="http://www.tensor-project.eu/taxomony##fbe67e5f-7162-3d8d-9d13-725911116169" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="This entry is closely linked to that of the Tuekestan Islamic Movement (ETIM/TIM). The entry is currently controversial due to a lack of evidence and clarity from sources citing that multiple terrorist attacks in the Chinese autonomous Xianyiang province are the fault of the ethnic/muslim large minority; Uyghur militants. On August 30, the Chinese embassy on the outskirts of the Kyrgyz capital, Bishkek, was attacked by a suicide bomber who drove a Mitsubishi Delica van packed with explosives into its security gates, injuring two Kyrgyz security guards and three embassy staff. While no group has claimed responsibility for the attack, Kyrgyzstan&#65533;s Deputy Prime Minister Jenish Razakov told journalists immediately after the attack that it was the work of &#65533;terrorists.&#65533; External media sources have remained skeptical towards official Chinese sources from Beijing that have been accused of doctoring attack evidence and stiring anti-Islamic sentiment.">
+    <variant base="Xianyiang Uyghurs"/>
+  </token>
+  <token label="Train" entryId="http://www.tensor-project.eu/taxomony##e41273f4-3af5-3471-8d85-465294f1f369" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Teaching a person or group a particular skill, point of view or type of behaviour.">
+    <variant base="Train"/>
+  </token>
+  <token label="Sunni" entryId="http://www.tensor-project.eu/taxomony##1ac78dc3-069b-3787-8695-6b3bcdf32036" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="One of the two main branches of Islam, commonly described as orthodox, and differing from Shia in its understanding of the Sunna and in its acceptance of the first three caliphs.">
+    <variant base="Sunni"/>
+  </token>
+  <token label="Content" entryId="http://www.tensor-project.eu/taxomony##f15c1cae-7882-348b-bfb0-404682e17e61" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism">
+    <variant base="Content"/>
+  </token>
+  <token label="Target" entryId="http://www.tensor-project.eu/taxomony##c41a3189-0959-344c-a523-af684561abe5" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism" comment="A place, thing, or person at which an attack is aimed.">
+    <variant base="Target"/>
+  </token>
+  <token label="Government Infrastructure" entryId="http://www.tensor-project.eu/taxomony##442d8a4a-8883-3e7a-8363-36bd3724f491" parentId="http://www.tensor-project.eu/taxomony##025b32e7-318a-30eb-9162-fa558b4bec98" parentLabel="Hard Target">
+    <variant base="Government Infrastructure"/>
+  </token>
+  <token label="Causes" entryId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism" comment="A principle, aim, or movement to which individuals are committed and are prepared to defend or advocate.">
+    <variant base="Causes"/>
+  </token>
+  <token label="Abu al-Fadl al-Abbass" entryId="http://www.tensor-project.eu/taxomony##7bd026ad-8d0f-3774-b5b5-58e158c64938" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Brigade of Abu al-Fadl is a pro-government Shi'a militant group that originated in Syria in late 2012. As ISIS made significant gains in Iraq in 2014, its Iraqi members were forced to return to defend the faltering Shi'a led government in Bagdhad, thus forming the group. The force is affiliated with Sheikh Aws al-Khafaji, who was previously aligned with Muqtada al-Sadr. The group claims an affinity with the similarly named Liwa Abu al-Fadhal al-Abbas group fighting in Syrian Civil War on behalf of the Syrian government. AFA also appears to have deep links to Kataib al-Imam Ali.">
+    <variant base="Abu al-Fadl al-Abbass"/>
+  </token>
+  <token label="Patriotism" entryId="http://www.tensor-project.eu/taxomony##d4d2fca7-9df8-3916-93b9-53808144f84b" parentId="http://www.tensor-project.eu/taxomony##bcb24a78-282c-3d53-a11a-83c5f3752117" parentLabel="Nationalist" comment="An attachment to a homeland. This attachment can be viewed in terms of different features relating to the homeland, including ethnic, cultural, political or historical aspects.">
+    <variant base="Patriotism"/>
+  </token>
+  <token label="Anti Spain" entryId="http://www.tensor-project.eu/taxomony##b52ab945-da47-3b2f-bfc6-1876f0282e8d" parentId="http://www.tensor-project.eu/taxomony##1f9dd441-b0d5-330d-8957-d31b4049d069" parentLabel="Separatist" comment="Spainist advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group">
+    <variant base="Anti Spain"/>
+  </token>
+  <token label="Soft Target" entryId="http://www.tensor-project.eu/taxomony##acb3ff1b-d45e-3b36-ba0e-b166229f8e01" parentId="http://www.tensor-project.eu/taxomony##78386ec8-f284-3742-8324-a3d7d3e800ff" parentLabel="People" comment="Weakly defended.">
+    <variant base="Soft Target"/>
+  </token>
+  <token label="Citizen" entryId="http://www.tensor-project.eu/taxomony##86f61d0c-be9e-334a-82c6-24ed502f7a68" parentId="http://www.tensor-project.eu/taxomony##acb3ff1b-d45e-3b36-ba0e-b166229f8e01" parentLabel="Soft Target">
+    <variant base="Citizen"/>
+  </token>
+  <token label="Group" entryId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentId="http://www.tensor-project.eu/taxomony##e47e1e78-24c3-3c37-aa1e-ede411d833da" parentLabel="Actor" comment="Groups that intentionally use indiscriminate violence as a means to create terror or fear, in order to achieve a political, religious, or ideological aim.">
+    <variant base="Group"/>
+  </token>
+  <token label="Lenonist" entryId="http://www.tensor-project.eu/taxomony##0dd63682-c6c5-3d39-a79c-57796a4b3f85" parentId="http://www.tensor-project.eu/taxomony##32589cab-9c26-3d3b-bb50-2a73c91bbc82" parentLabel="Socialist" comment="Political theory for the organisation of a revolutionary vanguard party and the achievement of a dictatorship of the proletariat, as political prelude to the establishment of socialism">
+    <variant base="Lenonist"/>
+  </token>
+  <token label="Orange Volunteers" entryId="http://www.tensor-project.eu/taxomony##2e9413b5-696d-3384-8611-21df61cc1cbb" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Orange Volunteers (OV) is an Ulster loyalist group that was created in the 1970s. After a decade of being the second largest loyalist group in Northern Ireland, (only behind Ulster Defense Association (UDA)) it disbanded. This Protestant paramilitary group re-surfaced after the Drumcree Conflict in 1998. Since then they have been engaged in multiple acts of violence and sectarian harassment, especially through the early 2000s. Members of the Ulster Volunteer Force, Loyalist Volunteer Force &amp; UDA have used the OV name as a cover organization.">
+    <variant base="Orange Volunteers"/>
+  </token>
+  <token label="Anti-immigrant" entryId="http://www.tensor-project.eu/taxomony##340e42b4-2609-3d0f-ac33-54530030cb32" parentId="http://www.tensor-project.eu/taxomony##55234552-5533-3229-ac1c-62a7ebbeb7a7" parentLabel="Ethnic" comment="Opposed to immigration.">
+    <variant base="Anti-immigrant"/>
+  </token>
+  <token label="Rivers" entryId="http://www.tensor-project.eu/taxomony##80150d09-100a-3b8a-b4c6-233d7bec11e7" parentId="http://www.tensor-project.eu/taxomony##0ba29c6a-1afa-3f58-ab03-a26162c72274" parentLabel="Environment">
+    <variant base="Rivers"/>
+  </token>
+  <token label="Communist" entryId="http://www.tensor-project.eu/taxomony##b87a7fba-15a7-3a2c-9dbd-34f7f46b7b11" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Communist ideology.">
+    <variant base="Communist"/>
+  </token>
+  <token label="Hizb ut-Tahrir" entryId="http://www.tensor-project.eu/taxomony##f688388a-b928-3a34-b52d-96fa74b73ab1" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="HT is an international Islamist movement seeking to unite Muslims under one Islamic caliphate. HT members have been linked to violent acts in multiple countries. The group itself has been banned in at least 13 countries, including many Muslim-majority countries.">
+    <variant base="Hizb ut-Tahrir"/>
+    <variant base="Hezb ut-Tahrir"/>
+    <variant base="Hizbut Tahrir"/>
+    <variant base="Hizb ut Tahrir"/>
+  </token>
+  <token label="Banking" entryId="http://www.tensor-project.eu/taxomony##bf8e5c09-2dc8-3fae-b8b0-a110e809690c" parentId="http://www.tensor-project.eu/taxomony##025b32e7-318a-30eb-9162-fa558b4bec98" parentLabel="Hard Target">
+    <variant base="Banking"/>
+  </token>
+  <token label="The Lord's Resistance Army (LRA)" entryId="http://www.tensor-project.eu/taxomony##b5f4b80d-8f0f-3d59-be75-0be25a7604eb" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="A cult-like Christian-based group, infamous for the abduction of children as slaves, for FGM and for establishing child soldiers and widespread killings and kidnappings. In 2015, Lord&#65533;s Resistance Army (LRA) forces were active in the Central African Republic (CAR), the Democratic, Republic of Congo (Congo), South Sudan, and in Sudanese-controlled areas of South Darfur and the disputed Kafia Kingi enclave. The LRA abducted 612 people in 203 attacks in 2015, a slight reduction compared to 2014, though the number of abductions was higher than in both 2012 and 2013. Group rose to inernational recognition from 'Kony 2012' campaign.">
+    <variant base="The Lord's Resistance Army (LRA)"/>
+  </token>
+  <token label="Luxemburgism" entryId="http://www.tensor-project.eu/taxomony##7a34661d-69bb-3439-a0d3-838eabeff8fd" parentId="http://www.tensor-project.eu/taxomony##a52956d1-10ea-33c0-8bd9-34e0adfd1c92" parentLabel="Communist" comment="A Variant of Marxist tendency within Libertarian Marxism">
+    <variant base="Luxemburgism"/>
+  </token>
+  <token label="Stalinist" entryId="http://www.tensor-project.eu/taxomony##cf362782-1be5-36bc-856d-fbc83539d02f" parentId="http://www.tensor-project.eu/taxomony##32589cab-9c26-3d3b-bb50-2a73c91bbc82" parentLabel="Socialist" comment="Means of governing and related policies implemented by Joseph Stalin">
+    <variant base="Stalinist"/>
+  </token>
+  <token label="Qutbist" entryId="http://www.tensor-project.eu/taxomony##1c636ca9-d1b3-30ee-8380-758924b8bf65" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Islamist ideology developed by Sayyid Qutb (figurehead of the Muslim Brotherhood).  It has been described as advancing the extremist jihadist ideology">
+    <variant base="Qutbist"/>
+    <variant base="Qutbiyyah"/>
+    <variant base="Kotebism"/>
+    <variant base="Qutbiyya"/>
+  </token>
+  <token label="Lashkar-e-Taiba" entryId="http://www.tensor-project.eu/taxomony##ae305b35-d157-3f70-aaab-d97d3215fe0b" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="LeT is one of Pakistan&#65533;s largest militant Islamist organizations. The group has instigated terrorist attacks in Kashmir and collaborated with other militant groups, such as the Taliban and al-Qaeda. It is believed to be the only Islamist militant group in Pakistan to...">
+    <variant base="Lashkar-e-Taiba"/>
+    <variant base="Idara Khidmat-e-Khalq"/>
+    <variant base="Paasban-e-Kashmir"/>
+    <variant base="Army of Madinah"/>
+    <variant base="Pasban-e-Kashmir"/>
+    <variant base="LT"/>
+    <variant base="Pasban-e-Ahle-Hadith"/>
+    <variant base="Lashkar e-Tayyiba"/>
+    <variant base="Islamic Jammat ud Dawa"/>
+    <variant base="Army of the Pure and Righteous"/>
+    <variant base="Paasban-e-Ahle-Hadis"/>
+    <variant base="Army of the Pure"/>
+    <variant base="Jamaat ud-Dawa"/>
+    <variant base="Al Mansooreen"/>
+    <variant base="Falah-i-Insaniat Foundation (FIF)"/>
+    <variant base="Paasban-i-Ahle-Hadith"/>
+    <variant base="Movement for the Safeguarding of the First Center of Prayer"/>
+    <variant base="Lashkar-e-Toiba"/>
+    <variant base="Al Mansoorian"/>
+    <variant base="Army of the Righteous"/>
+    <variant base="Lashkar-i-Taiba"/>
+    <variant base="Deccan Mujahideen"/>
+    <variant base="Tehreek-e-Tahafuz Qibla Awal"/>
+  </token>
+  <token label="Stabbing" entryId="http://www.tensor-project.eu/taxomony##e634e5c8-4758-3d46-aafe-70a6b63bf49c" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom" comment="Use of a vehicle as weapon.">
+    <variant base="Stabbing"/>
+  </token>
+  <token label="Lakshar-e-Jhangvi" entryId="http://www.tensor-project.eu/taxomony##457f855b-5550-3333-a6de-b851e77bac98" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The LeJ group is active is a Sunni Supramacist terrorist group based in Pakistan responsible for violent attacks and killings on Shia targets. The LeJ has been named responsible for mass civillian killings and multiple bombings that killed over 200 Hazara Shia in Quetta 2013. They have also been linked to high-profile incidents such as attacks on the Sri Lankan cricket team in Lahore 2009. Most recently the group has claimed responsibility for the attack on a police training centre in Quetta Pakistan in October 2016 killing atleasrt 61 people including cadets and army officers. LeJ holds ties to the Taliban, al-Qaeda and several other reigonal Sunni-Islamic groups.">
+    <variant base="Lakshar-e-Jhangvi"/>
+  </token>
+  <token label="Airport" entryId="http://www.tensor-project.eu/taxomony##e529f1ff-eb63-37d2-be84-f3d50b465a03" parentId="http://www.tensor-project.eu/taxomony##48bae6c2-aa51-3ac4-88de-3eb3eb1ba69b" parentLabel="Hard Target">
+    <variant base="Airport"/>
+  </token>
+  <token label="Improvised explosive device" entryId="http://www.tensor-project.eu/taxomony##de84b4c7-ea37-326f-a822-f054add74b7d" parentId="http://www.tensor-project.eu/taxomony##e7f88ae0-3dba-348b-8660-029cbdfddee3" parentLabel="Explosive" comment="A bomb constructed and deployed in ways other than in conventional military action.">
+    <variant base="Improvised explosive device"/>
+    <variant base="IED"/>
+  </token>
+  <token label="National Democratic Party of Germany (NPD)" entryId="http://www.tensor-project.eu/taxomony##3a863eb4-335d-30b8-a11b-8c0e2f20eb04" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Germany&#65533;s NPD is a far-right political party founded in the 1960s that has propagated racist, anti-Semitic, anti-Muslim, and anti-immigrant messages. The German government has sought to ban the NPD as recently as March 2016.">
+    <variant base="National Democratic Party of Germany (NPD)"/>
+  </token>
+  <token label="Boko Haram" entryId="http://www.tensor-project.eu/taxomony##6e504572-232e-3ab1-b359-31481b232a2e" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Boko Haram is an ISIS-aligned jihadist group based in Nigeria. For years, Boko Haram has been conducting a lethal jihadist insurgency in the country&#65533;s north to drive out government forces and establish an Islamic state.">
+    <variant base="Boko Haram"/>
+    <variant base="Wilayat Gharb Ifriqiyya"/>
+    <variant base="Nigerian Taliban"/>
+    <variant base="Islamic State's West Africa Province (Iswap)"/>
+    <variant base="Jama&#65533;atu Ahlis Sunnar Lidda&#65533;awati Wal-Jihad"/>
+  </token>
+  <token label="Italian" entryId="http://www.tensor-project.eu/taxomony##4be8e06d-27bc-37e1-828f-2fa9a49ca985" parentId="http://www.tensor-project.eu/taxomony##b25d40e2-2384-33d4-8853-a328166b101f" parentLabel="Fascist" comment="Rooted in Italian nationalism and the desire to restore and expand Italian territories, which Italian Fascists deemed necessary for a nation to assert its superiority and strength and to avoid succumbing to decay.  Italian Fascism promoted a corporatist economic system whereby employer and employee syndicates are linked together in associations to collectively represent the nation's economic producers and work alongside the state to set national economic policy">
+    <variant base="Italian"/>
+  </token>
+  <token label="Deobandi," entryId="http://www.tensor-project.eu/taxomony##5ab2198f-d96c-308b-a279-70793d585bc7" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Revivalist movement within Sunni (primarily Hanafi) Islam">
+    <variant base="Deobandi,"/>
+    <variant base="Pashto"/>
+    <variant base="Persian"/>
+  </token>
+  <token label="Combat 18 (C18)" entryId="http://www.tensor-project.eu/taxomony##c5a230c5-d9d0-3854-a1fe-3ef082d6d06c" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Combat 18 (C18) is a neo-Nazi cartel associated with the Blood and Honour organisation, based on the principles of &quot;leaderless resistance&quot;. It originated in the United Kingdom but has since spread to other countries. Members of Combat 18 have been suspected in numerous deaths of immigrants, non-whites, and other C18 members.[1] The 18 in its name is derived from the initials of Adolf Hitler: A and H are the first and eighth letters of the Latin alphabet. Combat 18 members are barred from joining the British Prison Service[2] and police.">
+    <variant base="Combat 18 (C18)"/>
+  </token>
+  <token label="Recruitment" entryId="http://www.tensor-project.eu/taxomony##e1de43dd-18d1-3451-bebf-c1584ab33767" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="The process of attracting, selecting and appointing suitable candidates">
+    <variant base="Recruitment"/>
+  </token>
+  <token label="Ulster Volunteer Force" entryId="http://www.tensor-project.eu/taxomony##b3ea5921-0765-387d-9ec8-8a371da44c38" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Ulster Volunteer Force (UVF) was a loyalist, paramilitary organization that was created after the 50th anniversary of the Easter Rising (1916). The anniversary reflected a revival in sentiments for an independent Northern Ireland. The UVF declared war on the IRA and its splinter groups. It is most well-known for its involvement in &#65533;the Troubles,&#65533; which included thirty years of bombings and killings of Irish republicans and Catholics. In May of 2007, the group vowed to become a &quot;non-military, civilianized&quot; organization.">
+    <variant base="Ulster Volunteer Force"/>
+  </token>
+  <token label="White Supremacist" entryId="http://www.tensor-project.eu/taxomony##12f5a11d-959e-3d67-b234-6599725506ab" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Racist ideology centered upon the belief, and the promotion of the belief, that white people are superior in certain characteristics, traits, and attributes to people of other racial backgrounds">
+    <variant base="White Supremacist"/>
+  </token>
+  <token label="Improvised explosive device" entryId="http://www.tensor-project.eu/taxomony##66b34d40-e999-3263-95af-0374eb3e6d17" parentId="http://www.tensor-project.eu/taxomony##f1536929-b55b-3ea5-8dbb-efe3e3a4175d" parentLabel="Explosive" comment="A bomb constructed and deployed in ways other than in conventional military action.">
+    <variant base="Improvised explosive device"/>
+    <variant base="IED"/>
+  </token>
+  <token label="Funding" entryId="http://www.tensor-project.eu/taxomony##682889d0-a1d3-3502-a7a6-9346a750433d" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="The act of providing or raising financial resources, usually in the form of money">
+    <variant base="Funding"/>
+  </token>
+  <token label="Pro-Palestinian" entryId="http://www.tensor-project.eu/taxomony##22466465-0a1f-31bf-badf-2907cec580a7" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="A member of the native Arab population of the region of Palestine (including the modern state of Israel).">
+    <variant base="Pro-Palestinian"/>
+  </token>
+  <token label="Golden Dawn" entryId="http://www.tensor-project.eu/taxomony##43f456fb-e856-39f6-8750-d0c09c18a0b8" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Golden Dawn is a neo-Nazi party that came third in Greece&#65533;s January 2015 elections. Many of Golden Dawn&#65533;s government leaders are currently on trial in Athens on charges of establishing a criminal organization.">
+    <variant base="Golden Dawn"/>
+    <variant base="???s? ????"/>
+    <variant base="National Dawn"/>
+    <variant base="?a???? S??des&#65533;?? &#65533; ???s? ????"/>
+    <variant base="Popular Association &#65533; Golden Dawn"/>
+  </token>
+  <token label="Zionist" entryId="http://www.tensor-project.eu/taxomony##68dfa6a2-587e-3e16-98eb-ddc0dc043fe0" parentId="http://www.tensor-project.eu/taxomony##ecb46704-8247-3621-90a8-825a8f1f2999" parentLabel="Religious" comment="Set of acts by groups or individuals who profess motivations or goals of the re-establishment of a Jewish homeland in the territory defined as the historic Land of Israel.">
+    <variant base="Zionist"/>
+  </token>
+  <token label="Islamic State of Iraq and the Levant" entryId="http://www.tensor-project.eu/taxomony##c5bf5c5f-c7a5-387e-8885-55c85ca3477f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="SIS is a violent jihadist group based in Iraq and Syria. The group has declared wilayas (provinces) in Egypt, Libya, Algeria, Yemen, Saudi Arabia, Nigeria, Afghanistan, Pakistan, and the North Caucasus. ISIS has also waged attacks in Turkey, Lebanon, France, Belgium, Iraq, Bangladesh, Indonesia...">
+    <variant base="Islamic State of Iraq and the Levant"/>
+    <variant base="Al-Qa&#65533;ida in the Land of the Two Rivers"/>
+    <variant base="Islamic Caliphate State"/>
+    <variant base="Wilayat Kheir (Deir al Zour)"/>
+    <variant base="Monotheism and Jihad Group"/>
+    <variant base="ISIS"/>
+    <variant base="Al-Qa&#65533;ida Group of Jihad in Iraq"/>
+    <variant base="Al-Qa&#65533;ida of the Jihad in the Land of the Two Rivers"/>
+    <variant base="Wilayat Halab (Aleppo)"/>
+    <variant base="Kateab al-Tawhid"/>
+    <variant base="Wilayat Hama"/>
+    <variant base="Tanzim Qa'idat al-Jihad fi Bilad al-Rafidayn"/>
+    <variant base="Daesh"/>
+    <variant base="Islamic Caliphate"/>
+    <variant base="Wilayat al-Tarabulus"/>
+    <variant base="Wilayat Damascus (Dimashq)"/>
+    <variant base="Unity and Jihad Group"/>
+    <variant base="Wilayat Diyala"/>
+    <variant base="Al-Zarqawi Network"/>
+    <variant base="Wilayat Gharb Ifriqiyya"/>
+    <variant base="Al-Qa&#65533;ida in Iraq &#65533; Zarqawi"/>
+    <variant base="Islamic State in Iraq and al-Sham (ISIS)"/>
+    <variant base="Mujahidin Shura Council"/>
+    <variant base="Qaida of the Jihad in the Land of the Two Rivers"/>
+    <variant base="Wilayat Kirkuk"/>
+    <variant base="Al-Qa&#65533;ida Group of Jihad in the Land of the Two Rivers"/>
+    <variant base="Dawla al-Islamiya"/>
+    <variant base="Southern Province"/>
+    <variant base="Islamic State of Iraq and Syria"/>
+    <variant base="Organization Base of Jihad/Mesopotamia"/>
+    <variant base="Al-Qa&#65533;ida of Jihad Organization in the Land of the Two Rivers"/>
+    <variant base="Organization of al-Jihad&#65533;s Base of Operations in Iraq"/>
+    <variant base="Unity and Holy Struggle"/>
+    <variant base="Wilayat Badiya"/>
+    <variant base="Wilayat Ninawa"/>
+    <variant base="Al-Tawhid"/>
+    <variant base="Organization of al-Jihad&#65533;s Base in Iraq"/>
+    <variant base="Wilayat Barqa"/>
+    <variant base="Al-Qaeda in Iraq (AQI)"/>
+    <variant base="Islamic State of Iraq (ISI)"/>
+    <variant base="Organization of Jihad&#65533;s Base in the Country of the Two Rivers"/>
+    <variant base="Islamic State in Iraq (ISI)"/>
+    <variant base="Organization of al-Jihad&#65533;s Base of Operations in the Land of the Two Rivers"/>
+    <variant base="Organization Base of Jihad/Country of the Two Rivers"/>
+    <variant base="Wilayat Khorasan"/>
+    <variant base="Wilayat Salahuddin"/>
+    <variant base="Al-Qaeda Separatists in Iraq and Syria (QSIS)"/>
+    <variant base="Al-Tawhid and al-Jihad"/>
+    <variant base="Islamic State of Iraq and the Levant (ISIL)"/>
+    <variant base="Tanzeem Qa'idat al Jihad Bilad al Raafidaini"/>
+    <variant base="ISIL"/>
+    <variant base="Wilayat Raqqa"/>
+    <variant base="Islamic State of Iraq and Greater Syria (ISIS)"/>
+    <variant base="Al-Qaeda in Mesopotamia (AQM)"/>
+    <variant base="Jam&#65533;at al-Tawhid Wa&#65533;al-Jihad (JTJ)"/>
+    <variant base="Battar Brigade"/>
+    <variant base="Wilayat Anbar"/>
+    <variant base="Dawla al-Islamiya fi al-Iraq wa as-Sham"/>
+    <variant base="Wilayat Idlib"/>
+    <variant base="Organization of al-Jihad&#65533;s Base in the Land of the Two Rivers"/>
+    <variant base="Islamic State of Iraq and Syria (ISIS)"/>
+    <variant base="Unity and Holy War"/>
+    <variant base="Wilayat Coast (Al Sahel)"/>
+    <variant base="Wilayat Barakah (Hasaka)"/>
+    <variant base="Islamic Youth Shura Council"/>
+    <variant base="Brigades of Tawhid"/>
+    <variant base="Islamic State (IS)"/>
+    <variant base="Ansar Beit al-Maqdis"/>
+    <variant base="Wilayat Fezza"/>
+  </token>
+  <token label="Social Change" entryId="http://www.tensor-project.eu/taxomony##08971b89-d496-3be7-afcd-6bc0bb001cc1" parentId="http://www.tensor-project.eu/taxomony##a8fd8359-4a10-3729-b909-66e72f37c4c3" parentLabel="Activist">
+    <variant base="Social Change"/>
+  </token>
+  <token label="Anti Russia" entryId="http://www.tensor-project.eu/taxomony##60880d29-1e91-3c33-a38c-b29ca82f7fee" parentId="http://www.tensor-project.eu/taxomony##1f9dd441-b0d5-330d-8957-d31b4049d069" parentLabel="Separatist" comment="Russian advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group">
+    <variant base="Anti Russia"/>
+  </token>
+  <token label="White Nationalist" entryId="http://www.tensor-project.eu/taxomony##f2ebb41c-1399-381c-a90e-77b4a5508245" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Belief that white people are a race and seeks to develop and maintain a white national identity.">
+    <variant base="White Nationalist"/>
+  </token>
+  <token label="Islamic Front" entryId="http://www.tensor-project.eu/taxomony##2c4b9957-9453-3972-8f4a-8490ceb61791" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Islamic Front"/>
+  </token>
+  <token label="Long Arm" entryId="http://www.tensor-project.eu/taxomony##6a9588a8-83f1-30d6-b621-512f97751a96" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom">
+    <variant base="Long Arm"/>
+  </token>
+  <token label="Fatah" entryId="http://www.tensor-project.eu/taxomony##4be24855-6aec-386a-9e98-881d0a1597f7" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Fatah became recognised on the international theatre as a terrorist organization in the 1950's (before the 'occupation' mind you) with the goal of destroying Israel. It declared a Palestinian state in 1988 and was recognized as the sole legitimate representative of the Palestinian people by Israel during the Oslo Accords. Since then it's been governing the West Bank and making threats to the state of Isreil, it currently seen by a terrorist group by some world nations, but not others following losing its political position to Hamas in Palestine.">
+    <variant base="Fatah"/>
+  </token>
+  <token label="Taliban" entryId="http://www.tensor-project.eu/taxomony##caac0974-eb5f-3272-94e0-b7b6a3f77fcb" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Taliban once was the ruling government in Afghanistan. Today, the Taliban conducts a violent insurgency in Afghanistan (Afghan Taliban) and Pakistan (Tehrik-e Taliban Pakistan or TTP). The group is closely affiliated with al-Qaeda.">
+    <variant base="Taliban"/>
+    <variant base="De Talebano Islami Ghurdzang"/>
+    <variant base="Students of Islamic Knowledge Movement"/>
+    <variant base="Taleban"/>
+    <variant base="Tehrik"/>
+    <variant base="Taliban Islamic Movement"/>
+    <variant base="Talibano Islami Tahrik"/>
+    <variant base="De Afghanistan Islami Emarat"/>
+    <variant base="Islamic Movement of Taliban"/>
+    <variant base="Islamic Emirate of Afghanistan"/>
+    <variant base="Tahrike Islami&#65533;a Taliban"/>
+  </token>
+  <token label="PKK/KCK" entryId="http://www.tensor-project.eu/taxomony##168594dc-fd25-3d2b-8181-34e44095f064" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="A revolutionary movement seeking seperatism from the Turkey. The PKK has waged an armed struggle against Turkey believing the Kuridish minority has been repressed and ostracised. In a joint declaration with nine other organizations in March 2016, the PKK announced that they aim to attain &quot;democracy and [a] free future&quot; for &quot;peoples against imperialism, capitalism, chauvinism, fascism and racism&quot;, by working towards the overthrow of the ruling AKP, who they deem fascist. Internationally, a controversial party not recognised by several EU states to be 'terrorist' and an essential part of overthrowing the Assad regime as well as countering Daesh presence. For example, Denmark allows for PKK associated TV channels to broadcast, other EU countries have condemned Turkeys violent conflict against the Kurds.">
+    <variant base="PKK/KCK"/>
+    <variant base="PKK"/>
+  </token>
+  <token label="Hindu" entryId="http://www.tensor-project.eu/taxomony##ab16f8fc-d6af-3ea5-8932-1eba5259dabc" parentId="http://www.tensor-project.eu/taxomony##ecb46704-8247-3621-90a8-825a8f1f2999" parentLabel="Religious" comment="A religion or a way of life found most notably in India and Nepal">
+    <variant base="Hindu"/>
+  </token>
+  <token label="Neo-Nazi" entryId="http://www.tensor-project.eu/taxomony##1140b2a4-0b0f-349a-973f-6346fb960b69" parentId="http://www.tensor-project.eu/taxomony##bd15b3f8-d781-330f-ae4c-726dbe1b5c35" parentLabel="Fascist" comment="Doctrine, including ultra-nationalism, racism, ableism, xenophobia, homophobia, antiziganism, antisemitism, and initiating the Fourth Reich. Holocaust denial is a common feature, as is incorporation of Nazi symbols and admiration of Adolf Hitler.">
+    <variant base="Neo-Nazi"/>
+  </token>
+  <token label="White Pride" entryId="http://www.tensor-project.eu/taxomony##0947150f-757c-3d6b-9acf-66bc4e4ddcbc" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Motto primarily used by white separatist, white nationalist, neo-Nazi and white supremacist organizations in order to signal racist or racialist viewpoints.">
+    <variant base="White Pride"/>
+  </token>
+  <token label="Imam Bukhari Jamaat" entryId="http://www.tensor-project.eu/taxomony##bcbb8360-4974-3bd2-8523-9332e00b15f0" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Imam Bukhari Jamaat"/>
+  </token>
+  <token label="Pro Ukraine" entryId="http://www.tensor-project.eu/taxomony##9e8c1202-edb3-38b7-9de0-757d38eebebb" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Ukraine supported activity">
+    <variant base="Pro Ukraine"/>
+  </token>
+  <token label="Al-Qaeda in the Islamic Maghreb (AQIM)" entryId="http://www.tensor-project.eu/taxomony##b7d3a2ad-4c3b-37a0-9f1a-ba0fe5a656bc" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Al-Qaeda&#65533;s North African branch, AQIM, operates in Algeria, Mali, Niger, Libya, Mauritania, and Tunisia. The group has executed numerous violent attacks in North and West Africa. The group is also known for its extensive history of kidnapping and extortion. ">
+    <variant base="Al-Qaeda in the Islamic Maghreb (AQIM)"/>
+    <variant base="Salafist Group for Preaching and Combat"/>
+    <variant base="Le Groupe Salafiste Pour La Predication Et Le Combat (GSPC)"/>
+    <variant base="Salafist Group for Call and Combat"/>
+    <variant base="Al-Qa&#65533;ida in the Islamic Maghreb (AQIM)"/>
+    <variant base="Al-Qaida in the Lands of the Islamic Maghreb (AQIM)"/>
+    <variant base="Organization of Al-Qaida in the Islamic Maghreb (AQIM)"/>
+    <variant base="Gruppo Islamico Armato (GIA)"/>
+    <variant base="Tanzim al-Qa&#65533;ida fi Bilad al-Maghrib al-Islamiya"/>
+    <variant base="Armed Islamic Group (GIA)"/>
+  </token>
+  <token label="Specific Political Objective" entryId="http://www.tensor-project.eu/taxomony##7c5072a9-42e3-3c5e-a206-eb84981bd4a3" parentId="http://www.tensor-project.eu/taxomony##a8fd8359-4a10-3729-b909-66e72f37c4c3" parentLabel="Activist">
+    <variant base="Specific Political Objective"/>
+  </token>
+  <token label="Place" entryId="http://www.tensor-project.eu/taxomony##7b9cf007-806e-3854-8d12-ab800c8a982b" parentId="http://www.tensor-project.eu/taxomony##c41a3189-0959-344c-a523-af684561abe5" parentLabel="Target" comment="A physical location.">
+    <variant base="Place"/>
+  </token>
+  <token label="Separatist" entryId="http://www.tensor-project.eu/taxomony##1f9dd441-b0d5-330d-8957-d31b4049d069" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="Advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group">
+    <variant base="Separatist"/>
+  </token>
+  <token label="Political" entryId="http://www.tensor-project.eu/taxomony##869f95d0-7e12-33dc-8e37-661012272e17" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Religious political ideology.">
+    <variant base="Political"/>
+  </token>
+  <token label="Stabbing" entryId="http://www.tensor-project.eu/taxomony##7a84899c-3d63-3d9f-9f0d-6bfadbcf5d2c" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom" comment="Use of a vehicle as weapon.">
+    <variant base="Stabbing"/>
+  </token>
+  <token label="Video" entryId="http://www.tensor-project.eu/taxomony##34e2d198-9a1d-3f75-8d63-1596133ee5ee" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Video"/>
+  </token>
+  <token label="Type" entryId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentId="http://www.tensor-project.eu/taxomony##f15c1cae-7882-348b-bfb0-404682e17e61" parentLabel="Content">
+    <variant base="Type"/>
+  </token>
+  <token label="Houthis" entryId="http://www.tensor-project.eu/taxomony##7aff861e-4747-3382-b833-82dea49a7a70" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Houthis are an Iranian-backed, Shiite Muslim armed religious and political movement in Yemen. The Houthis waged a series of bloody insurgencies against the Yemeni government for over a decade, leading to that regime&#65533;s overthrow in 2015.">
+    <variant base="Houthis"/>
+    <variant base="Ash-Shabab al-Mu&#65533;min"/>
+    <variant base="Al-Shabaab al-Mu&#65533;minin"/>
+    <variant base="Shabaab al-Mumanin"/>
+    <variant base="Supporters of God"/>
+    <variant base="Houthi Movement"/>
+    <variant base="Ansar Allah"/>
+    <variant base="Believing Youth Forum"/>
+    <variant base="Believing Youth"/>
+    <variant base="Al-Houthis"/>
+    <variant base="Huthis"/>
+    <variant base="Ansarallah"/>
+    <variant base="Partisans of God"/>
+    <variant base="Ansarullah"/>
+  </token>
+  <token label="National Socialist Council of Nagaland (NSCN-K)" entryId="http://www.tensor-project.eu/taxomony##ce74d4a7-4447-3daa-8c40-1f42fd143b8b" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The NSCN-K is a Christian Naga insurgent group operating in northeastern India and northwestern Burma seeking to establish a seperate Christian state ruled and inhabited by the Naga people.  The NSNC are notorious for laying ambushes on passing military vehicles and attacking official facilities, often indescriminately killing civillians, additionally the group relies on economic terrorism and extortion. The group have been active since 1988 (TRAC).">
+    <variant base="National Socialist Council of Nagaland (NSCN-K)"/>
+  </token>
+  <token label="Communication" entryId="http://www.tensor-project.eu/taxomony##07a3dd24-7ad6-3ec7-be40-1aa11619959f" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Conveying intended meanings from one entity or group to another through the use of mutually understood signs and semiotic rules.">
+    <variant base="Communication"/>
+  </token>
+  <token label="Nusra Front (Jabhat Fateh al-Sham)" entryId="http://www.tensor-project.eu/taxomony##5f8d2635-a9c4-32af-8107-779e9abef35c" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Nusra Front is al-Qaeda&#65533;s formal affiliate in Syria and one of the most powerful rebel groups fighting Assad. The group conducts formal military campaigns, assassinations, hostage missions, and &#65533;lone wolf&#65533; operations, including al-Qaeda&#65533;s trademark suicide...">
+    <variant base="Nusra Front (Jabhat Fateh al-Sham)"/>
+    <variant base="Jabhat al-Nusra li-Ahl al-Sham"/>
+    <variant base="The Front for the Defence of the Syrian People"/>
+    <variant base="The Front for the Defense of the Syrian People"/>
+    <variant base="Support Front for the People of the Levant"/>
+    <variant base="Jabhet al-Nusra"/>
+    <variant base="The Al Nusrah Front for the People of the Levant"/>
+    <variant base="Al-Nusra Front to Protect the Levant"/>
+    <variant base="Al-Nusrah Front"/>
+    <variant base="Al Nusrah Front for the People of the Levant"/>
+    <variant base="Levantine Mujahideen on the Battlefields of Jihad"/>
+    <variant base="Al-Nusrah Front in Lebanon"/>
+    <variant base="The Defense Front"/>
+    <variant base="Al Nusrah Front for the People of Levant"/>
+    <variant base="Levantine Conquest Front"/>
+    <variant base="Jabhat al-Nusra li-Ahl al-Sham Min Mujahedin al-Sham fi Sahat al-Jihad"/>
+    <variant base="Jabhet al-Nusrah"/>
+    <variant base="Jabhat al-Nusra li-Ahl al-Sham Min Mujahideen al-Sham fi Sahat al-Jihad"/>
+    <variant base="The Victory Front"/>
+    <variant base="The Support Front for the People of Syria from the Mujahideen of Syria in the Places of Jihad"/>
+    <variant base="Jabhat Fath al-Sham"/>
+    <variant base="Jabhat al-Nusrah"/>
+    <variant base="Ansar al-Mujahideen Network"/>
+  </token>
+  <token label="Fascist" entryId="http://www.tensor-project.eu/taxomony##bd15b3f8-d781-330f-ae4c-726dbe1b5c35" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Fascist ideology.">
+    <variant base="Fascist"/>
+  </token>
+  <token label="Politicians" entryId="http://www.tensor-project.eu/taxomony##141b75ed-f794-3e64-b5e5-3668ed3b078b" parentId="http://www.tensor-project.eu/taxomony##cdd3f14b-edd8-33eb-9746-feee0d9ee9f4" parentLabel="Hard Target">
+    <variant base="Politicians"/>
+  </token>
+  <token label="Hard Target" entryId="http://www.tensor-project.eu/taxomony##48bae6c2-aa51-3ac4-88de-3eb3eb1ba69b" parentId="http://www.tensor-project.eu/taxomony##7b9cf007-806e-3854-8d12-ab800c8a982b" parentLabel="Place" comment="Strongly defended.">
+    <variant base="Hard Target"/>
+  </token>
+  <token label="Islamic Resistance Movement" entryId="http://www.tensor-project.eu/taxomony##74ac4b7b-c501-358d-ac02-051b200f90f4" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Islamic Resistance Movement"/>
+  </token>
+  <token label="Gaming" entryId="http://www.tensor-project.eu/taxomony##9eed85ad-420e-3a3c-986c-dc6d7e77854d" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Gaming"/>
+  </token>
+  <token label="Der dritte Weg" entryId="http://www.tensor-project.eu/taxomony##1d8bc800-7cbd-3f8d-a52c-4152166dbebf" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Der dritte Weg"/>
+  </token>
+  <token label="Industrial Explosive" entryId="http://www.tensor-project.eu/taxomony##effcd287-0c18-3b0d-b465-685e1af64639" parentId="http://www.tensor-project.eu/taxomony##f1536929-b55b-3ea5-8dbb-efe3e3a4175d" parentLabel="Explosive">
+    <variant base="Industrial Explosive"/>
+  </token>
+  <token label="Shining Path (Communist Party of Peru)" entryId="http://www.tensor-project.eu/taxomony##ecb60bd8-4ffd-397d-b3c5-415ec663c228" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Shining Path guerillas have waged a bloody insurgency in Peru since the 1980's. The extreme left group is known for kidnappings and utilising slave labour of children on rebel farms. The group is integrally connected to the decades of violence and instability in Peru that has claimed the lived of 70,000 people. The group is currently fractured between different sectors and lost some of its central leaders authority since the arrest of Florindo Eleuterio Flores in February 2012, despite this the group remains active, yet splintered in the dense areas of Peru's jungle. Recent informaiton suggests that the group is seeking a resurgance in the mountainous regions of Peru and has inflicted minor damage against military property and personnel. As of April 2016 the group is supposedly being investigated following an attack killing three, wounding 6 ahead of Peru's presidential election (June 2016).">
+    <variant base="Shining Path (Communist Party of Peru)"/>
+  </token>
+  <token label="Religious" entryId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Religious Ideology.">
+    <variant base="Religious"/>
+  </token>
+  <token label="Islamist" entryId="http://www.tensor-project.eu/taxomony##7f9af07e-80cc-3538-82ff-399d70195729" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="An advocate or supporter of Islamic militancy or fundamentalism">
+    <variant base="Islamist"/>
+  </token>
+  <token label="Sadrist Movement and Mahdi Army" entryId="http://www.tensor-project.eu/taxomony##bca863cb-9c25-3e3b-82c6-808c43bc6aaf" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="In the December 2005 elections, members of ?adr&#65533;s movement stood with other Shi&#65533;a parties as part of the United Iraqi Alliance, which won a plurality of seats (128 of 275) in the parliament; 32 of which went to the ?adrists. Major fighting rocked Iraq in 2006&#65533;2008. At the height of the war in late 2006, Sadr&#65533;s militia organization, which was known as Jaish al-Mahdi or the Mahdi Army, waged a cruel war against Sunnis, often resorting to horrific methods to terrorize and demoralize its opposition. With the rising influence of the Islamic State of Iraq and Syria in Sunni Arab areas of Iraq, Sadr has reinstituted an active militia force, six years after disbanding the Mahdi Army.">
+    <variant base="Sadrist Movement and Mahdi Army"/>
+  </token>
+  <token label="Spanish" entryId="http://www.tensor-project.eu/taxomony##cb5480c3-2e71-3788-92b0-8ae1e8712775" parentId="http://www.tensor-project.eu/taxomony##2b6dcacc-74ea-3019-9e12-96698ed6e0c3" parentLabel="Loyalist" comment="A political ideology with allegiance towards the Spain">
+    <variant base="Spanish"/>
+  </token>
+  <token label="Sharia4Belgium" entryId="http://www.tensor-project.eu/taxomony##ee721cdc-3ca8-312b-bee1-d2c429889b84" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Sharia4Belgium, Sharia4holland">
+    <variant base="Sharia4Belgium"/>
+  </token>
+  <token label="Irish Republican Army" entryId="http://www.tensor-project.eu/taxomony##6c5d8263-1a1b-3759-a3ad-d55b7609c58b" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Continuity Irish Republican Army (CIRA) split from the Provisional Irish Republican Army (PIRA) when the PIRA dropped its longstanding opposition to the participation of its political wing, Sinn Fein, in the Parliament of Northern Ireland. In response, Republican Sinn Fein split from Sinn Fein and set up CIRA as its own militant wing. Republican Sinn Fein and the CIRA continued to view the Northern Ireland Parliament as illegitimate since it did not represent the whole of Ireland. The CIRA claimed to be the true republican group and sought to create a unified Ireland independent of Britain. The CIRA did not stage its first attacks until after the PIRA declared a ceasefire in 1994. Thereafter it targeted Protestant civilians and Northern Ireland police. The group remained weak, however, and never attracted more than a few dozen members.">
+    <variant base="Irish Republican Army"/>
+    <variant base="IRA"/>
+  </token>
+  <token label="Ethnic" entryId="http://www.tensor-project.eu/taxomony##55234552-5533-3229-ac1c-62a7ebbeb7a7" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Political ethnic ideology.">
+    <variant base="Ethnic"/>
+  </token>
+  <token label="Wahhabi" entryId="http://www.tensor-project.eu/taxomony##fc229d33-5812-3b2f-b22b-54e796bcbac3" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Strictly orthodox Sunni Muslim sect by Muhammad ibn Abd al-Wahhab advocating a return to the early Islam of the Koran and Sunna, rejecting later innovations">
+    <variant base="Wahhabi"/>
+  </token>
+  <token label="Eurocommunism" entryId="http://www.tensor-project.eu/taxomony##c4b179d4-a89a-31ee-8fc5-752793801f8f" parentId="http://www.tensor-project.eu/taxomony##a52956d1-10ea-33c0-8bd9-34e0adfd1c92" parentLabel="Communist" comment="A revisionist trend in the 1970s and 1980s within various Western European communist parties. They claimed to be developing a theory and practice of social transformation more relevant for Western Europe.">
+    <variant base="Eurocommunism"/>
+  </token>
+  <token label="Khomeinist" entryId="http://www.tensor-project.eu/taxomony##74fab6ac-af11-38bc-af94-c9525521ad85" parentId="http://www.tensor-project.eu/taxomony##f0e27ae9-4e49-3d61-aa56-72eeef2473c4" parentLabel="Religious" comment="Iranian Shiite leader of Iran strict observance of the Islamic code.">
+    <variant base="Khomeinist"/>
+  </token>
+  <token label="Actor" entryId="http://www.tensor-project.eu/taxomony##e47e1e78-24c3-3c37-aa1e-ede411d833da" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism">
+    <variant base="Actor"/>
+  </token>
+  <token label="Ansar Dine" entryId="http://www.tensor-project.eu/taxomony##f99c40a3-ebae-31ca-9cff-d2a98da3ffb5" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Ansar Dine (Defenders of the Faith) is a terrorist group based in Mali with reported links to Al-Qaeda. The group is preprtedly made form Sunni Muslims from the Mali, Algeria and Niger area, seeking to establish a state of Sharia rule. The group allegedly has access to military vehicles, anti aircraft weaponry and military arms obtained following Gadaffi's deposition from Libya. The group is notorious for recruiting child soldiers and utilising suicide bombings against soft-targets. Additionally the group has been condemned for the destruction of UNESCO world heritage sites in Timbuktu and for causing the displacement of over 400,000 people.">
+    <variant base="Ansar Dine"/>
+  </token>
+  <token label="Police Station" entryId="http://www.tensor-project.eu/taxomony##6f39f370-1a1e-3efa-bcde-a50141cf0ef7" parentId="http://www.tensor-project.eu/taxomony##48bae6c2-aa51-3ac4-88de-3eb3eb1ba69b" parentLabel="Hard Target">
+    <variant base="Police Station"/>
+  </token>
+  <token label="Anarchist" entryId="http://www.tensor-project.eu/taxomony##34c46f06-d750-3dcc-8da7-73de35f2c182" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Supporting, believes in or tries to bring about anarchy">
+    <variant base="Anarchist"/>
+  </token>
+  <token label="Pashtun" entryId="http://www.tensor-project.eu/taxomony##c2ebc9dd-5398-3f58-8a81-b0fae7fc3ab7" parentId="http://www.tensor-project.eu/taxomony##0748389d-71dc-39fc-9406-d26e9a4e0691" parentLabel="Ethnic" comment="Ethnic group also known as Pathan are believed to have settled in the vast Pashtunistan tribal region">
+    <variant base="Pashtun"/>
+    <variant base="Pathan"/>
+  </token>
+  <token label="Pro Russian" entryId="http://www.tensor-project.eu/taxomony##96687419-4493-37be-8c29-712bbd425601" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Russian supported activity">
+    <variant base="Pro Russian"/>
+  </token>
+  <token label="National Liberation Army" entryId="http://www.tensor-project.eu/taxomony##887e2deb-a11f-3d16-8b9a-0a0ab8f41e0e" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Irish National Liberation Army (INLA) was a socialist paramilitary group that served as the armed wing of the Irish Republican Socialist Party (IRSP). INLA sought to unify Ireland as a socialist republic independent from the United Kingdom. Many of the group's founders were former members of the Official Irish Republican Army (OIRA), one of the two main Catholic paramilitary groups in Northern Ireland seeking Irish independence, who did not support a ceasefire OIRA declared in 1972. INLA targeted mostly British and local security forces, though one of its most famous actions was the December 1997 killing of a Protestant paramilitary leader in prison, and the group also killed a large number of civilians. The group declared a ceasefire in 1998 and formally renounced violence in 2009, saying it could now achieve its goals through peaceful means.">
+    <variant base="National Liberation Army"/>
+  </token>
+  <token label="Nativist" entryId="http://www.tensor-project.eu/taxomony##d4a77d9c-9827-3626-a006-232db10485a6" parentId="http://www.tensor-project.eu/taxomony##8e6166ea-e901-3334-83b0-c1f8ca554449" parentLabel="Nationalist" comment="Favoring native inhabitants as opposed to immigrants. The revival or perpetuation of an indigenous culture especially in opposition to acculturation.">
+    <variant base="Nativist"/>
+  </token>
+  <token label="Fascist" entryId="http://www.tensor-project.eu/taxomony##b25d40e2-2384-33d4-8853-a328166b101f" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A form of radical authoritarian nationalism">
+    <variant base="Fascist"/>
+  </token>
+  <token label="Activist" entryId="http://www.tensor-project.eu/taxomony##a8fd8359-4a10-3729-b909-66e72f37c4c3" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A political ideology consists of efforts to promote, impede, or direct social, political, economic, and/or environmental reform or stasis with the desire to make improvements in society.">
+    <variant base="Activist"/>
+  </token>
+  <token label="Izz ad-Din al-Qassam Brigades (EQB)" entryId="http://www.tensor-project.eu/taxomony##928baea7-a1ea-3014-9f8d-d3d077c1aff3" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Hamas militia">
+    <variant base="Izz ad-Din al-Qassam Brigades (EQB)"/>
+  </token>
+  <token label="Red Hand Defenders" entryId="http://www.tensor-project.eu/taxomony##f1ff2251-d5f6-30f8-9d55-54d796d35436" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Red Hand Defenders (RHD) is a Loyalist paramilitary group. There is speculation that RHD has also been used as a cover name for members of other terrorist organizations in Northern Ireland, namely the Loyalist Volunteer Force (LVF) and the Ulster Defense Association (UDA). It is not clear to what extent the name RHD represented a distinct organization at different points in time. The RHD has conducted attacks using pipe bombs, grenades and hand guns against Catholic families located Northern Ireland and continues to fight for a continued British Rule.">
+    <variant base="Red Hand Defenders"/>
+  </token>
+  <token label="Text" entryId="http://www.tensor-project.eu/taxomony##9dffbf69-ffba-3bc3-8bc4-e01abf4b1675" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Text"/>
+  </token>
+  <token label="Intent" entryId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentId="http://www.tensor-project.eu/taxomony##f15c1cae-7882-348b-bfb0-404682e17e61" parentLabel="Content" comment="Purpose / objective">
+    <variant base="Intent"/>
+  </token>
+  <token label="Ultra-nationalist" entryId="http://www.tensor-project.eu/taxomony##5814da68-4756-3460-a1bd-8f4568fd131a" parentId="http://www.tensor-project.eu/taxomony##8e6166ea-e901-3334-83b0-c1f8ca554449" parentLabel="Nationalist" comment="Extreme devotion to or advocacy of the interests of a nation, especially regardless of the effect on any other nations">
+    <variant base="Ultra-nationalist"/>
+  </token>
+  <token label="Explosive" entryId="http://www.tensor-project.eu/taxomony##f1536929-b55b-3ea5-8dbb-efe3e3a4175d" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom">
+    <variant base="Explosive"/>
+  </token>
+  <token label="Maoist" entryId="http://www.tensor-project.eu/taxomony##1136a495-3003-3448-94d4-1683f74624ca" parentId="http://www.tensor-project.eu/taxomony##b87a7fba-15a7-3a2c-9dbd-34f7f46b7b11" parentLabel="Communist" comment="Follower of the communist doctrines of Mao Zedong">
+    <variant base="Maoist"/>
+  </token>
+  <token label="Al Ghuraba" entryId="http://www.tensor-project.eu/taxomony##77071a77-5ef1-3ca3-9428-0bc9049eb460" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="in Uk : reformed Al-Muhajiroun. worldwide: Taqfirists like to see theselves as (Al) Ghuraba">
+    <variant base="Al Ghuraba"/>
+    <variant base="Islamic Movement"/>
+    <variant base="Abu Sayyaf"/>
+    <variant base="Al Harakat al Islamiyya"/>
+    <variant base="Grupong Abu Sayyaf"/>
+  </token>
+  <token label="Revolutionary Struggle (EA)" entryId="http://www.tensor-project.eu/taxomony##96140e14-25e9-3e5a-bdce-3927751527d0" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="EA, a radical leftist group, conducted a number of high-profile terrorist operations against Greek and Western interests after its emergence in 2003, including a rocket-propelled grenade attack against the US Embassy in Athens in January 2007. Greek authorities largely disrupted the group&#65533;s operations in 2010. In mid-2012 the group&#65533;s ringleader, Nikos Maziotis, and his girlfriend violated the terms of their release pending trial and disappeared. Maziotis&#65533;who was recaptured by Greek police in July 2014&#65533;has since been linked to a number of bank robberies. In April 2014, EA claimed responsibility for a car-bombing outside the Bank of Greece in Athens to protest Greece&#65533;s return to international markets, its first attack since 2009. The group is deemed a terrorist group by the Greek government, the EU, and the US.">
+    <variant base="Revolutionary Struggle (EA)"/>
+  </token>
+  <token label="Turkestan Islamic Party" entryId="http://www.tensor-project.eu/taxomony##1eab470a-6f70-3b92-a150-40773251a746" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Turkestan Islamic Party (TIP) formerly known as the East Turkestan Islamic Movement (ETIM) formerly known as the East Turkestan Islamic Movement (ETIM), and other names,[a] is an Islamic terrorist and separatist organization founded by Uyghur militants in western China. Its stated goals are the independence of East Turkestan from China. According to the Chinese government, it is a violent separatist movement and is often responsible for terrorist attacks in Xinjiang. The group is notorious for training children as martyrs and soldiers.">
+    <variant base="Turkestan Islamic Party"/>
+  </token>
+  <token label="Short Arm" entryId="http://www.tensor-project.eu/taxomony##dc46b3a5-9403-3056-8eef-d6b194176b3b" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom">
+    <variant base="Short Arm"/>
+  </token>
+  <token label="Council Communism" entryId="http://www.tensor-project.eu/taxomony##418e051b-69f0-3c29-ac85-e50d117092af" parentId="http://www.tensor-project.eu/taxomony##a52956d1-10ea-33c0-8bd9-34e0adfd1c92" parentLabel="Communist" comment="Councilism was characterized by its opposition to state capitalism/state socialism and its advocacy of workers' councils as the basis for dismantling the class state">
+    <variant base="Council Communism"/>
+  </token>
+  <token label="DHKP/C" entryId="http://www.tensor-project.eu/taxomony##d2133e54-0aae-38da-b4d6-d6913303cf47" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Considered a terrorist group foremost by Turkey, the US and the EU: The DHKP/C is active both in Turkey and abroad as its two main domains. As an effect of successful and conclusive operations against the terrorist organization across the country, DHKP/C has decided to move its centre to European countries where Turkish people densely live. The terrorist organization continues its activities through some associations in these countries. They have carried out suicide bombings and assassinations.">
+    <variant base="DHKP/C"/>
+    <variant base="Revolutionary People's Liberation Party/Front"/>
+    <variant base="DHKP"/>
+  </token>
+  <token label="Justice and Equality Movement (JEM)" entryId="http://www.tensor-project.eu/taxomony##8660eb01-277b-36f1-a339-95c5acf3c954" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="JEM leaders call for the creation of a new country named the United Regions of Sudan. This proposed new nation would entail a rotating presidency, granting all six Sudanese regions a term in power. The group seeks to overcome the oppression of islamic black ethnicities by the Sudanese government and arabic militias such as Janaweed. Following Khalil Ibrahim&#65533;s death, the group was led by his brother Jibril Ibrahim and a new 18-member JEM executive office. In 2008, JEM gained national recognition after launching an attack on Khartoum. Prior to a mid-2010 government offensive that led to significant casualties, JEM was estimated to have more than 5,000 men. JEM soldiers were armed with mounted anti-aircraft guns, rocket-propelled grenades, several hundred vehicles and at least two tanks.">
+    <variant base="Justice and Equality Movement (JEM)"/>
+  </token>
+  <token label="Palestinian Islamic Jihad" entryId="http://www.tensor-project.eu/taxomony##4ce6c4d5-b70b-37de-8db4-6d9a8e72c414" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="PIJ is a Palestinian Islamist terrorist group sponsored by Iran and Syria. Founded in 1979 as an offshoot of the Egyptian Muslim Brotherhood, PIJ is the second-largest terrorist group in Gaza today (after Hamas).">
+    <variant base="Palestinian Islamic Jihad"/>
+    <variant base="Islamic Jihad Palestine"/>
+    <variant base="Harakat al-Jihad al-Islami al-Filastini"/>
+    <variant base="Islamic Jihad"/>
+    <variant base="al-Quds Squads"/>
+    <variant base="Palestine Islamic Jihad"/>
+    <variant base="Islamic Jihad&#65533;Palestine Faction"/>
+    <variant base="Islamic Holy War"/>
+    <variant base="Palestine Islamic Jihad&#65533;Shallah Faction"/>
+    <variant base="Palestine Islamic Jihad&#65533;Shaqaqi Faction"/>
+    <variant base="al-Quds Brigades"/>
+    <variant base="al-Awdah Brigades"/>
+    <variant base="PIJ&#65533;Shallah Faction"/>
+    <variant base="Islamic Jihad in Palestine"/>
+    <variant base="Saraya al-Quds"/>
+    <variant base="PIJ&#65533;Shaqaqi Faction"/>
+    <variant base="Islamic Jihad of Palestine"/>
+    <variant base="Harakat al-Jihad al-Islami fi Filistin"/>
+    <variant base="Abu Ghunaym Squad of the Hizballah Bayt Al-Maqdis"/>
+  </token>
+  <token label="Christian" entryId="http://www.tensor-project.eu/taxomony##db6017bd-1f27-318d-8408-3a172a82409f" parentId="http://www.tensor-project.eu/taxomony##ecb46704-8247-3621-90a8-825a8f1f2999" parentLabel="Religious" comment="Set of acts by groups or individuals who profess Christian motivations or goals.">
+    <variant base="Christian"/>
+  </token>
+  <token label="Islamic Jihad Union (IJU)" entryId="http://www.tensor-project.eu/taxomony##ef5d0ecf-433b-3fb6-9336-77c2c6ac426b" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Islamic Jihad Union (IJU) is an extremist organization that splintered from the Islamic Movement of Uzbekistan in the early 2000s and is currently based in Pakistan&#65533;s Federally Administered Tribal Areas. The IJU, which is committed to toppling the government in Uzbekistan, conducted two attacks there in 2004 and one in 2009. The IJU is also active in Afghanistan, where the group operates alongside the Taliban-affiliated Haqqani Network. The group has had particular success in recruiting German nationals and achieved international notoriety following the 2007 disruption of an IJU plot by the so-called Sauerland Cell to attack various targets in Germany. The US State Department in June 2005 designated the IJU a Foreign Terrorist Organization.">
+    <variant base="Islamic Jihad Union (IJU)"/>
+  </token>
+  <token label="Shiite" entryId="http://www.tensor-project.eu/taxomony##5d024870-2a91-3bd3-b28c-42adead238cb" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Adherent to the Shia branch of Islam.">
+    <variant base="Shiite"/>
+  </token>
+  <token label="Subway" entryId="http://www.tensor-project.eu/taxomony##59e6c9bc-4380-37ff-b1a3-cd3eb9515b30" parentId="http://www.tensor-project.eu/taxomony##0624f43f-b55c-3ee9-85db-e0877d06c0b2" parentLabel="Soft Target">
+    <variant base="Subway"/>
+  </token>
+  <token label="Tactical" entryId="http://www.tensor-project.eu/taxomony##4e0619e5-7cb5-3c4a-b123-0c2dd72df1ba" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Actions carefully planned to gain a specific tactical end">
+    <variant base="Tactical"/>
+  </token>
+  <token label="Democratic Front for the Liberation of Rwanda (FDLR)" entryId="http://www.tensor-project.eu/taxomony##04adb40d-4b3a-3154-b394-332ad290a089" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="As reported by the U.N. agency MONUSCO 'The Democratic Forces for the Liberation of Rwanda (FDLR) is the largest illegal foreign armed group operating in the DR Congo. While there is currently a growing number of Congolese among their ranks, the group is primarily formed from members of the Rwandan government and army ousted in 1994 as well as Rwandan refugees. Its public purpose is to use military pressure to open 'inter-Rwandan dialogue' with the current Rwandan government, but its covert purpose appears to be to overthrow the Rwandan government. The FDLR currently operates in eastern DR Congo and Katanga province. Its current strength is estimated to be 2000 combatants.  In 2015, the FDLR was accused of training the youth wing of Burundi's National Council for the Defense of Democracy, raising fears of another genocide, and leading over 100,000 Burundians to flee to neighboring countries.">
+    <variant base="Democratic Front for the Liberation of Rwanda (FDLR)"/>
+  </token>
+  <token label="Abu Sayyaf Group" entryId="http://www.tensor-project.eu/taxomony##f33a8bf3-dc6c-37a5-926b-c498e753652f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Abu Sayyaf Group (ASG) is an Islamist terrorist organization that seeks to establish an Islamic state in the southern Philippines. The historically al-Qaeda affiliated ASG is led by Radulan Sahiron, a breakaway faction in Basilan has pledged allegiance to ISIS.">
+    <variant base="Abu Sayyaf Group"/>
+  </token>
+  <token label="Anti-Marxist" entryId="http://www.tensor-project.eu/taxomony##837f0354-b310-3baa-8217-9be34c7e680a" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Opposed to or hostile toward Marxism">
+    <variant base="Anti-Marxist"/>
+  </token>
+  <token label="Salafi" entryId="http://www.tensor-project.eu/taxomony##0b64edb9-c63b-3716-8b70-8088525e3b95" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Strictly orthodox Sunni Muslim sect advocating a return to the early Islam of the Koran and Sunna">
+    <variant base="Salafi"/>
+  </token>
+  <token label="Neo-Fascism" entryId="http://www.tensor-project.eu/taxomony##4c3dba65-47c0-37ba-b02e-a7553394dee3" parentId="http://www.tensor-project.eu/taxomony##b25d40e2-2384-33d4-8853-a328166b101f" parentLabel="Fascist" comment="Ideology that includes significant elements of fascism. Neo-fascism usually includes ultranationalism, populism, anti-immigration policies or, where relevant, nativism, anti-communism, anti-socialism, anti-Marxism, anti-anarchism and opposition to the parliamentary system and liberal democracy">
+    <variant base="Neo-Fascism"/>
+  </token>
+  <token label="Currency" entryId="http://www.tensor-project.eu/taxomony##386c339d-37e7-37a4-b649-9d423a77df0c" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Currency"/>
+  </token>
+  <token label="Muslim Brotherhood" entryId="http://www.tensor-project.eu/taxomony##ae665867-87ad-389b-9a53-29e774cea51b" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Muslim Brotherhood is a transnational Sunni Islamist movement that seeks to implement sharia (Islamic law) under a global caliphate. Founded in Egypt in 1928, the Brotherhood is the country&#65533;s oldest Islamist organization and has branches throughout the world.">
+    <variant base="Muslim Brotherhood"/>
+    <variant base="Muslim Brothers"/>
+    <variant base="Ikhwan"/>
+    <variant base="Society of Muslim Brothers"/>
+    <variant base="Muslim Brethren"/>
+    <variant base="Gamaat al-Ikhwan al-Muslimin"/>
+    <variant base="Al-Ikhwan al-Muslimin"/>
+    <variant base="Al-Ikhwan al-Muslimeen"/>
+  </token>
+  <token label="National Action" entryId="http://www.tensor-project.eu/taxomony##2f3eeaa2-fedf-3c63-a265-26fba43fa606" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Following the murder of UK MP Joe Cox, the extreme right group National Action has been branded a terrorist organisation for the support of some of its members towards the killing, as well as antisemetic and white supremecist demonstrations, violence, and intimidation. The group has been actively involved in training in hand-to-hand combat and brandishing slogans such as; &quot;Hitler was Right&quot;, and &quot;Death to Traitors&quot; following the murder of MP Cox. The group is known for targetted the younger, white british generations, attempting to recruit at universities, although the majority of active followers are not from higher education.">
+    <variant base="National Action"/>
+  </token>
+  <token label="Terrorism" entryId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500">
+    <variant base="Terrorism"/>
+  </token>
+  <token label="Religious" entryId="http://www.tensor-project.eu/taxomony##ecb46704-8247-3621-90a8-825a8f1f2999" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A cultural system of behaviors and practices, world views, sacred texts, holy places, ethics, and societal organisation that is referred to as belief">
+    <variant base="Religious"/>
+  </token>
+  <token label="Islamic" entryId="http://www.tensor-project.eu/taxomony##086e56d9-b478-3cf5-b43c-77cd6c298aaf" parentId="http://www.tensor-project.eu/taxomony##ecb46704-8247-3621-90a8-825a8f1f2999" parentLabel="Religious" comment="Set of acts or campaign committed by groups or individuals who profess Islamic or Islamist motivations or goals.  Islamic terrorists justify their violent tactics through interpreting the Quran and Hadith according to their own goals and intentions.">
+    <variant base="Islamic"/>
+  </token>
+  <token label="RAF" entryId="http://www.tensor-project.eu/taxomony##4f12e97f-7906-3e93-a1f9-f162592f814f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="RAF"/>
+    <variant base="Red Army Fraction"/>
+    <variant base="Red Army Faction"/>
+  </token>
+  <token label="Individual" entryId="http://www.tensor-project.eu/taxomony##d0d6ede8-f220-3872-bcac-6d8033bca398" parentId="http://www.tensor-project.eu/taxomony##e47e1e78-24c3-3c37-aa1e-ede411d833da" parentLabel="Actor" comment="Individuals that intentionally use indiscriminate violence as a means to create terror or fear, in order to achieve a political, religious, or ideological aim.">
+    <variant base="Individual"/>
+  </token>
+  <token label="Isreali" entryId="http://www.tensor-project.eu/taxomony##bcf115e0-5283-359e-8fe1-d90b21431b4b" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Isreali supported activity">
+    <variant base="Isreali"/>
+  </token>
+  <token label="Environment" entryId="http://www.tensor-project.eu/taxomony##0ba29c6a-1afa-3f58-ab03-a26162c72274" parentId="http://www.tensor-project.eu/taxomony##c41a3189-0959-344c-a523-af684561abe5" parentLabel="Target">
+    <variant base="Environment"/>
+  </token>
+  <token label="Sect of Revolutionarys (SE)" entryId="http://www.tensor-project.eu/taxomony##f003c44d-eab6-39aa-aedf-aff864c77402" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Sect of Revolutionaries or Rebel Sect (Greek: S??ta t?? ?pa?astat??, Sechta ton Epanastaton) is a far-left (although they have been called a part of the revolutionary nihilist movement) terrorist group currently active in Greece. They first became known in February 2009 with a threat to kill Greek police officers at the Police-station in Korydallos. There was also a shooting on 17 February 2009 at the headquarters of Alter TV linked to the Sect of Revolutionaries, which caused no injuries. In June 2009, they assassinated an anti-terrorist police officer, following the 2008 riots. After the attack, the group released a statement in which they warned, &quot;Journalists, this time we came to your door, but next time you will find us in your homes.&quot; In July 2010, the group claimed responsibility for the assassination of Sokratis Giolias, with the police saying they believed the statement was authentic.">
+    <variant base="Sect of Revolutionarys (SE)"/>
+  </token>
+  <token label="Red Hand Commando" entryId="http://www.tensor-project.eu/taxomony##957f66a2-0b44-356b-a791-2f5e85a55914" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Red Hand Commando (RHC) was a small loyalist paramilitary group. Its chief aim was to maintain Northern Ireland as part of the UK, and to oppose by force the republican movement that aimed to make Northern Ireland part of a unified Ireland free of British control. RHC was closely allied to the Ulster Volunteer Force (UVF), one of the largest loyalist paramilitary groups in Northern Ireland. The two groups had separate command structures but shared weapons and moved together on major political issues, jointly engaging in the peace process and ultimately decommissioning their weapons in 2009. The UVF and RHC together are believed to be responsible for over 500 deaths in the course of the modern Northern Ireland conflict, mainly of Catholic civilians.">
+    <variant base="Red Hand Commando"/>
+  </token>
+  <token label="Haqqani Network" entryId="http://www.tensor-project.eu/taxomony##3651c219-4a3d-3bf1-8366-6e09af810628" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Haqqani Network is a militant Islamist group operating in Afghanistan and Pakistan. The group is affiliated with the Afghan Taliban, though the group retains its own command structure.">
+    <variant base="Haqqani Network"/>
+  </token>
+  <token label="Al-Qaeda in the Indian Subcontinent (AQIS)" entryId="http://www.tensor-project.eu/taxomony##9428273f-19f2-3d18-a5ab-16668c7e2304" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="AQIS is al-Qaeda&#65533;s newest branch, founded in September 2014. Reportedly operating in Afghanistan, Pakistan, India, Burma, Bangladesh, and Kashmir, the group seeks to wage jihad in order to establish an Islamic state. ">
+    <variant base="Al-Qaeda in the Indian Subcontinent (AQIS)"/>
+    <variant base="Ansar al Islam"/>
+    <variant base="Organisation of The Base of Jihad in the Indian Subcontinent"/>
+    <variant base="Jamaat Qaidat al-Jihad fi'shibhi al-Qarrat al-Hindiya"/>
+    <variant base="Qaedat al-Jihad"/>
+    <variant base="Jamaat Qaidat al-jihad fi&#65533;shibhi al-qarrat al-Hindiy"/>
+    <variant base="Qaedat al-Jihad in the Indian Subcontinent"/>
+  </token>
+  <token label="Takfiri" entryId="http://www.tensor-project.eu/taxomony##7d4b7559-b76e-3acb-8562-a92eb71e28d9" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Believe in Islam strictly according to their own interpretation of Muhammad's and his companions' actions and statements, and do not accept any deviation from their path; they reject any reform or change to their interpretation of religion as it was revealed in the time of the prophet">
+    <variant base="Takfiri"/>
+  </token>
+  <token label="Homophobic" entryId="http://www.tensor-project.eu/taxomony##bdab54b6-254e-3956-9293-628db498f6d6" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Having or showing a dislike of or prejudice against homosexual people.">
+    <variant base="Homophobic"/>
+  </token>
+  <token label="Cybercrime" entryId="http://www.tensor-project.eu/taxomony##8c1509cd-4a1b-3ba5-b832-5f10397fce13" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="A crime that involves a computer and a network.">
+    <variant base="Cybercrime"/>
+  </token>
+  <token label="Hizb-E-Islami Gulbuddin (HIG)" entryId="http://www.tensor-project.eu/taxomony##f02195be-f3c1-3726-bc48-d2b5246c2b12" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Hezb-e-Islami, or, &quot;Party of Islam&quot; is a political and paramilitary organisation in Afghanistan founded in 1976 by the former prime minister Gulbuddin Hekmatyar. The group has conducted some widely publicized attacks during the past few years. Most recently, HIG spokesman Haroon Zarghoon claimed responsibility for a suicide VBIED attack in Kabul on 7 July 2015 against a NATO convoy. HIG also claimed responsibility for a deadly insider attack in April 2015 in Nangarhar Province in which a US soldier was killed. On 10 February 2014, the group executed an attack which killed at least two US civilians and wounded two other Americans and seven Afghan nationals. HIG was also responsible for a 16 May 2013 suicide VBIED attack in Kabul, which destroyed a US armored SUV and killed two US soldiers, four US civilian contractors, eight Afghans&#65533;including two children&#65533;and wounded at least 37 others. The attack marked the deadliest incident against US personnel in Kabul in 2013.">
+    <variant base="Hizb-E-Islami Gulbuddin (HIG)"/>
+  </token>
+  <token label="Right Wing" entryId="http://www.tensor-project.eu/taxomony##03617444-7470-3deb-a030-00788d03dbd3" parentId="http://www.tensor-project.eu/taxomony##bcb24a78-282c-3d53-a11a-83c5f3752117" parentLabel="Nationalist" comment="A Political ideology that certain social orders and hierarchies are inevitable, natural, normal, or desirable, typically defending this position on the basis of natural law, economics or tradition.">
+    <variant base="Right Wing"/>
+  </token>
+  <token label="Industrial Explosive" entryId="http://www.tensor-project.eu/taxomony##e089dddd-1f36-3057-a19b-e9883dc3f298" parentId="http://www.tensor-project.eu/taxomony##e7f88ae0-3dba-348b-8660-029cbdfddee3" parentLabel="Explosive">
+    <variant base="Industrial Explosive"/>
+  </token>
+  <token label="Revolutionary Armed Forces of Colombia (FARC)" entryId="http://www.tensor-project.eu/taxomony##b65a48a0-7f39-37ab-be18-1d66c14377d7" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Although the FARC have recently (2016) sought to be make peace with the Colombian government and be removed form the US and European terrorist group list, they are still an active and armed guerilla organisation, responsible for mass production and exportation of cocain used to fund its right-wing paramilitary. This paramilitary is responsible for armed conflict, killings, intimidation and disruption tactics against individuals associated with communist ideals. As of October 2016 the Colombian government have signed a new peace deal with Farc hopiing to secure demobalisation and de-militarisation, however despite praise for the deal, the future is uncertain.">
+    <variant base="Revolutionary Armed Forces of Colombia (FARC)"/>
+  </token>
+  <token label="Millatu Ibrahim" entryId="http://www.tensor-project.eu/taxomony##6eca681c-744e-37ec-be8a-2e89b5672b01" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Outlawed as terrorist org in Germany. Followersof the Al Qaida ideology as described by Al-Maqdisi">
+    <variant base="Millatu Ibrahim"/>
+  </token>
+  <token label="Vehicle" entryId="http://www.tensor-project.eu/taxomony##d55b1eb6-262f-3f4d-8c58-b1204bf04416" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom" comment="Use of a vehicle as weapon.">
+    <variant base="Vehicle"/>
+  </token>
+  <token label="Janjaweed" entryId="http://www.tensor-project.eu/taxomony##574e065b-75e5-3c59-be29-f9499c23b6b2" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Janjaweed consists of a varying group of arabic Islamic individuals from the Darfur, Sudan and eastern Chad region, most notibly made up of the Abbala and Baggara camel/cattle herder people. Since 2003 they have been one of the main instigators and involved actors in the Dafur conflict, leading an Islamic yet Arabic superiority/nationalist ideology against the African ethnic muslims. Sudan's president, Omar al-Bashir has proposedly been supporting the Janjaweed militias, this has lead to military grade armaments and a lack of accountability for war crimes including alleged genocide. Sudan admits to having mobilised militias to counter the JEM (Justice and Equality Movement) and the SLA (Sudan Liberation Army) which initially attacked government targets in 2003 for the oppression of black ethnic groups and communities.">
+    <variant base="Janjaweed"/>
+  </token>
+  <token label="Russian" entryId="http://www.tensor-project.eu/taxomony##deba6920-e706-3540-9385-fe1fb5a379ec" parentId="http://www.tensor-project.eu/taxomony##2b6dcacc-74ea-3019-9e12-96698ed6e0c3" parentLabel="Loyalist" comment="A political ideology with allegiance towards the Russian">
+    <variant base="Russian"/>
+  </token>
+  <token label="Badr Organization" entryId="http://www.tensor-project.eu/taxomony##abef2ddd-b04a-3576-adea-483432e43754" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Badr Organization is a Shiite political party and paramilitary force that acts as Iran&#65533;s oldest proxy in Iraq. Given the group&#65533;s deep ties to Iran and its political and military preeminence, analysts have compared the Badr Organization in Iraq to Hezbollah in Lebanon.">
+    <variant base="Badr Organization"/>
+    <variant base="Badr Brigade"/>
+    <variant base="Martyr Mohamed Baqir al-Sadr Forces"/>
+    <variant base="Badr Brigades"/>
+    <variant base="Badr Organisation in Iraq"/>
+    <variant base="Munathamat Badr"/>
+    <variant base="Quwet Shahid Baqir Sadr (BOQSBS)"/>
+    <variant base="Martyr Muhammed Baqir al-Sadr Forces"/>
+    <variant base="Badr Organization of Reconstruction and Development"/>
+    <variant base="Badr Corps"/>
+  </token>
+  <token label="Anti-Semitic" entryId="http://www.tensor-project.eu/taxomony##e69840de-dd9d-3232-886f-1db13753fa52" parentId="http://www.tensor-project.eu/taxomony##55234552-5533-3229-ac1c-62a7ebbeb7a7" parentLabel="Ethnic" comment="Hostile to or prejudiced against Jews.">
+    <variant base="Anti-Semitic"/>
+  </token>
+  <token label="Shia" entryId="http://www.tensor-project.eu/taxomony##d3f0933c-01e3-3012-85b2-d105dd61a1c8" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="One of the two main branches of Islam, followed by about a tenth of Muslims, especially in Iran, that rejects the first three Sunni caliphs and regards Ali, the fourth caliph, as Muhammad's first true successor.">
+    <variant base="Shia"/>
+  </token>
+  <token label="Imarat Kavkaz" entryId="http://www.tensor-project.eu/taxomony##2c02ea9e-7393-3c2b-8af9-d42cf525acec" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Imarat Kavkaz"/>
+  </token>
+  <token label="Al-Shabab" entryId="http://www.tensor-project.eu/taxomony##f29b0339-0c02-320d-98e2-81dfe88b5984" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Al-Qaeda&#65533;s Somali-based branch, al-Shabab, seeks to establish a fundamentalist Islamic state. The group has carried out a score of violent terror attacks, including the September 2013 Westgate Mall attacks in Nairobi, Kenya.">
+    <variant base="Al-Shabab"/>
+    <variant base="Shabaab"/>
+    <variant base="Al-Shabaab al-Jihaad al Shabaab"/>
+    <variant base="Al Shabab"/>
+    <variant base="Youth Wing"/>
+    <variant base="Movement of Warrior Youth"/>
+    <variant base="Mujahidin Al-Shabaab Movement"/>
+    <variant base="Al-Shabaab"/>
+    <variant base="Hezb al-Shabaab"/>
+    <variant base="As-Sa?ab"/>
+    <variant base="Al-Shabaab al-Islamiya"/>
+    <variant base="The Popular Resistance Movement in the Land of the Two Migrations (PRM)"/>
+    <variant base="Al-Shabaab al-Islaam"/>
+    <variant base="Harakat Shabaab Al Mujahidin"/>
+    <variant base="The Youth"/>
+    <variant base="Muhajiroon brigade (division made up of foreign fighters)"/>
+    <variant base="Harakat al-Shabaab al-Mujahideen (HSM)"/>
+    <variant base="Mujahideen Youth Movement (MYM)"/>
+    <variant base="Ash-Shabaab"/>
+    <variant base="Unity of Islamic Youth"/>
+    <variant base="The Party of Youth"/>
+    <variant base="Hizbul Shabaab"/>
+    <variant base="Hisb'ul Shabaab"/>
+  </token>
+  <token label="Kata&#65533;ib Hezbollah" entryId="http://www.tensor-project.eu/taxomony##f555cee5-a87c-3b98-9d61-1429ee9869cb" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="KH is a U.S.-designated anti-American Shiite militia operating in Iraq with ancillary operations in Syria. During the U.S.-led war in Iraq that began in 2003, KH earned a reputation for planting deadly roadside bombs to attack U.S. and coalition forces.">
+    <variant base="Kata&#65533;ib Hezbollah"/>
+    <variant base="Battalions of the Party of God"/>
+    <variant base="Kataib Hizbullah"/>
+    <variant base="Islamic Resistance in Iraq"/>
+    <variant base="Kata&#65533;ib Hizballah fi al-Iraq"/>
+    <variant base="Kataib Hizbollah"/>
+    <variant base="Kata&#65533;ib Hezbollah"/>
+    <variant base="Khattab Hezballah"/>
+    <variant base="Kata&#65533;ib Hizballah"/>
+    <variant base="Khata&#65533;ib Hizballah"/>
+    <variant base="Kataib Hizb Allah"/>
+    <variant base="Hizballah Brigades&#65533;Iraq of the Islamic Resistance in Iraq"/>
+    <variant base="Hizballah Brigades&#65533;Iraq"/>
+    <variant base="Khata&#65533;ib Hezbollah"/>
+    <variant base="Brigades of the Party of God"/>
+    <variant base="Hizballah Brigades in Iraq"/>
+    <variant base="Hezbollah Brigades"/>
+    <variant base="Katibut Karbalah"/>
+    <variant base="Katibat Zayd Ebin Ali"/>
+    <variant base="Battalions of Hezbollah"/>
+    <variant base="Katibat Abu Fathel Al A&#65533;abas"/>
+    <variant base="Hizballah Brigades"/>
+  </token>
+  <token label="Ulster Defence Association" entryId="http://www.tensor-project.eu/taxomony##2f4b1ba2-5139-3a04-85ef-62f1a01ef90e" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Ulster Defense Association (UDA) was formed in 1971 from a number of neighborhood watch groups and vigilante organizations in Belfast. After emerging in response to the outbreak of &quot;the Troubles,&quot; the UDA quickly became the largest loyalist paramilitary organization and remained so throughout the Troubles. The UDA used the Ulster Freedom Fighters (UFF) name as a cover for sectarian killings. Despite the well-established relationship, the UDA itself was not listed as a proscribed organization until 1992. The UDA was a large and decentralized organization, led by an inner council of six regionally-based leaders, each with veto power. After failing to follow through on its 1994 ceasefire, the UDA finally decommissioned its arsenal in 2010.">
+    <variant base="Ulster Defence Association"/>
+  </token>
+  <token label="Ideology" entryId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism" comment="System of ideas and ideals, especially one which forms the basis of political or religions theory and policy">
+    <variant base="Ideology"/>
+  </token>
+  <token label="Iranian-sponsored" entryId="http://www.tensor-project.eu/taxomony##849546e5-ef36-3d6d-bdda-71df586507f7" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Iran sponsored - funding, providing equipment, weapons, training and giving sanctuary to">
+    <variant base="Iranian-sponsored"/>
+  </token>
+  <token label="Suicide Bomber" entryId="http://www.tensor-project.eu/taxomony##2a2a6cb6-3d8d-3a06-9e4e-10bfe397751d" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom" comment="An improvised explosive device, a belt or a vest packed with explosives and armed with a detonator, worn by suicide bombers.">
+    <variant base="Suicide Bomber"/>
+  </token>
+  <token label="Jihadist" entryId="http://www.tensor-project.eu/taxomony##d53093a6-76c3-383c-83fd-27dc4c5b0caa" parentId="http://www.tensor-project.eu/taxomony##f3677990-e177-3e6e-9578-6c2874493128" parentLabel="Religious" comment="Members involved in a struggle or fight against the enemies of Islam">
+    <variant base="Jihadist"/>
+  </token>
+  <token label="Nationalist" entryId="http://www.tensor-project.eu/taxomony##bcb24a78-282c-3d53-a11a-83c5f3752117" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A political ideology that can be described from political, sociological and psychological perspectives">
+    <variant base="Nationalist"/>
+  </token>
+  <token label="Al-Qaeda" entryId="http://www.tensor-project.eu/taxomony##e2617c88-17bd-399c-a86c-aa4a728d04d6" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Al-Qaeda&#65533;s 9/11 attacks was the deadliest ever on American soil, killing nearly 3,000 people. Since the fall of the Taliban, al-Qaeda has established operations worldwide, including in Syria, the Gulf, North Africa, West Africa, East Africa, and the Indian subcontinent.">
+    <variant base="Al-Qaeda"/>
+  </token>
+  <token label="Kidnapping" entryId="http://www.tensor-project.eu/taxomony##f499a83b-0921-368c-9b26-75f5dacfe492" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom" comment="The abduction or unlawful transportation of a person.  Usually to hold the person against their will.">
+    <variant base="Kidnapping"/>
+  </token>
+  <token label="Ethnic" entryId="http://www.tensor-project.eu/taxomony##0748389d-71dc-39fc-9406-d26e9a4e0691" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Ethnic ideology.">
+    <variant base="Ethnic"/>
+  </token>
+  <token label="Audio" entryId="http://www.tensor-project.eu/taxomony##b22f0418-e8ac-315e-b66f-829d262d14a2" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Audio"/>
+  </token>
+  <token label="Nazism" entryId="http://www.tensor-project.eu/taxomony##9715fba4-b0df-3028-b27a-71c305dd8952" parentId="http://www.tensor-project.eu/taxomony##b25d40e2-2384-33d4-8853-a328166b101f" parentLabel="Fascist" comment="Ideology and practice associated with the 20th-century German Nazi Party and Nazi Germany, as well as other far-right groups">
+    <variant base="Nazism"/>
+  </token>
+  <token label="Religious" entryId="http://www.tensor-project.eu/taxomony##f0e27ae9-4e49-3d61-aa56-72eeef2473c4" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Political religious ideology.">
+    <variant base="Religious"/>
+  </token>
+  <token label="Transnational" entryId="http://www.tensor-project.eu/taxomony##09c67696-63c3-3dae-8e99-99efd3178be1" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Operating across national boundaries">
+    <variant base="Transnational"/>
+  </token>
+  <token label="Anti UK" entryId="http://www.tensor-project.eu/taxomony##defe6856-60a3-3f7d-9129-3dbe3744c50a" parentId="http://www.tensor-project.eu/taxomony##1f9dd441-b0d5-330d-8957-d31b4049d069" parentLabel="Separatist" comment="Uk advocacy of a state of cultural, ethnic, tribal, religious, racial, governmental or gender separation from the larger group">
+    <variant base="Anti UK"/>
+  </token>
+  <token label="Ansar al-Sharia in Tunisia (AST)" entryId="http://www.tensor-project.eu/taxomony##c77bb0f6-9e2a-30e0-86a8-dc7f0da9320f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="AST is a violent jihadist group that seeks to implement sharia (Islamic law) in Tunisia. The group has initiated several violent protests, including the September 2012 attack on the U.S. embassy in Tunis. ">
+    <variant base="Ansar al-Sharia in Tunisia (AST)"/>
+    <variant base="Partisans of Sharia in Tunisia"/>
+    <variant base="Shabab al-Tawhid (ST)"/>
+    <variant base="Ansar al-Shari&#65533;ah in Tunisia"/>
+    <variant base="Ansar al-Shari&#65533;a in Tunisia (AAS-T)"/>
+    <variant base="Ansar al-Shari&#65533;ah"/>
+    <variant base="Al-Qayrawan Media Foundation"/>
+    <variant base="Supporters of Islamic Law in Tunisia"/>
+    <variant base="Supporters of Sharia in Tunisia"/>
+    <variant base="Supporters of Islamic Law"/>
+    <variant base="Ansar al-Sharia"/>
+    <variant base="Partisans of Islamic Law in Tunisia"/>
+  </token>
+  <token label="Soft Target" entryId="http://www.tensor-project.eu/taxomony##0624f43f-b55c-3ee9-85db-e0877d06c0b2" parentId="http://www.tensor-project.eu/taxomony##7b9cf007-806e-3854-8d12-ab800c8a982b" parentLabel="Place" comment="Weakly defended.">
+    <variant base="Soft Target"/>
+  </token>
+  <token label="Conspiracy of Fire Nuclei (SPF)" entryId="http://www.tensor-project.eu/taxomony##b4efb353-49e5-3939-8553-1be07dbacd6d" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="SPF, an anarchist group, claimed responsibility for a 2010 parcel bomb campaign that targeted international leaders and institutions outside Greece, a first for Greek domestic terrorists. A series of arrests from late 2010 through 2011 against the group&#65533;s leadership temporarily crippled SPF&#65533;s operations. In June 2013, however, SPF claimed responsibility for a bomb attack against the car of the director of Korydallos prison&#65533;where many domestic terrorists are currently held&#65533;promising more attacks and declaring a common front with other like-minded groups and the international Informal Anarchist Federation/International Revolutionary Front. In April 2014, SPF claimed responsibility for a parcel bomb targeting a police station.">
+    <variant base="Conspiracy of Fire Nuclei (SPF)"/>
+  </token>
+  <token label="Marxist" entryId="http://www.tensor-project.eu/taxomony##dbb1f2f9-48e4-30d6-ae6c-ddd13de8fdaa" parentId="http://www.tensor-project.eu/taxomony##32589cab-9c26-3d3b-bb50-2a73c91bbc82" parentLabel="Socialist" comment="A method of socioeconomic analysis that analyzes class relations and societal conflict using a materialist interpretation of historical development and a dialectical view of social transformation">
+    <variant base="Marxist"/>
+  </token>
+  <token label="Hard Target" entryId="http://www.tensor-project.eu/taxomony##cdd3f14b-edd8-33eb-9746-feee0d9ee9f4" parentId="http://www.tensor-project.eu/taxomony##78386ec8-f284-3742-8324-a3d7d3e800ff" parentLabel="People" comment="Strongly defended.">
+    <variant base="Hard Target"/>
+  </token>
+  <token label="Soft Target" entryId="http://www.tensor-project.eu/taxomony##af5d65d9-f338-3815-be62-f577c3dd37ca" parentId="http://www.tensor-project.eu/taxomony##9a93f035-fbc2-3dbc-ac75-3a5def253815" parentLabel="Cyberspace" comment="Weakly defended.">
+    <variant base="Soft Target"/>
+  </token>
+  <token label="Ethnic" entryId="http://www.tensor-project.eu/taxomony##3ea15d64-66ef-3112-b195-3a6f72314ca1" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="Directed towards a category of people who identify with each other based on similarities, such as common ancestral, language, social, cultural or national experiences.">
+    <variant base="Ethnic"/>
+  </token>
+  <token label="State Sponsored" entryId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="State sponsored ideology.">
+    <variant base="State Sponsored"/>
+  </token>
+  <token label="Bangsamoro Islamic Freedom Movement/Fighters (BIFM/BIFF)" entryId="http://www.tensor-project.eu/taxomony##5eca3052-bc90-3ace-9561-db4f42db46d4" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Bangsamoro Freedome Fighters/Movement, is an Islamic seperatist organisation based in the southern Philipines, it seeks a seperate state ruled under Islamic law for the Filipino Muslim minority, known as the Moro people,  who live in the Philippines' Mindanao region. The group was founded in 2010 as a splinter from the Moro National Liberation Front. The group has mainly attacked military buildings and individuals.  As of 2014 the group is reportedly allied with the MILF (Moro Islamic Liberation Front) whom in 2015 were involved in the; 'Mamasapano Clash' leading to the deaths of 44 members of the (Special Action Force) SAF, although suffering casulties more than 100 collective casulties.">
+    <variant base="Bangsamoro Islamic Freedom Movement/Fighters (BIFM/BIFF)"/>
+  </token>
+  <token label="Ku Klux Klan" entryId="http://www.tensor-project.eu/taxomony##cb2db878-351a-34a3-a3bb-a7425abaf271" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The KKK is the oldest and most notorious hate group in the United States. Today, the KKK is no longer a single, cohesive organization, but has instead splintered into at least four main offshoots and dozens of smaller factions, each of which identify as members of &#65533;the Klan&#65533; and...">
+    <variant base="Ku Klux Klan"/>
+    <variant base="Church of the National Knights of the Ku Klux Klan"/>
+    <variant base="Original Knight Riders Knights of the Ku Klux Klan"/>
+    <variant base="United Northern and Southern Knights of the Ku Klux Klan"/>
+    <variant base="National Aryan Knights of the Ku Klux Klan"/>
+    <variant base="Imperial Klans of America"/>
+    <variant base="Traditionalist American Knights of the Ku Klux Klan"/>
+    <variant base="Knights of the Ku Klux Klan (the Knights Party)"/>
+    <variant base="Brotherhood of Klans"/>
+    <variant base="Loyal White Knights of the Ku Klux Klan"/>
+    <variant base="Ku Klos Knights of the Ku Klux Klan"/>
+    <variant base="The Klan"/>
+    <variant base="United Klans of America"/>
+  </token>
+  <token label="Military" entryId="http://www.tensor-project.eu/taxomony##7d2957df-d3b8-38fc-8087-f60c3c650953" parentId="http://www.tensor-project.eu/taxomony##025b32e7-318a-30eb-9162-fa558b4bec98" parentLabel="Hard Target">
+    <variant base="Military"/>
+  </token>
+  <token label="Segregationist" entryId="http://www.tensor-project.eu/taxomony##435a28d4-9f96-3250-b68e-070d2c024ae6" parentId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentLabel="Political" comment="Believes that people of different races should be kept apart.">
+    <variant base="Segregationist"/>
+  </token>
+  <token label="Pan-Islamist" entryId="http://www.tensor-project.eu/taxomony##e3836a9f-0e9f-37cc-a1c6-cc5bdf0f3620" parentId="http://www.tensor-project.eu/taxomony##869f95d0-7e12-33dc-8e37-661012272e17" parentLabel="Political" comment="Political movement advocating the unity of Muslims under one Islamic state &#65533; often a Caliphate &#65533; or an international organization with Islamic principles">
+    <variant base="Pan-Islamist"/>
+  </token>
+  <token label="Vehicle" entryId="http://www.tensor-project.eu/taxomony##29cac692-83a2-3cab-ac09-95455cbe9480" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom" comment="Use of a vehicle as weapon.">
+    <variant base="Vehicle"/>
+  </token>
+  <token label="Modus Operandi" entryId="http://www.tensor-project.eu/taxomony##287afcf1-c19b-3073-8a85-b73473341baa" parentId="http://www.tensor-project.eu/taxomony##8483613c-1fd3-3e1d-a7b2-5d774503a500" parentLabel="Terrorism" comment="Method or mode of operation.">
+    <variant base="Modus Operandi"/>
+  </token>
+  <token label="Cyber" entryId="http://www.tensor-project.eu/taxomony##046e43ea-3926-32f1-af41-6a870f995a62" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom" comment="Computers or information technology">
+    <variant base="Cyber"/>
+  </token>
+  <token label="Ansar al-Sharia in Libya (ASL)" entryId="http://www.tensor-project.eu/taxomony##8080ff65-9125-389b-a2cd-605f22a69034" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="ASL is a violent terrorist group that seeks to implement sharia in Libya. In 2012, ASL&#65533;s predecessor groups attacked the U.S. consulate in Benghazi, killing four Americans, including U.S. Ambassador to Libya Christopher Stevens.">
+    <variant base="Ansar al-Sharia in Libya (ASL)"/>
+    <variant base="Partisans of Islamic Law in Libya"/>
+    <variant base="Katibat Ansar al-Charia"/>
+    <variant base="Katibat Ansar al-Sharia"/>
+    <variant base="Supporters of Sharia in Libya"/>
+    <variant base="Ansar al-Charia in Libya"/>
+    <variant base="Partisans of Sharia in Libya"/>
+    <variant base="Supporters of Islamic Law in Libya"/>
+  </token>
+  <token label="Sabotage" entryId="http://www.tensor-project.eu/taxomony##fcf6c522-71a8-38ba-ad56-8cab1c4a6922" parentId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentLabel="Martyrdom" comment="Use of a vehicle as weapon.">
+    <variant base="Sabotage"/>
+  </token>
+  <token label="State Actor" entryId="http://www.tensor-project.eu/taxomony##8e12acdf-94d8-36ee-894d-de85bdad0a37" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Acting on behalf of a governmental body">
+    <variant base="State Actor"/>
+  </token>
+  <token label="Monument" entryId="http://www.tensor-project.eu/taxomony##64ff06a3-760f-3cd7-819d-86a751a74205" parentId="http://www.tensor-project.eu/taxomony##0624f43f-b55c-3ee9-85db-e0877d06c0b2" parentLabel="Soft Target">
+    <variant base="Monument"/>
+  </token>
+  <token label="Socialist" entryId="http://www.tensor-project.eu/taxomony##32589cab-9c26-3d3b-bb50-2a73c91bbc82" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A range of economic and social systems characterised by social ownership and democratic control of the means of production; as well as the political ideologies, theories, and movements that aim to establish them.">
+    <variant base="Socialist"/>
+  </token>
+  <token label="Al-Muhajiroun/ Islam 4UK" entryId="http://www.tensor-project.eu/taxomony##062bfcf2-9fa7-3461-95af-d023f4559d7a" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Islam4UK was a radical Islamist group that operated in the United Kingdom. The group was proscribed as a terrorist organisation under the UK's counter terrorism laws on 14 January 2010. Before its proscription it was led by Anjem Choudary.">
+    <variant base="Al-Muhajiroun/ Islam 4UK"/>
+  </token>
+  <token label="Sabotage" entryId="http://www.tensor-project.eu/taxomony##78aa585f-10fc-35da-9591-1ec312fb68e9" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom" comment="Rebel or revolutionary fighting against a government">
+    <variant base="Sabotage"/>
+  </token>
+  <token label="Nationalist" entryId="http://www.tensor-project.eu/taxomony##8e6166ea-e901-3334-83b0-c1f8ca554449" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Nationalist ideology.">
+    <variant base="Nationalist"/>
+  </token>
+  <token label="Martyrdom" entryId="http://www.tensor-project.eu/taxomony##f6c01326-dbfa-324c-acd4-bc4e8824bf77" parentId="http://www.tensor-project.eu/taxomony##287afcf1-c19b-3073-8a85-b73473341baa" parentLabel="Modus Operandi" comment="The death or suffering of a martyr.">
+    <variant base="Martyrdom"/>
+  </token>
+  <token label="Loyalist" entryId="http://www.tensor-project.eu/taxomony##2b6dcacc-74ea-3019-9e12-96698ed6e0c3" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="A political ideology that can be described from political, sociological and psychological perspectives">
+    <variant base="Loyalist"/>
+  </token>
+  <token label="Hilafet Devleti" entryId="http://www.tensor-project.eu/taxomony##e04dbf82-5609-3fee-ba68-6ae549ea106c" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="aka Kalifatstaat aka Kaplancilar. German in 2001 forbidden etremist org. founded in 1994. Leader Metin Kaplan was serving a lifetie sentence inTurkey, but was released 2016. Still has some supporters in Germany">
+    <variant base="Hilafet Devleti"/>
+  </token>
+  <token label="Imrat Kavkaz (IK)" entryId="http://www.tensor-project.eu/taxomony##7ab2200d-24b1-3f18-a4ce-f3f53b5b69ca" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Imirat Kavkaz (IK), founded in late 2007 by now-deceased Chechen extremist Doku Umarov, is an Islamist militant organization based in Russia&#65533;s North Caucasus. Its stated goal is the liberation of what it considers to be Muslim lands from Moscow. The group, now led by Abu Usman Gimrinskiy, also known as Magomed Suleymanov, regularly conducts attacks against Russian security forces in the North Caucasus. In the period 2010-2013, it carried out high-profile suicide bombings against civilian targets in Moscow and elsewhere in Russia that killed dozens. The group has been badly weakened by recent defections of senior leaders and fighters to the Islamic State of Iraq and the Levant (ISIL), and it remains unclear how many extremists remain loyal to IK in the North Caucasus. Nonetheless, at least one militant group fighting Bashar al-Asad in Syria composed partly of North Caucasians remains loyal to IK leadership and Gimrinskiy. The US State Department in May 2011 designated Imirat Kavkaz as a Specially Designated Terrorist Group under Executive Order 13224.">
+    <variant base="Imrat Kavkaz (IK)"/>
+  </token>
+  <token label="Police Officer" entryId="http://www.tensor-project.eu/taxomony##79d78c3a-1321-3d20-8e30-813c22752861" parentId="http://www.tensor-project.eu/taxomony##cdd3f14b-edd8-33eb-9746-feee0d9ee9f4" parentLabel="Hard Target">
+    <variant base="Police Officer"/>
+  </token>
+  <token label="Iranian" entryId="http://www.tensor-project.eu/taxomony##1173373e-65b9-3236-aaa0-7b1aa4dbf868" parentId="http://www.tensor-project.eu/taxomony##6bfe5bdf-aa39-3399-8549-d8b13ea29d2d" parentLabel="State Sponsored" comment="Iranian supported activity">
+    <variant base="Iranian"/>
+  </token>
+  <token label="Political" entryId="http://www.tensor-project.eu/taxomony##749a9990-163e-34a7-ae94-d4708607049a" parentId="http://www.tensor-project.eu/taxomony##d25cebe2-feae-36d6-a354-cf55caba9d15" parentLabel="Ideology" comment="Political ideology.">
+    <variant base="Political"/>
+  </token>
+  <token label="International/Alternative" entryId="http://www.tensor-project.eu/taxomony##4e692e82-05e6-3e52-a916-acf31d4ef697" parentId="http://www.tensor-project.eu/taxomony##32589cab-9c26-3d3b-bb50-2a73c91bbc82" parentLabel="Socialist" comment="Broad array of political organizations have practiced terrorism to further their objectives.">
+    <variant base="International/Alternative"/>
+  </token>
+  <token label="Poison" entryId="http://www.tensor-project.eu/taxomony##3a9d1818-d0d7-3564-ae63-465baf7d366f" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom">
+    <variant base="Poison"/>
+  </token>
+  <token label="Asaib Ahl al-Haq" entryId="http://www.tensor-project.eu/taxomony##5eebf580-5cc2-3017-9a10-07fdd4f21584" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="AAH is an Iranian-backed Shiite militia and political party operating primarily in Iraq, as well as in Syria and Lebanon. Until the U.S. military withdrawal from Iraq in December 2011, AAH had launched more than 6,000 attacks on American and Iraqi forces.">
+    <variant base="Asaib Ahl al-Haq"/>
+    <variant base="Bands of Right"/>
+    <variant base="Honest Ones"/>
+    <variant base="People of the Cave"/>
+    <variant base="Al-Sadiqun"/>
+    <variant base="Special Groups"/>
+    <variant base="League of the Righteous"/>
+    <variant base="Khazali Faction"/>
+    <variant base="Islamic Shiite Resistance in Iraq"/>
+    <variant base="Asa&#65533;ib Ahl al-Haq"/>
+    <variant base="Band of the Righteous"/>
+    <variant base="Ahl al-Kahf"/>
+    <variant base="Bands of the Righteous"/>
+    <variant base="League of Righteousness"/>
+    <variant base="Khazali Network"/>
+  </token>
+  <token label="Non Traveller" entryId="http://www.tensor-project.eu/taxomony##ba6f5789-6343-32d5-b435-c3f2f8d7aa59" parentId="http://www.tensor-project.eu/taxomony##d0d6ede8-f220-3872-bcac-6d8033bca398" parentLabel="Individual">
+    <variant base="Non Traveller"/>
+  </token>
+  <token label="Euskadi Ta Askatasuna (ETA)" entryId="http://www.tensor-project.eu/taxomony##5e567bf6-5064-3c58-a945-5ad2eb4b05bc" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="ETA, an acronym for Euskadi Ta Askatasuna &quot;Basque Country and Freedom&quot; Is an armed Basque nationalist and separatist organization in northern Spain and southwestern France. The group was founded in 1959 and later evolved from a group promoting traditional Basque culture to a paramilitary group engaged in a violent campaign of bombing, assassinations and kidnappings in the Spanish Basque country and throughout Spanish territory. Its goal was gaining independence for the Greater Basque Country. ETA is the main group within the Basque National Liberation Movement and is the most important participant in the Basque conflict. Since 1968, ETA has been held responsible for killing 829 people, injuring thousands and undertaking dozens of kidnappings. The group is proscribed as a terrorist group by Spain, the United Kingdom, France, the United States, and the European Union.">
+    <variant base="Euskadi Ta Askatasuna (ETA)"/>
+  </token>
+  <token label="Night Club" entryId="http://www.tensor-project.eu/taxomony##8e5f355d-e112-3830-b2e2-3632b650ba7f" parentId="http://www.tensor-project.eu/taxomony##0624f43f-b55c-3ee9-85db-e0877d06c0b2" parentLabel="Soft Target">
+    <variant base="Night Club"/>
+  </token>
+  <token label="Jobbik" entryId="http://www.tensor-project.eu/taxomony##a4c404c4-4080-3a7e-862c-2048cd65b421" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Jobbik is a neo-Nazi, neo-fascist political party in Hungary that combines militant ethno-nationalism with anti-Semitism and anti-Roma racism. ">
+    <variant base="Jobbik"/>
+  </token>
+  <token label="Loyalist Volunteer Force" entryId="http://www.tensor-project.eu/taxomony##a5f81816-733c-3061-ac27-569bfa839224" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Loyalist Volunteer Force (LVF) split from the mid-Ulster Brigade of the UVF. Billy Wright created the LVF in 1996 together with Alex Kerr, a former UDA brigadier from South Belfast. Like other established paramilitary organizations, the LVF was given its own prison wing and used this as a vehicle for recruitment. The LVF went on to become one of the most violent and volatile paramilitary organization of the post-ceasefire period, killing XX people (mostly other loyalists). In further defiance of the Belfast UVF leadership, the LVF collaborated with Johnny Adair&#65533;s C Company Battalion of the UDA during the loyalist feuds. Together, members of the LVF and Adair&#65533;s C Company used a variety of cover names for violence they carried out in the early 2000&#65533;s: Red Hand Defenders, Loyalist Freedom Fighters, and Orange Volunteers. Wright was killed in prison by the INLA in 1997, and the UVF leadership stood down the LVF in 2005. ">
+    <variant base="Loyalist Volunteer Force"/>
+  </token>
+  <token label="Environmentalist" entryId="http://www.tensor-project.eu/taxomony##14bb94ff-dce6-31fe-a4e9-adb13a650c61" parentId="http://www.tensor-project.eu/taxomony##a8fd8359-4a10-3729-b909-66e72f37c4c3" parentLabel="Activist" comment="A political and ethical movement that seeks to improve and protect the quality of the natural environment through changes to environmentally harmful human activities.">
+    <variant base="Environmentalist"/>
+  </token>
+  <token label="Fulani Militants" entryId="http://www.tensor-project.eu/taxomony##d51fadb0-26f6-38b1-8fb1-593cc9770bbb" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Fulani militants are believed to carry out attacks mainly in Nigeria and CAR. In Nigeria, they mainly operate in the middle belt and attack primarily private citizens to gain control of grazing lands. At least 1,229 people were killed in suspected attacks by the Fulani militants in Nigeria in 2014. 'Fulani herders and farmers are in constant violent conflict over herdsmen's increased need for access to grazing lands against the expansion of farmland by farmers into corridors traditionally used by the Fulani,' according to the Terrorism Research &amp; Analysis Consortium (Trac). 'Farmers accuse the Fulani herders of allowing their animals to feed on still-growing crops, and contamination of community watering-places. The Fulani herders in turn accuse the farmers of denying them access to grazing areas when alternatives cannot be found,'">
+    <variant base="Fulani Militants"/>
+  </token>
+  <token label="Al-Qaeda in the Arabian Peninsula (AQAP)" entryId="http://www.tensor-project.eu/taxomony##c0b510dd-b340-39e3-920c-84a8aaa84102" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="AQAP is the union of al-Qaeda&#65533;s affiliated branches in Saudi Arabia and Yemen. AQAP has claimed responsibility for terror attacks and plots worldwide, including the January 2015 Charlie Hebdo attacks in Paris.">
+    <variant base="Al-Qaeda in the Arabian Peninsula (AQAP)"/>
+    <variant base="Al-Qa&#65533;ida in the Arabian Peninsula"/>
+    <variant base="Tanzim al-Qa&#65533;idat al-Jihad fi-Jazirat al-Arab"/>
+    <variant base="Al-Qaida in the South Arabian Peninsula"/>
+    <variant base="Al-Quaida Organization in the Arabian Peninsula (AQAP)"/>
+    <variant base="Al-Qaida of Jihad Organization in the Arabian Peninsula"/>
+    <variant base="Al-Qaedah in the Arabian Peninsula"/>
+    <variant base="Al-Qa&#65533;ida in Yemen (AQY)"/>
+    <variant base="Qaeda al-Jihad Organization in the Arabian Peninsula"/>
+    <variant base="Al-Qa'ida in the South Arabian Peninsula"/>
+    <variant base="Al-Qaida Organization in the Arabian Peninsula (AQAP)"/>
+    <variant base="Al-Qaida in Yemen (AQY)"/>
+    <variant base="Ansar al-Sharia (AAS)"/>
+    <variant base="Al-Quaida of Jihad Organization in the Arabian Peninsula"/>
+    <variant base="Ansar al-Shari&#65533;a (AAS)"/>
+    <variant base="Tanzim Qa&#65533;idat al-Jihad fi-Jazirat al-Arab"/>
+    <variant base="Qa&#65533;idah al-Jihad in the Arabian Peninsula"/>
+    <variant base="Qaida al-Jihad in the Arabian Peninsula"/>
+    <variant base="Al-Quaida in the South Arabian Peninsula"/>
+  </token>
+  <token label="Traveller" entryId="http://www.tensor-project.eu/taxomony##b04d35e5-3ecf-3fff-8311-88f1aad0ec21" parentId="http://www.tensor-project.eu/taxomony##d0d6ede8-f220-3872-bcac-6d8033bca398" parentLabel="Individual">
+    <variant base="Traveller"/>
+  </token>
+  <token label="Al-Aqsa (Martyrs Brigades)" entryId="http://www.tensor-project.eu/taxomony##66d85e24-73d2-3354-abce-b5c03e46e832" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group">
+    <variant base="Al-Aqsa (Martyrs Brigades)"/>
+  </token>
+  <token label="Left Wing" entryId="http://www.tensor-project.eu/taxomony##f4fefa72-c0b5-3db4-b713-e927fa0b5ea7" parentId="http://www.tensor-project.eu/taxomony##bcb24a78-282c-3d53-a11a-83c5f3752117" parentLabel="Nationalist" comment="A political ideology that supports social equality and egalitarianism, often in opposition to social hierarchy and social inequality.  It typically involves a concern for those in society whom its adherents perceive as disadvantaged relative to others (prioritarianism), as well as a belief that there are unjustified inequalities that need to be reduced or abolished.">
+    <variant base="Left Wing"/>
+  </token>
+  <token label="GICM" entryId="http://www.tensor-project.eu/taxomony##c842c91e-148f-37f5-83a8-7d5d64fa4e9f" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Groupe Islamique Combattant Marocain">
+    <variant base="GICM"/>
+  </token>
+  <token label="Hamas" entryId="http://www.tensor-project.eu/taxomony##37eb6336-ba86-3d0b-accf-658f7b35a4da" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Hamas is a U.S.-designated terrorist organization which has killed hundreds of Israeli citizens, as well as Americans, in suicide bombings and other terrorist attacks. Hamas has governed the Gaza Strip since it violently expelled the Palestinian Authority in 2007. ">
+    <variant base="Hamas"/>
+    <variant base="Harakat al-Muqawana al-Islamiya (Islamic Resistance Movement)"/>
+    <variant base="Al-Tiar Al-Islami (The Islamic Stream)"/>
+    <variant base="Al-Athja Al-Islami (The Islamic Trend)"/>
+  </token>
+  <token label="Balochistan Liberation Front (BLF)" entryId="http://www.tensor-project.eu/taxomony##10425b66-8aaf-3433-9f86-2732a741a690" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The Balochistan Liberation Front (BLF), also known as the Baloch Liberation Front, is an ethnic-separatist political front and militant organization that is currently fighting against the Pakistani government for an independent Balochi state.  Since 2012, the BLF has continued its attacks on foreign workers, journalists, and Pakistani government affiliates, including a recent attack against 20 foreign workers on April 11, 2015. SImilarly affiliated groups are the Lashkar-e-Balochistan (LeB) and Balochistan Liberation Army. (BLA)">
+    <variant base="Balochistan Liberation Front (BLF)"/>
+  </token>
+  <token label="Xenophobic" entryId="http://www.tensor-project.eu/taxomony##9c7e6647-aa2c-3c62-9fe7-718265e992c2" parentId="http://www.tensor-project.eu/taxomony##55234552-5533-3229-ac1c-62a7ebbeb7a7" parentLabel="Ethnic" comment="Having or showing a dislike of or prejudice against people from other countries.">
+    <variant base="Xenophobic"/>
+  </token>
+  <token label="Al-Mourabitoun" entryId="http://www.tensor-project.eu/taxomony##a1b918e0-4cd7-3025-9308-5695270a26a9" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Al-Mourabitoun is a violent terrorist group that seeks to establish an Islamic state in West Africa. The group has claimed responsibility for numerous terror attacks, including the deadly November 2015 gun and hostage attack in Mali&#65533;s capital, Bamako.">
+    <variant base="Al-Mourabitoun"/>
+    <variant base="Witnesses in Blood"/>
+    <variant base="Al Murabitoon &#65533; Al Qaeda in West Africa"/>
+    <variant base="Signatories in Blood"/>
+    <variant base="Khaled Abu al-Abbas Brigade"/>
+    <variant base="Al-Muwaqqi'un bil-Dima"/>
+    <variant base="Masked Men Brigade"/>
+    <variant base="Al-Mulathamun Masked Ones Brigade"/>
+    <variant base="Those Signed in Blood Battalion"/>
+    <variant base="Signed-in-Blood Battalion"/>
+    <variant base="Those who Sign in Blood"/>
+    <variant base="Al-Mulathamun Brigade"/>
+    <variant base="Al-Murabitoun"/>
+    <variant base="The Sentinels"/>
+  </token>
+  <token label="Jemaah Islamiyah (JI)" entryId="http://www.tensor-project.eu/taxomony##7797a497-7c3a-365c-8b62-d06f3b3111e0" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="JI is a jihadist group in Southeast Asia that seeks to establish a caliphate in the region through violent means. The group is led by its co-founder, Abu Bakar Bashir, who pledged loyalty to ISIS in July 2014. ">
+    <variant base="Jemaah Islamiyah (JI)"/>
+    <variant base="Jemaa Islamiyya"/>
+    <variant base="Jema&#65533;a Islamiyah"/>
+    <variant base="Jema&#65533;ah Islamiyyah"/>
+    <variant base="Jemaa Islamiyah"/>
+    <variant base="Jemaah Islamiya"/>
+    <variant base="Jema&#65533;ah Islamiyah"/>
+    <variant base="Islamic Organization"/>
+    <variant base="Jemaah Islamiah"/>
+    <variant base="Jemaah Islamiyyah"/>
+    <variant base="Jema&#65533;a Islamiyya"/>
+    <variant base="Jema&#65533;a Islamiyyah"/>
+    <variant base="Jemaa Islamiyyah"/>
+  </token>
+  <token label="Execution" entryId="http://www.tensor-project.eu/taxomony##8f44785c-8c19-312c-9b66-11db30984514" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Murder of an individual">
+    <variant base="Execution"/>
+  </token>
+  <token label="Ransom" entryId="http://www.tensor-project.eu/taxomony##a606b3b0-2930-370d-bf78-144b4f61a81f" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom">
+    <variant base="Ransom"/>
+  </token>
+  <token label="Propaganda" entryId="http://www.tensor-project.eu/taxomony##76f28c52-ed99-3a1c-bcef-c6bba35631ff" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Information of a biased or misleading nature, used to promote a political cause or point of view">
+    <variant base="Propaganda"/>
+  </token>
+  <token label="Cyberspace" entryId="http://www.tensor-project.eu/taxomony##9a93f035-fbc2-3dbc-ac75-3a5def253815" parentId="http://www.tensor-project.eu/taxomony##c41a3189-0959-344c-a523-af684561abe5" parentLabel="Target" comment="The notional environment in which communication over computer networks occurs.">
+    <variant base="Cyberspace"/>
+  </token>
+  <token label="Misinformation / Disinformation" entryId="http://www.tensor-project.eu/taxomony##0b3edfdd-3353-35c6-b593-6924b9272f9c" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Incorrect information, that is spread unintentionally or intentionally; Misinformation is intentionally false or misleading information that is spread in a calculated way to deceive target audiences.">
+    <variant base="Misinformation / Disinformation"/>
+  </token>
+  <token label="Incite" entryId="http://www.tensor-project.eu/taxomony##6c607fc8-c0ad-3995-99bc-14e01170fee1" parentId="http://www.tensor-project.eu/taxomony##3f76f7dd-14d8-3b10-88ee-d5fa7f2ba7b3" parentLabel="Intent" comment="Encourage or stir up violent or unlawful behaviour">
+    <variant base="Incite"/>
+  </token>
+  <token label="Image" entryId="http://www.tensor-project.eu/taxomony##be53a054-1a6d-36f6-acb8-79fa2c584b08" parentId="http://www.tensor-project.eu/taxomony##a1fa2777-9242-3490-af7a-e3bdd5c6d508" parentLabel="Type">
+    <variant base="Image"/>
+  </token>
+  <token label="British" entryId="http://www.tensor-project.eu/taxomony##c7f5e66f-cef8-34de-87a0-9e5928c9db08" parentId="http://www.tensor-project.eu/taxomony##2b6dcacc-74ea-3019-9e12-96698ed6e0c3" parentLabel="Loyalist" comment="A political ideology with allegiance towards the United Kingdom">
+    <variant base="British"/>
+  </token>
+  <token label="Communist" entryId="http://www.tensor-project.eu/taxomony##a52956d1-10ea-33c0-8bd9-34e0adfd1c92" parentId="http://www.tensor-project.eu/taxomony##82887a94-87cc-3e3f-8c31-510c5e6368da" parentLabel="Causes" comment="The philosophical, social, political, and economic ideology and movement whose ultimate goal is the establishment of the communist society, which is a socioeconomic order structured upon the common ownership of the means of production and the absence of social classes, money and the state.">
+    <variant base="Communist"/>
+  </token>
+  <token label="Non-Martyrdom" entryId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentId="http://www.tensor-project.eu/taxomony##287afcf1-c19b-3073-8a85-b73473341baa" parentLabel="Modus Operandi">
+    <variant base="Non-Martyrdom"/>
+  </token>
+  <token label="Hard Target" entryId="http://www.tensor-project.eu/taxomony##025b32e7-318a-30eb-9162-fa558b4bec98" parentId="http://www.tensor-project.eu/taxomony##9a93f035-fbc2-3dbc-ac75-3a5def253815" parentLabel="Cyberspace" comment="Strongly defended.">
+    <variant base="Hard Target"/>
+  </token>
+  <token label="Islamic Revolutionary Guard Corps (IRGC)" entryId="http://www.tensor-project.eu/taxomony##37ed79c5-2dd1-3f1d-ab69-3507c6c170fc" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="The IRGC is an Iranian government agency tasked with defending the regime against internal and external threats. The IRGC uses secret police methods against its opponents within Iran, and terrorist tactics against its enemies abroad.">
+    <variant base="Islamic Revolutionary Guard Corps (IRGC)"/>
+    <variant base="Sepah (&#65533;Corps&#65533;)"/>
+    <variant base="Islamic Revolutionary Guards"/>
+    <variant base="Revolutionary Guards"/>
+    <variant base="Pasdaran (&#65533;Guards&#65533;)"/>
+    <variant base="Sepah-e Pasdaran-e Enghelab-e Eslami (&#65533;Islamic Revolutionary Guard Corps&#65533;)"/>
+  </token>
+  <token label="Hezbollah" entryId="http://www.tensor-project.eu/taxomony##b0d1c23a-1b9f-3b3b-ae54-2966d2718179" parentId="http://www.tensor-project.eu/taxomony##dff9fb98-c915-34b1-9d5a-5ad244665be0" parentLabel="Group" comment="Hezbollah is an Iranian-sponsored, internationally sanctioned terrorist group with an anti-Israel and anti-U.S. agenda. Hezbollah is primarily based in Lebanon, but has carried out terrorist and criminal operations around the world.">
+    <variant base="Hezbollah"/>
+    <variant base="Organization of the Oppressed on Earth"/>
+    <variant base="Followers of the Prophet Muhammed"/>
+    <variant base="Islamic Jihad"/>
+    <variant base="Party of God"/>
+    <variant base="Organization of Right Against Wrong"/>
+    <variant base="Hizballah"/>
+    <variant base="Ansar Allah"/>
+    <variant base="Islamic Jihad for the Liberation of Palestine"/>
+    <variant base="Hizbollah"/>
+    <variant base="Revolutionary Justice Organization"/>
+    <variant base="Islamic Jihad Organization"/>
+    <variant base="Hizbu&#65533;llah"/>
+  </token>
+  <token label="People" entryId="http://www.tensor-project.eu/taxomony##78386ec8-f284-3742-8324-a3d7d3e800ff" parentId="http://www.tensor-project.eu/taxomony##c41a3189-0959-344c-a523-af684561abe5" parentLabel="Target" comment="A physical location.">
+    <variant base="People"/>
+  </token>
+  <token label="Explosive" entryId="http://www.tensor-project.eu/taxomony##e7f88ae0-3dba-348b-8660-029cbdfddee3" parentId="http://www.tensor-project.eu/taxomony##ac44b576-5618-39f9-a9cf-b16ea7fa27c0" parentLabel="Non-Martyrdom">
+    <variant base="Explosive"/>
+  </token>
+</concepts>

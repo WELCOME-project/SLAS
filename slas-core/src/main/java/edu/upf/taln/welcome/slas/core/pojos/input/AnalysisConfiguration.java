@@ -19,6 +19,7 @@ public class AnalysisConfiguration {
     private String emotionUrl;
     private String speechActUrl;
     private String geolocationUrl;
+    private String taxonomyDictPath;
 
     public String getBabelnetConfigPath() {
         return babelnetConfigPath;
@@ -122,6 +123,14 @@ public class AnalysisConfiguration {
 
 	public void setGeolocationUrl(String geolocationUrl) {
 		this.geolocationUrl = geolocationUrl;
+	}
+
+	public String getTaxonomyDictPath() {
+		return taxonomyDictPath;
+	}
+
+	public void setTaxonomyDictPath(String taxonomyDictPath) {
+		this.taxonomyDictPath = taxonomyDictPath;
 	}
     
 }
