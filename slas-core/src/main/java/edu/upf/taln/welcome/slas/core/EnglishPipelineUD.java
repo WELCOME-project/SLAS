@@ -107,7 +107,7 @@ public class EnglishPipelineUD {
 					"TokenizerDescriptorPath", tmpTokenizerDescription.getAbsolutePath(),
 					"LanguageID", LANGUAGE,
 					ConceptMapper.PARAM_TOKENANNOTATION, "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token",
-					ConceptMapper.PARAM_ANNOTATION_NAME, "edu.upf.taln.tensor.taxonomy_annotator.TaxonomyEntry",
+					ConceptMapper.PARAM_ANNOTATION_NAME, "edu.upf.taln.welcome.taxonomy_annotator.TaxonomyEntry",
 					"SpanFeatureStructure", "uima.tcas.DocumentAnnotation",
 					ConceptMapper.PARAM_FEATURE_LIST, new String[]{"label", "entryId", "parentId", "parentLabel"},
 					ConceptMapper.PARAM_ATTRIBUTE_LIST, new String[]{"label", "entryId", "parentId", "parentLabel"},

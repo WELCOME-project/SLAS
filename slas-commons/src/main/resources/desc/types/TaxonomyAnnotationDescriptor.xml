@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  	
+  <name>taxonomyAnnotationDescriptor</name>
+  	
+  <description/>
+  	
+  <version>1.0</version>
+  	
+  <vendor/>
+  	
+  <types>
+    		
+    <typeDescription>
+      			
+      <name>edu.upf.taln.welcome.taxonomy_annotator.TaxonomyEntry</name>
+      			
+      <description/>
+      			
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      			
+      <features>
+        				
+        <featureDescription>
+          					
+          <name>entryId</name>
+          					
+          <description/>
+          					
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+          				
+        </featureDescription>
+        				
+        <featureDescription>
+          					
+          <name>parentId</name>
+          					
+          <description/>
+          					
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+          				
+        </featureDescription>
+        				
+        <featureDescription>
+          					
+          <name>label</name>
+          					
+          <description/>
+          					
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+          				
+        </featureDescription>
+        				
+        <featureDescription>
+          					
+          <name>parentLabel</name>
+          					
+          <description/>
+          					
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+          				
+        </featureDescription>
+        			
+      </features>
+      		
+    </typeDescription>
+    	
+  </types>
+  
+</typeSystemDescription>
