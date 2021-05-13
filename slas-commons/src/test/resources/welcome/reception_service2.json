@@ -1,0 +1,880 @@
+{
+  "speechActs" : [ ],
+  "entities" : [ {
+    "id" : "entity_1",
+    "type" : "concept",
+    "anchor" : "Currently",
+    "links" : [ "fn:Temporal_collocation" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_2",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_3",
+    "type" : "concept",
+    "anchor" : "live",
+    "links" : [ "vn:47.1_live", "fn:Dead_or_alive" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_4",
+    "type" : "concept",
+    "anchor" : "with",
+    "links" : [ "fn:Personal_relationship" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_5",
+    "type" : "concept",
+    "anchor" : "my",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_6",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_7",
+    "type" : "concept",
+    "anchor" : "mean",
+    "links" : [ "vn:29.5_mean", "fn:Purpose" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_8",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_9",
+    "type" : "concept",
+    "anchor" : "n’t",
+    "links" : [ "fn:Negation" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_10",
+    "type" : "concept",
+    "anchor" : "have",
+    "links" : [ "fn:Possession" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_11",
+    "type" : "concept",
+    "anchor" : "own",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_12",
+    "type" : "concept",
+    "anchor" : "apartment",
+    "links" : [ "fn:Building_subparts" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_13",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_14",
+    "type" : "concept",
+    "anchor" : "just",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_15",
+    "type" : "concept",
+    "anchor" : "arrived",
+    "links" : [ "vn:51.1_arrive", "fn:Personal_success" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_16",
+    "type" : "concept",
+    "anchor" : "Catalonia",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_17",
+    "type" : "concept",
+    "anchor" : "In",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_18",
+    "type" : "concept",
+    "anchor" : "one",
+    "links" : [ "fn:Cardinal_numbers" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_19",
+    "type" : "concept",
+    "anchor" : "week",
+    "links" : [ "fn:Measure_duration" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_20",
+    "type" : "concept",
+    "anchor" : "ago",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_21",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_22",
+    "type" : "concept",
+    "anchor" : "want",
+    "links" : [ "vn:32.1_want", "fn:Possession" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_23",
+    "type" : "concept",
+    "anchor" : "make",
+    "links" : [ "vn:26.1_make", "fn:Arriving" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_24",
+    "type" : "concept",
+    "anchor" : "appointment",
+    "links" : [ "vn:29.1_appointment", "fn:Name_conferral" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_25",
+    "type" : "concept",
+    "anchor" : "with",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_26",
+    "type" : "concept",
+    "anchor" : "employment_office",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_27",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_28",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "fn:Time_vector" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_29",
+    "type" : "concept",
+    "anchor" : "talked",
+    "links" : [ "fn:Chatting" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_30",
+    "type" : "concept",
+    "anchor" : "Mr._Codina",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_31",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_32",
+    "type" : "concept",
+    "anchor" : "talked",
+    "links" : [ "fn:Talking_into" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_33",
+    "type" : "concept",
+    "anchor" : "him",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_34",
+    "type" : "concept",
+    "anchor" : "on",
+    "links" : [ "fn:Calendric_unit" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_35",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_36",
+    "type" : "concept",
+    "anchor" : "want",
+    "links" : [ "vn:32.1_want", "fn:Possession" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_37",
+    "type" : "concept",
+    "anchor" : "make",
+    "links" : [ "vn:26.1_make", "fn:Self_motion" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_38",
+    "type" : "concept",
+    "anchor" : "appointment",
+    "links" : [ "vn:29.1_appointment", "fn:Name_conferral" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_39",
+    "type" : "concept",
+    "anchor" : "with",
+    "links" : [ "fn:Being_obligated" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_40",
+    "type" : "concept",
+    "anchor" : "jobcenter",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_41",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_42",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "fn:Time_vector" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_43",
+    "type" : "concept",
+    "anchor" : "talked",
+    "links" : [ "fn:Chatting" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_44",
+    "type" : "concept",
+    "anchor" : "Mr._Serra",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_45",
+    "type" : "concept",
+    "anchor" : "No",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_46",
+    "type" : "concept",
+    "anchor" : "it",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_47",
+    "type" : "concept",
+    "anchor" : "was",
+    "links" : [ "fn:Performers_and_roles" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_48",
+    "type" : "concept",
+    "anchor" : "Mr._Codina",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_49",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_50",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "fn:Time_vector" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_51",
+    "type" : "concept",
+    "anchor" : "talked",
+    "links" : [ "fn:Chatting" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_52",
+    "type" : "concept",
+    "anchor" : "Mr._Sierra",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_53",
+    "type" : "concept",
+    "anchor" : "Serra",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_54",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_55",
+    "type" : "concept",
+    "anchor" : "need",
+    "links" : [ "vn:103_need", "fn:Needing" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_56",
+    "type" : "concept",
+    "anchor" : "some",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_57",
+    "type" : "concept",
+    "anchor" : "information",
+    "links" : [ "fn:Information" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_58",
+    "type" : "concept",
+    "anchor" : "You",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_59",
+    "type" : "concept",
+    "anchor" : "need",
+    "links" : [ "vn:103_need", "fn:Needing" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_60",
+    "type" : "concept",
+    "anchor" : "information",
+    "links" : [ "fn:Information" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_61",
+    "type" : "concept",
+    "anchor" : "what",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_62",
+    "type" : "concept",
+    "anchor" : "advice",
+    "links" : [ "vn:37.9_advice", "fn:Attempt_suasion" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_63",
+    "type" : "concept",
+    "anchor" : "concerning",
+    "links" : [ "vn:31.1_concern", "fn:Topic" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_64",
+    "type" : "concept",
+    "anchor" : "asylum",
+    "links" : [ "vn:16_asylum" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_65",
+    "type" : "concept",
+    "anchor" : "application",
+    "links" : [ "fn:Purpose" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_66",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_67",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "fn:Time_vector" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_68",
+    "type" : "concept",
+    "anchor" : "completed",
+    "links" : [ "vn:55.2_complete", "fn:Activity_finish" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_69",
+    "type" : "concept",
+    "anchor" : "3rd",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_70",
+    "type" : "concept",
+    "anchor" : "module",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_71",
+    "type" : "concept",
+    "anchor" : "First_Reception_Service",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_72",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_73",
+    "type" : "concept",
+    "anchor" : "n’t",
+    "links" : [ "fn:Negation" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_74",
+    "type" : "concept",
+    "anchor" : "see",
+    "links" : [ "vn:30.1_see", "fn:Perception_experience" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_75",
+    "type" : "concept",
+    "anchor" : "this",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_76",
+    "type" : "concept",
+    "anchor" : "in",
+    "links" : [ "vn:9.10_file", "fn:Placing" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_77",
+    "type" : "concept",
+    "anchor" : "your",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_78",
+    "type" : "concept",
+    "anchor" : "Sorry",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_79",
+    "type" : "concept",
+    "anchor" : "it",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_80",
+    "type" : "concept",
+    "anchor" : "was",
+    "links" : [ "fn:Performers_and_roles" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_81",
+    "type" : "concept",
+    "anchor" : "2nd",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_82",
+    "type" : "concept",
+    "anchor" : "What",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_83",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_84",
+    "type" : "concept",
+    "anchor" : "need",
+    "links" : [ "vn:103_need", "fn:Needing" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_85",
+    "type" : "concept",
+    "anchor" : "get",
+    "links" : [ "vn:13.5.1_get", "fn:Arriving" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_86",
+    "type" : "concept",
+    "anchor" : "Residence_Card",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_87",
+    "type" : "concept",
+    "anchor" : "you",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_88",
+    "type" : "concept",
+    "anchor" : "complete",
+    "links" : [ "vn:55.2_complete", "fn:Activity_finish" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_89",
+    "type" : "concept",
+    "anchor" : "First_Receptioni_Service",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_90",
+    "type" : "concept",
+    "anchor" : "modules",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_91",
+    "type" : "concept",
+    "anchor" : "Sorry",
+    "links" : [ "fn:Contrition" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_92",
+    "type" : "concept",
+    "anchor" : "actually",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_93",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_94",
+    "type" : "concept",
+    "anchor" : "meant",
+    "links" : [ "vn:29.5_mean", "fn:Purpose" ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_95",
+    "type" : "concept",
+    "anchor" : "First_Reception_Certificate",
+    "links" : [ ],
+    "confidence" : 0.0
+  } ],
+  "relations" : [ {
+    "id" : "relation_14",
+    "predicate" : "entity_39",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_40"
+    } ]
+  }, {
+    "id" : "relation_31",
+    "predicate" : "entity_94",
+    "participants" : [ {
+      "roles" : [ "Agent", "Agent", "A0" ],
+      "entity" : "entity_93"
+    }, {
+      "roles" : [ "Value", "Theme", "A1" ],
+      "entity" : "entity_95"
+    } ]
+  }, {
+    "id" : "relation_28",
+    "predicate" : "entity_85",
+    "participants" : [ {
+      "roles" : [ "Goal", "Agent", "A0" ],
+      "entity" : "entity_83"
+    }, {
+      "roles" : [ "Theme", "Theme", "A1" ],
+      "entity" : "entity_86"
+    } ]
+  }, {
+    "id" : "relation_1",
+    "predicate" : "entity_3",
+    "participants" : [ {
+      "roles" : [ "Figure", "Theme", "A0" ],
+      "entity" : "entity_2"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_4"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_7"
+    } ]
+  }, {
+    "id" : "relation_6",
+    "predicate" : "entity_22",
+    "participants" : [ {
+      "roles" : [ "Goal", "Agent", "A0" ],
+      "entity" : "entity_21"
+    }, {
+      "roles" : [ "Possession", "Theme", "A1" ],
+      "entity" : "entity_23"
+    } ]
+  }, {
+    "id" : "relation_23",
+    "predicate" : "entity_68",
+    "participants" : [ {
+      "roles" : [ "Agent", "Agent", "A0" ],
+      "entity" : "entity_66"
+    }, {
+      "roles" : [ "Activity", "Theme", "A1" ],
+      "entity" : "entity_70"
+    } ]
+  }, {
+    "id" : "relation_19",
+    "predicate" : "entity_59",
+    "participants" : [ {
+      "roles" : [ "Cognizer", "Pivot", "A0" ],
+      "entity" : "entity_58"
+    }, {
+      "roles" : [ "Consequences", "Theme", "A1" ],
+      "entity" : "entity_60"
+    } ]
+  }, {
+    "id" : "relation_10",
+    "predicate" : "entity_32",
+    "participants" : [ {
+      "roles" : [ "Addressee", "Agent", "A0" ],
+      "entity" : "entity_31"
+    }, {
+      "roles" : [ "Speaker", "Recipient", "A2" ],
+      "entity" : "entity_33"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_34"
+    } ]
+  }, {
+    "id" : "relation_7",
+    "predicate" : "entity_23",
+    "participants" : [ {
+      "roles" : [ "Goal", "Agent", "A0" ],
+      "entity" : "entity_21"
+    }, {
+      "roles" : [ "Theme", "Product", "A1" ],
+      "entity" : "entity_24"
+    } ]
+  }, {
+    "id" : "relation_20",
+    "predicate" : "entity_60",
+    "participants" : [ {
+      "roles" : [ "Information", "A1" ],
+      "entity" : "entity_61"
+    } ]
+  }, {
+    "id" : "relation_17",
+    "predicate" : "entity_51",
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_49"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_52"
+    } ]
+  }, {
+    "id" : "relation_8",
+    "predicate" : "entity_24",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_25"
+    } ]
+  }, {
+    "id" : "relation_29",
+    "predicate" : "entity_88",
+    "participants" : [ {
+      "roles" : [ "Agent", "Agent", "A0" ],
+      "entity" : "entity_87"
+    }, {
+      "roles" : [ "Activity", "Theme", "A1" ],
+      "entity" : "entity_90"
+    } ]
+  }, {
+    "id" : "relation_4",
+    "predicate" : "entity_15",
+    "participants" : [ {
+      "roles" : [ "Endeavor", "Theme", "A1" ],
+      "entity" : "entity_13"
+    }, {
+      "roles" : [ "Destination", "A4" ],
+      "entity" : "entity_16"
+    } ]
+  }, {
+    "id" : "relation_24",
+    "predicate" : "entity_70",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_71"
+    } ]
+  }, {
+    "id" : "relation_15",
+    "predicate" : "entity_43",
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_41"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_44"
+    } ]
+  }, {
+    "id" : "relation_26",
+    "predicate" : "entity_80",
+    "participants" : [ {
+      "roles" : [ "Audience", "A1" ],
+      "entity" : "entity_79"
+    }, {
+      "roles" : [ "Medium", "A2" ],
+      "entity" : "entity_81"
+    } ]
+  }, {
+    "id" : "relation_2",
+    "predicate" : "entity_7",
+    "participants" : [ {
+      "roles" : [ "Agent", "Agent", "A0" ],
+      "entity" : "entity_6"
+    }, {
+      "roles" : [ "Goal", "Theme", "A1" ],
+      "entity" : "entity_10"
+    } ]
+  }, {
+    "id" : "relation_30",
+    "predicate" : "entity_90",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_89"
+    } ]
+  }, {
+    "id" : "relation_21",
+    "predicate" : "entity_63",
+    "participants" : [ {
+      "roles" : [ "Communicator", "Stimulus", "A0" ],
+      "entity" : "entity_62"
+    }, {
+      "roles" : [ "Text", "Experiencer", "A1" ],
+      "entity" : "entity_65"
+    } ]
+  }, {
+    "id" : "relation_11",
+    "predicate" : "entity_36",
+    "participants" : [ {
+      "roles" : [ "Area", "Agent", "A0" ],
+      "entity" : "entity_35"
+    }, {
+      "roles" : [ "Possession", "Theme", "A1" ],
+      "entity" : "entity_37"
+    } ]
+  }, {
+    "id" : "relation_32",
+    "predicate" : "entity_91",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_94"
+    } ]
+  }, {
+    "id" : "relation_18",
+    "predicate" : "entity_55",
+    "participants" : [ {
+      "roles" : [ "Cognizer", "Pivot", "A0" ],
+      "entity" : "entity_54"
+    }, {
+      "roles" : [ "Consequences", "Theme", "A1" ],
+      "entity" : "entity_57"
+    } ]
+  }, {
+    "id" : "relation_12",
+    "predicate" : "entity_37",
+    "participants" : [ {
+      "roles" : [ "Area", "Agent", "A0" ],
+      "entity" : "entity_35"
+    }, {
+      "roles" : [ "Direction", "Product", "A1" ],
+      "entity" : "entity_38"
+    } ]
+  }, {
+    "id" : "relation_3",
+    "predicate" : "entity_10",
+    "participants" : [ {
+      "roles" : [ "Owner", "Theme", "A1" ],
+      "entity" : "entity_8"
+    }, {
+      "roles" : [ "Possession", "A2" ],
+      "entity" : "entity_12"
+    } ]
+  }, {
+    "id" : "relation_25",
+    "predicate" : "entity_74",
+    "participants" : [ {
+      "roles" : [ "Perceiver_passive", "Experiencer", "A0" ],
+      "entity" : "entity_72"
+    }, {
+      "roles" : [ "Phenomenon", "Stimulus", "A1" ],
+      "entity" : "entity_75"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_76"
+    } ]
+  }, {
+    "id" : "relation_22",
+    "predicate" : "entity_65",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_64"
+    } ]
+  }, {
+    "id" : "relation_16",
+    "predicate" : "entity_47",
+    "participants" : [ {
+      "roles" : [ "Audience", "A1" ],
+      "entity" : "entity_46"
+    }, {
+      "roles" : [ "Medium", "A2" ],
+      "entity" : "entity_48"
+    } ]
+  }, {
+    "id" : "relation_13",
+    "predicate" : "entity_38",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_39"
+    } ]
+  }, {
+    "id" : "relation_9",
+    "predicate" : "entity_29",
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_27"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_30"
+    } ]
+  }, {
+    "id" : "relation_5",
+    "predicate" : "entity_20",
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_17"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_19"
+    } ]
+  }, {
+    "id" : "relation_27",
+    "predicate" : "entity_84",
+    "participants" : [ {
+      "roles" : [ "Consequences", "A1" ],
+      "entity" : "entity_82"
+    }, {
+      "roles" : [ "Cognizer", "Pivot", "A0" ],
+      "entity" : "entity_85"
+    } ]
+  } ]
+}

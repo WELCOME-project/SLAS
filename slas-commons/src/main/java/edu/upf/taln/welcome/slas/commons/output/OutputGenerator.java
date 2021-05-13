@@ -201,6 +201,23 @@ public class OutputGenerator {
         entity.setLinks(links);
         entity.setLocations(locations);
 
+        String features = token.getFeatures();
+        if (features != null && !features.equals("_")) {
+            Map<String, String> featMap = Pattern.compile("\\|")
+                .splitAsStream(features)
+                .map(feat -> feat.split("=", 2))
+                .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
+            
+            String vn = featMap.get("vn");
+            if (vn != null) {
+                links.add(vn);
+            }
+            String fn = featMap.get("frame");
+            if (fn != null) {
+                links.add("fn:" + fn);
+            }
+        }
+        
         List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
         if (wsdList.size() > 0) {
             WSDResult wsdAnn = wsdList.get(0);
@@ -356,7 +373,6 @@ public class OutputGenerator {
 
 		AnalysisOutputMetadata outputMetadata = generateMetadata();
 		analysisResult.setMetadata(outputMetadata);
-
 
 		WelcomeDemoResult result = generateDemoResult(jCas);
 

@@ -18,6 +18,7 @@ import org.apache.uima.fit.factory.JCasFactory;
 import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiReader;
 
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
+import org.apache.commons.io.FileUtils;
 import org.junit.Ignore;
 
 /**
@@ -81,35 +82,57 @@ public class OutputGeneratorTest {
 
     /**
      * Test of generateDlaResult method, of class OutputGenerator.
+     * @throws org.apache.uima.UIMAException
+     * @throws java.io.IOException
      */
     @Test
     public void testGenerateDlaResult() throws UIMAException, IOException {
         System.out.println("generateDlaResult");
-        JCas jCas = getJCasFromXMI("en", new File("src/test/resources/welcome/reception_service2.xmi"), new File("src/test/resources/welcome/TypeSystem.xml"));
         
-        //DlaResult expResult = null;
+        String basePath = "src/test/resources/welcome/";
+        File typesystem = new File(basePath, "TypeSystem.xml");
+        File xmi = new File(basePath, "reception_service2.xmi");
+        
+        JCas jCas = getJCasFromXMI("en", xmi, typesystem);
+        
         DlaResult result = OutputGenerator.generateDlaResult(jCas);
         //List<DlaResult> result = OutputGenerator.generateDlaResultBySentence(jCas);
-        //assertEquals(expResult, result);
         
         ObjectWriter writter = new ObjectMapper().writerWithDefaultPrettyPrinter();
         String jsonResult = writter.writeValueAsString(result);
         System.out.println(jsonResult);
+
+//        File expected = new File(basePath, "expected_dla.json");
+//        String expResult = FileUtils.readFileToString(expected, "utf8");
+//        assertEquals(expResult, jsonResult);
     }
 
     /**
      * Test of generateDemoResult method, of class OutputGenerator.
+     * @throws org.apache.uima.UIMAException
+     * @throws java.io.IOException
      */
-    @Ignore
+    //@Ignore
     @Test
-    public void testGenerateDemoResult() {
+    public void testGenerateDemoResult() throws UIMAException, IOException {
         System.out.println("generateDemoResult");
-        JCas jCas = null;
-        WelcomeDemoResult expResult = null;
+        
+        String basePath = "src/test/resources/welcome/";
+        File typesystem = new File(basePath, "TypeSystem.xml");
+        File xmi = new File(basePath, "one_space.xmi");
+        
+        JCas jCas = getJCasFromXMI("en", xmi, typesystem);
+        
         WelcomeDemoResult result = OutputGenerator.generateDemoResult(jCas);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectWriter writter = mapper.writerWithDefaultPrettyPrinter();
+        String jsonResult = writter.writeValueAsString(result);
+//        System.out.println(jsonResult);
+
+        File expected = new File(basePath, "one_space.json");
+        String expResult = FileUtils.readFileToString(expected, "utf8");
+        assertEquals(expResult, jsonResult);
     }
 
     /**
@@ -130,16 +153,26 @@ public class OutputGeneratorTest {
     /**
      * Test of generateDemoOutput method, of class OutputGenerator.
      */
-    @Ignore
     @Test
-    public void testGenerateDemoOutput() {
+    public void testGenerateDemoOutput() throws UIMAException, IOException {
         System.out.println("generateDemoOutput");
-        JCas jCas = null;
-        AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> expResult = null;
+        
+        String basePath = "src/test/resources/welcome/";
+        File typesystem = new File(basePath, "TypeSystem.xml");
+        File xmi = new File(basePath, "currently.xmi");
+        
+        JCas jCas = getJCasFromXMI("en", xmi, typesystem);
+        
         AnalysisOutputImpl<WelcomeDemoResult, AnalysisOutputMetadata> result = OutputGenerator.generateDemoOutput(jCas);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectWriter writter = mapper.writerWithDefaultPrettyPrinter();
+        String jsonResult = writter.writeValueAsString(result);
+        System.out.println(jsonResult);
+
+        File expected = new File(basePath, "currently.json");
+        String expResult = FileUtils.readFileToString(expected, "utf8");
+        //assertEquals(expResult, jsonResult);
     }
 
     /**

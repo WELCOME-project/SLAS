@@ -1,0 +1,738 @@
+{
+  "ner" : {
+    "directed" : true,
+    "type" : "ner",
+    "label" : "ner",
+    "nodes" : [ {
+      "id" : 1,
+      "type" : "ner",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "category" : "GPE",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 2,
+      "type" : "ner",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "category" : "GPE",
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 3,
+      "type" : "ner",
+      "label" : "one week ago",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 55,
+        "category" : "DATE",
+        "covered_text" : "one week ago"
+      }
+    }, {
+      "id" : 4,
+      "type" : "concept",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "category" : "CONCEPT",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 5,
+      "type" : "concept",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "category" : "CONCEPT",
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 6,
+      "type" : "concept",
+      "label" : "one week",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 51,
+        "category" : "CONCEPT",
+        "covered_text" : "one week"
+      }
+    } ],
+    "edges" : [ ],
+    "metadata" : { }
+  },
+  "triples" : [ ],
+  "surface_parsing" : {
+    "directed" : true,
+    "type" : "surface",
+    "label" : "surface dependencies",
+    "nodes" : [ {
+      "id" : 7,
+      "type" : "token",
+      "label" : "I",
+      "metadata" : {
+        "begin" : 0,
+        "end" : 1,
+        "form" : "I",
+        "lemma" : "I",
+        "pos" : "PRP",
+        "feats" : "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "covered_text" : "I"
+      }
+    }, {
+      "id" : 8,
+      "type" : "token",
+      "label" : "just",
+      "metadata" : {
+        "begin" : 2,
+        "end" : 6,
+        "form" : "just",
+        "lemma" : "just",
+        "pos" : "RB",
+        "feats" : "wnId=00004722r|en_cano=just|EL=μόνο|bnId=bn:00114626r|EN=just|IT=soltanto|ES=sólo",
+        "covered_text" : "just"
+      }
+    }, {
+      "id" : 9,
+      "type" : "token",
+      "label" : "arrived",
+      "metadata" : {
+        "begin" : 7,
+        "end" : 14,
+        "form" : "arrived",
+        "lemma" : "arrive",
+        "pos" : "VBD",
+        "feats" : "Tense=Past|Mood=Ind|wnId=02020590v|en_cano=reach|EL=φτάνω|bnId=bn:00082790v|EN=reach|VerbForm=Fin|IT=raggiungere|ES=llegar",
+        "covered_text" : "arrived"
+      }
+    }, {
+      "id" : 10,
+      "type" : "token",
+      "label" : "in",
+      "metadata" : {
+        "begin" : 15,
+        "end" : 17,
+        "form" : "in",
+        "lemma" : "in",
+        "pos" : "IN",
+        "feats" : "",
+        "covered_text" : "in"
+      }
+    }, {
+      "id" : 11,
+      "type" : "token",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "form" : "Catalonia",
+        "lemma" : "Catalonia",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09028062n|en_cano=Catalonia|EL=Καταλονία|bnId=bn:00016656n|EN=Catalonia|IT=Catalogna|ES=Cataluña",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 12,
+      "type" : "token",
+      "label" : ".",
+      "metadata" : {
+        "begin" : 27,
+        "end" : 28,
+        "form" : ".",
+        "lemma" : ".",
+        "pos" : ".",
+        "feats" : "",
+        "covered_text" : "."
+      }
+    }, {
+      "id" : 13,
+      "type" : "token",
+      "label" : "In",
+      "metadata" : {
+        "begin" : 29,
+        "end" : 31,
+        "form" : "In",
+        "lemma" : "in",
+        "pos" : "IN",
+        "feats" : "",
+        "covered_text" : "In"
+      }
+    }, {
+      "id" : 14,
+      "type" : "token",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "form" : "Barcelona",
+        "lemma" : "Barcelona",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09025189n|en_cano=Barcelona|EL=Βαρκελώνη|bnId=bn:00008553n|EN=Barcelona|IT=Barcellona|ES=Barcelona",
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 15,
+      "type" : "token",
+      "label" : ",",
+      "metadata" : {
+        "begin" : 41,
+        "end" : 42,
+        "form" : ",",
+        "lemma" : ",",
+        "pos" : ",",
+        "feats" : "",
+        "covered_text" : ","
+      }
+    }, {
+      "id" : 16,
+      "type" : "token",
+      "label" : "one week ago",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 55,
+        "form" : "one week ago",
+        "lemma" : "one week ago",
+        "pos" : "NN",
+        "covered_text" : "one week ago"
+      }
+    }, {
+      "id" : 17,
+      "type" : "token",
+      "label" : ".",
+      "metadata" : {
+        "begin" : 55,
+        "end" : 56,
+        "form" : ".",
+        "lemma" : ".",
+        "pos" : ".",
+        "feats" : "",
+        "covered_text" : "."
+      }
+    } ],
+    "edges" : [ {
+      "relation" : "nsubj",
+      "label" : "nsubj",
+      "source" : 9,
+      "target" : 7,
+      "metadata" : { }
+    }, {
+      "relation" : "advmod",
+      "label" : "advmod",
+      "source" : 9,
+      "target" : 8,
+      "metadata" : { }
+    }, {
+      "relation" : "root",
+      "label" : "root",
+      "source" : 9,
+      "target" : 9,
+      "metadata" : { }
+    }, {
+      "relation" : "case",
+      "label" : "case",
+      "source" : 11,
+      "target" : 10,
+      "metadata" : { }
+    }, {
+      "relation" : "obl",
+      "label" : "obl",
+      "source" : 9,
+      "target" : 11,
+      "metadata" : { }
+    }, {
+      "relation" : "punct",
+      "label" : "punct",
+      "source" : 9,
+      "target" : 12,
+      "metadata" : { }
+    }, {
+      "relation" : "case",
+      "label" : "case",
+      "source" : 14,
+      "target" : 13,
+      "metadata" : { }
+    }, {
+      "relation" : "root",
+      "label" : "root",
+      "source" : 14,
+      "target" : 14,
+      "metadata" : { }
+    }, {
+      "relation" : "punct",
+      "label" : "punct",
+      "source" : 16,
+      "target" : 15,
+      "metadata" : { }
+    }, {
+      "relation" : "conj",
+      "label" : "conj",
+      "source" : 14,
+      "target" : 16,
+      "metadata" : { }
+    }, {
+      "relation" : "punct",
+      "label" : "punct",
+      "source" : 16,
+      "target" : 17,
+      "metadata" : { }
+    } ],
+    "metadata" : { }
+  },
+  "concept_extraction" : {
+    "directed" : true,
+    "type" : "concept",
+    "label" : "concept extraction",
+    "nodes" : [ {
+      "id" : 18,
+      "type" : "concept",
+      "label" : "just",
+      "metadata" : {
+        "begin" : 2,
+        "end" : 6,
+        "covered_text" : "just"
+      }
+    }, {
+      "id" : 19,
+      "type" : "concept",
+      "label" : "arrived",
+      "metadata" : {
+        "begin" : 7,
+        "end" : 14,
+        "covered_text" : "arrived"
+      }
+    }, {
+      "id" : 20,
+      "type" : "concept",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 21,
+      "type" : "concept",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 22,
+      "type" : "concept",
+      "label" : "one week",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 51,
+        "covered_text" : "one week"
+      }
+    }, {
+      "id" : 23,
+      "type" : "concept",
+      "label" : "ago",
+      "metadata" : {
+        "begin" : 52,
+        "end" : 55,
+        "covered_text" : "ago"
+      }
+    } ],
+    "edges" : [ ],
+    "metadata" : { }
+  },
+  "babelnet_linking" : {
+    "directed" : true,
+    "type" : "babelnet",
+    "label" : "babelnet linking",
+    "nodes" : [ {
+      "id" : 24,
+      "type" : "babelnet",
+      "label" : "just",
+      "metadata" : {
+        "begin" : 2,
+        "end" : 6,
+        "label" : "OMWIKI:EN:merely",
+        "uri" : "http://live.babelnet.org/synset?word=bn:00114626r",
+        "confidence" : 0.0,
+        "description" : "{\"glosses\":[\"And nothing more\",\"Nothing more than.\",\"Only, simply, merely.\",\"No more than; just.\",\"Without any other reason etc.; only, just, and nothing more.\",\"No more than.\"],\"label\":\"just\",\"dbpediaUris\":null}",
+        "covered_text" : "just",
+        "linked_id" : "bn:00114626r"
+      }
+    }, {
+      "id" : 25,
+      "type" : "babelnet",
+      "label" : "arrived",
+      "metadata" : {
+        "begin" : 7,
+        "end" : 14,
+        "label" : "VERBNET:EN:reach",
+        "uri" : "http://live.babelnet.org/synset?word=bn:00082790v",
+        "confidence" : 1.0,
+        "description" : "{\"glosses\":[\"Reach a destination, either real or abstract\",\"To come to a destination.\",\"To cause to come or go or move.\",\"To reach (a destination)\",\"To come up to bat.\",\"To come; said of time.\",\"To arrive at a destination, usually at or by a certain time.\",\"To cause to become\"],\"label\":\"reach\",\"dbpediaUris\":null}",
+        "covered_text" : "arrived",
+        "linked_id" : "bn:00082790v"
+      }
+    }, {
+      "id" : 26,
+      "type" : "babelnet",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "label" : "GEONM:EN:Catalonia",
+        "uri" : "http://live.babelnet.org/synset?word=bn:00016656n",
+        "confidence" : 0.0,
+        "description" : "{\"glosses\":[\"A region of northeastern Spain\",\"Catalonia is an autonomous community of Spain located on the northeastern extremity of the Iberian Peninsula.\",\"The name being possibly derived from \\\"Gothic land\\\"\",\"Autonomous community of Spain\",\"Autonomous community in the north-east of the kingdom of Spain.\",\"A traditional region and former principality, including the autonomous community of Catalonia, the Aragon Strip and the region of Northern Catalonia.\",\"Autonomous community in Spain.\"],\"label\":\"catalonia\",\"dbpediaUris\":null}",
+        "covered_text" : "Catalonia",
+        "linked_id" : "bn:00016656n"
+      }
+    }, {
+      "id" : 27,
+      "type" : "babelnet",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "label" : "GEONM:EN:Barcelona",
+        "uri" : "http://live.babelnet.org/synset?word=bn:00008553n",
+        "confidence" : 0.0,
+        "description" : "{\"glosses\":[\"A city in northeastern Spain on the Mediterranean; 2nd largest Spanish city and the largest port and commercial center; has been a center for radical political beliefs\",\"Barcelona is a city in Spain.\",\"The capital city of Catalonia\",\"Capital of Catalonia and second largest city in Spain\",\"Spanish city, capital of the autonomous community of Catalonia.\",\"The capital city of Catalonia.\",\"Capital of Catalonia.\"],\"label\":\"barcelona\",\"dbpediaUris\":null}",
+        "covered_text" : "Barcelona",
+        "linked_id" : "bn:00008553n"
+      }
+    }, {
+      "id" : 28,
+      "type" : "babelnet",
+      "label" : "one week",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 51,
+        "label" : "WIKIDATA:EN:One_Week",
+        "uri" : "http://live.babelnet.org/synset?word=bn:01904456n",
+        "confidence" : 0.0,
+        "description" : "{\"glosses\":[\"One Week is a 1920 American short comedy film starring comedian Buster Keaton, the first film to be released made by Keaton on his own; Keaton had worked with Roscoe \\\"Fatty\\\" Arbuckle for a number of years.\",\"A short film starring and co-directed by Buster Keaton\",\"1920 film\"],\"label\":\"one_week\",\"dbpediaUris\":null}",
+        "covered_text" : "one week",
+        "linked_id" : "bn:01904456n"
+      }
+    }, {
+      "id" : 29,
+      "type" : "babelnet",
+      "label" : "ago",
+      "metadata" : {
+        "begin" : 52,
+        "end" : 55,
+        "label" : "WN:EN:ago",
+        "uri" : "http://live.babelnet.org/synset?word=bn:00114178r",
+        "confidence" : 0.0,
+        "description" : "{\"glosses\":[\"In the past\"],\"label\":\"ago\",\"dbpediaUris\":null}",
+        "covered_text" : "ago",
+        "linked_id" : "bn:00114178r"
+      }
+    } ],
+    "edges" : [ ],
+    "metadata" : { }
+  },
+  "dbpedia_linking" : {
+    "directed" : true,
+    "type" : "dbpedia",
+    "label" : "dbpedia linking",
+    "nodes" : [ {
+      "id" : 30,
+      "type" : "dbpedia",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "uri" : "http://dbpedia.org/resource/Catalonia",
+        "confidence" : 0.9989228351917427,
+        "label" : "Catalonia",
+        "categories" : [ "LOCATION" ],
+        "types" : "Wikidata:Q532,Wikidata:Q486972,Schema:Place,DBpedia:Settlement,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Village",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 31,
+      "type" : "dbpedia",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "uri" : "http://dbpedia.org/resource/Barcelona",
+        "confidence" : 0.9701285503926802,
+        "label" : "Barcelona",
+        "categories" : [ "LOCATION", "City" ],
+        "types" : "Wikidata:Q515,Wikidata:Q486972,Schema:Place,Schema:City,DBpedia:Settlement,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:City",
+        "covered_text" : "Barcelona"
+      }
+    } ],
+    "edges" : [ ],
+    "metadata" : { }
+  },
+  "deep_parsing" : {
+    "directed" : true,
+    "type" : "deep",
+    "label" : "deep dependencies",
+    "nodes" : [ {
+      "id" : 32,
+      "type" : "deepToken",
+      "label" : "I",
+      "metadata" : {
+        "begin" : 0,
+        "end" : 1,
+        "form" : "I",
+        "lemma" : "I",
+        "pos" : "PRP",
+        "feats" : "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "covered_text" : "I"
+      }
+    }, {
+      "id" : 33,
+      "type" : "deepToken",
+      "label" : "just",
+      "metadata" : {
+        "begin" : 2,
+        "end" : 6,
+        "form" : "just",
+        "lemma" : "just",
+        "pos" : "RB",
+        "feats" : "wnId=00004722r|en_cano=just|EL=μόνο|bnId=bn:00114626r|EN=just|IT=soltanto|ES=sólo",
+        "covered_text" : "just"
+      }
+    }, {
+      "id" : 34,
+      "type" : "deepToken",
+      "label" : "arrived",
+      "metadata" : {
+        "begin" : 7,
+        "end" : 14,
+        "form" : "arrived",
+        "lemma" : "arrive",
+        "pos" : "VBD",
+        "feats" : "Tense=Past|Mood=Ind|wnId=02020590v|en_cano=reach|EL=φτάνω|bnId=bn:00082790v|EN=reach|VerbForm=Fin|IT=raggiungere|ES=llegar",
+        "covered_text" : "arrived"
+      }
+    }, {
+      "id" : 35,
+      "type" : "deepToken",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "form" : "Catalonia",
+        "lemma" : "Catalonia",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09028062n|en_cano=Catalonia|EL=Καταλονία|bnId=bn:00016656n|EN=Catalonia|IT=Catalogna|ES=Cataluña",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 36,
+      "type" : "deepToken",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "form" : "Barcelona",
+        "lemma" : "Barcelona",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09025189n|en_cano=Barcelona|EL=Βαρκελώνη|bnId=bn:00008553n|EN=Barcelona|IT=Barcellona|ES=Barcelona",
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 37,
+      "type" : "deepToken",
+      "label" : "one week ago",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 55,
+        "form" : "one week ago",
+        "lemma" : "one week ago",
+        "pos" : "NN",
+        "covered_text" : "one week ago"
+      }
+    } ],
+    "edges" : [ {
+      "relation" : "I",
+      "label" : "I",
+      "source" : 34,
+      "target" : 32,
+      "metadata" : { }
+    }, {
+      "relation" : "ATTR",
+      "label" : "ATTR",
+      "source" : 34,
+      "target" : 33,
+      "metadata" : { }
+    }, {
+      "relation" : "ROOT",
+      "label" : "ROOT",
+      "source" : 34,
+      "target" : 34,
+      "metadata" : { }
+    }, {
+      "relation" : "IV",
+      "label" : "IV",
+      "source" : 34,
+      "target" : 35,
+      "metadata" : { }
+    }, {
+      "relation" : "ROOT",
+      "label" : "ROOT",
+      "source" : 36,
+      "target" : 36,
+      "metadata" : { }
+    }, {
+      "relation" : "COORD",
+      "label" : "COORD",
+      "source" : 36,
+      "target" : 37,
+      "metadata" : { }
+    } ],
+    "metadata" : { }
+  },
+  "predicate_arguments_parsing" : {
+    "directed" : true,
+    "type" : "predargs",
+    "label" : "predargs dependencies",
+    "nodes" : [ {
+      "id" : 38,
+      "type" : "predargsToken",
+      "label" : "I",
+      "metadata" : {
+        "begin" : 0,
+        "end" : 1,
+        "form" : "I",
+        "lemma" : "I",
+        "pos" : "PRP",
+        "feats" : "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "covered_text" : "I"
+      }
+    }, {
+      "id" : 39,
+      "type" : "predargsToken",
+      "label" : "just",
+      "metadata" : {
+        "begin" : 2,
+        "end" : 6,
+        "form" : "just",
+        "lemma" : "just",
+        "pos" : "RB",
+        "feats" : "wnId=00004722r|en_cano=just|EL=μόνο|bnId=bn:00114626r|EN=just|IT=soltanto|ES=sólo",
+        "covered_text" : "just"
+      }
+    }, {
+      "id" : 40,
+      "type" : "predargsToken",
+      "label" : "arrived",
+      "metadata" : {
+        "begin" : 7,
+        "end" : 14,
+        "form" : "arrive",
+        "lemma" : "arrive",
+        "pos" : "VBD",
+        "feats" : "Tense=Past|Mood=Ind|wnId=02020590v|en_cano=reach|EL=φτάνω|bnId=bn:00082790v|EN=reach|VerbForm=Fin|IT=raggiungere|ES=llegar",
+        "covered_text" : "arrived"
+      }
+    }, {
+      "id" : 41,
+      "type" : "predargsToken",
+      "label" : "Catalonia",
+      "metadata" : {
+        "begin" : 18,
+        "end" : 27,
+        "form" : "Catalonia",
+        "lemma" : "Catalonia",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09028062n|en_cano=Catalonia|EL=Καταλονία|bnId=bn:00016656n|EN=Catalonia|IT=Catalogna|ES=Cataluña",
+        "covered_text" : "Catalonia"
+      }
+    }, {
+      "id" : 42,
+      "type" : "predargsToken",
+      "label" : "",
+      "metadata" : {
+        "begin" : 29,
+        "end" : 29,
+        "form" : "and",
+        "lemma" : "in",
+        "pos" : "CC",
+        "feats" : "",
+        "covered_text" : ""
+      }
+    }, {
+      "id" : 43,
+      "type" : "predargsToken",
+      "label" : "Barcelona",
+      "metadata" : {
+        "begin" : 32,
+        "end" : 41,
+        "form" : "Barcelona",
+        "lemma" : "Barcelona",
+        "pos" : "NNP",
+        "feats" : "Number=Sing|wnId=09025189n|en_cano=Barcelona|EL=Βαρκελώνη|bnId=bn:00008553n|EN=Barcelona|IT=Barcellona|ES=Barcelona",
+        "covered_text" : "Barcelona"
+      }
+    }, {
+      "id" : 44,
+      "type" : "predargsToken",
+      "label" : "one week ago",
+      "metadata" : {
+        "begin" : 43,
+        "end" : 55,
+        "form" : "one week ago",
+        "lemma" : "one week ago",
+        "pos" : "NN",
+        "covered_text" : "one week ago"
+      }
+    } ],
+    "edges" : [ {
+      "relation" : "Argument1",
+      "label" : "Argument1",
+      "source" : 40,
+      "target" : 38,
+      "metadata" : { }
+    }, {
+      "relation" : "ROOT",
+      "label" : "ROOT",
+      "source" : 39,
+      "target" : 39,
+      "metadata" : { }
+    }, {
+      "relation" : "Argument1",
+      "label" : "Argument1",
+      "source" : 39,
+      "target" : 40,
+      "metadata" : { }
+    }, {
+      "relation" : "Argument4",
+      "label" : "Argument4",
+      "source" : 40,
+      "target" : 41,
+      "metadata" : { }
+    }, {
+      "relation" : "ROOT",
+      "label" : "ROOT",
+      "source" : 42,
+      "target" : 42,
+      "metadata" : { }
+    }, {
+      "relation" : "Set",
+      "label" : "Set",
+      "source" : 42,
+      "target" : 43,
+      "metadata" : { }
+    }, {
+      "relation" : "Set",
+      "label" : "Set",
+      "source" : 42,
+      "target" : 44,
+      "metadata" : { }
+    } ],
+    "metadata" : { }
+  }
+}

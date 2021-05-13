@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
     <types>
         <typeDescription>
@@ -755,6 +754,11 @@
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
+                <featureDescription>
+                    <name>order</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
@@ -1300,28 +1304,6 @@
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>de.tudarmstadt.ukp.dkpro.core.api.transform.type.SofaChangeAnnotation</name>
-            <description/>
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-            <features>
-                <featureDescription>
-                    <name>value</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>operation</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>reason</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-            </features>
-        </typeDescription>
-        <typeDescription>
             <name>de.tudarmstadt.ukp.dkpro.wsd.type.LexicalItemConstituent</name>
             <description/>
             <supertypeName>uima.tcas.Annotation</supertypeName>
@@ -1466,7 +1448,7 @@
             </features>
         </typeDescription>
         <typeDescription>
-            <name>edu.upf.taln.common.uima.extraMetadata</name>
+            <name>edu.upf.taln.common.uima.ExtraMetaData</name>
             <description/>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -1548,6 +1530,109 @@
                 </featureDescription>
                 <featureDescription>
                     <name>osmLabel</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidate</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>latitude</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>longitude</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidate2</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>latitude</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>longitude</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>nameId</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>nodeId</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>geonamesId</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>geonamesLabel</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>osmNameLabel</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>osmNodeLabel</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidates</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>candidates</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.FSList</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>text</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>lexicalizations</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidates2</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>candidates</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.FSList</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>namedEntity</name>
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
@@ -1872,6 +1957,28 @@
             </features>
         </typeDescription>
         <typeDescription>
+            <name>org.dbpedia.spotlight.uima.types.DBpediaProperty</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>subject</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>predicate</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>object</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
             <name>org.dbpedia.spotlight.uima.types.DBpediaResource</name>
             <description/>
             <supertypeName>uima.tcas.Annotation</supertypeName>
@@ -1915,6 +2022,22 @@
                     <name>priorScore</name>
                     <description/>
                     <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>globalUri</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>localUris</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>properties</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>org.dbpedia.spotlight.uima.types.DBpediaProperty</elementType>
                 </featureDescription>
             </features>
         </typeDescription>
