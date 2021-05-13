@@ -88,10 +88,14 @@ public class OutputGeneratorTest {
     @Test
     public void testGenerateDlaResult() throws UIMAException, IOException {
         System.out.println("generateDlaResult");
+        String fileName = "reception_service.xmi";
+        //fileName = "one_space.xmi";
+        //fileName = "one_space.xmi";
+        //fileName = "prototype1_sentences.xmi";
         
         String basePath = "src/test/resources/welcome/";
         File typesystem = new File(basePath, "TypeSystem.xml");
-        File xmi = new File(basePath, "reception_service2.xmi");
+        File xmi = new File(basePath, fileName);
         
         JCas jCas = getJCasFromXMI("en", xmi, typesystem);
         

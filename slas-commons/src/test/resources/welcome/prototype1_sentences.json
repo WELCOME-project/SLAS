@@ -1,0 +1,823 @@
+{
+  "speechActs" : [ {
+    "id" : "speech_act_1",
+    "type" : "Statement-non-opinion",
+    "anchor" : "Currently, I live with my friends, I mean I don’t have an own apartment.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_2",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I just arrived in Catalonia.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_3",
+    "type" : "Statement-non-opinion",
+    "anchor" : "In Barcelona, one week ago.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_4",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I want to make an appointment with the jobcenter.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_5",
+    "type" : "Statement-non-opinion",
+    "anchor" : "The employment office.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_6",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I already talked to Mr. Codina.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_7",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I talked to him on Friday.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_8",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I want to make an appointment with the job... jobcenter.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_9",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I already talked to Mr. Serra.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_10",
+    "type" : "Statement-non-opinion",
+    "anchor" : "No, it was Mr. Codina.",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_11",
+    "type" : "Statement-non-opinion",
+    "anchor" : "I already talked to Mr. Sierra…",
+    "entities" : [ ]
+  }, {
+    "id" : "speech_act_12",
+    "type" : "Repeat-phrase",
+    "anchor" : "Serra.",
+    "entities" : [ ]
+  } ],
+  "entities" : [ {
+    "id" : "entity_1",
+    "type" : "concept",
+    "anchor" : "currently",
+    "links" : [ "bn:00114905r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_2",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_3",
+    "type" : "concept",
+    "anchor" : "live",
+    "links" : [ "bn:00087441v" ],
+    "locations" : [ ],
+    "confidence" : 0.5544147494479623
+  }, {
+    "id" : "entity_4",
+    "type" : "concept",
+    "anchor" : "my",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_5",
+    "type" : "concept",
+    "anchor" : "friend",
+    "links" : [ "bn:01379732n" ],
+    "locations" : [ ],
+    "confidence" : 0.9170008504884292
+  }, {
+    "id" : "entity_6",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_7",
+    "type" : "concept",
+    "anchor" : "mean",
+    "links" : [ "bn:00089804v" ],
+    "locations" : [ ],
+    "confidence" : 0.3842309534658532
+  }, {
+    "id" : "entity_8",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_9",
+    "type" : "concept",
+    "anchor" : "not",
+    "links" : [ "bn:00116360r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_10",
+    "type" : "concept",
+    "anchor" : "have",
+    "links" : [ "bn:00089240v" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_11",
+    "type" : "concept",
+    "anchor" : "own",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_12",
+    "type" : "concept",
+    "anchor" : "apartment",
+    "links" : [ "bn:15031452n" ],
+    "locations" : [ ],
+    "confidence" : 0.9386763554680988
+  }, {
+    "id" : "entity_13",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_14",
+    "type" : "concept",
+    "anchor" : "just",
+    "links" : [ "bn:00114626r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_15",
+    "type" : "concept",
+    "anchor" : "arrive",
+    "links" : [ "bn:00082790v" ],
+    "locations" : [ ],
+    "confidence" : 0.6435412750357268
+  }, {
+    "id" : "entity_16",
+    "type" : "GPE",
+    "anchor" : "Catalonia",
+    "links" : [ "bn:00016656n" ],
+    "locations" : [ {
+      "link" : "osm:602512999",
+      "latitude" : 41.8523094,
+      "longitude" : 1.5745043
+    }, {
+      "link" : "geonames:3336901",
+      "latitude" : 41.82046,
+      "longitude" : 1.86768
+    } ],
+    "confidence" : 0.4052229931993709
+  }, {
+    "id" : "entity_17",
+    "type" : "concept",
+    "anchor" : "and",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_18",
+    "type" : "GPE",
+    "anchor" : "Barcelona",
+    "links" : [ "bn:03505714n" ],
+    "locations" : [ {
+      "link" : "osm:152364165",
+      "latitude" : 41.3828939,
+      "longitude" : 2.1774322
+    }, {
+      "link" : "geonames:3128759",
+      "latitude" : 41.66667,
+      "longitude" : 2.0
+    }, {
+      "link" : "geonames:3128760",
+      "latitude" : 41.38879,
+      "longitude" : 2.15899
+    }, {
+      "link" : "geonames:6356055",
+      "latitude" : 41.39942,
+      "longitude" : 2.12804
+    }, {
+      "link" : "geonames:9179236",
+      "latitude" : 41.37287,
+      "longitude" : 2.1663
+    } ],
+    "confidence" : 1.0
+  }, {
+    "id" : "entity_19",
+    "type" : "DATE",
+    "anchor" : "one week ago",
+    "links" : [ "bn:01421448n" ],
+    "locations" : [ ],
+    "confidence" : 0.9184714022643725
+  }, {
+    "id" : "entity_20",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_21",
+    "type" : "concept",
+    "anchor" : "want",
+    "links" : [ "bn:00095628v" ],
+    "locations" : [ ],
+    "confidence" : 0.3294169063749548
+  }, {
+    "id" : "entity_22",
+    "type" : "concept",
+    "anchor" : "make",
+    "links" : [ "bn:00084089v" ],
+    "locations" : [ ],
+    "confidence" : 0.6976681240182411
+  }, {
+    "id" : "entity_23",
+    "type" : "concept",
+    "anchor" : "appointment",
+    "links" : [ "bn:05942545n" ],
+    "locations" : [ ],
+    "confidence" : 0.6794055498174919
+  }, {
+    "id" : "entity_24",
+    "type" : "concept",
+    "anchor" : "jobcenter",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_25",
+    "type" : "concept",
+    "anchor" : "employment",
+    "links" : [ "bn:14957117n" ],
+    "locations" : [ ],
+    "confidence" : 0.4702283174809628
+  }, {
+    "id" : "entity_26",
+    "type" : "concept",
+    "anchor" : "office",
+    "links" : [ "bn:17571475n" ],
+    "locations" : [ ],
+    "confidence" : 0.8356881990227573
+  }, {
+    "id" : "entity_27",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_28",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "bn:00114245r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_29",
+    "type" : "concept",
+    "anchor" : "talk",
+    "links" : [ "bn:00094123v" ],
+    "locations" : [ ],
+    "confidence" : 0.35093617199415983
+  }, {
+    "id" : "entity_30",
+    "type" : "concept",
+    "anchor" : "Mr.",
+    "links" : [ "bn:01673180n" ],
+    "locations" : [ ],
+    "confidence" : 0.9534590026696653
+  }, {
+    "id" : "entity_31",
+    "type" : "PERSON",
+    "anchor" : "Codina",
+    "links" : [ ],
+    "locations" : [ {
+      "link" : "osm:1241679577",
+      "latitude" : 41.9461861,
+      "longitude" : 1.3624527
+    } ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_32",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_33",
+    "type" : "concept",
+    "anchor" : "talk",
+    "links" : [ "bn:00094123v" ],
+    "locations" : [ ],
+    "confidence" : 0.35093617199415983
+  }, {
+    "id" : "entity_34",
+    "type" : "concept",
+    "anchor" : "he",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_35",
+    "type" : "DATE",
+    "anchor" : "Friday",
+    "links" : [ "bn:03425318n" ],
+    "locations" : [ ],
+    "confidence" : 0.89693647940293
+  }, {
+    "id" : "entity_36",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_37",
+    "type" : "concept",
+    "anchor" : "want",
+    "links" : [ "bn:00095628v" ],
+    "locations" : [ ],
+    "confidence" : 0.3294169063749548
+  }, {
+    "id" : "entity_38",
+    "type" : "concept",
+    "anchor" : "make",
+    "links" : [ "bn:00084089v" ],
+    "locations" : [ ],
+    "confidence" : 0.6976681240182411
+  }, {
+    "id" : "entity_39",
+    "type" : "concept",
+    "anchor" : "appointment",
+    "links" : [ "bn:05942545n" ],
+    "locations" : [ ],
+    "confidence" : 0.6794055498174919
+  }, {
+    "id" : "entity_40",
+    "type" : "concept",
+    "anchor" : "job",
+    "links" : [ "bn:02793166n" ],
+    "locations" : [ ],
+    "confidence" : 0.8811807341156337
+  }, {
+    "id" : "entity_41",
+    "type" : "PERSON",
+    "anchor" : "jobcenter",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_42",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_43",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "bn:00114245r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_44",
+    "type" : "concept",
+    "anchor" : "talk",
+    "links" : [ "bn:00094123v" ],
+    "locations" : [ ],
+    "confidence" : 0.35093617199415983
+  }, {
+    "id" : "entity_45",
+    "type" : "concept",
+    "anchor" : "Mr.",
+    "links" : [ "bn:01673180n" ],
+    "locations" : [ ],
+    "confidence" : 0.9534590026696653
+  }, {
+    "id" : "entity_46",
+    "type" : "PERSON",
+    "anchor" : "Serra",
+    "links" : [ "bn:00710425n" ],
+    "locations" : [ {
+      "link" : "osm:1793159676",
+      "latitude" : 41.9167251,
+      "longitude" : 3.1649159
+    }, {
+      "link" : "osm:1793159702",
+      "latitude" : 41.9167251,
+      "longitude" : 3.1649931000000002
+    }, {
+      "link" : "osm:2123743491",
+      "latitude" : 41.4501451,
+      "longitude" : 2.2473263
+    }, {
+      "link" : "osm:3117367282",
+      "latitude" : 41.3757939,
+      "longitude" : 2.0832883
+    } ],
+    "confidence" : 0.9076847255451297
+  }, {
+    "id" : "entity_47",
+    "type" : "concept",
+    "anchor" : "no",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_48",
+    "type" : "concept",
+    "anchor" : "it",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_49",
+    "type" : "concept",
+    "anchor" : "be",
+    "links" : [ "bn:00083181v" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_50",
+    "type" : "concept",
+    "anchor" : "Mr.",
+    "links" : [ "bn:01673180n" ],
+    "locations" : [ ],
+    "confidence" : 0.9534590026696653
+  }, {
+    "id" : "entity_51",
+    "type" : "PERSON",
+    "anchor" : "Codina",
+    "links" : [ ],
+    "locations" : [ {
+      "link" : "osm:1241679577",
+      "latitude" : 41.9461861,
+      "longitude" : 1.3624527
+    } ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_52",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_53",
+    "type" : "concept",
+    "anchor" : "already",
+    "links" : [ "bn:00114245r" ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_54",
+    "type" : "concept",
+    "anchor" : "talk",
+    "links" : [ "bn:00094123v" ],
+    "locations" : [ ],
+    "confidence" : 0.35093617199415983
+  }, {
+    "id" : "entity_55",
+    "type" : "concept",
+    "anchor" : "Mr.",
+    "links" : [ "bn:01673180n" ],
+    "locations" : [ ],
+    "confidence" : 0.9534590026696653
+  }, {
+    "id" : "entity_56",
+    "type" : "PERSON",
+    "anchor" : "Sierra",
+    "links" : [ "bn:02935300n" ],
+    "locations" : [ ],
+    "confidence" : 0.8327830079820419
+  }, {
+    "id" : "entity_57",
+    "type" : "ORG",
+    "anchor" : "Serra",
+    "links" : [ "bn:00710425n" ],
+    "locations" : [ {
+      "link" : "osm:1793159676",
+      "latitude" : 41.9167251,
+      "longitude" : 3.1649159
+    }, {
+      "link" : "osm:1793159702",
+      "latitude" : 41.9167251,
+      "longitude" : 3.1649931000000002
+    }, {
+      "link" : "osm:2123743491",
+      "latitude" : 41.4501451,
+      "longitude" : 2.2473263
+    }, {
+      "link" : "osm:3117367282",
+      "latitude" : 41.3757939,
+      "longitude" : 2.0832883
+    } ],
+    "confidence" : 0.9076847255451297
+  } ],
+  "relations" : [ {
+    "id" : "relation_21",
+    "predicate" : "entity_39",
+    "links" : [ "vn:29.1_appointment" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_40"
+    } ]
+  }, {
+    "id" : "relation_17",
+    "predicate" : "entity_30",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_31"
+    } ]
+  }, {
+    "id" : "relation_11",
+    "predicate" : "entity_21",
+    "links" : [ "vn:32.1_want", "fn:Desiring" ],
+    "participants" : [ {
+      "roles" : [ "Creator", "Agent", "A0" ],
+      "entity" : "entity_20"
+    }, {
+      "roles" : [ "Focal_participant", "Theme", "A1" ],
+      "entity" : "entity_22"
+    } ]
+  }, {
+    "id" : "relation_1",
+    "predicate" : "entity_3",
+    "links" : [ "vn:47.1_live", "fn:Residence" ],
+    "participants" : [ {
+      "roles" : [ "Resident", "Theme", "A0" ],
+      "entity" : "entity_2"
+    }, {
+      "roles" : [ "A1" ],
+      "entity" : "entity_5"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_7"
+    } ]
+  }, {
+    "id" : "relation_27",
+    "predicate" : "entity_49",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ "A1" ],
+      "entity" : "entity_48"
+    }, {
+      "roles" : [ "A2" ],
+      "entity" : "entity_50"
+    } ]
+  }, {
+    "id" : "relation_22",
+    "predicate" : "entity_40",
+    "links" : [ "fn:Being_obligated" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_41"
+    } ]
+  }, {
+    "id" : "relation_12",
+    "predicate" : "entity_22",
+    "links" : [ "vn:26.1_make", "fn:Creating" ],
+    "participants" : [ {
+      "roles" : [ "Creator", "Agent", "A0" ],
+      "entity" : "entity_20"
+    }, {
+      "roles" : [ "Created_entity", "Product", "A1" ],
+      "entity" : "entity_23"
+    } ]
+  }, {
+    "id" : "relation_3",
+    "predicate" : "entity_4",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ "A1" ],
+      "entity" : "entity_5"
+    } ]
+  }, {
+    "id" : "relation_26",
+    "predicate" : "entity_50",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_47"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_51"
+    } ]
+  }, {
+    "id" : "relation_13",
+    "predicate" : "entity_23",
+    "links" : [ "vn:29.1_appointment" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_24"
+    } ]
+  }, {
+    "id" : "relation_9",
+    "predicate" : "entity_14",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_15"
+    } ]
+  }, {
+    "id" : "relation_18",
+    "predicate" : "entity_33",
+    "links" : [ "fn:Chatting" ],
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_32"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_34"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_35"
+    } ]
+  }, {
+    "id" : "relation_8",
+    "predicate" : "entity_15",
+    "links" : [ "vn:51.1_arrive", "fn:Arriving" ],
+    "participants" : [ {
+      "roles" : [ "Theme", "Theme", "A1" ],
+      "entity" : "entity_13"
+    }, {
+      "roles" : [ "Goal", "Destination", "A4" ],
+      "entity" : "entity_16"
+    } ]
+  }, {
+    "id" : "relation_24",
+    "predicate" : "entity_43",
+    "links" : [ "fn:Time_vector" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_44"
+    } ]
+  }, {
+    "id" : "relation_4",
+    "predicate" : "entity_7",
+    "links" : [ "vn:29.5_mean", "fn:Purpose" ],
+    "participants" : [ {
+      "roles" : [ "Agent", "Agent", "A0" ],
+      "entity" : "entity_6"
+    }, {
+      "roles" : [ "Value", "Theme", "A1" ],
+      "entity" : "entity_10"
+    } ]
+  }, {
+    "id" : "relation_29",
+    "predicate" : "entity_53",
+    "links" : [ "fn:Time_vector" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_54"
+    } ]
+  }, {
+    "id" : "relation_23",
+    "predicate" : "entity_44",
+    "links" : [ "fn:Chatting" ],
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_42"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_45"
+    } ]
+  }, {
+    "id" : "relation_14",
+    "predicate" : "entity_26",
+    "links" : [ "fn:Building_subparts" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_25"
+    } ]
+  }, {
+    "id" : "relation_10",
+    "predicate" : "entity_17",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_18"
+    }, {
+      "roles" : [ ],
+      "entity" : "entity_19"
+    } ]
+  }, {
+    "id" : "relation_28",
+    "predicate" : "entity_54",
+    "links" : [ "fn:Chatting" ],
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_52"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_55"
+    } ]
+  }, {
+    "id" : "relation_25",
+    "predicate" : "entity_45",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_46"
+    } ]
+  }, {
+    "id" : "relation_6",
+    "predicate" : "entity_9",
+    "links" : [ "fn:Negation" ],
+    "participants" : [ {
+      "roles" : [ "Value", "Theme", "A1" ],
+      "entity" : "entity_10"
+    } ]
+  }, {
+    "id" : "relation_30",
+    "predicate" : "entity_55",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_56"
+    } ]
+  }, {
+    "id" : "relation_19",
+    "predicate" : "entity_37",
+    "links" : [ "vn:32.1_want", "fn:Desiring" ],
+    "participants" : [ {
+      "roles" : [ "Creator", "Agent", "A0" ],
+      "entity" : "entity_36"
+    }, {
+      "roles" : [ "Focal_participant", "Theme", "A1" ],
+      "entity" : "entity_38"
+    } ]
+  }, {
+    "id" : "relation_16",
+    "predicate" : "entity_28",
+    "links" : [ "fn:Time_vector" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_29"
+    } ]
+  }, {
+    "id" : "relation_5",
+    "predicate" : "entity_10",
+    "links" : [ "fn:Possession" ],
+    "participants" : [ {
+      "roles" : [ "Owner", "Theme", "A1" ],
+      "entity" : "entity_8"
+    }, {
+      "roles" : [ "Possession", "A2" ],
+      "entity" : "entity_12"
+    } ]
+  }, {
+    "id" : "relation_2",
+    "predicate" : "entity_1",
+    "links" : [ "fn:Temporal_collocation" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_3"
+    } ]
+  }, {
+    "id" : "relation_20",
+    "predicate" : "entity_38",
+    "links" : [ "vn:26.1_make", "fn:Creating" ],
+    "participants" : [ {
+      "roles" : [ "Creator", "Agent", "A0" ],
+      "entity" : "entity_36"
+    }, {
+      "roles" : [ "Created_entity", "Product", "A1" ],
+      "entity" : "entity_39"
+    } ]
+  }, {
+    "id" : "relation_15",
+    "predicate" : "entity_29",
+    "links" : [ "fn:Chatting" ],
+    "participants" : [ {
+      "roles" : [ "Interlocutor_1", "Agent", "A0" ],
+      "entity" : "entity_27"
+    }, {
+      "roles" : [ "Interlocutors", "Recipient", "A2" ],
+      "entity" : "entity_30"
+    } ]
+  }, {
+    "id" : "relation_7",
+    "predicate" : "entity_11",
+    "links" : [ ],
+    "participants" : [ {
+      "roles" : [ "Possession", "A2" ],
+      "entity" : "entity_12"
+    } ]
+  } ]
+}

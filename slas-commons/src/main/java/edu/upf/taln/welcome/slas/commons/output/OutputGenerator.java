@@ -131,10 +131,13 @@ public class OutputGenerator {
 
                 Relation relation = relationMap.get(govAnn);
                 if (relation == null) {
+                    ArrayList<String> links = extractLinks(govAnn);
+
                     relation = new Relation();
                     relation.setId("relation_" + i);
                     relation.setPredicate(govEntity.getId());
                     relation.setParticipants(new ArrayList<>());
+                    relation.setLinks(links);
                     relationMap.put(govAnn, relation);
                     i++;
                 }
@@ -197,26 +200,9 @@ public class OutputGenerator {
 
         Entity entity = new Entity();
         entity.setId(entityId);
-        entity.setAnchor(token.getCoveredText());
+        entity.setAnchor(token.getValue());
         entity.setLinks(links);
         entity.setLocations(locations);
-
-        String features = token.getFeatures();
-        if (features != null && !features.equals("_")) {
-            Map<String, String> featMap = Pattern.compile("\\|")
-                .splitAsStream(features)
-                .map(feat -> feat.split("=", 2))
-                .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
-            
-            String vn = featMap.get("vn");
-            if (vn != null) {
-                links.add(vn);
-            }
-            String fn = featMap.get("frame");
-            if (fn != null) {
-                links.add("fn:" + fn);
-            }
-        }
         
         List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
         if (wsdList.size() > 0) {
@@ -251,6 +237,29 @@ public class OutputGenerator {
         }
         
         return entity;
+    }
+
+    private static ArrayList<String> extractLinks(PredArgsToken token) {
+        
+        ArrayList<String> links = new ArrayList();
+        
+        String features = token.getFeatures();
+        if (features != null && !features.equals("_")) {
+            Map<String, String> featMap = Pattern.compile("\\|")
+                .splitAsStream(features)
+                .map(feat -> feat.split("=", 2))
+                .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
+            
+            String vn = featMap.get("vn");
+            if (vn != null) {
+                links.add(vn);
+            }
+            String fn = featMap.get("frame");
+            if (fn != null) {
+                links.add("fn:" + fn);
+            }
+        }
+        return links;
     }
     
     protected static TreeMap<Integer, Entity> extractEntities(Collection<PredArgsToken> tokenCollection) {

@@ -1,13 +1,15 @@
 package edu.upf.taln.welcome.slas.commons.output.welcome;
 
-import java.util.List;
 import java.util.ArrayList;
 import javax.validation.constraints.NotNull;
+
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 /**
  *
  * @author rcarlini
  */
+@JsonPropertyOrder({ "id", "predicate", "links", "participants" })
 public class Relation {
     
     @NotNull
@@ -16,6 +18,7 @@ public class Relation {
     @NotNull
     private String predicate;
     private ArrayList<Participant> participants;
+    private ArrayList<String> links;
 
     public String getId() {
         return id;
@@ -40,4 +43,12 @@ public class Relation {
     public void setParticipants(ArrayList<Participant> participants) {
         this.participants = participants;
     }
+
+    public ArrayList<String> getLinks() {
+        return links;
+    }
+
+    public void setLinks(ArrayList<String> links) {
+        this.links = links;
+    }    
 }

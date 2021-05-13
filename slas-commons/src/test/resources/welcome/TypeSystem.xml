@@ -1509,27 +1509,17 @@
                     <rangeTypeName>uima.cas.Double</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
-                    <name>nameId</name>
+                    <name>osmNameId</name>
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
-                    <name>nodeId</name>
+                    <name>osmNodeId</name>
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>geonamesId</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>geonamesLabel</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>osmLabel</name>
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
@@ -1538,105 +1528,7 @@
         <typeDescription>
             <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidate</name>
             <description/>
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-            <features>
-                <featureDescription>
-                    <name>latitude</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>longitude</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
-                </featureDescription>
-            </features>
-        </typeDescription>
-        <typeDescription>
-            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidate2</name>
-            <description/>
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-            <features>
-                <featureDescription>
-                    <name>latitude</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>longitude</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>nameId</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>nodeId</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>geonamesId</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>geonamesLabel</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>osmNameLabel</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>osmNodeLabel</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-            </features>
-        </typeDescription>
-        <typeDescription>
-            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidates</name>
-            <description/>
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-            <features>
-                <featureDescription>
-                    <name>candidates</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.FSList</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>text</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>lexicalizations</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
-                </featureDescription>
-            </features>
-        </typeDescription>
-        <typeDescription>
-            <name>edu.upf.taln.flask_wrapper.type.GeolocationCandidates2</name>
-            <description/>
-            <supertypeName>uima.tcas.Annotation</supertypeName>
-            <features>
-                <featureDescription>
-                    <name>candidates</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.FSList</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>namedEntity</name>
-                    <description/>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-            </features>
+            <supertypeName>edu.upf.taln.flask_wrapper.type.Geolocation</supertypeName>
         </typeDescription>
         <typeDescription>
             <name>edu.upf.taln.flask_wrapper.type.Polarity</name>

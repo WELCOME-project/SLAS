@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:types="http:///edu/upf/taln/classification/types.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:types8="http:///org/dbpedia/spotlight/uima/types.ecore" xmlns:uima="http:///edu/upf/taln/common/uima.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:types2="http:///edu/upf/taln/parser/deep_parser/types.ecore" xmlns:types5="http:///edu/upf/taln/uima/buddy/types.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/wsd/type.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type8="http:///edu/upf/taln/flask_wrapper/type.ecore" xmlns:types4="http:///edu/upf/taln/textplanning/uima/types.ecore" xmlns:types3="http:///edu/upf/taln/tensor/profiling/types.ecore" xmlns:types6="http:///edu/upf/taln/uima/flow/types.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:types7="http:///edu/upf/taln/uima/wsd/types.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <uima:ExtraMetaData xmi:id="13" sofa="1" begin="0" end="421" json="{&quot;language&quot;:&quot;en&quot;,&quot;output_level&quot;:&quot;xmi&quot;,&quot;analysis_type&quot;:&quot;FULL&quot;,&quot;use_case&quot;:&quot;catalonia&quot;}" qualifiedName="edu.upf.taln.welcome.slas.commons.input.InputMetadata"/>
+    <type2:DocumentMetaData xmi:id="19" sofa="1" begin="0" end="421" language="en" documentId="welcome-document" isLastSegment="false"/>
+    <types6:EnginesExecution xmi:id="30" sofa="1" begin="0" end="421" executionJson="{&quot;enginesData&quot;:{&quot;CONCEPT_CANDIDATES&quot;:true,&quot;NER_RETOKENIZER&quot;:true,&quot;DBPEDIA&quot;:true,&quot;DSYNTS&quot;:true,&quot;EMOTION&quot;:true,&quot;SSYNTS&quot;:true,&quot;GEOLOCATION&quot;:true,&quot;PARSING&quot;:true,&quot;DBPEDIA_RETOKENIZER&quot;:true,&quot;RETOKENIZER&quot;:true,&quot;NER&quot;:true,&quot;CONCEPT_DESAMBIGUATION&quot;:true,&quot;SPEECHACT&quot;:true}}"/>
+    <type4:Token xmi:id="35" sofa="1" begin="0" end="9" lemma="1323" pos="1317" morph="1328" order="0"/>
+    <type4:Token xmi:id="48" sofa="1" begin="9" end="10" lemma="1357" pos="1351" morph="1362" order="0"/>
+    <type4:Token xmi:id="61" sofa="1" begin="11" end="12" lemma="1391" pos="1385" morph="1396" order="0"/>
+    <type4:Token xmi:id="74" sofa="1" begin="13" end="17" lemma="1425" pos="1419" morph="1430" order="0"/>
+    <type4:Token xmi:id="87" sofa="1" begin="18" end="22" lemma="1459" pos="1453" morph="1464" order="0"/>
+    <type4:Token xmi:id="100" sofa="1" begin="23" end="25" lemma="1493" pos="1487" morph="1498" order="0"/>
+    <type4:Token xmi:id="113" sofa="1" begin="26" end="33" lemma="1527" pos="1521" morph="1532" order="0"/>
+    <type4:Token xmi:id="126" sofa="1" begin="33" end="34" lemma="1561" pos="1555" morph="1566" order="0"/>
+    <type4:Token xmi:id="139" sofa="1" begin="35" end="36" lemma="1595" pos="1589" morph="1600" order="0"/>
+    <type4:Token xmi:id="152" sofa="1" begin="37" end="41" lemma="1629" pos="1623" morph="1634" order="0"/>
+    <type4:Token xmi:id="165" sofa="1" begin="42" end="43" lemma="1663" pos="1657" morph="1668" order="0"/>
+    <type4:Token xmi:id="178" sofa="1" begin="44" end="46" lemma="1697" pos="1691" morph="1702" order="0"/>
+    <type4:Token xmi:id="191" sofa="1" begin="46" end="49" lemma="1731" pos="1725" morph="1736" order="0"/>
+    <type4:Token xmi:id="204" sofa="1" begin="50" end="54" lemma="1765" pos="1759" morph="1770" order="0"/>
+    <type4:Token xmi:id="217" sofa="1" begin="55" end="57" lemma="1799" pos="1793" morph="1804" order="0"/>
+    <type4:Token xmi:id="230" sofa="1" begin="58" end="61" lemma="1833" pos="1827" morph="1838" order="0"/>
+    <type4:Token xmi:id="243" sofa="1" begin="62" end="71" lemma="1867" pos="1861" morph="1872" order="0"/>
+    <type4:Token xmi:id="256" sofa="1" begin="71" end="72" lemma="1901" pos="1895" morph="1906" order="0"/>
+    <type4:Token xmi:id="274" sofa="1" begin="74" end="75" lemma="1935" pos="1929" morph="1940" order="0"/>
+    <type4:Token xmi:id="287" sofa="1" begin="76" end="80" lemma="1969" pos="1963" morph="1974" order="0"/>
+    <type4:Token xmi:id="300" sofa="1" begin="81" end="88" lemma="2003" pos="1997" morph="2008" order="0"/>
+    <type4:Token xmi:id="313" sofa="1" begin="89" end="91" lemma="2037" pos="2031" morph="2042" order="0"/>
+    <type4:Token xmi:id="326" sofa="1" begin="92" end="101" lemma="2071" pos="2065" morph="2076" order="0"/>
+    <type4:Token xmi:id="339" sofa="1" begin="101" end="102" lemma="2105" pos="2099" morph="2110" order="0"/>
+    <type4:Token xmi:id="357" sofa="1" begin="104" end="106" lemma="2139" pos="2133" morph="2144" order="0"/>
+    <type4:Token xmi:id="370" sofa="1" begin="107" end="116" lemma="2173" pos="2167" morph="2178" order="0"/>
+    <type4:Token xmi:id="383" sofa="1" begin="116" end="117" lemma="2207" pos="2201" morph="2212" order="0"/>
+    <type4:Token xmi:id="7637" sofa="1" begin="118" end="130" lemma="7650" pos="7655" order="0"/>
+    <type4:Token xmi:id="435" sofa="1" begin="130" end="131" lemma="2343" pos="2337" morph="2348" order="0"/>
+    <type4:Token xmi:id="453" sofa="1" begin="133" end="134" lemma="2377" pos="2371" morph="2382" order="0"/>
+    <type4:Token xmi:id="466" sofa="1" begin="135" end="139" lemma="2411" pos="2405" morph="2416" order="0"/>
+    <type4:Token xmi:id="479" sofa="1" begin="140" end="142" lemma="2445" pos="2439" morph="2450" order="0"/>
+    <type4:Token xmi:id="492" sofa="1" begin="143" end="147" lemma="2479" pos="2473" morph="2484" order="0"/>
+    <type4:Token xmi:id="505" sofa="1" begin="148" end="150" lemma="2513" pos="2507" morph="2518" order="0"/>
+    <type4:Token xmi:id="518" sofa="1" begin="151" end="162" lemma="2547" pos="2541" morph="2552" order="0"/>
+    <type4:Token xmi:id="531" sofa="1" begin="163" end="167" lemma="2581" pos="2575" morph="2586" order="0"/>
+    <type4:Token xmi:id="544" sofa="1" begin="168" end="171" lemma="2615" pos="2609" morph="2620" order="0"/>
+    <type4:Token xmi:id="557" sofa="1" begin="172" end="181" lemma="2649" pos="2643" morph="2654" order="0"/>
+    <type4:Token xmi:id="570" sofa="1" begin="181" end="182" lemma="2683" pos="2677" morph="2688" order="0"/>
+    <type4:Token xmi:id="588" sofa="1" begin="184" end="187" lemma="2717" pos="2711" morph="2722" order="0"/>
+    <type4:Token xmi:id="601" sofa="1" begin="188" end="198" lemma="2751" pos="2745" morph="2756" order="0"/>
+    <type4:Token xmi:id="614" sofa="1" begin="199" end="205" lemma="2785" pos="2779" morph="2790" order="0"/>
+    <type4:Token xmi:id="627" sofa="1" begin="205" end="206" lemma="2819" pos="2813" morph="2824" order="0"/>
+    <type4:Token xmi:id="645" sofa="1" begin="208" end="209" lemma="2853" pos="2847" morph="2858" order="0"/>
+    <type4:Token xmi:id="658" sofa="1" begin="210" end="217" lemma="2887" pos="2881" morph="2892" order="0"/>
+    <type4:Token xmi:id="671" sofa="1" begin="218" end="224" lemma="2921" pos="2915" morph="2926" order="0"/>
+    <type4:Token xmi:id="684" sofa="1" begin="225" end="227" lemma="2955" pos="2949" morph="2960" order="0"/>
+    <type4:Token xmi:id="697" sofa="1" begin="228" end="231" lemma="2989" pos="2983" morph="2994" order="0"/>
+    <type4:Token xmi:id="710" sofa="1" begin="232" end="238" lemma="3023" pos="3017" morph="3028" order="0"/>
+    <type4:Token xmi:id="723" sofa="1" begin="238" end="239" lemma="3057" pos="3051" morph="3062" order="0"/>
+    <type4:Token xmi:id="741" sofa="1" begin="240" end="241" lemma="3091" pos="3085" morph="3096" order="0"/>
+    <type4:Token xmi:id="754" sofa="1" begin="242" end="248" lemma="3125" pos="3119" morph="3130" order="0"/>
+    <type4:Token xmi:id="767" sofa="1" begin="249" end="251" lemma="3159" pos="3153" morph="3164" order="0"/>
+    <type4:Token xmi:id="780" sofa="1" begin="252" end="255" lemma="3193" pos="3187" morph="3198" order="0"/>
+    <type4:Token xmi:id="793" sofa="1" begin="256" end="258" lemma="3227" pos="3221" morph="3232" order="0"/>
+    <type4:Token xmi:id="806" sofa="1" begin="259" end="265" lemma="3261" pos="3255" morph="3266" order="0"/>
+    <type4:Token xmi:id="819" sofa="1" begin="265" end="266" lemma="3295" pos="3289" morph="3300" order="0"/>
+    <type4:Token xmi:id="837" sofa="1" begin="268" end="269" lemma="3329" pos="3323" morph="3334" order="0"/>
+    <type4:Token xmi:id="850" sofa="1" begin="270" end="274" lemma="3363" pos="3357" morph="3368" order="0"/>
+    <type4:Token xmi:id="863" sofa="1" begin="275" end="277" lemma="3397" pos="3391" morph="3402" order="0"/>
+    <type4:Token xmi:id="876" sofa="1" begin="278" end="282" lemma="3431" pos="3425" morph="3436" order="0"/>
+    <type4:Token xmi:id="889" sofa="1" begin="283" end="285" lemma="3465" pos="3459" morph="3470" order="0"/>
+    <type4:Token xmi:id="902" sofa="1" begin="286" end="297" lemma="3499" pos="3493" morph="3504" order="0"/>
+    <type4:Token xmi:id="915" sofa="1" begin="298" end="302" lemma="3533" pos="3527" morph="3538" order="0"/>
+    <type4:Token xmi:id="928" sofa="1" begin="303" end="306" lemma="3567" pos="3561" morph="3572" order="0"/>
+    <type4:Token xmi:id="941" sofa="1" begin="307" end="310" lemma="3601" pos="3595" morph="3606" order="0"/>
+    <type4:Token xmi:id="954" sofa="1" begin="310" end="313" lemma="3635" pos="3629" morph="3640" order="0"/>
+    <type4:Token xmi:id="967" sofa="1" begin="314" end="323" lemma="3669" pos="3663" morph="3674" order="0"/>
+    <type4:Token xmi:id="980" sofa="1" begin="323" end="324" lemma="3703" pos="3697" morph="3708" order="0"/>
+    <type4:Token xmi:id="998" sofa="1" begin="326" end="327" lemma="3737" pos="3731" morph="3742" order="0"/>
+    <type4:Token xmi:id="1011" sofa="1" begin="328" end="335" lemma="3771" pos="3765" morph="3776" order="0"/>
+    <type4:Token xmi:id="1024" sofa="1" begin="336" end="342" lemma="3805" pos="3799" morph="3810" order="0"/>
+    <type4:Token xmi:id="1037" sofa="1" begin="343" end="345" lemma="3839" pos="3833" morph="3844" order="0"/>
+    <type4:Token xmi:id="1050" sofa="1" begin="346" end="349" lemma="3873" pos="3867" morph="3878" order="0"/>
+    <type4:Token xmi:id="1063" sofa="1" begin="350" end="355" lemma="3907" pos="3901" morph="3912" order="0"/>
+    <type4:Token xmi:id="1076" sofa="1" begin="355" end="356" lemma="3941" pos="3935" morph="3946" order="0"/>
+    <type4:Token xmi:id="1094" sofa="1" begin="357" end="359" lemma="3975" pos="3969" morph="3980" order="0"/>
+    <type4:Token xmi:id="1107" sofa="1" begin="359" end="360" lemma="4009" pos="4003" morph="4014" order="0"/>
+    <type4:Token xmi:id="1120" sofa="1" begin="361" end="363" lemma="4043" pos="4037" morph="4048" order="0"/>
+    <type4:Token xmi:id="1133" sofa="1" begin="364" end="367" lemma="4077" pos="4071" morph="4082" order="0"/>
+    <type4:Token xmi:id="1146" sofa="1" begin="368" end="371" lemma="4111" pos="4105" morph="4116" order="0"/>
+    <type4:Token xmi:id="1159" sofa="1" begin="372" end="378" lemma="4145" pos="4139" morph="4150" order="0"/>
+    <type4:Token xmi:id="1172" sofa="1" begin="378" end="379" lemma="4179" pos="4173" morph="4184" order="0"/>
+    <type4:Token xmi:id="1190" sofa="1" begin="381" end="382" lemma="4213" pos="4207" morph="4218" order="0"/>
+    <type4:Token xmi:id="1203" sofa="1" begin="383" end="390" lemma="4247" pos="4241" morph="4252" order="0"/>
+    <type4:Token xmi:id="1216" sofa="1" begin="391" end="397" lemma="4281" pos="4275" morph="4286" order="0"/>
+    <type4:Token xmi:id="1229" sofa="1" begin="398" end="400" lemma="4315" pos="4309" morph="4320" order="0"/>
+    <type4:Token xmi:id="1242" sofa="1" begin="401" end="404" lemma="4349" pos="4343" morph="4354" order="0"/>
+    <type4:Token xmi:id="1255" sofa="1" begin="405" end="411" lemma="4383" pos="4377" morph="4388" order="0"/>
+    <type4:Token xmi:id="1268" sofa="1" begin="411" end="412" lemma="4417" pos="4411" morph="4422" order="0"/>
+    <type4:Token xmi:id="1286" sofa="1" begin="413" end="418" lemma="4451" pos="4445" morph="4456" order="0"/>
+    <type4:Token xmi:id="1299" sofa="1" begin="418" end="419" lemma="4485" pos="4479" morph="4490" order="0"/>
+    <type4:Sentence xmi:id="269" sofa="1" begin="0" end="72"/>
+    <type4:Sentence xmi:id="352" sofa="1" begin="74" end="102"/>
+    <type4:Sentence xmi:id="448" sofa="1" begin="104" end="131"/>
+    <type4:Sentence xmi:id="583" sofa="1" begin="133" end="182"/>
+    <type4:Sentence xmi:id="640" sofa="1" begin="184" end="206"/>
+    <type4:Sentence xmi:id="736" sofa="1" begin="208" end="239"/>
+    <type4:Sentence xmi:id="832" sofa="1" begin="240" end="266"/>
+    <type4:Sentence xmi:id="993" sofa="1" begin="268" end="324"/>
+    <type4:Sentence xmi:id="1089" sofa="1" begin="326" end="356"/>
+    <type4:Sentence xmi:id="1185" sofa="1" begin="357" end="379"/>
+    <type4:Sentence xmi:id="1281" sofa="1" begin="381" end="412"/>
+    <type4:Sentence xmi:id="1312" sofa="1" begin="413" end="419"/>
+    <pos:POS_ADV xmi:id="1317" sofa="1" begin="0" end="9" PosValue="RB" coarseValue="ADV"/>
+    <pos:POS_ADV xmi:id="8404" sofa="1" begin="0" end="9" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="9604" sofa="1" begin="0" end="9" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="1725" sofa="1" begin="46" end="49" PosValue="RB" coarseValue="PART"/>
+    <pos:POS_ADV xmi:id="8547" sofa="1" begin="46" end="49" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="9734" sofa="1" begin="46" end="49" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="1963" sofa="1" begin="76" end="80" PosValue="RB" coarseValue="ADV"/>
+    <pos:POS_ADV xmi:id="8677" sofa="1" begin="76" end="80" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="9878" sofa="1" begin="76" end="80" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="2881" sofa="1" begin="210" end="217" PosValue="RB" coarseValue="ADV"/>
+    <pos:POS_ADV xmi:id="8957" sofa="1" begin="210" end="217" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="10165" sofa="1" begin="210" end="217" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="3765" sofa="1" begin="328" end="335" PosValue="RB" coarseValue="ADV"/>
+    <pos:POS_ADV xmi:id="9297" sofa="1" begin="328" end="335" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="10472" sofa="1" begin="328" end="335" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="4241" sofa="1" begin="383" end="390" PosValue="RB" coarseValue="ADV"/>
+    <pos:POS_ADV xmi:id="9497" sofa="1" begin="383" end="390" PosValue="RB"/>
+    <pos:POS_ADV xmi:id="10672" sofa="1" begin="383" end="390" PosValue="RB"/>
+    <type4:Lemma xmi:id="1323" sofa="1" begin="0" end="9" value="currently"/>
+    <type4:Lemma xmi:id="1357" sofa="1" begin="9" end="10" value=","/>
+    <type4:Lemma xmi:id="1391" sofa="1" begin="11" end="12" value="I"/>
+    <type4:Lemma xmi:id="1425" sofa="1" begin="13" end="17" value="live"/>
+    <type4:Lemma xmi:id="1459" sofa="1" begin="18" end="22" value="with"/>
+    <type4:Lemma xmi:id="1493" sofa="1" begin="23" end="25" value="my"/>
+    <type4:Lemma xmi:id="1527" sofa="1" begin="26" end="33" value="friend"/>
+    <type4:Lemma xmi:id="1561" sofa="1" begin="33" end="34" value=","/>
+    <type4:Lemma xmi:id="1595" sofa="1" begin="35" end="36" value="I"/>
+    <type4:Lemma xmi:id="1629" sofa="1" begin="37" end="41" value="mean"/>
+    <type4:Lemma xmi:id="1663" sofa="1" begin="42" end="43" value="I"/>
+    <type4:Lemma xmi:id="1697" sofa="1" begin="44" end="46" value="do"/>
+    <type4:Lemma xmi:id="1731" sofa="1" begin="46" end="49" value="not"/>
+    <type4:Lemma xmi:id="1765" sofa="1" begin="50" end="54" value="have"/>
+    <type4:Lemma xmi:id="1799" sofa="1" begin="55" end="57" value="a"/>
+    <type4:Lemma xmi:id="1833" sofa="1" begin="58" end="61" value="own"/>
+    <type4:Lemma xmi:id="1867" sofa="1" begin="62" end="71" value="apartment"/>
+    <type4:Lemma xmi:id="1901" sofa="1" begin="71" end="72" value="."/>
+    <type4:Lemma xmi:id="1935" sofa="1" begin="74" end="75" value="I"/>
+    <type4:Lemma xmi:id="1969" sofa="1" begin="76" end="80" value="just"/>
+    <type4:Lemma xmi:id="2003" sofa="1" begin="81" end="88" value="arrive"/>
+    <type4:Lemma xmi:id="2037" sofa="1" begin="89" end="91" value="in"/>
+    <type4:Lemma xmi:id="2071" sofa="1" begin="92" end="101" value="Catalonia"/>
+    <type4:Lemma xmi:id="2105" sofa="1" begin="101" end="102" value="."/>
+    <type4:Lemma xmi:id="2139" sofa="1" begin="104" end="106" value="in"/>
+    <type4:Lemma xmi:id="2173" sofa="1" begin="107" end="116" value="Barcelona"/>
+    <type4:Lemma xmi:id="2207" sofa="1" begin="116" end="117" value=","/>
+    <type4:Lemma xmi:id="7650" sofa="1" begin="118" end="130" value="one week ago"/>
+    <type4:Lemma xmi:id="2343" sofa="1" begin="130" end="131" value="."/>
+    <type4:Lemma xmi:id="2377" sofa="1" begin="133" end="134" value="I"/>
+    <type4:Lemma xmi:id="2411" sofa="1" begin="135" end="139" value="want"/>
+    <type4:Lemma xmi:id="2445" sofa="1" begin="140" end="142" value="to"/>
+    <type4:Lemma xmi:id="2479" sofa="1" begin="143" end="147" value="make"/>
+    <type4:Lemma xmi:id="2513" sofa="1" begin="148" end="150" value="a"/>
+    <type4:Lemma xmi:id="2547" sofa="1" begin="151" end="162" value="appointment"/>
+    <type4:Lemma xmi:id="2581" sofa="1" begin="163" end="167" value="with"/>
+    <type4:Lemma xmi:id="2615" sofa="1" begin="168" end="171" value="the"/>
+    <type4:Lemma xmi:id="2649" sofa="1" begin="172" end="181" value="jobcenter"/>
+    <type4:Lemma xmi:id="2683" sofa="1" begin="181" end="182" value="."/>
+    <type4:Lemma xmi:id="2717" sofa="1" begin="184" end="187" value="the"/>
+    <type4:Lemma xmi:id="2751" sofa="1" begin="188" end="198" value="employment"/>
+    <type4:Lemma xmi:id="2785" sofa="1" begin="199" end="205" value="office"/>
+    <type4:Lemma xmi:id="2819" sofa="1" begin="205" end="206" value="."/>
+    <type4:Lemma xmi:id="2853" sofa="1" begin="208" end="209" value="I"/>
+    <type4:Lemma xmi:id="2887" sofa="1" begin="210" end="217" value="already"/>
+    <type4:Lemma xmi:id="2921" sofa="1" begin="218" end="224" value="talk"/>
+    <type4:Lemma xmi:id="2955" sofa="1" begin="225" end="227" value="to"/>
+    <type4:Lemma xmi:id="2989" sofa="1" begin="228" end="231" value="Mr."/>
+    <type4:Lemma xmi:id="3023" sofa="1" begin="232" end="238" value="Codina"/>
+    <type4:Lemma xmi:id="3057" sofa="1" begin="238" end="239" value="."/>
+    <type4:Lemma xmi:id="3091" sofa="1" begin="240" end="241" value="I"/>
+    <type4:Lemma xmi:id="3125" sofa="1" begin="242" end="248" value="talk"/>
+    <type4:Lemma xmi:id="3159" sofa="1" begin="249" end="251" value="to"/>
+    <type4:Lemma xmi:id="3193" sofa="1" begin="252" end="255" value="he"/>
+    <type4:Lemma xmi:id="3227" sofa="1" begin="256" end="258" value="on"/>
+    <type4:Lemma xmi:id="3261" sofa="1" begin="259" end="265" value="Friday"/>
+    <type4:Lemma xmi:id="3295" sofa="1" begin="265" end="266" value="."/>
+    <type4:Lemma xmi:id="3329" sofa="1" begin="268" end="269" value="I"/>
+    <type4:Lemma xmi:id="3363" sofa="1" begin="270" end="274" value="want"/>
+    <type4:Lemma xmi:id="3397" sofa="1" begin="275" end="277" value="to"/>
+    <type4:Lemma xmi:id="3431" sofa="1" begin="278" end="282" value="make"/>
+    <type4:Lemma xmi:id="3465" sofa="1" begin="283" end="285" value="a"/>
+    <type4:Lemma xmi:id="3499" sofa="1" begin="286" end="297" value="appointment"/>
+    <type4:Lemma xmi:id="3533" sofa="1" begin="298" end="302" value="with"/>
+    <type4:Lemma xmi:id="3567" sofa="1" begin="303" end="306" value="the"/>
+    <type4:Lemma xmi:id="3601" sofa="1" begin="307" end="310" value="job"/>
+    <type4:Lemma xmi:id="3635" sofa="1" begin="310" end="313" value="..."/>
+    <type4:Lemma xmi:id="3669" sofa="1" begin="314" end="323" value="jobcenter"/>
+    <type4:Lemma xmi:id="3703" sofa="1" begin="323" end="324" value="."/>
+    <type4:Lemma xmi:id="3737" sofa="1" begin="326" end="327" value="I"/>
+    <type4:Lemma xmi:id="3771" sofa="1" begin="328" end="335" value="already"/>
+    <type4:Lemma xmi:id="3805" sofa="1" begin="336" end="342" value="talk"/>
+    <type4:Lemma xmi:id="3839" sofa="1" begin="343" end="345" value="to"/>
+    <type4:Lemma xmi:id="3873" sofa="1" begin="346" end="349" value="Mr."/>
+    <type4:Lemma xmi:id="3907" sofa="1" begin="350" end="355" value="Serra"/>
+    <type4:Lemma xmi:id="3941" sofa="1" begin="355" end="356" value="."/>
+    <type4:Lemma xmi:id="3975" sofa="1" begin="357" end="359" value="no"/>
+    <type4:Lemma xmi:id="4009" sofa="1" begin="359" end="360" value=","/>
+    <type4:Lemma xmi:id="4043" sofa="1" begin="361" end="363" value="it"/>
+    <type4:Lemma xmi:id="4077" sofa="1" begin="364" end="367" value="be"/>
+    <type4:Lemma xmi:id="4111" sofa="1" begin="368" end="371" value="Mr."/>
+    <type4:Lemma xmi:id="4145" sofa="1" begin="372" end="378" value="Codina"/>
+    <type4:Lemma xmi:id="4179" sofa="1" begin="378" end="379" value="."/>
+    <type4:Lemma xmi:id="4213" sofa="1" begin="381" end="382" value="I"/>
+    <type4:Lemma xmi:id="4247" sofa="1" begin="383" end="390" value="already"/>
+    <type4:Lemma xmi:id="4281" sofa="1" begin="391" end="397" value="talk"/>
+    <type4:Lemma xmi:id="4315" sofa="1" begin="398" end="400" value="to"/>
+    <type4:Lemma xmi:id="4349" sofa="1" begin="401" end="404" value="Mr."/>
+    <type4:Lemma xmi:id="4383" sofa="1" begin="405" end="411" value="Sierra"/>
+    <type4:Lemma xmi:id="4417" sofa="1" begin="411" end="412" value="."/>
+    <type4:Lemma xmi:id="4451" sofa="1" begin="413" end="418" value="Serra"/>
+    <type4:Lemma xmi:id="4485" sofa="1" begin="418" end="419" value="."/>
+    <morph:MorphologicalFeatures xmi:id="1328" sofa="1" begin="0" end="9" value="wnId=00048268r|en_cano=currently|EL=σήμερα|bnId=bn:00114905r|EN=currently|IT=attualmente|ES=actualmente"/>
+    <morph:MorphologicalFeatures xmi:id="1362" sofa="1" begin="9" end="10" value=""/>
+    <morph:MorphologicalFeatures xmi:id="1396" sofa="1" begin="11" end="12" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="1430" sofa="1" begin="13" end="17" value="Tense=Pres|Mood=Ind|wnId=02649830v|en_cano=live|EL=μένω|bnId=bn:00087441v|EN=live|VerbForm=Fin|IT=abitare|ES=morar"/>
+    <morph:MorphologicalFeatures xmi:id="1464" sofa="1" begin="18" end="22" value=""/>
+    <morph:MorphologicalFeatures xmi:id="1498" sofa="1" begin="23" end="25" value="Number=Sing|Person=1|Poss=Yes|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="1532" sofa="1" begin="26" end="33" value="Number=Plur|en_cano=Friend|bnId=bn:01379732n|EN=Friend"/>
+    <morph:MorphologicalFeatures xmi:id="1566" sofa="1" begin="33" end="34" value=""/>
+    <morph:MorphologicalFeatures xmi:id="1600" sofa="1" begin="35" end="36" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="1634" sofa="1" begin="37" end="41" value="Tense=Pres|Mood=Ind|wnId=00708538v|en_cano=intend|EL=θέλω|bnId=bn:00089804v|EN=intend|VerbForm=Fin|IT=intendere|ES=pretender"/>
+    <morph:MorphologicalFeatures xmi:id="1668" sofa="1" begin="42" end="43" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="1702" sofa="1" begin="44" end="46" value="Tense=Pres|Mood=Ind|wnId=02560585v|en_cano=do|bnId=bn:00087106v|EN=do|VerbForm=Fin|IT=fare|ES=hacer"/>
+    <morph:MorphologicalFeatures xmi:id="1736" sofa="1" begin="46" end="49" value="wnId=00024073r|en_cano=non|EL=δεν|bnId=bn:00116360r|EN=non|IT=non|ES=no"/>
+    <morph:MorphologicalFeatures xmi:id="1770" sofa="1" begin="50" end="54" value="wnId=02203362v|en_cano=have|EL=έχω|bnId=bn:00089240v|EN=have|VerbForm=Inf|IT=avere|ES=tener"/>
+    <morph:MorphologicalFeatures xmi:id="1804" sofa="1" begin="55" end="57" value="Definite=Ind|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="1838" sofa="1" begin="58" end="61" value="Degree=Pos"/>
+    <morph:MorphologicalFeatures xmi:id="1872" sofa="1" begin="62" end="71" value="Number=Sing|en_cano=The_Apartment|bnId=bn:15031452n|EN=The_Apartment|IT=L'appartamento|ES=L'Appartement"/>
+    <morph:MorphologicalFeatures xmi:id="1906" sofa="1" begin="71" end="72" value=""/>
+    <morph:MorphologicalFeatures xmi:id="1940" sofa="1" begin="74" end="75" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="1974" sofa="1" begin="76" end="80" value="wnId=00004722r|en_cano=just|EL=μόνο|bnId=bn:00114626r|EN=just|IT=soltanto|ES=sólo"/>
+    <morph:MorphologicalFeatures xmi:id="2008" sofa="1" begin="81" end="88" value="Tense=Past|Mood=Ind|wnId=02020590v|en_cano=reach|EL=φτάνω|bnId=bn:00082790v|EN=reach|VerbForm=Fin|IT=raggiungere|ES=llegar"/>
+    <morph:MorphologicalFeatures xmi:id="2042" sofa="1" begin="89" end="91" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2076" sofa="1" begin="92" end="101" value="Number=Sing|wnId=09028062n|en_cano=Catalonia|EL=Καταλονία|bnId=bn:00016656n|EN=Catalonia|IT=Catalogna|ES=Cataluña"/>
+    <morph:MorphologicalFeatures xmi:id="2110" sofa="1" begin="101" end="102" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2144" sofa="1" begin="104" end="106" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2178" sofa="1" begin="107" end="116" value="Number=Sing|en_cano=Barcelona|bnId=bn:03505714n|EN=Barcelona"/>
+    <morph:MorphologicalFeatures xmi:id="2212" sofa="1" begin="116" end="117" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2246" sofa="1" begin="118" end="121" value="NumType=Card|en_cano=One_Week|bnId=bn:01421448n|EN=One_Week|IT=One_Week"/>
+    <morph:MorphologicalFeatures xmi:id="2280" sofa="1" begin="122" end="126" value="Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="2314" sofa="1" begin="127" end="130" value="wnId=00074095r|en_cano=ago|bnId=bn:00114178r|EN=ago|IT=addietro|ES=atrás"/>
+    <morph:MorphologicalFeatures xmi:id="2348" sofa="1" begin="130" end="131" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2382" sofa="1" begin="133" end="134" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="2416" sofa="1" begin="135" end="139" value="Tense=Pres|Mood=Ind|wnId=00709205v|en_cano=want|EL=θέλω|bnId=bn:00095628v|EN=want|VerbForm=Fin|IT=volere|ES=desear"/>
+    <morph:MorphologicalFeatures xmi:id="2450" sofa="1" begin="140" end="142" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2484" sofa="1" begin="143" end="147" value="wnId=02289295v|en_cano=bring_in|EL=κερδίζω|bnId=bn:00084089v|EN=bring_in|VerbForm=Inf|IT=guadagnare|ES=ganar"/>
+    <morph:MorphologicalFeatures xmi:id="2518" sofa="1" begin="148" end="150" value="Definite=Ind|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="2552" sofa="1" begin="151" end="162" value="Number=Sing|en_cano=Appointment|bnId=bn:05942545n|EN=Appointment"/>
+    <morph:MorphologicalFeatures xmi:id="2586" sofa="1" begin="163" end="167" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2620" sofa="1" begin="168" end="171" value="Definite=Def|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="2654" sofa="1" begin="172" end="181" value="Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="2688" sofa="1" begin="181" end="182" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2722" sofa="1" begin="184" end="187" value="Definite=Def|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="2756" sofa="1" begin="188" end="198" value="Number=Sing|en_cano=Employment|bnId=bn:14957117n|EN=Employment"/>
+    <morph:MorphologicalFeatures xmi:id="2790" sofa="1" begin="199" end="205" value="Number=Sing|en_cano=Office|bnId=bn:17571475n|EN=Office"/>
+    <morph:MorphologicalFeatures xmi:id="2824" sofa="1" begin="205" end="206" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2858" sofa="1" begin="208" end="209" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="2892" sofa="1" begin="210" end="217" value="wnId=00031798r|en_cano=already|EL=ήδη|bnId=bn:00114245r|EN=already|IT=già|ES=ya"/>
+    <morph:MorphologicalFeatures xmi:id="2926" sofa="1" begin="218" end="224" value="Tense=Past|Mood=Ind|wnId=00952841v|en_cano=spill|bnId=bn:00094123v|EN=spill|VerbForm=Fin|IT=confessare|ES=hablar"/>
+    <morph:MorphologicalFeatures xmi:id="2960" sofa="1" begin="225" end="227" value=""/>
+    <morph:MorphologicalFeatures xmi:id="2994" sofa="1" begin="228" end="231" value="Number=Sing|en_cano=Mr.|bnId=bn:01673180n|EN=Mr.|ES=Mr."/>
+    <morph:MorphologicalFeatures xmi:id="3028" sofa="1" begin="232" end="238" value="Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="3062" sofa="1" begin="238" end="239" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3096" sofa="1" begin="240" end="241" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="3130" sofa="1" begin="242" end="248" value="Tense=Past|Mood=Ind|wnId=00952841v|en_cano=spill|bnId=bn:00094123v|EN=spill|VerbForm=Fin|IT=confessare|ES=hablar"/>
+    <morph:MorphologicalFeatures xmi:id="3164" sofa="1" begin="249" end="251" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3198" sofa="1" begin="252" end="255" value="Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="3232" sofa="1" begin="256" end="258" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3266" sofa="1" begin="259" end="265" value="Number=Sing|en_cano=Friday|bnId=bn:03425318n|EN=Friday|IT=Operazione_domani|ES=Viernes"/>
+    <morph:MorphologicalFeatures xmi:id="3300" sofa="1" begin="265" end="266" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3334" sofa="1" begin="268" end="269" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="3368" sofa="1" begin="270" end="274" value="Tense=Pres|Mood=Ind|wnId=00709205v|en_cano=want|EL=θέλω|bnId=bn:00095628v|EN=want|VerbForm=Fin|IT=volere|ES=desear"/>
+    <morph:MorphologicalFeatures xmi:id="3402" sofa="1" begin="275" end="277" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3436" sofa="1" begin="278" end="282" value="wnId=02289295v|en_cano=bring_in|EL=κερδίζω|bnId=bn:00084089v|EN=bring_in|VerbForm=Inf|IT=guadagnare|ES=ganar"/>
+    <morph:MorphologicalFeatures xmi:id="3470" sofa="1" begin="283" end="285" value="Definite=Ind|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="3504" sofa="1" begin="286" end="297" value="Number=Sing|en_cano=Appointment|bnId=bn:05942545n|EN=Appointment"/>
+    <morph:MorphologicalFeatures xmi:id="3538" sofa="1" begin="298" end="302" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3572" sofa="1" begin="303" end="306" value="Definite=Def|PronType=Art"/>
+    <morph:MorphologicalFeatures xmi:id="3606" sofa="1" begin="307" end="310" value="Number=Sing|en_cano=Job|EL=Ιώβ|bnId=bn:02793166n|EN=Job|IT=Giobbe|ES=Job"/>
+    <morph:MorphologicalFeatures xmi:id="3640" sofa="1" begin="310" end="313" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3674" sofa="1" begin="314" end="323" value="Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="3708" sofa="1" begin="323" end="324" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3742" sofa="1" begin="326" end="327" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="3776" sofa="1" begin="328" end="335" value="wnId=00031798r|en_cano=already|EL=ήδη|bnId=bn:00114245r|EN=already|IT=già|ES=ya"/>
+    <morph:MorphologicalFeatures xmi:id="3810" sofa="1" begin="336" end="342" value="Tense=Past|Mood=Ind|wnId=00952841v|en_cano=spill|bnId=bn:00094123v|EN=spill|VerbForm=Fin|IT=confessare|ES=hablar"/>
+    <morph:MorphologicalFeatures xmi:id="3844" sofa="1" begin="343" end="345" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3878" sofa="1" begin="346" end="349" value="Number=Sing|en_cano=Mr.|bnId=bn:01673180n|EN=Mr.|ES=Mr."/>
+    <morph:MorphologicalFeatures xmi:id="3912" sofa="1" begin="350" end="355" value="Number=Sing|en_cano=Serra|bnId=bn:00710425n|EN=Serra|IT=Serra"/>
+    <morph:MorphologicalFeatures xmi:id="3946" sofa="1" begin="355" end="356" value=""/>
+    <morph:MorphologicalFeatures xmi:id="3980" sofa="1" begin="357" end="359" value=""/>
+    <morph:MorphologicalFeatures xmi:id="4014" sofa="1" begin="359" end="360" value=""/>
+    <morph:MorphologicalFeatures xmi:id="4048" sofa="1" begin="361" end="363" value="Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="4082" sofa="1" begin="364" end="367" value="Tense=Past|Mood=Ind|Number=Sing|wnId=02604760v|en_cano=be|EL=είμαι|bnId=bn:00083181v|EN=be|VerbForm=Fin|IT=essere|Person=3|ES=ser"/>
+    <morph:MorphologicalFeatures xmi:id="4116" sofa="1" begin="368" end="371" value="Number=Sing|en_cano=Mr.|bnId=bn:01673180n|EN=Mr.|ES=Mr."/>
+    <morph:MorphologicalFeatures xmi:id="4150" sofa="1" begin="372" end="378" value="Number=Sing"/>
+    <morph:MorphologicalFeatures xmi:id="4184" sofa="1" begin="378" end="379" value=""/>
+    <morph:MorphologicalFeatures xmi:id="4218" sofa="1" begin="381" end="382" value="Case=Nom|Number=Sing|Person=1|PronType=Prs"/>
+    <morph:MorphologicalFeatures xmi:id="4252" sofa="1" begin="383" end="390" value="wnId=00031798r|en_cano=already|EL=ήδη|bnId=bn:00114245r|EN=already|IT=già|ES=ya"/>
+    <morph:MorphologicalFeatures xmi:id="4286" sofa="1" begin="391" end="397" value="Tense=Past|Mood=Ind|wnId=00952841v|en_cano=spill|bnId=bn:00094123v|EN=spill|VerbForm=Fin|IT=confessare|ES=hablar"/>
+    <morph:MorphologicalFeatures xmi:id="4320" sofa="1" begin="398" end="400" value=""/>
+    <morph:MorphologicalFeatures xmi:id="4354" sofa="1" begin="401" end="404" value="Number=Sing|en_cano=Mr.|bnId=bn:01673180n|EN=Mr.|ES=Mr."/>
+    <morph:MorphologicalFeatures xmi:id="4388" sofa="1" begin="405" end="411" value="Number=Sing|en_cano=Sierra|EL=Sierra|bnId=bn:02935300n|EN=Sierra|IT=Sierra|ES=Sierra"/>
+    <morph:MorphologicalFeatures xmi:id="4422" sofa="1" begin="411" end="412" value=""/>
+    <morph:MorphologicalFeatures xmi:id="4456" sofa="1" begin="413" end="418" value="Number=Sing|en_cano=Serra|bnId=bn:00710425n|EN=Serra|IT=Serra"/>
+    <morph:MorphologicalFeatures xmi:id="4490" sofa="1" begin="418" end="419" value=""/>
+    <pos:POS_PUNCT xmi:id="1351" sofa="1" begin="9" end="10" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="1555" sofa="1" begin="33" end="34" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="1895" sofa="1" begin="71" end="72" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="2099" sofa="1" begin="101" end="102" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="2201" sofa="1" begin="116" end="117" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="2337" sofa="1" begin="130" end="131" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="2677" sofa="1" begin="181" end="182" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="2813" sofa="1" begin="205" end="206" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="3051" sofa="1" begin="238" end="239" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="3289" sofa="1" begin="265" end="266" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="3629" sofa="1" begin="310" end="313" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="3697" sofa="1" begin="323" end="324" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="3935" sofa="1" begin="355" end="356" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="4003" sofa="1" begin="359" end="360" PosValue="," coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="4173" sofa="1" begin="378" end="379" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="4411" sofa="1" begin="411" end="412" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PUNCT xmi:id="4479" sofa="1" begin="418" end="419" PosValue="." coarseValue="PUNCT"/>
+    <pos:POS_PRON xmi:id="1385" sofa="1" begin="11" end="12" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8482" sofa="1" begin="11" end="12" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="9682" sofa="1" begin="11" end="12" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="1487" sofa="1" begin="23" end="25" PosValue="PRP$" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8521" sofa="1" begin="23" end="25" PosValue="PRP$"/>
+    <pos:POS_PRON xmi:id="9708" sofa="1" begin="23" end="25" PosValue="PRP$"/>
+    <pos:POS_PRON xmi:id="1589" sofa="1" begin="35" end="36" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8430" sofa="1" begin="35" end="36" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="9630" sofa="1" begin="35" end="36" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="1657" sofa="1" begin="42" end="43" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8534" sofa="1" begin="42" end="43" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="9721" sofa="1" begin="42" end="43" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="1929" sofa="1" begin="74" end="75" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8664" sofa="1" begin="74" end="75" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="9865" sofa="1" begin="74" end="75" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="2371" sofa="1" begin="133" end="134" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8784" sofa="1" begin="133" end="134" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10005" sofa="1" begin="133" end="134" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="2847" sofa="1" begin="208" end="209" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="8944" sofa="1" begin="208" end="209" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10152" sofa="1" begin="208" end="209" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="3085" sofa="1" begin="240" end="241" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9044" sofa="1" begin="240" end="241" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10252" sofa="1" begin="240" end="241" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="3187" sofa="1" begin="252" end="255" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9070" sofa="1" begin="252" end="255" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10278" sofa="1" begin="252" end="255" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="3323" sofa="1" begin="268" end="269" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9144" sofa="1" begin="268" end="269" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10332" sofa="1" begin="268" end="269" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="3731" sofa="1" begin="326" end="327" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9284" sofa="1" begin="326" end="327" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10459" sofa="1" begin="326" end="327" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="4037" sofa="1" begin="361" end="363" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9397" sofa="1" begin="361" end="363" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10572" sofa="1" begin="361" end="363" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="4207" sofa="1" begin="381" end="382" PosValue="PRP" coarseValue="PRON"/>
+    <pos:POS_PRON xmi:id="9484" sofa="1" begin="381" end="382" PosValue="PRP"/>
+    <pos:POS_PRON xmi:id="10659" sofa="1" begin="381" end="382" PosValue="PRP"/>
+    <pos:POS_VERB xmi:id="1419" sofa="1" begin="13" end="17" PosValue="VBP" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8495" sofa="1" begin="13" end="17" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="9695" sofa="1" begin="13" end="17" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="1623" sofa="1" begin="37" end="41" PosValue="VBP" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8443" sofa="1" begin="37" end="41" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="9643" sofa="1" begin="37" end="41" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="1691" sofa="1" begin="44" end="46" PosValue="VBP" coarseValue="AUX"/>
+    <pos:POS_VERB xmi:id="1759" sofa="1" begin="50" end="54" PosValue="VB" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8560" sofa="1" begin="50" end="54" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="9747" sofa="1" begin="50" end="54" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="1997" sofa="1" begin="81" end="88" PosValue="VBD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8690" sofa="1" begin="81" end="88" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="9891" sofa="1" begin="81" end="88" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="2405" sofa="1" begin="135" end="139" PosValue="VBP" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8797" sofa="1" begin="135" end="139" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="10018" sofa="1" begin="135" end="139" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="2473" sofa="1" begin="143" end="147" PosValue="VB" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8823" sofa="1" begin="143" end="147" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="10031" sofa="1" begin="143" end="147" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="2915" sofa="1" begin="218" end="224" PosValue="VBD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="8970" sofa="1" begin="218" end="224" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="10178" sofa="1" begin="218" end="224" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="3119" sofa="1" begin="242" end="248" PosValue="VBD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="9057" sofa="1" begin="242" end="248" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="10265" sofa="1" begin="242" end="248" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="3357" sofa="1" begin="270" end="274" PosValue="VBP" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="9157" sofa="1" begin="270" end="274" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="10345" sofa="1" begin="270" end="274" PosValue="VBP"/>
+    <pos:POS_VERB xmi:id="3425" sofa="1" begin="278" end="282" PosValue="VB" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="9183" sofa="1" begin="278" end="282" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="10358" sofa="1" begin="278" end="282" PosValue="VB"/>
+    <pos:POS_VERB xmi:id="3799" sofa="1" begin="336" end="342" PosValue="VBD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="9310" sofa="1" begin="336" end="342" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="10485" sofa="1" begin="336" end="342" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="4071" sofa="1" begin="364" end="367" PosValue="VBD" coarseValue="AUX"/>
+    <pos:POS_VERB xmi:id="9410" sofa="1" begin="364" end="367" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="10585" sofa="1" begin="364" end="367" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="4275" sofa="1" begin="391" end="397" PosValue="VBD" coarseValue="VERB"/>
+    <pos:POS_VERB xmi:id="9510" sofa="1" begin="391" end="397" PosValue="VBD"/>
+    <pos:POS_VERB xmi:id="10685" sofa="1" begin="391" end="397" PosValue="VBD"/>
+    <pos:POS_ADP xmi:id="1453" sofa="1" begin="18" end="22" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="8508" sofa="1" begin="18" end="22" PosValue="IN"/>
+    <pos:POS_ADP xmi:id="2031" sofa="1" begin="89" end="91" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="2133" sofa="1" begin="104" end="106" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="2439" sofa="1" begin="140" end="142" PosValue="TO" coarseValue="PART"/>
+    <pos:POS_ADP xmi:id="2575" sofa="1" begin="163" end="167" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="8810" sofa="1" begin="163" end="167" PosValue="IN"/>
+    <pos:POS_ADP xmi:id="2949" sofa="1" begin="225" end="227" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="3153" sofa="1" begin="249" end="251" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="3221" sofa="1" begin="256" end="258" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="9083" sofa="1" begin="256" end="258" PosValue="IN"/>
+    <pos:POS_ADP xmi:id="3391" sofa="1" begin="275" end="277" PosValue="TO" coarseValue="PART"/>
+    <pos:POS_ADP xmi:id="3527" sofa="1" begin="298" end="302" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="9170" sofa="1" begin="298" end="302" PosValue="IN"/>
+    <pos:POS_ADP xmi:id="3833" sofa="1" begin="343" end="345" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_ADP xmi:id="4309" sofa="1" begin="398" end="400" PosValue="IN" coarseValue="ADP"/>
+    <pos:POS_NOUN xmi:id="1521" sofa="1" begin="26" end="33" PosValue="NNS" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8417" sofa="1" begin="26" end="33" PosValue="NNS"/>
+    <pos:POS_NOUN xmi:id="9617" sofa="1" begin="26" end="33" PosValue="NNS"/>
+    <pos:POS_NOUN xmi:id="1861" sofa="1" begin="62" end="71" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8469" sofa="1" begin="62" end="71" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="9669" sofa="1" begin="62" end="71" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="7655" sofa="1" begin="118" end="130" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8757" sofa="1" begin="118" end="130" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="9958" sofa="1" begin="118" end="130" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="2541" sofa="1" begin="151" end="162" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8836" sofa="1" begin="151" end="162" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10044" sofa="1" begin="151" end="162" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="2643" sofa="1" begin="172" end="181" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8849" sofa="1" begin="172" end="181" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10057" sofa="1" begin="172" end="181" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="2745" sofa="1" begin="188" end="198" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8904" sofa="1" begin="188" end="198" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10112" sofa="1" begin="188" end="198" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="2779" sofa="1" begin="199" end="205" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="8917" sofa="1" begin="199" end="205" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10125" sofa="1" begin="199" end="205" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="3493" sofa="1" begin="286" end="297" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="9209" sofa="1" begin="286" end="297" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10384" sofa="1" begin="286" end="297" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="3595" sofa="1" begin="307" end="310" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="9196" sofa="1" begin="307" end="310" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10371" sofa="1" begin="307" end="310" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="3663" sofa="1" begin="314" end="323" PosValue="NN" coarseValue="NOUN"/>
+    <pos:POS_NOUN xmi:id="9222" sofa="1" begin="314" end="323" PosValue="NN"/>
+    <pos:POS_NOUN xmi:id="10397" sofa="1" begin="314" end="323" PosValue="NN"/>
+    <pos:POS_DET xmi:id="1793" sofa="1" begin="55" end="57" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_DET xmi:id="2507" sofa="1" begin="148" end="150" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_DET xmi:id="2609" sofa="1" begin="168" end="171" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_DET xmi:id="2711" sofa="1" begin="184" end="187" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_DET xmi:id="3459" sofa="1" begin="283" end="285" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_DET xmi:id="3561" sofa="1" begin="303" end="306" PosValue="DT" coarseValue="DET"/>
+    <pos:POS_ADJ xmi:id="1827" sofa="1" begin="58" end="61" PosValue="JJ" coarseValue="ADJ"/>
+    <pos:POS_ADJ xmi:id="8456" sofa="1" begin="58" end="61" PosValue="JJ"/>
+    <pos:POS_ADJ xmi:id="9656" sofa="1" begin="58" end="61" PosValue="JJ"/>
+    <pos:POS_PROPN xmi:id="2065" sofa="1" begin="92" end="101" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="8703" sofa="1" begin="92" end="101" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="9904" sofa="1" begin="92" end="101" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="2167" sofa="1" begin="107" end="116" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="8744" sofa="1" begin="107" end="116" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="9945" sofa="1" begin="107" end="116" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="2983" sofa="1" begin="228" end="231" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="8983" sofa="1" begin="228" end="231" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10191" sofa="1" begin="228" end="231" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="3017" sofa="1" begin="232" end="238" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="8996" sofa="1" begin="232" end="238" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10204" sofa="1" begin="232" end="238" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="3255" sofa="1" begin="259" end="265" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9096" sofa="1" begin="259" end="265" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10291" sofa="1" begin="259" end="265" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="3867" sofa="1" begin="346" end="349" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9323" sofa="1" begin="346" end="349" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10498" sofa="1" begin="346" end="349" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="3901" sofa="1" begin="350" end="355" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9336" sofa="1" begin="350" end="355" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10511" sofa="1" begin="350" end="355" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="4105" sofa="1" begin="368" end="371" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9423" sofa="1" begin="368" end="371" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10598" sofa="1" begin="368" end="371" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="4139" sofa="1" begin="372" end="378" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9436" sofa="1" begin="372" end="378" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10611" sofa="1" begin="372" end="378" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="4343" sofa="1" begin="401" end="404" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9523" sofa="1" begin="401" end="404" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10698" sofa="1" begin="401" end="404" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="4377" sofa="1" begin="405" end="411" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9536" sofa="1" begin="405" end="411" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10711" sofa="1" begin="405" end="411" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="4445" sofa="1" begin="413" end="418" PosValue="NNP" coarseValue="PROPN"/>
+    <pos:POS_PROPN xmi:id="9584" sofa="1" begin="413" end="418" PosValue="NNP"/>
+    <pos:POS_PROPN xmi:id="10759" sofa="1" begin="413" end="418" PosValue="NNP"/>
+    <pos:POS_INTJ xmi:id="3969" sofa="1" begin="357" end="359" PosValue="UH" coarseValue="INTJ"/>
+    <pos:POS_INTJ xmi:id="9384" sofa="1" begin="357" end="359" PosValue="UH"/>
+    <pos:POS_INTJ xmi:id="10559" sofa="1" begin="357" end="359" PosValue="UH"/>
+    <type3:Gpe xmi:id="4513" sofa="1" begin="92" end="101" value="GPE"/>
+    <type3:Gpe xmi:id="4519" sofa="1" begin="107" end="116" value="GPE"/>
+    <type3:Date xmi:id="4525" sofa="1" begin="118" end="130" value="DATE"/>
+    <type3:Date xmi:id="4537" sofa="1" begin="259" end="265" value="DATE"/>
+    <type3:Person xmi:id="4531" sofa="1" begin="232" end="238" value="PERSON"/>
+    <type3:Person xmi:id="4543" sofa="1" begin="314" end="323" value="PERSON"/>
+    <type3:Person xmi:id="4549" sofa="1" begin="350" end="355" value="PERSON"/>
+    <type3:Person xmi:id="4555" sofa="1" begin="372" end="378" value="PERSON"/>
+    <type3:Person xmi:id="4561" sofa="1" begin="405" end="411" value="PERSON"/>
+    <type3:Organization xmi:id="4567" sofa="1" begin="413" end="418" value="ORG"/>
+    <type8:GeolocationCandidate xmi:id="4651" sofa="1" begin="92" end="101" latitude="41.8523094" longitude="1.5745043" osmNameId="602512999" osmNodeId="602512999"/>
+    <type8:GeolocationCandidate xmi:id="4663" sofa="1" begin="92" end="101" latitude="41.82046" longitude="1.86768" geonamesId="3336901"/>
+    <type8:GeolocationCandidate xmi:id="4676" sofa="1" begin="107" end="116" latitude="41.3828939" longitude="2.1774322" osmNameId="152364165" osmNodeId="152364165"/>
+    <type8:GeolocationCandidate xmi:id="4688" sofa="1" begin="107" end="116" latitude="41.66667" longitude="2.0" geonamesId="3128759"/>
+    <type8:GeolocationCandidate xmi:id="4700" sofa="1" begin="107" end="116" latitude="41.38879" longitude="2.15899" geonamesId="3128760"/>
+    <type8:GeolocationCandidate xmi:id="4712" sofa="1" begin="107" end="116" latitude="41.39942" longitude="2.12804" geonamesId="6356055"/>
+    <type8:GeolocationCandidate xmi:id="4724" sofa="1" begin="107" end="116" latitude="41.37287" longitude="2.1663" geonamesId="9179236"/>
+    <type8:GeolocationCandidate xmi:id="4574" sofa="1" begin="232" end="238" latitude="41.9461861" longitude="1.3624527" osmNameId="1241679577" osmNodeId="1241679577"/>
+    <type8:GeolocationCandidate xmi:id="4588" sofa="1" begin="350" end="355" latitude="41.9167251" longitude="3.1649159" osmNameId="1793159676" osmNodeId="1793159676"/>
+    <type8:GeolocationCandidate xmi:id="4600" sofa="1" begin="350" end="355" latitude="41.9167251" longitude="3.1649931000000002" osmNameId="1793159702" osmNodeId="1793159702"/>
+    <type8:GeolocationCandidate xmi:id="4612" sofa="1" begin="350" end="355" latitude="41.4501451" longitude="2.2473263" osmNameId="2123743491" osmNodeId="2123743491"/>
+    <type8:GeolocationCandidate xmi:id="4624" sofa="1" begin="350" end="355" latitude="41.3757939" longitude="2.0832883" osmNameId="3117367282" osmNodeId="3117367282"/>
+    <type8:GeolocationCandidate xmi:id="4637" sofa="1" begin="372" end="378" latitude="41.9461861" longitude="1.3624527" osmNameId="1241679577" osmNodeId="1241679577"/>
+    <type8:GeolocationCandidate xmi:id="4739" sofa="1" begin="413" end="418" latitude="41.9167251" longitude="3.1649159" osmNameId="1793159676" osmNodeId="1793159676"/>
+    <type8:GeolocationCandidate xmi:id="4751" sofa="1" begin="413" end="418" latitude="41.9167251" longitude="3.1649931000000002" osmNameId="1793159702" osmNodeId="1793159702"/>
+    <type8:GeolocationCandidate xmi:id="4763" sofa="1" begin="413" end="418" latitude="41.4501451" longitude="2.2473263" osmNameId="2123743491" osmNodeId="2123743491"/>
+    <type8:GeolocationCandidate xmi:id="4775" sofa="1" begin="413" end="418" latitude="41.3757939" longitude="2.0832883" osmNameId="3117367282" osmNodeId="3117367282"/>
+    <type8:SpeechAct xmi:id="4787" sofa="1" begin="0" end="72" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4792" sofa="1" begin="74" end="102" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4797" sofa="1" begin="104" end="131" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4802" sofa="1" begin="133" end="182" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4807" sofa="1" begin="184" end="206" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4812" sofa="1" begin="208" end="239" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4817" sofa="1" begin="240" end="266" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4822" sofa="1" begin="268" end="324" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4827" sofa="1" begin="326" end="356" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4832" sofa="1" begin="357" end="379" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4837" sofa="1" begin="381" end="412" label="Statement-non-opinion"/>
+    <type8:SpeechAct xmi:id="4842" sofa="1" begin="413" end="419" label="Repeat-phrase"/>
+    <type8:WSDSpan xmi:id="5007" sofa="1" begin="0" end="9" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4952" sofa="1" begin="13" end="17" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4847" sofa="1" begin="26" end="33" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4957" sofa="1" begin="37" end="41" posType="VERB"/>
+    <type8:WSDSpan xmi:id="5012" sofa="1" begin="46" end="49" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4852" sofa="1" begin="62" end="71" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="5017" sofa="1" begin="76" end="80" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4962" sofa="1" begin="81" end="88" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4857" sofa="1" begin="92" end="101" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4862" sofa="1" begin="107" end="116" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4867" sofa="1" begin="118" end="126" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="5022" sofa="1" begin="127" end="130" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4967" sofa="1" begin="135" end="139" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4972" sofa="1" begin="143" end="147" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4872" sofa="1" begin="151" end="162" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4877" sofa="1" begin="172" end="181" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4882" sofa="1" begin="188" end="205" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="5027" sofa="1" begin="210" end="217" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4977" sofa="1" begin="218" end="224" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4887" sofa="1" begin="228" end="231" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4892" sofa="1" begin="232" end="238" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4982" sofa="1" begin="242" end="248" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4897" sofa="1" begin="259" end="265" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4987" sofa="1" begin="270" end="274" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4992" sofa="1" begin="278" end="282" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4902" sofa="1" begin="286" end="297" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4907" sofa="1" begin="307" end="310" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4912" sofa="1" begin="314" end="323" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="5032" sofa="1" begin="328" end="335" posType="ADV"/>
+    <type8:WSDSpan xmi:id="4997" sofa="1" begin="336" end="342" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4917" sofa="1" begin="346" end="349" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4922" sofa="1" begin="350" end="355" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4927" sofa="1" begin="368" end="371" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4932" sofa="1" begin="372" end="378" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="5037" sofa="1" begin="383" end="390" posType="ADV"/>
+    <type8:WSDSpan xmi:id="5002" sofa="1" begin="391" end="397" posType="VERB"/>
+    <type8:WSDSpan xmi:id="4937" sofa="1" begin="401" end="404" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4942" sofa="1" begin="405" end="411" posType="NOUN"/>
+    <type8:WSDSpan xmi:id="4947" sofa="1" begin="413" end="418" posType="NOUN"/>
+    <type7:LexicalItemConstituent xmi:id="5042" sofa="1" begin="0" end="9" constituentType="wf" id="babelNet.s1.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5059" sofa="1" begin="13" end="17" constituentType="wf" id="babelNet.s1.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5076" sofa="1" begin="26" end="33" constituentType="wf" id="babelNet.s1.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5093" sofa="1" begin="37" end="41" constituentType="wf" id="babelNet.s1.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5144" sofa="1" begin="44" end="46" constituentType="wf" id="babelNet.s1.w7"/>
+    <type7:LexicalItemConstituent xmi:id="5110" sofa="1" begin="46" end="49" constituentType="wf" id="babelNet.s1.w5"/>
+    <type7:LexicalItemConstituent xmi:id="5161" sofa="1" begin="50" end="54" constituentType="wf" id="babelNet.s1.w8"/>
+    <type7:LexicalItemConstituent xmi:id="5127" sofa="1" begin="62" end="71" constituentType="wf" id="babelNet.s1.w6"/>
+    <type7:LexicalItemConstituent xmi:id="5178" sofa="1" begin="76" end="80" constituentType="wf" id="babelNet.s2.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5195" sofa="1" begin="81" end="88" constituentType="wf" id="babelNet.s2.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5212" sofa="1" begin="92" end="101" constituentType="wf" id="babelNet.s2.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5229" sofa="1" begin="107" end="116" constituentType="wf" id="babelNet.s3.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5280" sofa="1" begin="118" end="130" constituentType="wf" id="babelNet.s3.mw2"/>
+    <type7:LexicalItemConstituent xmi:id="5246" sofa="1" begin="118" end="126" constituentType="wf" id="babelNet.s3.mw1"/>
+    <type7:LexicalItemConstituent xmi:id="5297" sofa="1" begin="122" end="126" constituentType="wf" id="babelNet.s3.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5263" sofa="1" begin="127" end="130" constituentType="wf" id="babelNet.s3.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5314" sofa="1" begin="135" end="139" constituentType="wf" id="babelNet.s4.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5331" sofa="1" begin="143" end="147" constituentType="wf" id="babelNet.s4.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5348" sofa="1" begin="151" end="162" constituentType="wf" id="babelNet.s4.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5365" sofa="1" begin="172" end="181" constituentType="wf" id="babelNet.s4.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5382" sofa="1" begin="188" end="205" constituentType="wf" id="babelNet.s5.mw1"/>
+    <type7:LexicalItemConstituent xmi:id="5399" sofa="1" begin="188" end="198" constituentType="wf" id="babelNet.s5.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5416" sofa="1" begin="199" end="205" constituentType="wf" id="babelNet.s5.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5433" sofa="1" begin="210" end="217" constituentType="wf" id="babelNet.s6.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5450" sofa="1" begin="218" end="224" constituentType="wf" id="babelNet.s6.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5467" sofa="1" begin="228" end="231" constituentType="wf" id="babelNet.s6.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5484" sofa="1" begin="232" end="238" constituentType="wf" id="babelNet.s6.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5501" sofa="1" begin="242" end="248" constituentType="wf" id="babelNet.s7.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5518" sofa="1" begin="259" end="265" constituentType="wf" id="babelNet.s7.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5535" sofa="1" begin="270" end="274" constituentType="wf" id="babelNet.s8.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5552" sofa="1" begin="278" end="282" constituentType="wf" id="babelNet.s8.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5569" sofa="1" begin="286" end="297" constituentType="wf" id="babelNet.s8.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5586" sofa="1" begin="307" end="310" constituentType="wf" id="babelNet.s8.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5603" sofa="1" begin="314" end="323" constituentType="wf" id="babelNet.s8.w5"/>
+    <type7:LexicalItemConstituent xmi:id="5620" sofa="1" begin="328" end="335" constituentType="wf" id="babelNet.s9.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5637" sofa="1" begin="336" end="342" constituentType="wf" id="babelNet.s9.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5654" sofa="1" begin="346" end="349" constituentType="wf" id="babelNet.s9.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5671" sofa="1" begin="350" end="355" constituentType="wf" id="babelNet.s9.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5722" sofa="1" begin="364" end="367" constituentType="wf" id="babelNet.s10.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5688" sofa="1" begin="368" end="371" constituentType="wf" id="babelNet.s10.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5705" sofa="1" begin="372" end="378" constituentType="wf" id="babelNet.s10.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5739" sofa="1" begin="383" end="390" constituentType="wf" id="babelNet.s11.w1"/>
+    <type7:LexicalItemConstituent xmi:id="5756" sofa="1" begin="391" end="397" constituentType="wf" id="babelNet.s11.w2"/>
+    <type7:LexicalItemConstituent xmi:id="5773" sofa="1" begin="401" end="404" constituentType="wf" id="babelNet.s11.w3"/>
+    <type7:LexicalItemConstituent xmi:id="5790" sofa="1" begin="405" end="411" constituentType="wf" id="babelNet.s11.w4"/>
+    <type7:LexicalItemConstituent xmi:id="5807" sofa="1" begin="413" end="418" constituentType="wf" id="babelNet.s12.w1"/>
+    <type7:WSDItem xmi:id="5048" sofa="1" begin="0" end="9" subjectOfDisambiguation="currently" constituents="5042" id="babelNet.s1.w1" pos="ADV"/>
+    <type7:WSDItem xmi:id="5065" sofa="1" begin="13" end="17" subjectOfDisambiguation="live" constituents="5059" id="babelNet.s1.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5082" sofa="1" begin="26" end="33" subjectOfDisambiguation="friend" constituents="5076" id="babelNet.s1.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5099" sofa="1" begin="37" end="41" subjectOfDisambiguation="mean" constituents="5093" id="babelNet.s1.w4" pos="VERB"/>
+    <type7:WSDItem xmi:id="5150" sofa="1" begin="44" end="46" subjectOfDisambiguation="do" constituents="5144" id="babelNet.s1.w7" pos="VERB"/>
+    <type7:WSDItem xmi:id="5116" sofa="1" begin="46" end="49" subjectOfDisambiguation="not" constituents="5110" id="babelNet.s1.w5" pos="ADV"/>
+    <type7:WSDItem xmi:id="5167" sofa="1" begin="50" end="54" subjectOfDisambiguation="have" constituents="5161" id="babelNet.s1.w8" pos="VERB"/>
+    <type7:WSDItem xmi:id="5133" sofa="1" begin="62" end="71" subjectOfDisambiguation="apartment" constituents="5127" id="babelNet.s1.w6" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5184" sofa="1" begin="76" end="80" subjectOfDisambiguation="just" constituents="5178" id="babelNet.s2.w1" pos="ADV"/>
+    <type7:WSDItem xmi:id="5201" sofa="1" begin="81" end="88" subjectOfDisambiguation="arrive" constituents="5195" id="babelNet.s2.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5218" sofa="1" begin="92" end="101" subjectOfDisambiguation="Catalonia" constituents="5212" id="babelNet.s2.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5235" sofa="1" begin="107" end="116" subjectOfDisambiguation="Barcelona" constituents="5229" id="babelNet.s3.w1" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5286" sofa="1" begin="118" end="130" subjectOfDisambiguation="one week ago" constituents="5280" id="babelNet.s3.mw2" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5252" sofa="1" begin="118" end="126" subjectOfDisambiguation="one week" constituents="5246" id="babelNet.s3.mw1" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5303" sofa="1" begin="122" end="126" subjectOfDisambiguation="week" constituents="5297" id="babelNet.s3.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5269" sofa="1" begin="127" end="130" subjectOfDisambiguation="ago" constituents="5263" id="babelNet.s3.w2" pos="ADV"/>
+    <type7:WSDItem xmi:id="5320" sofa="1" begin="135" end="139" subjectOfDisambiguation="want" constituents="5314" id="babelNet.s4.w1" pos="VERB"/>
+    <type7:WSDItem xmi:id="5337" sofa="1" begin="143" end="147" subjectOfDisambiguation="make" constituents="5331" id="babelNet.s4.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5354" sofa="1" begin="151" end="162" subjectOfDisambiguation="appointment" constituents="5348" id="babelNet.s4.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5371" sofa="1" begin="172" end="181" subjectOfDisambiguation="jobcenter" constituents="5365" id="babelNet.s4.w4" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5388" sofa="1" begin="188" end="205" subjectOfDisambiguation="employment office" constituents="5382" id="babelNet.s5.mw1" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5405" sofa="1" begin="188" end="198" subjectOfDisambiguation="employment" constituents="5399" id="babelNet.s5.w1" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5422" sofa="1" begin="199" end="205" subjectOfDisambiguation="office" constituents="5416" id="babelNet.s5.w2" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5439" sofa="1" begin="210" end="217" subjectOfDisambiguation="already" constituents="5433" id="babelNet.s6.w1" pos="ADV"/>
+    <type7:WSDItem xmi:id="5456" sofa="1" begin="218" end="224" subjectOfDisambiguation="talk" constituents="5450" id="babelNet.s6.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5473" sofa="1" begin="228" end="231" subjectOfDisambiguation="Mr." constituents="5467" id="babelNet.s6.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5490" sofa="1" begin="232" end="238" subjectOfDisambiguation="Codina" constituents="5484" id="babelNet.s6.w4" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5507" sofa="1" begin="242" end="248" subjectOfDisambiguation="talk" constituents="5501" id="babelNet.s7.w1" pos="VERB"/>
+    <type7:WSDItem xmi:id="5524" sofa="1" begin="259" end="265" subjectOfDisambiguation="Friday" constituents="5518" id="babelNet.s7.w2" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5541" sofa="1" begin="270" end="274" subjectOfDisambiguation="want" constituents="5535" id="babelNet.s8.w1" pos="VERB"/>
+    <type7:WSDItem xmi:id="5558" sofa="1" begin="278" end="282" subjectOfDisambiguation="make" constituents="5552" id="babelNet.s8.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5575" sofa="1" begin="286" end="297" subjectOfDisambiguation="appointment" constituents="5569" id="babelNet.s8.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5592" sofa="1" begin="307" end="310" subjectOfDisambiguation="job" constituents="5586" id="babelNet.s8.w4" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5609" sofa="1" begin="314" end="323" subjectOfDisambiguation="jobcenter" constituents="5603" id="babelNet.s8.w5" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5626" sofa="1" begin="328" end="335" subjectOfDisambiguation="already" constituents="5620" id="babelNet.s9.w1" pos="ADV"/>
+    <type7:WSDItem xmi:id="5643" sofa="1" begin="336" end="342" subjectOfDisambiguation="talk" constituents="5637" id="babelNet.s9.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5660" sofa="1" begin="346" end="349" subjectOfDisambiguation="Mr." constituents="5654" id="babelNet.s9.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5677" sofa="1" begin="350" end="355" subjectOfDisambiguation="Serra" constituents="5671" id="babelNet.s9.w4" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5728" sofa="1" begin="364" end="367" subjectOfDisambiguation="be" constituents="5722" id="babelNet.s10.w3" pos="VERB"/>
+    <type7:WSDItem xmi:id="5694" sofa="1" begin="368" end="371" subjectOfDisambiguation="Mr." constituents="5688" id="babelNet.s10.w1" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5711" sofa="1" begin="372" end="378" subjectOfDisambiguation="Codina" constituents="5705" id="babelNet.s10.w2" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5745" sofa="1" begin="383" end="390" subjectOfDisambiguation="already" constituents="5739" id="babelNet.s11.w1" pos="ADV"/>
+    <type7:WSDItem xmi:id="5762" sofa="1" begin="391" end="397" subjectOfDisambiguation="talk" constituents="5756" id="babelNet.s11.w2" pos="VERB"/>
+    <type7:WSDItem xmi:id="5779" sofa="1" begin="401" end="404" subjectOfDisambiguation="Mr." constituents="5773" id="babelNet.s11.w3" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5796" sofa="1" begin="405" end="411" subjectOfDisambiguation="Sierra" constituents="5790" id="babelNet.s11.w4" pos="NOUN"/>
+    <type7:WSDItem xmi:id="5813" sofa="1" begin="413" end="418" subjectOfDisambiguation="Serra" constituents="5807" id="babelNet.s12.w1" pos="NOUN"/>
+    <type7:WSDResult xmi:id="6470" sofa="1" begin="0" end="9" senses="6568" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5048"/>
+    <type7:WSDResult xmi:id="5938" sofa="1" begin="13" end="17" senses="6596" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5065"/>
+    <type7:WSDResult xmi:id="6128" sofa="1" begin="26" end="33" senses="6624" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5082"/>
+    <type7:WSDResult xmi:id="6318" sofa="1" begin="37" end="41" senses="6646" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5099"/>
+    <type7:WSDResult xmi:id="6185" sofa="1" begin="44" end="46" senses="6674" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5150"/>
+    <type7:WSDResult xmi:id="6508" sofa="1" begin="46" end="49" senses="6700" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5116"/>
+    <type7:WSDResult xmi:id="6375" sofa="1" begin="50" end="54" senses="6728" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5167"/>
+    <type7:WSDResult xmi:id="5976" sofa="1" begin="62" end="71" senses="6756" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5133"/>
+    <type7:WSDResult xmi:id="5824" sofa="1" begin="76" end="80" senses="6782" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5184"/>
+    <type7:WSDResult xmi:id="6014" sofa="1" begin="81" end="88" senses="6810" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5201"/>
+    <type7:WSDResult xmi:id="6242" sofa="1" begin="92" end="101" senses="6838" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5218"/>
+    <type7:WSDResult xmi:id="6413" sofa="1" begin="107" end="116" senses="6866" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5235"/>
+    <type7:WSDResult xmi:id="5881" sofa="1" begin="118" end="126" senses="6888" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5252"/>
+    <type7:WSDResult xmi:id="6071" sofa="1" begin="127" end="130" senses="6912" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5269"/>
+    <type7:WSDResult xmi:id="5919" sofa="1" begin="135" end="139" senses="6938" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5320"/>
+    <type7:WSDResult xmi:id="6109" sofa="1" begin="143" end="147" senses="6966" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5337"/>
+    <type7:WSDResult xmi:id="6299" sofa="1" begin="151" end="162" senses="6994" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5354"/>
+    <type7:WSDResult xmi:id="6166" sofa="1" begin="188" end="198" senses="7016" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5405"/>
+    <type7:WSDResult xmi:id="6356" sofa="1" begin="199" end="205" senses="7038" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5422"/>
+    <type7:WSDResult xmi:id="6546" sofa="1" begin="210" end="217" senses="7060" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5439"/>
+    <type7:WSDResult xmi:id="5995" sofa="1" begin="218" end="224" senses="7088" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5456"/>
+    <type7:WSDResult xmi:id="6223" sofa="1" begin="228" end="231" senses="7114" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5473"/>
+    <type7:WSDResult xmi:id="5862" sofa="1" begin="242" end="248" senses="7138" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5507"/>
+    <type7:WSDResult xmi:id="6052" sofa="1" begin="259" end="265" senses="7164" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5524"/>
+    <type7:WSDResult xmi:id="6280" sofa="1" begin="270" end="274" senses="7190" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5541"/>
+    <type7:WSDResult xmi:id="6451" sofa="1" begin="278" end="282" senses="7218" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5558"/>
+    <type7:WSDResult xmi:id="5900" sofa="1" begin="286" end="297" senses="7246" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5575"/>
+    <type7:WSDResult xmi:id="6090" sofa="1" begin="307" end="310" senses="7268" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5592"/>
+    <type7:WSDResult xmi:id="6489" sofa="1" begin="328" end="335" senses="7296" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5626"/>
+    <type7:WSDResult xmi:id="5957" sofa="1" begin="336" end="342" senses="7324" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5643"/>
+    <type7:WSDResult xmi:id="6147" sofa="1" begin="346" end="349" senses="7350" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5660"/>
+    <type7:WSDResult xmi:id="6337" sofa="1" begin="350" end="355" senses="7374" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5677"/>
+    <type7:WSDResult xmi:id="6204" sofa="1" begin="364" end="367" senses="7398" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5728"/>
+    <type7:WSDResult xmi:id="6527" sofa="1" begin="368" end="371" senses="7426" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5694"/>
+    <type7:WSDResult xmi:id="6394" sofa="1" begin="383" end="390" senses="7450" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5745"/>
+    <type7:WSDResult xmi:id="5843" sofa="1" begin="391" end="397" senses="7478" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5762"/>
+    <type7:WSDResult xmi:id="6033" sofa="1" begin="401" end="404" senses="7504" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5779"/>
+    <type7:WSDResult xmi:id="6261" sofa="1" begin="405" end="411" senses="7528" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5796"/>
+    <type7:WSDResult xmi:id="6432" sofa="1" begin="413" end="418" senses="7556" disambiguationMethod="edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline" senseInventory="CompactDictionarySenseInventory" wsdItem="5813"/>
+    <types7:BabelNetSense xmi:id="6568" sofa="1" begin="0" end="0" id="bn:00114905r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;At this time or period; now&quot;,&quot;At this moment; at this time.&quot;,&quot;At this moment, at present, now.&quot;,&quot;At the present time; now; currently.&quot;,&quot;At this moment.&quot;],&quot;label&quot;:&quot;currently&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00048268r" Label="OMWIKI:EN:currently" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>currently</LanguageValueList>
+        <LanguageValueList>actualmente</LanguageValueList>
+        <LanguageValueList>attualmente</LanguageValueList>
+        <LanguageValueList>σήμερα</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6596" sofa="1" begin="0" end="0" id="bn:00087441v" confidence="0.5544147494479623" description="{&quot;glosses&quot;:[&quot;Inhabit or live in; be an inhabitant of&quot;,&quot;To fill with people or supply with inhabitants.&quot;,&quot;To have permanent residence.&quot;,&quot;To have permanent residence somewhere, to inhabit, to reside.&quot;,&quot;To supply with inhabitants; to people.&quot;,&quot;To plant with inhabitants; to colonize; to people.&quot;,&quot;To fill space.&quot;,&quot;Have permanent residence.&quot;],&quot;label&quot;:&quot;live&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02649830v" Label="WN:EN:inhabit" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>live</LanguageValueList>
+        <LanguageValueList>morar</LanguageValueList>
+        <LanguageValueList>abitare</LanguageValueList>
+        <LanguageValueList>μένω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6624" sofa="1" begin="0" end="0" id="bn:01379732n" confidence="0.9170008504884292" description="{&quot;glosses&quot;:[&quot;Friend is a 2009 Bengali science fiction film directed by Satabdi Roy. The film is starring Satabdi Roy, Soumitra Chatterjee, Supriya Chowdhury, Sabyasachi Chakrabarty, Biswanath Basu, Ridhima Ghosh, Shayak &amp; Tapas Paul&quot;,&quot;2009 film by Satabdi Roy&quot;,&quot;A Bengali film directed by Shatabdi Roy&quot;],&quot;label&quot;:&quot;friend&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Friend_(2009_film)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Friend</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6646" sofa="1" begin="0" end="0" id="bn:00089804v" confidence="0.3842309534658532" description="{&quot;glosses&quot;:[&quot;Have in mind as a purpose&quot;,&quot;To have in mind as one's purpose or intention.&quot;,&quot;To intend, to plan ; to have as one's intention.&quot;,&quot;To fix the mind upon ; be intent upon.&quot;,&quot;To communicate to oneself in one's mind, to try to find a solution to a problem.&quot;,&quot;To fix the mind upon a goal.&quot;],&quot;label&quot;:&quot;intend&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00708538v" Label="WN:EN:mean" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>intend</LanguageValueList>
+        <LanguageValueList>pretender</LanguageValueList>
+        <LanguageValueList>intendere</LanguageValueList>
+        <LanguageValueList>θέλω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6674" sofa="1" begin="0" end="0" id="bn:00087106v" confidence="0.0016249048952963782" description="{&quot;glosses&quot;:[&quot;Engage in&quot;],&quot;label&quot;:&quot;do&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02560585v" Label="WN:EN:make" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>do</LanguageValueList>
+        <LanguageValueList>hacer</LanguageValueList>
+        <LanguageValueList>fare</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6700" sofa="1" begin="0" end="0" id="bn:00116360r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Negation of a word or group of words&quot;],&quot;label&quot;:&quot;non&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00024073r" Label="WN:EN:non" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>non</LanguageValueList>
+        <LanguageValueList>no</LanguageValueList>
+        <LanguageValueList>non</LanguageValueList>
+        <LanguageValueList>δεν</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6728" sofa="1" begin="0" end="0" id="bn:00089240v" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Have or possess, either in a concrete or an abstract sense&quot;,&quot;To hold or possess either in an abstract or concrete sense.&quot;,&quot;To possess, own, hold.&quot;,&quot;To have, own or possess.&quot;],&quot;label&quot;:&quot;have&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02203362v" Label="WIKT:EN:have_got" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>have</LanguageValueList>
+        <LanguageValueList>tener</LanguageValueList>
+        <LanguageValueList>avere</LanguageValueList>
+        <LanguageValueList>έχω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6756" sofa="1" begin="0" end="0" id="bn:15031452n" confidence="0.9386763554680988" description="{&quot;glosses&quot;:[&quot;The Apartment is a 1996 French film directed by Gilles Mimouni, and starring Vincent Cassel, Romane Bohringer and Monica Bellucci.&quot;,&quot;A French film directed by Gilles Mimouni&quot;,&quot;1996 film by Gilles Mimouni&quot;],&quot;label&quot;:&quot;the_apartment&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:The_Apartment_(1996_film)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>The_Apartment</LanguageValueList>
+        <LanguageValueList>L'Appartement</LanguageValueList>
+        <LanguageValueList>L'appartamento</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6782" sofa="1" begin="0" end="0" id="bn:00114626r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;And nothing more&quot;,&quot;Nothing more than.&quot;,&quot;Only, simply, merely.&quot;,&quot;No more than; just.&quot;,&quot;Without any other reason etc.; only, just, and nothing more.&quot;,&quot;No more than.&quot;],&quot;label&quot;:&quot;just&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00004722r" Label="OMWIKI:EN:merely" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>just</LanguageValueList>
+        <LanguageValueList>sólo</LanguageValueList>
+        <LanguageValueList>soltanto</LanguageValueList>
+        <LanguageValueList>μόνο</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6810" sofa="1" begin="0" end="0" id="bn:00082790v" confidence="0.6435412750357268" description="{&quot;glosses&quot;:[&quot;Reach a destination, either real or abstract&quot;,&quot;To come to a destination.&quot;,&quot;To cause to come or go or move.&quot;,&quot;To reach (a destination)&quot;,&quot;To come up to bat.&quot;,&quot;To come; said of time.&quot;,&quot;To arrive at a destination, usually at or by a certain time.&quot;,&quot;To cause to become&quot;],&quot;label&quot;:&quot;reach&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02020590v" Label="VERBNET:EN:reach" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>reach</LanguageValueList>
+        <LanguageValueList>llegar</LanguageValueList>
+        <LanguageValueList>raggiungere</LanguageValueList>
+        <LanguageValueList>φτάνω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6838" sofa="1" begin="0" end="0" id="bn:00016656n" confidence="0.4052229931993709" description="{&quot;glosses&quot;:[&quot;A region of northeastern Spain&quot;,&quot;Catalonia is an autonomous community of Spain located on the northeastern extremity of the Iberian Peninsula.&quot;,&quot;The name being possibly derived from \&quot;Gothic land\&quot;&quot;,&quot;Autonomous community of Spain&quot;,&quot;Autonomous community in the north-east of the kingdom of Spain.&quot;,&quot;A traditional region and former principality, including the autonomous community of Catalonia, the Aragon Strip and the region of Northern Catalonia.&quot;,&quot;Autonomous community in Spain.&quot;],&quot;label&quot;:&quot;catalonia&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="09028062n" Label="WN:EN:Catalonia" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>Catalonia</LanguageValueList>
+        <LanguageValueList>Cataluña</LanguageValueList>
+        <LanguageValueList>Catalogna</LanguageValueList>
+        <LanguageValueList>Καταλονία</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6866" sofa="1" begin="0" end="0" id="bn:03505714n" confidence="1.0" description="{&quot;glosses&quot;:[&quot;Barcelona is a 1994 comedy film written and directed by Whit Stillman and set in Barcelona, Catalonia.&quot;,&quot;Film&quot;,&quot;Barcelona is a 1994 film about Ted, a stuffy white guy from Illinois working in sales for the Barcelona office of a US corporation, who is paid an unexpected visit by his somewhat less stuffy cousin Fred, who is an officer in the US Navy.&quot;],&quot;label&quot;:&quot;barcelona&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Barcelona_(film)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Barcelona</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6888" sofa="1" begin="0" end="0" id="bn:01421448n" confidence="0.9184714022643725" description="{&quot;glosses&quot;:[&quot;One Week is a 2008 Canadian drama film directed by Michael McGowan and starring Joshua Jackson, Liane Balaban, and Campbell Scott.&quot;,&quot;2008 film by Michael McGowan&quot;,&quot;A Canadian feature film directed by Michael McGowan&quot;],&quot;label&quot;:&quot;one_week&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:One_Week_(2008_film)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>One_Week</LanguageValueList>
+        <LanguageValueList>One_Week</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6912" sofa="1" begin="0" end="0" id="bn:00114178r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;In the past&quot;],&quot;label&quot;:&quot;ago&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00074095r" Label="WN:EN:ago" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>ago</LanguageValueList>
+        <LanguageValueList>atrás</LanguageValueList>
+        <LanguageValueList>addietro</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6938" sofa="1" begin="0" end="0" id="bn:00095628v" confidence="0.3294169063749548" description="{&quot;glosses&quot;:[&quot;Wish or demand the presence of&quot;,&quot;To wish for or to desire.&quot;],&quot;label&quot;:&quot;want&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00709205v" Label="WIKT:EN:want" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>want</LanguageValueList>
+        <LanguageValueList>desear</LanguageValueList>
+        <LanguageValueList>volere</LanguageValueList>
+        <LanguageValueList>θέλω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6966" sofa="1" begin="0" end="0" id="bn:00084089v" confidence="0.6976681240182411" description="{&quot;glosses&quot;:[&quot;Earn on some commercial or business transaction; earn as salary or wages&quot;,&quot;To earn, to gain (money).&quot;,&quot;To earn.&quot;,&quot;To earn, to gain (money, points, membership or status).&quot;,&quot;To earn money for a company or for the family.&quot;,&quot;To earn a profit of; to net.&quot;,&quot;To earn a profit.&quot;],&quot;label&quot;:&quot;bring_in&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02289295v" Label="WN:EN:take_in" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>bring_in</LanguageValueList>
+        <LanguageValueList>ganar</LanguageValueList>
+        <LanguageValueList>guadagnare</LanguageValueList>
+        <LanguageValueList>κερδίζω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="6994" sofa="1" begin="0" end="0" id="bn:05942545n" confidence="0.6794055498174919" description="{&quot;glosses&quot;:[&quot;1980 film by Sergey Kolosov&quot;],&quot;label&quot;:&quot;appointment&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Appointment" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Appointment</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7016" sofa="1" begin="0" end="0" id="bn:14957117n" confidence="0.4702283174809628" description="{&quot;glosses&quot;:[&quot;\&quot;Employment\&quot; is a classic science fiction story pioneering the concept of de-extinction by L. Sprague de Camp.&quot;],&quot;label&quot;:&quot;employment&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Employment" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Employment</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7038" sofa="1" begin="0" end="0" id="bn:17571475n" confidence="0.8356881990227573" description="{&quot;glosses&quot;:[&quot;Office is a 2015 Hong Kong-Chinese musical comedy-drama film produced and directed by Johnnie To and starring Chow Yun-fat, Sylvia Chang, Eason Chan and Tang Wei.&quot;,&quot;2015 Chinese film&quot;],&quot;label&quot;:&quot;office&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Office_(2015_Hong_Kong_film)" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Office</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7060" sofa="1" begin="0" end="0" id="bn:00114245r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Prior to a specified or implied time&quot;,&quot;Prior to some specified time, either past, present, or future.&quot;,&quot;Prior to some specified time, either past, present, or future; by this time; previously.&quot;,&quot;Used to emphasize impatience or express exasperation.&quot;],&quot;label&quot;:&quot;already&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00031798r" Label="WIKT:EN:already" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>already</LanguageValueList>
+        <LanguageValueList>ya</LanguageValueList>
+        <LanguageValueList>già</LanguageValueList>
+        <LanguageValueList>ήδη</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7088" sofa="1" begin="0" end="0" id="bn:00094123v" confidence="0.35093617199415983" description="{&quot;glosses&quot;:[&quot;Reveal information&quot;],&quot;label&quot;:&quot;spill&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00952841v" Label="WN:EN:spill" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>spill</LanguageValueList>
+        <LanguageValueList>hablar</LanguageValueList>
+        <LanguageValueList>confessare</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7114" sofa="1" begin="0" end="0" id="bn:01673180n" confidence="0.9534590026696653" description="{&quot;glosses&quot;:[&quot;Mister also known as Mr. is a Hong Kong, Chinese rock band composed of lead vocalist Alan Po, rhythm guitarist Ronny Lay, lead guitarist Quincy Tam, bassist and backing vocalist Desmond Tam, and drummer Tom To.&quot;,&quot;Hong Kong rock band&quot;],&quot;label&quot;:&quot;mr.&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Mister" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageValueList>Mr.</LanguageValueList>
+        <LanguageValueList>Mr.</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7138" sofa="1" begin="0" end="0" id="bn:00094123v" confidence="0.35093617199415983" description="{&quot;glosses&quot;:[&quot;Reveal information&quot;],&quot;label&quot;:&quot;spill&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00952841v" Label="WN:EN:spill" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>spill</LanguageValueList>
+        <LanguageValueList>hablar</LanguageValueList>
+        <LanguageValueList>confessare</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7164" sofa="1" begin="0" end="0" id="bn:03425318n" confidence="0.89693647940293" description="{&quot;glosses&quot;:[&quot;Friday is a 1982 science fiction novel by Robert A. Heinlein.&quot;,&quot;And mentioned in The Cat Who Walks Through Walls.&quot;,&quot;Novel by Robert A. Heinlein&quot;],&quot;label&quot;:&quot;friday&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Friday" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>Friday</LanguageValueList>
+        <LanguageValueList>Viernes</LanguageValueList>
+        <LanguageValueList>Operazione_domani</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7190" sofa="1" begin="0" end="0" id="bn:00095628v" confidence="0.3294169063749548" description="{&quot;glosses&quot;:[&quot;Wish or demand the presence of&quot;,&quot;To wish for or to desire.&quot;],&quot;label&quot;:&quot;want&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00709205v" Label="WIKT:EN:want" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>want</LanguageValueList>
+        <LanguageValueList>desear</LanguageValueList>
+        <LanguageValueList>volere</LanguageValueList>
+        <LanguageValueList>θέλω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7218" sofa="1" begin="0" end="0" id="bn:00084089v" confidence="0.6976681240182411" description="{&quot;glosses&quot;:[&quot;Earn on some commercial or business transaction; earn as salary or wages&quot;,&quot;To earn, to gain (money).&quot;,&quot;To earn.&quot;,&quot;To earn, to gain (money, points, membership or status).&quot;,&quot;To earn money for a company or for the family.&quot;,&quot;To earn a profit of; to net.&quot;,&quot;To earn a profit.&quot;],&quot;label&quot;:&quot;bring_in&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02289295v" Label="WN:EN:take_in" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>bring_in</LanguageValueList>
+        <LanguageValueList>ganar</LanguageValueList>
+        <LanguageValueList>guadagnare</LanguageValueList>
+        <LanguageValueList>κερδίζω</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7246" sofa="1" begin="0" end="0" id="bn:05942545n" confidence="0.6794055498174919" description="{&quot;glosses&quot;:[&quot;1980 film by Sergey Kolosov&quot;],&quot;label&quot;:&quot;appointment&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Appointment" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageValueList>Appointment</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7268" sofa="1" begin="0" end="0" id="bn:02793166n" confidence="0.8811807341156337" description="{&quot;glosses&quot;:[&quot;Job is a 1930 novel by the Austrian writer Joseph Roth.&quot;,&quot;A novel by Joseph Roth with the original title Hiob&quot;,&quot;Novel by Joseph Roth&quot;],&quot;label&quot;:&quot;job&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Job_(novel)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>Job</LanguageValueList>
+        <LanguageValueList>Job</LanguageValueList>
+        <LanguageValueList>Giobbe</LanguageValueList>
+        <LanguageValueList>Ιώβ</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7296" sofa="1" begin="0" end="0" id="bn:00114245r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Prior to a specified or implied time&quot;,&quot;Prior to some specified time, either past, present, or future.&quot;,&quot;Prior to some specified time, either past, present, or future; by this time; previously.&quot;,&quot;Used to emphasize impatience or express exasperation.&quot;],&quot;label&quot;:&quot;already&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00031798r" Label="WIKT:EN:already" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>already</LanguageValueList>
+        <LanguageValueList>ya</LanguageValueList>
+        <LanguageValueList>già</LanguageValueList>
+        <LanguageValueList>ήδη</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7324" sofa="1" begin="0" end="0" id="bn:00094123v" confidence="0.35093617199415983" description="{&quot;glosses&quot;:[&quot;Reveal information&quot;],&quot;label&quot;:&quot;spill&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00952841v" Label="WN:EN:spill" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>spill</LanguageValueList>
+        <LanguageValueList>hablar</LanguageValueList>
+        <LanguageValueList>confessare</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7350" sofa="1" begin="0" end="0" id="bn:01673180n" confidence="0.9534590026696653" description="{&quot;glosses&quot;:[&quot;Mister also known as Mr. is a Hong Kong, Chinese rock band composed of lead vocalist Alan Po, rhythm guitarist Ronny Lay, lead guitarist Quincy Tam, bassist and backing vocalist Desmond Tam, and drummer Tom To.&quot;,&quot;Hong Kong rock band&quot;],&quot;label&quot;:&quot;mr.&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Mister" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageValueList>Mr.</LanguageValueList>
+        <LanguageValueList>Mr.</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7374" sofa="1" begin="0" end="0" id="bn:00710425n" confidence="0.9076847255451297" description="{&quot;glosses&quot;:[&quot;Serra is an Italian village and frazione of the Commune of Rocca Santa Maria in the Province of Teramo, Abruzzo, Italy.&quot;],&quot;label&quot;:&quot;serra&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Serra_(Rocca_Santa_Maria)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>Serra</LanguageValueList>
+        <LanguageValueList>Serra</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7398" sofa="1" begin="0" end="0" id="bn:00083181v" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Have the quality of being; (copula, used with an adjective or a predicate noun)&quot;,&quot;[Connects a noun to an adjective describing an essential characteristic of it.]&quot;],&quot;label&quot;:&quot;be&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="02604760v" Label="OMWIKI:EN:be" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>be</LanguageValueList>
+        <LanguageValueList>ser</LanguageValueList>
+        <LanguageValueList>essere</LanguageValueList>
+        <LanguageValueList>είμαι</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7426" sofa="1" begin="0" end="0" id="bn:01673180n" confidence="0.9534590026696653" description="{&quot;glosses&quot;:[&quot;Mister also known as Mr. is a Hong Kong, Chinese rock band composed of lead vocalist Alan Po, rhythm guitarist Ronny Lay, lead guitarist Quincy Tam, bassist and backing vocalist Desmond Tam, and drummer Tom To.&quot;,&quot;Hong Kong rock band&quot;],&quot;label&quot;:&quot;mr.&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Mister" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageValueList>Mr.</LanguageValueList>
+        <LanguageValueList>Mr.</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7450" sofa="1" begin="0" end="0" id="bn:00114245r" confidence="0.0" description="{&quot;glosses&quot;:[&quot;Prior to a specified or implied time&quot;,&quot;Prior to some specified time, either past, present, or future.&quot;,&quot;Prior to some specified time, either past, present, or future; by this time; previously.&quot;,&quot;Used to emphasize impatience or express exasperation.&quot;],&quot;label&quot;:&quot;already&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00031798r" Label="WIKT:EN:already" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>already</LanguageValueList>
+        <LanguageValueList>ya</LanguageValueList>
+        <LanguageValueList>già</LanguageValueList>
+        <LanguageValueList>ήδη</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7478" sofa="1" begin="0" end="0" id="bn:00094123v" confidence="0.35093617199415983" description="{&quot;glosses&quot;:[&quot;Reveal information&quot;],&quot;label&quot;:&quot;spill&quot;,&quot;dbpediaUris&quot;:null}" WordNetId="00952841v" Label="WN:EN:spill" NameEntity="false">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>spill</LanguageValueList>
+        <LanguageValueList>hablar</LanguageValueList>
+        <LanguageValueList>confessare</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7504" sofa="1" begin="0" end="0" id="bn:01673180n" confidence="0.9534590026696653" description="{&quot;glosses&quot;:[&quot;Mister also known as Mr. is a Hong Kong, Chinese rock band composed of lead vocalist Alan Po, rhythm guitarist Ronny Lay, lead guitarist Quincy Tam, bassist and backing vocalist Desmond Tam, and drummer Tom To.&quot;,&quot;Hong Kong rock band&quot;],&quot;label&quot;:&quot;mr.&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKIDATA:EN:Mister" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageValueList>Mr.</LanguageValueList>
+        <LanguageValueList>Mr.</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7528" sofa="1" begin="0" end="0" id="bn:02935300n" confidence="0.8327830079820419" description="{&quot;glosses&quot;:[&quot;Sierra is a 1950 American Technicolor Western film directed by Alfred E. Green starring Audie Murphy, Wanda Hendrix and Burl Ives.&quot;,&quot;A 1950 Western starring Audie Murphy&quot;,&quot;1950 Western film&quot;],&quot;label&quot;:&quot;sierra&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Sierra_(film)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>ES</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageKeyList>EL</LanguageKeyList>
+        <LanguageValueList>Sierra</LanguageValueList>
+        <LanguageValueList>Sierra</LanguageValueList>
+        <LanguageValueList>Sierra</LanguageValueList>
+        <LanguageValueList>Sierra</LanguageValueList>
+    </types7:BabelNetSense>
+    <types7:BabelNetSense xmi:id="7556" sofa="1" begin="0" end="0" id="bn:00710425n" confidence="0.9076847255451297" description="{&quot;glosses&quot;:[&quot;Serra is an Italian village and frazione of the Commune of Rocca Santa Maria in the Province of Teramo, Abruzzo, Italy.&quot;],&quot;label&quot;:&quot;serra&quot;,&quot;dbpediaUris&quot;:null}" Label="WIKI:EN:Serra_(Rocca_Santa_Maria)" NameEntity="true">
+        <LanguageKeyList>EN</LanguageKeyList>
+        <LanguageKeyList>IT</LanguageKeyList>
+        <LanguageValueList>Serra</LanguageValueList>
+        <LanguageValueList>Serra</LanguageValueList>
+    </types7:BabelNetSense>
+    <types8:TopDBpediaResource xmi:id="7577" sofa="1" begin="92" end="101" finalScore="0.9999994186080114" support="16811" types="Wikidata:Q532,Wikidata:Q486972,Schema:Place,DBpedia:Settlement,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Village" uri="http://dbpedia.org/resource/Catalonia" label="" percentageOfSecondRank="2.686400793962571E-7" contextualScore="0.0" priorScore="0.0"/>
+    <types8:TopDBpediaResource xmi:id="7592" sofa="1" begin="107" end="116" finalScore="0.9995551507891752" support="35191" types="Wikidata:Q515,Wikidata:Q486972,Schema:Place,Schema:City,DBpedia:Settlement,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:City" uri="http://dbpedia.org/resource/Barcelona" label="" percentageOfSecondRank="3.201568390865363E-4" contextualScore="0.0" priorScore="0.0"/>
+    <types8:TopDBpediaResource xmi:id="7607" sofa="1" begin="350" end="355" finalScore="0.8248678827412629" support="402" types="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q5,Wikidata:Q483501,Wikidata:Q24229398,Wikidata:Q215627,DUL:NaturalPerson,DUL:Agent,Schema:Person,DBpedia:Person,DBpedia:Agent,DBpedia:Artist" uri="http://dbpedia.org/resource/Richard_Serra" label="" percentageOfSecondRank="0.1467319136786185" contextualScore="0.0" priorScore="0.0"/>
+    <types8:TopDBpediaResource xmi:id="7622" sofa="1" begin="413" end="418" finalScore="0.8248678827412629" support="402" types="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q5,Wikidata:Q483501,Wikidata:Q24229398,Wikidata:Q215627,DUL:NaturalPerson,DUL:Agent,Schema:Person,DBpedia:Person,DBpedia:Agent,DBpedia:Artist" uri="http://dbpedia.org/resource/Richard_Serra" label="" percentageOfSecondRank="0.1467319136786185" contextualScore="0.0" priorScore="0.0"/>
+    <dependency:ADVMOD xmi:id="7661" sofa="1" begin="0" end="9" Governor="74" Dependent="35" DependencyType="advmod" flavor="basic"/>
+    <dependency:ADVMOD xmi:id="7757" sofa="1" begin="46" end="49" Governor="204" Dependent="191" DependencyType="advmod" flavor="basic"/>
+    <dependency:ADVMOD xmi:id="7813" sofa="1" begin="76" end="80" Governor="300" Dependent="287" DependencyType="advmod" flavor="basic"/>
+    <dependency:ADVMOD xmi:id="8013" sofa="1" begin="210" end="217" Governor="671" Dependent="658" DependencyType="advmod" flavor="basic"/>
+    <dependency:ADVMOD xmi:id="8221" sofa="1" begin="328" end="335" Governor="1024" Dependent="1011" DependencyType="advmod" flavor="basic"/>
+    <dependency:ADVMOD xmi:id="8333" sofa="1" begin="383" end="390" Governor="1216" Dependent="1203" DependencyType="advmod" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7669" sofa="1" begin="9" end="10" Governor="74" Dependent="48" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7717" sofa="1" begin="33" end="34" Governor="74" Dependent="126" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7797" sofa="1" begin="71" end="72" Governor="204" Dependent="256" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7845" sofa="1" begin="101" end="102" Governor="300" Dependent="339" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7869" sofa="1" begin="116" end="117" Governor="7637" Dependent="383" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7885" sofa="1" begin="130" end="131" Governor="7637" Dependent="435" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7965" sofa="1" begin="181" end="182" Governor="466" Dependent="570" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="7997" sofa="1" begin="205" end="206" Governor="614" Dependent="627" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8053" sofa="1" begin="238" end="239" Governor="671" Dependent="723" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8109" sofa="1" begin="265" end="266" Governor="754" Dependent="819" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8189" sofa="1" begin="310" end="313" Governor="941" Dependent="954" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8205" sofa="1" begin="323" end="324" Governor="850" Dependent="980" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8261" sofa="1" begin="355" end="356" Governor="1024" Dependent="1076" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8277" sofa="1" begin="359" end="360" Governor="1146" Dependent="1107" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8317" sofa="1" begin="378" end="379" Governor="1146" Dependent="1172" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8373" sofa="1" begin="411" end="412" Governor="1255" Dependent="1268" DependencyType="punct" flavor="basic"/>
+    <dependency:PUNCT xmi:id="8389" sofa="1" begin="418" end="419" Governor="1286" Dependent="1299" DependencyType="punct" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="7677" sofa="1" begin="11" end="12" Governor="74" Dependent="61" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="7725" sofa="1" begin="35" end="36" Governor="152" Dependent="139" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="7741" sofa="1" begin="42" end="43" Governor="204" Dependent="165" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="7805" sofa="1" begin="74" end="75" Governor="300" Dependent="274" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="7893" sofa="1" begin="133" end="134" Governor="466" Dependent="453" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8005" sofa="1" begin="208" end="209" Governor="671" Dependent="645" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8061" sofa="1" begin="240" end="241" Governor="754" Dependent="741" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8117" sofa="1" begin="268" end="269" Governor="850" Dependent="837" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8213" sofa="1" begin="326" end="327" Governor="1024" Dependent="998" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8285" sofa="1" begin="361" end="363" Governor="1146" Dependent="1120" DependencyType="nsubj" flavor="basic"/>
+    <dependency:NSUBJ xmi:id="8325" sofa="1" begin="381" end="382" Governor="1216" Dependent="1190" DependencyType="nsubj" flavor="basic"/>
+    <dependency:ROOT xmi:id="7685" sofa="1" begin="13" end="17" Governor="74" Dependent="74" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="7821" sofa="1" begin="81" end="88" Governor="300" Dependent="300" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="7861" sofa="1" begin="107" end="116" Governor="370" Dependent="370" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="7901" sofa="1" begin="135" end="139" Governor="466" Dependent="466" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="7989" sofa="1" begin="199" end="205" Governor="614" Dependent="614" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8021" sofa="1" begin="218" end="224" Governor="671" Dependent="671" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8069" sofa="1" begin="242" end="248" Governor="754" Dependent="754" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8125" sofa="1" begin="270" end="274" Governor="850" Dependent="850" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8229" sofa="1" begin="336" end="342" Governor="1024" Dependent="1024" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8301" sofa="1" begin="368" end="371" Governor="1146" Dependent="1146" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8341" sofa="1" begin="391" end="397" Governor="1216" Dependent="1216" DependencyType="root" flavor="basic"/>
+    <dependency:ROOT xmi:id="8381" sofa="1" begin="413" end="418" Governor="1286" Dependent="1286" DependencyType="root" flavor="basic"/>
+    <dependency:PREP xmi:id="7693" sofa="1" begin="18" end="22" Governor="113" Dependent="87" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="7829" sofa="1" begin="89" end="91" Governor="326" Dependent="313" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="7853" sofa="1" begin="104" end="106" Governor="370" Dependent="357" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="7941" sofa="1" begin="163" end="167" Governor="557" Dependent="531" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8029" sofa="1" begin="225" end="227" Governor="697" Dependent="684" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8077" sofa="1" begin="249" end="251" Governor="780" Dependent="767" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8093" sofa="1" begin="256" end="258" Governor="806" Dependent="793" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8165" sofa="1" begin="298" end="302" Governor="941" Dependent="915" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8237" sofa="1" begin="343" end="345" Governor="1050" Dependent="1037" DependencyType="case" flavor="basic"/>
+    <dependency:PREP xmi:id="8349" sofa="1" begin="398" end="400" Governor="1242" Dependent="1229" DependencyType="case" flavor="basic"/>
+    <dependency:Dependency xmi:id="7701" sofa="1" begin="23" end="25" Governor="113" Dependent="100" DependencyType="nmod_poss" flavor="basic"/>
+    <dependency:Dependency xmi:id="7709" sofa="1" begin="26" end="33" Governor="74" Dependent="113" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="7789" sofa="1" begin="62" end="71" Governor="204" Dependent="243" DependencyType="obj" flavor="basic"/>
+    <dependency:Dependency xmi:id="7837" sofa="1" begin="92" end="101" Governor="300" Dependent="326" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="7933" sofa="1" begin="151" end="162" Governor="492" Dependent="518" DependencyType="obj" flavor="basic"/>
+    <dependency:Dependency xmi:id="7957" sofa="1" begin="172" end="181" Governor="518" Dependent="557" DependencyType="nmod" flavor="basic"/>
+    <dependency:Dependency xmi:id="8037" sofa="1" begin="228" end="231" Governor="671" Dependent="697" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="8045" sofa="1" begin="232" end="238" Governor="697" Dependent="710" DependencyType="flat" flavor="basic"/>
+    <dependency:Dependency xmi:id="8085" sofa="1" begin="252" end="255" Governor="754" Dependent="780" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="8101" sofa="1" begin="259" end="265" Governor="754" Dependent="806" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="8157" sofa="1" begin="286" end="297" Governor="876" Dependent="902" DependencyType="obj" flavor="basic"/>
+    <dependency:Dependency xmi:id="8181" sofa="1" begin="307" end="310" Governor="902" Dependent="941" DependencyType="nmod" flavor="basic"/>
+    <dependency:Dependency xmi:id="8245" sofa="1" begin="346" end="349" Governor="1024" Dependent="1050" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="8253" sofa="1" begin="350" end="355" Governor="1050" Dependent="1063" DependencyType="flat" flavor="basic"/>
+    <dependency:Dependency xmi:id="8269" sofa="1" begin="357" end="359" Governor="1146" Dependent="1094" DependencyType="discourse" flavor="basic"/>
+    <dependency:Dependency xmi:id="8309" sofa="1" begin="372" end="378" Governor="1146" Dependent="1159" DependencyType="flat" flavor="basic"/>
+    <dependency:Dependency xmi:id="8357" sofa="1" begin="401" end="404" Governor="1216" Dependent="1242" DependencyType="obl" flavor="basic"/>
+    <dependency:Dependency xmi:id="8365" sofa="1" begin="405" end="411" Governor="1242" Dependent="1255" DependencyType="flat" flavor="basic"/>
+    <dependency:PARATAXIS xmi:id="7733" sofa="1" begin="37" end="41" Governor="74" Dependent="152" DependencyType="parataxis" flavor="basic"/>
+    <dependency:AUX0 xmi:id="7749" sofa="1" begin="44" end="46" Governor="204" Dependent="178" DependencyType="aux" flavor="basic"/>
+    <dependency:CCOMP xmi:id="7765" sofa="1" begin="50" end="54" Governor="152" Dependent="204" DependencyType="ccomp" flavor="basic"/>
+    <dependency:DET xmi:id="7773" sofa="1" begin="55" end="57" Governor="243" Dependent="217" DependencyType="det" flavor="basic"/>
+    <dependency:DET xmi:id="7925" sofa="1" begin="148" end="150" Governor="518" Dependent="505" DependencyType="det" flavor="basic"/>
+    <dependency:DET xmi:id="7949" sofa="1" begin="168" end="171" Governor="557" Dependent="544" DependencyType="det" flavor="basic"/>
+    <dependency:DET xmi:id="7973" sofa="1" begin="184" end="187" Governor="614" Dependent="588" DependencyType="det" flavor="basic"/>
+    <dependency:DET xmi:id="8149" sofa="1" begin="283" end="285" Governor="902" Dependent="889" DependencyType="det" flavor="basic"/>
+    <dependency:DET xmi:id="8173" sofa="1" begin="303" end="306" Governor="941" Dependent="928" DependencyType="det" flavor="basic"/>
+    <dependency:AMOD xmi:id="7781" sofa="1" begin="58" end="61" Governor="243" Dependent="230" DependencyType="amod" flavor="basic"/>
+    <dependency:CONJ xmi:id="7877" sofa="1" begin="118" end="130" Governor="370" Dependent="7637" DependencyType="conj" flavor="basic"/>
+    <dependency:MARK xmi:id="7909" sofa="1" begin="140" end="142" Governor="492" Dependent="479" DependencyType="mark" flavor="basic"/>
+    <dependency:MARK xmi:id="8133" sofa="1" begin="275" end="277" Governor="876" Dependent="863" DependencyType="mark" flavor="basic"/>
+    <dependency:XCOMP xmi:id="7917" sofa="1" begin="143" end="147" Governor="466" Dependent="492" DependencyType="xcomp" flavor="basic"/>
+    <dependency:XCOMP xmi:id="8141" sofa="1" begin="278" end="282" Governor="850" Dependent="876" DependencyType="xcomp" flavor="basic"/>
+    <dependency:NN xmi:id="7981" sofa="1" begin="188" end="198" Governor="614" Dependent="601" DependencyType="compound" flavor="basic"/>
+    <dependency:APPOS xmi:id="8197" sofa="1" begin="314" end="323" Governor="941" Dependent="967" DependencyType="appos" flavor="basic"/>
+    <dependency:COP xmi:id="8293" sofa="1" begin="364" end="367" Governor="1146" Dependent="1133" DependencyType="cop" flavor="basic"/>
+    <types2:DeepToken xmi:id="8397" sofa="1" begin="0" end="9" value="Currently" features="pbr=&quot;currently.01&quot;|deepUD_rel=&quot;A1INV&quot;|wnId=&quot;00048268r&quot;|predName=&quot;currently&quot;|start_string=0|lemma=&quot;currently&quot;|end_string=9|bnId=&quot;bn:00114905r&quot;|predValue=&quot;01&quot;|dlex=&quot;Currently&quot;|pred=&quot;_&quot;|pos=&quot;RB&quot;|id1=&quot;1&quot;|lex=&quot;currently_RB_01&quot;|dpos=&quot;RB&quot;" pos="8404"/>
+    <types2:DeepToken xmi:id="8475" sofa="1" begin="11" end="12" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=11|end_string=12|lemma=&quot;I&quot;|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;3&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8482"/>
+    <types2:DeepToken xmi:id="8488" sofa="1" begin="13" end="17" value="live" features="Tense=&quot;Pres&quot;|pbr=&quot;live.01&quot;|predName=&quot;live&quot;|wnId=&quot;02649830v&quot;|start_string=13|bnId=&quot;bn:00087441v&quot;|lemma=&quot;live&quot;|end_string=17|predValue=&quot;01&quot;|dlex=&quot;live&quot;|pos=&quot;VBP&quot;|pred=&quot;_&quot;|id1=&quot;4&quot;|lex=&quot;live_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="8495"/>
+    <types2:DeepToken xmi:id="8501" sofa="1" begin="18" end="22" value="with" features="pbr=&quot;with.01&quot;|deepUD_rel=AM|predName=&quot;with&quot;|start_string=18|lemma=&quot;with&quot;|end_string=22|predValue=&quot;01&quot;|dlex=&quot;with&quot;|pos=&quot;IN&quot;|pred=&quot;_&quot;|id1=&quot;5&quot;|lex=&quot;with_IN_01&quot;|dpos=&quot;IN&quot;" pos="8508"/>
+    <types2:DeepToken xmi:id="8514" sofa="1" begin="23" end="25" value="my" features="pbr=&quot;my.01&quot;|deepUD_rel=&quot;AM&quot;|predName=&quot;my&quot;|start_string=23|lemma=&quot;my&quot;|end_string=25|predValue=&quot;01&quot;|dlex=&quot;my&quot;|pred=&quot;_&quot;|pos=&quot;PRP$&quot;|id1=&quot;6&quot;|Poss=&quot;Yes&quot;|Person=&quot;1&quot;|lex=&quot;my_PRP$_01&quot;|dpos=&quot;PRP$&quot;|PronType=&quot;Prs&quot;" pos="8521"/>
+    <types2:DeepToken xmi:id="8410" sofa="1" begin="26" end="33" value="friends" features="pbr=&quot;friend.01&quot;|deepUD_rel=A2|predName=&quot;friend&quot;|start_string=26|bnId=&quot;bn:01379732n&quot;|lemma=&quot;friend&quot;|end_string=33|predValue=&quot;01&quot;|dlex=&quot;friends&quot;|pred=&quot;_&quot;|pos=&quot;NNS&quot;|id1=&quot;7&quot;|lex=&quot;friend_NN_01&quot;|dpos=&quot;NN&quot;" pos="8417"/>
+    <types2:DeepToken xmi:id="8423" sofa="1" begin="35" end="36" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=35|lemma=&quot;I&quot;|end_string=36|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;9&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8430"/>
+    <types2:DeepToken xmi:id="8436" sofa="1" begin="37" end="41" value="mean" features="Tense=&quot;Pres&quot;|pbr=&quot;mean.01&quot;|deepUD_rel=&quot;PARATAXIS&quot;|predName=&quot;mean&quot;|wnId=&quot;00708538v&quot;|start_string=37|end_string=41|bnId=&quot;bn:00089804v&quot;|lemma=&quot;mean&quot;|predValue=&quot;01&quot;|dlex=&quot;mean&quot;|pred=&quot;_&quot;|pos=&quot;VBP&quot;|id1=&quot;10&quot;|lex=&quot;mean_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="8443"/>
+    <types2:DeepToken xmi:id="8527" sofa="1" begin="42" end="43" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=42|end_string=43|lemma=&quot;I&quot;|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;11&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8534"/>
+    <types2:DeepToken xmi:id="8540" sofa="1" begin="46" end="49" value="n’t" features="pbr=&quot;not.01&quot;|deepUD_rel=&quot;A1INV&quot;|predName=&quot;not&quot;|wnId=&quot;00024073r&quot;|start_string=46|end_string=49|lemma=&quot;not&quot;|bnId=&quot;bn:00116360r&quot;|predValue=&quot;01&quot;|dlex=&quot;n’t&quot;|pos=&quot;RB&quot;|pred=&quot;_&quot;|id1=&quot;13&quot;|lex=&quot;not_RB_01&quot;|dpos=&quot;RB&quot;" pos="8547"/>
+    <types2:DeepToken xmi:id="8553" sofa="1" begin="50" end="54" value="have" features="Tense=&quot;Pres&quot;|pbr=&quot;have.01&quot;|deepUD_rel=A2|predName=&quot;have&quot;|wnId=&quot;02203362v&quot;|start_string=50|end_string=54|bnId=&quot;bn:00089240v&quot;|lemma=&quot;have&quot;|predValue=&quot;01&quot;|dlex=&quot;have&quot;|pred=&quot;_&quot;|pos=&quot;VB&quot;|id2=&quot;12&quot;|id1=&quot;14&quot;|lex=&quot;have_VB_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="8560"/>
+    <types2:DeepToken xmi:id="8449" sofa="1" begin="58" end="61" value="own" features="pbr=&quot;own.01&quot;|deepUD_rel=&quot;A1INV&quot;|predName=&quot;own&quot;|Degree=&quot;Pos&quot;|start_string=58|end_string=61|lemma=&quot;own&quot;|predValue=&quot;01&quot;|dlex=&quot;own&quot;|pred=&quot;_&quot;|pos=&quot;JJ&quot;|id1=&quot;16&quot;|lex=&quot;own_JJ_01&quot;|dpos=&quot;JJ&quot;" pos="8456"/>
+    <types2:DeepToken xmi:id="8462" sofa="1" begin="62" end="71" value="apartment" features="pbr=&quot;apartment.01&quot;|deepUD_rel=A2|predName=&quot;apartment&quot;|start_string=62|bnId=&quot;bn:15031452n&quot;|end_string=71|lemma=&quot;apartment&quot;|predValue=&quot;01&quot;|dlex=&quot;apartment&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;15&quot;|id1=&quot;17&quot;|lex=&quot;apartment_NN_01&quot;|dpos=&quot;NN&quot;" pos="8469"/>
+    <types2:DeepToken xmi:id="8657" sofa="1" begin="74" end="75" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=74|lemma=&quot;I&quot;|end_string=75|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8664"/>
+    <types2:DeepToken xmi:id="8670" sofa="1" begin="76" end="80" value="just" features="pbr=&quot;just.01&quot;|deepUD_rel=&quot;A1INV&quot;|wnId=&quot;00004722r&quot;|predName=&quot;just&quot;|start_string=76|bnId=&quot;bn:00114626r&quot;|lemma=&quot;just&quot;|end_string=80|predValue=&quot;01&quot;|dlex=&quot;just&quot;|pred=&quot;_&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|lex=&quot;just_RB_01&quot;|dpos=&quot;RB&quot;" pos="8677"/>
+    <types2:DeepToken xmi:id="8683" sofa="1" begin="81" end="88" value="arrived" features="Tense=&quot;Past&quot;|pbr=&quot;arrive.01&quot;|predName=&quot;arrive&quot;|wnId=&quot;02020590v&quot;|start_string=81|lemma=&quot;arrive&quot;|end_string=88|bnId=&quot;bn:00082790v&quot;|predValue=&quot;01&quot;|dlex=&quot;arrived&quot;|pred=&quot;_&quot;|pos=&quot;VBD&quot;|id1=&quot;3&quot;|lex=&quot;arrive_VB_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="8690"/>
+    <types2:DeepToken xmi:id="8696" sofa="1" begin="92" end="101" value="Catalonia" features="pbr=&quot;Catalonia.01&quot;|deepUD_rel=A4|wnId=&quot;09028062n&quot;|predName=&quot;Catalonia&quot;|start_string=92|lemma=&quot;Catalonia&quot;|end_string=101|bnId=&quot;bn:00016656n&quot;|predValue=&quot;01&quot;|dlex=&quot;Catalonia&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|lex=&quot;Catalonia_NN_01&quot;|dpos=&quot;NN&quot;" pos="8703"/>
+    <types2:DeepToken xmi:id="8737" sofa="1" begin="107" end="116" value="Barcelona" features="pbr=&quot;Barcelona.01&quot;|predName=&quot;Barcelona&quot;|start_string=107|lemma=&quot;Barcelona&quot;|end_string=116|bnId=&quot;bn:03505714n&quot;|predValue=&quot;01&quot;|conj_num=A1|dlex=&quot;Barcelona&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id2=&quot;1&quot;|id1=&quot;2&quot;|lex=&quot;Barcelona_NN_01&quot;|dpos=&quot;NN&quot;" pos="8744"/>
+    <types2:DeepToken xmi:id="8750" sofa="1" begin="118" end="130" value="one week ago" features="pbr=&quot;one week ago.01&quot;|deepUD_rel=LIST|wnId=&quot;00074095r&quot;|predName=&quot;one week ago&quot;|start_string=118|bnId=&quot;bn:01421448n&quot;|lemma=&quot;one week ago&quot;|end_string=130|predValue=&quot;01&quot;|conj_num=A2|dlex=&quot;one week ago&quot;|NumType=&quot;Card&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id1=&quot;4&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;one week ago_NN_01&quot;|dpos=&quot;NN&quot;" pos="8757"/>
+    <types2:DeepToken xmi:id="8777" sofa="1" begin="133" end="134" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=133|lemma=&quot;I&quot;|end_string=134|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8784"/>
+    <types2:DeepToken xmi:id="8790" sofa="1" begin="135" end="139" value="want" features="Tense=&quot;Pres&quot;|pbr=&quot;want.01&quot;|predName=&quot;want&quot;|wnId=&quot;00709205v&quot;|start_string=135|bnId=&quot;bn:00095628v&quot;|lemma=&quot;want&quot;|end_string=139|predValue=&quot;01&quot;|dlex=&quot;want&quot;|pos=&quot;VBP&quot;|pred=&quot;_&quot;|id1=&quot;2&quot;|lex=&quot;want_VB_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="8797"/>
+    <types2:DeepToken xmi:id="8816" sofa="1" begin="143" end="147" value="make" features="pbr=&quot;make.01&quot;|deepUD_rel=A2|predName=&quot;make&quot;|wnId=&quot;02289295v&quot;|start_string=143|lemma=&quot;make&quot;|bnId=&quot;bn:00084089v&quot;|end_string=147|predValue=&quot;01&quot;|dlex=&quot;make&quot;|pred=&quot;_&quot;|pos=&quot;VB&quot;|id2=&quot;3&quot;|id1=&quot;4&quot;|lex=&quot;make_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;INF&quot;" pos="8823"/>
+    <types2:DeepToken xmi:id="8829" sofa="1" begin="151" end="162" value="appointment" features="pbr=&quot;appointment.01&quot;|deepUD_rel=A2|predName=&quot;appointment&quot;|start_string=151|bnId=&quot;bn:05942545n&quot;|lemma=&quot;appointment&quot;|end_string=162|predValue=&quot;01&quot;|dlex=&quot;appointment&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;5&quot;|id1=&quot;6&quot;|lex=&quot;appointment_NN_01&quot;|dpos=&quot;NN&quot;" pos="8836"/>
+    <types2:DeepToken xmi:id="8803" sofa="1" begin="163" end="167" value="with" features="pbr=&quot;with.01&quot;|deepUD_rel=AM|predName=&quot;with&quot;|start_string=163|lemma=&quot;with&quot;|end_string=167|predValue=&quot;01&quot;|dlex=&quot;with&quot;|pos=&quot;IN&quot;|pred=&quot;_&quot;|id1=&quot;7&quot;|lex=&quot;with_IN_01&quot;|dpos=&quot;IN&quot;" pos="8810"/>
+    <types2:DeepToken xmi:id="8842" sofa="1" begin="172" end="181" value="jobcenter" features="pbr=&quot;jobcenter.01&quot;|deepUD_rel=A2|predName=&quot;jobcenter&quot;|start_string=172|lemma=&quot;jobcenter&quot;|end_string=181|predValue=&quot;01&quot;|dlex=&quot;jobcenter&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;8&quot;|id1=&quot;9&quot;|Definite=&quot;Def&quot;|lex=&quot;jobcenter_NN_01&quot;|dpos=&quot;NN&quot;" pos="8849"/>
+    <types2:DeepToken xmi:id="8897" sofa="1" begin="188" end="198" value="employment" features="pbr=&quot;employment.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;employment&quot;|start_string=188|lemma=&quot;employment&quot;|end_string=198|bnId=&quot;bn:14957117n&quot;|predValue=&quot;01&quot;|dlex=&quot;employment&quot;|pos=&quot;NN&quot;|pred=&quot;_&quot;|id1=&quot;2&quot;|lex=&quot;employment_NN_01&quot;|dpos=&quot;NN&quot;" pos="8904"/>
+    <types2:DeepToken xmi:id="8910" sofa="1" begin="199" end="205" value="office" features="pbr=&quot;office.01&quot;|predName=&quot;office&quot;|start_string=199|lemma=&quot;office&quot;|end_string=205|bnId=&quot;bn:17571475n&quot;|predValue=&quot;01&quot;|dlex=&quot;office&quot;|pos=&quot;NN&quot;|pred=&quot;_&quot;|id2=&quot;1&quot;|id1=&quot;3&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;office_NN_01&quot;|dpos=&quot;NN&quot;" pos="8917"/>
+    <types2:DeepToken xmi:id="8937" sofa="1" begin="208" end="209" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=208|lemma=&quot;I&quot;|end_string=209|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="8944"/>
+    <types2:DeepToken xmi:id="8950" sofa="1" begin="210" end="217" value="already" features="pbr=&quot;already.01&quot;|deepUD_rel=&quot;A1INV&quot;|wnId=&quot;00031798r&quot;|predName=&quot;already&quot;|start_string=210|end_string=217|lemma=&quot;already&quot;|bnId=&quot;bn:00114245r&quot;|predValue=&quot;01&quot;|dlex=&quot;already&quot;|pred=&quot;_&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;" pos="8957"/>
+    <types2:DeepToken xmi:id="8963" sofa="1" begin="218" end="224" value="talked" features="Tense=&quot;Past&quot;|pbr=&quot;talk.01&quot;|predName=&quot;talk&quot;|wnId=&quot;00952841v&quot;|start_string=218|lemma=&quot;talk&quot;|bnId=&quot;bn:00094123v&quot;|end_string=224|predValue=&quot;01&quot;|dlex=&quot;talked&quot;|pred=&quot;_&quot;|pos=&quot;VBD&quot;|id1=&quot;3&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;talk_VB_01&quot;|finiteness=&quot;FIN&quot;|dpos=&quot;VB&quot;" pos="8970"/>
+    <types2:DeepToken xmi:id="8976" sofa="1" begin="228" end="231" value="Mr." features="pbr=&quot;Mr..01&quot;|deepUD_rel=A3|predName=&quot;Mr.&quot;|start_string=228|bnId=&quot;bn:01673180n&quot;|lemma=&quot;Mr.&quot;|end_string=231|predValue=&quot;01&quot;|dlex=&quot;Mr.&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="8983"/>
+    <types2:DeepToken xmi:id="8989" sofa="1" begin="232" end="238" value="Codina" features="pbr=&quot;Codina.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;Codina&quot;|start_string=232|end_string=238|lemma=&quot;Codina&quot;|predValue=&quot;01&quot;|dlex=&quot;Codina&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id1=&quot;6&quot;|lex=&quot;Codina_NN_01&quot;|dpos=&quot;NN&quot;" pos="8996"/>
+    <types2:DeepToken xmi:id="9037" sofa="1" begin="240" end="241" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=240|lemma=&quot;I&quot;|end_string=241|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="9044"/>
+    <types2:DeepToken xmi:id="9050" sofa="1" begin="242" end="248" value="talked" features="Tense=&quot;Past&quot;|pbr=&quot;talk.01&quot;|predName=&quot;talk&quot;|wnId=&quot;00952841v&quot;|start_string=242|lemma=&quot;talk&quot;|bnId=&quot;bn:00094123v&quot;|end_string=248|predValue=&quot;01&quot;|dlex=&quot;talked&quot;|pred=&quot;_&quot;|pos=&quot;VBD&quot;|id1=&quot;2&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;talk_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="9057"/>
+    <types2:DeepToken xmi:id="9063" sofa="1" begin="252" end="255" value="him" features="pbr=&quot;he.01&quot;|deepUD_rel=A3|predName=&quot;he&quot;|start_string=252|end_string=255|lemma=&quot;he&quot;|predValue=&quot;01&quot;|dlex=&quot;him&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id2=&quot;3&quot;|id1=&quot;4&quot;|Person=&quot;3&quot;|lex=&quot;he_PRP_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;" pos="9070"/>
+    <types2:DeepToken xmi:id="9076" sofa="1" begin="256" end="258" value="on" features="pbr=&quot;on.01&quot;|deepUD_rel=AM|predName=&quot;on&quot;|start_string=256|lemma=&quot;on&quot;|end_string=258|predValue=&quot;01&quot;|dlex=&quot;on&quot;|pred=&quot;_&quot;|pos=&quot;IN&quot;|id1=&quot;5&quot;|lex=&quot;on_IN_01&quot;|dpos=&quot;IN&quot;" pos="9083"/>
+    <types2:DeepToken xmi:id="9089" sofa="1" begin="259" end="265" value="Friday" features="pbr=&quot;Friday.01&quot;|deepUD_rel=A2|predName=&quot;Friday&quot;|start_string=259|end_string=265|lemma=&quot;Friday&quot;|bnId=&quot;bn:03425318n&quot;|predValue=&quot;01&quot;|dlex=&quot;Friday&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id1=&quot;6&quot;|lex=&quot;Friday_NN_01&quot;|dpos=&quot;NN&quot;" pos="9096"/>
+    <types2:DeepToken xmi:id="9137" sofa="1" begin="268" end="269" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=268|lemma=&quot;I&quot;|end_string=269|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;" pos="9144"/>
+    <types2:DeepToken xmi:id="9150" sofa="1" begin="270" end="274" value="want" features="Tense=&quot;Pres&quot;|pbr=&quot;want.01&quot;|wnId=&quot;00709205v&quot;|predName=&quot;want&quot;|start_string=270|bnId=&quot;bn:00095628v&quot;|lemma=&quot;want&quot;|end_string=274|predValue=&quot;01&quot;|dlex=&quot;want&quot;|pred=&quot;_&quot;|pos=&quot;VBP&quot;|id1=&quot;2&quot;|lex=&quot;want_VB_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="9157"/>
+    <types2:DeepToken xmi:id="9176" sofa="1" begin="278" end="282" value="make" features="pbr=&quot;make.01&quot;|deepUD_rel=A2|predName=&quot;make&quot;|wnId=&quot;02289295v&quot;|start_string=278|lemma=&quot;make&quot;|bnId=&quot;bn:00084089v&quot;|end_string=282|predValue=&quot;01&quot;|dlex=&quot;make&quot;|pred=&quot;_&quot;|pos=&quot;VB&quot;|id2=&quot;3&quot;|id1=&quot;4&quot;|lex=&quot;make_VB_01&quot;|finiteness=&quot;INF&quot;|dpos=&quot;VB&quot;" pos="9183"/>
+    <types2:DeepToken xmi:id="9202" sofa="1" begin="286" end="297" value="appointment" features="pbr=&quot;appointment.01&quot;|deepUD_rel=A2|predName=&quot;appointment&quot;|start_string=286|bnId=&quot;bn:05942545n&quot;|end_string=297|lemma=&quot;appointment&quot;|predValue=&quot;01&quot;|dlex=&quot;appointment&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;5&quot;|id1=&quot;6&quot;|lex=&quot;appointment_NN_01&quot;|dpos=&quot;NN&quot;" pos="9209"/>
+    <types2:DeepToken xmi:id="9163" sofa="1" begin="298" end="302" value="with" features="pbr=&quot;with.01&quot;|deepUD_rel=AM|predName=&quot;with&quot;|start_string=298|end_string=302|lemma=&quot;with&quot;|predValue=&quot;01&quot;|dlex=&quot;with&quot;|pos=&quot;IN&quot;|pred=&quot;_&quot;|id1=&quot;7&quot;|lex=&quot;with_IN_01&quot;|dpos=&quot;IN&quot;" pos="9170"/>
+    <types2:DeepToken xmi:id="9189" sofa="1" begin="307" end="310" value="job" features="pbr=&quot;job.01&quot;|deepUD_rel=A2|predName=&quot;job&quot;|start_string=307|bnId=&quot;bn:02793166n&quot;|lemma=&quot;job&quot;|end_string=310|predValue=&quot;01&quot;|dlex=&quot;job&quot;|pred=&quot;_&quot;|pos=&quot;NN&quot;|id2=&quot;8&quot;|id1=&quot;9&quot;|Definite=&quot;Def&quot;|lex=&quot;job_NN_01&quot;|ClauseType=&quot;Sus&quot;|dpos=&quot;NN&quot;" pos="9196"/>
+    <types2:DeepToken xmi:id="9215" sofa="1" begin="314" end="323" value="jobcenter" features="pbr=&quot;jobcenter.01&quot;|deepUD_rel=&quot;AM&quot;|predName=&quot;jobcenter&quot;|start_string=314|end_string=323|lemma=&quot;jobcenter&quot;|predValue=&quot;01&quot;|dlex=&quot;jobcenter&quot;|pos=&quot;NN&quot;|pred=&quot;_&quot;|id1=&quot;11&quot;|lex=&quot;jobcenter_NN_01&quot;|dpos=&quot;NN&quot;" pos="9222"/>
+    <types2:DeepToken xmi:id="9277" sofa="1" begin="326" end="327" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=326|lemma=&quot;I&quot;|end_string=327|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="9284"/>
+    <types2:DeepToken xmi:id="9290" sofa="1" begin="328" end="335" value="already" features="pbr=&quot;already.01&quot;|deepUD_rel=&quot;A1INV&quot;|wnId=&quot;00031798r&quot;|predName=&quot;already&quot;|start_string=328|end_string=335|lemma=&quot;already&quot;|bnId=&quot;bn:00114245r&quot;|predValue=&quot;01&quot;|dlex=&quot;already&quot;|pred=&quot;_&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;" pos="9297"/>
+    <types2:DeepToken xmi:id="9303" sofa="1" begin="336" end="342" value="talked" features="Tense=&quot;Past&quot;|pbr=&quot;talk.01&quot;|predName=&quot;talk&quot;|wnId=&quot;00952841v&quot;|start_string=336|lemma=&quot;talk&quot;|bnId=&quot;bn:00094123v&quot;|end_string=342|predValue=&quot;01&quot;|dlex=&quot;talked&quot;|pos=&quot;VBD&quot;|pred=&quot;_&quot;|id1=&quot;3&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;talk_VB_01&quot;|finiteness=&quot;FIN&quot;|dpos=&quot;VB&quot;" pos="9310"/>
+    <types2:DeepToken xmi:id="9316" sofa="1" begin="346" end="349" value="Mr." features="pbr=&quot;Mr..01&quot;|deepUD_rel=A3|predName=&quot;Mr.&quot;|start_string=346|bnId=&quot;bn:01673180n&quot;|lemma=&quot;Mr.&quot;|end_string=349|predValue=&quot;01&quot;|dlex=&quot;Mr.&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="9323"/>
+    <types2:DeepToken xmi:id="9329" sofa="1" begin="350" end="355" value="Serra" features="pbr=&quot;Serra.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;Serra&quot;|start_string=350|end_string=355|lemma=&quot;Serra&quot;|bnId=&quot;bn:00710425n&quot;|predValue=&quot;01&quot;|dlex=&quot;Serra&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id1=&quot;6&quot;|lex=&quot;Serra_NN_01&quot;|dpos=&quot;NN&quot;" pos="9336"/>
+    <types2:DeepToken xmi:id="9377" sofa="1" begin="357" end="359" value="No" features="pbr=&quot;no.01&quot;|deepUD_rel=&quot;AM&quot;|predName=&quot;no&quot;|start_string=357|lemma=&quot;no&quot;|end_string=359|predValue=&quot;01&quot;|dlex=&quot;No&quot;|pos=&quot;UH&quot;|Disc=&quot;yes&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|lex=&quot;no_UH_01&quot;|dpos=&quot;UH&quot;" pos="9384"/>
+    <types2:DeepToken xmi:id="9390" sofa="1" begin="361" end="363" value="it" features="pbr=&quot;it.01&quot;|deepUD_rel=A1|predName=&quot;it&quot;|start_string=361|lemma=&quot;it&quot;|end_string=363|predValue=&quot;01&quot;|dlex=&quot;it&quot;|pred=&quot;_&quot;|pos=&quot;PRP&quot;|id1=&quot;3&quot;|Person=&quot;3&quot;|lex=&quot;it_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="9397"/>
+    <types2:DeepToken xmi:id="9403" sofa="1" begin="364" end="367" value="was" features="Tense=&quot;Past&quot;|pbr=&quot;be.01&quot;|predName=&quot;be&quot;|wnId=&quot;02604760v&quot;|start_string=364|bnId=&quot;bn:00083181v&quot;|lemma=&quot;be&quot;|end_string=367|predValue=&quot;01&quot;|dlex=&quot;was&quot;|pos=&quot;VBD&quot;|pred=&quot;_&quot;|id1=&quot;4&quot;|Person=&quot;3&quot;|lex=&quot;be_VB_01&quot;|finiteness=&quot;FIN&quot;|dpos=&quot;VB&quot;" pos="9410"/>
+    <types2:DeepToken xmi:id="9416" sofa="1" begin="368" end="371" value="Mr." features="pbr=&quot;Mr..01&quot;|deepUD_rel=A2|predName=&quot;Mr.&quot;|start_string=368|bnId=&quot;bn:01673180n&quot;|lemma=&quot;Mr.&quot;|end_string=371|predValue=&quot;01&quot;|dlex=&quot;Mr.&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id1=&quot;5&quot;|lex=&quot;Mr._NN_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;NN&quot;" pos="9423"/>
+    <types2:DeepToken xmi:id="9429" sofa="1" begin="372" end="378" value="Codina" features="pbr=&quot;Codina.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;Codina&quot;|start_string=372|end_string=378|lemma=&quot;Codina&quot;|predValue=&quot;01&quot;|dlex=&quot;Codina&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id1=&quot;6&quot;|lex=&quot;Codina_NN_01&quot;|dpos=&quot;NN&quot;" pos="9436"/>
+    <types2:DeepToken xmi:id="9477" sofa="1" begin="381" end="382" value="I" features="pbr=&quot;I.01&quot;|deepUD_rel=A1|predName=&quot;I&quot;|start_string=381|lemma=&quot;I&quot;|end_string=382|predValue=&quot;01&quot;|dlex=&quot;I&quot;|pos=&quot;PRP&quot;|pred=&quot;_&quot;|id1=&quot;1&quot;|Person=&quot;1&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="9484"/>
+    <types2:DeepToken xmi:id="9490" sofa="1" begin="383" end="390" value="already" features="pbr=&quot;already.01&quot;|deepUD_rel=&quot;A1INV&quot;|wnId=&quot;00031798r&quot;|predName=&quot;already&quot;|start_string=383|end_string=390|lemma=&quot;already&quot;|bnId=&quot;bn:00114245r&quot;|predValue=&quot;01&quot;|dlex=&quot;already&quot;|pred=&quot;_&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;" pos="9497"/>
+    <types2:DeepToken xmi:id="9503" sofa="1" begin="391" end="397" value="talked" features="Tense=&quot;Past&quot;|pbr=&quot;talk.01&quot;|predName=&quot;talk&quot;|wnId=&quot;00952841v&quot;|start_string=391|lemma=&quot;talk&quot;|bnId=&quot;bn:00094123v&quot;|end_string=397|predValue=&quot;01&quot;|dlex=&quot;talked&quot;|pos=&quot;VBD&quot;|pred=&quot;_&quot;|id1=&quot;3&quot;|lex=&quot;talk_VB_01&quot;|finiteness=&quot;FIN&quot;|dpos=&quot;VB&quot;" pos="9510"/>
+    <types2:DeepToken xmi:id="9516" sofa="1" begin="401" end="404" value="Mr." features="pbr=&quot;Mr..01&quot;|deepUD_rel=A3|predName=&quot;Mr.&quot;|start_string=401|bnId=&quot;bn:01673180n&quot;|lemma=&quot;Mr.&quot;|end_string=404|predValue=&quot;01&quot;|dlex=&quot;Mr.&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="9523"/>
+    <types2:DeepToken xmi:id="9529" sofa="1" begin="405" end="411" value="Sierra" features="pbr=&quot;Sierra.01&quot;|deepUD_rel=&quot;NAME&quot;|predName=&quot;Sierra&quot;|start_string=405|end_string=411|lemma=&quot;Sierra&quot;|bnId=&quot;bn:02935300n&quot;|predValue=&quot;01&quot;|dlex=&quot;Sierra&quot;|pos=&quot;NNP&quot;|pred=&quot;_&quot;|id1=&quot;6&quot;|ClauseType=&quot;Sus&quot;|lex=&quot;Sierra_NN_01&quot;|dpos=&quot;NN&quot;" pos="9536"/>
+    <types2:DeepToken xmi:id="9577" sofa="1" begin="413" end="418" value="Serra" features="pbr=&quot;Serra.01&quot;|predName=&quot;Serra&quot;|start_string=413|lemma=&quot;Serra&quot;|bnId=&quot;bn:00710425n&quot;|end_string=418|predValue=&quot;01&quot;|dlex=&quot;Serra&quot;|pred=&quot;_&quot;|pos=&quot;NNP&quot;|id1=&quot;1&quot;|lex=&quot;Serra_NN_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;NN&quot;" pos="9584"/>
+    <types2:DeepDependency xmi:id="8566" sofa="1" begin="0" end="9" governor="8488" dependent="8397" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8608" sofa="1" begin="11" end="12" governor="8488" dependent="8475" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="8615" sofa="1" begin="13" end="17" governor="8488" dependent="8488" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="8622" sofa="1" begin="18" end="22" governor="8488" dependent="8501" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8629" sofa="1" begin="23" end="25" governor="8410" dependent="8514" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8573" sofa="1" begin="26" end="33" governor="8501" dependent="8410" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8580" sofa="1" begin="35" end="36" governor="8436" dependent="8423" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="8587" sofa="1" begin="37" end="41" governor="8488" dependent="8436" dependencyType="PARATAXIS"/>
+    <types2:DeepDependency xmi:id="8636" sofa="1" begin="42" end="43" governor="8553" dependent="8527" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="8643" sofa="1" begin="46" end="49" governor="8553" dependent="8540" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8650" sofa="1" begin="50" end="54" governor="8436" dependent="8553" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8594" sofa="1" begin="58" end="61" governor="8462" dependent="8449" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8601" sofa="1" begin="62" end="71" governor="8553" dependent="8462" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8709" sofa="1" begin="74" end="75" governor="8683" dependent="8657" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="8716" sofa="1" begin="76" end="80" governor="8683" dependent="8670" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8723" sofa="1" begin="81" end="88" governor="8683" dependent="8683" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="8730" sofa="1" begin="92" end="101" governor="8683" dependent="8696" dependencyType="IV"/>
+    <types2:DeepDependency xmi:id="8763" sofa="1" begin="107" end="116" governor="8737" dependent="8737" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="8770" sofa="1" begin="118" end="130" governor="8737" dependent="8750" dependencyType="COORD"/>
+    <types2:DeepDependency xmi:id="8855" sofa="1" begin="133" end="134" governor="8790" dependent="8777" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="8862" sofa="1" begin="135" end="139" governor="8790" dependent="8790" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="8876" sofa="1" begin="143" end="147" governor="8790" dependent="8816" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8883" sofa="1" begin="151" end="162" governor="8816" dependent="8829" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8869" sofa="1" begin="163" end="167" governor="8829" dependent="8803" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="8890" sofa="1" begin="172" end="181" governor="8803" dependent="8842" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="8923" sofa="1" begin="188" end="198" governor="8910" dependent="8897" dependencyType="NAME"/>
+    <types2:DeepDependency xmi:id="8930" sofa="1" begin="199" end="205" governor="8910" dependent="8910" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9002" sofa="1" begin="208" end="209" governor="8963" dependent="8937" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9009" sofa="1" begin="210" end="217" governor="8963" dependent="8950" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9016" sofa="1" begin="218" end="224" governor="8963" dependent="8963" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9023" sofa="1" begin="228" end="231" governor="8963" dependent="8976" dependencyType="III"/>
+    <types2:DeepDependency xmi:id="9030" sofa="1" begin="232" end="238" governor="8976" dependent="8989" dependencyType="NAME"/>
+    <types2:DeepDependency xmi:id="9102" sofa="1" begin="240" end="241" governor="9050" dependent="9037" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9109" sofa="1" begin="242" end="248" governor="9050" dependent="9050" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9116" sofa="1" begin="252" end="255" governor="9050" dependent="9063" dependencyType="III"/>
+    <types2:DeepDependency xmi:id="9123" sofa="1" begin="256" end="258" governor="9050" dependent="9076" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9130" sofa="1" begin="259" end="265" governor="9076" dependent="9089" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="9228" sofa="1" begin="268" end="269" governor="9150" dependent="9137" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9235" sofa="1" begin="270" end="274" governor="9150" dependent="9150" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9249" sofa="1" begin="278" end="282" governor="9150" dependent="9176" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="9263" sofa="1" begin="286" end="297" governor="9176" dependent="9202" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="9242" sofa="1" begin="298" end="302" governor="9202" dependent="9163" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9256" sofa="1" begin="307" end="310" governor="9163" dependent="9189" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="9270" sofa="1" begin="314" end="323" governor="9189" dependent="9215" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9342" sofa="1" begin="326" end="327" governor="9303" dependent="9277" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9349" sofa="1" begin="328" end="335" governor="9303" dependent="9290" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9356" sofa="1" begin="336" end="342" governor="9303" dependent="9303" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9363" sofa="1" begin="346" end="349" governor="9303" dependent="9316" dependencyType="III"/>
+    <types2:DeepDependency xmi:id="9370" sofa="1" begin="350" end="355" governor="9316" dependent="9329" dependencyType="NAME"/>
+    <types2:DeepDependency xmi:id="9442" sofa="1" begin="357" end="359" governor="9416" dependent="9377" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9449" sofa="1" begin="361" end="363" governor="9403" dependent="9390" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9456" sofa="1" begin="364" end="367" governor="9403" dependent="9403" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9463" sofa="1" begin="368" end="371" governor="9403" dependent="9416" dependencyType="II"/>
+    <types2:DeepDependency xmi:id="9470" sofa="1" begin="372" end="378" governor="9416" dependent="9429" dependencyType="NAME"/>
+    <types2:DeepDependency xmi:id="9542" sofa="1" begin="381" end="382" governor="9503" dependent="9477" dependencyType="I"/>
+    <types2:DeepDependency xmi:id="9549" sofa="1" begin="383" end="390" governor="9503" dependent="9490" dependencyType="ATTR"/>
+    <types2:DeepDependency xmi:id="9556" sofa="1" begin="391" end="397" governor="9503" dependent="9503" dependencyType="ROOT"/>
+    <types2:DeepDependency xmi:id="9563" sofa="1" begin="401" end="404" governor="9503" dependent="9516" dependencyType="III"/>
+    <types2:DeepDependency xmi:id="9570" sofa="1" begin="405" end="411" governor="9516" dependent="9529" dependencyType="NAME"/>
+    <types2:DeepDependency xmi:id="9590" sofa="1" begin="413" end="418" governor="9577" dependent="9577" dependencyType="ROOT"/>
+    <types2:PredArgsToken xmi:id="9597" sofa="1" begin="0" end="9" value="currently" features="pos=&quot;RB&quot;|wnId=&quot;00048268r&quot;|id1=&quot;1&quot;|start_string=0|bnId=&quot;bn:00114905r&quot;|end_string=9|sem=&quot;currently&quot;|lex=&quot;currently_RB_01&quot;|dpos=&quot;RB&quot;|frame=&quot;Temporal_collocation&quot;" pos="9604"/>
+    <types2:PredArgsToken xmi:id="9675" sofa="1" begin="11" end="12" value="I" features="vnrole=Theme|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|start_string=11|id1=&quot;3&quot;|end_string=12|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;|fnrole=&quot;Resident&quot;" pos="9682"/>
+    <types2:PredArgsToken xmi:id="9688" sofa="1" begin="13" end="17" value="live" features="Tense=&quot;Pres&quot;|vncls=&quot;47.1&quot;|wnId=&quot;02649830v&quot;|start_string=13|end_string=17|bnId=&quot;bn:00087441v&quot;|pos=&quot;VBP&quot;|id1=&quot;4&quot;|vn=&quot;vn:47.1_live&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;live.01&quot;|sem=&quot;live&quot;|lex=&quot;live_VB_01&quot;|frame=&quot;Residence&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="9695"/>
+    <types2:PredArgsToken xmi:id="9701" sofa="1" begin="23" end="25" value="my" features="pos=&quot;PRP$&quot;|start_string=23|id1=&quot;6&quot;|end_string=25|sem=&quot;my&quot;|lex=&quot;my_PRP$_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP$&quot;" pos="9708"/>
+    <types2:PredArgsToken xmi:id="9610" sofa="1" begin="26" end="33" value="friend" features="collapsed_prep=&quot;with&quot;|start_string=26|end_string=33|bnId=&quot;bn:01379732n&quot;|pbrole=&quot;A1&quot;|pos=&quot;NNS&quot;|id1=&quot;7&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;friend.01&quot;|sem=&quot;friend&quot;|lex=&quot;friend_NN_01&quot;|frame=&quot;Personal_relationship&quot;|dpos=&quot;NN&quot;" pos="9617"/>
+    <types2:PredArgsToken xmi:id="9623" sofa="1" begin="35" end="36" value="I" features="vnrole=Agent|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|id1=&quot;9&quot;|start_string=35|end_string=36|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|fnrole=&quot;Agent&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="9630"/>
+    <types2:PredArgsToken xmi:id="9636" sofa="1" begin="37" end="41" value="mean" features="Tense=&quot;Pres&quot;|vncls=&quot;29.5&quot;|wnId=&quot;00708538v&quot;|start_string=37|end_string=41|bnId=&quot;bn:00089804v&quot;|pos=&quot;VBP&quot;|id1=&quot;10&quot;|vn=&quot;vn:29.5_mean&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;mean.01&quot;|sem=&quot;mean&quot;|lex=&quot;mean_VB_01&quot;|frame=&quot;Purpose&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="9643"/>
+    <types2:PredArgsToken xmi:id="9714" sofa="1" begin="42" end="43" value="I" features="pbrole=&quot;A1&quot;|vnrole=Theme|pos=&quot;PRP&quot;|start_string=42|id1=&quot;11&quot;|end_string=43|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|fnrole=&quot;Owner&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;" pos="9721"/>
+    <types2:PredArgsToken xmi:id="9727" sofa="1" begin="46" end="49" value="not" features="pos=&quot;RB&quot;|wnId=&quot;00024073r&quot;|id1=&quot;13&quot;|start_string=46|bnId=&quot;bn:00116360r&quot;|end_string=49|sem=&quot;not&quot;|lex=&quot;not_RB_01&quot;|frame=&quot;Negation&quot;|dpos=&quot;RB&quot;" pos="9734"/>
+    <types2:PredArgsToken xmi:id="9740" sofa="1" begin="50" end="54" value="have" features="Tense=&quot;Pres&quot;|wnId=&quot;02203362v&quot;|start_string=50|end_string=54|bnId=&quot;bn:00089240v&quot;|fnrole=&quot;Value&quot;|pbrole=&quot;A1&quot;|vnrole=Theme|pos=&quot;VB&quot;|id2=&quot;12&quot;|id1=&quot;14&quot;|pbID=&quot;01&quot;|sem=&quot;have&quot;|pbsenseID=&quot;have.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;have_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;|frame=&quot;Possession&quot;" pos="9747"/>
+    <types2:PredArgsToken xmi:id="9649" sofa="1" begin="58" end="61" value="own" features="pos=&quot;JJ&quot;|start_string=58|id1=&quot;16&quot;|end_string=61|sem=&quot;own&quot;|lex=&quot;own_JJ_01&quot;|dpos=&quot;JJ&quot;" pos="9656"/>
+    <types2:PredArgsToken xmi:id="9662" sofa="1" begin="62" end="71" value="apartment" features="start_string=62|bnId=&quot;bn:15031452n&quot;|end_string=71|fnrole=&quot;Possession&quot;|pbrole=&quot;A2&quot;|pos=&quot;NN&quot;|id2=&quot;15&quot;|id1=&quot;17&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;apartment.01&quot;|sem=&quot;apartment&quot;|lex=&quot;apartment_NN_01&quot;|frame=&quot;Building_subparts&quot;|dpos=&quot;NN&quot;" pos="9669"/>
+    <types2:PredArgsToken xmi:id="9858" sofa="1" begin="74" end="75" value="I" features="vnrole=Theme|pbrole=&quot;A1&quot;|pos=&quot;PRP&quot;|start_string=74|id1=&quot;1&quot;|end_string=75|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|fnrole=Theme|PronType=&quot;Prs&quot;" pos="9865"/>
+    <types2:PredArgsToken xmi:id="9871" sofa="1" begin="76" end="80" value="just" features="pos=&quot;RB&quot;|wnId=&quot;00004722r&quot;|start_string=76|id1=&quot;2&quot;|end_string=80|bnId=&quot;bn:00114626r&quot;|sem=&quot;just&quot;|lex=&quot;just_RB_01&quot;|dpos=&quot;RB&quot;" pos="9878"/>
+    <types2:PredArgsToken xmi:id="9884" sofa="1" begin="81" end="88" value="arrive" features="Tense=&quot;Past&quot;|vncls=&quot;51.1&quot;|wnId=&quot;02020590v&quot;|start_string=81|end_string=88|bnId=&quot;bn:00082790v&quot;|pos=&quot;VBD&quot;|id1=&quot;3&quot;|vn=&quot;vn:51.1_arrive&quot;|pbID=&quot;01&quot;|sem=&quot;arrive&quot;|pbsenseID=&quot;arrive.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;arrive_VB_01&quot;|frame=&quot;Arriving&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="9891"/>
+    <types2:PredArgsToken xmi:id="9897" sofa="1" begin="92" end="101" value="Catalonia" features="wnId=&quot;09028062n&quot;|start_string=92|bnId=&quot;bn:00016656n&quot;|end_string=101|fnrole=Goal|pbrole=&quot;A4&quot;|vnrole=Destination|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|NE=&quot;YES&quot;|pbID=&quot;01&quot;|sem=&quot;Catalonia&quot;|pbsenseID=&quot;Catalonia.01&quot;|lex=&quot;Catalonia_NN_01&quot;|dpos=&quot;NN&quot;" pos="9904"/>
+    <types2:PredArgsToken xmi:id="9964" sofa="1" begin="104" end="104" value="and" features="id0=&quot;none&quot;|extraNode=&quot;yes&quot;|sem=&quot;and&quot;|lex=&quot;and_CC_01&quot;|dpos=&quot;CC&quot;" pos="9971"/>
+    <types2:PredArgsToken xmi:id="9938" sofa="1" begin="107" end="116" value="Barcelona" features="start_string=107|end_string=116|bnId=&quot;bn:03505714n&quot;|pos=&quot;NNP&quot;|id2=&quot;1&quot;|id1=&quot;2&quot;|NE=&quot;YES&quot;|member=A1|pbID=&quot;01&quot;|sem=&quot;Barcelona&quot;|pbsenseID=&quot;Barcelona.01&quot;|lex=&quot;Barcelona_NN_01&quot;|dpos=&quot;NN&quot;" pos="9945"/>
+    <types2:PredArgsToken xmi:id="9951" sofa="1" begin="118" end="130" value="one week ago" features="wnId=&quot;00074095r&quot;|start_string=118|bnId=&quot;bn:01421448n&quot;|end_string=130|pos=&quot;NN&quot;|id1=&quot;4&quot;|member=A2|pbID=&quot;01&quot;|sem=&quot;one week ago&quot;|pbsenseID=&quot;one week ago.01&quot;|lex=&quot;one week ago_NN_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;NN&quot;" pos="9958"/>
+    <types2:PredArgsToken xmi:id="9998" sofa="1" begin="133" end="134" value="I" features="fnrole_ctrl=Experiencer|vnrole_ctrl=Pivot|start_string=133|end_string=134|fnrole=&quot;Creator&quot;|pbrole=&quot;A0&quot;|vnrole=Agent|pos=&quot;PRP&quot;|id1=&quot;1&quot;|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="10005"/>
+    <types2:PredArgsToken xmi:id="10011" sofa="1" begin="135" end="139" value="want" features="Tense=&quot;Pres&quot;|vncls=&quot;32.1&quot;|wnId=&quot;00709205v&quot;|start_string=135|bnId=&quot;bn:00095628v&quot;|end_string=139|pos=&quot;VBP&quot;|id1=&quot;2&quot;|vn=&quot;vn:32.1_want&quot;|pbID=&quot;01&quot;|sem=&quot;want&quot;|pbsenseID=&quot;want.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;want_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;|frame=&quot;Desiring&quot;" pos="10018"/>
+    <types2:PredArgsToken xmi:id="10024" sofa="1" begin="143" end="147" value="make" features="vncls=&quot;26.1&quot;|wnId=&quot;02289295v&quot;|start_string=143|end_string=147|bnId=&quot;bn:00084089v&quot;|fnrole=Focal_participant|pbrole=&quot;A1&quot;|vnrole=Theme|pos=&quot;VB&quot;|id2=&quot;3&quot;|id1=&quot;4&quot;|vn=&quot;vn:26.1_make&quot;|pbID=&quot;01&quot;|sem=&quot;make&quot;|pbsenseID=&quot;make.01&quot;|lex=&quot;make_VB_01&quot;|frame=&quot;Creating&quot;|dpos=&quot;VB&quot;|finiteness=&quot;INF&quot;" pos="10031"/>
+    <types2:PredArgsToken xmi:id="10037" sofa="1" begin="151" end="162" value="appointment" features="vncls=&quot;29.1&quot;|start_string=151|end_string=162|bnId=&quot;bn:05942545n&quot;|fnrole=&quot;Created_entity&quot;|vnrole=Product|pbrole=&quot;A1&quot;|pos=&quot;NN&quot;|id2=&quot;5&quot;|id1=&quot;6&quot;|vn=&quot;vn:29.1_appointment&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;appointment.01&quot;|sem=&quot;appointment&quot;|lex=&quot;appointment_NN_01&quot;|dpos=&quot;NN&quot;" pos="10044"/>
+    <types2:PredArgsToken xmi:id="10050" sofa="1" begin="172" end="181" value="jobcenter" features="collapsed_prep=&quot;with&quot;|pos=&quot;NN&quot;|id2=&quot;8&quot;|start_string=172|id1=&quot;9&quot;|end_string=181|pbID=&quot;01&quot;|pbsenseID=&quot;jobcenter.01&quot;|sem=&quot;jobcenter&quot;|Definite=&quot;Def&quot;|lex=&quot;jobcenter_NN_01&quot;|dpos=&quot;NN&quot;" pos="10057"/>
+    <types2:PredArgsToken xmi:id="10105" sofa="1" begin="188" end="198" value="employment" features="vncls=&quot;29.2&quot;|pos=&quot;NN&quot;|id1=&quot;2&quot;|start_string=188|vn=&quot;vn:29.2_employment&quot;|end_string=198|pbID=&quot;01&quot;|bnId=&quot;bn:14957117n&quot;|sem=&quot;employment&quot;|pbsenseID=&quot;employment.01&quot;|lex=&quot;employment_NN_01&quot;|dpos=&quot;NN&quot;" pos="10112"/>
+    <types2:PredArgsToken xmi:id="10118" sofa="1" begin="199" end="205" value="office" features="start_string=199|bnId=&quot;bn:17571475n&quot;|end_string=205|pos=&quot;NN&quot;|id2=&quot;1&quot;|id1=&quot;3&quot;|pbID=&quot;01&quot;|sem=&quot;office&quot;|pbsenseID=&quot;office.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;office_NN_01&quot;|frame=&quot;Building_subparts&quot;|dpos=&quot;NN&quot;" pos="10125"/>
+    <types2:PredArgsToken xmi:id="10145" sofa="1" begin="208" end="209" value="I" features="vnrole=Agent|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|id1=&quot;1&quot;|start_string=208|end_string=209|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|fnrole=&quot;Interlocutor_1&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="10152"/>
+    <types2:PredArgsToken xmi:id="10158" sofa="1" begin="210" end="217" value="already" features="wnId=&quot;00031798r&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|start_string=210|bnId=&quot;bn:00114245r&quot;|end_string=217|sem=&quot;already&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;|frame=&quot;Time_vector&quot;" pos="10165"/>
+    <types2:PredArgsToken xmi:id="10171" sofa="1" begin="218" end="224" value="talk" features="Tense=&quot;Past&quot;|wnId=&quot;00952841v&quot;|start_string=218|bnId=&quot;bn:00094123v&quot;|end_string=224|pos=&quot;VBD&quot;|id1=&quot;3&quot;|pbID=&quot;01&quot;|sem=&quot;talk&quot;|pbsenseID=&quot;talk.01&quot;|lex=&quot;talk_VB_01&quot;|ClauseType=&quot;Dec&quot;|frame=&quot;Chatting&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="10178"/>
+    <types2:PredArgsToken xmi:id="10184" sofa="1" begin="228" end="231" value="Mr." features="start_string=228|bnId=&quot;bn:01673180n&quot;|end_string=231|fnrole=&quot;Interlocutors&quot;|pbrole=&quot;A2&quot;|vnrole=Recipient|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|NE=&quot;YES&quot;|pbID=&quot;01&quot;|sem=&quot;Mr.&quot;|pbsenseID=&quot;Mr..01&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="10191"/>
+    <types2:PredArgsToken xmi:id="10197" sofa="1" begin="232" end="238" value="Codina" features="pos=&quot;NNP&quot;|NE=&quot;YES&quot;|start_string=232|id1=&quot;6&quot;|end_string=238|pbID=&quot;01&quot;|pbsenseID=&quot;Codina.01&quot;|sem=&quot;Codina&quot;|lex=&quot;Codina_NN_01&quot;|dpos=&quot;NN&quot;" pos="10204"/>
+    <types2:PredArgsToken xmi:id="10245" sofa="1" begin="240" end="241" value="I" features="vnrole=Agent|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|id1=&quot;1&quot;|start_string=240|end_string=241|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;|fnrole=&quot;Interlocutor_1&quot;" pos="10252"/>
+    <types2:PredArgsToken xmi:id="10258" sofa="1" begin="242" end="248" value="talk" features="Tense=&quot;Past&quot;|wnId=&quot;00952841v&quot;|start_string=242|end_string=248|bnId=&quot;bn:00094123v&quot;|pos=&quot;VBD&quot;|id1=&quot;2&quot;|pbID=&quot;01&quot;|sem=&quot;talk&quot;|pbsenseID=&quot;talk.01&quot;|lex=&quot;talk_VB_01&quot;|ClauseType=&quot;Dec&quot;|finiteness=&quot;FIN&quot;|frame=&quot;Chatting&quot;|dpos=&quot;VB&quot;" pos="10265"/>
+    <types2:PredArgsToken xmi:id="10271" sofa="1" begin="252" end="255" value="he" features="pbrole=&quot;A2&quot;|vnrole=Recipient|pos=&quot;PRP&quot;|id2=&quot;3&quot;|start_string=252|id1=&quot;4&quot;|end_string=255|sem=&quot;he&quot;|lex=&quot;he_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;|fnrole=&quot;Interlocutors&quot;" pos="10278"/>
+    <types2:PredArgsToken xmi:id="10284" sofa="1" begin="259" end="265" value="Friday" features="collapsed_prep=&quot;on&quot;|start_string=259|end_string=265|bnId=&quot;bn:03425318n&quot;|pos=&quot;NNP&quot;|NE=&quot;YES&quot;|id1=&quot;6&quot;|pbID=&quot;01&quot;|sem=&quot;Friday&quot;|pbsenseID=&quot;Friday.01&quot;|lex=&quot;Friday_NN_01&quot;|frame=&quot;Calendric_unit&quot;|dpos=&quot;NN&quot;" pos="10291"/>
+    <types2:PredArgsToken xmi:id="10325" sofa="1" begin="268" end="269" value="I" features="fnrole_ctrl=Experiencer|vnrole_ctrl=Pivot|start_string=268|end_string=269|fnrole=&quot;Creator&quot;|pbrole=&quot;A0&quot;|vnrole=Agent|pos=&quot;PRP&quot;|id1=&quot;1&quot;|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|PronType=&quot;Prs&quot;|dpos=&quot;PRP&quot;" pos="10332"/>
+    <types2:PredArgsToken xmi:id="10338" sofa="1" begin="270" end="274" value="want" features="Tense=&quot;Pres&quot;|vncls=&quot;32.1&quot;|wnId=&quot;00709205v&quot;|start_string=270|end_string=274|bnId=&quot;bn:00095628v&quot;|pos=&quot;VBP&quot;|id1=&quot;2&quot;|vn=&quot;vn:32.1_want&quot;|pbID=&quot;01&quot;|sem=&quot;want&quot;|pbsenseID=&quot;want.01&quot;|lex=&quot;want_VB_01&quot;|ClauseType=&quot;Dec&quot;|finiteness=&quot;FIN&quot;|frame=&quot;Desiring&quot;|dpos=&quot;VB&quot;" pos="10345"/>
+    <types2:PredArgsToken xmi:id="10351" sofa="1" begin="278" end="282" value="make" features="vncls=&quot;26.1&quot;|wnId=&quot;02289295v&quot;|start_string=278|end_string=282|bnId=&quot;bn:00084089v&quot;|fnrole=Focal_participant|vnrole=Theme|pbrole=&quot;A1&quot;|pos=&quot;VB&quot;|id2=&quot;3&quot;|id1=&quot;4&quot;|vn=&quot;vn:26.1_make&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;make.01&quot;|sem=&quot;make&quot;|lex=&quot;make_VB_01&quot;|finiteness=&quot;INF&quot;|frame=&quot;Creating&quot;|dpos=&quot;VB&quot;" pos="10358"/>
+    <types2:PredArgsToken xmi:id="10377" sofa="1" begin="286" end="297" value="appointment" features="vncls=&quot;29.1&quot;|start_string=286|bnId=&quot;bn:05942545n&quot;|end_string=297|fnrole=&quot;Created_entity&quot;|vnrole=Product|pbrole=&quot;A1&quot;|pos=&quot;NN&quot;|id2=&quot;5&quot;|id1=&quot;6&quot;|vn=&quot;vn:29.1_appointment&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;appointment.01&quot;|sem=&quot;appointment&quot;|lex=&quot;appointment_NN_01&quot;|dpos=&quot;NN&quot;" pos="10384"/>
+    <types2:PredArgsToken xmi:id="10364" sofa="1" begin="307" end="310" value="job" features="collapsed_prep=&quot;with&quot;|start_string=307|bnId=&quot;bn:02793166n&quot;|end_string=310|pos=&quot;NN&quot;|id2=&quot;8&quot;|id1=&quot;9&quot;|pbID=&quot;01&quot;|sem=&quot;job&quot;|pbsenseID=&quot;job.01&quot;|Definite=&quot;Def&quot;|lex=&quot;job_NN_01&quot;|ClauseType=&quot;Sus&quot;|dpos=&quot;NN&quot;|frame=&quot;Being_obligated&quot;" pos="10371"/>
+    <types2:PredArgsToken xmi:id="10390" sofa="1" begin="314" end="323" value="jobcenter" features="pos=&quot;NN&quot;|start_string=314|id1=&quot;11&quot;|pbID=&quot;01&quot;|end_string=323|sem=&quot;jobcenter&quot;|pbsenseID=&quot;jobcenter.01&quot;|lex=&quot;jobcenter_NN_01&quot;|dpos=&quot;NN&quot;" pos="10397"/>
+    <types2:PredArgsToken xmi:id="10452" sofa="1" begin="326" end="327" value="I" features="vnrole=Agent|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|id1=&quot;1&quot;|start_string=326|end_string=327|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|fnrole=&quot;Interlocutor_1&quot;|PronType=&quot;Prs&quot;" pos="10459"/>
+    <types2:PredArgsToken xmi:id="10465" sofa="1" begin="328" end="335" value="already" features="wnId=&quot;00031798r&quot;|pos=&quot;RB&quot;|id1=&quot;2&quot;|start_string=328|bnId=&quot;bn:00114245r&quot;|end_string=335|sem=&quot;already&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;|frame=&quot;Time_vector&quot;" pos="10472"/>
+    <types2:PredArgsToken xmi:id="10478" sofa="1" begin="336" end="342" value="talk" features="Tense=&quot;Past&quot;|wnId=&quot;00952841v&quot;|start_string=336|bnId=&quot;bn:00094123v&quot;|end_string=342|pos=&quot;VBD&quot;|id1=&quot;3&quot;|pbID=&quot;01&quot;|sem=&quot;talk&quot;|pbsenseID=&quot;talk.01&quot;|lex=&quot;talk_VB_01&quot;|ClauseType=&quot;Dec&quot;|frame=&quot;Chatting&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="10485"/>
+    <types2:PredArgsToken xmi:id="10491" sofa="1" begin="346" end="349" value="Mr." features="start_string=346|bnId=&quot;bn:01673180n&quot;|end_string=349|fnrole=&quot;Interlocutors&quot;|pbrole=&quot;A2&quot;|vnrole=Recipient|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|NE=&quot;YES&quot;|pbID=&quot;01&quot;|sem=&quot;Mr.&quot;|pbsenseID=&quot;Mr..01&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="10498"/>
+    <types2:PredArgsToken xmi:id="10504" sofa="1" begin="350" end="355" value="Serra" features="pos=&quot;NNP&quot;|id1=&quot;6&quot;|NE=&quot;YES&quot;|start_string=350|bnId=&quot;bn:00710425n&quot;|pbID=&quot;01&quot;|end_string=355|pbsenseID=&quot;Serra.01&quot;|sem=&quot;Serra&quot;|lex=&quot;Serra_NN_01&quot;|dpos=&quot;NN&quot;" pos="10511"/>
+    <types2:PredArgsToken xmi:id="10552" sofa="1" begin="357" end="359" value="no" features="pos=&quot;UH&quot;|start_string=357|id1=&quot;1&quot;|end_string=359|sem=&quot;no&quot;|lex=&quot;no_UH_01&quot;|dpos=&quot;UH&quot;" pos="10559"/>
+    <types2:PredArgsToken xmi:id="10565" sofa="1" begin="361" end="363" value="it" features="pbrole=&quot;A1&quot;|pos=&quot;PRP&quot;|start_string=361|id1=&quot;3&quot;|end_string=363|sem=&quot;it&quot;|lex=&quot;it_PRP_01&quot;|dpos=&quot;PRP&quot;|PronType=&quot;Prs&quot;" pos="10572"/>
+    <types2:PredArgsToken xmi:id="10578" sofa="1" begin="364" end="367" value="be" features="Tense=&quot;Past&quot;|wnId=&quot;02604760v&quot;|start_string=364|bnId=&quot;bn:00083181v&quot;|end_string=367|pos=&quot;VBD&quot;|id1=&quot;4&quot;|pbID=&quot;01&quot;|sem=&quot;be&quot;|pbsenseID=&quot;be.01&quot;|lex=&quot;be_VB_01&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="10585"/>
+    <types2:PredArgsToken xmi:id="10591" sofa="1" begin="368" end="371" value="Mr." features="start_string=368|end_string=371|bnId=&quot;bn:01673180n&quot;|pbrole=&quot;A2&quot;|pos=&quot;NNP&quot;|NE=&quot;YES&quot;|id1=&quot;5&quot;|pbID=&quot;01&quot;|sem=&quot;Mr.&quot;|pbsenseID=&quot;Mr..01&quot;|lex=&quot;Mr._NN_01&quot;|ClauseType=&quot;Dec&quot;|dpos=&quot;NN&quot;" pos="10598"/>
+    <types2:PredArgsToken xmi:id="10604" sofa="1" begin="372" end="378" value="Codina" features="pos=&quot;NNP&quot;|id1=&quot;6&quot;|start_string=372|NE=&quot;YES&quot;|pbID=&quot;01&quot;|end_string=378|pbsenseID=&quot;Codina.01&quot;|sem=&quot;Codina&quot;|lex=&quot;Codina_NN_01&quot;|dpos=&quot;NN&quot;" pos="10611"/>
+    <types2:PredArgsToken xmi:id="10652" sofa="1" begin="381" end="382" value="I" features="vnrole=Agent|pbrole=&quot;A0&quot;|pos=&quot;PRP&quot;|id1=&quot;1&quot;|start_string=381|end_string=382|sem=&quot;I&quot;|lex=&quot;I_PRP_01&quot;|dpos=&quot;PRP&quot;|fnrole=&quot;Interlocutor_1&quot;|PronType=&quot;Prs&quot;" pos="10659"/>
+    <types2:PredArgsToken xmi:id="10665" sofa="1" begin="383" end="390" value="already" features="wnId=&quot;00031798r&quot;|pos=&quot;RB&quot;|start_string=383|id1=&quot;2&quot;|bnId=&quot;bn:00114245r&quot;|end_string=390|sem=&quot;already&quot;|lex=&quot;already_RB_01&quot;|dpos=&quot;RB&quot;|frame=&quot;Time_vector&quot;" pos="10672"/>
+    <types2:PredArgsToken xmi:id="10678" sofa="1" begin="391" end="397" value="talk" features="Tense=&quot;Past&quot;|wnId=&quot;00952841v&quot;|start_string=391|bnId=&quot;bn:00094123v&quot;|end_string=397|pos=&quot;VBD&quot;|id1=&quot;3&quot;|pbID=&quot;01&quot;|sem=&quot;talk&quot;|pbsenseID=&quot;talk.01&quot;|lex=&quot;talk_VB_01&quot;|frame=&quot;Chatting&quot;|dpos=&quot;VB&quot;|finiteness=&quot;FIN&quot;" pos="10685"/>
+    <types2:PredArgsToken xmi:id="10691" sofa="1" begin="401" end="404" value="Mr." features="start_string=401|bnId=&quot;bn:01673180n&quot;|end_string=404|fnrole=&quot;Interlocutors&quot;|vnrole=Recipient|pbrole=&quot;A2&quot;|pos=&quot;NNP&quot;|id2=&quot;4&quot;|id1=&quot;5&quot;|NE=&quot;YES&quot;|pbID=&quot;01&quot;|pbsenseID=&quot;Mr..01&quot;|sem=&quot;Mr.&quot;|lex=&quot;Mr._NN_01&quot;|dpos=&quot;NN&quot;" pos="10698"/>
+    <types2:PredArgsToken xmi:id="10704" sofa="1" begin="405" end="411" value="Sierra" features="pos=&quot;NNP&quot;|id1=&quot;6&quot;|NE=&quot;YES&quot;|start_string=405|pbID=&quot;01&quot;|end_string=411|bnId=&quot;bn:02935300n&quot;|pbsenseID=&quot;Sierra.01&quot;|sem=&quot;Sierra&quot;|ClauseType=&quot;Sus&quot;|lex=&quot;Sierra_NN_01&quot;|dpos=&quot;NN&quot;" pos="10711"/>
+    <types2:PredArgsToken xmi:id="10752" sofa="1" begin="413" end="418" value="Serra" features="pos=&quot;NNP&quot;|NE=&quot;YES&quot;|start_string=413|id1=&quot;1&quot;|pbID=&quot;01&quot;|end_string=418|bnId=&quot;bn:00710425n&quot;|sem=&quot;Serra&quot;|pbsenseID=&quot;Serra.01&quot;|ClauseType=&quot;Dec&quot;|lex=&quot;Serra_NN_01&quot;|dpos=&quot;NN&quot;" pos="10759"/>
+    <types2:PredArgsDependency xmi:id="9753" sofa="1" begin="0" end="9" governor="9597" dependent="9597" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9809" sofa="1" begin="11" end="12" governor="9688" dependent="9675" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9816" sofa="1" begin="13" end="17" governor="9597" dependent="9688" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9823" sofa="1" begin="23" end="25" governor="9701" dependent="9701" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9760" sofa="1" begin="26" end="33" governor="9688" dependent="9610" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="9767" sofa="1" begin="26" end="33" governor="9701" dependent="9610" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9774" sofa="1" begin="35" end="36" governor="9636" dependent="9623" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9781" sofa="1" begin="37" end="41" governor="9688" dependent="9636" dependencyType="PARATAXIS"/>
+    <types2:PredArgsDependency xmi:id="9830" sofa="1" begin="42" end="43" governor="9740" dependent="9714" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9837" sofa="1" begin="46" end="49" governor="9727" dependent="9727" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9844" sofa="1" begin="50" end="54" governor="9727" dependent="9740" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9851" sofa="1" begin="50" end="54" governor="9636" dependent="9740" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="9788" sofa="1" begin="58" end="61" governor="9649" dependent="9649" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9795" sofa="1" begin="62" end="71" governor="9740" dependent="9662" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="9802" sofa="1" begin="62" end="71" governor="9649" dependent="9662" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9910" sofa="1" begin="74" end="75" governor="9884" dependent="9858" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9917" sofa="1" begin="76" end="80" governor="9871" dependent="9871" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9924" sofa="1" begin="81" end="88" governor="9871" dependent="9884" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="9931" sofa="1" begin="92" end="101" governor="9884" dependent="9897" dependencyType="Argument4"/>
+    <types2:PredArgsDependency xmi:id="9991" sofa="1" begin="104" end="104" governor="9964" dependent="9964" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="9977" sofa="1" begin="107" end="116" governor="9964" dependent="9938" dependencyType="Set"/>
+    <types2:PredArgsDependency xmi:id="9984" sofa="1" begin="118" end="130" governor="9964" dependent="9951" dependencyType="Set"/>
+    <types2:PredArgsDependency xmi:id="10063" sofa="1" begin="133" end="134" governor="10011" dependent="9998" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10070" sofa="1" begin="133" end="134" governor="10024" dependent="9998" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10077" sofa="1" begin="135" end="139" governor="10011" dependent="10011" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10084" sofa="1" begin="143" end="147" governor="10011" dependent="10024" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="10091" sofa="1" begin="151" end="162" governor="10024" dependent="10037" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="10098" sofa="1" begin="172" end="181" governor="10037" dependent="10050" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="10131" sofa="1" begin="188" end="198" governor="10118" dependent="10105" dependencyType="NAME"/>
+    <types2:PredArgsDependency xmi:id="10138" sofa="1" begin="199" end="205" governor="10118" dependent="10118" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10210" sofa="1" begin="208" end="209" governor="10171" dependent="10145" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10217" sofa="1" begin="210" end="217" governor="10158" dependent="10158" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10224" sofa="1" begin="218" end="224" governor="10158" dependent="10171" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10231" sofa="1" begin="228" end="231" governor="10171" dependent="10184" dependencyType="Argument3"/>
+    <types2:PredArgsDependency xmi:id="10238" sofa="1" begin="232" end="238" governor="10184" dependent="10197" dependencyType="NAME"/>
+    <types2:PredArgsDependency xmi:id="10297" sofa="1" begin="240" end="241" governor="10258" dependent="10245" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10304" sofa="1" begin="242" end="248" governor="10258" dependent="10258" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10311" sofa="1" begin="252" end="255" governor="10258" dependent="10271" dependencyType="Argument3"/>
+    <types2:PredArgsDependency xmi:id="10318" sofa="1" begin="259" end="265" governor="10258" dependent="10284" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="10403" sofa="1" begin="268" end="269" governor="10338" dependent="10325" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10410" sofa="1" begin="268" end="269" governor="10351" dependent="10325" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10417" sofa="1" begin="270" end="274" governor="10338" dependent="10338" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10424" sofa="1" begin="278" end="282" governor="10338" dependent="10351" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="10438" sofa="1" begin="286" end="297" governor="10351" dependent="10377" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="10431" sofa="1" begin="307" end="310" governor="10377" dependent="10364" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="10445" sofa="1" begin="314" end="323" governor="10364" dependent="10390" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="10517" sofa="1" begin="326" end="327" governor="10478" dependent="10452" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10524" sofa="1" begin="328" end="335" governor="10465" dependent="10465" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10531" sofa="1" begin="336" end="342" governor="10465" dependent="10478" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10538" sofa="1" begin="346" end="349" governor="10478" dependent="10491" dependencyType="Argument3"/>
+    <types2:PredArgsDependency xmi:id="10545" sofa="1" begin="350" end="355" governor="10491" dependent="10504" dependencyType="NAME"/>
+    <types2:PredArgsDependency xmi:id="10617" sofa="1" begin="357" end="359" governor="10591" dependent="10552" dependencyType="nonCore"/>
+    <types2:PredArgsDependency xmi:id="10624" sofa="1" begin="361" end="363" governor="10578" dependent="10565" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10631" sofa="1" begin="364" end="367" governor="10578" dependent="10578" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10638" sofa="1" begin="368" end="371" governor="10578" dependent="10591" dependencyType="Argument2"/>
+    <types2:PredArgsDependency xmi:id="10645" sofa="1" begin="372" end="378" governor="10591" dependent="10604" dependencyType="NAME"/>
+    <types2:PredArgsDependency xmi:id="10717" sofa="1" begin="381" end="382" governor="10678" dependent="10652" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10724" sofa="1" begin="383" end="390" governor="10665" dependent="10665" dependencyType="ROOT"/>
+    <types2:PredArgsDependency xmi:id="10731" sofa="1" begin="391" end="397" governor="10665" dependent="10678" dependencyType="Argument1"/>
+    <types2:PredArgsDependency xmi:id="10738" sofa="1" begin="401" end="404" governor="10678" dependent="10691" dependencyType="Argument3"/>
+    <types2:PredArgsDependency xmi:id="10745" sofa="1" begin="405" end="411" governor="10691" dependent="10704" dependencyType="NAME"/>
+    <types2:PredArgsDependency xmi:id="10765" sofa="1" begin="413" end="418" governor="10752" dependent="10752" dependencyType="ROOT"/>
+    <pos:POS_CONJ xmi:id="9971" sofa="1" begin="104" end="104" PosValue="CC"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Currently, I live with my friends, I mean I don’t have an own apartment. &#10;I just arrived in Catalonia. &#10;In Barcelona, one week ago. &#10;I want to make an appointment with the jobcenter.  The employment office. &#10;I already talked to Mr. Codina. I talked to him on Friday. &#10;I want to make an appointment with the job... jobcenter. &#10;I already talked to Mr. Serra. No, it was Mr. Codina. &#10;I already talked to Mr. Sierra… Serra. &#10;"/>
+    <cas:View sofa="1" members="13 19 30 35 48 61 74 87 100 113 126 139 152 165 178 191 204 217 230 243 256 274 287 300 313 326 339 357 370 383 7637 435 453 466 479 492 505 518 531 544 557 570 588 601 614 627 645 658 671 684 697 710 723 741 754 767 780 793 806 819 837 850 863 876 889 902 915 928 941 954 967 980 998 1011 1024 1037 1050 1063 1076 1094 1107 1120 1133 1146 1159 1172 1190 1203 1216 1229 1242 1255 1268 1286 1299 269 352 448 583 640 736 832 993 1089 1185 1281 1312 1317 8404 9604 1725 8547 9734 1963 8677 9878 2881 8957 10165 3765 9297 10472 4241 9497 10672 1323 1357 1391 1425 1459 1493 1527 1561 1595 1629 1663 1697 1731 1765 1799 1833 1867 1901 1935 1969 2003 2037 2071 2105 2139 2173 2207 7650 2343 2377 2411 2445 2479 2513 2547 2581 2615 2649 2683 2717 2751 2785 2819 2853 2887 2921 2955 2989 3023 3057 3091 3125 3159 3193 3227 3261 3295 3329 3363 3397 3431 3465 3499 3533 3567 3601 3635 3669 3703 3737 3771 3805 3839 3873 3907 3941 3975 4009 4043 4077 4111 4145 4179 4213 4247 4281 4315 4349 4383 4417 4451 4485 1328 1362 1396 1430 1464 1498 1532 1566 1600 1634 1668 1702 1736 1770 1804 1838 1872 1906 1940 1974 2008 2042 2076 2110 2144 2178 2212 2246 2280 2314 2348 2382 2416 2450 2484 2518 2552 2586 2620 2654 2688 2722 2756 2790 2824 2858 2892 2926 2960 2994 3028 3062 3096 3130 3164 3198 3232 3266 3300 3334 3368 3402 3436 3470 3504 3538 3572 3606 3640 3674 3708 3742 3776 3810 3844 3878 3912 3946 3980 4014 4048 4082 4116 4150 4184 4218 4252 4286 4320 4354 4388 4422 4456 4490 1351 1555 1895 2099 2201 2337 2677 2813 3051 3289 3629 3697 3935 4003 4173 4411 4479 1385 8482 9682 1487 8521 9708 1589 8430 9630 1657 8534 9721 1929 8664 9865 2371 8784 10005 2847 8944 10152 3085 9044 10252 3187 9070 10278 3323 9144 10332 3731 9284 10459 4037 9397 10572 4207 9484 10659 1419 8495 9695 1623 8443 9643 1691 1759 8560 9747 1997 8690 9891 2405 8797 10018 2473 8823 10031 2915 8970 10178 3119 9057 10265 3357 9157 10345 3425 9183 10358 3799 9310 10485 4071 9410 10585 4275 9510 10685 1453 8508 2031 2133 2439 2575 8810 2949 3153 3221 9083 3391 3527 9170 3833 4309 1521 8417 9617 1861 8469 9669 7655 8757 9958 2541 8836 10044 2643 8849 10057 2745 8904 10112 2779 8917 10125 3493 9209 10384 3595 9196 10371 3663 9222 10397 1793 2507 2609 2711 3459 3561 1827 8456 9656 2065 8703 9904 2167 8744 9945 2983 8983 10191 3017 8996 10204 3255 9096 10291 3867 9323 10498 3901 9336 10511 4105 9423 10598 4139 9436 10611 4343 9523 10698 4377 9536 10711 4445 9584 10759 3969 9384 10559 4513 4519 4525 4537 4531 4543 4549 4555 4561 4567 4651 4663 4676 4688 4700 4712 4724 4574 4588 4600 4612 4624 4637 4739 4751 4763 4775 4787 4792 4797 4802 4807 4812 4817 4822 4827 4832 4837 4842 5007 4952 4847 4957 5012 4852 5017 4962 4857 4862 4867 5022 4967 4972 4872 4877 4882 5027 4977 4887 4892 4982 4897 4987 4992 4902 4907 4912 5032 4997 4917 4922 4927 4932 5037 5002 4937 4942 4947 5042 5059 5076 5093 5144 5110 5161 5127 5178 5195 5212 5229 5280 5246 5297 5263 5314 5331 5348 5365 5382 5399 5416 5433 5450 5467 5484 5501 5518 5535 5552 5569 5586 5603 5620 5637 5654 5671 5722 5688 5705 5739 5756 5773 5790 5807 5048 5065 5082 5099 5150 5116 5167 5133 5184 5201 5218 5235 5286 5252 5303 5269 5320 5337 5354 5371 5388 5405 5422 5439 5456 5473 5490 5507 5524 5541 5558 5575 5592 5609 5626 5643 5660 5677 5728 5694 5711 5745 5762 5779 5796 5813 6470 5938 6128 6318 6185 6508 6375 5976 5824 6014 6242 6413 5881 6071 5919 6109 6299 6166 6356 6546 5995 6223 5862 6052 6280 6451 5900 6090 6489 5957 6147 6337 6204 6527 6394 5843 6033 6261 6432 6568 6596 6624 6646 6674 6700 6728 6756 6782 6810 6838 6866 6888 6912 6938 6966 6994 7016 7038 7060 7088 7114 7138 7164 7190 7218 7246 7268 7296 7324 7350 7374 7398 7426 7450 7478 7504 7528 7556 7577 7592 7607 7622 7661 7757 7813 8013 8221 8333 7669 7717 7797 7845 7869 7885 7965 7997 8053 8109 8189 8205 8261 8277 8317 8373 8389 7677 7725 7741 7805 7893 8005 8061 8117 8213 8285 8325 7685 7821 7861 7901 7989 8021 8069 8125 8229 8301 8341 8381 7693 7829 7853 7941 8029 8077 8093 8165 8237 8349 7701 7709 7789 7837 7933 7957 8037 8045 8085 8101 8157 8181 8245 8253 8269 8309 8357 8365 7733 7749 7765 7773 7925 7949 7973 8149 8173 7781 7877 7909 8133 7917 8141 7981 8197 8293 8397 8475 8488 8501 8514 8410 8423 8436 8527 8540 8553 8449 8462 8657 8670 8683 8696 8737 8750 8777 8790 8816 8829 8803 8842 8897 8910 8937 8950 8963 8976 8989 9037 9050 9063 9076 9089 9137 9150 9176 9202 9163 9189 9215 9277 9290 9303 9316 9329 9377 9390 9403 9416 9429 9477 9490 9503 9516 9529 9577 8566 8608 8615 8622 8629 8573 8580 8587 8636 8643 8650 8594 8601 8709 8716 8723 8730 8763 8770 8855 8862 8876 8883 8869 8890 8923 8930 9002 9009 9016 9023 9030 9102 9109 9116 9123 9130 9228 9235 9249 9263 9242 9256 9270 9342 9349 9356 9363 9370 9442 9449 9456 9463 9470 9542 9549 9556 9563 9570 9590 9597 9675 9688 9701 9610 9623 9636 9714 9727 9740 9649 9662 9858 9871 9884 9897 9964 9938 9951 9998 10011 10024 10037 10050 10105 10118 10145 10158 10171 10184 10197 10245 10258 10271 10284 10325 10338 10351 10377 10364 10390 10452 10465 10478 10491 10504 10552 10565 10578 10591 10604 10652 10665 10678 10691 10704 10752 9753 9809 9816 9823 9760 9767 9774 9781 9830 9837 9844 9851 9788 9795 9802 9910 9917 9924 9931 9991 9977 9984 10063 10070 10077 10084 10091 10098 10131 10138 10210 10217 10224 10231 10238 10297 10304 10311 10318 10403 10410 10417 10424 10438 10431 10445 10517 10524 10531 10538 10545 10617 10624 10631 10638 10645 10717 10724 10731 10738 10745 10765 9971"/>
+</xmi:XMI>
