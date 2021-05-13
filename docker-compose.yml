@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-05-11
+    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-05-13
     networks:
       - welcomenet
       - traefik
