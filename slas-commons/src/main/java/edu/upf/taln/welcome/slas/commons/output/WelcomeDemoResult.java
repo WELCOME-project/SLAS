@@ -15,6 +15,7 @@ import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.sentence.SentenceGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
+import edu.upf.taln.utils.pojos.uima.taxonomy.TaxonomyGraph;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -53,6 +54,9 @@ public class WelcomeDemoResult {
 	
 	@JsonProperty("heideltime")
 	HeideltimeGraph heideltime;
+	
+	@JsonProperty("taxonomy")
+	TaxonomyGraph taxonomy;
 	
 	public List<String[]> getTriples() {
 		return triples;
@@ -126,5 +130,12 @@ public class WelcomeDemoResult {
 	public void setHeideltime(HeideltimeGraph heideltime) {
 		this.heideltime = heideltime;
 	}
+	public TaxonomyGraph getTaxonomy() {
+		return taxonomy;
+	}
+	public void setTaxonomy(TaxonomyGraph taxonomy) {
+		this.taxonomy = taxonomy;
+	}
+	
 
 }

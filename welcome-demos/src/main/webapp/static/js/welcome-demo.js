@@ -175,7 +175,8 @@ function ajaxCallback(result){
         "triples",
         //"sentence_ranking",
         "tag_cloud",
-        "heideltime"
+        "heideltime",
+        "taxonomy"
     ];
 	result["views"] = views;
 	

@@ -2,7 +2,6 @@ package edu.upf.taln.welcome.slas.core.taxonomy;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;

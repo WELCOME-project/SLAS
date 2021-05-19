@@ -39,6 +39,7 @@ import edu.upf.taln.utils.pojos.uima.heideltime.HeideltimeGraph;
 import edu.upf.taln.utils.pojos.uima.ner.NerGraph;
 import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
+import edu.upf.taln.utils.pojos.uima.taxonomy.TaxonomyGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
@@ -360,6 +361,8 @@ public class OutputGenerator {
 		result.setGeolocation(GeolocationGraph.extract(jCas));
 		
 		result.setHeideltime(HeideltimeGraph.extract(jCas));
+		
+		result.setTaxonomy(TaxonomyGraph.extract(jCas));
 
 		return result;
 	}

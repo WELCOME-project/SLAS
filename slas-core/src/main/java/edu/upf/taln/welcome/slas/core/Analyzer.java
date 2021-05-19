@@ -91,7 +91,7 @@ public class Analyzer {
 
             } catch (Exception ex1) {
                 
-                log.warn("Unable to retrieve the remote taxonomy!", ex1);
+                log.warn("Unable to retrieve the remote taxonomy!"/*, ex1*/);
                 log.warn("Attempting loading from default path...");
                 
                 File localFile = new File(defaultPath);
@@ -106,7 +106,7 @@ public class Analyzer {
                     concepts = TaxonomyProcessor.processStream(inStream, rdfLang);
 
                 } catch (Exception ex2) {
-                    log.warn("Unable to retrieve the default path taxonomy!", ex2);
+                    log.warn("Unable to retrieve the default path taxonomy!"/*, ex2*/);
                     log.warn("Attempting loading packaged taxonomy...");
 
                     try (InputStream inStream = this.getClass().getResourceAsStream("/taxonomy/taxonomy.ttl")) {

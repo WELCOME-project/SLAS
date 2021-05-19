@@ -1,2 +1,0 @@
-classpath*:types/*.xml
-classpath*:desc/types/*.xml
