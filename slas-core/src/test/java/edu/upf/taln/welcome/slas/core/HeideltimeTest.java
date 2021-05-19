@@ -16,7 +16,7 @@ import org.dkpro.core.udpipe.UDPipeSegmenter;
 import org.junit.Test;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
-import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiWriter;
+import org.dkpro.core.io.xmi.XmiWriter;
 import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
 import de.unihd.dbs.uima.annotator.intervaltagger.IntervalTagger;
 

@@ -135,7 +135,7 @@ public class Processor {
                 
                 System.out.println("\tAnalyzing file " + count + " of " + files.length + "... [" + fileName + "]");
                 
-                String text = FileUtils.readFileToString(textFile, StandardCharsets.UTF_8);
+                String text = FileUtils.readFileToString(textFile, "UTF-8");
                 
                 IAnalysisOutput result = execute(client, text);
                 
@@ -171,8 +171,8 @@ public class Processor {
             File xmiFile = new File(outputDir, baseName + ".xmi");
             File typeSystemFile = new File(outputDir, "TypeSystem.xml");
             
-            FileUtils.writeStringToFile(xmiFile, xmiResult.getXmi(), StandardCharsets.UTF_8);
-            FileUtils.writeStringToFile(typeSystemFile, xmiResult.getTypesystem(), StandardCharsets.UTF_8);
+            FileUtils.writeStringToFile(xmiFile, xmiResult.getXmi(), "UTF-8");
+            FileUtils.writeStringToFile(typeSystemFile, xmiResult.getTypesystem(), "UTF-8");
             
 		} else {
             File jsonFile = new File(outputDir, baseName + ".json");

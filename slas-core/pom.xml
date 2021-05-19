@@ -111,6 +111,12 @@
 		</dependency>
 		
 		<dependency>
+            <groupId>org.dkpro.core</groupId>
+            <artifactId>dkpro-core-io-xmi-asl</artifactId>
+            <version>${dkpro.version}</version>
+        </dependency>
+        
+		<dependency>
 			<groupId>org.dkpro.core</groupId>
 			<artifactId>dkpro-core-stanfordnlp-gpl</artifactId>
 			<version>${dkpro.version}</version>
