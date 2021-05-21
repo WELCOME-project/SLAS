@@ -100,7 +100,7 @@ public class EnglishPipelineUD {
 			AnalysisEngineDescription segmenter = createEngineDescription(
 					UDPipeSegmenter.class, 
 					UDPipeSegmenter.PARAM_LANGUAGE, LANGUAGE);
-			segmenter.toXML(new FileWriter(tmpTokenizerDescription));
+			segmenter.toXML(new OutputStreamWriter(new FileOutputStream(tmpTokenizerDescription), StandardCharsets.UTF_8));
 
 			AnalysisEngineDescription conceptMapper = AnalysisEngineFactory.createEngineDescription(
 					ConceptMapper.class,
@@ -115,7 +115,7 @@ public class EnglishPipelineUD {
 					);
 
 			// taxonomy path is the path to the taxonomy dictionary (ex.: src/main/resources/annotation_dictionaries/taxonomyDictExample.xml)
-			createDependencyAndBind(conceptMapper, "DictionaryFile", DictionaryResource_impl.class, "file:" + configuration.getTaxonomyDictPath());
+			createDependencyAndBind(conceptMapper, "DictionaryFile", DictionaryResource_impl.class, "file:///" + configuration.getTaxonomyDictPath());
 			return new FlowItem(conceptMapper,FlowStepName.TAXONOMY.name());
 
 		} catch (SAXException | IOException | InvalidXMLException ex) {
