@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -26,10 +27,13 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
+import de.unihd.dbs.uima.types.heideltime.Timex3;
 import edu.upf.taln.flask_wrapper.type.GeolocationCandidate;
+import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsDependency;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
+import edu.upf.taln.uima.wsd.types.BabelNetSense;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
@@ -195,7 +199,7 @@ public class OutputGenerator {
         return entities;
     }
 
-    private static Entity extractEntity(PredArgsToken token, String entityId) {
+    private static Entity extractEntity(PredArgsToken token, String entityId, Collection<PredArgsDependency> relationCollection) {
 
         List<String> links = new ArrayList<>();
         List<Location> locations = new ArrayList<>();
@@ -206,7 +210,13 @@ public class OutputGenerator {
         entity.setLinks(links);
         entity.setLocations(locations);
         
+        List<Token> tokensList = JCasUtil.selectCovering(Token.class, token);
+        List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
+        List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
+        List<GeolocationCandidate> geolocationCandidatesList = JCasUtil.selectCovered(GeolocationCandidate.class, token);
         List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
+        List<WSDSpan> conceptsList = JCasUtil.selectCovered(WSDSpan.class, token);
+        
         if (wsdList.size() > 0) {
             WSDResult wsdAnn = wsdList.get(0);
             Sense bestSense = wsdAnn.getBestSense();
@@ -215,18 +225,67 @@ public class OutputGenerator {
             entity.setConfidence(bestSense.getConfidence());
         }
         
-        // TODO: Mirar issue de gerardquía de types
-        List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
-        if (neList.size() > 0) {
+        boolean predicate = false;
+        Iterator<PredArgsDependency> iterator = relationCollection.iterator();
+    	while (iterator.hasNext() && !predicate) {
+    		PredArgsDependency depAnn = iterator.next();
+            PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
+            if (govAnn.equals(token)) {
+            	predicate = true;
+            }
+    	}
+    	
+    	boolean ne = false;
+    	if (wsdList.size() > 0) {
+	    	WSDResult wsdAnn = wsdList.get(0);
+	    	if (wsdAnn.getBestSense() instanceof BabelNetSense) {
+	        	BabelNetSense bestSense = (BabelNetSense) wsdAnn.getBestSense();
+	        	if (bestSense.getNameEntity()) {
+	        		ne = true;
+	        	}
+	    	}
+    	}
+        
+        //Setting type
+        Token surfaceToken = null;
+        if (tokensList.size() > 0) {
+        	surfaceToken = tokensList.get(0);
+        }
+        if (surfaceToken != null && 
+        		(token.getPos().getPosValue().toUpperCase().equals("PRP") || token.getPos().getPosValue().toUpperCase().equals("PRP$")) &&
+        		surfaceToken.getMorph().getValue().contains("Person=1")) {
+    		entity.setType("Speaker");
+
+        } else if (surfaceToken != null && 
+        		(token.getPos().getPosValue().toUpperCase().equals("PRP") || token.getPos().getPosValue().toUpperCase().equals("PRP$")) &&
+        		surfaceToken.getMorph().getValue().contains("Person=2")) {
+    		entity.setType("Addressee");
+
+        } else if (neList.size() > 0) {
             NamedEntity nameEntity = neList.get(0);
             entity.setType(nameEntity.getValue());
             
-        } else {
-            entity.setType("concept");
+        } else if (heideltimeList.size() > 0) {
+            entity.setType("Time");
+            
+        } else if (geolocationCandidatesList.size() > 0) {
+            entity.setType("Location");
+            
+        } else if (ne) {
+	        entity.setType("NE");
+	        
+        } else if (predicate) {
+        	entity.setType("Predicate");
+        	
+        }else if (conceptsList.size() > 0) {
+            entity.setType("Concept");
+            
+        }else {
+            entity.setType("Unknown");
+            
         }
         
-        List<GeolocationCandidate> geolocationCandidates = JCasUtil.selectCovered(GeolocationCandidate.class, token);
-        for (GeolocationCandidate candidate : geolocationCandidates) {
+        for (GeolocationCandidate candidate : geolocationCandidatesList) {
         	Location location = new Location();
         	if (candidate.getOsmNodeId() != null) {
         		location.setLink("osm:" + candidate.getOsmNodeId());
@@ -264,7 +323,7 @@ public class OutputGenerator {
         return links;
     }
     
-    protected static TreeMap<Integer, Entity> extractEntities(Collection<PredArgsToken> tokenCollection) {
+    protected static TreeMap<Integer, Entity> extractEntities(Collection<PredArgsToken> tokenCollection, Collection<PredArgsDependency> relationCollection) {
         
                 
 		int i = 1;
@@ -272,7 +331,7 @@ public class OutputGenerator {
 		for (PredArgsToken token : tokenCollection) {
 
             String entityId = "entity_" + i;
-            Entity entity = extractEntity(token, entityId);
+            Entity entity = extractEntity(token, entityId, relationCollection);
             
 			entities.put(token.hashCode(), entity);            
 			i++;
@@ -285,7 +344,7 @@ public class OutputGenerator {
 
         DlaResult result = new DlaResult();
         
-        TreeMap<Integer, Entity> tokenMap = extractEntities(tokenCollection);
+        TreeMap<Integer, Entity> tokenMap = extractEntities(tokenCollection, relationCollection);
         List<Entity> entities = new ArrayList(tokenMap.values());
         result.setEntities(entities);
         

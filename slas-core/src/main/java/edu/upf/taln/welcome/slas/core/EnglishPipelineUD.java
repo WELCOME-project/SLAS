@@ -5,8 +5,11 @@ import static org.apache.uima.fit.factory.ExternalResourceFactory.createDependen
 import static org.apache.uima.fit.factory.ExternalResourceFactory.createExternalResourceDescription;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -224,6 +227,32 @@ public class EnglishPipelineUD {
 
 		return new FlowItem(retokenizer,FlowStepName.DBPEDIA_RETOKENIZER.name());
 	}
+	
+	private static FlowItem getHeideltimeRetokenizerDescription() throws ResourceInitializationException {
+		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
+				MultiwordRetokenizer.class,
+				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "de.unihd.dbs.uima.types.heideltime.Timex3");
+
+		return new FlowItem(retokenizer,FlowStepName.HEIDELTIME_RETOKENIZER.name());
+	}
+	
+	private static FlowItem getGeolocationRetokenizerDescription() throws ResourceInitializationException {
+
+		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
+				MultiwordRetokenizer.class,
+				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "edu.upf.taln.flask_wrapper.type.GeolocationCandidate");
+
+		return new FlowItem(retokenizer,FlowStepName.GEOLOCATION_RETOKENIZER.name());
+	}
+	
+	private static FlowItem getTaxonomyRetokenizerDescription() throws ResourceInitializationException {
+
+		AnalysisEngineDescription retokenizer = AnalysisEngineFactory.createEngineDescription(
+				MultiwordRetokenizer.class,
+				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "edu.upf.taln.common.uima.taxonomy.TaxonomyEntry");
+
+		return new FlowItem(retokenizer,FlowStepName.TAXONOMY_RETOKENIZER.name());
+	}
 
 	private static FlowItem getNERDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
 
@@ -325,10 +354,13 @@ public class EnglishPipelineUD {
 				SpotlightAnnotator.PARAM_CONFIDENCE, 0.35f,
 				SpotlightAnnotator.PARAM_ALL_CANDIDATES, true);
 		flowItems.add(new FlowItem(dbpedia,FlowStepName.DBPEDIA.name()));
-
+		
+		flowItems.add(getTaxonomyRetokenizerDescription());
+		flowItems.add(getHeideltimeRetokenizerDescription());
+		flowItems.add(getGeolocationRetokenizerDescription());
 		flowItems.add(getDBPediaRetokenizerDescription());
-		flowItems.add(getNameEntityRetokenizerDescription());
 		flowItems.add(getDisambiguatedSensesRetokenizerDescription());
+		flowItems.add(getNameEntityRetokenizerDescription());
 
 		flowItems.add(getParsingDescription());
 

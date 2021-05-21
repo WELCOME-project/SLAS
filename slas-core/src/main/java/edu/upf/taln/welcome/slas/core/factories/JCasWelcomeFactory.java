@@ -3,6 +3,8 @@ package edu.upf.taln.welcome.slas.core.factories;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.uima.UIMAException;
 import org.apache.uima.collection.CollectionReader;
@@ -11,6 +13,8 @@ import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
+import de.unihd.dbs.uima.types.heideltime.Dct;
+
 import org.dkpro.core.io.conll.ConllUReader;
 
 import edu.upf.taln.uima.flow.IFlowOptions;
@@ -52,6 +56,13 @@ public class JCasWelcomeFactory {
             if(language != null) {
                 docMetadata.setLanguage(language);
             }
+            
+            //Setting current date in the cas as a Dct annotation
+            SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+            Date date = new Date(System.currentTimeMillis());
+            Dct documentDate = new Dct(jCas);
+            documentDate.setValue(formatter.format(date));
+            documentDate.addToIndexes();
             
             IFlowOptions options = WelcomeUIMAUtils.getOptions(analysisType);
 			FlowUtils.annotateFlowOptions(jCas, options);
