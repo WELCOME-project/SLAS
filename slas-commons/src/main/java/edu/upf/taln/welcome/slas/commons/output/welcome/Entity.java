@@ -3,6 +3,9 @@ package edu.upf.taln.welcome.slas.commons.output.welcome;
 import java.util.List;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  *
  * @author rcarlini
@@ -20,6 +23,10 @@ public class Entity {
     private List<String> links;
     private List<Location> locations;
     private double confidence;
+    
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("temporal_analysis")
+    private String temporalAnalysis;
 
     public String getId() {
         return id;
@@ -67,6 +74,16 @@ public class Entity {
 
 	public void setLocations(List<Location> locations) {
 		this.locations = locations;
+	}
+
+	public String getTemporalAnalysis() {
+		return temporalAnalysis;
+	}
+
+	public void setTemporalAnalysis(String temporalAnalysis) {
+		this.temporalAnalysis = temporalAnalysis;
 	}  
+	
+	
     
 }

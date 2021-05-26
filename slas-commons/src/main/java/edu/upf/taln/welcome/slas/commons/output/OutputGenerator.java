@@ -268,6 +268,21 @@ public class OutputGenerator {
         } else if (heideltimeList.size() > 0) {
             entity.setType("Time");
             
+            Timex3 time = heideltimeList.get(0);
+            String temporalAnalysisStr = "type=";
+            if (time.getTimexType() != null) {
+            	temporalAnalysisStr += time.getTimexType();
+            } else {
+            	temporalAnalysisStr += "UNKNOWN";
+            }
+            if (time.getTimexValue() != null) {
+            	temporalAnalysisStr += ",value=" + time.getTimexValue();
+            }
+            if (time.getTimexMod() != null) {
+            	temporalAnalysisStr += ",modifier=" + time.getTimexMod();
+            }
+            entity.setTemporalAnalysis(temporalAnalysisStr);
+            
         } else if (geolocationCandidatesList.size() > 0) {
             entity.setType("Location");
             
