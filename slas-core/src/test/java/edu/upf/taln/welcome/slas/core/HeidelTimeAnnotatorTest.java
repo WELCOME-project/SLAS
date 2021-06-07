@@ -4,19 +4,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.collection.CollectionReader;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
+import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.fit.pipeline.SimplePipeline;
-
+import org.apache.uima.jcas.JCas;
 import org.xml.sax.SAXException;
 import org.dkpro.core.io.xmi.XmiReader;
 import org.dkpro.core.io.xmi.XmiWriter;
 
 import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
+import de.unihd.dbs.uima.types.heideltime.Dct;
 
 /**
  *
@@ -69,6 +73,16 @@ public class HeidelTimeAnnotatorTest {
 				XmiWriter.class,
 				XmiWriter.PARAM_TARGET_LOCATION, "src/test/resources/heideltime/udpipe/paleolithic_actual",
 				XmiWriter.PARAM_OVERWRITE, true);
+		
+		JCas jcas = JCasFactory.createJCasFromPath(typesystemPath);
+	    reader.getNext(jcas.getCas());
+		
+		//Setting current date in the cas as a Dct annotation
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        Dct documentDate = new Dct(jcas);
+        documentDate.setValue(formatter.format(date));
+        documentDate.addToIndexes();
 
 		SimplePipeline.runPipeline(reader, heideltime/*, intervalTagger*/, writer);
     }

@@ -1,14 +1,15 @@
 package edu.upf.taln.welcome.slas.core;
 
-import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
-import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.fit.pipeline.SimplePipeline;
 import org.apache.uima.jcas.JCas;
+import org.dkpro.core.io.xmi.XmiWriter;
 import org.dkpro.core.stanfordnlp.StanfordPosTagger;
 import org.dkpro.core.stanfordnlp.StanfordSegmenter;
 import org.dkpro.core.udpipe.UDPipePosTagger;
@@ -16,9 +17,8 @@ import org.dkpro.core.udpipe.UDPipeSegmenter;
 import org.junit.Test;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
-import org.dkpro.core.io.xmi.XmiWriter;
 import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
-import de.unihd.dbs.uima.annotator.intervaltagger.IntervalTagger;
+import de.unihd.dbs.uima.types.heideltime.Dct;
 
 public class HeideltimeTest {
 
@@ -49,11 +49,11 @@ public class HeideltimeTest {
 				HeidelTime.PARAM_USE_COARSE_VALUE, false,
 				HeidelTime.PARAM_DEBUG, false);
 		
-		AnalysisEngine intervalTagger = AnalysisEngineFactory.createEngine(
+		/*AnalysisEngine intervalTagger = AnalysisEngineFactory.createEngine(
 				IntervalTagger.class,
 				"language", "english",
 				"annotate_intervals", true,
-				"annotate_interval_candidates", true);
+				"annotate_interval_candidates", true);*/
 		
 		AnalysisEngine writer = AnalysisEngineFactory.createEngine(
 				XmiWriter.class,
@@ -68,8 +68,15 @@ public class HeideltimeTest {
 		DocumentMetaData md = DocumentMetaData.create(jCas);
 		md.setDocumentId("heideltime");
 		md.setLanguage("en");
+		
+		//Setting current date in the cas as a Dct annotation
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        Dct documentDate = new Dct(jCas);
+        documentDate.setValue(formatter.format(date));
+        documentDate.addToIndexes();
 
-		SimplePipeline.runPipeline(jCas, segmenter, pos, heideltime, intervalTagger, writer);
+		SimplePipeline.runPipeline(jCas, segmenter, pos, heideltime/*, intervalTagger*/, writer);
 	}
 	
 	
@@ -100,11 +107,11 @@ public class HeideltimeTest {
 				HeidelTime.PARAM_USE_COARSE_VALUE, true,
 				HeidelTime.PARAM_DEBUG, false);
 		
-		AnalysisEngine intervalTagger = AnalysisEngineFactory.createEngine(
+		/*AnalysisEngine intervalTagger = AnalysisEngineFactory.createEngine(
 				IntervalTagger.class,
 				IntervalTagger.PARAM_LANGUAGE, "english",
 				IntervalTagger.PARAM_INTERVALS, true,
-				IntervalTagger.PARAM_INTERVAL_CANDIDATES, true);
+				IntervalTagger.PARAM_INTERVAL_CANDIDATES, true);*/
 		
 		AnalysisEngine writer = AnalysisEngineFactory.createEngine(
 				XmiWriter.class,
@@ -119,8 +126,15 @@ public class HeideltimeTest {
 		DocumentMetaData md = DocumentMetaData.create(jCas);
 		md.setDocumentId("heideltime");
 		md.setLanguage("en");
+		
+		//Setting current date in the cas as a Dct annotation
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        Dct documentDate = new Dct(jCas);
+        documentDate.setValue(formatter.format(date));
+        documentDate.addToIndexes();
 
-		SimplePipeline.runPipeline(jCas, segmenter, posMorphLemma, heideltime, intervalTagger, writer);
+		SimplePipeline.runPipeline(jCas, segmenter, posMorphLemma, heideltime/*, intervalTagger*/, writer);
 	}
 	
 }
