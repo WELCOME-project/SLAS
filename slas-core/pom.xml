@@ -106,7 +106,13 @@
 		
 		<dependency>
 			<groupId>com.github.heideltime</groupId>
-			<artifactId>heideltime</artifactId>
+			<artifactId>heideltime-types</artifactId>
+			<version>2.2.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.github.heideltime</groupId>
+			<artifactId>heideltime-core</artifactId>
 			<version>2.2.1-SNAPSHOT</version>
 		</dependency>
         
@@ -139,7 +145,6 @@
 		<dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-io-xmi-asl</artifactId>
-            <version>${dkpro.version}</version>
             <scope>test</scope>
         </dependency>
         
