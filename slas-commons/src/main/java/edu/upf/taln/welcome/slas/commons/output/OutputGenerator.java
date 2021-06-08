@@ -198,122 +198,137 @@ public class OutputGenerator {
         
         return entities;
     }
+    
+	protected static String assignEntityType(PredArgsToken token, List<Token> tokensList, List<NamedEntity> neList, List<Timex3> heideltimeList,
+			List<GeolocationCandidate> geolocationsList, List<WSDResult> wsdList, List<WSDSpan> conceptsList, Collection<PredArgsDependency> relationCollection) {
+		String type = null;
 
-    private static Entity extractEntity(PredArgsToken token, String entityId, Collection<PredArgsDependency> relationCollection) {
+		boolean isPredicate = false;
+		Iterator<PredArgsDependency> iterator = relationCollection.iterator();
+		while (iterator.hasNext() && !isPredicate) {
+			PredArgsDependency depAnn = iterator.next();
+			PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
+			if (govAnn.equals(token)) {
+				isPredicate = true;
+			}
+		}
 
-        List<String> links = new ArrayList<>();
-        List<Location> locations = new ArrayList<>();
+		boolean isNe = false;
+		if (wsdList.size() > 0) {
+			WSDResult wsdAnn = wsdList.get(0);
+			if (wsdAnn.getBestSense() instanceof BabelNetSense) {
+				BabelNetSense bestSense = (BabelNetSense) wsdAnn.getBestSense();
+				if (bestSense.getNameEntity()) {
+					isNe = true;
+				}
+			}
+		}
 
-        Entity entity = new Entity();
-        entity.setId(entityId);
-        entity.setAnchor(token.getValue());
-        entity.setLinks(links);
-        entity.setLocations(locations);
-        
-        List<Token> tokensList = JCasUtil.selectCovering(Token.class, token);
-        List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
-        List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
-        List<GeolocationCandidate> geolocationCandidatesList = JCasUtil.selectCovered(GeolocationCandidate.class, token);
-        List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
-        List<WSDSpan> conceptsList = JCasUtil.selectCovered(WSDSpan.class, token);
-        
-        if (wsdList.size() > 0) {
-            WSDResult wsdAnn = wsdList.get(0);
-            Sense bestSense = wsdAnn.getBestSense();
-            
-            links.add(bestSense.getId());
-            entity.setConfidence(bestSense.getConfidence());
-        }
-        
-        boolean predicate = false;
-        Iterator<PredArgsDependency> iterator = relationCollection.iterator();
-    	while (iterator.hasNext() && !predicate) {
-    		PredArgsDependency depAnn = iterator.next();
-            PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
-            if (govAnn.equals(token)) {
-            	predicate = true;
-            }
-    	}
-    	
-    	boolean ne = false;
-    	if (wsdList.size() > 0) {
-	    	WSDResult wsdAnn = wsdList.get(0);
-	    	if (wsdAnn.getBestSense() instanceof BabelNetSense) {
-	        	BabelNetSense bestSense = (BabelNetSense) wsdAnn.getBestSense();
-	        	if (bestSense.getNameEntity()) {
-	        		ne = true;
-	        	}
-	    	}
-    	}
-        
-        //Setting type
-        Token surfaceToken = null;
-        if (tokensList.size() > 0) {
-        	surfaceToken = tokensList.get(0);
-        }
-        if (surfaceToken != null && 
-        		(token.getPos().getPosValue().toUpperCase().equals("PRP") || token.getPos().getPosValue().toUpperCase().equals("PRP$")) &&
-        		surfaceToken.getMorph().getValue().contains("Person=1")) {
-    		entity.setType("Speaker");
+		Token surfaceToken = null;
+		if (tokensList.size() > 0) {
+			surfaceToken = tokensList.get(0);
+		}
+		if (surfaceToken != null
+				&& (token.getPos().getPosValue().toUpperCase().equals("PRP")
+						|| token.getPos().getPosValue().toUpperCase().equals("PRP$"))
+				&& surfaceToken.getMorph().getValue().contains("Person=1")) {
+			type = "Speaker";
 
-        } else if (surfaceToken != null && 
-        		(token.getPos().getPosValue().toUpperCase().equals("PRP") || token.getPos().getPosValue().toUpperCase().equals("PRP$")) &&
-        		surfaceToken.getMorph().getValue().contains("Person=2")) {
-    		entity.setType("Addressee");
+		} else if (surfaceToken != null
+				&& (token.getPos().getPosValue().toUpperCase().equals("PRP")
+						|| token.getPos().getPosValue().toUpperCase().equals("PRP$"))
+				&& surfaceToken.getMorph().getValue().contains("Person=2")) {
+			type = "Addressee";
 
-        } else if (neList.size() > 0) {
-            NamedEntity nameEntity = neList.get(0);
-            entity.setType(nameEntity.getValue());
-            
-        } else if (heideltimeList.size() > 0) {
-            entity.setType("Time");
-            
-            Timex3 time = heideltimeList.get(0);
-            String temporalAnalysisStr = "type=";
-            if (time.getTimexType() != null) {
-            	temporalAnalysisStr += time.getTimexType();
-            } else {
-            	temporalAnalysisStr += "UNKNOWN";
-            }
-            if (time.getTimexValue() != null) {
-            	temporalAnalysisStr += ",value=" + time.getTimexValue();
-            }
-            if (time.getTimexMod() != null) {
-            	temporalAnalysisStr += ",modifier=" + time.getTimexMod();
-            }
-            entity.setTemporalAnalysis(temporalAnalysisStr);
-            
-        } else if (geolocationCandidatesList.size() > 0) {
-            entity.setType("Location");
-            
-        } else if (ne) {
-	        entity.setType("NE");
-	        
-        } else if (predicate) {
-        	entity.setType("Predicate");
-        	
-        }else if (conceptsList.size() > 0) {
-            entity.setType("Concept");
-            
-        }else {
-            entity.setType("Unknown");
-            
-        }
-        
-        for (GeolocationCandidate candidate : geolocationCandidatesList) {
-        	Location location = new Location();
-        	if (candidate.getOsmNodeId() != null) {
-        		location.setLink("osm:" + candidate.getOsmNodeId());
-			} else if(candidate.getGeonamesId() != null) {
+		} else if (neList.size() > 0) {
+			NamedEntity nameEntity = neList.get(0);
+			type = nameEntity.getValue();
+
+		} else if (heideltimeList.size() > 0) {
+			type = "Time";
+
+		} else if (geolocationsList.size() > 0) {
+			type = "Location";
+
+		} else if (isNe) {
+			type = "NE";
+
+		} else if (isPredicate) {
+			type = "Predicate";
+
+		} else if (conceptsList.size() > 0) {
+			type = "Concept";
+
+		} else {
+			type = "Unknown";
+		}
+
+		return type;
+	}
+
+	private static Entity extractEntity(PredArgsToken token, String entityId,
+			Collection<PredArgsDependency> relationCollection) {
+
+		List<String> links = new ArrayList<>();
+		List<Location> locations = new ArrayList<>();
+
+		Entity entity = new Entity();
+		entity.setId(entityId);
+		entity.setAnchor(token.getValue());
+		entity.setLinks(links);
+		entity.setLocations(locations);
+
+		List<Token> tokensList = JCasUtil.selectCovering(Token.class, token);
+		List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
+		List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
+		List<GeolocationCandidate> geolocationsList = JCasUtil.selectCovered(GeolocationCandidate.class, token);
+		List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
+		List<WSDSpan> conceptsList = JCasUtil.selectCovered(WSDSpan.class, token);
+
+		if (wsdList.size() > 0) {
+			WSDResult wsdAnn = wsdList.get(0);
+			Sense bestSense = wsdAnn.getBestSense();
+
+			links.add(bestSense.getId());
+			entity.setConfidence(bestSense.getConfidence());
+		}
+
+		// Setting type
+		String type = assignEntityType(token, tokensList, neList, heideltimeList, geolocationsList, wsdList, conceptsList, relationCollection);
+		entity.setType(type);
+
+		if (type.equals("Time")) {
+
+			Timex3 time = heideltimeList.get(0);
+			String temporalAnalysisStr = "type=";
+			if (time.getTimexType() != null) {
+				temporalAnalysisStr += time.getTimexType();
+			} else {
+				temporalAnalysisStr += "UNKNOWN";
+			}
+			if (time.getTimexValue() != null) {
+				temporalAnalysisStr += ",value=" + time.getTimexValue();
+			}
+			if (time.getTimexMod() != null) {
+				temporalAnalysisStr += ",modifier=" + time.getTimexMod();
+			}
+			entity.setTemporalAnalysis(temporalAnalysisStr);
+		}
+
+		for (GeolocationCandidate candidate : geolocationsList) {
+			Location location = new Location();
+			if (candidate.getOsmNodeId() != null) {
+				location.setLink("osm:" + candidate.getOsmNodeId());
+			} else if (candidate.getGeonamesId() != null) {
 				location.setLink("geonames:" + candidate.getGeonamesId());
 			}
-        	location.setLatitude(candidate.getLatitude());
-        	location.setLongitude(candidate.getLongitude());
-        	locations.add(location);
-        }
-        
-        return entity;
-    }
+			location.setLatitude(candidate.getLatitude());
+			location.setLongitude(candidate.getLongitude());
+			locations.add(location);
+		}
+
+		return entity;
+	}
 
     private static ArrayList<String> extractLinks(PredArgsToken token) {
         

@@ -1,25 +1,25 @@
 package edu.upf.taln.welcome.slas.commons.output;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import static org.apache.uima.fit.factory.CollectionReaderFactory.createReader;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import org.apache.uima.jcas.JCas;
+import org.apache.commons.io.FileUtils;
 import org.apache.uima.UIMAException;
 import org.apache.uima.collection.CollectionReader;
 import org.apache.uima.fit.factory.JCasFactory;
+import org.apache.uima.jcas.JCas;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 
 import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiReader;
-
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
-import org.apache.commons.io.FileUtils;
-import org.junit.Ignore;
 
 /**
  *
@@ -54,7 +54,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateMetadata method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateMetadata() {
         System.out.println("generateMetadata");
@@ -68,7 +68,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateXmiResult method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateXmiResult() {
         System.out.println("generateXmiResult");
@@ -116,7 +116,6 @@ public class OutputGeneratorTest {
      * @throws org.apache.uima.UIMAException
      * @throws java.io.IOException
      */
-    //@Ignore
     @Test
     public void testGenerateDemoResult() throws UIMAException, IOException {
         System.out.println("generateDemoResult");
@@ -142,7 +141,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateDlaOutput method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateDlaOutput() {
         System.out.println("generateDlaOutput");
@@ -182,7 +181,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateDemoOutputWithDla method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateDemoOutputWithDla() {
         System.out.println("generateDemoOutputWithDla");
@@ -197,7 +196,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateXmiOutput method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateXmiOutput() {
         System.out.println("generateXmiOutput");
@@ -212,7 +211,7 @@ public class OutputGeneratorTest {
     /**
      * Test of generateDummyResponse method, of class OutputGenerator.
      */
-    @Ignore
+    @Disabled("Disabled until implemented!")
     @Test
     public void testGenerateDummyResponse() throws UIMAException {
         System.out.println("generateDummyResponse");
