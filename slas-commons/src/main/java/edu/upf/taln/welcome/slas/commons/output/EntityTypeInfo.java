@@ -70,7 +70,7 @@ public class EntityTypeInfo {
         boolean isPronoun = this.pos.equals("PRP") || this.pos.equals("PRP$");
         if (this.morph != null && this.morph.contains("Person=1") && isPronoun) {
             this.type = EntityType.Speaker.name();
-        } else if (this.morph != null && this.morph.contains("Person=1") && isPronoun) {
+        } else if (this.morph != null && this.morph.contains("Person=2") && isPronoun) {
             this.type = EntityType.Addressee.name();
         } else if (this.isNamedEntity) {
             this.type = this.namedEntity;

@@ -29,7 +29,7 @@ public class OutputGeneratorTest {
 
 	private static JCas getJCasFromXMI(String language, File testFile, File typesystemFile) throws UIMAException, IOException {
 
-        String typeSystemPath = typesystemFile.getAbsolutePath();
+        String typeSystemPath = typesystemFile.getPath();
 		String inputFolderPath = testFile.getParentFile().getAbsolutePath();
 		String pattern = testFile.getName();
 		
