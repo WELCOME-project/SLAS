@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -28,12 +28,11 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.dkpro.wsd.type.Sense;
 import de.tudarmstadt.ukp.dkpro.wsd.type.WSDResult;
 import de.unihd.dbs.uima.types.heideltime.Timex3;
+
 import edu.upf.taln.flask_wrapper.type.GeolocationCandidate;
-import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsDependency;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
-import edu.upf.taln.uima.wsd.types.BabelNetSense;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
@@ -45,6 +44,8 @@ import edu.upf.taln.utils.pojos.uima.predarg.PredargGraph;
 import edu.upf.taln.utils.pojos.uima.surface.SurfaceGraph;
 import edu.upf.taln.utils.pojos.uima.taxonomy.TaxonomyGraph;
 import edu.upf.taln.utils.pojos.uima.token.TokenNode;
+
+import edu.upf.taln.welcome.slas.commons.output.EntityTypeInfo.EntityType;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Location;
@@ -53,8 +54,8 @@ import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
 
 public class OutputGenerator {
-
-	protected static AnalysisOutputMetadata generateMetadata() {
+        
+    protected static AnalysisOutputMetadata generateMetadata() {
 		AnalysisOutputMetadata outputMetadata = new AnalysisOutputMetadata();
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Date date = new Date();
@@ -198,76 +199,9 @@ public class OutputGenerator {
         
         return entities;
     }
-    
-	protected static String assignEntityType(PredArgsToken token, List<Token> tokensList, List<NamedEntity> neList, List<Timex3> heideltimeList,
-			List<GeolocationCandidate> geolocationsList, List<WSDResult> wsdList, List<WSDSpan> conceptsList, Collection<PredArgsDependency> relationCollection) {
-		String type = null;
-
-		boolean isPredicate = false;
-		Iterator<PredArgsDependency> iterator = relationCollection.iterator();
-		while (iterator.hasNext() && !isPredicate) {
-			PredArgsDependency depAnn = iterator.next();
-			PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
-			if (govAnn.equals(token)) {
-				isPredicate = true;
-			}
-		}
-
-		boolean isNe = false;
-		if (wsdList.size() > 0) {
-			WSDResult wsdAnn = wsdList.get(0);
-			if (wsdAnn.getBestSense() instanceof BabelNetSense) {
-				BabelNetSense bestSense = (BabelNetSense) wsdAnn.getBestSense();
-				if (bestSense.getNameEntity()) {
-					isNe = true;
-				}
-			}
-		}
-
-		Token surfaceToken = null;
-		if (tokensList.size() > 0) {
-			surfaceToken = tokensList.get(0);
-		}
-		if (surfaceToken != null
-				&& (token.getPos().getPosValue().toUpperCase().equals("PRP")
-						|| token.getPos().getPosValue().toUpperCase().equals("PRP$"))
-				&& surfaceToken.getMorph().getValue().contains("Person=1")) {
-			type = "Speaker";
-
-		} else if (surfaceToken != null
-				&& (token.getPos().getPosValue().toUpperCase().equals("PRP")
-						|| token.getPos().getPosValue().toUpperCase().equals("PRP$"))
-				&& surfaceToken.getMorph().getValue().contains("Person=2")) {
-			type = "Addressee";
-
-		} else if (neList.size() > 0) {
-			NamedEntity nameEntity = neList.get(0);
-			type = nameEntity.getValue();
-
-		} else if (heideltimeList.size() > 0) {
-			type = "Time";
-
-		} else if (geolocationsList.size() > 0) {
-			type = "Location";
-
-		} else if (isNe) {
-			type = "NE";
-
-		} else if (isPredicate) {
-			type = "Predicate";
-
-		} else if (conceptsList.size() > 0) {
-			type = "Concept";
-
-		} else {
-			type = "Unknown";
-		}
-
-		return type;
-	}
 
 	private static Entity extractEntity(PredArgsToken token, String entityId,
-			Collection<PredArgsDependency> relationCollection) {
+			HashSet<PredArgsToken> predicateSet) {
 
 		List<String> links = new ArrayList<>();
 		List<Location> locations = new ArrayList<>();
@@ -278,14 +212,8 @@ public class OutputGenerator {
 		entity.setLinks(links);
 		entity.setLocations(locations);
 
-		List<Token> tokensList = JCasUtil.selectCovering(Token.class, token);
-		List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
-		List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
-		List<GeolocationCandidate> geolocationsList = JCasUtil.selectCovered(GeolocationCandidate.class, token);
-		List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
-		List<WSDSpan> conceptsList = JCasUtil.selectCovered(WSDSpan.class, token);
-
-		if (wsdList.size() > 0) {
+        List<WSDResult> wsdList = JCasUtil.selectCovered(WSDResult.class, token);
+		if (!wsdList.isEmpty()) {
 			WSDResult wsdAnn = wsdList.get(0);
 			Sense bestSense = wsdAnn.getBestSense();
 
@@ -294,11 +222,13 @@ public class OutputGenerator {
 		}
 
 		// Setting type
-		String type = assignEntityType(token, tokensList, neList, heideltimeList, geolocationsList, wsdList, conceptsList, relationCollection);
+        EntityTypeInfo typeInfo = new EntityTypeInfo(token, predicateSet);
+        String type = typeInfo.getType();
 		entity.setType(type);
 
-		if (type.equals("Time")) {
+		if (type.equals(EntityType.Temporal.name())) {
 
+            List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
 			Timex3 time = heideltimeList.get(0);
 			String temporalAnalysisStr = "type=";
 			if (time.getTimexType() != null) {
@@ -315,6 +245,7 @@ public class OutputGenerator {
 			entity.setTemporalAnalysis(temporalAnalysisStr);
 		}
 
+        List<GeolocationCandidate> geolocationsList = JCasUtil.selectCovered(GeolocationCandidate.class, token);
 		for (GeolocationCandidate candidate : geolocationsList) {
 			Location location = new Location();
 			if (candidate.getOsmNodeId() != null) {
@@ -355,13 +286,21 @@ public class OutputGenerator {
     
     protected static TreeMap<Integer, Entity> extractEntities(Collection<PredArgsToken> tokenCollection, Collection<PredArgsDependency> relationCollection) {
         
+        HashSet<PredArgsToken> predicateSet = new HashSet<>();
+        for (PredArgsDependency depAnn : relationCollection) {
+            PredArgsToken govAnn = (PredArgsToken) depAnn.getGovernor();
+            PredArgsToken childAnn = (PredArgsToken) depAnn.getDependent();
+            if (govAnn != childAnn) {
+                predicateSet.add(govAnn);
+            }
+        }
                 
 		int i = 1;
         TreeMap<Integer, Entity> entities = new TreeMap<>();
 		for (PredArgsToken token : tokenCollection) {
 
             String entityId = "entity_" + i;
-            Entity entity = extractEntity(token, entityId, relationCollection);
+            Entity entity = extractEntity(token, entityId, predicateSet);
             
 			entities.put(token.hashCode(), entity);            
 			i++;
