@@ -46,7 +46,7 @@ public class EntityTypeInfo {
         if (tokensList.size() > 0) {
             surfaceToken = tokensList.get(0);
         }
-        if (surfaceToken != null) {
+        if (surfaceToken != null && surfaceToken.getMorph() != null) {
             this.morph = surfaceToken.getMorph().getValue();
         }
         List<NamedEntity> neList = JCasUtil.selectCovered(NamedEntity.class, token);
