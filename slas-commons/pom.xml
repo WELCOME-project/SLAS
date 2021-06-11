@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>edu.upf.taln.uima.utils</groupId>
 			<artifactId>graph-uima</artifactId>
-			<version>0.4.0-SNAPSHOT</version>
+			<version>${output-graph.version}</version>
 		</dependency>
 		
 		<dependency>
@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>edu.upf.taln.buddy.uima</groupId>
 			<artifactId>buddy-uima-types</artifactId>
-			<version>1.1.0</version>
+			<version>${common-types.version}</version>
 		</dependency>
 		
 		<dependency>
