@@ -48,6 +48,7 @@ import edu.upf.taln.utils.pojos.uima.token.TokenNode;
 import edu.upf.taln.welcome.slas.commons.output.EntityTypeInfo.EntityType;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Entity;
+import edu.upf.taln.welcome.slas.commons.output.welcome.Entity.TemporalAnalysis;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Location;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
@@ -148,8 +149,12 @@ public class OutputGenerator {
                     relationMap.put(govAnn, relation);
                     i++;
                 }
-
+                
                 List<String> roles = extractRoles(childAnn);
+                if (childEntity.getType().equals(EntityType.Temporal.name())) {
+                	String temporalType = childEntity.getTemporalAnalysis().getType();
+                	roles.add("ht:" + temporalType);
+                }
 
                 Participant participant = new Participant();
                 participant.setRoles(roles);
@@ -230,19 +235,8 @@ public class OutputGenerator {
 
             List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
 			Timex3 time = heideltimeList.get(0);
-			String temporalAnalysisStr = "type=";
-			if (time.getTimexType() != null) {
-				temporalAnalysisStr += time.getTimexType();
-			} else {
-				temporalAnalysisStr += "UNKNOWN";
-			}
-			if (time.getTimexValue() != null) {
-				temporalAnalysisStr += ",value=" + time.getTimexValue();
-			}
-			if (time.getTimexMod() != null) {
-				temporalAnalysisStr += ",modifier=" + time.getTimexMod();
-			}
-			entity.setTemporalAnalysis(temporalAnalysisStr);
+			TemporalAnalysis temporalAnalysis = new TemporalAnalysis(time);
+			entity.setTemporalAnalysis(temporalAnalysis);
 		}
 
         List<GeolocationCandidate> geolocationsList = JCasUtil.selectCovered(GeolocationCandidate.class, token);

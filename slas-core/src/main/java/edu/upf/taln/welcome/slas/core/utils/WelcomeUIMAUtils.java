@@ -6,6 +6,7 @@ import java.util.Map;
 
 import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.welcome.slas.commons.analysis.FlowStepName;
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 
 /**
  *
@@ -13,7 +14,7 @@ import edu.upf.taln.welcome.slas.commons.analysis.FlowStepName;
  */
 public class WelcomeUIMAUtils {
 
-	public static IFlowOptions getOptions(AnalysisType type) {
+	public static IFlowOptions getOptions(AnalysisType type) throws WelcomeException {
 
 		// TODO: Define what components should be enable for BASIC analysis
 		IFlowOptions options;
@@ -125,7 +126,6 @@ public class WelcomeUIMAUtils {
 				return flowMap;
 			};
 			break;
-		default:
 		case FULL:
 			options = () -> {
 				Map<String, Boolean> flowMap = new HashMap<>();
@@ -161,6 +161,8 @@ public class WelcomeUIMAUtils {
 				return flowMap;
 			};
 			break;
+		default:
+			throw new WelcomeException("AnalysisType value is not correct.");
 		}
 
 		return options;
