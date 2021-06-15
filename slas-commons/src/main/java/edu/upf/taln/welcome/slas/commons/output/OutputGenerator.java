@@ -101,25 +101,45 @@ public class OutputGenerator {
 		}
 		return result;
 	}
+	
+	protected static List<String> extractRoles(String feats, String temporalType) {
+		
+		List<String> roles = new ArrayList<>();
+		
+		if (feats != null && !feats.isEmpty()) {
+	        Map<String, String> featMap = Pattern.compile("\\|")
+	            .splitAsStream(feats)
+	            .map(feat -> feat.split("=", 2))
+	            .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
+	
+	        if (featMap.containsKey("fnrole")) {
+	            roles.add(featMap.get("fnrole"));
+	        }
+	        if (featMap.containsKey("vnrole")) {
+	            roles.add(featMap.get("vnrole"));
+	        }
+	        if (featMap.containsKey("pbrole")) {
+	            roles.add(featMap.get("pbrole"));
+	        }
+		}
+        
+        if (temporalType != null) {
+        	roles.add("ht:" + temporalType);
+        }
+        
+        return roles;
+    }
 
-    private static List<String> extractRoles(PredArgsToken childAnn) {
+    private static List<String> extractRoles(PredArgsToken childAnn, Entity entity) {
         
         String feats = childAnn.getFeatures();
-        Map<String, String> featMap = Pattern.compile("\\|")
-            .splitAsStream(feats)
-            .map(feat -> feat.split("=", 2))
-            .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
-
-        List<String> roles = new ArrayList<>();
-        if (featMap.containsKey("fnrole")) {
-            roles.add(featMap.get("fnrole"));
+        
+        String temporalType = null;
+        if (entity.getType().equals(EntityType.Temporal.name())) {
+        	temporalType = entity.getTemporalAnalysis().getType();
         }
-        if (featMap.containsKey("vnrole")) {
-            roles.add(featMap.get("vnrole"));
-        }
-        if (featMap.containsKey("pbrole")) {
-            roles.add(featMap.get("pbrole"));
-        }
+        
+        List<String> roles = extractRoles(feats, temporalType);
         
         return roles;
     }
@@ -150,11 +170,7 @@ public class OutputGenerator {
                     i++;
                 }
                 
-                List<String> roles = extractRoles(childAnn);
-                if (childEntity.getType().equals(EntityType.Temporal.name())) {
-                	String temporalType = childEntity.getTemporalAnalysis().getType();
-                	roles.add("ht:" + temporalType);
-                }
+                List<String> roles = extractRoles(childAnn, childEntity);
 
                 Participant participant = new Participant();
                 participant.setRoles(roles);
