@@ -41,7 +41,7 @@
 		<heideltime.version>3.0.0</heideltime.version>
 		<output-graph.version>0.4.0</output-graph.version>
 		<common-types.version>1.1.0</common-types.version>
-		<retokenizer.version>0.3.0</retokenizer.version>
+		<retokenizer.version>0.3.1</retokenizer.version>
 
 	</properties>
 
