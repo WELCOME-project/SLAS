@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: registry.gitlab.com/talnupf/welcome/slas/dla:2021-05-13
+    image: maven-taln.upf.edu/welcome/dla:2021-06-23
     networks:
       - welcomenet
       - traefik
@@ -94,6 +94,34 @@ services:
       labels:
         - "traefik.frontend.rule=Host:welcome-nlg.${DOMAIN}"
         - "traefik.port=8080"
+  tts:
+    image: registry.gitlab.com/talnupf/welcome/tts:2020-06-20
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-tts.${DOMAIN}"
+        - "traefik.port=80"
+  asr:
+    image: maven-taln.upf.edu/welcome/but-asr-en:v20210610
+    networks:
+      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-asr.${DOMAIN}"
+        - "traefik.port=9080"
 networks:
   welcomenet:
   traefik:

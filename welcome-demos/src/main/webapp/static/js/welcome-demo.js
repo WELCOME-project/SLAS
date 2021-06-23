@@ -123,7 +123,7 @@ function submitForm(type, url, input, language, loadingCallback, endLoadingCallb
 	            	meta: {
 		                language: language,
                         use_case: "catalonia",
-    	                analysis_type: "FULL",
+    	                analysis_type: "PROTO1",
 		                output_type: "demo_welcome"
 		        	},
 		        	data: {
