@@ -247,9 +247,8 @@ public class OutputGenerator {
         String type = typeInfo.getType();
 		entity.setType(type);
 
-		if (type.equals(EntityType.Temporal.name())) {
-
-            List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
+		List<Timex3> heideltimeList = JCasUtil.selectCovered(Timex3.class, token);
+		if (!heideltimeList.isEmpty()) {
 			Timex3 time = heideltimeList.get(0);
 			TemporalAnalysis temporalAnalysis = new TemporalAnalysis(time);
 			entity.setTemporalAnalysis(temporalAnalysis);
