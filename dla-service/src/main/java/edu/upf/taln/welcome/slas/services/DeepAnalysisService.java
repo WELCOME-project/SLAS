@@ -1,15 +1,18 @@
 package edu.upf.taln.welcome.slas.services;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Singleton;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
@@ -196,4 +199,38 @@ public class DeepAnalysisService {
         
 		return output;
 	}
+	
+	@GET
+	@Path("/status")
+	@Operation(summary = "Retrieve the services status.",
+		description = "Returns a status description of the service.",
+		responses = {
+		        @ApiResponse(description = "The services status.",
+		        			content = @Content(schema = @Schema(implementation = StatusOutput.class)
+		        ))
+	})
+	public StatusOutput getStatus() throws WelcomeException {
+		ServletContext application = config.getServletContext();
+		String build;
+		try {
+			build = new String(application.getResourceAsStream("META-INF/maven/edu.upf.taln.welcome/dla-service/pom.properties").readAllBytes());
+		} catch (IOException e) {
+			throw new WelcomeException();
+		}
+		return new StatusOutput(build);
+	}
+	
+	@GET
+	@Path("/status/log")
+	@Operation(summary = "Retrieve the service log.",
+		description = "Returns a specific amount of log messages.",
+		responses = {
+		        @ApiResponse(description = "The log messages.",
+		        			content = @Content(schema = @Schema(implementation = StatusLogOutput.class)
+		        ))
+	})
+	public StatusLogOutput getLog(@QueryParam("limit") int limit) throws WelcomeException {
+		return new StatusLogOutput();
+	}
+
 }
