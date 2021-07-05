@@ -105,7 +105,8 @@ skos:ConceptScheme rdf:type owl:Class .
                                                                              rdfs:comment "The First Reception Service" ;
                                                                              skos:broader <http://welcome-project.upf.edu/taxomony#8483613c-1fd3-3e1d-a7b2-5d774503a500> ;
                                                                              skos:inScheme <http://welcome-project.upf.edu/taxomony#> ;
-                                                                             skos:prefLabel "First Reception Service"@eng .
+                                                                             skos:prefLabel "First Reception Service"@eng ;
+                                                                             skos:altLabel "1st reception service"@en .
 
 
 ###  http://welcome-project.upf.edu/taxomony#c41a3189-0959-344c-a523-af684561abe1
