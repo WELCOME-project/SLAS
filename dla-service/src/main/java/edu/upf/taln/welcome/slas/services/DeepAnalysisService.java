@@ -213,7 +213,8 @@ public class DeepAnalysisService {
 		ServletContext application = config.getServletContext();
 		String build;
 		try {
-			build = new String(application.getResourceAsStream("META-INF/maven/edu.upf.taln.welcome/dla-service/pom.properties").readAllBytes());
+			build = new String(application.getResourceAsStream("META-INF/MANIFEST.MF").readAllBytes());
+			//build = DeepAnalysisService.class.getPackage().toString();
 		} catch (IOException e) {
 			throw new WelcomeException();
 		}
