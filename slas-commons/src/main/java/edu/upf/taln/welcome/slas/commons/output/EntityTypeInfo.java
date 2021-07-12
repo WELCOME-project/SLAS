@@ -7,8 +7,12 @@ import de.unihd.dbs.uima.types.heideltime.Timex3;
 import edu.upf.taln.flask_wrapper.type.GeolocationCandidate;
 import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
+import static edu.upf.taln.welcome.slas.commons.output.OutputGenerator.removeQuotes;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import org.apache.uima.fit.util.JCasUtil;
 
 /**
@@ -30,6 +34,7 @@ public class EntityTypeInfo {
     boolean isWSDNamedEntity;
     boolean isPredicate;
     boolean isConcept;
+    private String featureType;
 
     public EntityTypeInfo() {
     }
@@ -63,6 +68,16 @@ public class EntityTypeInfo {
         this.isPredicate = predicateSet.contains(token);
         List<WSDSpan> conceptsList = JCasUtil.selectCovered(WSDSpan.class, token);
         this.isConcept = !conceptsList.isEmpty();
+        
+        String features = token.getFeatures();
+        if (features != null && !features.equals("_")) {
+            Map<String, String> featMap = Pattern.compile("\\|")
+                .splitAsStream(features)
+                .map(feat -> feat.split("=", 2))
+                .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
+         
+            this.featureType = featMap.get("entity_type");
+        }
     }
 
     protected final void assignType() {
@@ -72,6 +87,8 @@ public class EntityTypeInfo {
             this.type = EntityType.Speaker.name();
         } else if (this.morph != null && this.morph.contains("Person=2") && isPronoun) {
             this.type = EntityType.Addressee.name();
+        } else if (this.featureType != null) {
+            this.type = this.featureType;
         } else if (this.isNamedEntity) {
             this.type = this.namedEntity;
         } else if (this.isHeidelTime) {
