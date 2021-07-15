@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: maven-taln.upf.edu/welcome/dla:2021-07-02
+    image: maven-taln.upf.edu/welcome/dla:2021-07-13
     networks:
       - welcomenet
       - traefik
@@ -67,7 +67,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2021-03-05
+    image: registry.gitlab.com/talnupf/welcome/dms:2021-07-15
     networks:
       - welcomenet
       - traefik
@@ -81,7 +81,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2021-03-05
+    image: registry.gitlab.com/talnupf/welcome/nlg:2021-07-15
     networks:
       - welcomenet
       - traefik
