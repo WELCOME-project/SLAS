@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: maven-taln.upf.edu/welcome/dla:2021-07-13
+    image: maven-taln.upf.edu/welcome/dla:2021-07-16
     networks:
       - welcomenet
       - traefik
@@ -122,6 +122,24 @@ services:
       labels:
         - "traefik.frontend.rule=Host:welcome-asr.${DOMAIN}"
         - "traefik.port=9080"
+  speech2text_en:
+    image: maven-taln.upf.edu/ingenious/speech2text_flashlight:2021-03-08
+    networks:
+      - traefik
+    volumes:
+      - /resources/projects/welcome/speech2text/en/RASR_20200305/ASR:/ASR
+    environment: 
+      - CONFIG_FILE=/ASR/conf/decode.cfg
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 10GB
+      labels:
+        - "traefik.frontend.rule=Host:en.asr.welcome.${DOMAIN}"
+        - "traefik.port=80"
+        - "traefik.enable=true"
 networks:
   welcomenet:
   traefik:
