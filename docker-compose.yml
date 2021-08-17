@@ -67,7 +67,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2021-07-15
+    image: registry.gitlab.com/talnupf/welcome/dms:2021-08-03
     networks:
       - welcomenet
       - traefik
@@ -81,7 +81,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2021-07-15
+    image: registry.gitlab.com/talnupf/welcome/nlg:2021-08-03
     networks:
       - welcomenet
       - traefik
@@ -131,7 +131,7 @@ services:
     environment: 
       - CONFIG_FILE=/ASR/conf/decode.cfg
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
