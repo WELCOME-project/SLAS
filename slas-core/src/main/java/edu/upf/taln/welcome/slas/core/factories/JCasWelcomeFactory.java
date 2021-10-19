@@ -1,25 +1,17 @@
 package edu.upf.taln.welcome.slas.core.factories;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.StringReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.uima.UIMAException;
-import org.apache.uima.collection.CollectionReader;
-import org.apache.uima.fit.factory.CollectionReaderFactory;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 import de.unihd.dbs.uima.types.heideltime.Dct;
-
-import org.dkpro.core.io.conll.ConllUReader;
-
 import edu.upf.taln.uima.flow.IFlowOptions;
 import edu.upf.taln.uima.flow.utils.FlowUtils;
-
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
@@ -43,6 +35,9 @@ public class JCasWelcomeFactory {
             AnalysisType analysisType = metadata.getAnalysisType();
             
         	JCas jCas = JCasFactory.createJCas();
+        	if (text == null || text.equals("")) {
+        		throw new WelcomeException("Error creating jCas: Input text is null or empty.");
+        	}
             jCas.setDocumentText(text);
         	            
             // metadata.setUseCase("catalonia");
