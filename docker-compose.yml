@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   las-en:
-    image: maven-taln.upf.edu/welcome/dla:2021-07-16
+    image: maven-taln.upf.edu/welcome/dla:2021-10-19
     networks:
       - welcomenet
       - traefik
