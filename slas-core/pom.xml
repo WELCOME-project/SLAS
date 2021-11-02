@@ -115,19 +115,6 @@
 			<artifactId>heideltime-core</artifactId>
 			<version>${heideltime.version}</version>
 		</dependency>
-        
-		<dependency>
-			<groupId>org.dkpro.core</groupId>
-			<artifactId>dkpro-core-stanfordnlp-gpl</artifactId>
-			<version>${dkpro.version}</version>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>xml-apis</groupId>
-					<artifactId>xml-apis</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 		<dependency>
 			<groupId>org.apache.uima</groupId>
@@ -153,6 +140,18 @@
             <artifactId>dkpro-core-io-xmi-asl</artifactId>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-stanfordnlp-gpl</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
         
         <!-- MODELS -->
 

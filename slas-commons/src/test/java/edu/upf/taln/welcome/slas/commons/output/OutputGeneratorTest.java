@@ -12,13 +12,13 @@ import org.apache.uima.UIMAException;
 import org.apache.uima.collection.CollectionReader;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
+import org.dkpro.core.io.xmi.XmiReader;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
-import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiReader;
 import edu.upf.taln.welcome.slas.commons.output.welcome.DlaResult;
 
 /**
