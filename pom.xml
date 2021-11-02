@@ -33,7 +33,7 @@
 
 		<dkpro.version>1.12.1-taln-rc1</dkpro.version>
 		<!-- dkpro.taln.version>1.9.1-taln</dkpro.taln.version -->
-		<deep-parser.version>2.1.0-SNAPSHOT</deep-parser.version>
+		<deep-parser.version>2.1.0</deep-parser.version>
 		<extender.version>1.5.0</extender.version>
 		<flask.version>1.3.0</flask.version>
 		<disambiguation.version>1.5.0</disambiguation.version>
