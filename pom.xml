@@ -1,120 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.upf.taln.welcome</groupId>
-    <artifactId>slas-parent</artifactId>
-    <version>0.2.0</version>
-    <packaging>pom</packaging>
+	<groupId>edu.upf.taln.welcome</groupId>
+	<artifactId>slas-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
 
-    <name>Welcome SLAS Parent</name>
+	<name>Welcome SLAS Parent</name>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk.version>9</jdk.version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>9</jdk.version>
 
-        <mvn.compiler.version>3.7.0</mvn.compiler.version>
-        <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
-        
-     	<junit.version>4.12</junit.version>
-        
-        <lucene.version>7.2.0</lucene.version>
-		
-        <servlet.api.version>3.1.0</servlet.api.version> 
-		
-        <glassfish.jersey.version>2.26</glassfish.jersey.version> 
-        
-        <jackson.version>2.9.8</jackson.version>
-        
-	    <swagger.version>2.0.8</swagger.version>
-	    <swagger.ui.version>2.1.4</swagger.ui.version>
-    </properties>
+		<mvn.compiler.version>3.7.0</mvn.compiler.version>
+		<mvn.war.plugin.version>2.6</mvn.war.plugin.version>
 
-    <modules>
-        <module>dla-service</module>
-        <module>slas-commons</module>
-    </modules>
+		<junit.version>4.12</junit.version>
 
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>Internal Release Repository</name>
-            <url>http://maven-taln.upf.edu/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>Internal Snapshot Repository</name>
-            <url>http://maven-taln.upf.edu/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+		<lucene.version>7.2.0</lucene.version>
 
-    <repositories>
-        <repository>
-            <id>taln-repo-internal</id>
-            <name>TALN internal repo</name>
-            <url>http://maven-taln.upf.edu/repository/maven-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>taln-repo-snapshots</id>
-            <name>TALN internal repo</name>
-            <url>http://maven-taln.upf.edu/repository/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+		<servlet.api.version>3.1.0</servlet.api.version>
 
-    <dependencyManagement>
-        <dependencies>
-        
-        <!-- VERSION FIXES -->
-			<dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-core</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-queries</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-queryparser</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-analyzers-common</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-		        <groupId>org.apache.lucene</groupId> 
-		        <artifactId>lucene-highlighter</artifactId> 
-		        <version>${lucene.version}</version> 
-		    </dependency> 
-		    <dependency> 
-                <groupId>org.apache.lucene</groupId> 
-                <artifactId>lucene-backward-codecs</artifactId> 
-                <version>${lucene.version}</version> 
-            </dependency>
-		    
-		    <dependency>
-	            <groupId>net.sf.trove4j</groupId>
-	            <artifactId>trove4j</artifactId>
-	            <version>3.0.3</version>
-	        </dependency>
-	        
-	        <dependency>
+		<glassfish.jersey.version>2.26</glassfish.jersey.version>
+
+		<jackson.version>2.9.8</jackson.version>
+
+		<swagger.version>2.0.8</swagger.version>
+		<swagger.ui.version>2.1.4</swagger.ui.version>
+
+		<dkpro.version>1.12.1-taln-rc1</dkpro.version>
+		<!-- dkpro.taln.version>1.9.1-taln</dkpro.taln.version -->
+		<deep-parser.version>2.1.0</deep-parser.version>
+		<extender.version>1.5.0</extender.version>
+		<flask.version>1.3.0</flask.version>
+		<disambiguation.version>1.5.0</disambiguation.version>
+		<spotlight.version>0.15.0</spotlight.version>
+		<heideltime.version>3.0.0</heideltime.version>
+		<output-graph.version>0.4.0</output-graph.version>
+		<common-types.version>1.1.0</common-types.version>
+		<retokenizer.version>0.3.1</retokenizer.version>
+
+	</properties>
+
+	<modules>
+		<module>slas-commons</module>
+		<module>slas-core</module>
+		<module>dla-service</module>
+		<module>welcome-demos</module>
+		<module>slas-client</module>
+	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>maven-releases</id>
+			<name>Internal Release Repository</name>
+			<url>https://maven-taln.upf.edu/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://maven-taln.upf.edu/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>taln-repo-internal</id>
+			<name>TALN internal repo</name>
+			<url>https://maven-taln.upf.edu/repository/maven-releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>taln-repo-snapshots</id>
+			<name>TALN internal repo</name>
+			<url>https://maven-taln.upf.edu/repository/maven-snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>ukp-oss-model-releases</id>
+			<url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-model-releases-local</url>
+		</repository>
+	</repositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.dkpro.core</groupId>
+				<artifactId>dkpro-core-asl</artifactId>
+				<version>${dkpro.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.dkpro.core</groupId>
+				<artifactId>dkpro-core-gpl</artifactId>
+				<version>${dkpro.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- VERSION FIXES -->
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-core</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-queries</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-queryparser</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-analyzers-common</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-highlighter</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-backward-codecs</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.sf.trove4j</groupId>
+				<artifactId>trove4j</artifactId>
+				<version>3.0.3</version>
+			</dependency>
+
+			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
 				<version>${jackson.version}</version>
@@ -130,138 +164,265 @@
 				<version>${jackson.version}</version>
 			</dependency>
 			<dependency>
-	            <groupId>com.fasterxml.jackson.jaxrs</groupId>
-	            <artifactId>jackson-jaxrs-base</artifactId>
-	            <version>${jackson.version}</version>
-	        </dependency>
-	        <dependency>
-	            <groupId>com.fasterxml.jackson.jaxrs</groupId>
-	            <artifactId>jackson-jaxrs-json-provider</artifactId>
-	            <version>${jackson.version}</version>
-	        </dependency>
-		    <!-- END VERSION FIXES -->
-            
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
-            </dependency>
-			
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${servlet.api.version}</version>
-                <type>jar</type>
-            </dependency>
-            
-            <dependency>
-                <groupId>org.glassfish.jersey.containers</groupId>
-                <artifactId>jersey-container-servlet</artifactId>
-                <version>${glassfish.jersey.version}</version>
-                <type>jar</type>
-            </dependency>
-            
-            <dependency>
-                <groupId>org.glassfish.jersey.core</groupId>
-                <artifactId>jersey-client</artifactId>
-                <version>${glassfish.jersey.version}</version>
-                <type>jar</type>
-            </dependency>
-            
-            <dependency>
-                <groupId>org.glassfish.jersey.media</groupId>
-                <artifactId>jersey-media-json-jackson</artifactId>
-                <version>${glassfish.jersey.version}</version>
-                <type>jar</type>
-            </dependency>
-            
-            <!-- SWAGGER -->
-            <dependency>
-		    	<groupId>io.swagger.core.v3</groupId>
-		    	<artifactId>swagger-jaxrs2</artifactId>
-		    	<version>${swagger.version}</version>
-		    </dependency>
-		    <dependency>
-		    	<groupId>io.swagger.core.v3</groupId>
-	      		<artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
-		    	<version>${swagger.version}</version>
-		    </dependency>
-		    
-      <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>javax.activation-api</artifactId>
-        <version>1.2.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-core</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-jxc</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-xjc</artifactId>
-        <version>2.3.0</version>
-      </dependency>
-		    
-		    <!-- END SWAGGER -->
-		       
-        </dependencies>
-    </dependencyManagement>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-base</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<!-- END VERSION FIXES -->
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${mvn.compiler.version}</version>
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
-                </configuration>
-            </plugin>
-            
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            
-            <plugin>
-                <groupId>external.atlassian.jgitflow</groupId>
-                <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m5.1</version>
-                <configuration>
-                    <flowInitContext>
-                        <masterBranchName>master</masterBranchName>
-                        <developBranchName>development</developBranchName>
-                    </flowInitContext>
-                    <!-- 		            <username>USERNAME_FOR_A_GIT_USER</username> -->
-                    <!-- 		            <password>PASSWORD_FOR_A_GIT_USER</password> -->
-                    <noDeploy>true</noDeploy>
-                    <squash>false</squash>
-                    <scmCommentPrefix>[RELEASE] </scmCommentPrefix>
-                </configuration>
-            </plugin>
-        </plugins>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-params</artifactId>
+				<version>5.7.0</version>
+			</dependency>
 
-    </build>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>5.7.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${servlet.api.version}</version>
+				<type>jar</type>
+			</dependency>
+
+			<dependency>
+				<groupId>org.glassfish.jersey.containers</groupId>
+				<artifactId>jersey-container-servlet</artifactId>
+				<version>${glassfish.jersey.version}</version>
+				<type>jar</type>
+			</dependency>
+
+			<dependency>
+				<groupId>org.glassfish.jersey.core</groupId>
+				<artifactId>jersey-client</artifactId>
+				<version>${glassfish.jersey.version}</version>
+				<type>jar</type>
+			</dependency>
+
+			<dependency>
+				<groupId>org.glassfish.jersey.media</groupId>
+				<artifactId>jersey-media-json-jackson</artifactId>
+				<version>${glassfish.jersey.version}</version>
+				<type>jar</type>
+			</dependency>
+
+			<!-- SWAGGER -->
+			<dependency>
+				<groupId>io.swagger.core.v3</groupId>
+				<artifactId>swagger-jaxrs2</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.swagger.core.v3</groupId>
+				<artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.activation</groupId>
+				<artifactId>javax.activation-api</artifactId>
+				<version>1.2.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-impl</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-core</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-jxc</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-xjc</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+
+			<!-- END SWAGGER -->
+
+			<!--ANALYSIS DEPENDENCIES -->
+			<dependency>
+				<groupId>edu.upf.taln.uima.nlp4j</groupId>
+				<artifactId>nlp4j</artifactId>
+				<version>0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.matetools</groupId>
+				<artifactId>matetools</artifactId>
+				<version>0.1.0</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>trove4j</artifactId>
+						<groupId>net.sf.trove4j</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>whatswrong</artifactId>
+						<groupId>org.riedelcastro</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.flow-controller</groupId>
+				<artifactId>flow-core</artifactId>
+				<version>0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.parser</groupId>
+				<artifactId>deep-parser-core</artifactId>
+				<version>${deep-parser.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.parser</groupId>
+				<artifactId>deep-parser-types</artifactId>
+				<version>${deep-parser.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>TextPlanningAnnotator</artifactId>
+				<version>1.3.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.wsd</groupId>
+				<artifactId>disambiguation-core</artifactId>
+				<version>${disambiguation.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>uima-tagsets</artifactId>
+				<version>1.2.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.wsd</groupId>
+				<artifactId>edu.upf.taln.uima.wsd.item_annotator</artifactId>
+				<version>1.3.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.wsd</groupId>
+				<artifactId>extender-core</artifactId>
+				<version>${extender.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.glicom.uima</groupId>
+				<artifactId>spotlight-core</artifactId>
+				<version>${spotlight.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.glicom.uima</groupId>
+				<artifactId>spotlight-types</artifactId>
+				<version>${spotlight.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>flask-wrapper-commons</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>flask-wrapper-core</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.upf.taln.uima</groupId>
+				<artifactId>flask-wrapper-types</artifactId>
+				<version>${flask.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.retokenize</groupId>
+				<artifactId>MultiwordRetokenizer</artifactId>
+				<version>${retokenizer.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.utils.pojos</groupId>
+				<artifactId>common-uima-types</artifactId>
+				<version>${common-types.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>edu.upf.taln.uima.utils</groupId>
+				<artifactId>output-graph</artifactId>
+				<version>${output-graph.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${mvn.compiler.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>external.atlassian.jgitflow</groupId>
+				<artifactId>jgitflow-maven-plugin</artifactId>
+				<version>1.0-m5.1</version>
+				<configuration>
+					<flowInitContext>
+						<masterBranchName>master</masterBranchName>
+						<developBranchName>development</developBranchName>
+					</flowInitContext>
+					<!-- <username>USERNAME_FOR_A_GIT_USER</username> -->
+					<!-- <password>PASSWORD_FOR_A_GIT_USER</password> -->
+					<noDeploy>true</noDeploy>
+					<squash>false</squash>
+					<scmCommentPrefix>[RELEASE] </scmCommentPrefix>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
 
 </project>

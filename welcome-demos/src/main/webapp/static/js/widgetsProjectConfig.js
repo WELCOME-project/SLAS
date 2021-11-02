@@ -1,0 +1,2 @@
+groupedTypes["geolocation"] =  "Linking";
+

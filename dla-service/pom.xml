@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>edu.upf.taln.welcome</groupId>
 		<artifactId>slas-parent</artifactId>
-		<version>0.2.0</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>dla-service</artifactId>
@@ -19,11 +19,38 @@
 
 	<dependencies>
 		<dependency>
-            <groupId>edu.upf.taln.welcome</groupId>
-            <artifactId>slas-commons</artifactId>
-            <version>${project.version}</version>
+			<groupId>edu.upf.taln.welcome</groupId>
+			<artifactId>slas-commons</artifactId>
+			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>edu.upf.taln.tensor</groupId>
+					<artifactId>profiling</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-        
+
+		<dependency>
+			<groupId>edu.upf.taln.welcome</groupId>
+			<artifactId>slas-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>flask-wrapper-commons</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.uima</groupId>
+			<artifactId>uimaj-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.uima</groupId>
+			<artifactId>uimafit-core</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-jaxrs2</artifactId>
@@ -34,12 +61,12 @@
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
 		</dependency>
-		
-	   <dependency>
-	       <groupId>org.slf4j</groupId>
-	       <artifactId>slf4j-simple</artifactId>
-	       <version>1.7.25</version>
-	   </dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.25</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.jaxrs</groupId>
@@ -116,13 +143,12 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-        
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.6</version>
-            <scope>test</scope>
-        </dependency> 
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -136,6 +162,14 @@
 				<version>2.1.1</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+					    <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+						<manifestEntries>
+							<Build-Time>${maven.build.timestamp}</Build-Time>
+						</manifestEntries>
+					</archive>
 				</configuration>
 			</plugin>
 
@@ -147,54 +181,19 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-	
-			<!-- 
-			<plugin>
-				<groupId>com.googlecode.maven-download-plugin</groupId>
-				<artifactId>download-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<executions>
-					<execution>
-						<id>swagger-ui</id>
-						<goals>
-							<goal>wget</goal>
-						</goals>
-						<configuration>
-							<skipCache>${swagger.download.skipcache}</skipCache>
-							<url>https://github.com/swagger-api/swagger-ui/archive/master.tar.gz</url>
-							<unpack>true</unpack>
-							<outputDirectory>${project.build.directory}</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.6</version>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>target/${project.artifactId}-${project.version}/static</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${project.build.directory}/swagger-ui-master/dist</directory>
-									<filtering>true</filtering>
-									<excludes>
-										<exclude>index.html</exclude>
-									</excludes>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
- 			-->
- 			
+
+			<!-- <plugin> <groupId>com.googlecode.maven-download-plugin</groupId> 
+				<artifactId>download-maven-plugin</artifactId> <version>1.2.1</version> <executions> 
+				<execution> <id>swagger-ui</id> <goals> <goal>wget</goal> </goals> <configuration> 
+				<skipCache>${swagger.download.skipcache}</skipCache> <url>https://github.com/swagger-api/swagger-ui/archive/master.tar.gz</url> 
+				<unpack>true</unpack> <outputDirectory>${project.build.directory}</outputDirectory> 
+				</configuration> </execution> </executions> </plugin> <plugin> <artifactId>maven-resources-plugin</artifactId> 
+				<version>2.6</version> <executions> <execution> <id>copy-resources</id> <phase>validate</phase> 
+				<goals> <goal>copy-resources</goal> </goals> <configuration> <outputDirectory>target/${project.artifactId}-${project.version}/static</outputDirectory> 
+				<resources> <resource> <directory>${project.build.directory}/swagger-ui-master/dist</directory> 
+				<filtering>true</filtering> <excludes> <exclude>index.html</exclude> </excludes> 
+				</resource> </resources> </configuration> </execution> </executions> </plugin> -->
+
 		</plugins>
 	</build>
 

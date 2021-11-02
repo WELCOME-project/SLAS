@@ -1,0 +1,3 @@
+[submodule "welcome-demos/js_widgets"]
+	path = welcome-demos/js_widgets
+	url = https://gitlab.com/talnupf/x-project/js_widgets.git

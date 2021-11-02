@@ -9,6 +9,7 @@ import javax.ws.rs.core.Context;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
+import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
 import io.swagger.v3.oas.integration.SwaggerConfiguration;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -18,7 +19,7 @@ import io.swagger.v3.oas.models.servers.Server;
 @ApplicationPath("api")
 public class ServiceApplication extends ResourceConfig {
 	
-    public ServiceApplication(@Context ServletConfig servletConfig) {
+    public ServiceApplication(@Context ServletConfig servletConfig) throws WelcomeException {
         super();
 
         OpenAPI oas = new OpenAPI();
@@ -45,6 +46,7 @@ public class ServiceApplication extends ResourceConfig {
         openApiResource.setOpenApiConfiguration(oasConfig);
         register(openApiResource);
         
+        register(new DeepAnalysisService()); // register as a singleton so initialization is performed on startup
         String packageName = this.getClass().getPackage().getName();
         packages(packageName);
     }	

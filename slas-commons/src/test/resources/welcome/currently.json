@@ -1,0 +1,1166 @@
+{
+  "id": "07138bcb-c3f6-4376-a4c7-d425d31f355c",
+  "text": "Currently, I live with my friends, I mean I don’t have an own apartment.",
+  "language": "en",
+  "result": {
+    "ner": {
+      "directed": true,
+      "type": "ner",
+      "label": "ner",
+      "nodes": [
+        {
+          "id": 1,
+          "type": "concept",
+          "label": "friends",
+          "metadata": {
+            "begin": 26,
+            "end": 33,
+            "category": "CONCEPT",
+            "covered_text": "friends"
+          }
+        },
+        {
+          "id": 2,
+          "type": "concept",
+          "label": "apartment",
+          "metadata": {
+            "begin": 62,
+            "end": 71,
+            "category": "CONCEPT",
+            "covered_text": "apartment"
+          }
+        }
+      ],
+      "edges": [],
+      "metadata": {}
+    },
+    "triples": [],
+    "surface_parsing": {
+      "directed": true,
+      "type": "surface",
+      "label": "surface dependencies",
+      "nodes": [
+        {
+          "id": 3,
+          "type": "token",
+          "label": "Currently",
+          "metadata": {
+            "begin": 0,
+            "end": 9,
+            "form": "Currently",
+            "lemma": "currently",
+            "pos": "NNS",
+            "covered_text": "Currently"
+          }
+        },
+        {
+          "id": 4,
+          "type": "token",
+          "label": ",",
+          "metadata": {
+            "begin": 9,
+            "end": 10,
+            "form": ",",
+            "lemma": ",",
+            "pos": ",",
+            "feats": "",
+            "covered_text": ","
+          }
+        },
+        {
+          "id": 5,
+          "type": "token",
+          "label": "I",
+          "metadata": {
+            "begin": 11,
+            "end": 12,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 6,
+          "type": "token",
+          "label": "live",
+          "metadata": {
+            "begin": 13,
+            "end": 17,
+            "form": "live",
+            "lemma": "live",
+            "pos": "VBP",
+            "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+            "covered_text": "live"
+          }
+        },
+        {
+          "id": 7,
+          "type": "token",
+          "label": "with",
+          "metadata": {
+            "begin": 18,
+            "end": 22,
+            "form": "with",
+            "lemma": "with",
+            "pos": "IN",
+            "feats": "",
+            "covered_text": "with"
+          }
+        },
+        {
+          "id": 8,
+          "type": "token",
+          "label": "my",
+          "metadata": {
+            "begin": 23,
+            "end": 25,
+            "form": "my",
+            "lemma": "my",
+            "pos": "PRP$",
+            "feats": "Number=Sing|Person=1|Poss=Yes|PronType=Prs",
+            "covered_text": "my"
+          }
+        },
+        {
+          "id": 9,
+          "type": "token",
+          "label": "friends",
+          "metadata": {
+            "begin": 26,
+            "end": 33,
+            "form": "friends",
+            "lemma": "friend",
+            "pos": "NNS",
+            "feats": "Number=Plur",
+            "covered_text": "friends"
+          }
+        },
+        {
+          "id": 10,
+          "type": "token",
+          "label": ",",
+          "metadata": {
+            "begin": 33,
+            "end": 34,
+            "form": ",",
+            "lemma": ",",
+            "pos": ",",
+            "feats": "",
+            "covered_text": ","
+          }
+        },
+        {
+          "id": 11,
+          "type": "token",
+          "label": "I",
+          "metadata": {
+            "begin": 35,
+            "end": 36,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 12,
+          "type": "token",
+          "label": "mean",
+          "metadata": {
+            "begin": 37,
+            "end": 41,
+            "form": "mean",
+            "lemma": "mean",
+            "pos": "NNS",
+            "covered_text": "mean"
+          }
+        },
+        {
+          "id": 13,
+          "type": "token",
+          "label": "I",
+          "metadata": {
+            "begin": 42,
+            "end": 43,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 14,
+          "type": "token",
+          "label": "do",
+          "metadata": {
+            "begin": 44,
+            "end": 46,
+            "form": "do",
+            "lemma": "do",
+            "pos": "NNS",
+            "covered_text": "do"
+          }
+        },
+        {
+          "id": 15,
+          "type": "token",
+          "label": "n’t",
+          "metadata": {
+            "begin": 46,
+            "end": 49,
+            "form": "n’t",
+            "lemma": "not",
+            "pos": "NNS",
+            "covered_text": "n’t"
+          }
+        },
+        {
+          "id": 16,
+          "type": "token",
+          "label": "have",
+          "metadata": {
+            "begin": 50,
+            "end": 54,
+            "form": "have",
+            "lemma": "have",
+            "pos": "NNS",
+            "covered_text": "have"
+          }
+        },
+        {
+          "id": 17,
+          "type": "token",
+          "label": "an",
+          "metadata": {
+            "begin": 55,
+            "end": 57,
+            "form": "an",
+            "lemma": "a",
+            "pos": "DT",
+            "feats": "Definite=Ind|PronType=Art",
+            "covered_text": "an"
+          }
+        },
+        {
+          "id": 18,
+          "type": "token",
+          "label": "own",
+          "metadata": {
+            "begin": 58,
+            "end": 61,
+            "form": "own",
+            "lemma": "own",
+            "pos": "JJ",
+            "feats": "Degree=Pos",
+            "covered_text": "own"
+          }
+        },
+        {
+          "id": 19,
+          "type": "token",
+          "label": "apartment",
+          "metadata": {
+            "begin": 62,
+            "end": 71,
+            "form": "apartment",
+            "lemma": "apartment",
+            "pos": "NN",
+            "feats": "Number=Sing",
+            "covered_text": "apartment"
+          }
+        },
+        {
+          "id": 20,
+          "type": "token",
+          "label": ".",
+          "metadata": {
+            "begin": 71,
+            "end": 72,
+            "form": ".",
+            "lemma": ".",
+            "pos": ".",
+            "feats": "",
+            "covered_text": "."
+          }
+        }
+      ],
+      "edges": [
+        {
+          "relation": "obl",
+          "label": "obl",
+          "source": 6,
+          "target": 3,
+          "metadata": {}
+        },
+        {
+          "relation": "punct",
+          "label": "punct",
+          "source": 6,
+          "target": 4,
+          "metadata": {}
+        },
+        {
+          "relation": "nsubj",
+          "label": "nsubj",
+          "source": 6,
+          "target": 5,
+          "metadata": {}
+        },
+        {
+          "relation": "root",
+          "label": "root",
+          "source": 6,
+          "target": 6,
+          "metadata": {}
+        },
+        {
+          "relation": "case",
+          "label": "case",
+          "source": 9,
+          "target": 7,
+          "metadata": {}
+        },
+        {
+          "relation": "nmod_poss",
+          "label": "nmod_poss",
+          "source": 9,
+          "target": 8,
+          "metadata": {}
+        },
+        {
+          "relation": "obl",
+          "label": "obl",
+          "source": 6,
+          "target": 9,
+          "metadata": {}
+        },
+        {
+          "relation": "punct",
+          "label": "punct",
+          "source": 6,
+          "target": 10,
+          "metadata": {}
+        },
+        {
+          "relation": "nsubj",
+          "label": "nsubj",
+          "source": 12,
+          "target": 11,
+          "metadata": {}
+        },
+        {
+          "relation": "discourse",
+          "label": "discourse",
+          "source": 19,
+          "target": 12,
+          "metadata": {}
+        },
+        {
+          "relation": "nsubj",
+          "label": "nsubj",
+          "source": 19,
+          "target": 13,
+          "metadata": {}
+        },
+        {
+          "relation": "advmod",
+          "label": "advmod",
+          "source": 19,
+          "target": 14,
+          "metadata": {}
+        },
+        {
+          "relation": "advmod",
+          "label": "advmod",
+          "source": 19,
+          "target": 15,
+          "metadata": {}
+        },
+        {
+          "relation": "case",
+          "label": "case",
+          "source": 19,
+          "target": 16,
+          "metadata": {}
+        },
+        {
+          "relation": "det",
+          "label": "det",
+          "source": 19,
+          "target": 17,
+          "metadata": {}
+        },
+        {
+          "relation": "amod",
+          "label": "amod",
+          "source": 19,
+          "target": 18,
+          "metadata": {}
+        },
+        {
+          "relation": "parataxis",
+          "label": "parataxis",
+          "source": 6,
+          "target": 19,
+          "metadata": {}
+        },
+        {
+          "relation": "punct",
+          "label": "punct",
+          "source": 6,
+          "target": 20,
+          "metadata": {}
+        }
+      ],
+      "metadata": {}
+    },
+    "concept_extraction": {
+      "directed": true,
+      "type": "concept",
+      "label": "concept extraction",
+      "nodes": [
+        {
+          "id": 21,
+          "type": "concept",
+          "label": "Currently",
+          "metadata": {
+            "begin": 0,
+            "end": 9,
+            "covered_text": "Currently"
+          }
+        },
+        {
+          "id": 22,
+          "type": "concept",
+          "label": "live",
+          "metadata": {
+            "begin": 13,
+            "end": 17,
+            "covered_text": "live"
+          }
+        },
+        {
+          "id": 23,
+          "type": "concept",
+          "label": "friends",
+          "metadata": {
+            "begin": 26,
+            "end": 33,
+            "covered_text": "friends"
+          }
+        },
+        {
+          "id": 24,
+          "type": "concept",
+          "label": "mean",
+          "metadata": {
+            "begin": 37,
+            "end": 41,
+            "covered_text": "mean"
+          }
+        },
+        {
+          "id": 25,
+          "type": "concept",
+          "label": "n’t",
+          "metadata": {
+            "begin": 46,
+            "end": 49,
+            "covered_text": "n’t"
+          }
+        },
+        {
+          "id": 26,
+          "type": "concept",
+          "label": "apartment",
+          "metadata": {
+            "begin": 62,
+            "end": 71,
+            "covered_text": "apartment"
+          }
+        }
+      ],
+      "edges": [],
+      "metadata": {}
+    },
+    "babelnet_linking": {
+      "directed": true,
+      "type": "babelnet",
+      "label": "babelnet linking",
+      "nodes": [
+        {
+          "id": 27,
+          "type": "babelnet",
+          "label": "mean",
+          "metadata": {
+            "begin": 37,
+            "end": 41,
+            "label": "OMWIKI:EN:intend",
+            "uri": "http://live.babelnet.org/synset?word=bn:00089804v",
+            "confidence": 1,
+            "description": "{\"glosses\":[\"Have in mind as a purpose\",\"To have in mind as one's purpose or intention.\",\"To intend, to plan ; to have as one's intention.\",\"To fix the mind upon ; be intent upon.\",\"To communicate to oneself in one's mind, to try to find a solution to a problem.\",\"To fix the mind upon a goal.\"],\"label\":\"intend\",\"dbpediaUris\":null}",
+            "covered_text": "mean",
+            "linked_id": "bn:00089804v"
+          }
+        },
+        {
+          "id": 28,
+          "type": "babelnet",
+          "label": "do",
+          "metadata": {
+            "begin": 44,
+            "end": 46,
+            "label": "WN:EN:make",
+            "uri": "http://live.babelnet.org/synset?word=bn:00087106v",
+            "confidence": 0,
+            "description": "{\"glosses\":[\"Engage in\"],\"label\":\"do\",\"dbpediaUris\":null}",
+            "covered_text": "do",
+            "linked_id": "bn:00087106v"
+          }
+        },
+        {
+          "id": 29,
+          "type": "babelnet",
+          "label": "n’t",
+          "metadata": {
+            "begin": 46,
+            "end": 49,
+            "label": "WN:EN:non",
+            "uri": "http://live.babelnet.org/synset?word=bn:00116360r",
+            "confidence": 0,
+            "description": "{\"glosses\":[\"Negation of a word or group of words\"],\"label\":\"non\",\"dbpediaUris\":null}",
+            "covered_text": "n’t",
+            "linked_id": "bn:00116360r"
+          }
+        },
+        {
+          "id": 30,
+          "type": "babelnet",
+          "label": "have",
+          "metadata": {
+            "begin": 50,
+            "end": 54,
+            "label": "WIKT:EN:have_got",
+            "uri": "http://live.babelnet.org/synset?word=bn:00089240v",
+            "confidence": 0,
+            "description": "{\"glosses\":[\"Have or possess, either in a concrete or an abstract sense\",\"To hold or possess either in an abstract or concrete sense.\",\"To possess, own, hold.\",\"To have, own or possess.\"],\"label\":\"have\",\"dbpediaUris\":null}",
+            "covered_text": "have",
+            "linked_id": "bn:00089240v"
+          }
+        }
+      ],
+      "edges": [],
+      "metadata": {}
+    },
+    "dbpedia_linking": {
+      "directed": true,
+      "type": "dbpedia",
+      "label": "dbpedia linking",
+      "nodes": [],
+      "edges": [],
+      "metadata": {}
+    },
+    "deep_parsing": {
+      "directed": true,
+      "type": "deep",
+      "label": "deep dependencies",
+      "nodes": [
+        {
+          "id": 31,
+          "type": "deepToken",
+          "label": "Currently",
+          "metadata": {
+            "begin": 0,
+            "end": 9,
+            "form": "Currently",
+            "lemma": "currently",
+            "pos": "NNS",
+            "covered_text": "Currently"
+          }
+        },
+        {
+          "id": 32,
+          "type": "deepToken",
+          "label": "I",
+          "metadata": {
+            "begin": 11,
+            "end": 12,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 33,
+          "type": "deepToken",
+          "label": "live",
+          "metadata": {
+            "begin": 13,
+            "end": 17,
+            "form": "live",
+            "lemma": "live",
+            "pos": "VBP",
+            "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+            "covered_text": "live"
+          }
+        },
+        {
+          "id": 34,
+          "type": "deepToken",
+          "label": "with",
+          "metadata": {
+            "begin": 18,
+            "end": 22,
+            "form": "with",
+            "lemma": "with",
+            "pos": "IN",
+            "feats": "",
+            "covered_text": "with"
+          }
+        },
+        {
+          "id": 35,
+          "type": "deepToken",
+          "label": "my",
+          "metadata": {
+            "begin": 23,
+            "end": 25,
+            "form": "my",
+            "lemma": "my",
+            "pos": "PRP$",
+            "feats": "Number=Sing|Person=1|Poss=Yes|PronType=Prs",
+            "covered_text": "my"
+          }
+        },
+        {
+          "id": 36,
+          "type": "deepToken",
+          "label": "friends",
+          "metadata": {
+            "begin": 26,
+            "end": 33,
+            "form": "friends",
+            "lemma": "friend",
+            "pos": "NNS",
+            "feats": "Number=Plur",
+            "covered_text": "friends"
+          }
+        },
+        {
+          "id": 37,
+          "type": "deepToken",
+          "label": "I",
+          "metadata": {
+            "begin": 35,
+            "end": 36,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 38,
+          "type": "deepToken",
+          "label": "mean",
+          "metadata": {
+            "begin": 37,
+            "end": 41,
+            "form": "mean",
+            "lemma": "mean",
+            "pos": "NNS",
+            "covered_text": "mean"
+          }
+        },
+        {
+          "id": 39,
+          "type": "deepToken",
+          "label": "I",
+          "metadata": {
+            "begin": 42,
+            "end": 43,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 40,
+          "type": "deepToken",
+          "label": "do",
+          "metadata": {
+            "begin": 44,
+            "end": 46,
+            "form": "do",
+            "lemma": "do",
+            "pos": "NNS",
+            "covered_text": "do"
+          }
+        },
+        {
+          "id": 41,
+          "type": "deepToken",
+          "label": "n’t",
+          "metadata": {
+            "begin": 46,
+            "end": 49,
+            "form": "n’t",
+            "lemma": "not",
+            "pos": "NNS",
+            "covered_text": "n’t"
+          }
+        },
+        {
+          "id": 42,
+          "type": "deepToken",
+          "label": "own",
+          "metadata": {
+            "begin": 58,
+            "end": 61,
+            "form": "own",
+            "lemma": "own",
+            "pos": "JJ",
+            "feats": "Degree=Pos",
+            "covered_text": "own"
+          }
+        },
+        {
+          "id": 43,
+          "type": "deepToken",
+          "label": "apartment",
+          "metadata": {
+            "begin": 62,
+            "end": 71,
+            "form": "apartment",
+            "lemma": "apartment",
+            "pos": "NN",
+            "feats": "Number=Sing",
+            "covered_text": "apartment"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 33,
+          "target": 31,
+          "metadata": {}
+        },
+        {
+          "relation": "I",
+          "label": "I",
+          "source": 33,
+          "target": 32,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 33,
+          "target": 33,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 33,
+          "target": 34,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 36,
+          "target": 35,
+          "metadata": {}
+        },
+        {
+          "relation": "II",
+          "label": "II",
+          "source": 34,
+          "target": 36,
+          "metadata": {}
+        },
+        {
+          "relation": "I",
+          "label": "I",
+          "source": 38,
+          "target": 37,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 43,
+          "target": 38,
+          "metadata": {}
+        },
+        {
+          "relation": "I",
+          "label": "I",
+          "source": 43,
+          "target": 39,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 43,
+          "target": 40,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 43,
+          "target": 41,
+          "metadata": {}
+        },
+        {
+          "relation": "ATTR",
+          "label": "ATTR",
+          "source": 43,
+          "target": 42,
+          "metadata": {}
+        },
+        {
+          "relation": "PARATAXIS",
+          "label": "PARATAXIS",
+          "source": 33,
+          "target": 43,
+          "metadata": {}
+        }
+      ],
+      "metadata": {}
+    },
+    "predicate_arguments_parsing": {
+      "directed": true,
+      "type": "predargs",
+      "label": "predargs dependencies",
+      "nodes": [
+        {
+          "id": 44,
+          "type": "predargsToken",
+          "label": "Currently",
+          "metadata": {
+            "begin": 0,
+            "end": 9,
+            "form": "currently",
+            "lemma": "currently",
+            "pos": "NNS",
+            "covered_text": "Currently"
+          }
+        },
+        {
+          "id": 45,
+          "type": "predargsToken",
+          "label": "I",
+          "metadata": {
+            "begin": 11,
+            "end": 12,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 46,
+          "type": "predargsToken",
+          "label": "live",
+          "metadata": {
+            "begin": 13,
+            "end": 17,
+            "form": "live",
+            "lemma": "live",
+            "pos": "VBP",
+            "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+            "covered_text": "live"
+          }
+        },
+        {
+          "id": 47,
+          "type": "predargsToken",
+          "label": "my",
+          "metadata": {
+            "begin": 23,
+            "end": 25,
+            "form": "my",
+            "lemma": "my",
+            "pos": "PRP$",
+            "feats": "Number=Sing|Person=1|Poss=Yes|PronType=Prs",
+            "covered_text": "my"
+          }
+        },
+        {
+          "id": 48,
+          "type": "predargsToken",
+          "label": "friends",
+          "metadata": {
+            "begin": 26,
+            "end": 33,
+            "form": "friend",
+            "lemma": "friend",
+            "pos": "NNS",
+            "feats": "Number=Plur",
+            "covered_text": "friends"
+          }
+        },
+        {
+          "id": 49,
+          "type": "predargsToken",
+          "label": "I",
+          "metadata": {
+            "begin": 35,
+            "end": 36,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 50,
+          "type": "predargsToken",
+          "label": "mean",
+          "metadata": {
+            "begin": 37,
+            "end": 41,
+            "form": "mean",
+            "lemma": "mean",
+            "pos": "NNS",
+            "covered_text": "mean"
+          }
+        },
+        {
+          "id": 51,
+          "type": "predargsToken",
+          "label": "I",
+          "metadata": {
+            "begin": 42,
+            "end": 43,
+            "form": "I",
+            "lemma": "I",
+            "pos": "PRP",
+            "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+            "covered_text": "I"
+          }
+        },
+        {
+          "id": 52,
+          "type": "predargsToken",
+          "label": "do",
+          "metadata": {
+            "begin": 44,
+            "end": 46,
+            "form": "do",
+            "lemma": "do",
+            "pos": "NNS",
+            "covered_text": "do"
+          }
+        },
+        {
+          "id": 53,
+          "type": "predargsToken",
+          "label": "n’t",
+          "metadata": {
+            "begin": 46,
+            "end": 49,
+            "form": "not",
+            "lemma": "not",
+            "pos": "NNS",
+            "covered_text": "n’t"
+          }
+        },
+        {
+          "id": 54,
+          "type": "predargsToken",
+          "label": "own",
+          "metadata": {
+            "begin": 58,
+            "end": 61,
+            "form": "own",
+            "lemma": "own",
+            "pos": "JJ",
+            "feats": "Degree=Pos",
+            "covered_text": "own"
+          }
+        },
+        {
+          "id": 55,
+          "type": "predargsToken",
+          "label": "apartment",
+          "metadata": {
+            "begin": 62,
+            "end": 71,
+            "form": "apartment",
+            "lemma": "apartment",
+            "pos": "NN",
+            "feats": "Number=Sing",
+            "covered_text": "apartment"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "relation": "nonCore",
+          "label": "nonCore",
+          "source": 46,
+          "target": 44,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 46,
+          "target": 45,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 46,
+          "target": 46,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 47,
+          "target": 47,
+          "metadata": {}
+        },
+        {
+          "relation": "nonCore",
+          "label": "nonCore",
+          "source": 46,
+          "target": 48,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 47,
+          "target": 48,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 50,
+          "target": 49,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 50,
+          "target": 50,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 55,
+          "target": 51,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 52,
+          "target": 52,
+          "metadata": {}
+        },
+        {
+          "relation": "nonCore",
+          "label": "nonCore",
+          "source": 55,
+          "target": 53,
+          "metadata": {}
+        },
+        {
+          "relation": "ROOT",
+          "label": "ROOT",
+          "source": 54,
+          "target": 54,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 54,
+          "target": 55,
+          "metadata": {}
+        },
+        {
+          "relation": "PARATAXIS",
+          "label": "PARATAXIS",
+          "source": 46,
+          "target": 55,
+          "metadata": {}
+        },
+        {
+          "relation": "Argument1",
+          "label": "Argument1",
+          "source": 52,
+          "target": 55,
+          "metadata": {}
+        }
+      ],
+      "metadata": {}
+    },
+    "geolocation": {
+      "directed": true,
+      "type": "geolocation",
+      "label": "geolocation detection",
+      "nodes": [],
+      "edges": [],
+      "metadata": {}
+    },
+    "heideltime": {
+      "directed": true,
+      "type": "heideltime",
+      "label": "heideltime detection",
+      "nodes": [
+        {
+          "id": 56,
+          "type": "heideltime",
+          "label": "Currently",
+          "metadata": {
+            "begin": 0,
+            "end": 9,
+            "type": "DATE",
+            "value": "PRESENT_REF",
+            "covered_text": "Currently"
+          }
+        }
+      ],
+      "edges": [],
+      "metadata": {}
+    },
+    "taxonomy": {
+      "directed": true,
+      "type": "taxonomy",
+      "label": "taxonomy extraction",
+      "nodes": [],
+      "edges": [],
+      "metadata": {}
+    }
+  },
+  "metadata": {
+    "date": "2021/06/10 17:48:44"
+  }
+}

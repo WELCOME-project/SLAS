@@ -9,13 +9,13 @@ import javax.validation.constraints.NotNull;
 public class InputData {
     
     @NotNull
-    private String conll;
+    private String text;
 
-    public String getConll() {
-        return conll;
+    public String getText() {
+        return text;
     }
 
-    public void setConll(String conll) {
-        this.conll = conll;
+    public void setText(String text) {
+        this.text = text;
     }    
 }

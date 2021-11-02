@@ -1,14 +1,18 @@
 package edu.upf.taln.welcome.slas.services;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Singleton;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
@@ -24,13 +28,11 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput;
-import edu.upf.taln.welcome.slas.commons.input.CuniInput2DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
-import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
-import edu.upf.taln.welcome.slas.utils.SampleResponses;
+import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.output.LanguageConfiguration;
+import edu.upf.taln.welcome.slas.commons.output.ServiceDescription;
+import edu.upf.taln.welcome.slas.core.Analyzer;
 
 
 /**
@@ -39,49 +41,56 @@ import edu.upf.taln.welcome.slas.utils.SampleResponses;
  * 
  */
 @Path("/dla")
+@Singleton
 @Produces(MediaType.APPLICATION_JSON)
 public class DeepAnalysisService {
-
-	private static final String SAMPLE_CUNI_INPUT_TURN0 = "{\n" + 
-			"  \"model\": \"en\",\n" + 
-			"  \"acknowledgements\": [\"http://ufal.mff.cuni.cz/udpipe#udpipe_acknowledgements\", \"welcome-ud-2.5-191206\" ],\n" + 
-			"    \"result\": \"# newdoc\\n# newpar\\n# sent_id = 1\\n# text = Hello World\\n1\\tHello\\thello\\tINTJ\\tUH\\t_\\t2\\tdiscourse\\t_\\t_\\n2\\tWorld\\tWorld\\tPROPN\\tNNP\\tNumber=Sing\\t0\\troot\\t_\\tSpaceAfter=No\\n\\n\" \n" + 
-			"}";    
-    
-	private static final String SAMPLE_INPUT_TURN0 = "{\n" + 
-			"  \"metadata\": {},\n" + 
+	
+	private static final String SAMPLE_INPUT_XMI = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"xmi\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
 			"  \"data\": {\n" + 
-			"    \"conll\": \"# sent_id = 1\\n" + 
-			"# text = Hello, can you hear me?\\n" + 
-			"1\\tHello\\thello\\tINTJ\\tUH\\t_\\t5\\tdiscourse\\t_\\tSpaceAfter=No\\n" + 
-			"2\\t,\\t,\\tPUNCT\\t,\\t_\\t5\\tpunct\\t_\\t_\\n" + 
-			"3\\tcan\\tcan\\tAUX\\tMD\\tVerbForm=Fin\\t5\\taux\\t_\\t_\\n" + 
-			"4\\tyou\\tyou\\tPRON\\tPRP\\tCase=Nom|Person=2|PronType=Prs\\t5\\tnsubj\\t_\\t_\\n" + 
-			"5\\thear\\thear\\tVERB\\tVB\\tVerbForm=Inf\\t0\\troot\\t_\\t_\\n" + 
-			"6\\tme\\tI\\tPRON\\tPRP\\tCase=Acc|Number=Sing|Person=1|PronType=Prs\\t5\\tobj\\t_\\tSpaceAfter=No\\n" + 
-			"7\\t?\\t?\\tPUNCT\\t.\\t_\\t5\\tpunct\\t_\\tSpacesAfter=\\\\n\\n\"" + 
+			"    \"text\": \"Yes, I would like to apply for the First Reception Service.\"" + 
+			"  } \n" + 
+			"}";
+	
+	private static final String SAMPLE_INPUT_TURN0 = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Hello, can you hear me?\"" + 
 			"  } \n" + 
 			"}";
 
 
 	private static final String SAMPLE_INPUT_TURN1 = "{\n" + 
-			"  \"metadata\": {},\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
 			"  \"data\": {\n" + 
-			"    \"conll\": \"# sent_id = 2\\n" + 
-			"# text = Yes, I would like to apply for the First Reception Service.\\n" + 
-			"1\\tYes\\tyes\\tINTJ\\tUH\\t_\\t5\\tdiscourse\\t_\\tSpaceAfter=No\\n" + 
-			"2\\t,\\t,\\tPUNCT\\t,\\t_\\t5\\tpunct\\t_\\t_\\n" + 
-			"3\\tI\\tI\\tPRON\\tPRP\\tCase=Nom|Number=Sing|Person=1|PronType=Prs\\t5\\tnsubj\\t_\\t_\\n" + 
-			"4\\twould\\twould\\tAUX\\tMD\\tVerbForm=Fin\\t5\\taux\\t_\\t_\\n" + 
-			"5\\tlike\\tlike\\tVERB\\tVB\\tVerbForm=Inf\\t0\\troot\\t_\\t_\\n" + 
-			"6\\tto\\tto\\tPART\\tTO\\t_\\t7\\tmark\\t_\\t_\\n" + 
-			"7\\tapply\\tapply\\tVERB\\tVB\\tVerbForm=Inf\\t5\\txcomp\\t_\\t_\\n" + 
-			"8\\tfor\\tfor\\tADP\\tIN\\t_\\t12\\tcase\\t_\\t_\\n" + 
-			"9\\tthe\\tthe\\tDET\\tDT\\tDefinite=Def|PronType=Art\\t12\\tdet\\t_\\t_\\n" + 
-			"10\\tFirst\\tfirst\\tADJ\\tJJ\\tDegree=Pos|NumType=Ord\\t12\\tamod\\t_\\t_\\n" + 
-			"11\\tReception\\treception\\tNOUN\\tNN\\tNumber=Sing\\t12\\tcompound\\t_\\t_\\n" + 
-			"12\\tService\\tservice\\tNOUN\\tNN\\tNumber=Sing\\t7\\tobl\\t_\\tSpaceAfter=No\\n" + 
-			"13\\t.\\t.\\tPUNCT\\t.\\t_\\t5\\tpunct\\t_\\tSpacesAfter=\\\\n\\n\"" + 
+			"    \"text\": \"Yes, I would like to apply for the First Reception Service.\"" + 
+			"  } \n" + 
+			"}";
+	
+	private static final String SAMPLE_INPUT_TURN2 = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"en\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Terrassa, is a city in the east central region of Catalonia, in the province of Barcelona, comarca of Vallès Occidental, of which it is the cocapital along with Sabadell.\"" + 
 			"  } \n" + 
 			"}";
 	/**
@@ -91,9 +100,12 @@ public class DeepAnalysisService {
 
 	@Context
 	ServletConfig config;
+    private final Analyzer analyzer;
 
 	public DeepAnalysisService() throws WelcomeException {
-	}
+		log.info("getting Analyzer instance");
+		analyzer = Analyzer.getInstance();
+	}    
 	
 	@GET
 	@Path("/description")
@@ -112,7 +124,7 @@ public class DeepAnalysisService {
 		modules.add("dbpedia");
 
 		LanguageConfiguration es_config = new LanguageConfiguration();
-		es_config.setLanguage("es");
+		es_config.setLanguage("en");
 		es_config.setModules(modules);
 
 		List<LanguageConfiguration> configList = new ArrayList<>();
@@ -125,45 +137,101 @@ public class DeepAnalysisService {
 	}
 	
 	@POST
+	@Path("/analyzePlain")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Operation(summary = "Performs a deep syntactic analysis of the input data.",
+		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",
+		requestBody = @RequestBody(
+						content = @Content(mediaType = "application/json",
+										schema = @Schema(implementation = DeepAnalysisInput.class),
+										examples = {
+											@ExampleObject(name = "Turn 0",
+													value = SAMPLE_INPUT_TURN0),
+											@ExampleObject(name = "Turn 1",
+													value = SAMPLE_INPUT_TURN1),
+											@ExampleObject(name = "Turn 2",
+													value = SAMPLE_INPUT_TURN2),
+											@ExampleObject(name = "Xmi",
+													value = SAMPLE_INPUT_XMI)
+										}
+						)
+					),
+		responses = {
+		        @ApiResponse(description = "The deep analysis result.",
+		        			content = @Content(schema = @Schema(implementation = IAnalysisOutput.class)
+		        ))
+	})
+	public IAnalysisOutput analyzePlain(
+			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
+		return analyze(input);
+	}
+	
+	
+	@POST
 	@Path("/analyze")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Operation(summary = "Performs a deep syntactic analysis of the input data.",
 		description = "Returns the result of the deep syntatic analysis, it is, a predicate-argument structure.",
 		requestBody = @RequestBody(
 						content = @Content(mediaType = "application/json",
-										schema = @Schema(implementation = CuniInput.class),
+										schema = @Schema(implementation = DeepAnalysisInput.class),
 										examples = {
 											@ExampleObject(name = "Turn 0",
-													value = SAMPLE_CUNI_INPUT_TURN0)
+													value = SAMPLE_INPUT_TURN0),
+											@ExampleObject(name = "Turn 1",
+													value = SAMPLE_INPUT_TURN1),
+											@ExampleObject(name = "Turn 2",
+													value = SAMPLE_INPUT_TURN2),
+											@ExampleObject(name = "Xmi",
+													value = SAMPLE_INPUT_XMI)
 										}
 						)
 					),
 		responses = {
 		        @ApiResponse(description = "The deep analysis result.",
-		        			content = @Content(schema = @Schema(implementation = DeepAnalysisOutput.class)
+		        			content = @Content(schema = @Schema(implementation = IAnalysisOutput.class)
 		        ))
 	})
-	public DeepAnalysisOutput analyze(
-			@Parameter(description = "Container for analysis input data.", required = true) CuniInput input) throws WelcomeException {
-
-        DeepAnalysisInput ourInput = CuniInput2DeepAnalysisInput.convert(input);
-        String conll = ourInput.getData().getConll();
-        System.out.println(conll);
+	public IAnalysisOutput analyze(
+			@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException {
         
-        int turn = 1;
-        if (conll.contains("Sebastià")) {
-            turn = 7;
-        } else if (conll.contains("Karim")) {
-            turn = 5;
-        } else if (conll.contains("apply")) {
-            turn = 3;
-        } else if (conll.contains("Hello")) {
-            turn = 1;
-        } else {
-            turn = 0;
-        }
-        DeepAnalysisOutput output = SampleResponses.generateResponse(turn);
+		IAnalysisOutput output = analyzer.analyze(input);
+        
 		return output;
+	}
+	
+	@GET
+	@Path("/status")
+	@Operation(summary = "Retrieve the services status.",
+		description = "Returns a status description of the service.",
+		responses = {
+		        @ApiResponse(description = "The services status.",
+		        			content = @Content(schema = @Schema(implementation = StatusOutput.class)
+		        ))
+	})
+	public StatusOutput getStatus() throws WelcomeException {
+		ServletContext application = config.getServletContext();
+		String build;
+		try {
+			build = new String(application.getResourceAsStream("META-INF/MANIFEST.MF").readAllBytes());
+			//build = DeepAnalysisService.class.getPackage().toString();
+		} catch (IOException e) {
+			throw new WelcomeException();
+		}
+		return new StatusOutput(build);
+	}
+	
+	@GET
+	@Path("/status/log")
+	@Operation(summary = "Retrieve the service log.",
+		description = "Returns a specific amount of log messages.",
+		responses = {
+		        @ApiResponse(description = "The log messages.",
+		        			content = @Content(schema = @Schema(implementation = StatusLogOutput.class)
+		        ))
+	})
+	public StatusLogOutput getLog(@QueryParam("limit") int limit) throws WelcomeException {
+		return new StatusLogOutput();
 	}
 
 }

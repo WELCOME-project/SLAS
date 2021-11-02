@@ -1,30 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <parent>
-        <groupId>edu.upf.taln.welcome</groupId>
-        <artifactId>slas-parent</artifactId>
-        <version>0.2.0</version>
-    </parent>
-    
-    <artifactId>slas-commons</artifactId>
-    <packaging>jar</packaging>
-    
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>edu.upf.taln.welcome</groupId>
+		<artifactId>slas-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>slas-commons</artifactId>
+	<packaging>jar</packaging>
+
 	<name>Welcome SLAS Commons</name>
-    
-    <dependencies>
-        
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.flow-controller</groupId>
+			<artifactId>flow-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.utils</groupId>
+			<artifactId>graph-uima</artifactId>
+			<version>${output-graph.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>edu.upf.taln.utils.pojos</groupId>
+			<artifactId>common-uima-types</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>edu.upf.taln.buddy.uima</groupId>
+			<artifactId>buddy-uima-types</artifactId>
+			<version>${common-types.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>flask-wrapper-commons</artifactId>
+		</dependency>
+		
+		<!-- TEST DEPENDENCIES -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-params</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+	        <groupId>org.junit.jupiter</groupId>
+	        <artifactId>junit-jupiter-engine</artifactId>
+		    <scope>test</scope>
+	    </dependency>
+	    
+	    <dependency>
+		    <groupId>org.assertj</groupId>
+		    <artifactId>assertj-core</artifactId>
+		    <version>3.16.1</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.dkpro.core</groupId>
+            <artifactId>dkpro-core-io-xmi-asl</artifactId>
+            <scope>test</scope>
         </dependency>
         
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.1.0.Final</version>
-        </dependency>
-        
-    </dependencies>    
+    </dependencies>
 </project>

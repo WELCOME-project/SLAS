@@ -1,0 +1,70 @@
+{
+  "speechActs" : [ {
+    "id" : "speech_act_1",
+    "type" : "Statement-non-opinion",
+    "anchor" : "Yes, I would like to apply for the First Reception Service.",
+    "entities" : [ ]
+  } ],
+  "entities" : [ {
+    "id" : "entity_1",
+    "type" : "concept",
+    "anchor" : "yes",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_2",
+    "type" : "concept",
+    "anchor" : "I",
+    "links" : [ ],
+    "locations" : [ ],
+    "confidence" : 0.0
+  }, {
+    "id" : "entity_3",
+    "type" : "concept",
+    "anchor" : "like",
+    "links" : [ "bn:00090365v" ],
+    "locations" : [ ],
+    "confidence" : 1.0
+  }, {
+    "id" : "entity_4",
+    "type" : "concept",
+    "anchor" : "apply",
+    "links" : [ "bn:00082705v" ],
+    "locations" : [ ],
+    "confidence" : 0.527614650780098
+  }, {
+    "id" : "entity_5",
+    "type" : "ORG",
+    "anchor" : "the first reception service",
+    "links" : [ "bn:00098197a" ],
+    "locations" : [ ],
+    "confidence" : 0.656876218253647
+  } ],
+  "relations" : [ {
+    "id" : "relation_1",
+    "predicate" : "entity_3",
+    "links" : [ "vn:31.2_like", "fn:Experiencer_focus" ],
+    "participants" : [ {
+      "roles" : [ ],
+      "entity" : "entity_1"
+    }, {
+      "roles" : [ "Agent", "A0" ],
+      "entity" : "entity_2"
+    }, {
+      "roles" : [ "Event", "Stimulus", "A1" ],
+      "entity" : "entity_4"
+    } ]
+  }, {
+    "id" : "relation_2",
+    "predicate" : "entity_4",
+    "links" : [ "vn:105_apply" ],
+    "participants" : [ {
+      "roles" : [ "Agent", "A0" ],
+      "entity" : "entity_2"
+    }, {
+      "roles" : [ "Theme", "A1" ],
+      "entity" : "entity_5"
+    } ]
+  } ]
+}

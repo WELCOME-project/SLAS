@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.upf.taln.welcome</groupId>
+		<artifactId>slas-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>slas-core</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Welcome SLA Core</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>edu.upf.taln.welcome</groupId>
+			<artifactId>slas-commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.flow-controller</groupId>
+			<artifactId>flow-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-asl</artifactId>
+			<version>${dkpro.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.wsd</groupId>
+			<artifactId>disambiguation-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.wsd</groupId>
+			<artifactId>edu.upf.taln.uima.wsd.item_annotator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.wsd</groupId>
+			<artifactId>extender-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.parser</groupId>
+			<artifactId>deep-parser-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>edu.upf.glicom.uima</groupId>
+					<artifactId>dbpedia-spotlight</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>uima-tagsets</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.glicom.uima</groupId>
+			<artifactId>spotlight-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>ner-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>sentiment-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>concept-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>speechact-detection-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.upf.taln.uima</groupId>
+			<artifactId>geolocation-wrapper</artifactId>
+			<version>${flask.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.upf.taln.uima.retokenize</groupId>
+			<artifactId>MultiwordRetokenizer</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-io-conll-asl</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.github.heideltime</groupId>
+			<artifactId>heideltime-types</artifactId>
+			<version>${heideltime.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.github.heideltime</groupId>
+			<artifactId>heideltime-core</artifactId>
+			<version>${heideltime.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.uima</groupId>
+			<artifactId>ConceptMapper</artifactId>
+			<version>2.10.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>2.9.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-core</artifactId>
+			<version>3.13.1</version>
+		</dependency>
+		
+		<!-- TEST -->
+		<dependency>
+            <groupId>org.dkpro.core</groupId>
+            <artifactId>dkpro-core-io-xmi-asl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-stanfordnlp-gpl</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+        
+        <!-- MODELS -->
+
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-segmenter-en-ud</artifactId>
+			<version>20191206.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-tagger-en-ud</artifactId>
+			<version>20191206.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.dkpro.core</groupId>
+			<artifactId>dkpro-core-udpipe-model-parser-en-ud</artifactId>
+			<version>20191206.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${mvn.compiler.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
