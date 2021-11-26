@@ -1,5 +1,6 @@
 package edu.upf.taln.welcome.slas.commons.output;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
@@ -33,6 +34,8 @@ import edu.upf.taln.flask_wrapper.type.GeolocationCandidate;
 import edu.upf.taln.parser.deep_parser.types.DeepToken;
 import edu.upf.taln.parser.deep_parser.types.PredArgsDependency;
 import edu.upf.taln.parser.deep_parser.types.PredArgsToken;
+import edu.upf.taln.uima.flow.pojos.EnginesExecutionData;
+import edu.upf.taln.uima.flow.types.EnginesExecution;
 import edu.upf.taln.utils.pojos.uima.babelnet.BabelnetGraph;
 import edu.upf.taln.utils.pojos.uima.concept.ConceptGraph;
 import edu.upf.taln.utils.pojos.uima.dbpedia.DbpediaGraph;
@@ -56,11 +59,24 @@ import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
 
 public class OutputGenerator {
         
-    protected static AnalysisOutputMetadata generateMetadata() {
+    protected static AnalysisOutputMetadata generateMetadata(JCas jCas) {
 		AnalysisOutputMetadata outputMetadata = new AnalysisOutputMetadata();
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Date date = new Date();
 		outputMetadata.setDate(dateFormat.format(date));
+
+        try {
+            EnginesExecution ee = JCasUtil.selectSingle(jCas, EnginesExecution.class);
+            ObjectMapper om = new ObjectMapper();
+            EnginesExecutionData executionData = om.readValue(ee.getExecutionJson(), EnginesExecutionData.class);
+            outputMetadata.setTimes(executionData.getTimeData());
+
+        } catch (IllegalArgumentException e) {
+            //If there are not engine executions, ignore
+            //If there are more than one, maybe warn? 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 		return outputMetadata;
 	}
@@ -423,7 +439,7 @@ public class OutputGenerator {
 			analysisResult.setLanguage(jCas.getDocumentLanguage());
 		}
 
-		AnalysisOutputMetadata outputMetadata = generateMetadata();
+		AnalysisOutputMetadata outputMetadata = generateMetadata(jCas);
 		analysisResult.setMetadata(outputMetadata);
 
 		WelcomeDemoResult result = generateDemoResult(jCas);
@@ -443,7 +459,7 @@ public class OutputGenerator {
 			analysisResult.setLanguage(jCas.getDocumentLanguage());
 		}
 
-		AnalysisOutputMetadata outputMetadata = generateMetadata();
+		AnalysisOutputMetadata outputMetadata = generateMetadata(jCas);
 		analysisResult.setMetadata(outputMetadata);
 
 
