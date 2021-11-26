@@ -59,7 +59,7 @@ public class OutputGeneratorTest {
     public void testGenerateMetadata() {
         System.out.println("generateMetadata");
         AnalysisOutputMetadata expResult = null;
-        AnalysisOutputMetadata result = OutputGenerator.generateMetadata();
+        AnalysisOutputMetadata result = OutputGenerator.generateMetadata(null); //TODO: needs jCAS as argument
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
