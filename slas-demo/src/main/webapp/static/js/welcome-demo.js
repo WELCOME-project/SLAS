@@ -25,8 +25,8 @@ head.js(
 );
 
 //Services URL's
-var analyzeURL = "../dla-service/api/dla/analyze";
-var descriptionURL = "../dla-service/api/dla/description";
+var analyzeURL = "../slas-en-service/api/dla/analyze";
+var descriptionURL = "../slas-en-service/api/dla/description";
 
 function spinButton() {
     var button = $("#submitButton");

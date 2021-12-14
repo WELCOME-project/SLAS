@@ -45,10 +45,14 @@
 
 	<modules>
 		<module>slas-commons</module>
-		<module>slas-core</module>
-		<module>dla-service</module>
-		<module>welcome-demos</module>
+		<module>slas-en</module>
+		<module>slas-ca</module>
+		<module>slas-de</module>
+		<module>slas-el</module>
+		<module>slas-api-service</module>
 		<module>slas-client</module>
+		<module>slas-demo</module>
+		
 	</modules>
 
 	<distributionManagement>

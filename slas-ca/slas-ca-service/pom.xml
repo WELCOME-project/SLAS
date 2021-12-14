@@ -3,15 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>edu.upf.taln.welcome</groupId>
-		<artifactId>slas-parent</artifactId>
+		<groupId>edu.upf.taln.welcome.ca</groupId>
+		<artifactId>slas-ca</artifactId>
 		<version>1.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>dla-service</artifactId>
+	<artifactId>slas-ca-service</artifactId>
 	<packaging>war</packaging>
 
-	<name>Welcome DLA Service</name>
+	<name>Welcome SLAS Catalan Service</name>
 
 	<properties>
 		<swagger.download.skipcache>false</swagger.download.skipcache>
@@ -30,11 +30,11 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
+		<!--dependency>
 			<groupId>edu.upf.taln.welcome</groupId>
 			<artifactId>slas-core</artifactId>
 			<version>${project.version}</version>
-		</dependency>
+		</dependency-->
 
 		<dependency>
 			<groupId>edu.upf.taln.uima</groupId>
