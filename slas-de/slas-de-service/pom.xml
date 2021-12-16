@@ -35,6 +35,12 @@
 			<artifactId>slas-core</artifactId>
 			<version>${project.version}</version>
 		</dependency-->
+		
+		<dependency>
+			<groupId>edu.upf.taln.xr4drama</groupId>
+			<artifactId>xr4drama-client</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<groupId>edu.upf.taln.uima</groupId>
