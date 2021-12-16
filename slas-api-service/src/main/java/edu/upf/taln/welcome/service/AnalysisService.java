@@ -71,6 +71,28 @@ public class AnalysisService {
 			"    \"text\": \"Sí, m'agradaria subscriure'm a First Reception Service.\"" + 
 			"  } \n" + 
 			"}";
+	private static final String SAMPLE_INPUT_DE = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"de\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Ja, ich möchte mich für den Erstaufnahmeservice bewerben.\"" + 
+			"  } \n" + 
+			"}";
+	private static final String SAMPLE_INPUT_EL = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"el\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Ναι, θα ήθελα να κάνω αίτηση για την Υπηρεσία Πρώτης Υποδοχής.\"" + 
+			"  } \n" + 
+			"}";
 
 
 	/**
@@ -110,10 +132,14 @@ public class AnalysisService {
 						content = @Content(mediaType = "application/json",
 										schema = @Schema(implementation = DeepAnalysisInput.class),
 										examples = {
-											@ExampleObject(name = "Turn 1",
+											@ExampleObject(name = "English",
 													value = SAMPLE_INPUT_EN),
-											@ExampleObject(name = "Turn 2",
-													value = SAMPLE_INPUT_CA)
+											@ExampleObject(name = "Catalan",
+													value = SAMPLE_INPUT_CA),
+											@ExampleObject(name = "German",
+													value = SAMPLE_INPUT_DE),
+											@ExampleObject(name = "Greek",
+													value = SAMPLE_INPUT_EL)
 										}
 						)
 					),
