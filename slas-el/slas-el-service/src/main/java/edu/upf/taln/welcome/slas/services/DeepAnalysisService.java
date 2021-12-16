@@ -39,6 +39,7 @@ import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.utils.AutoDeletingTempFile;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -170,22 +171,18 @@ public class DeepAnalysisService {
 		}
 		
 		// create a temporary file
-		java.nio.file.Path tempFile = Files.createTempFile(null, null);
-	
-		// Writes a string to the above temporary file
-		Files.write(tempFile, output.getXmi().getBytes(StandardCharsets.UTF_8));
-		
-		TypeSystemDescription typesystem = TypeSystemDescriptionFactory.createTypeSystemDescription();
-		JCas jCas = JCasFactory.createJCas(tempFile.toAbsolutePath().toString(), typesystem);
-		
-		/*String language = metadata.getLanguage();
-		DocumentMetaData docMetadata = DocumentMetaData.create(jCas);
-        docMetadata.setDocumentId("welcome-document");
-        if(language != null) {
-            docMetadata.setLanguage(language);
-        }*/
-        
-        IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
+		IAnalysisOutput analysisResult;
+		// create a temporary file
+		try (AutoDeletingTempFile wrapper = new AutoDeletingTempFile()) {
+			Files.write(wrapper.getFile(), output.getXmi().getBytes(StandardCharsets.UTF_8));
+			
+			TypeSystemDescription typesystem = TypeSystemDescriptionFactory.createTypeSystemDescription();
+			JCas jCas = JCasFactory.createJCas(wrapper.getFile().toAbsolutePath().toString(), typesystem);
+	        
+			analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
+	    } catch (IOException e) {
+	    	throw new WelcomeException(e);
+	    }
 		
 		return analysisResult;
 	}
