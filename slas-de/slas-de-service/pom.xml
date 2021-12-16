@@ -107,11 +107,11 @@
 			<version>${glassfish.jersey.version}</version>
 		</dependency>
 
-		<dependency>
+		<!-- dependency>
 			<groupId>org.glassfish.jersey.inject</groupId>
 			<artifactId>jersey-hk2</artifactId>
 			<version>${glassfish.jersey.version}</version>
-		</dependency>
+		</dependency-->
 
 		<dependency>
 			<groupId>javax.activation</groupId>

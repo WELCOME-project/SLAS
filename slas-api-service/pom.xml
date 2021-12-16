@@ -36,6 +36,12 @@
             <artifactId>slas-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
+        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>slas-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     
         <!-- SWAGGER -->
         <dependency>
@@ -138,13 +144,6 @@
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
             <version>2.1</version>
-        </dependency>
-        
-        <!-- OTHER -->
-        <dependency>
-            <groupId>edu.upf.taln.audio</groupId>
-		    <artifactId>audio-classifier-core</artifactId>
-		    <version>0.0.1-SNAPSHOT</version>
         </dependency>
     
         <!-- TEST -->
