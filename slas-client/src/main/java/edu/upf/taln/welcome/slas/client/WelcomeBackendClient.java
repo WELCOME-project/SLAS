@@ -22,6 +22,7 @@ import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.AnalysisOutputImpl;
+import edu.upf.taln.welcome.slas.commons.output.DeepAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.commons.output.XmiResult;
 
@@ -57,6 +58,10 @@ public class WelcomeBackendClient<T extends IAnalysisOutput> {
         switch (meta.getOutputType()) {
             case xmi:
                 outputClass = XmiResult.class;
+                break;
+                
+            case welcome:
+                outputClass = DeepAnalysisOutput.class;
                 break;
 
             case demo:

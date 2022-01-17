@@ -352,7 +352,15 @@ public class OutputGenerator {
             sa.setId("speech_act_" + j);
             sa.setType(speechAct.getLabel());
             sa.setAnchor(speechAct.getCoveredText());
-            sa.setEntities(new ArrayList<>());
+            
+            List<String> entitiesList = new ArrayList<>();
+            List<PredArgsToken> matchingPredArgsTokens = JCasUtil.selectCovered(PredArgsToken.class, speechAct);
+            for (PredArgsToken matchingPredArgsToken : matchingPredArgsTokens) {
+            	Entity matchingEntity = tokenMap.get(matchingPredArgsToken.hashCode());
+            	entitiesList.add(matchingEntity.getId());
+            }
+            
+            sa.setEntities(entitiesList);
             
             speechActs.add(sa);
             j++;
