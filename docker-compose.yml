@@ -1,9 +1,37 @@
 version: '3.2'
 services:
-  las-en:
-    image: maven-taln.upf.edu/welcome/dla:2021-11-26
+  slas-api:
+    image: maven-taln.upf.edu/welcome/slas_api:2022-02-16
+    environment:
+      - LANGUAGE_SERVICES_CONFIGURATION_JSON={"language_services_map":{"en":"http://slas-en:8080/slas-services-en/api/dla","ca":"http://slas-ca:8080/slas-services-ca/api/ca","de":"http://slas-ca:8080/slas-services-de/api/de","el":"http://slas-ca:8080/slas-services-el/api/el"}}
     networks:
-      - welcomenet
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas.${DOMAIN}"
+        - "traefik.port=8080"
+  slas-demo:
+    image: maven-taln.upf.edu/welcome/slas_demo:2021-12-16
+    networks:
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas-demo.${DOMAIN}"
+        - "traefik.port=8080"
+
+  slas-en:
+    image: maven-taln.upf.edu/welcome/slas_en:2022-02-16
+    networks:
       - traefik
     deploy:
       replicas: 1
@@ -12,7 +40,7 @@ services:
           cpus: "4"
           memory: 20GB
       labels:
-        - "traefik.frontend.rule=Host:welcome-dla.${DOMAIN}"
+        - "traefik.frontend.rule=Host:welcome-slas-en.${DOMAIN}"
         - "traefik.port=8080"
     volumes:
       - type: bind
@@ -52,10 +80,58 @@ services:
       - TAXONOMY_PATH=/resources/taxonomy.ttl
       - TAXONOMY_SERVICE_URL=https://welcome-project.upf.edu/taxonomy/xml
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
+      
+  slas-ca:
+    image: maven-taln.upf.edu/welcome/slas_ca:2022-02-16
+    networks:
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas-ca.${DOMAIN}"
+        - "traefik.port=8080"
+    environment:
+      - JAVA_OPTS=-Xmx16g -XX:MaxPermSize=1024m
+
+  slas-de:
+    image: maven-taln.upf.edu/welcome/slas_de:2022-02-16
+    networks:
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas-de.${DOMAIN}"
+        - "traefik.port=8080"
+    environment:
+      - JAVA_OPTS=-Xmx16g -XX:MaxPermSize=1024m
+
+  slas-el:
+    image: maven-taln.upf.edu/welcome/slas_el:2022-02-16
+    networks:
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas-el.${DOMAIN}"
+        - "traefik.port=8080"
+    environment:
+      - JAVA_OPTS=-Xmx16g -XX:MaxPermSize=1024m
+
   dialogtag:
     image: maven-taln.upf.edu/uima_taln_dialogtag_en:2021-02-05
     networks:
-      - welcomenet
       - traefik
     deploy:
       replicas: 1
@@ -69,7 +145,6 @@ services:
   dms:
     image: registry.gitlab.com/talnupf/welcome/dms:2021-10-05
     networks:
-      - welcomenet
       - traefik
     deploy:
       replicas: 1
@@ -83,7 +158,6 @@ services:
   nlg:
     image: registry.gitlab.com/talnupf/welcome/nlg:2021-10-28
     networks:
-      - welcomenet
       - traefik
     deploy:
       replicas: 1
@@ -97,7 +171,6 @@ services:
   tts-en:
     image: registry.gitlab.com/talnupf/welcome/tts:2020-06-20
     networks:
-      - welcomenet
       - traefik
     deploy:
       replicas: 0
@@ -108,20 +181,6 @@ services:
       labels:
         - "traefik.frontend.rule=Host:welcome-tts-en.${DOMAIN}"
         - "traefik.port=80"
-  asr:
-    image: maven-taln.upf.edu/welcome/but-asr-en:v20210610
-    networks:
-      - welcomenet
-      - traefik
-    deploy:
-      replicas: 0
-      resources:
-        limits:
-          cpus: "4"
-          memory: 4GB
-      labels:
-        - "traefik.frontend.rule=Host:welcome-asr.${DOMAIN}"
-        - "traefik.port=9080"
   speech2text-en:
     image: maven-taln.upf.edu/ingenious/speech2text_flashlight:2021-03-08
     networks:
@@ -159,6 +218,5 @@ services:
         - "traefik.port=80"
         - "traefik.enable=true"        
 networks:
-  welcomenet:
   traefik:
     external: true
