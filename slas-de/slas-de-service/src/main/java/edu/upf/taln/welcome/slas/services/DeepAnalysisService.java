@@ -172,8 +172,10 @@ public class DeepAnalysisService {
 		XmiOutput output;
 		try {
 			//output = client.analyze(AnalysisType.PUC1, OutputType.xmi, input.getData().getText());
+			log.info("calling xr4drama-services-de backend");
 			output = client.analyze(xr4dramaContainer);
 		} catch (Xr4dramaClientException e) {
+			log.warn("error getting analysis from backend", e);
 			throw new WelcomeException(e);
 		}
 		

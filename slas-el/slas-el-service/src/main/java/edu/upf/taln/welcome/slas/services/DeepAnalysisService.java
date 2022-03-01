@@ -165,8 +165,10 @@ public class DeepAnalysisService {
 		XmiResult output;
 		try {
 			//output = client.analyze(AnalysisType.PUC1, OutputType.xmi, input.getData().getText());
+			log.info("calling mindspaces-services-el backend");
 			output = client.analyze(mindspacesContainer);
 		} catch (MindspacesClientException e) {
+			log.warn("error getting analysis from backend", e);
 			throw new WelcomeException(e);
 		}
 		
