@@ -16,7 +16,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-slas.${DOMAIN}"
         - "traefik.port=8080"
   slas-demo:
-    image: maven-taln.upf.edu/welcome/slas_demo:2021-12-16
+    image: maven-taln.upf.edu/welcome/slas_demo:2022-02-16
     networks:
       - traefik
     deploy:
@@ -143,7 +143,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2021-10-05
+    image: registry.gitlab.com/talnupf/welcome/dms:2022-02-28
     networks:
       - traefik
     deploy:
@@ -156,7 +156,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2021-10-28
+    image: registry.gitlab.com/talnupf/welcome/nlg:2022-02-28
     networks:
       - traefik
     deploy:
