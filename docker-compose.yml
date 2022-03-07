@@ -68,15 +68,15 @@ services:
         target: "/resources/disambiguation_properties-resources.en.txt"
         read_only: true
     environment:
-      - DBPEDIA_ENDPOINT=http://spotlight-en.p.taln.ml/rest
-      #- CONCEPT_URL=http://concepts-en.p.taln.ml
-      - CONCEPT_URL=http://concepts-en.v.taln.ml
-      - NER_URL=http://ner-spacy-en.v.taln.ml
+      - DBPEDIA_ENDPOINT=http://spotlight-en.p.grivolla.net/rest
+      #- CONCEPT_URL=http://concepts-en.p.grivolla.net
+      - CONCEPT_URL=http://concepts-en.v.grivolla.net
+      - NER_URL=http://ner-spacy-en.v.grivolla.net
       - BABELNET_CONFIG=/resources/babelconfig-4.0.1
       - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
       - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt
       - SPEECHACT_URL=https://welcome-project.upf.edu/dialogtag/
-      - GEOLOCATION_URL=http://geolocation.v.taln.ml/
+      - GEOLOCATION_URL=http://geolocation.v.grivolla.net/
       - TAXONOMY_PATH=/resources/taxonomy.ttl
       - TAXONOMY_SERVICE_URL=https://welcome-project.upf.edu/taxonomy/xml
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
