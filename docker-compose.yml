@@ -156,7 +156,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2022-02-28
+    image: registry.gitlab.com/talnupf/welcome/nlg:2022-03-07
     networks:
       - traefik
     deploy:
