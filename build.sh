@@ -48,8 +48,10 @@ for XR_LANG in "${XR_LANGS[@]}"; do
     docker build --build-arg lang=${XR_LANG} -t maven-taln.upf.edu/welcome/slas_${XR_LANG}:${TAG} .
     docker push maven-taln.upf.edu/welcome/slas_${XR_LANG}:${TAG}
     #docker tag maven-taln.upf.edu/welcome/slas_${XR_LANG}:${TAG} nexus-dockers.everis.com:10110/upf/slas_${XR_LANG}:${TAG} && docker push nexus-dockers.everis.com:10110/upf/slas_${XR_LANG}:${TAG}
-    #docker tag maven-taln.upf.edu/welcome/slas_${XR_LANG}:${TAG} registry.gitlab.com/talnupf/welcome/slas_${XR_LANG}:${TAG} && docker push registry.gitlab.com/talnupf/welcome/slas_${XR_LANG}:${TAG}
+    #docker tag maven-taln.upf.edu/welcome/slas_${XR_LANG}:${TAG} registry.gitlab.com/talnupf/welcome/slas/slas_${XR_LANG}:${TAG} && docker push registry.gitlab.com/talnupf/welcome/slas/slas_${XR_LANG}:${TAG}
 done
 
 docker build -f Dockerfile.demo -t maven-taln.upf.edu/welcome/slas_demo:${TAG} . && docker push maven-taln.upf.edu/welcome/slas_demo:${TAG}
+#docker tag maven-taln.upf.edu/welcome/slas_demo:${TAG} registry.gitlab.com/talnupf/welcome/slas/slas_demo:${TAG} && docker push registry.gitlab.com/talnupf/welcome/slas/slas_demo:${TAG}
 docker build -f Dockerfile.api -t maven-taln.upf.edu/welcome/slas_api:${TAG} . && docker push maven-taln.upf.edu/welcome/slas_api:${TAG}
+#docker tag maven-taln.upf.edu/welcome/slas_api:${TAG} registry.gitlab.com/talnupf/welcome/slas/slas_api:${TAG} && docker push registry.gitlab.com/talnupf/welcome/slas/slas_api:${TAG}

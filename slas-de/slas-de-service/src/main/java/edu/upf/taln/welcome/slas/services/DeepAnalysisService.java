@@ -1,6 +1,8 @@
 package edu.upf.taln.welcome.slas.services;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
@@ -19,10 +21,14 @@ import javax.ws.rs.core.MediaType;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.uima.UIMAException;
+import org.apache.uima.cas.CAS;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.fit.factory.TypeSystemDescriptionFactory;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.metadata.TypeSystemDescription;
+import org.apache.uima.util.CasCreationUtils;
+import org.apache.uima.util.CasIOUtils;
+import org.apache.uima.util.CasLoadMode;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
@@ -185,8 +191,12 @@ public class DeepAnalysisService {
 			Files.write(wrapper.getFile(), output.getData().getXmi().getBytes(StandardCharsets.UTF_8));
 			
 			TypeSystemDescription typesystem = TypeSystemDescriptionFactory.createTypeSystemDescription();
-			JCas jCas = JCasFactory.createJCas(wrapper.getFile().toAbsolutePath().toString(), typesystem);
-	        
+			//JCas jCas = JCasFactory.createJCas(wrapper.getFile().toAbsolutePath().toString(), typesystem);
+			CAS cas = CasCreationUtils.createCas(typesystem, null, null);
+			try (InputStream is = new FileInputStream(wrapper.getFile().toAbsolutePath().toString())) {
+				CasIOUtils.load(is, null, cas, CasLoadMode.LENIENT);
+			}
+			JCas jCas = cas.getJCas();
 			analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
 	    } catch (IOException e) {
 	    	throw new WelcomeException(e);
