@@ -82,7 +82,7 @@ services:
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
       
   slas-ca:
-    image: maven-taln.upf.edu/welcome/slas_ca:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_ca:2022-03-11
     networks:
       - traefik
     deploy:
@@ -200,7 +200,7 @@ services:
         - "traefik.port=80"
         - "traefik.enable=true"
   tts-wrapper:
-    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-02-07
+    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-03-11
     networks:
       - traefik
     volumes:

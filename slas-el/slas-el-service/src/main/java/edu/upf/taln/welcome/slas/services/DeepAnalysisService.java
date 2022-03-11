@@ -33,7 +33,7 @@ import edu.upf.taln.mindspaces.pojos.input.MindspacesData;
 import edu.upf.taln.mindspaces.pojos.input.MindspacesMeta;
 import edu.upf.taln.mindspaces.pojos.input.ModuleOptions;
 import edu.upf.taln.mindspaces.pojos.output.OutputType;
-import edu.upf.taln.mindspaces.pojos.output.XmiResult;
+import edu.upf.taln.mindspaces.pojos.output.XmiOutputImpl;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
@@ -114,11 +114,11 @@ public class DeepAnalysisService {
 
 	@Context
 	ServletConfig config;
-    private final MindspacesBackendClient<XmiResult> client;
+    private final MindspacesBackendClient<XmiOutputImpl> client;
 
 	public DeepAnalysisService() throws WelcomeException {
 		log.info("getting Analyzer instance");
-		client = new MindspacesBackendClient<>("https://taln.upf.edu/mindspaces/mindspaces-services-el/", "el", XmiResult.class);
+		client = new MindspacesBackendClient<>("https://taln.upf.edu/mindspaces/mindspaces-services-el/", "el", XmiOutputImpl.class);
 	}    
 	
 	@POST
@@ -162,7 +162,7 @@ public class DeepAnalysisService {
 		mindspacesData.setText(input.getData().getText());
 		mindspacesContainer.setData(mindspacesData);
 		
-		XmiResult output;
+		XmiOutputImpl output;
 		try {
 			//output = client.analyze(AnalysisType.PUC1, OutputType.xmi, input.getData().getText());
 			log.info("calling mindspaces-services-el backend");
