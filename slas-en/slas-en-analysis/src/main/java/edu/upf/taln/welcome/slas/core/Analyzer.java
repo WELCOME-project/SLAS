@@ -17,6 +17,8 @@ import org.apache.uima.resource.ResourceInitializationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
+import edu.upf.taln.flask_wrapper.type.SpeechAct;
 
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
@@ -30,6 +32,11 @@ import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
 import edu.upf.taln.welcome.slas.core.taxonomy.Concepts;
 import edu.upf.taln.welcome.slas.core.taxonomy.TaxonomyProcessor;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import org.apache.uima.fit.util.JCasUtil;
 
 
 /**
@@ -177,6 +184,7 @@ public class Analyzer {
             JCas jCas = JCasWelcomeFactory.createJCas(input);
             
             pipeline.process(jCas);
+			postprocess(jCas);
             
             InputMetadata metadata = input.getMetadata();
             IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
@@ -186,6 +194,29 @@ public class Analyzer {
 		} catch (Exception e) { // never crash the service, no matter what happens
 			log.error("Error processing document", e);
 			throw new WelcomeException("Error processing document", e);
+		}
+	}
+	
+	protected static void postprocess(JCas jCas) {
+		
+		for (Sentence sentence : JCasUtil.select(jCas, Sentence.class)) {
+			String text = sentence.getCoveredText();
+			text = text.toLowerCase();
+
+			HashSet<String> hedgeTexts = new HashSet<>(Arrays.asList(new String[]{"hm.", "see.", "oh.", "ah."}));
+			String speechActLabel = null;
+			if (hedgeTexts.contains(text.trim())) {
+				speechActLabel = "Hedge";
+			} else if ("yes, thank you.".equals(text)) {
+				speechActLabel = "Agree/Accept";
+			}
+
+			if (speechActLabel != null) {
+				List<SpeechAct> speechActs = JCasUtil.selectCovered(SpeechAct.class, sentence);
+				for (SpeechAct speechAct : speechActs) {
+					speechAct.setLabel(speechActLabel);
+				}
+			}
 		}
 	}
 }
