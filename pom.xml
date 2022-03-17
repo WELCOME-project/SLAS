@@ -36,7 +36,7 @@
 		<flask.version>1.3.0</flask.version>
 		<disambiguation.version>1.5.0</disambiguation.version>
 		<spotlight.version>0.15.0</spotlight.version>
-		<heideltime.version>3.0.0</heideltime.version>
+		<heideltime.version>3.1.0-SNAPSHOT</heideltime.version>
 		<output-graph.version>0.4.0</output-graph.version>
 		<common-types.version>1.1.0</common-types.version>
 		<retokenizer.version>0.3.1</retokenizer.version>

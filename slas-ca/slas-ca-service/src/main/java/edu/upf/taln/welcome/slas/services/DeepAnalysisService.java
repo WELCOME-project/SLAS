@@ -36,7 +36,6 @@ import edu.upf.taln.mindspaces.pojos.input.MindspacesContainer;
 import edu.upf.taln.mindspaces.pojos.input.MindspacesContainer.AnalysisType;
 import edu.upf.taln.mindspaces.pojos.input.MindspacesData;
 import edu.upf.taln.mindspaces.pojos.input.MindspacesMeta;
-import edu.upf.taln.mindspaces.pojos.input.ModuleOptions;
 import edu.upf.taln.mindspaces.pojos.output.OutputType;
 import edu.upf.taln.mindspaces.pojos.output.XmiOutputImpl;
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
@@ -158,7 +157,7 @@ public class DeepAnalysisService {
 		
 		MindspacesContainer mindspacesContainer = new MindspacesContainer();
 		
-		MindspacesMeta mindspacesMeta = MindspacesContainerFactory.getConnexionsMeta(AnalysisType.PUC1, OutputType.xmi, metadata.getLanguage());
+		MindspacesMeta mindspacesMeta = MindspacesContainerFactory.getMindspacesMeta(AnalysisType.WELCOME, OutputType.xmi, metadata.getLanguage());
 		//mindspacesMeta.setCandidatesOptions(new ModuleOptions(false));
 		//mindspacesMeta.setBabelnetOptions(new ModuleOptions(false));
 		mindspacesContainer.setMeta(mindspacesMeta);
