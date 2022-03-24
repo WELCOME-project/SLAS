@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   slas-api:
-    image: maven-taln.upf.edu/welcome/slas_api:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_api:2022-03-23
     environment:
       - LANGUAGE_SERVICES_CONFIGURATION_JSON={"language_services_map":{"en":"http://slas-en:8080/slas-services-en/api/dla","ca":"http://slas-ca:8080/slas-services-ca/api/ca","de":"http://slas-de:8080/slas-services-de/api/de","el":"http://slas-el:8080/slas-services-el/api/el"}}
     networks:
@@ -16,7 +16,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-slas.${DOMAIN}"
         - "traefik.port=8080"
   slas-demo:
-    image: maven-taln.upf.edu/welcome/slas_demo:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_demo:2022-03-23
     networks:
       - traefik
     deploy:
@@ -30,7 +30,7 @@ services:
         - "traefik.port=8080"
 
   slas-en:
-    image: maven-taln.upf.edu/welcome/slas_en:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_en:2022-03-23
     networks:
       - traefik
     deploy:
@@ -82,7 +82,7 @@ services:
       - JAVA_OPTS=-Xmx16g -Xms4g -XX:MaxPermSize=1024m
       
   slas-ca:
-    image: maven-taln.upf.edu/welcome/slas_ca:2022-03-11
+    image: maven-taln.upf.edu/welcome/slas_ca:2022-03-23
     networks:
       - traefik
     deploy:
@@ -98,7 +98,7 @@ services:
       - JAVA_OPTS=-Xmx16g -XX:MaxPermSize=1024m
 
   slas-de:
-    image: maven-taln.upf.edu/welcome/slas_de:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_de:2022-03-23
     networks:
       - traefik
     deploy:
@@ -114,7 +114,7 @@ services:
       - JAVA_OPTS=-Xmx16g -XX:MaxPermSize=1024m
 
   slas-el:
-    image: maven-taln.upf.edu/welcome/slas_el:2022-03-08
+    image: maven-taln.upf.edu/welcome/slas_el:2022-03-23
     networks:
       - traefik
     deploy:
@@ -156,7 +156,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2022-03-08
+    image: registry.gitlab.com/talnupf/welcome/nlg:2022-03-21
     networks:
       - traefik
     deploy:
