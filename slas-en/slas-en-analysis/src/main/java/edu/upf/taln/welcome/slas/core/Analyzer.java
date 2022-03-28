@@ -25,6 +25,7 @@ import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
 import edu.upf.taln.welcome.slas.commons.input.OutputType;
 import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
+import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
@@ -169,7 +170,15 @@ public class Analyzer {
 			throw new ResourceInitializationException(e);
 		}
     }
-    
+
+	private void preprocess(DeepAnalysisInput input) {
+		InputData data = input.getData();
+		String text = data.getText();
+		String replaced = text.replaceAll("Yeah", "Yes");
+		replaced = replaced.replaceAll("yeah", "yes");
+		data.setText(replaced);
+	}	
+	
 	/**
 	 * Analyzes a given input
      * 
@@ -181,6 +190,7 @@ public class Analyzer {
 	public IAnalysisOutput analyze(DeepAnalysisInput input) throws WelcomeException {
 
 		try {            
+			preprocess(input);
             JCas jCas = JCasWelcomeFactory.createJCas(input);
             
             pipeline.process(jCas);
