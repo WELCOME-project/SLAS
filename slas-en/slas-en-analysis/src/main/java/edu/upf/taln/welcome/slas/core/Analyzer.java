@@ -5,39 +5,35 @@ import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
 import java.io.File;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
+import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 import edu.upf.taln.flask_wrapper.type.SpeechAct;
-
 import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.factories.OutputFactory;
-import edu.upf.taln.welcome.slas.commons.input.OutputType;
-import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
-import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory.InputType;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
 import edu.upf.taln.welcome.slas.core.taxonomy.Concepts;
 import edu.upf.taln.welcome.slas.core.taxonomy.TaxonomyProcessor;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import org.apache.uima.fit.util.JCasUtil;
 
 
 /**
@@ -171,10 +167,14 @@ public class Analyzer {
 		}
     }
 
-	private void preprocess(DeepAnalysisInput input) {
+	protected static void preprocess(DeepAnalysisInput input) {
 		InputData data = input.getData();
 		String text = data.getText();
-		String replaced = text.replaceAll("Yeah", "Yes");
+		String replaced = text;
+		if (!text.trim().matches("(?s).*[.?!]$")) {
+			replaced = text.trim() + " .";
+		}
+		replaced = replaced.replaceAll("Yeah", "Yes");
 		replaced = replaced.replaceAll("yeah", "yes");
 		data.setText(replaced);
 	}	
@@ -190,7 +190,7 @@ public class Analyzer {
 	public IAnalysisOutput analyze(DeepAnalysisInput input) throws WelcomeException {
 
 		try {            
-			preprocess(input);
+			Analyzer.preprocess(input);
             JCas jCas = JCasWelcomeFactory.createJCas(input);
             
             pipeline.process(jCas);
