@@ -92,6 +92,7 @@ public class OutputGeneratorTest {
         //fileName = "one_space.xmi";
         //fileName = "one_space.xmi";
         //fileName = "prototype1_sentences.xmi";
+        //fileName = "new_predarg_relations.xmi";
         
         String basePath = "src/test/resources/welcome/";
         File typesystem = new File(basePath, "TypeSystem.xml");

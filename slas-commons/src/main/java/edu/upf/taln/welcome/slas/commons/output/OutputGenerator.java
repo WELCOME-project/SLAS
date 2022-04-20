@@ -159,6 +159,22 @@ public class OutputGenerator {
         
         return roles;
     }
+
+	private static String extractParentRole(PredArgsToken token, String relationLabel) {
+
+        String feats = token.getFeatures();
+		
+		String role = null;
+		if (feats != null && !feats.isEmpty()) {
+	        Map<String, String> featMap = Pattern.compile("\\|")
+	            .splitAsStream(feats)
+	            .map(feat -> feat.split("=", 2))
+	            .collect(Collectors.toMap(a -> a[0], a -> removeQuotes(a[1])));
+			
+			role = featMap.get(relationLabel + "_role");
+		}
+		return role;
+	}
     
     private static List<Relation> extractRelations(Collection<PredArgsDependency> relationCollection, TreeMap<Integer, Entity> tokenMap) {
         
@@ -187,6 +203,10 @@ public class OutputGenerator {
                 }
                 
                 List<String> roles = extractRoles(childAnn, childEntity);
+				String parentRole = extractParentRole(govAnn, depAnn.getDependencyType());
+				if (parentRole != null) {
+					roles.add(parentRole);
+				}
 
                 Participant participant = new Participant();
                 participant.setRoles(roles);
