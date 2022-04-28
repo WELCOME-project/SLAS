@@ -211,13 +211,20 @@ public class Analyzer {
 		
 		for (Sentence sentence : JCasUtil.select(jCas, Sentence.class)) {
 			String text = sentence.getCoveredText();
-			text = text.toLowerCase();
+			text = text.trim().toLowerCase();
+			if (text.endsWith(" .")) {
+				text = text.substring(0, text.length() - 2);
+			} else if(text.endsWith(".")) {
+				text = text.substring(0, text.length() - 1);
+			}
 
-			HashSet<String> hedgeTexts = new HashSet<>(Arrays.asList(new String[]{"hm.", "see.", "oh.", "ah."}));
+			HashSet<String> hedgeTexts = new HashSet<>(Arrays.asList(new String[]{"hm", "see", "oh", "ah"}));
+			HashSet<String> agreeAccept = new HashSet<>(Arrays.asList(new String[]{"it s okay", "it's okay", "it is okay", "okay that s fine", "okay that's fine", "okay that is fine", "okay", "ok", "yes, thank you", "yes thank you", "yes, thanks", "yes thanks"}));
 			String speechActLabel = null;
-			if (hedgeTexts.contains(text.trim())) {
+			
+			if (hedgeTexts.contains(text)) {
 				speechActLabel = "Hedge";
-			} else if ("yes, thank you.".equals(text)) {
+			} else if (agreeAccept.contains(text)) {
 				speechActLabel = "Agree/Accept";
 			}
 
