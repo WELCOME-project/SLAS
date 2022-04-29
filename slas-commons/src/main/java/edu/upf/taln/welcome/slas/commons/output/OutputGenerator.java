@@ -56,6 +56,7 @@ import edu.upf.taln.welcome.slas.commons.output.welcome.Location;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Participant;
 import edu.upf.taln.welcome.slas.commons.output.welcome.Relation;
 import edu.upf.taln.welcome.slas.commons.output.welcome.SpeechAct;
+import edu.upf.taln.welcome.slas.commons.types.OriginalText;
 
 public class OutputGenerator {
         
@@ -353,8 +354,12 @@ public class OutputGenerator {
         
         return entities;
     }
-
+    
     private static DlaResult extractDLAResult(Collection<PredArgsToken> tokenCollection, Collection<PredArgsDependency> relationCollection, Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection) {
+    	return extractDLAResult(tokenCollection, relationCollection, speechActCollection, null);
+    }
+
+    private static DlaResult extractDLAResult(Collection<PredArgsToken> tokenCollection, Collection<PredArgsDependency> relationCollection, Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection, OriginalText originalText) {
 
         DlaResult result = new DlaResult();
         
@@ -371,7 +376,15 @@ public class OutputGenerator {
             SpeechAct sa = new SpeechAct();
             sa.setId("speech_act_" + j);
             sa.setType(speechAct.getLabel());
-            sa.setAnchor(speechAct.getCoveredText());
+            
+            String anchor = speechAct.getCoveredText();
+            if (originalText != null) {
+            	//If originalText is present a " ." has been added to the text
+            	if(speechAct.getEnd() == originalText.getText().length() + 2) {
+            		anchor = anchor.substring(0, anchor.length() - 2);
+            	}
+            }
+            sa.setAnchor(anchor);
             
             List<String> entitiesList = new ArrayList<>();
             List<PredArgsToken> matchingPredArgsTokens = JCasUtil.selectCovered(PredArgsToken.class, speechAct);
@@ -394,8 +407,13 @@ public class OutputGenerator {
         Collection<PredArgsToken> tokenCollection = JCasUtil.select(jCas, PredArgsToken.class);
         Collection<PredArgsDependency> relationCollection = JCasUtil.select(jCas, PredArgsDependency.class);
         Collection<edu.upf.taln.flask_wrapper.type.SpeechAct> speechActCollection = JCasUtil.select(jCas, edu.upf.taln.flask_wrapper.type.SpeechAct.class);
+        Collection<OriginalText> originalTextCollection = JCasUtil.select(jCas, OriginalText.class);
+        OriginalText originalText = null;
+        if (!originalTextCollection.isEmpty()) {
+        	originalText = originalTextCollection.iterator().next();
+        }
+        DlaResult result = extractDLAResult(tokenCollection, relationCollection, speechActCollection, originalText);
         
-        DlaResult result = extractDLAResult(tokenCollection, relationCollection, speechActCollection);
 		return result;
 	}
     

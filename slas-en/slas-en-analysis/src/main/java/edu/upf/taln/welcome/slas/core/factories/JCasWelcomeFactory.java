@@ -17,6 +17,7 @@ import edu.upf.taln.welcome.slas.commons.input.AnalysisType;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
+import edu.upf.taln.welcome.slas.commons.types.OriginalText;
 import edu.upf.taln.welcome.slas.commons.utils.InputMetaDataUtils;
 import edu.upf.taln.welcome.slas.core.utils.WelcomeUIMAUtils;
 
@@ -25,6 +26,10 @@ public class JCasWelcomeFactory {
 	public static enum InputType {conll, text}; 
 	
 	public static JCas createJCas(DeepAnalysisInput input) throws WelcomeException {
+		return createJCas(input, null);
+	}
+	
+	public static JCas createJCas(DeepAnalysisInput input, String originalText) throws WelcomeException {
 
         try {
         	
@@ -45,6 +50,12 @@ public class JCasWelcomeFactory {
             // Adds ExtraMetaData
             InputMetaDataUtils utils = new InputMetaDataUtils();
             utils.addMetaData(jCas, metadata);
+            
+            if (originalText != null) {
+	            OriginalText originalTextAnn = new OriginalText(jCas, 0, text.length());
+	            originalTextAnn.setText(originalText);
+	            originalTextAnn.addToIndexes();
+            }
                     	
             DocumentMetaData docMetadata = DocumentMetaData.create(jCas);
             docMetadata.setDocumentId("welcome-document");
