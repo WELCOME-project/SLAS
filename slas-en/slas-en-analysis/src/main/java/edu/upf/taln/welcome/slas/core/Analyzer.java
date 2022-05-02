@@ -167,8 +167,9 @@ public class Analyzer {
 		}
     }
 
-	protected static String preprocess(DeepAnalysisInput input) {
-		InputData data = input.getData();
+	protected static DeepAnalysisInput preprocess(DeepAnalysisInput input) {
+		DeepAnalysisInput newInput = new DeepAnalysisInput(input);
+		InputData data = newInput.getData();
 		String text = data.getText();
 		String replaced = text;
 		if (!text.trim().matches("(?s).*[.?!]$")) {
@@ -177,7 +178,7 @@ public class Analyzer {
 		replaced = replaced.replaceAll("Yeah", "Yes");
 		replaced = replaced.replaceAll("yeah", "yes");
 		data.setText(replaced);
-		return text;
+		return newInput;
 	}	
 	
 	/**
@@ -191,8 +192,8 @@ public class Analyzer {
 	public IAnalysisOutput analyze(DeepAnalysisInput input) throws WelcomeException {
 
 		try {            
-			String originalText = Analyzer.preprocess(input);
-            JCas jCas = JCasWelcomeFactory.createJCas(input, originalText);
+			DeepAnalysisInput newInput = Analyzer.preprocess(input);
+            JCas jCas = JCasWelcomeFactory.createJCas(newInput, input.getData().getText());
             
             pipeline.process(jCas);
 			postprocess(jCas);

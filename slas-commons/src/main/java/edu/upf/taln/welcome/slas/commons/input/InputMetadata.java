@@ -23,6 +23,15 @@ public class InputMetadata implements IUseCase {
     
 	@JsonProperty("use_case")
 	private String useCase;
+	
+	public InputMetadata() {}
+	
+	public InputMetadata(InputMetadata metadata) {
+		language = metadata.getLanguage();
+		outputType = metadata.getOutputType();
+		analysisType = metadata.getAnalysisType();
+		useCase = metadata.getUseCase();
+	}
 
 	public String getLanguage() {
 		return language;

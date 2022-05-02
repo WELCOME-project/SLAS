@@ -6,6 +6,13 @@ public class DeepAnalysisInput {
 	@JsonAlias("meta")
     private InputMetadata metadata;
     private InputData data;
+    
+    public DeepAnalysisInput() {}
+    
+    public DeepAnalysisInput(DeepAnalysisInput input) {
+    	metadata = new InputMetadata(input.getMetadata());
+    	data = new InputData(input.getData());
+    }
 
     public InputMetadata getMetadata() {
         return metadata;
