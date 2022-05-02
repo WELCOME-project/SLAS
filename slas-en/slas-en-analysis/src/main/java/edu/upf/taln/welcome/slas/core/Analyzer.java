@@ -198,7 +198,7 @@ public class Analyzer {
             pipeline.process(jCas);
 			postprocess(jCas);
             
-            InputMetadata metadata = input.getMetadata();
+            InputMetadata metadata = newInput.getMetadata();
             IAnalysisOutput analysisResult = OutputFactory.extractOutput(jCas, metadata.getOutputType());
 			
 			return analysisResult;
