@@ -378,11 +378,11 @@ public class OutputGenerator {
             sa.setType(speechAct.getLabel());
             
             String anchor = speechAct.getCoveredText();
-            if (originalText != null) {
-            	//If originalText is present a " ." has been added to the text
-            	if(speechAct.getEnd() == originalText.getText().length() + 2) {
-            		anchor = anchor.substring(0, anchor.length() - 2);
-            	}
+            //If originalText is present a " ." has been added to the text
+            if (originalText != null  
+            		&& speechAct.getEnd() == originalText.getText().length() + 2 
+            		&& anchor.endsWith(" .")) {
+            	anchor = anchor.substring(0, anchor.length() - 2);
             }
             sa.setAnchor(anchor);
             
