@@ -42,6 +42,7 @@ import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
 import de.unihd.dbs.uima.annotator.intervaltagger.IntervalTagger;
 import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.core.DeepParser;
+import edu.upf.taln.uima.NumberSequenceAnnotator;
 import edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline;
 import edu.upf.taln.uima.disambiguation.core.WSDAnnotatorCollectiveContext;
 import edu.upf.taln.uima.disambiguation.core.WSDResourceCollectiveCandidate;
@@ -316,6 +317,27 @@ public class EnglishPipelineUD {
 		
 		return new FlowItem(createEngineDescription(heideltime/*, intervalTagger*/), FlowStepName.HEIDELTIME.name());
 	}
+	
+	private static FlowItem getNumericSequenceAnnotatorDescription() throws ResourceInitializationException {
+        
+		AnalysisEngineDescription numberSequence = AnalysisEngineFactory.createEngineDescription(
+				NumberSequenceAnnotator.class,
+				NumberSequenceAnnotator.NUM_POS_TAG, "NUM");
+		
+		return new FlowItem(numberSequence, FlowStepName.NUMBER_SEQUENCE.name());
+	}
+	
+	private static FlowItem getNumericSequenceRetokenizerDescription() throws ResourceInitializationException {
+        
+		AnalysisEngineDescription numberSequenceRetokenizer = AnalysisEngineFactory.createEngineDescription(
+				MultiwordRetokenizer.class,
+				MultiwordRetokenizer.PARAM_SPAN_CLASS_NAME, "edu.upf.taln.uima.number_sequence.types.NumberSequenceAnnotation",
+				MultiwordRetokenizer.PARAM_NEW_TOKENS_POS_TYPE, "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS_NUM",
+				MultiwordRetokenizer.PARAM_DEFAULT_POS, "CD",
+				MultiwordRetokenizer.PARAM_DEFAULT_CPOS, "NUM");
+		
+		return new FlowItem(numberSequenceRetokenizer, FlowStepName.NUMBER_SEQUENCE_RETOKENIZER.name());
+	}
 
 	public static AnalysisEngineDescription getPipelineDescription(AnalysisConfiguration configuration) throws UIMAException {
 
@@ -327,6 +349,9 @@ public class EnglishPipelineUD {
 		List<FlowItem> flowItems = new ArrayList<FlowItem>();
 
 		flowItems.add(getPreprocessDescription());
+		
+		flowItems.add(getNumericSequenceAnnotatorDescription());
+		flowItems.add(getNumericSequenceRetokenizerDescription());
 		
 		flowItems.add(getHeideltimeDescription());
 				

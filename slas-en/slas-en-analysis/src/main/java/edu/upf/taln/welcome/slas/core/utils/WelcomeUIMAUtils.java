@@ -17,33 +17,36 @@ public class WelcomeUIMAUtils {
     public static Map<String, Boolean> createMap(boolean defaultValue) {
         Map<String, Boolean> flowMap = new HashMap<>();
 
-        flowMap.put(FlowStepName.PARSING.name(),                defaultValue);
+        flowMap.put(FlowStepName.PARSING.name(),                		defaultValue);
+        
+        flowMap.put(FlowStepName.NUMBER_SEQUENCE.name(),				defaultValue);
+        flowMap.put(FlowStepName.NUMBER_SEQUENCE_RETOKENIZER.name(),	defaultValue);
 
-        flowMap.put(FlowStepName.HEIDELTIME.name(),             defaultValue);
-        flowMap.put(FlowStepName.HEIDELTIME_RETOKENIZER.name(), defaultValue);
+        flowMap.put(FlowStepName.HEIDELTIME.name(),             		defaultValue);
+        flowMap.put(FlowStepName.HEIDELTIME_RETOKENIZER.name(),			defaultValue);
 
-        flowMap.put(FlowStepName.TAXONOMY.name(),               defaultValue);
-        flowMap.put(FlowStepName.TAXONOMY_RETOKENIZER.name(),   defaultValue);
+        flowMap.put(FlowStepName.TAXONOMY.name(),						defaultValue);
+        flowMap.put(FlowStepName.TAXONOMY_RETOKENIZER.name(),			defaultValue);
 
-        flowMap.put(FlowStepName.NER.name(),                    defaultValue);
-        flowMap.put(FlowStepName.NER_RETOKENIZER.name(),        defaultValue);
+        flowMap.put(FlowStepName.NER.name(),							defaultValue);
+        flowMap.put(FlowStepName.NER_RETOKENIZER.name(),				defaultValue);
 
-        flowMap.put(FlowStepName.GEOLOCATION.name(),            defaultValue);
-        flowMap.put(FlowStepName.GEOLOCATION_RETOKENIZER.name(), defaultValue);
+        flowMap.put(FlowStepName.GEOLOCATION.name(),					defaultValue);
+        flowMap.put(FlowStepName.GEOLOCATION_RETOKENIZER.name(),		defaultValue);
 
-        flowMap.put(FlowStepName.SPEECHACT.name(),              defaultValue);
+        flowMap.put(FlowStepName.SPEECHACT.name(),						defaultValue);
 
-        flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(),     defaultValue);
-        flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(), defaultValue);
-        flowMap.put(FlowStepName.RETOKENIZER.name(),            defaultValue);
+        flowMap.put(FlowStepName.CONCEPT_CANDIDATES.name(),				defaultValue);
+        flowMap.put(FlowStepName.CONCEPT_DESAMBIGUATION.name(),			defaultValue);
+        flowMap.put(FlowStepName.RETOKENIZER.name(),					defaultValue);
 
-        flowMap.put(FlowStepName.DBPEDIA.name(),                defaultValue);
-        flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(),    defaultValue);
+        flowMap.put(FlowStepName.DBPEDIA.name(),						defaultValue);
+        flowMap.put(FlowStepName.DBPEDIA_RETOKENIZER.name(),			defaultValue);
 
-        flowMap.put(FlowStepName.SSYNTS.name(),                 defaultValue);
-        flowMap.put(FlowStepName.DSYNTS.name(),                 defaultValue);
+        flowMap.put(FlowStepName.SSYNTS.name(),							defaultValue);
+        flowMap.put(FlowStepName.DSYNTS.name(),							defaultValue);
 
-        flowMap.put(FlowStepName.EMOTION.name(),                defaultValue);
+        flowMap.put(FlowStepName.EMOTION.name(),						defaultValue);
         
         return flowMap;
     }
