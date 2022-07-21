@@ -57,19 +57,4 @@ public class PreprocessTest {
 		
 		Assert.assertEquals(text, input.getData().getText());
 	}
-	
-	@ParameterizedTest(name = "{0}")
-	@CsvSource({
-		"'South Levantine Arabic Language','ajp','ar'",
-		"'North Levantine Arabic Language','apc','ar'",
-		"'Spanish Language','spa','es'",
-		"'Catalan language','cat','ca'",
-		"'German language','deu','de'",
-		"'Greek language','ell','el'",
-		"'English language','eng','en'",
-		"'Wrong language','epe','epe'"
-	})
-	public void languageISOTest(String testName, String lang, String expectedLang) {
-		Assert.assertEquals(expectedLang, Analyzer.convertLanguage(lang));
-	}
 }

@@ -30,8 +30,6 @@ import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputData;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
-import edu.upf.taln.welcome.slas.commons.utils.ISO639_3ToISO639_1;
-import edu.upf.taln.welcome.slas.commons.utils.Language2Macrolanguage;
 import edu.upf.taln.welcome.slas.core.factories.JCasWelcomeFactory;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
 import edu.upf.taln.welcome.slas.core.taxonomy.Concepts;
@@ -168,25 +166,11 @@ public class Analyzer {
 			throw new ResourceInitializationException(e);
 		}
     }
-	
-	protected static String convertLanguage(String originalLanguage) {
-		//Converting language code ISO 639-3 to ISO 639-1
-		String globalLang = Language2Macrolanguage.getMacrolanguage(originalLanguage);
-		String resultLang = ISO639_3ToISO639_1.getISO639_1(globalLang);
-		if (resultLang == null) {
-			resultLang = originalLanguage;
-		}
-		return resultLang;
-	}
 
 	protected static DeepAnalysisInput preprocess(DeepAnalysisInput input) {
 		
 		DeepAnalysisInput newInput = new DeepAnalysisInput(input);
 		InputData data = newInput.getData();
-		InputMetadata metadata = newInput.getMetadata();
-		
-		String newLang = convertLanguage(metadata.getLanguage());
-		metadata.setLanguage(newLang);
 		
 		String text = data.getText();
 		String replaced = text;

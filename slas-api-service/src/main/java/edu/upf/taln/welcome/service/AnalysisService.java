@@ -28,6 +28,7 @@ import edu.upf.taln.welcome.slas.commons.exceptions.WelcomeException;
 import edu.upf.taln.welcome.slas.commons.input.DeepAnalysisInput;
 import edu.upf.taln.welcome.slas.commons.input.InputMetadata;
 import edu.upf.taln.welcome.slas.commons.output.IAnalysisOutput;
+import edu.upf.taln.welcome.slas.commons.utils.LanguageConverter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -50,7 +51,7 @@ public class AnalysisService {
 
 	private static final String SAMPLE_INPUT_EN = "{\n" + 
 			"   \"meta\":{\n" + 
-			"      \"language\":\"en\",\n" + 
+			"      \"language\":\"eng\",\n" + 
 			"      \"analysis_type\":\"FULL\",\n" + 
 			"      \"output_type\":\"demo_welcome\",\n" + 
 			"      \"use_case\":\"catalonia\"\n" + 
@@ -64,7 +65,7 @@ public class AnalysisService {
 			"  \"metadata\": {" +
 			"    \"output_level\": \"demo_welcome\",\n" +
 			"    \"analysis_type\": \"FULL\",\n" + 
-			"    \"language\": \"ca\",\n" + 
+			"    \"language\": \"cat\",\n" + 
 			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
@@ -75,7 +76,7 @@ public class AnalysisService {
 			"  \"metadata\": {" +
 			"    \"output_level\": \"demo_welcome\",\n" +
 			"    \"analysis_type\": \"FULL\",\n" + 
-			"    \"language\": \"de\",\n" + 
+			"    \"language\": \"deu\",\n" + 
 			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
@@ -86,7 +87,7 @@ public class AnalysisService {
 			"  \"metadata\": {" +
 			"    \"output_level\": \"demo_welcome\",\n" +
 			"    \"analysis_type\": \"FULL\",\n" + 
-			"    \"language\": \"el\",\n" + 
+			"    \"language\": \"ell\",\n" + 
 			"    \"use_case\": \"catalonia\"\n" +
 			"  },\n" + 
 			"  \"data\": {\n" + 
@@ -151,6 +152,8 @@ public class AnalysisService {
 	public IAnalysisOutput analyze(@Parameter(description = "Container for analysis input data.", required = true) DeepAnalysisInput input) throws WelcomeException, WelcomeClientException {
 
 		InputMetadata metadata = input.getMetadata();
+		String newLang = LanguageConverter.convertLanguage(metadata.getLanguage());
+		metadata.setLanguage(newLang);
 		
 		WelcomeBackendClient<IAnalysisOutput> analysisClient = clientsMap.get(metadata.getLanguage().toLowerCase());
 		if (analysisClient == null) {
