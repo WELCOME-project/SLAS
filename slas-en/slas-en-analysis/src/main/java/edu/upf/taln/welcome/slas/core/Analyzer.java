@@ -17,6 +17,7 @@ import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
+import org.jg.wordstonumbers.WordsToNumbersUtil;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -173,9 +174,12 @@ public class Analyzer {
 		InputData data = newInput.getData();
 		
 		String text = data.getText();
-		String replaced = text;
-		if (!text.trim().matches("(?s).*[.?!]$")) {
-			replaced = text.trim() + " .";
+		
+		String newText = WordsToNumbersUtil.convertTextualNumbersInDocument(text);
+		
+		String replaced = newText;
+		if (!newText.trim().matches("(?s).*[.?!]$")) {
+			replaced = newText.trim() + " .";
 		}
 		replaced = replaced.replaceAll("Yeah", "Yes");
 		replaced = replaced.replaceAll("yeah", "yes");

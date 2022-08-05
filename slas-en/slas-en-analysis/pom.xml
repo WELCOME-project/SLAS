@@ -136,6 +136,12 @@
             <groupId>edu.upf.taln.uima</groupId>
             <artifactId>number-sequence-core</artifactId>
         </dependency>
+        
+        <dependency>
+	        <groupId>org.wordstonumbers</groupId>
+			<artifactId>WordsToNumbers</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 		<!-- TEST -->
 		<dependency>
