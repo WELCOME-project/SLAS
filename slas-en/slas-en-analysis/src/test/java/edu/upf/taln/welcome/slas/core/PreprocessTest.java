@@ -1,6 +1,5 @@
 package edu.upf.taln.welcome.slas.core;
 
-import org.jg.wordstonumbers.WordsToNumbersUtil;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

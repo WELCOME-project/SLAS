@@ -39,7 +39,7 @@
 		<heideltime.version>3.1.0-SNAPSHOT</heideltime.version>
 		<output-graph.version>0.4.0</output-graph.version>
 		<common-types.version>1.1.0</common-types.version>
-		<retokenizer.version>0.4.0-SNAPSHOT</retokenizer.version>
+		<retokenizer.version>0.4.0</retokenizer.version>
 
 	</properties>
 
