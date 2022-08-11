@@ -30,7 +30,7 @@ services:
         - "traefik.port=8080"
 
   slas-en:
-    image: maven-taln.upf.edu/welcome/slas_en:2022-05-25
+    image: maven-taln.upf.edu/welcome/slas_en:2022-07-11
     networks:
       - traefik
     deploy:
@@ -143,7 +143,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2022-06-02
+    image: registry.gitlab.com/talnupf/welcome/dms:2022-07-04
     networks:
       - traefik
     deploy:
@@ -200,7 +200,7 @@ services:
         - "traefik.port=80"
         - "traefik.enable=true"
   tts-wrapper:
-    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-05-04
+    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-07-26
     networks:
       - traefik
     volumes:
