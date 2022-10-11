@@ -7,7 +7,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "1"
@@ -20,7 +20,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "1"
@@ -34,7 +34,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -70,8 +70,8 @@ services:
     environment:
       - DBPEDIA_ENDPOINT=http://spotlight-en.p.grivolla.net/rest
       #- CONCEPT_URL=http://concepts-en.p.grivolla.net
-      - CONCEPT_URL=http://concepts-en-neural.p.grivolla.net
-      - NER_URL=http://ner-spacy-en.p.grivolla.net
+      - CONCEPT_URL=http://concepts-en.v.grivolla.net
+      - NER_URL=http://ner-spacy-en.v.grivolla.net
       - BABELNET_CONFIG=/resources/babelconfig-4.0.1
       - COMPACT_DICTIONARY=/resources/BabelNet-4.0.1_en.cache
       - DISAMBIGUATION_PROPS=/resources/disambiguation_properties-resources.en.txt
@@ -86,7 +86,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -102,7 +102,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -118,7 +118,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -134,7 +134,7 @@ services:
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -143,7 +143,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-dialogtag.${DOMAIN}"
         - "traefik.port=8000"
   dms:
-    image: registry.gitlab.com/talnupf/welcome/dms:2022-09-19
+    image: registry.gitlab.com/talnupf/welcome/dms:2022-07-04
     networks:
       - traefik
     deploy:
@@ -156,11 +156,11 @@ services:
         - "traefik.frontend.rule=Host:welcome-dms.${DOMAIN}"
         - "traefik.port=8080"
   nlg:
-    image: registry.gitlab.com/talnupf/welcome/nlg:2022-10-05
+    image: registry.gitlab.com/talnupf/welcome/nlg:2022-09-14
     networks:
       - traefik
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
           cpus: "4"
@@ -168,8 +168,6 @@ services:
       labels:
         - "traefik.frontend.rule=Host:welcome-nlg.${DOMAIN}"
         - "traefik.port=8080"
-    environment:
-      - CONTENTDB_URL=http://3.20.64.60/welcome/integration/workflow/dispatcher/contentDBCollections
   tts-en:
     image: registry.gitlab.com/talnupf/welcome/tts:2020-06-20
     networks:
@@ -202,7 +200,7 @@ services:
         - "traefik.port=80"
         - "traefik.enable=true"
   tts-wrapper:
-    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-10-07
+    image: maven-taln.upf.edu/welcome/tts-wrapper:2022-08-12
     networks:
       - traefik
     volumes:
@@ -210,7 +208,7 @@ services:
     environment: 
       - CACHE_DIR=/cache/
     deploy:
-      replicas: 1
+      replicas: 0
       resources:
         limits:
             cpus: "2"
