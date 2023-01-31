@@ -22,7 +22,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.uima.UIMAException;
 import org.apache.uima.cas.CAS;
-import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.fit.factory.TypeSystemDescriptionFactory;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.metadata.TypeSystemDescription;
@@ -49,6 +48,7 @@ import edu.upf.taln.xr4drama.commons.analysis.input.UseCase;
 import edu.upf.taln.xr4drama.commons.analysis.output.xmi.XmiOutput;
 import edu.upf.taln.xr4drama.commons.exceptions.Xr4dramaClientException;
 import edu.upf.taln.xr4drama.commons.exceptions.Xr4dramaException;
+import edu.upf.taln.xr4drama.commons.generation.output.GenerationOutput;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -123,11 +123,11 @@ public class DeepAnalysisService {
 
 	@Context
 	ServletConfig config;
-    private final Xr4dramaBackendClient<XmiOutput> client;
+    private final Xr4dramaBackendClient<XmiOutput, GenerationOutput> client;
 
 	public DeepAnalysisService() throws WelcomeException {
 		log.info("getting Analyzer instance");
-		client = new Xr4dramaBackendClient<>("https://xr4drama.upf.edu/xr4drama-de-service/api/de", "de", XmiOutput.class);
+		client = new Xr4dramaBackendClient<>("https://xr4drama.upf.edu/xr4drama-de-service/api/de", "de", XmiOutput.class, GenerationOutput.class);
 	}    
 	
 	@POST
@@ -163,7 +163,7 @@ public class DeepAnalysisService {
 		AnalysisInputMetadata xr4dramaMeta = null;
 		try {
 			AnalysisOptions options = AnalysisOptionsFactory.createOptions(AnalysisType.FULL);
-			options.setDeepParserOptions(new ModuleOptions(false));
+			options.setDeepIncidentParserOptions(new ModuleOptions(false));
 			xr4dramaMeta = new AnalysisInputMetadata(metadata.getLanguage(), UseCase.INCIDENT, AnalysisType.FULL, options, null); 
 			xr4dramaMeta.setOutputType(OutputType.xmi);
 		} catch (Xr4dramaException e) {

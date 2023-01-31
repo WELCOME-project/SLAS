@@ -94,6 +94,17 @@ public class AnalysisService {
 			"    \"text\": \"Ναι, θα ήθελα να κάνω αίτηση για την Υπηρεσία Πρώτης Υποδοχής.\"" + 
 			"  } \n" + 
 			"}";
+	private static final String SAMPLE_INPUT_ES = "{\n" + 
+			"  \"metadata\": {" +
+			"    \"output_level\": \"demo_welcome\",\n" +
+			"    \"analysis_type\": \"FULL\",\n" + 
+			"    \"language\": \"spa\",\n" + 
+			"    \"use_case\": \"catalonia\"\n" +
+			"  },\n" + 
+			"  \"data\": {\n" + 
+			"    \"text\": \"Sí, me gustaria suscribirme a First Reception Service.\"" + 
+			"  } \n" + 
+			"}";
 
 
 	/**
@@ -140,7 +151,9 @@ public class AnalysisService {
 											@ExampleObject(name = "German",
 													value = SAMPLE_INPUT_DE),
 											@ExampleObject(name = "Greek",
-													value = SAMPLE_INPUT_EL)
+													value = SAMPLE_INPUT_EL),
+											@ExampleObject(name = "Spanish",
+													value = SAMPLE_INPUT_ES)
 										}
 						)
 					),

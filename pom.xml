@@ -49,6 +49,7 @@
 		<module>slas-ca</module>
 		<module>slas-de</module>
 		<module>slas-el</module>
+		<module>slas-es</module>
 		<module>slas-api-service</module>
 		<module>slas-client</module>
 		<module>slas-demo</module>

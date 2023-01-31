@@ -27,6 +27,7 @@ head.js(
 //Services URL's
 var analyzeURL = "../slas-en-service/api/dla/analyze";
 var descriptionURL = "../slas-en-service/api/dla/description";
+var multilangURL = "../slas-api-service/api/slas/analyze";
 
 function spinButton() {
     var button = $("#submitButton");
@@ -218,7 +219,7 @@ head.ready(function() {
             var language = "en";
             language = $("#languageSelector option:selected").val();
             
-            submitForm("POST", analyzeURL, inputText, language, spinButton, unspinButton);
+            submitForm("POST", multilangURL, inputText, language, spinButton, unspinButton);
       
         } else {
             event.stopPropagation();

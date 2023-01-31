@@ -123,6 +123,7 @@ public class DeepAnalysisService {
 	public DeepAnalysisService() throws WelcomeException {
 		log.info("getting Analyzer instance");
 		client = new MindspacesBackendClient<>("https://taln.upf.edu/mindspaces/mindspaces-services-ca/", "ca", XmiOutputImpl.class);
+		//client = new MindspacesBackendClient<>("http://localhost:8080/mindspaces-services-ca/", "ca", XmiOutputImpl.class);
 	}    
 	
 	@POST
