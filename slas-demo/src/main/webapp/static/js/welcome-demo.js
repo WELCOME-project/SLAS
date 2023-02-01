@@ -27,7 +27,7 @@ head.js(
 //Services URL's
 var analyzeURL = "../slas-en-service/api/dla/analyze";
 var descriptionURL = "../slas-en-service/api/dla/description";
-var multilangURL = "../slas-api-service/api/slas/analyze";
+var multilangURL = "../slas-api/api/slas/analyze";
 
 function spinButton() {
     var button = $("#submitButton");
