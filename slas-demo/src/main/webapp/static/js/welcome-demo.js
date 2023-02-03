@@ -173,7 +173,7 @@ function ajaxCallback(result){
         "surface_parsing",
         //"deep_parsing",
         "predicate_arguments_parsing",
-        "triples",
+        //"triples",
         //"sentence_ranking",
         "tag_cloud",
         "heideltime",
