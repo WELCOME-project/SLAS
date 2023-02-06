@@ -16,7 +16,7 @@ fi
 # read getopt’s output this way to handle the quoting right:
 eval set -- "$PARSED"
 
-tag=$(date -I) langs=en,de,ca,el
+tag=$(date -I) langs=en,de,ca,el,es
 # now enjoy the options in order and nicely split until we see --
 while true; do
     case "$1" in

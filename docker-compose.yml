@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   slas-api:
-    image: maven-taln.upf.edu/welcome/slas_api:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_api:2023-02-03
     environment:
       - LANGUAGE_SERVICES_CONFIGURATION_JSON={"language_services_map":{"en":"http://slas-en:8080/slas-services-en/api/dla","ca":"http://slas-ca:8080/slas-services-ca/api/ca","de":"http://slas-de:8080/slas-services-de/api/de","el":"http://slas-el:8080/slas-services-el/api/el","es":"http://slas-es:8080/slas-services-es/api/es"}}
     networks:
@@ -16,7 +16,7 @@ services:
         - "traefik.frontend.rule=Host:welcome-slas.${DOMAIN}"
         - "traefik.port=8080"
   slas-demo:
-    image: maven-taln.upf.edu/welcome/slas_demo:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_demo:2023-02-03
     networks:
       - traefik
     deploy:
@@ -30,7 +30,7 @@ services:
         - "traefik.port=8080"
 
   slas-en:
-    image: maven-taln.upf.edu/welcome/slas_en:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_en:2023-02-03
     networks:
       - traefik
     deploy:
@@ -82,7 +82,7 @@ services:
       - JAVA_OPTS=-Xmx16g -Xms4g
       
   slas-ca:
-    image: maven-taln.upf.edu/welcome/slas_ca:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_ca:2023-02-03
     networks:
       - traefik
     deploy:
@@ -97,8 +97,24 @@ services:
     environment:
       - JAVA_OPTS=-Xmx16g
 
+  slas-es:
+    image: maven-taln.upf.edu/welcome/slas_es:2023-02-03
+    networks:
+      - traefik
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4GB
+      labels:
+        - "traefik.frontend.rule=Host:welcome-slas-es.${DOMAIN}"
+        - "traefik.port=8080"
+    environment:
+      - JAVA_OPTS=-Xmx16g
+
   slas-de:
-    image: maven-taln.upf.edu/welcome/slas_de:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_de:2023-02-03
     networks:
       - traefik
     deploy:
@@ -114,7 +130,7 @@ services:
       - JAVA_OPTS=-Xmx16g
 
   slas-el:
-    image: maven-taln.upf.edu/welcome/slas_el:2023-01-31
+    image: maven-taln.upf.edu/welcome/slas_el:2023-02-03
     networks:
       - traefik
     deploy:
