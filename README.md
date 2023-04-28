@@ -14,13 +14,12 @@ The WELCOME SLAS installation requires the use of Docker and Docker Compose. Doc
 
 #### Hardware Requirements
 
-The images for SLAS API Service and Demo require a maximum of 1 GB of memory. And 1 CPU.
-The images for the SLAS languages requires a maximum of 4 GB of memory to run. 
-All language images can utilize multiple threads, so having several CPU cores available is preferred. In the example configuration provided below, up to 4 CPU cores are used.
+The image for SLAS API Service require a maximum of 1 GB of memory. And 1 CPU.
+The images for the SLAS languages requires a maximum of 4 GB of memory to run. They can utilize multiple threads, so having several CPU cores available is preferred. In the example configuration provided below, up to 4 CPU cores are used.
 
 #### Deployment
 
-To run SLAS, several images will have to be created, one for SLAS API Service and one for each SLAS language you want to deploy.
+To run SLAS, several images will have to be created, one for SLAS API Service and one for each SLAS language that wants to be deployed.
 
 The configuration of the SLAS deployment is specified in the `.yml` file. One can use an existing image by specifying its name and tag in the `.yml` file to run the corresponding SLAS container.
 
@@ -67,7 +66,7 @@ services:
       - DBPEDIA_ENDPOINT=<url_to_dbpedia_service>
       - CONCEPT_URL=<url_to_concept_extraction_service>
       - NER_URL=<url_to_ner_service>
-      - BABELNET_URL=<url_to_babelnet_service>
+      - DISAMBIGUATION_URL=<url_to_disambiguation_service>
       - SPEECHACT_URL=<url_to_speechact_service>
       - GEOLOCATION_URL=<url_to_geolocation_service>
       - TAXONOMY_PATH=/resources/taxonomy.ttl

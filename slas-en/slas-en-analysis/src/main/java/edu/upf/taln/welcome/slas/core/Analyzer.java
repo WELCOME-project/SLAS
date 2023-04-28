@@ -141,14 +141,11 @@ public class Analyzer {
         String taxonomyPath = updateTaxonomy(System.getenv("TAXONOMY_SERVICE_URL"), System.getenv("TAXONOMY_PATH"));
 
 		AnalysisConfiguration configuration = new AnalysisConfiguration();
-		configuration.setBabelnetConfigPath(System.getenv("BABELNET_CONFIG"));
 		configuration.setDbpediaUrl(System.getenv("DBPEDIA_ENDPOINT"));
 		configuration.setCandidateConceptsUrl(System.getenv("CONCEPT_URL"));
 		configuration.setNerUrl(System.getenv("NER_URL"));
-		configuration.setRankingPropertiesFile(System.getenv("DISAMBIGUATION_PROPS"));
-		configuration.setCompactDictionaryPath(System.getenv("COMPACT_DICTIONARY"));
+		configuration.setDisambiguationUrl(System.getenv("DISAMBIGUATION_URL"));
 		configuration.setEmotionUrl(System.getenv("EMOTION_URL"));
-		//configuration.setAspectUrl(System.getenv("ASPECT_URL"));
 		configuration.setSpeechActUrl(System.getenv("SPEECHACT_URL"));
 		configuration.setGeolocationUrl(System.getenv("GEOLOCATION_URL"));
 		configuration.setTaxonomyDictPath(taxonomyPath);

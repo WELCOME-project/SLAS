@@ -2,11 +2,9 @@ package edu.upf.taln.welcome.slas.core;
 
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
 import static org.apache.uima.fit.factory.ExternalResourceFactory.createDependencyAndBind;
-import static org.apache.uima.fit.factory.ExternalResourceFactory.createExternalResourceDescription;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
@@ -15,7 +13,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.uima.UIMAException;
-import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.conceptMapper.ConceptMapper;
 import org.apache.uima.conceptMapper.support.dictionaryResource.DictionaryResource_impl;
@@ -23,7 +20,6 @@ import org.apache.uima.conceptMapper.support.tokens.TokenNormalizer;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.FlowControllerFactory;
 import org.apache.uima.flow.FlowControllerDescription;
-import org.apache.uima.resource.ExternalResourceDescription;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.InvalidXMLException;
 import org.dbpedia.spotlight.uima.SpotlightAnnotator;
@@ -35,19 +31,10 @@ import org.xml.sax.SAXException;
 import de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS_NOUN;
 import de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS_VERB;
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
-import de.tudarmstadt.ukp.dkpro.wsd.algorithm.MostFrequentSenseBaseline;
-import de.tudarmstadt.ukp.dkpro.wsd.annotator.WSDAnnotatorIndividualBasic;
-import de.tudarmstadt.ukp.dkpro.wsd.resource.WSDResourceIndividualBasic;
 import de.unihd.dbs.uima.annotator.heideltime.HeidelTime;
-import de.unihd.dbs.uima.annotator.intervaltagger.IntervalTagger;
 import edu.upf.taln.flask_wrapper.type.WSDSpan;
 import edu.upf.taln.parser.deep_parser.core.DeepParser;
 import edu.upf.taln.uima.NumberSequenceAnnotator;
-import edu.upf.taln.uima.disambiguation.core.TALNSenseBaseline;
-import edu.upf.taln.uima.disambiguation.core.WSDAnnotatorCollectiveContext;
-import edu.upf.taln.uima.disambiguation.core.WSDResourceCollectiveCandidate;
-import edu.upf.taln.uima.disambiguation.core.inventory.BabelnetSenseInventoryResource;
-import edu.upf.taln.uima.disambiguation.core.inventory.CompactDictionarySenseInventoryResource;
 import edu.upf.taln.uima.flask_wrapper.ConceptExtractorAnnotator;
 import edu.upf.taln.uima.flask_wrapper.EmotionAnnotator;
 import edu.upf.taln.uima.flask_wrapper.GeolocationAnnotator;
@@ -55,12 +42,11 @@ import edu.upf.taln.uima.flask_wrapper.NERAnnotator;
 import edu.upf.taln.uima.flask_wrapper.SpeechActAnnotator;
 import edu.upf.taln.uima.flow.AnnotationFlowController;
 import edu.upf.taln.uima.retokenize.MultiwordRetokenizer;
-import edu.upf.taln.uima.wsd.annotation_extender.core.WSDResultExtender;
 import edu.upf.taln.uima.wsd.item_annotator.WSDItemAnnotator;
+import edu.upf.taln.uima.wsd_wrapper.WsdAnnotator;
 import edu.upf.taln.welcome.slas.commons.analysis.FlowItem;
 import edu.upf.taln.welcome.slas.commons.analysis.FlowStepName;
 import edu.upf.taln.welcome.slas.core.pojos.input.AnalysisConfiguration;
-import it.uniroma1.lcl.jlt.util.Language;
 
 public class EnglishPipelineUD {
 
@@ -146,60 +132,14 @@ public class EnglishPipelineUD {
 
 		return new FlowItem (createEngineDescription(spans, candidates),FlowStepName.CONCEPT_CANDIDATES.name());
 	}
+	
+	private static FlowItem getWsdServiceDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
+		AnalysisEngineDescription wsd = AnalysisEngineFactory.createEngineDescription(
+				WsdAnnotator.class,
+				WsdAnnotator.PARAM_WSD_URL, configuration.getDisambiguationUrl(),
+				WsdAnnotator.PARAM_LANGUAGE, LANGUAGE);
 
-	private static FlowItem getFirstSenseDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
-
-		ExternalResourceDescription BabelNet = createExternalResourceDescription(BabelnetSenseInventoryResource.class, 
-				BabelnetSenseInventoryResource.PARAM_BABELNET_CONFIGPATH, configuration.getBabelnetConfigPath(), 
-				BabelnetSenseInventoryResource.PARAM_BABELNET_LANG, LANGUAGE.toUpperCase(), 
-				BabelnetSenseInventoryResource.PARAM_BABELNET_DESCLANG, "EN");
-
-		ExternalResourceDescription mfsBaselineResourceBabelNet = createExternalResourceDescription(WSDResourceIndividualBasic.class,
-				WSDResourceIndividualBasic.SENSE_INVENTORY_RESOURCE, BabelNet,
-				WSDResourceIndividualBasic.DISAMBIGUATION_METHOD, MostFrequentSenseBaseline.class.getName());
-
-		AnalysisEngineDescription senseDisambiguation = createEngineDescription(WSDAnnotatorIndividualBasic.class,
-				WSDAnnotatorIndividualBasic.WSD_ALGORITHM_RESOURCE, mfsBaselineResourceBabelNet,
-				WSDAnnotatorIndividualBasic.PARAM_MAXIMUM_ITEMS_TO_ATTEMPT, -1);
-
-		AnalysisEngineDescription extender = AnalysisEngineFactory.createEngineDescription(WSDResultExtender.class,
-				WSDResultExtender.PARAM_BABELNET, BabelNet, 
-				WSDResultExtender.PARAM_LANGUAGES, new Language[]{Language.EN, Language.ES, Language.IT, Language.EL});
-
-		AnalysisEngineDescription babelnet = createEngineDescription(senseDisambiguation, extender);
-
-		return new FlowItem(babelnet,FlowStepName.CONCEPT_DESAMBIGUATION.name());
-	}
-
-	private static FlowItem getTalnDisambiguationDescription(AnalysisConfiguration configuration) throws ResourceInitializationException {
-
-		ExternalResourceDescription babelnetResource = createExternalResourceDescription(BabelnetSenseInventoryResource.class,
-				BabelnetSenseInventoryResource.PARAM_BABELNET_CONFIGPATH, configuration.getBabelnetConfigPath(),
-				BabelnetSenseInventoryResource.PARAM_BABELNET_LANG, LANGUAGE.toUpperCase(),
-				BabelnetSenseInventoryResource.PARAM_BABELNET_DESCLANG, "EN");
-
-		ExternalResourceDescription compactDictionaryResource = createExternalResourceDescription(CompactDictionarySenseInventoryResource.class, 
-				CompactDictionarySenseInventoryResource.PARAM_CONFIGURATION_PATH, configuration.getCompactDictionaryPath(), 
-				CompactDictionarySenseInventoryResource.PARAM_LANGUAGE, LANGUAGE.toUpperCase() );
-
-		ExternalResourceDescription talnSenseResource = createExternalResourceDescription(WSDResourceCollectiveCandidate.class,
-				WSDResourceCollectiveCandidate.SENSE_INVENTORY_RESOURCE, compactDictionaryResource,
-				WSDResourceCollectiveCandidate.DISAMBIGUATION_METHOD, TALNSenseBaseline.class.getName(),
-				WSDResourceCollectiveCandidate.PARAM_LANGUAGE, LANGUAGE.toUpperCase(),
-				WSDResourceCollectiveCandidate.PARAM_PROPERTIES_FILE, configuration.getRankingPropertiesFile());
-
-		AnalysisEngineDescription senseDisambiguation = createEngineDescription(WSDAnnotatorCollectiveContext.class,
-				WSDAnnotatorCollectiveContext.WSD_ALGORITHM_RESOURCE, talnSenseResource,
-				WSDAnnotatorCollectiveContext.PARAM_BEST_ONLY, false,
-				WSDAnnotatorCollectiveContext.PARAM_NORMALIZE_CONFIDENCE, false);
-
-		AnalysisEngineDescription extender = AnalysisEngineFactory.createEngineDescription(WSDResultExtender.class,
-				WSDResultExtender.PARAM_BABELNET, babelnetResource,
-				WSDResultExtender.PARAM_LANGUAGES, new Language[]{Language.EN, Language.ES, Language.IT, Language.EL});
-
-		AnalysisEngineDescription agregate = createEngineDescription(senseDisambiguation, extender);
-
-		return new FlowItem(agregate,FlowStepName.CONCEPT_DESAMBIGUATION.name());
+		return new FlowItem(wsd, FlowStepName.CONCEPT_DESAMBIGUATION.name());
 	}
 
 	private static FlowItem getDisambiguatedSensesRetokenizerDescription() throws ResourceInitializationException {
@@ -365,13 +305,7 @@ public class EnglishPipelineUD {
 
 		flowItems.add(getConceptExtractionDescription(configuration));
 
-		if (configuration.getBabelnetConfigPath() != null) {
-			if(configuration.getRankingPropertiesFile() == null || configuration.getCompactDictionaryPath() == null) {
-				flowItems.add(getFirstSenseDisambiguationDescription(configuration));
-			} else {
-				flowItems.add(getTalnDisambiguationDescription(configuration));
-			}
-		}
+		flowItems.add(getWsdServiceDescription(configuration));
 
 		AnalysisEngineDescription dbpedia = createEngineDescription(SpotlightAnnotator.class,
 				SpotlightAnnotator.PARAM_ENDPOINT, configuration.getDbpediaUrl(),
